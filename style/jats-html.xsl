@@ -187,7 +187,7 @@ or pipeline) parameterized.
     <html>
       <!-- HTML header -->
       <xsl:call-template name="make-html-header"/>
-      <body onload="configureDropdown(window.location.pathname.split('/')[3], window.location.pathname.split('/').pop().split('.')[0])">
+      <body onload="configureDropdown(window.location.pathname.split('/')[4], window.location.pathname.split('/').pop().split('.')[0])">
         <div id="nav-placeholder"></div>
         <xsl:apply-templates/>
         <script>

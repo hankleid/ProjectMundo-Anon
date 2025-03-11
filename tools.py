@@ -104,7 +104,7 @@ def update_index_files(langs):
         # Change the on-load script.
         script = scripts[-1]
         script.clear()
-        script.append(BeautifulSoup("setTimeout(function() {configureDropdown('index', '"+code+"');}, 100);", features="html.parser"))
+        script.append(BeautifulSoup("setTimeout(function() {configureDropdown('index', '"+code+"');}, 200);", features="html.parser"))
 
         with open(f"index/{code}.html", "w+") as f:
             f.write(html.prettify())
