@@ -433,7 +433,7 @@ def filename_from_DOI(xml=None, doi=None, language=None):
     return str_strip(filename)
 
 def change_graphic_dir(xml):
-    dir = f"/ProjectMundo-Anon/MediaObjects/{filename_from_DOI(xml=xml)}"
+    dir = f"/ProjectMundo-Anon-106A/MediaObjects/{filename_from_DOI(xml=xml)}"
 
     def _change_graphic_dir(linkstr):
         graphics = [graphic for graphic in xml.find_all('graphic') if graphic.has_attr(linkstr) and 'MediaObjects' in graphic[linkstr]]

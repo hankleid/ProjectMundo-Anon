@@ -1,6 +1,6 @@
 // Returns (promise) the languages catalog.
 async function get_lang_dict() {
-    return await fetch('/ProjectMundo-Anon/lang.json')
+    return await fetch('/ProjectMundo-Anon-106A/lang.json')
         .then(function(response) {
             return response.json();
         });
@@ -8,7 +8,7 @@ async function get_lang_dict() {
 
 // Returns (promise) the articles catalog.
 async function get_articles_dict() {
-    return await fetch('/ProjectMundo-Anon/articles.json')
+    return await fetch('/ProjectMundo-Anon-106A/articles.json')
         .then(function(response) {
             return response.json();
         });
@@ -46,12 +46,12 @@ function configureDropdown(doi, lang) {
         get_articles_dict().then(function(article_data) {
             for (let i = 0; i < all_langs.length; i++) {
                 if (doi == "index") {
-                    link = "/ProjectMundo-Anon/index/" + all_langs[i] + ".html";
+                    link = "/ProjectMundo-Anon-106A/index/" + all_langs[i] + ".html";
                     gen_entry(dropdown, link, all_langs[i], lang_data.codes[all_langs[i]]);
 
                 } else if (Object.keys(article_data[doi]['langs']).includes(all_langs[i])) {
                     // doi
-                    link = "/ProjectMundo-Anon/articles/" + doi + "/" + all_langs[i] + ".xml";
+                    link = "/ProjectMundo-Anon-106A/articles/" + doi + "/" + all_langs[i] + ".xml";
                     gen_entry(dropdown, link, all_langs[i], lang_data.codes[all_langs[i]]);
                 }
             }
@@ -60,7 +60,7 @@ function configureDropdown(doi, lang) {
     
     // Update the home link to correct language.
     let home = document.getElementById("home");
-    home.setAttribute("href", "/ProjectMundo-Anon/index/" + lang + ".html");
+    home.setAttribute("href", "/ProjectMundo-Anon-106A/index/" + lang + ".html");
 
     // Refresh the search event listener.
     document.getElementById("search-txt").addEventListener("keydown", function(event) {
@@ -85,7 +85,7 @@ function search() {
         for (let i = 0; i < keys.length; i++) {
             if (s == article_data[keys[i]]['meta']['doi']) {
                 found = true;
-                window.location.href = "/ProjectMundo-Anon/articles/" + keys[i] + "/eng.xml";
+                window.location.href = "/ProjectMundo-Anon-106A/articles/" + keys[i] + "/eng.xml";
             }
         }
 
