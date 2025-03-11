@@ -93,7 +93,7 @@ def update_index_files(langs):
             # line2 = f"<div class='line2'>DOI: {m['doi']}</div>"
             line2 = f"<div class='line2'>{m['authors']}</div>"
 
-            html_str = f"<div class='index-entry'><div class='entry-link'><a href='/ProjectMundo-Anon-106A/articles/{a}/{code}.xml'>{articles_dict[a]['langs'][code]}</a></div><div class='entry-meta'>{line1}{line2}</div></div>"
+            html_str = f"<div class='index-entry'><div class='entry-link'><a href='/w/ProjectMundo-Anon-106A/articles/{a}/{code}.xml'>{articles_dict[a]['langs'][code]}</a></div><div class='entry-meta'>{line1}{line2}</div></div>"
 
             _articles.append({date_score(m['date']): BeautifulSoup(html_str, features="html.parser")})
         
@@ -128,7 +128,7 @@ if __name__ == "__main__":
                 # with open(path, "r") as f:
                 #     data = BeautifulSoup(str(f.read()), features="xml")
 
-                # # new_xsl_el = BeautifulSoup(f"<?xml-stylesheet type='text/xsl' href='/ProjectMundo-Anon-106A/style/jats-html.xsl'?>", features="xml")
+                # # new_xsl_el = BeautifulSoup(f"<?xml-stylesheet type='text/xsl' href='/w/ProjectMundo-Anon-106A/style/jats-html.xsl'?>", features="xml")
                 # # data.contents[0].replace_with(new_xsl_el)
                 # change_graphic_dir(data)
                 print(d, l)
