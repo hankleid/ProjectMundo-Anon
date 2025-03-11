@@ -1,0 +1,502 @@
+{
+    "1": {
+        "question": "Apakah kelebihan utama analisis komponen utama kontras (cPCA) berbanding PCA standard?",
+        "options": {
+            "A": "Ia menggunakan pembelajaran diselia untuk meningkatkan ramalan.",
+            "B": "Ia secara automatik mengenal pasti unjuran yang paling menarik merentasi pelbagai set data.",
+            "C": "Ia memerlukan kuasa pengkomputeran yang kurang berbanding PCA.",
+            "D": "Ia menghapuskan keperluan untuk prapemprosesan data.",
+            "E": "Ia memperkenalkan teknik pengurangan dimensi bukan linear."
+        }
+    },
+    "2": {
+        "question": "Bagaimana cPCA membezakan dirinya daripada teknik visualisasi lain seperti t-SNE atau MDS?",
+        "options": {
+            "A": "Ia menumpukan pada penjanaan label untuk set data.",
+            "B": "Ia memvisualisasikan corak dari satu set data sambil mengabaikan yang lain.",
+            "C": "Ia membandingkan dua set data untuk mengenal pasti corak khusus set data.",
+            "D": "Ia memaparkan data ke dalam ruang dua dimensi tetap.",
+            "E": "Ia sentiasa memberikan hasil pembelajaran diselia."
+        }
+    },
+    "3": {
+        "question": "Mengapa PCA standard mungkin gagal untuk mendedahkan subjenis penting dalam data ekspresi gen seperti yang dibincangkan dalam artikel?",
+        "options": {
+            "A": "Ia menonjolkan subjenis kanser dengan keutamaan tertinggi.",
+            "B": "Komponen utama teratasnya menumpukan pada variasi demografi yang lebih luas.",
+            "C": "Ia tidak dapat memproses set data yang besar.",
+            "D": "Ia secara semula jadi menapis sebarang bunyi yang terdapat dalam data.",
+            "E": "Keperluan pengkomputerannya terlalu tinggi."
+        }
+    },
+    "4": {
+        "question": "Dalam konteks cPCA, apakah 'set data latar belakang'?",
+        "options": {
+            "A": "Set data yang mengandungi bunyi rawak untuk kontras.",
+            "B": "Set data yang mencerminkan set data sasaran dengan tepat.",
+            "C": "Set data yang tidak mempunyai corak khusus yang menarik yang terdapat dalam set data sasaran.",
+            "D": "Set data yang mengandungi semua corak sasaran yang mungkin.",
+            "E": "Set data yang digunakan terutamanya untuk pengesahan data dan ujian ketepatan."
+        }
+    },
+    "5": {
+        "question": "Apakah teknik pengkomputeran utama yang digunakan oleh cPCA untuk mencari arah kontras?",
+        "options": {
+            "A": "Penurunan kecerunan",
+            "B": "Penguraian nilai tunggal",
+            "C": "Penguraian nilai eigen perbezaan kovarians berwajaran",
+            "D": "Algoritma hutan rawak",
+            "E": "Pengelompokan K-means"
+        }
+    },
+    "6": {
+        "question": "Apakah yang dimaksudkan dengan 'kekuatan kontras α' dalam cPCA?",
+        "options": {
+            "A": "Nilai maksimum varians dalam data sasaran.",
+            "B": "Keseimbangan antara varians sasaran tinggi dan varians latar belakang rendah.",
+            "C": "Parameter tetap yang digunakan untuk mengelakkan overfitting.",
+            "D": "Kapasiti pengkomputeran yang diperlukan untuk memproses data.",
+            "E": "Nilai sewenang-wenangnya yang dipilih oleh pengguna."
+        }
+    },
+    "7": {
+        "question": "Apakah kepentingan vektor eigen yang diperoleh daripada matriks kovarians yang diubah suai dalam cPCA?",
+        "options": {
+            "A": "Mereka adalah ortogonal antara satu sama lain dan mewakili komponen utama kontras.",
+            "B": "Mereka sentiasa memaksimumkan varians dalam kedua-dua set data sasaran dan latar belakang.",
+            "C": "Mereka menyediakan diskriminan linear yang serupa dengan LDA.",
+            "D": "Mereka digunakan untuk mengklasifikasikan set data secara diselia.",
+            "E": "Mereka meminimumkan masa pengiraan yang diperlukan untuk pemprosesan data."
+        }
+    },
+    "8": {
+        "question": "Yang manakah berikut BUKAN kes penggunaan yang sesuai untuk cPCA seperti yang disebutkan dalam artikel?",
+        "options": {
+            "A": "Memvisualisasikan subjenis ekspresi gen dalam data kanser",
+            "B": "Mengenal pasti digit buatan tangan dalam imej yang bising",
+            "C": "Meneroka keturunan genetik dalam Mexico",
+            "D": "Meramalkan trend pasaran saham menggunakan penunjuk ekonomi",
+            "E": "Membezakan sampel sel sebelum dan selepas rawatan perubatan"
+        }
+    },
+    "9": {
+        "question": "Bagaimana cPCA mengendalikan set data besar secara pengkomputeran?",
+        "options": {
+            "A": "Ia mengurangkan dimensi menggunakan kaedah kernel untuk mengendalikan corak bukan linear.",
+            "B": "Ia memampatkan data menggunakan teknik pemampatan lossy.",
+            "C": "Ia menggunakan pendekatan pengelompokan hierarki sebelum analisis.",
+            "D": "Ia menggunakan rangkaian neural khusus untuk pengurangan ciri.",
+            "E": "Ia mengoptimumkan parameter kontras menggunakan kaedah dinamik."
+        }
+    },
+    "10": {
+        "question": "Menurut artikel, apakah hubungan antara cPCA dan ujian kepentingan statistik?",
+        "options": {
+            "A": "cPCA menyediakan kriteria pengesahan statistik segera.",
+            "B": "cPCA tidak menyediakan nilai p dan memerlukan analisis lanjut untuk pengesahan.",
+            "C": "cPCA secara semula jadi menghapuskan keperluan untuk ujian statistik.",
+            "D": "cPCA datang dengan mekanisme ujian hipotesis terbina dalam.",
+            "E": "cPCA menawarkan rangka kerja kebarangkalian untuk menguji kepentingan ciri."
+        }
+    },
+    "11": {
+        "question": "Apakah penambahbaikan yang ditawarkan oleh cPCA dalam memvisualisasikan data sel mononuklear sumsum tulang pra- dan pasca-transplantasi (BMMC)?",
+        "options": {
+            "A": "Ia mencampurkan sampel pra- dan pasca-transplantasi untuk visualisasi yang lebih jelas.",
+            "B": "Ia mengasingkan sampel pra-transplantasi sepenuhnya daripada analisis.",
+            "C": "Ia mendedahkan subruang yang jelas menyelaraskan banyak varians dengan perbezaan rawatan.",
+            "D": "Ia menghapuskan semua varians yang berkaitan dengan faktor khusus pesakit.",
+            "E": "Ia memudahkan set data kepada perwakilan satu dimensi."
+        }
+    },
+    "12": {
+        "question": "Dalam artikel, apakah yang diperhatikan apabila cPCA digunakan pada data genotip dari lima negeri Mexico?",
+        "options": {
+            "A": "Ia gagal menunjukkan sebarang corak yang dapat dilihat.",
+            "B": "Genotip negeri yang berbeza menunjukkan corak pewarnaan yang berbeza.",
+            "C": "Kumpulan keturunan memaparkan hubungan geografi yang lebih jelas.",
+            "D": "Varian Eropah dan Orang Asli Amerika hilang sepenuhnya.",
+            "E": "Data genotip dikelompokkan mengikut jantina dan bukannya lokasi."
+        }
+    },
+    "13": {
+        "question": "Apakah satu kelemahan berpotensi cPCA yang disebutkan dalam artikel?",
+        "options": {
+            "A": "Ia sangat bergantung pada pengetahuan domain lanjutan.",
+            "B": "Ia memerlukan sumber pengkomputeran yang jauh lebih banyak daripada PCA.",
+            "C": "Ia tidak secara automatik menggantikan kaedah pengurangan dimensi khusus yang sedia ada.",
+            "D": "Ia mempunyai kebolehgunaan terhad dengan hanya jenis set data tertentu.",
+            "E": "Ia tidak boleh digunakan untuk penerokaan data interaktif."
+        }
+    },
+    "14": {
+        "question": "Apakah set data yang dicadangkan sebagai latar belakang untuk analisis ekspresi gen menggunakan cPCA?",
+        "options": {
+            "A": "Set data dengan penyakit campuran untuk diuji.",
+            "B": "Set data serupa dengan sampel dari demografi yang berbeza.",
+            "C": "Data daripada pesakit yang sihat tanpa penanda penyakit.",
+            "D": "Kumpulan kawalan yang dijana secara rawak.",
+            "E": "Imej atau rakaman yang tidak berkaitan dari kajian yang berbeza."
+        }
+    },
+    "15": {
+        "question": "Apakah yang dicadangkan untuk memilih set data latar belakang agar cPCA berfungsi dengan berkesan?",
+        "options": {
+            "A": "Ia harus terdiri daripada data sintetik yang dijana dari taburan yang sama.",
+            "B": "Ia harus mempunyai varians yang serupa tetapi tidak menarik berbanding data sasaran.",
+            "C": "Ia mesti mempunyai struktur kovarians yang sama dengan set data sasaran.",
+            "D": "Ia harus merangkumi kedua-dua data sasaran dan bunyi rawak.",
+            "E": "Ia memerlukan bilangan sampel yang sama dengan set data sasaran."
+        }
+    },
+    "16": {
+        "question": "Dalam cara apakah cPCA cekap secara pengkomputeran menurut perbincangan dalam artikel?",
+        "options": {
+            "A": "Ia menggunakan algoritma pengiraan yang lebih pantas daripada PCA.",
+            "B": "Ia tidak mengira sebarang operasi matriks.",
+            "C": "Masa pengiraannya setanding dengan PCA standard.",
+            "D": "Ia mengelakkan langkah prapemprosesan data.",
+            "E": "Ia menggunakan rangka kerja pengkomputeran teragih."
+        }
+    },
+    "17": {
+        "question": "Apakah manfaat yang dicadangkan menggunakan cPCA dalam pengurangan dimensi berbanding kaedah diselia yang disebutkan dalam artikel?",
+        "options": {
+            "A": "cPCA memerlukan pelabelan awal yang mungkin diperlukan dalam pembelajaran diselia.",
+            "B": "cPCA mengelakkan bias yang diperkenalkan dari data latihan berlabel.",
+            "C": "cPCA secara langsung mengoptimumkan ketepatan klasifikasi.",
+            "D": "cPCA mengurangkan keperluan untuk algoritma pemilihan ciri.",
+            "E": "cPCA tidak terjejas oleh corak data bukan linear."
+        }
+    },
+    "18": {
+        "question": "Dalam artikel, kaedah manakah yang TIDAK disebutkan sebagai telah dibandingkan secara langsung dengan cPCA?",
+        "options": {
+            "A": "t-SNE",
+            "B": "Analisis Diskriminan Linear (LDA)",
+            "C": "Analisis Diskriminan Kuadratik (QDA)",
+            "D": "Penskalaan Pelbagai Dimensi (MDS)",
+            "E": "Pengejaran Komponen Utama"
+        }
+    },
+    "19": {
+        "question": "Bagaimana cPCA menyumbang kepada bidang pembelajaran tanpa pengawasan menurut artikel?",
+        "options": {
+            "A": "Dengan menyediakan rangka kerja untuk tugas klasifikasi tanpa pengawasan.",
+            "B": "Dengan menawarkan kaedah untuk meneroka data tanpa memerlukan set data berlabel.",
+            "C": "Dengan menjamin penumpuan dengan kadar pembelajaran yang ditentukan.",
+            "D": "Dengan memperkenalkan visualisasi dinamik dan interaktif.",
+            "E": "Dengan menyelaraskan matlamat pembelajaran dengan pandangan data diselia."
+        }
+    },
+    "20": {
+        "question": "Apakah sifat arah yang ditemui oleh cPCA yang membezakannya seperti yang dibincangkan dalam artikel?",
+        "options": {
+            "A": "Mereka memaksimumkan varians hanya dalam set data sasaran.",
+            "B": "Mereka mengurangkan dimensi melalui unjuran bukan linear.",
+            "C": "Mereka termasuk ciri yang sama sekali tidak berkaitan dengan variasi latar belakang.",
+            "D": "Mereka meningkatkan potensi klasifikasi ciri.",
+            "E": "Mereka memaksimumkan kontras varians antara set data sasaran dan latar belakang."
+        }
+    },
+    "21": {
+        "question": "Apakah kajian kes eksperimen yang digunakan untuk mengkaji keupayaan cPCA untuk menyelesaikan subpopulasi dalam konteks biologi?",
+        "options": {
+            "A": "Kepelbagaian genetik dalam ekosistem hutan",
+            "B": "Subjenis kanser dalam populasi yang pelbagai",
+            "C": "Ekspresi protein dalam tikus dengan pendedahan terapi kejutan",
+            "D": "Penjajahan habitat oleh spesies yang berbeza",
+            "E": "Penyelidikan Davids mengenai enzim makanan"
+        }
+    },
+    "22": {
+        "question": "Seperti yang diterangkan dalam artikel, mengapa tafsiran geometri penting untuk cPCA?",
+        "options": {
+            "A": "Ia membolehkan pengiraan ukuran kalkulus pembezaan.",
+            "B": "Ia memvisualisasikan kepentingan pertukaran varians antara set data.",
+            "C": "Ia membenarkan transformasi koordinat bebas daripada data.",
+            "D": "Ia melebihi sifat statistik dalam kuasa ramalan.",
+            "E": "Ia menyediakan antara muka pengguna grafik untuk kebolehgunaan yang lebih baik."
+        }
+    },
+    "23": {
+        "question": "Apakah ciri cPCA yang membolehkan penyiasatan ke arah dengan varians sasaran-latar belakang yang ketara?",
+        "options": {
+            "A": "Kekangan ortogonalitasnya pada vektor eigen terpilih.",
+            "B": "Penggunaan sempadan Pareto untuk mengenal pasti pasangan varians.",
+            "C": "Sekatan kontras dengan magnitud nilai eigen.",
+            "D": "Penyederhanaan poligonal ciri data.",
+            "E": "Bergantung pada nilai p untuk ujian kepentingan."
+        }
+    },
+    "24": {
+        "question": "Apakah yang disediakan oleh repositori GitHub tambahan seperti yang disebutkan dalam artikel?",
+        "options": {
+            "A": "Sokongan masa nyata untuk menjalankan eksperimen cPCA",
+            "B": "Set data yang digunakan dalam kertas penyelidikan dan skrip analisis tambahan",
+            "C": "Platform berasaskan web interaktif untuk visualisasi",
+            "D": "Model pembelajaran mesin yang dilatih untuk mengautomasikan penalaan parameter untuk cPCA",
+            "E": "Pakej statistik komprehensif untuk ujian hipotesis"
+        }
+    },
+    "25": {
+        "question": "Apakah yang menentukan 'arah paling kontras' dalam set data menurut artikel?",
+        "options": {
+            "A": "Arah yang mempunyai taburan varians seragam merentasi kedua-dua set data",
+            "B": "Arah yang memaksimumkan varians sasaran tanpa menghiraukan varians latar belakang",
+            "C": "Arah yang meminimumkan kedua-dua varians sasaran dan latar belakang secara sama rata",
+            "D": "Arah dengan varians sasaran yang lebih tinggi dan varians latar belakang yang lebih rendah",
+            "E": "Arah yang memaksimumkan hasil darab varians sasaran dan latar belakang"
+        }
+    },
+    "26": {
+        "question": "Apakah hasil utama daripada menggunakan cPCA pada set data digit tulisan tangan sintetik seperti yang dibincangkan dalam artikel?",
+        "options": {
+            "A": "PCA sepenuhnya memisahkan imej berdasarkan jenis digit.",
+            "B": "cPCA menonjolkan bunyi latar belakang lebih daripada ciri digit.",
+            "C": "cPCA memisahkan imej pada digit, mengatasi bunyi latar belakang.",
+            "D": "cPCA gagal membezakan digit tulisan tangan lebih baik daripada PCA.",
+            "E": "Set data sintetik dikurangkan kepada satu komponen utama."
+        }
+    },
+    "27": {
+        "question": "Menurut artikel, mengapa PCA secara amnya tidak mencukupi untuk analisis keturunan terperinci dalam Mexico?",
+        "options": {
+            "A": "PCA secara semula jadi memihak kepada hasil berdasarkan ralat pensampelan.",
+            "B": "Komponen utamanya biasanya hanya menangkap isyarat keturunan global yang lebih luas.",
+            "C": "PCA tidak dapat mengendalikan pemprosesan data genetik berskala besar.",
+            "D": "PCA cenderung mengelirukan corak dalam set data dengan pembolehubah persekitaran.",
+            "E": "PCA menggabungkan semua variasi serantau ke dalam satu dimensi."
+        }
+    },
+    "28": {
+        "question": "Apakah pencapaian utama cPCA dalam visualisasi keturunan genetik seperti yang dinyatakan dalam artikel?",
+        "options": {
+            "A": "Ia gagal mengenal pasti sebarang corak keturunan serantau yang ketara.",
+            "B": "cPCA dapat memvisualisasikan dan mengelompokkan variasi genetik yang berkaitan dengan keturunan geografi dengan jelas.",
+            "C": "Ia mengabaikan variasi penting dalam pasangan asas.",
+            "D": "Ia tidak dapat mengakui pengaruh keturunan.",
+            "E": "Ia mendedahkan varians yang sama merentasi populasi."
+        }
+    },
+    "29": {
+        "question": "Bagaimana cPCA secara khusus memberi manfaat kepada senario penerokaan data interaktif, menurut artikel?",
+        "options": {
+            "A": "Dengan menyediakan platform visualisasi berasaskan sentuhan.",
+            "B": "Dengan memastikan masa pengiraan segera untuk maklum balas interaktif.",
+            "C": "Dengan menawarkan penstriman langsung hasil pengiraan.",
+            "D": "Dengan memerlukan input minimum daripada penganalisis semasa iterasi.",
+            "E": "Dengan menjalankan pengoptimuman dalam persekitaran pengkomputeran selari."
+        }
+    },
+    "30": {
+        "question": "Dalam ujian data ekspresi protein dari tikus yang terkejut, apakah yang dicapai oleh cPCA berbanding PCA?",
+        "options": {
+            "A": "Mengenal pasti subkumpulan tikus dengan ketahanan yang berbeza.",
+            "B": "Mengelompokkan tikus berdasarkan umur kronologi.",
+            "C": "Memisahkan tikus dengan dan tanpa Sindrom Down dengan berkesan.",
+            "D": "Menggambarkan keutamaan kulinari di kalangan tikus.",
+            "E": "Menggambarkan pengelompokan berdasarkan jantina dengan resolusi yang lebih tinggi."
+        }
+    },
+    "31": {
+        "question": "Dari segi keperluan set data, apakah yang tidak perlu untuk set data latar belakang dan sasaran dalam cPCA?",
+        "options": {
+            "A": "Bilangan sampel yang sama",
+            "B": "Struktur kovarians yang serupa untuk kontras yang berkesan",
+            "C": "Matlamat varians sasaran yang ditakrifkan dengan jelas",
+            "D": "Saiz sampel yang setanding untuk ketepatan statistik",
+            "E": "Perwakilan seimbang semua elemen varians sepanjang data"
+        }
+    },
+    "32": {
+        "question": "Apakah tujuan menggunakan parameter kontras α semasa pelaksanaan cPCA?",
+        "options": {
+            "A": "Untuk menentukan laluan yang telah ditetapkan untuk pemeriksaan data",
+            "B": "Untuk mengoptimumkan pertukaran antara varians dalam sasaran dan latar belakang",
+            "C": "Untuk memilih hanya varians yang memberi kesan kepada aspek temporal",
+            "D": "Untuk menjamin masa pengiraan yang rendah untuk penggunaan data masa nyata",
+            "E": "Untuk menetapkan had dimensi tetap untuk analisis"
+        }
+    },
+    "33": {
+        "question": "Bagaimana cPCA mengendalikan ciri yang berkaitan dengan trend khusus sasaran menurut artikel?",
+        "options": {
+            "A": "Dengan menggunakan penapis pemilihan ciri yang ketat",
+            "B": "Dengan menggabungkan varians khusus sasaran dengan bunyi sejagat",
+            "C": "Dengan mengasingkan taburan varians asimetrik yang tidak terdapat dalam latar belakang",
+            "D": "Melalui pembelajaran rangkaian neural konvolusi untuk ramalan trend",
+            "E": "Dengan menggunakan kaedah pembelajaran diselia tradisional untuk pengurangan"
+        }
+    },
+    "34": {
+        "question": "Apakah kesan yang dijangkakan cPCA dalam tugas pengurangan dimensi seperti yang dinyatakan dalam artikel?",
+        "options": {
+            "A": "cPCA akhirnya akan digantikan oleh kaedah diselia semata-mata.",
+            "B": "Ia membolehkan pengenalan corak set data yang diperkaya dengan cekap dan cepat.",
+            "C": "cPCA akan gagal mengendalikan sebarang saiz set data yang lebih besar daripada aplikasi PCA semasa.",
+            "D": "cPCA boleh menjadi berlebihan kerana peningkatan perkakasan masa depan.",
+            "E": "Ia menyediakan kerumitan yang berlebihan yang tidak perlu untuk set data kecil."
+        }
+    },
+    "35": {
+        "question": "Bagaimana cPCA menyumbang kepada ketepatan yang lebih besar dalam mengenal pasti kluster genetik, seperti yang dibincangkan dalam artikel?",
+        "options": {
+            "A": "Dengan menguatkan bunyi sedia ada dalam isyarat genetik",
+            "B": "Dengan menumpukan hanya pada ekspresi gen tunggal",
+            "C": "Dengan berjaya mengasingkan variasi intra-kumpulan melalui pengenalan corak yang dipertingkatkan",
+            "D": "Dengan memperkenalkan mutasi genetik dalam data pensampelan",
+            "E": "Dengan mengeluarkan konteks selular daripada analisis data genetik"
+        }
+    },
+    "36": {
+        "question": "Apakah aplikasi berpotensi cPCA yang digambarkan dalam memvisualisasikan hubungan antara subpopulasi?",
+        "options": {
+            "A": "Menentukan keutamaan diet dalam populasi",
+            "B": "Menentukan tekanan persekitaran yang unik",
+            "C": "Memvisualisasikan hubungan subkelas yang diketahui untuk pemetaan genetik",
+            "D": "Menonjolkan corak taburan seragam merentasi geografi",
+            "E": "Mengenali corak global tanpa nuansa serantau"
+        }
+    },
+    "37": {
+        "question": "Bagaimana cPCA melaraskan arah utama analisisnya berdasarkan nilai α yang berbeza?",
+        "options": {
+            "A": "Dengan menetapkan semua arah sebagai komponen utama",
+            "B": "Dengan mengenal pasti arah dengan varians gabungan yang dimaksimumkan",
+            "C": "Dengan beralih secara lancar dari varians eksklusif sasaran ke varians eksklusif latar belakang",
+            "D": "Dengan bergantung pada pertimbangan heuristik luaran",
+            "E": "Dengan set hasil tetap tanpa mengira α"
+        }
+    },
+    "38": {
+        "question": "Apakah yang didedahkan oleh kajian kes tentang keturunan Mexico mengenai aplikasi cPCA?",
+        "options": {
+            "A": "Ia menunjukkan bahawa PCA boleh mencapai hasil yang sama dengan kerumitan yang kurang.",
+            "B": "Ia berkesan menonjolkan variasi serantau dalam data genetik lebih baik daripada PCA.",
+            "C": "Ia mendedahkan bahawa penanda genetik yang mendasari sentiasa sejajar secara benua.",
+            "D": "Ia mengukuhkan pemisahan geografi tanpa memerlukan algoritma yang lebih kompleks.",
+            "E": "Ia menunjukkan had cPCA di kawasan yang jarang penduduk."
+        }
+    },
+    "39": {
+        "question": "Bagaimana cPCA mengendalikan jenis input data yang berbeza merentasi pelbagai disiplin, menurut artikel?",
+        "options": {
+            "A": "Dengan menyatukan satu kaedah untuk semua senario analisis tanpa variasi",
+            "B": "Dengan menawarkan rangka kerja serba boleh yang boleh disesuaikan merentasi penyiasatan",
+            "C": "Dengan memerlukan algoritma khusus untuk setiap ciri set data individu",
+            "D": "Dengan mengintegrasikan pembelajaran mesin untuk mengenal pasti kaedah yang boleh disesuaikan",
+            "E": "Dengan menyeragamkan output agar sesuai dengan model analisis biasa"
+        }
+    },
+    "40": {
+        "question": "Ciri manakah set data latar belakang yang kritikal untuk keberkesanan cPCA?",
+        "options": {
+            "A": "Pengumpulan mereka dari repositori yang tersedia secara umum",
+            "B": "Keupayaan mereka untuk mencerminkan varians sasaran sepenuhnya",
+            "C": "Variabiliti struktur mereka tidak bersilang dengan fokus sasaran",
+            "D": "Fokus mereka pada taburan demografi yang sama sekali berbeza",
+            "E": "Bunyi minimum mereka merentasi semua sampel latar belakang"
+        }
+    },
+    "41": {
+        "question": "Apabila cPCA digunakan pada data pesakit leukemia, apakah hasil yang diperhatikan?",
+        "options": {
+            "A": "Tiada perbezaan yang dapat dilihat dikesan antara sampel.",
+            "B": "Subpopulasi yang sama kelihatan lebih besar daripada yang dijangkakan.",
+            "C": "Terdapat pemisahan sampel pra- dan pasca-transplantasi yang berjaya.",
+            "D": "Subpopulasi bergabung pada taburan rawak.",
+            "E": "Variasi pra-transplantasi mengatasi ciri pasca-transplantasi."
+        }
+    },
+    "42": {
+        "question": "Apakah kepentingan vektor eigen dalam pengiraan cPCA?",
+        "options": {
+            "A": "Mereka tidak terpakai untuk pengiraan sedemikian.",
+            "B": "Mereka hanya digunakan sebahagiannya, dengan kebanyakan fokus pada perbezaan skalar.",
+            "C": "Mereka membentuk komponen utama kontras yang mewakili arah utama.",
+            "D": "Mereka mengira varians bunyi dan bukannya varians sasaran.",
+            "E": "Mereka menyediakan faktor penskalaan linear untuk integriti set data."
+        }
+    },
+    "43": {
+        "question": "Dari segi aplikasi praktikal, apakah ciri utama cPCA menurut artikel?",
+        "options": {
+            "A": "Ia sesuai untuk julat sempit set data biologi sahaja.",
+            "B": "Ia tidak boleh digunakan sehingga data berlabel tersedia.",
+            "C": "Kesediaannya untuk menonjolkan trend unik merentasi set data sewenang-wenangnya.",
+            "D": "Kebergantungannya pada perubahan demografi peringkat populasi.",
+            "E": "Jambatan asasnya antara set data yang tidak berkaitan terutamanya."
+        }
+    },
+    "44": {
+        "question": "Mengapa penyelidik mungkin menukar set data latar belakang secara bebas antara jenis dalam kajian cPCA?",
+        "options": {
+            "A": "Untuk mencapai varians set data yang lebih tinggi dan ketepatan hasil.",
+            "B": "Untuk sengaja mendorong kesilapan dan menguji kekuatan algoritma.",
+            "C": "Untuk membezakan kovarians bunyi yang berbeza secara semula jadi terhadap sasaran",
+            "D": "Untuk membandingkan persamaan eksperimen secara langsung.",
+            "E": "Untuk memastikan integriti data yang konsisten dengan konsistensi pertukaran."
+        }
+    },
+    "45": {
+        "question": "Apakah kelebihan metodologi yang ditawarkan oleh cPCA berbanding PCA dalam senario dengan pelbagai keadaan?",
+        "options": {
+            "A": "Mekanisme dipermudahkan dengan menganggap semua input sebagai penyumbang yang sama.",
+            "B": "Pertimbangan tanpa memerlukan set data yang dipautkan merentasi sumber.",
+            "C": "Pengelompokan spektrum bersepadu apabila berurusan dengan persamaan varians.",
+            "D": "Mekanisme yang membenarkan perbandingan varians intra-set data selari.",
+            "E": "Keupayaan untuk mengenal pasti varians antara keadaan secara automatik."
+        }
+    },
+    "46": {
+        "question": "Apakah perbezaan utama yang berlaku apabila memilih nilai α yang tinggi semasa cPCA?",
+        "options": {
+            "A": "Ia mengabaikan ciri khusus sasaran dengan ketara.",
+            "B": "Ia memaksa perhatian kepada kawasan dengan varians sasaran maksimum sahaja.",
+            "C": "Ia semakin menekankan kawasan dengan varians latar belakang yang rendah.",
+            "D": "Ia mencetuskan kesilapan dalam mengurangkan ruang dimensi.",
+            "E": "Ia mengelakkan sebarang peningkatan kuadratik dalam dimensi data."
+        }
+    },
+    "47": {
+        "question": "Menurut artikel, dalam aspek manakah algoritma khusus mungkin mengatasi cPCA?",
+        "options": {
+            "A": "Dalam menggeneralisasikan merentasi domain yang berbeza dengan penyesuaian minimum",
+            "B": "Dalam menjadi lebih mudah untuk dilaksanakan dan kurang mahal dari segi pengkomputeran",
+            "C": "Dalam mengatasi cPCA untuk tugas yang sangat khusus domain",
+            "D": "Dalam membenarkan pengurangan dimensi dinamik",
+            "E": "Dalam menyediakan hasil segera tanpa prapemprosesan"
+        }
+    },
+    "48": {
+        "question": "Apakah langkah pengkomputeran yang digunakan terutamanya untuk mencapai kecekapan cPCA?",
+        "options": {
+            "A": "Pemprosesan selari menggunakan kluster GPU",
+            "B": "Pengkomputeran berprestasi tinggi dengan iterasi matriks tunggal",
+            "C": "Penguraian nilai eigen matriks kovarians berwajaran",
+            "D": "Teknik transformasi perspektif beralun",
+            "E": "Pembelajaran mesin melalui rangkaian neural konvolusi"
+        }
+    },
+    "49": {
+        "question": "Senario manakah yang paling tidak sesuai untuk memperoleh corak baharu dengan cPCA?",
+        "options": {
+            "A": "Menganalisis fasa percubaan perubatan berlabel",
+            "B": "Membezakan variasi pra- dan pasca-eksperimen",
+            "C": "Menyiasat kepelbagaian keturunan dalam zon ekologi",
+            "D": "Memvisualisasikan corak audio dalam rakaman",
+            "E": "Memberi tumpuan khusus kepada varians sel selepas rawatan"
+        }
+    },
+    "50": {
+        "question": "Apakah hubungan antara α dan pengenalan cPC dalam cPCA?",
+        "options": {
+            "A": "Nilai α yang lebih rendah secara ketat meningkatkan kepekaan bunyi latar belakang",
+            "B": "Pilihan α secara tidak langsung memutuskan fokus dimensi PCA standard",
+            "C": "Menukar α secara berkesan memilih subset arah yang paling kontras",
+            "D": "Mengubah α mempunyai pengaruh yang minimum terhadap hasil algoritma",
+            "E": "α secara langsung menskalakan pemetaan warna dalam visualisasi hasil"
+        }
+    }
+}

@@ -1,0 +1,502 @@
+{
+    "1": {
+        "question": "Quel est l'objectif principal de l'analyse en composantes principales contrastives (cPCA) tel que présenté dans l'article ?",
+        "options": {
+            "A": "Effectuer des transformations linéaires qui maximisent la variance du jeu de données.",
+            "B": "Identifier des structures de faible dimension enrichies dans un jeu de données par rapport à un jeu de données de comparaison.",
+            "C": "Appliquer des projections de données non linéaires pour une meilleure reconnaissance des motifs.",
+            "D": "Remplacer entièrement la PCA dans toutes les applications actuelles.",
+            "E": "Automatiser la classification des données pour les tâches d'apprentissage supervisé."
+        }
+    },
+    "2": {
+        "question": "Selon l'article, quelle est une limitation de la PCA traditionnelle lorsqu'il s'agit de traiter plusieurs jeux de données ?",
+        "options": {
+            "A": "La PCA ne peut être utilisée que sur des données numériques.",
+            "B": "La PCA est intensivement computationnelle et lente.",
+            "C": "La PCA ne permet pas la comparaison directe de différents jeux de données.",
+            "D": "La PCA nécessite de grands jeux de données pour fonctionner efficacement.",
+            "E": "La PCA génère trop de composantes principales."
+        }
+    },
+    "3": {
+        "question": "Comment la cPCA détermine-t-elle les directions d'intérêt pour la projection des données ?",
+        "options": {
+            "A": "En trouvant les vecteurs propres de la somme des matrices de covariance de deux jeux de données.",
+            "B": "En considérant les vecteurs propres de la matrice de covariance dérivée directement du jeu de données cible.",
+            "C": "En calculant la variance à travers la combinaison des jeux de données cible et de fond.",
+            "D": "En calculant les vecteurs singuliers de la différence pondérée des matrices de covariance des jeux de données cible et de fond.",
+            "E": "En utilisant un ensemble arbitraire de directions prédéfini par l'utilisateur."
+        }
+    },
+    "4": {
+        "question": "Quel rôle joue le paramètre de contraste \u03b1 dans la méthode cPCA ?",
+        "options": {
+            "A": "Il détermine l'échelle du calcul de la variance de la PCA.",
+            "B": "Il quantifie le compromis entre une variance cible élevée et une faible variance de fond.",
+            "C": "Il établit le nombre de composantes principales à extraire.",
+            "D": "Il contrôle la vitesse de l'algorithme cPCA.",
+            "E": "Il dicte le processus de normalisation pour les jeux de données."
+        }
+    },
+    "5": {
+        "question": "Dans le contexte de l'article, quel est le principal avantage de l'utilisation de la cPCA par rapport à la PCA traditionnelle pour les données d'expression génique des patients atteints de cancer ?",
+        "options": {
+            "A": "Elle affine les données pour une meilleure intégration avec les modèles d'apprentissage supervisé.",
+            "B": "Elle se concentre sur les variations génétiques dues aux sous-types de cancers, plutôt que sur les variations démographiques.",
+            "C": "Elle élimine le besoin de prétraitement des niveaux d'expression génique bruts.",
+            "D": "Elle automatise l'identification de tous les sous-types de cancer possibles.",
+            "E": "Elle améliore considérablement la vitesse d'analyse pour les grands jeux de données."
+        }
+    },
+    "6": {
+        "question": "Quel résultat expérimental a été noté lorsque la cPCA a été appliquée à des images synthétiques de chiffres manuscrits superposées sur des arrière-plans complexes ?",
+        "options": {
+            "A": "Aucun cluster distinct n'a été identifié.",
+            "B": "Les caractéristiques de l'arrière-plan ont été plus mises en évidence que les caractéristiques des chiffres.",
+            "C": "Deux clusters distincts correspondant aux différents chiffres ont émergé.",
+            "D": "Un bruit significatif a été introduit, obscurcissant les motifs principaux.",
+            "E": "Les images synthétiques ont été parfaitement séparées de leurs arrière-plans."
+        }
+    },
+    "7": {
+        "question": "Laquelle des affirmations suivantes concernant la cPCA l'article met-il en avant ?",
+        "options": {
+            "A": "C'est principalement une méthode d'apprentissage supervisé pour la classification des jeux de données.",
+            "B": "Elle remplace les algorithmes spécialisés pour des jeux de données spécifiques à travers les domaines.",
+            "C": "Elle permet une interprétation géométrique à travers ses composantes principales contrastives.",
+            "D": "Elle nécessite une connaissance significative du domaine pour son application.",
+            "E": "Elle augmente la complexité des jeux de données plutôt que de la réduire."
+        }
+    },
+    "8": {
+        "question": "Comment la cPCA vise-t-elle à découvrir des sous-groupes plus significatifs au sein des jeux de données biologiques par rapport à la PCA traditionnelle ?",
+        "options": {
+            "A": "En ignorant complètement les variations démographiques.",
+            "B": "En renforçant la proéminence des variations universelles communes.",
+            "C": "En annulant la variation universelle mais inintéressante à l'aide d'un jeu de données de fond.",
+            "D": "En amplifiant les signaux principaux sans jeux de données de référence.",
+            "E": "En se concentrant uniquement sur les valeurs moyennes des jeux de données."
+        }
+    },
+    "9": {
+        "question": "Dans l'étude donnée, comment la cPCA a-t-elle surpassé d'autres techniques de réduction de dimensionnalité dans le jeu de données d'expression protéique du syndrome de Down ?",
+        "options": {
+            "A": "En identifiant le groupe d'âge spécifique avec l'expression protéique la plus élevée.",
+            "B": "En séparant efficacement les souris choquées en celles avec et sans syndrome de Down.",
+            "C": "En générant plus de composantes que nécessaire pour la classification.",
+            "D": "En déterminant les caractéristiques de genre les plus proéminentes.",
+            "E": "En réduisant les données à une représentation à une seule variable."
+        }
+    },
+    "10": {
+        "question": "Que suggère l'article à propos du choix du jeu de données de fond pour la cPCA ?",
+        "options": {
+            "A": "Il devrait avoir une variance minimale pour ne pas affecter la projection des données cibles.",
+            "B": "Il devrait être aléatoire pour garantir une approche impartiale.",
+            "C": "Il devrait contenir la structure que nous visons à éliminer des données cibles.",
+            "D": "Il doit correspondre précisément à la structure de covariance avec le jeu de données cible.",
+            "E": "Il devrait toujours être de la même taille que le jeu de données cible."
+        }
+    },
+    "11": {
+        "question": "Pour quels scénarios l'article recommande-t-il d'utiliser la cPCA ?",
+        "options": {
+            "A": "Tâches de classification supervisée avec des jeux de données bien étiquetés.",
+            "B": "Tâches exploratoires où la PCA est utilisée sur des jeux de données connexes.",
+            "C": "Scénarios où aucune différence significative de jeu de données n'est attendue.",
+            "D": "Projets de modélisation purement théoriques.",
+            "E": "Améliorations de modèles de régression linéaire."
+        }
+    },
+    "12": {
+        "question": "Quel type de visualisation est produit par la cPCA lors de l'analyse des données génétiques des populations mexicaines ?",
+        "options": {
+            "A": "Des motifs visuels uniformément distribués sans structure discernable.",
+            "B": "Des cartes qui reflètent principalement la proportion d'ascendance européenne.",
+            "C": "Des clusters clairs qui correspondent aux origines géographiques au sein du Mexique.",
+            "D": "Des chevauchements confus sans signification apparente.",
+            "E": "Des représentations linéaires simples de la variance génétique."
+        }
+    },
+    "13": {
+        "question": "Quelle caractéristique algorithmique de la cPCA la distingue des méthodes comme LDA et QUADRO selon l'article ?",
+        "options": {
+            "A": "Sa capacité à intégrer des informations de plusieurs jeux de données.",
+            "B": "Son efficacité à exécuter des calculs parallèles.",
+            "C": "Sa nature non supervisée se concentrant sur les motifs spécifiques au jeu de données sans classification.",
+            "D": "Sa dépendance aux données étiquetées pour une performance optimale.",
+            "E": "Son besoin d'ajustements de paramètres spécifiques au domaine."
+        }
+    },
+    "14": {
+        "question": "Dans l'exemple du jeu de données de patients atteints de leucémie, qu'a-t-on observé lorsque la cPCA a été utilisée par rapport à la PCA ?",
+        "options": {
+            "A": "La PCA a fourni une séparation plus claire des échantillons pré- et post-transplantation.",
+            "B": "La cPCA n'a pas pu séparer efficacement les échantillons.",
+            "C": "Les variations d'échantillons au sein des patients ont été minimisées dans les résultats de la cPCA.",
+            "D": "La cPCA a montré une séparation plus forte des sous-populations.",
+            "E": "Il n'y avait pas de différence discernable entre les sorties de la PCA et de la cPCA."
+        }
+    },
+    "15": {
+        "question": "Quel avantage computationnel la cPCA offre-t-elle selon l'article ?",
+        "options": {
+            "A": "Réduction du nombre de vecteurs propres calculés.",
+            "B": "Significativement plus rapide que d'autres méthodes de réduction de dimensionnalité.",
+            "C": "Efficacité computationnelle similaire à la PCA régulière.",
+            "D": "Réduit le besoin computationnel pour la normalisation des données.",
+            "E": "Élimine le besoin de prétraitement supplémentaire des données."
+        }
+    },
+    "16": {
+        "question": "Quel est le but principal de sélectionner différentes valeurs de \u03b1 lors de l'utilisation de la cPCA ?",
+        "options": {
+            "A": "Assurer une distribution uniforme des points de données à travers les dimensions.",
+            "B": "Explorer diverses tendances de données en projetant sur différents sous-espaces.",
+            "C": "Optimiser la vitesse de calcul de l'algorithme.",
+            "D": "Garantir la maximisation de la variance dans les deux jeux de données.",
+            "E": "Standardiser les jeux de données avant l'analyse."
+        }
+    },
+    "17": {
+        "question": "Pourquoi la structure du jeu de données de fond est-elle significative dans l'analyse cPCA ?",
+        "options": {
+            "A": "Elle influence la variance capturée dans le sous-espace des données cibles.",
+            "B": "Elle améliore directement les caractéristiques d'intérêt dans le jeu de données cible.",
+            "C": "Elle détermine le nombre de composantes principales extraites.",
+            "D": "Elle s'aligne automatiquement avec la matrice de covariance du jeu de données cible.",
+            "E": "Elle standardise les calculs de vecteurs propres."
+        }
+    },
+    "18": {
+        "question": "Quel facteur n'est PAS typiquement considéré lors du choix d'un jeu de données de fond pour la cPCA, selon l'article ?",
+        "options": {
+            "A": "Il devrait contraster fortement avec les composants liés au bruit dans les données cibles.",
+            "B": "Il nécessite une correspondance exacte un-à-un avec les échantillons du jeu de données cible.",
+            "C": "Il bénéficie d'une structure similaire à la variation indésirable dans les données cibles.",
+            "D": "Il devrait capturer la variation systématique indésirable pour l'élimination.",
+            "E": "Il peut différer en nombre d'échantillons par rapport au jeu de données cible."
+        }
+    },
+    "19": {
+        "question": "Comment la cPCA améliore-t-elle l'analyse exploratoire des données ?",
+        "options": {
+            "A": "En automatisant les processus de classification et d'étiquetage des données.",
+            "B": "En affinant la sélection des caractéristiques basée sur la variance spécifique à la cible.",
+            "C": "En prédisant les tendances futures des données à partir des données historiques.",
+            "D": "En se concentrant exclusivement sur la diminution de la dimensionnalité des jeux de données.",
+            "E": "En produisant des valeurs p pour la signification statistique."
+        }
+    },
+    "20": {
+        "question": "Quel type de jeux de données bénéficie le plus de la cPCA, comme discuté dans l'article ?",
+        "options": {
+            "A": "Jeux de données avec des points de données étiquetés significatifs.",
+            "B": "Jeux de données nécessitant une détection précise des valeurs aberrantes.",
+            "C": "Jeux de données avec des classifications préalables bien définies.",
+            "D": "Jeux de données avec des variations temporelles ou spatiales qui se chevauchent.",
+            "E": "Jeux de données avec des limites existantes claires."
+        }
+    },
+    "21": {
+        "question": "Quelle limitation de la PCA traditionnelle dans la découverte de sous-classes est abordée par la cPCA ?",
+        "options": {
+            "A": "Elle détecte principalement des étiquettes au lieu de motifs continus.",
+            "B": "Elle se concentre sur les structures les plus larges plutôt que les plus fines.",
+            "C": "Elle standardise toutes les variations, rendant les valeurs aberrantes plus proéminentes.",
+            "D": "Elle manque de fondements théoriques pour l'analyse des données biologiques.",
+            "E": "Elle ne fournit pas de réplication exacte des propriétés du jeu de données."
+        }
+    },
+    "22": {
+        "question": "Que suggère l'article à propos du paramètre de contraste \u03b1 dans l'implémentation de la cPCA ?",
+        "options": {
+            "A": "Un \u03b1 fixe est toujours recommandé pour tous les jeux de données.",
+            "B": "Les valeurs de \u03b1 générées automatiquement suffisent souvent pour de nombreuses applications.",
+            "C": "Un \u03b1 plus petit est préféré pour tous les jeux de données pour une variance optimale.",
+            "D": "Un ajustement manuel est obligatoire pour des résultats significatifs.",
+            "E": "Augmenter \u03b1 améliore linéairement la sélectivité du contraste."
+        }
+    },
+    "23": {
+        "question": "Quelle est une application courante de la cPCA comme déduit de l'article ?",
+        "options": {
+            "A": "Concevoir des structures d'apprentissage supervisé complexes.",
+            "B": "Analyser efficacement des données de séries temporelles statiques.",
+            "C": "Découvrir des contrastes dans les jeux de données à travers diverses conditions.",
+            "D": "Remplacer toutes les techniques de réduction de dimensionnalité.",
+            "E": "Initier la fragmentation des jeux de données pour le traitement par lots."
+        }
+    },
+    "24": {
+        "question": "Comment la méthode de la cPCA se rapporte-t-elle au concept de frontière de Pareto mentionné dans l'article ?",
+        "options": {
+            "A": "La cPCA construit diverses frontières de Pareto pour différents jeux de données.",
+            "B": "Elle sélectionne des directions correspondant à la limite inférieure droite des paires de variance.",
+            "C": "La frontière de Pareto aide à étendre la couverture dimensionnelle de la cPCA.",
+            "D": "Elle initialise la PCA avec un accent sur les directions basées sur le principe de Pareto.",
+            "E": "La frontière de Pareto est sans rapport avec les implémentations de la cPCA."
+        }
+    },
+    "25": {
+        "question": "Qu'a révélé l'application de la cPCA dans les expériences avec des données RNA-Seq de cellules uniques ?",
+        "options": {
+            "A": "La cPCA a diminué les différences entre divers échantillons d'ARN.",
+            "B": "Aucun motif significatif ne pouvait être tiré des projections de la cPCA.",
+            "C": "Séparation significative entre les échantillons pré- et post-transplantation.",
+            "D": "Séquences d'ARN homogènes malgré des traitements variés.",
+            "E": "Plus de bruit introduit dans les données expérimentales."
+        }
+    },
+    "26": {
+        "question": "Quel facteur influence principalement les directions optimales pour l'analyse contrastive dans la cPCA ?",
+        "options": {
+            "A": "La taille du jeu de données cible uniquement.",
+            "B": "La variance de fond par rapport à la variance cible.",
+            "C": "La cohérence de la variance universelle à travers les jeux de données.",
+            "D": "La linéarité des structures de covariance.",
+            "E": "Le nombre de composantes dans le jeu de données."
+        }
+    },
+    "27": {
+        "question": "Dans l'exemple discutant des données génétiques du Mexique, comment l'article suggère-t-il de gérer la variation universelle ?",
+        "options": {
+            "A": "Élaguer tous les SNP avant l'analyse.",
+            "B": "Appliquer la PCA comme si l'on traitait un grand jeu de données unique.",
+            "C": "Utiliser la cPCA avec un jeu de données de fond plus large pour se concentrer sur la variation intra-mexicaine.",
+            "D": "Sélectionner uniquement un sous-ensemble d'échantillons au hasard.",
+            "E": "Ignorer complètement les variations universelles pour simplification."
+        }
+    },
+    "28": {
+        "question": "Quel avantage la cPCA détient-elle en termes d'efficacité computationnelle, comme souligné dans l'article ?",
+        "options": {
+            "A": "Elle nécessite plus de temps que la PCA standard mais fournit de meilleurs résultats.",
+            "B": "Elle offre une refonte algorithmique complète par rapport à la PCA.",
+            "C": "Elle nécessite essentiellement le même effort computationnel que la PCA.",
+            "D": "Elle réduit la dimensionnalité plus rapidement avec moins d'itérations.",
+            "E": "Elle parallélise automatiquement le processus d'analyse des données."
+        }
+    },
+    "29": {
+        "question": "Lequel des scénarios suivants n'est PAS suggéré comme un fond contrastant pour la cPCA ?",
+        "options": {
+            "A": "Utiliser les données du groupe de contrôle contre les sujets malades.",
+            "B": "Contraster des images d'architecture historique et moderne.",
+            "C": "Données à un point de temps initial par rapport à un point de temps final.",
+            "D": "Population homogène contre un mélange diversifié.",
+            "E": "Données pré-traitement opposées aux données post-traitement."
+        }
+    },
+    "30": {
+        "question": "Que l'article affirme-t-il à propos de l'utilisation de la cPCA dans la découverte de sous-classes ?",
+        "options": {
+            "A": "Les sous-classes ne peuvent être détectées que lorsqu'elles sont pré-étiquetées.",
+            "B": "Elle est efficace même lorsque les sous-classes ne sont pas étiquetées a priori.",
+            "C": "La PCA est généralement préférée pour la découverte par rapport à la cPCA.",
+            "D": "Utile uniquement dans des scénarios de jeux de données étroitement regroupés.",
+            "E": "Nécessite une sélection explicite des caractéristiques pour être efficace."
+        }
+    },
+    "31": {
+        "question": "Comment la cPCA entend-elle gérer le bruit au sein du jeu de données selon l'article ?",
+        "options": {
+            "A": "Ignorer par défaut tous les composants bruyants.",
+            "B": "Amplifier le bruit pour mieux mettre en évidence les caractéristiques principales.",
+            "C": "Annuler le bruit à l'aide d'enregistrements de fond sans signal.",
+            "D": "Intégrer le bruit comme partie de la matrice de covariance.",
+            "E": "Filtrer le bruit à travers des ajustements d'apprentissage supervisé."
+        }
+    },
+    "32": {
+        "question": "Quelle étape est nécessaire pour calculer les directions contrastives dans la cPCA ?",
+        "options": {
+            "A": "Extraire les valeurs centrées sur la moyenne des jeux de données.",
+            "B": "Définir une matrice de contraste à partir de la différence de matrice de covariance.",
+            "C": "Randomiser les échantillons du jeu de données avant l'analyse.",
+            "D": "S'assurer que les jeux de données ont des tailles d'échantillons identiques.",
+            "E": "Aligner tous les composants du jeu de données sur un seuil dimensionnel unique."
+        }
+    },
+    "33": {
+        "question": "Quel type de séparation visuelle a été notablement réalisé en utilisant la cPCA sur le jeu de données d'expression protéique des souris ?",
+        "options": {
+            "A": "Séparation basée sur les sujets de contrôle versus expérimentaux.",
+            "B": "Séparation basée sur le genre au sein des échantillons.",
+            "C": "Séparation des souris avec et sans syndrome de Down.",
+            "D": "Regroupement dépendant de l'âge des souris.",
+            "E": "Distribution aléatoire sans motif spécifique."
+        }
+    },
+    "34": {
+        "question": "Quel principe sous-tend la sélection par la cPCA des meilleures directions contrastives ?",
+        "options": {
+            "A": "Se concentrer sur la maximisation de la somme des variances à travers toutes les directions.",
+            "B": "Chercher des directions avec une faible corrélation à travers les jeux de données.",
+            "C": "Minimiser uniformément les variances cible et de fond.",
+            "D": "Maximiser la variance cible tout en minimisant la variance de fond.",
+            "E": "Maximiser la variance de fond sans rapport avec les données cibles."
+        }
+    },
+    "35": {
+        "question": "Dans la cPCA, qu'implique l'utilisation de différentes valeurs de \u03b1 ?",
+        "options": {
+            "A": "Elle ajuste le biais de l'algorithme vers une variance de fond plus élevée.",
+            "B": "Elle permet d'explorer une variété de sous-espaces pour différentes tendances.",
+            "C": "Elle modifie directement la dimensionnalité à travers les jeux de données.",
+            "D": "Elle affecte l'ordre d'analyse des échantillons du jeu de données.",
+            "E": "Elle standardise la structure de variance de l'ensemble du jeu de données."
+        }
+    },
+    "36": {
+        "question": "Que montre la Fig. 5 dans l'article concernant la cPCA ?",
+        "options": {
+            "A": "Fluctuations aléatoires de la variance à travers les jeux de données.",
+            "B": "La sélection de directions coïncidant avec les maxima de variance cible.",
+            "C": "L'interprétation géométrique et la sélection des meilleures directions contrastives.",
+            "D": "Inadéquations cible-fond au sein de la structure de covariance.",
+            "E": "Alignement complet des jeux de données cible et de fond."
+        }
+    },
+    "37": {
+        "question": "Quelle est la relation entre les directions contrastives dans la cPCA et les vecteurs propres ?",
+        "options": {
+            "A": "Les directions contrastives ne sont pas liées aux vecteurs propres.",
+            "B": "Elles diffèrent toujours en dimension des vrais vecteurs propres.",
+            "C": "Elles correspondent aux vecteurs propres de la matrice de contraste.",
+            "D": "Elles ne se rapportent qu'aux vecteurs propres avec les plus petites valeurs propres.",
+            "E": "Elles s'alignent uniquement avec les vecteurs propres des données de fond."
+        }
+    },
+    "38": {
+        "question": "Laquelle des exigences initiales pour la cPCA l'article met-il en avant ?",
+        "options": {
+            "A": "Prétraitement manuel des jeux de données pour éliminer tout bruit.",
+            "B": "Pré-affectation de dimensions spécifiques pour l'analyse.",
+            "C": "Disponibilité des matrices de covariance des jeux de données cible et de fond.",
+            "D": "Définir un seuil de variance fixe pour toutes les projections.",
+            "E": "Étiquetage complet de tous les composants de données."
+        }
+    },
+    "39": {
+        "question": "Pourquoi la cPCA est-elle particulièrement utile pour les études génétiques se concentrant sur les motifs d'héritage et d'ascendance ?",
+        "options": {
+            "A": "Elle renforce l'importance des variations ancestrales dominantes.",
+            "B": "Elle automatise l'interprétation des données génétiques de fond.",
+            "C": "Elle met en évidence les variations subtiles au sein des métriques intra-populationnelles.",
+            "D": "Elle exploite principalement les similitudes génétiques universelles.",
+            "E": "Elle propose une classification automatisée des origines ethniques."
+        }
+    },
+    "40": {
+        "question": "Quel avantage relatif de la cPCA par rapport au scaling multidimensionnel (MDS) l'article détaille-t-il ?",
+        "options": {
+            "A": "Visualisation supérieure des structures de données intrinsèquement non linéaires.",
+            "B": "Capacité à utiliser des jeux de données de fond pour un contraste amélioré.",
+            "C": "Temps de calcul plus rapides à travers des jeux de données variés.",
+            "D": "Correction intégrée pour les tendances de regroupement des données.",
+            "E": "Biais intrinsèque vers la prévention du surajustement des données."
+        }
+    },
+    "41": {
+        "question": "Dans une analyse cPCA typique, comment la variation du paramètre \u03b1 affecte-t-elle les résultats ?",
+        "options": {
+            "A": "Augmente la dimensionnalité plus que ce que la cible permet.",
+            "B": "Atteint l'équilibre entre la variance cible et de fond.",
+            "C": "Diminue naturellement la complexité de la décomposition propre.",
+            "D": "Réduit la corrélation croisée des jeux de données de manière exponentielle.",
+            "E": "Améliore la standardisation de la détection des valeurs aberrantes."
+        }
+    },
+    "42": {
+        "question": "Comment la cPCA diffère-t-elle dans son approche statistique par rapport à la PCA ?",
+        "options": {
+            "A": "La cPCA calcule la variance des jeux de données de manière interdépendante.",
+            "B": "La cPCA optimise les variances indépendamment à travers deux jeux de données.",
+            "C": "La cPCA ignore entièrement les informations de variance.",
+            "D": "La cPCA suppose une dépendance linéaire directe entre les jeux de données.",
+            "E": "La cPCA maximise par défaut les deux variances de manière uniforme."
+        }
+    },
+    "43": {
+        "question": "Quels résultats expérimentaux démontrent l'avantage de la cPCA sur 8 autres méthodes de réduction de dimensionnalité selon l'article ?",
+        "options": {
+            "A": "Performance similaire à travers tous les jeux de données et méthodes.",
+            "B": "Incapacité des autres méthodes à regrouper séparément les souris atteintes du syndrome de Down.",
+            "C": "Temps d'exécution plus rapides mais taux d'erreur plus élevés par rapport aux autres.",
+            "D": "Éclipsée par les approches supervisées en précision.",
+            "E": "Analyse de variance moins informative que les méthodes alternatives."
+        }
+    },
+    "44": {
+        "question": "Que note l'article à propos de l'effet de la randomisation sur les données concernant la cPCA ?",
+        "options": {
+            "A": "Le cPC échantillon converge vers le cPC population à un taux similaire aux vecteurs propres de la PCA standard.",
+            "B": "Les changements aléatoires n'affectent pas la structure de covariance de la cPCA.",
+            "C": "La cPCA introduit une randomisation structurée pour l'équilibre.",
+            "D": "La cPCA prend automatiquement en compte les valeurs aberrantes aléatoires.",
+            "E": "Elle ne repose pas sur des matrices de covariance de données stables."
+        }
+    },
+    "45": {
+        "question": "Quel rôle joue la dimension d dans le taux de convergence de la cPCA ?",
+        "options": {
+            "A": "Limite significativement le potentiel de convergence.",
+            "B": "Résulte en des taux de convergence constants pour les faibles valeurs de d.",
+            "C": "Affecte la rapidité avec laquelle le cPC échantillon approche le cPC population.",
+            "D": "Détermine le nombre total possible de vecteurs propres du jeu de données.",
+            "E": "Dirige les augmentations proportionnelles de l'effort computationnel."
+        }
+    },
+    "46": {
+        "question": "Comment la cPCA se rapporte-t-elle computationnellement aux versions kernelisées démontrées dans les informations supplémentaires ?",
+        "options": {
+            "A": "Complète la PCA de base avec des couches de kernel supplémentaires.",
+            "B": "Ignore intrinsèquement les motifs non linéaires.",
+            "C": "La cPCA peut être kernelisée pour révéler des motifs non linéaires.",
+            "D": "La cPCA exclut les applications de kernel dans tous les cas.",
+            "E": "Elle nécessite un prétraitement accru des données pour le support du kernel."
+        }
+    },
+    "47": {
+        "question": "Quelle tâche computationnelle la cPCA gère-t-elle qui est souvent significative dans les projets d'exploration de données ?",
+        "options": {
+            "A": "Calcul des composants de variance universelle.",
+            "B": "Application de modèles supervisés avant l'exploration.",
+            "C": "Détermination des motifs enrichis dans les données cibles par rapport à un jeu de données de fond.",
+            "D": "Standardisation des seuils de variance dimensionnelle.",
+            "E": "Duplication automatisée des jeux de données épars pour la profondeur."
+        }
+    },
+    "48": {
+        "question": "Quelle caractéristique distingue la cPCA de la PCA supervisée et de la QDA ?",
+        "options": {
+            "A": "Son accent sur les résultats de classification basés sur les étiquettes.",
+            "B": "Sa capacité à distinguer entre les sous-groupes étiquetés.",
+            "C": "Sa stratégie non supervisée pour clarifier les motifs spécifiques au jeu de données.",
+            "D": "Sa préférence pour les petits jeux de données par rapport aux plus grands.",
+            "E": "Le besoin intégré de paramètres d'entrée utilisateur précis."
+        }
+    },
+    "49": {
+        "question": "Lors de l'exécution de la cPCA, qu'est-ce qui distingue les composantes principales contrastives (cPCs) des PCs régulières ?",
+        "options": {
+            "A": "Les cPCs se concentrent sur la maximisation de la variance de fond.",
+            "B": "Les cPCs analysent les mêmes dimensions que les PCs mais par redimensionnement.",
+            "C": "Les cPCs réduisent intrinsèquement la dimensionnalité basée sur la variance spécifique à la cible.",
+            "D": "Les cPCs emploient inévitablement des directions non orthogonales.",
+            "E": "Les cPCs ignorent les données cibles en faveur de la covariance de fond."
+        }
+    },
+    "50": {
+        "question": "En termes d'interprétation géométrique mentionnée dans l'article, que vise à accomplir la cPCA ?",
+        "options": {
+            "A": "Aligne les jeux de données basés sur des métriques fixes à travers les axes.",
+            "B": "Maximise la variance cible vers l'extrémité supérieure gauche de la limite des paires de variance.",
+            "C": "Sélectionne des directions situées le long de la limite inférieure droite des paires de variance.",
+            "D": "Intègre des exceptions de variance au-delà des tendances universelles.",
+            "E": "Standardise la configuration de variance géométrique à travers les jeux de données."
+        }
+    }
+}

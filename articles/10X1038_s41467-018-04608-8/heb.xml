@@ -1,0 +1,4248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type='text/xsl' href='/ProjectMundo-Anon/style/jats-html.xsl'?>
+<!DOCTYPE response>
+<article article-type="research-article" dtd-version="1.2" specific-use="web-only" xml:lang="en" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <front>
+  <journal-meta>
+   <journal-id journal-id-type="publisher-id">
+    41467
+   </journal-id>
+   <journal-title-group>
+    <journal-title>
+     Nature Communications
+    </journal-title>
+    <abbrev-journal-title abbrev-type="publisher">
+     Nat Commun
+    </abbrev-journal-title>
+   </journal-title-group>
+   <issn pub-type="epub">
+    2041-1723
+   </issn>
+   <publisher>
+    <publisher-name>
+     Nature Publishing Group UK
+    </publisher-name>
+    <publisher-loc>
+     London
+    </publisher-loc>
+   </publisher>
+  </journal-meta>
+  <article-meta>
+   <article-id pub-id-type="publisher-id">
+    s41467-018-04608-8
+   </article-id>
+   <article-id pub-id-type="manuscript">
+    4608
+   </article-id>
+   <article-id pub-id-type="doi">
+    10.1038/s41467-018-04608-8
+   </article-id>
+   <article-categories>
+    <subj-group subj-group-type="heading">
+     <subject>
+      Article
+     </subject>
+    </subj-group>
+    <subj-group subj-group-type="SubjectPath">
+     <subject>
+      /631/114
+     </subject>
+    </subj-group>
+    <subj-group subj-group-type="SubjectPath">
+     <subject>
+      /631/114/1305
+     </subject>
+    </subj-group>
+    <subj-group subj-group-type="SubjectPath">
+     <subject>
+      /639/705/531
+     </subject>
+    </subj-group>
+    <subj-group subj-group-type="TechniquePath">
+     <subject>
+      /141
+     </subject>
+    </subj-group>
+    <subj-group subj-group-type="NatureArticleTypeID">
+     <subject>
+      article
+     </subject>
+    </subj-group>
+   </article-categories>
+   <title-group>
+    <article-title xml:lang="en">
+     חקר דפוסים מועשרים במערך נתונים באמצעות ניתוח רכיבים עיקריים ניגודיים
+    </article-title>
+   </title-group>
+   <contrib-group>
+    <contrib contrib-type="author" equal-contrib="yes" id="Au1">
+     <name name-style="western">
+      <surname>
+       Abid
+      </surname>
+      <given-names>
+       Abubakar
+      </given-names>
+     </name>
+     <xref ref-type="aff" rid="Aff1">
+      1
+     </xref>
+     <xref ref-type="author-notes" rid="fn1"/>
+    </contrib>
+    <contrib contrib-type="author" equal-contrib="yes" id="Au2">
+     <name name-style="western">
+      <surname>
+       Zhang
+      </surname>
+      <given-names>
+       Martin J.
+      </given-names>
+     </name>
+     <xref ref-type="aff" rid="Aff1">
+      1
+     </xref>
+     <xref ref-type="author-notes" rid="fn1"/>
+    </contrib>
+    <contrib contrib-type="author" id="Au3">
+     <name name-style="western">
+      <surname>
+       Bagaria
+      </surname>
+      <given-names>
+       Vivek K.
+      </given-names>
+     </name>
+     <xref ref-type="aff" rid="Aff1">
+      1
+     </xref>
+    </contrib>
+    <contrib contrib-type="author" corresp="yes" id="Au4">
+     <name name-style="western">
+      <surname>
+       Zou
+      </surname>
+      <given-names>
+       James
+      </given-names>
+     </name>
+     <address>
+      <email>
+       jamesz@stanford.edu
+      </email>
+     </address>
+     <xref ref-type="aff" rid="Aff2">
+      2
+     </xref>
+     <xref ref-type="aff" rid="Aff3">
+      3
+     </xref>
+     <xref ref-type="corresp" rid="IDs41467018046088_cor4">
+      d
+     </xref>
+    </contrib>
+    <aff id="Aff1">
+     <label>
+      1
+     </label>
+     <institution-wrap>
+      <institution-id institution-id-type="ISNI">
+       0000000419368956
+      </institution-id>
+      <institution-id institution-id-type="GRID">
+       grid.168010.e
+      </institution-id>
+      <institution content-type="org-division">
+       Department of Electrical Engineering
+      </institution>
+      <institution content-type="org-name">
+       Stanford University
+      </institution>
+     </institution-wrap>
+     <addr-line content-type="street">
+      450 Serra Mall
+     </addr-line>
+     <addr-line content-type="postcode">
+      94305
+     </addr-line>
+     <addr-line content-type="city">
+      Stanford
+     </addr-line>
+     <addr-line content-type="state">
+      CA
+     </addr-line>
+     <country country="US">
+      USA
+     </country>
+    </aff>
+    <aff id="Aff2">
+     <label>
+      2
+     </label>
+     <institution-wrap>
+      <institution-id institution-id-type="ISNI">
+       0000000419368956
+      </institution-id>
+      <institution-id institution-id-type="GRID">
+       grid.168010.e
+      </institution-id>
+      <institution content-type="org-division">
+       Department of Biomedical Data Science
+      </institution>
+      <institution content-type="org-name">
+       Stanford University
+      </institution>
+     </institution-wrap>
+     <addr-line content-type="street">
+      450 Serra Mall
+     </addr-line>
+     <addr-line content-type="postcode">
+      94305
+     </addr-line>
+     <addr-line content-type="city">
+      Stanford
+     </addr-line>
+     <addr-line content-type="state">
+      CA
+     </addr-line>
+     <country country="US">
+      USA
+     </country>
+    </aff>
+    <aff id="Aff3">
+     <label>
+      3
+     </label>
+     <institution-wrap>
+      <institution content-type="org-name">
+       Chan-Zuckerberg Biohub
+      </institution>
+     </institution-wrap>
+     <addr-line content-type="street">
+      499 Illinois St.
+     </addr-line>
+     <addr-line content-type="postcode">
+      94158
+     </addr-line>
+     <addr-line content-type="city">
+      San Francisco
+     </addr-line>
+     <addr-line content-type="state">
+      CA
+     </addr-line>
+     <country country="US">
+      USA
+     </country>
+    </aff>
+   </contrib-group>
+   <author-notes>
+    <fn fn-type="equal" id="fn1">
+     <p>
+      These authors contributed equally: Abubakar Abid, Martin J. Zhang.
+     </p>
+    </fn>
+    <corresp id="IDs41467018046088_cor4">
+     <label>
+      d
+     </label>
+     <email>
+      jamesz@stanford.edu
+     </email>
+    </corresp>
+   </author-notes>
+   <pub-date date-type="pub" publication-format="electronic">
+    <day>
+     30
+    </day>
+    <month>
+     5
+    </month>
+    <year>
+     2018
+    </year>
+   </pub-date>
+   <pub-date date-type="collection" publication-format="electronic">
+    <month>
+     12
+    </month>
+    <year>
+     2018
+    </year>
+   </pub-date>
+   <volume>
+    9
+   </volume>
+   <issue seq="2133">
+    1
+   </issue>
+   <elocation-id>
+    2134
+   </elocation-id>
+   <history>
+    <date date-type="registration">
+     <day>
+      14
+     </day>
+     <month>
+      5
+     </month>
+     <year>
+      2018
+     </year>
+    </date>
+    <date date-type="received">
+     <day>
+      5
+     </day>
+     <month>
+      12
+     </month>
+     <year>
+      2017
+     </year>
+    </date>
+    <date date-type="accepted">
+     <day>
+      25
+     </day>
+     <month>
+      4
+     </month>
+     <year>
+      2018
+     </year>
+    </date>
+    <date date-type="online">
+     <day>
+      30
+     </day>
+     <month>
+      5
+     </month>
+     <year>
+      2018
+     </year>
+    </date>
+   </history>
+   <permissions>
+    <copyright-statement content-type="compact">
+     © The Author(s) 2018
+    </copyright-statement>
+    <copyright-year>
+     2018
+    </copyright-year>
+    <copyright-holder>
+     The Author(s)
+    </copyright-holder>
+    <license license-type="open-access" xlink:href="http://creativecommons.org/licenses/by/4.0/">
+     <license-p>
+      <bold>
+       Open Access
+      </bold>
+      This article is licensed under a Creative Commons Attribution 4.0 International License, which permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons license, and indicate if changes were made. The images or other third party material in this article are included in the article’s Creative Commons license, unless indicated otherwise in a credit line to the material. If material is not included in the article’s Creative Commons license and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this license, visit
+      <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/">
+       http://creativecommons.org/licenses/by/4.0/
+      </ext-link>
+      .
+     </license-p>
+    </license>
+   </permissions>
+   <abstract id="Abs1" xml:lang="en">
+    <title>
+     תקציר
+    </title>
+    <p id="Par1">
+     הדמיה וחקר של נתונים בממדים גבוהים הם אתגר נפוץ בכל התחומים. טכניקות נפוצות כמו ניתוח רכיבים עיקריים (PCA) שואפות לזהות מגמות דומיננטיות במערך נתונים אחד. עם זאת, במצבים רבים יש לנו מערכי נתונים שנאספו בתנאים שונים, למשל, טיפול וניסוי ביקורת, ואנו מעוניינים להמחיש ולחקור דפוסים שהם ספציפיים למערך נתונים אחד. מאמר זה מציע שיטה, ניתוח רכיבים עיקריים ניגודיים (cPCA), שמזהה מבנים בממדים נמוכים המועשרים במערך נתונים ביחס לנתוני השוואה. במגוון רחב של ניסויים, אנו מראים כי cPCA עם מערך נתונים רקע מאפשר לנו להמחיש דפוסים ספציפיים למערך נתונים שלא זוהו על ידי PCA ושיטות סטנדרטיות אחרות. אנו מספקים גם פרשנות גיאומטרית של cPCA והבטחות מתמטיות חזקות. יישום של cPCA זמין לציבור, וניתן להשתמש בו לניתוח נתונים חקרני ביישומים רבים שבהם נעשה שימוש ב-PCA כיום.
+    </p>
+   </abstract>
+   <abstract abstract-type="ShortSummary" id="Abs2" specific-use="web-only" xml:lang="en">
+    <p id="Par2">
+     Dimensionality reduction and visualization methods lack a principled way of comparing multiple datasets. Here, Abid et al. introduce contrastive PCA, which identifies low-dimensional structures enriched in one dataset compared to another and enables visualization of dataset-specific patterns.
+    </p>
+   </abstract>
+   <custom-meta-group>
+    <custom-meta>
+     <meta-name>
+      publisher-imprint-name
+     </meta-name>
+     <meta-value>
+      Nature Research
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      volume-issue-count
+     </meta-name>
+     <meta-value>
+      1
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      issue-article-count
+     </meta-name>
+     <meta-value>
+      0
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      issue-toc-levels
+     </meta-name>
+     <meta-value>
+      0
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      issue-pricelist-year
+     </meta-name>
+     <meta-value>
+      2018
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      issue-copyright-holder
+     </meta-name>
+     <meta-value>
+      The Author(s)
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      issue-copyright-year
+     </meta-name>
+     <meta-value>
+      2018
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      article-contains-esm
+     </meta-name>
+     <meta-value>
+      Yes
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      article-numbering-style
+     </meta-name>
+     <meta-value>
+      Unnumbered
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      article-registration-date-year
+     </meta-name>
+     <meta-value>
+      2018
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      article-registration-date-month
+     </meta-name>
+     <meta-value>
+      5
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      article-registration-date-day
+     </meta-name>
+     <meta-value>
+      14
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      article-toc-levels
+     </meta-name>
+     <meta-value>
+      0
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      toc-levels
+     </meta-name>
+     <meta-value>
+      0
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      volume-type
+     </meta-name>
+     <meta-value>
+      Regular
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      journal-product
+     </meta-name>
+     <meta-value>
+      NonStandardArchiveJournal
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      numbering-style
+     </meta-name>
+     <meta-value>
+      Unnumbered
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      article-grants-type
+     </meta-name>
+     <meta-value>
+      OpenChoice
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      metadata-grant
+     </meta-name>
+     <meta-value>
+      OpenAccess
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      abstract-grant
+     </meta-name>
+     <meta-value>
+      OpenAccess
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      bodypdf-grant
+     </meta-name>
+     <meta-value>
+      OpenAccess
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      bodyhtml-grant
+     </meta-name>
+     <meta-value>
+      OpenAccess
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      bibliography-grant
+     </meta-name>
+     <meta-value>
+      OpenAccess
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      esm-grant
+     </meta-name>
+     <meta-value>
+      OpenAccess
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      online-first
+     </meta-name>
+     <meta-value>
+      false
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      pdf-file-reference
+     </meta-name>
+     <meta-value>
+      BodyRef/PDF/41467_2018_Article_4608.pdf
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      pdf-type
+     </meta-name>
+     <meta-value>
+      Typeset
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      target-type
+     </meta-name>
+     <meta-value>
+      OnlinePDF
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      issue-type
+     </meta-name>
+     <meta-value>
+      Regular
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      article-type
+     </meta-name>
+     <meta-value>
+      OriginalPaper
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      journal-subject-primary
+     </meta-name>
+     <meta-value>
+      Science, Humanities and Social Sciences, multidisciplinary
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      journal-subject-secondary
+     </meta-name>
+     <meta-value>
+      Science, Humanities and Social Sciences, multidisciplinary
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      journal-subject-secondary
+     </meta-name>
+     <meta-value>
+      Science, multidisciplinary
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      journal-subject-collection
+     </meta-name>
+     <meta-value>
+      Science (multidisciplinary)
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      open-access
+     </meta-name>
+     <meta-value>
+      true
+     </meta-value>
+    </custom-meta>
+   </custom-meta-group>
+  </article-meta>
+ </front>
+ <body>
+  <sec id="Sec1" sec-type="introduction">
+   <title>
+    מבוא
+   </title>
+   <p id="Par3">
+    ניתוח רכיבים עיקריים (PCA) הוא אחת השיטות הנפוצות ביותר לחקר ויזואליזציה של נתונים
+    <sup>
+     <xref ref-type="bibr" rid="CR1">
+      1
+     </xref>
+    </sup>
+    . PCA מקרין את הנתונים למרחב ממדי נמוך והוא חזק במיוחד כגישה לויזואליזציה של דפוסים, כגון אשכולות, קווים, וחריגים בסט נתונים
+    <sup>
+     <xref ref-type="bibr" rid="CR2">
+      2
+     </xref>
+    </sup>
+    . יש מספר רב של שיטות ויזואליזציה קשורות; לדוגמה, t-SNE וסקיילינג רב-ממדי (MDS) מאפשרים הקרנות נתונים לא ליניאריות ועשויים ללכוד טוב יותר דפוסים לא ליניאריים מאשר PCA. עם זאת, כל השיטות הללו נועדו לחקור סט נתונים אחד בכל פעם. כאשר לאנליסט יש מספר סטים של נתונים (או מספר תנאים בסט נתונים אחד להשוואה), אז המצב הנוכחי הוא לבצע PCA (או t-SNE, MDS, וכו') על כל סט נתונים בנפרד, ואז להשוות ידנית את ההקרנות השונות כדי לבדוק אם יש דמיון והבדלים מעניינים בין סטי הנתונים
+    <sup>
+     <xref ref-type="bibr" rid="CR3">
+      3
+     </xref>
+     <xref ref-type="bibr" rid="CR4">
+      4
+     </xref>
+     <xref ref-type="bibr" rid="CR5">
+      5
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR6">
+      6
+     </xref>
+    </sup>
+    . PCA קונטרסטיבי (cPCA) נועד למלא את הפער הזה בחקר ויזואליזציה של נתונים על ידי זיהוי אוטומטי של ההקרנות שמציגות את ההבדלים המעניינים ביותר בין סטי הנתונים. Fig.
+    <xref ref-type="fig" rid="Fig1">
+     1
+    </xref>
+    מספק סקירה של cPCA שאנו מסבירים בפירוט רב יותר בהמשך.
+    <fig id="Fig1" position="float">
+     <label>
+      Fig. 1
+     </label>
+     <caption xml:lang="en">
+      <p>
+       סקירה סכמטית של cPCA. כדי לבצע cPCA, חשב את מטריצות השונות
+       <italic>
+        C
+       </italic>
+       <sub>
+        <italic>
+         X
+        </italic>
+       </sub>
+       ,
+       <italic>
+        C
+       </italic>
+       <sub>
+        <italic>
+         Y
+        </italic>
+       </sub>
+       של מערכי הנתונים המטרה והרקע. הווקטורים הסינגולריים של ההפרש המנוקד של מטריצות השונות,
+       <italic>
+        C
+       </italic>
+       <sub>
+        <italic>
+         X
+        </italic>
+       </sub>
+       −
+       <italic>
+        α
+       </italic>
+       ·
+       <italic>
+        C
+       </italic>
+       <sub>
+        <italic>
+         Y
+        </italic>
+       </sub>
+       , הם הכיוונים המוחזרים על ידי cPCA. כפי שמוצג בתרשים הפיזור מימין, PCA (על נתוני המטרה) מזהה את הכיוון שיש לו את השונות הגבוהה ביותר בנתוני המטרה, בעוד cPCA מזהה את הכיוון שיש לו שונות גבוהה יותר בנתוני המטרה בהשוואה לנתוני הרקע. השלכת נתוני המטרה על הכיוון האחרון נותנת דפוסים ייחודיים לנתוני המטרה ולעיתים קרובות חושפת מבנה ש-PCA מפספסת. במיוחד, בדוגמה זו, הפחתת הממדיות של נתוני המטרה על ידי cPCA תחשוף שני אשכולות נפרדים
+      </p>
+     </caption>
+     <graphic href="/ProjectMundo-Anon/MediaObjects/10X1038_s41467-018-04608-8/41467_2018_4608_Fig1_HTML.jpg" mime-subtype="JPEG" specific-use="web"/>
+    </fig>
+   </p>
+   <p id="Par4">
+    cPCA מונע על ידי מגוון רחב של בעיות בין תחומיות. להמחשה, נזכיר כאן שתי בעיות כאלה ונציג אחרות דרך ניסויים בהמשך המאמר. ראשית, שקול סט נתונים של מדידות ביטוי גנים מאנשים ממוצאים אתניים ומינים שונים. נתונים אלה כוללים רמות ביטוי גנים של חולי סרטן {
+    <bold>
+     x
+    </bold>
+    <sub>
+     <italic>
+      i
+     </italic>
+    </sub>
+    }, שאנו מעוניינים לנתח. יש לנו גם נתוני בקרה, המתאימים לרמות ביטוי הגנים של חולים בריאים {
+    <bold>
+     y
+    </bold>
+    <sub>
+     <italic>
+      i
+     </italic>
+    </sub>
+    } מרקע דמוגרפי דומה. מטרתנו היא למצוא מגמות ושינויים בתוך חולי הסרטן (למשל, לזהות תת-סוגים מולקולריים של סרטן). אם ניישם ישירות PCA על {
+    <bold>
+     x
+    </bold>
+    <sub>
+     <italic>
+      i
+     </italic>
+    </sub>
+    }, עם זאת, הרכיבים העיקריים העליונים עשויים להתאים לשינויים הדמוגרפיים של הפרטים במקום לתת-הסוגים של הסרטן מכיוון שהשינויים הגנטיים הנובעים מהראשונים עשויים להיות גדולים יותר מאלה של האחרונים
+    <sup>
+     <xref ref-type="bibr" rid="CR7">
+      7
+     </xref>
+    </sup>
+    . אנו ניגשים לבעיה זו על ידי ציון שהחולים הבריאים מכילים גם את השינוי הקשור להבדלים דמוגרפיים, אך לא את השינוי המתאים לתת-הסוגים של הסרטן. לכן, אנו יכולים לחפש רכיבים שבהם {
+    <bold>
+     x
+    </bold>
+    <sub>
+     <italic>
+      i
+     </italic>
+    </sub>
+    } יש שונות גבוהה אך {
+    <bold>
+     y
+    </bold>
+    <sub>
+     <italic>
+      i
+     </italic>
+    </sub>
+    } יש שונות נמוכה.
+   </p>
+   <p id="Par5">
+    כדוגמה קשורה, שקול סט נתונים {
+    <bold>
+     x
+    </bold>
+    <sub>
+     <italic>
+      i
+     </italic>
+    </sub>
+    } המורכב ממספרים כתובים ביד על רקע מורכב, כגון תמונות שונות של דשא (ראה Fig.
+    <xref ref-type="fig" rid="Fig2">
+     2(a), top
+    </xref>
+    ). מטרת משימת למידה לא מפוקחת טיפוסית עשויה להיות לאשכול את הנתונים, לחשוף את המספרים השונים בתמונה. עם זאת, אם ניישם PCA סטנדרטי על תמונות אלה, נגלה שהרכיבים העיקריים העליונים אינם מייצגים תכונות הקשורות למספרים הכתובים ביד, אלא משקפים את השינוי הדומיננטי בתכונות הקשורות לרקע התמונה (Fig.
+    <xref ref-type="fig" rid="Fig2">
+     2(b)
+    </xref>
+    , top). אנו מראים כי ניתן לתקן זאת על ידי שימוש בסט נתונים ייחוס {
+    <bold>
+     y
+    </bold>
+    <sub>
+     <italic>
+      i
+     </italic>
+    </sub>
+    } המורכב אך ורק מתמונות של הדשא (לא בהכרח אותן תמונות ששימשו ב-{
+    <bold>
+     x
+    </bold>
+    <sub>
+     <italic>
+      i
+     </italic>
+    </sub>
+    } אך עם דמיון בקווריאציה בין תכונות, כפי שמוצג ב-Fig.
+    <xref ref-type="fig" rid="Fig2">
+     2(a)
+    </xref>
+    , bottom), ולחפש את תת-המרחב של השונות הגבוהה יותר ב-{
+    <bold>
+     x
+    </bold>
+    <sub>
+     <italic>
+      i
+     </italic>
+    </sub>
+    } בהשוואה ל-{
+    <bold>
+     y
+    </bold>
+    <sub>
+     <italic>
+      i
+     </italic>
+    </sub>
+    }. על ידי הקרנה על תת-המרחב הזה, אנו יכולים למעשה להפריד ויזואלית את התמונות על פי ערך המספר הכתוב ביד (Fig. 2(b), bottom). על ידי השוואת הרכיבים העיקריים שהתגלו על ידי PCA לאלה שהתגלו על ידי cPCA, אנו רואים ש-cPCA מזהה תכונות רלוונטיות יותר (Fig.
+    <xref ref-type="fig" rid="Fig2">
+     2(c)
+    </xref>
+    ), מה שמאפשר לנו להשתמש ב-cPCA ליישומים כגון בחירת תכונות והפחתת רעש
+    <sup>
+     <xref ref-type="bibr" rid="CR8">
+      8
+     </xref>
+    </sup>
+    .
+    <fig id="Fig2" position="float">
+     <label>
+      Fig. 2
+     </label>
+     <caption xml:lang="en">
+      <p>
+       PCA ניגודי על ספרות רועשות.
+       <bold>
+        a
+       </bold>
+       , למעלה: אנו יוצרים מערך נתונים מטרה של 5,000 תמונות סינתטיות על ידי חפיפה אקראית של תמונות של ספרות כתובות ידנית 0 ו-1 ממאגר הנתונים MNIST
+       <sup>
+        <xref ref-type="bibr" rid="CR32">
+         32
+        </xref>
+       </sup>
+       על גבי תמונות של דשא שנלקחו ממאגר הנתונים ImageNet
+       <sup>
+        <xref ref-type="bibr" rid="CR33">
+         33
+        </xref>
+       </sup>
+       השייכות לסינסת הדשא. התמונות של הדשא מומרות לגווני אפור, משנות גודל ל-100 × 100, ואז נחתכות אקראית לגודל זהה לספרות MNIST, 28 × 28.
+       <bold>
+        b
+       </bold>
+       , למעלה: כאן, אנו מציגים את תוצאת ההטמעה של התמונות הסינתטיות על שני הרכיבים הראשונים שלהם באמצעות PCA סטנדרטי. אנו רואים שהנקודות המתאימות לתמונות עם 0 ותמונות עם 1 קשות להבחנה.
+       <bold>
+        a
+       </bold>
+       , למטה: מערך נתונים רקע מוצג אז המורכב אך ורק מתמונות של דשא השייכות לאותו סינסת, אך אנו משתמשים בתמונות השונות מאלה ששימשו ליצירת מערך הנתונים המטרה.
+       <bold>
+        b
+       </bold>
+       , למטה: באמצעות cPCA על מערכי הנתונים המטרה והרקע (עם ערך של פרמטר הניגוד
+       <italic>
+        α
+       </italic>
+       שנקבע ל-2.0), שני אשכולות מופיעים בייצוג הממד הנמוך של מערך הנתונים המטרה, אחד המורכב מתמונות עם הספרה 0 והשני מתמונות עם הספרה 1.
+       <bold>
+        c
+       </bold>
+       אנו מסתכלים על התרומה היחסית של כל פיקסל לרכיב הראשי הראשון (PC) ולרכיב הראשי הניגודי הראשון (cPC). פיקסלים לבנים יותר הם אלה שנושאים משקל חיובי יותר, בעוד כהים מציינים את הפיקסלים שנושאים משקלים שליליים. PCA נוטה להדגיש פיקסלים בהיקף התמונה ולהפחית מעט את הדגש על פיקסלים במרכז ובתחתית התמונה, מה שמצביע על כך שרוב השונות נובעת מתכונות הרקע. מצד שני, cPCA נוטה להעלות את משקל הפיקסלים שנמצאים במיקום של הספרות הכתובות 1, להוריד את משקל הפיקסלים במיקום של הספרות הכתובות 0, ולהזניח את רוב הפיקסלים האחרים, ובכך לגלות את התכונות השימושיות להבחנה בין הספרות המונחות
+      </p>
+     </caption>
+     <graphic href="/ProjectMundo-Anon/MediaObjects/10X1038_s41467-018-04608-8/41467_2018_4608_Fig2_HTML.jpg" mime-subtype="JPEG" specific-use="web"/>
+    </fig>
+   </p>
+   <p id="Par6">
+    PCA קונטרסטיבי הוא כלי ללמידה לא מפוקחת, שמפחית ביעילות ממדיות כדי לאפשר ויזואליזציה וניתוח נתונים חוקר. זה מפריד את cPCA ממגוון רחב של שיטות למידה מפוקחות שמטרתן העיקרית היא לסווג או להבחין בין סטי נתונים שונים, כגון ניתוח הבחנה ליניארי (LDA), ניתוח הבחנה ריבועי (QDA), PCA מפוקח, ו-QUADRO
+    <sup>
+     <xref ref-type="bibr" rid="CR9">
+      9
+     </xref>
+     <xref ref-type="bibr" rid="CR10">
+      10
+     </xref>
+     <xref ref-type="bibr" rid="CR11">
+      11
+     </xref>
+     <xref ref-type="bibr" rid="CR12">
+      12
+     </xref>
+    </sup>
+    . זה גם מבדיל את cPCA משיטות שמשלבות מספר סטי נתונים, במטרה לזהות דפוסים מתואמים בין שניים או יותר סטי נתונים, ולא כאלה הייחודיים לכל סט נתונים בודד. יש גם משפחה עשירה של שיטות לא מפוקחות להפחתת ממדים מלבד PCA. לדוגמה, סקיילינג רב-ממדי (MDS) מוצא הטבעה ממדית נמוכה ששומרת על המרחק במרחב הממד הגבוה; מרדף רכיבים עיקריים מוצא תת-מרחב מדרגה נמוכה שעמיד לרעש קטן ברמת הכניסה ולשגיאות דלילות גסות. אך אף אחת מהן לא נועדה לנצל מידע רלוונטי מסט נתונים שני, כפי שעושה cPCA. בתוספת, השווינו את cPCA לרבות מהטכניקות שהוזכרו קודם לכן על סטי נתונים מייצגים (ראה Supplementary Figs.
+    <xref ref-type="supplementary-material" rid="MOESM1">
+     3
+    </xref>
+    ו-
+    <xref ref-type="supplementary-material" rid="MOESM1">
+     4
+    </xref>
+    )
+    <sup>
+     <xref ref-type="bibr" rid="CR13">
+      13
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR14">
+      14
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR15">
+      15
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR16">
+      16
+     </xref>
+     <xref ref-type="bibr" rid="CR4">
+      4
+     </xref>
+     <xref ref-type="bibr" rid="CR17">
+      17
+     </xref>
+    </sup>
+    .
+   </p>
+   <p id="Par7">
+    בתחום יישום ספציפי, עשויים להיות כלים מיוחדים בתחום זה עם מטרות דומות ל-cPCA
+    <sup>
+     <xref ref-type="bibr" rid="CR18">
+      18
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR19">
+      19
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR20">
+      20
+     </xref>
+    </sup>
+    . לדוגמה, בתוצאות, אנו מראים כיצד cPCA המיושם על נתוני גנוטיפ מציג את המוצא הגיאוגרפי בתוך מקסיקו. חקר אשכולות עדינים של מוצאים גנטיים הוא בעיה חשובה בגנטיקה של אוכלוסיות, וחוקרים פיתחו לאחרונה אלגוריתם להמחשה ספציפית של אשכולות מוצא כאלה
+    <sup>
+     <xref ref-type="bibr" rid="CR18">
+      18
+     </xref>
+    </sup>
+    . בעוד ש-cPCA מבצע היטב כאן, האלגוריתם המומחה עשוי לבצע אפילו טוב יותר עבור סט נתונים ספציפי. עם זאת, האלגוריתם המיוחד דורש ידע תחום משמעותי לעיצוב, הוא יקר יותר חישובית, ויכול להיות מאתגר לשימוש. מטרת cPCA אינה להחליף את כל השיטות המיוחדות המתקדמות בכל אחד מהתחומים שלהן, אלא לספק שיטה כללית לחקר סטי נתונים שרירותיים.
+   </p>
+   <p id="Par8">
+    אנו מציעים אלגוריתם קונקרטי ויעיל עבור cPCA במאמר זה. השיטה מקבלת כקלט סט נתונים יעד {
+    <bold>
+     x
+    </bold>
+    <sub>
+     <italic>
+      i
+     </italic>
+    </sub>
+    } שאנו מעוניינים לויזואליזציה או זיהוי דפוסים בתוכו. כקלט משני, cPCA מקבל סט נתונים רקע {
+    <bold>
+     y
+    </bold>
+    <sub>
+     <italic>
+      i
+     </italic>
+    </sub>
+    }, שאינו מכיל את הדפוסים המעניינים. אלגוריתם cPCA מחזיר תת-מרחבים שתופסים כמות גדולה של שונות בנתוני היעד {
+    <bold>
+     x
+    </bold>
+    <sub>
+     <italic>
+      i
+     </italic>
+    </sub>
+    }, אך מעט ברקע {
+    <bold>
+     y
+    </bold>
+    <sub>
+     <italic>
+      i
+     </italic>
+    </sub>
+    } (ראה Fig.
+    <xref ref-type="fig" rid="Fig1">
+     1
+    </xref>
+    , שיטות, ושיטות משלימות לפרטים נוספים). תת-מרחב זה מתאים לתכונות המכילות מבנה ספציפי ל-{
+    <bold>
+     x
+    </bold>
+    <sub>
+     <italic>
+      i
+     </italic>
+    </sub>
+    }. לכן, כאשר נתוני היעד מוקרנים על תת-מרחב זה, אנו יכולים לויזואליזציה ולגלות את המבנה הנוסף בנתוני היעד ביחס לרקע. בדומה לרכיבים העיקריים (PCs), אנו קוראים לכיוונים שנמצאו על ידי cPCA הרכיבים העיקריים הקונטרסטיביים (cPCs). אנו מדגישים ש-cPCA הוא בעיקרון טכניקה לא מפוקחת, שנועדה לפתור דפוסים בסט נתונים אחד בצורה ברורה יותר על ידי שימוש בסט נתונים רקע כקונטרסט. במיוחד, cPCA אינו שואף להבחין בין סטי הנתונים של היעד והרקע; תת-המרחב שמכיל מגמות שמועשרות בסט הנתונים של היעד אינו בהכרח אותו תת-מרחב שהוא אופטימלי לסיווג בין סטי הנתונים.
+   </p>
+  </sec>
+  <sec id="Sec2" sec-type="results">
+   <title>
+    תוצאות
+   </title>
+   <sec id="Sec3">
+    <title>
+     גילוי תת-קבוצות בנתוני ביטוי חלבונים
+    </title>
+    <p id="Par9">
+     חוקרים ציינו ש-PCA סטנדרטי לעיתים קרובות אינו יעיל בגילוי תת-קבוצות בתוך נתונים ביולוגיים, לפחות בחלקו מכיוון ש"רכיבים עיקריים דומיננטיים...מתואמים עם ארטיפקטים," ולא עם תכונות שמעניינות את החוקר. כיצד ניתן להשתמש ב-cPCA בהגדרות אלה כדי לזהות את תת-הקבוצות המשמעותיות יותר? על ידי שימוש בסט נתונים רקע כדי לבטל את השונות האוניברסלית אך הלא מעניינת ביעד, אנו יכולים לחפש מבנה שהוא ייחודי לסט הנתונים של היעד
+     <sup>
+      <xref ref-type="bibr" rid="CR21">
+       21
+      </xref>
+     </sup>
+     .
+    </p>
+    <p id="Par10">
+     הניסוי הראשון שלנו משתמש בסט נתונים המורכב ממדידות ביטוי חלבון של עכברים שקיבלו טיפול בהלם
+     <sup>
+      <xref ref-type="bibr" rid="CR22">
+       22
+      </xref>
+      ,
+      <xref ref-type="bibr" rid="CR23">
+       23
+      </xref>
+     </sup>
+     . חלק מהעכברים פיתחו תסמונת דאון (DS). כדי ליצור משימת למידה לא מפוקחת שבה יש לנו מידע אמת קרקע להערכת השיטות, אנו מניחים שמידע ה-DS הזה אינו ידוע לאנליסט ומשתמשים בו רק להערכת האלגוריתם. היינו רוצים לראות אם אנו מזהים הבדלים משמעותיים כלשהם בתוך אוכלוסיית העכברים המוכי ההלם בצורה לא מפוקחת (הנוכחות או היעדרות של תסמונת דאון כדוגמה מרכזית). ב-Fig.
+     <xref ref-type="fig" rid="Fig3">
+      3a
+     </xref>
+     (top), אנו מראים את תוצאת יישום PCA על סט הנתונים של היעד: הנתונים המומרצים אינם חושפים כל אשכול משמעותי בתוך אוכלוסיית העכברים. מקורות השונות העיקריים בתוך העכברים עשויים להיות טבעיים, כגון מין או גיל.
+     <fig id="Fig3" position="float">
+      <label>
+       Fig. 3
+      </label>
+      <caption xml:lang="en">
+       <p>
+        גילוי תת-קבוצות בנתונים ביולוגיים.
+        <bold>
+         a
+        </bold>
+        אנו משתמשים ב-PCA כדי להשליך מערך נתונים של ביטוי חלבון של עכברים עם וללא תסמונת דאון (DS) על שני הרכיבים הראשונים. הייצוג הממד הנמוך של מדידות ביטוי החלבון מעכברים עם וללא DS נראה מופץ באופן דומה (למעלה). אבל, כשאנו משתמשים ב-cPCA כדי להשליך את מערך הנתונים על שני ה-cPCs הראשונים שלו, אנו מגלים ייצוג ממד נמוך שמקבץ עכברים עם וללא DS בנפרד (למטה).
+        <bold>
+         b
+        </bold>
+        יתר על כן, אנו משתמשים ב-PCA ו-cPCA כדי להמחיש מערך נתונים של RNA-Seq חד-תאי בממד גבוה בשני ממדים. מערך הנתונים מורכב מארבע דגימות תאים משני חולי לוקמיה: דגימה לפני השתלה מחולה 1, דגימה לאחר השתלה מחולה 1, דגימה לפני השתלה מחולה 2, ודגימה לאחר השתלה מחולה 2.
+        <bold>
+         b
+        </bold>
+        , שמאל: התוצאות באמצעות רק הדגימות מחולה 1, שמדגימות ש-cPCA (למטה) מפריד את הדגימות בצורה יעילה יותר מ-PCA (למעלה). כאשר הדגימות מהחולה השני כלולות, ב-
+        <bold>
+         b
+        </bold>
+        , ימין, שוב cPCA (למטה) מפריד את הדגימות בצורה יעילה יותר מ-PCA (למעלה), למרות שהתאים לאחר ההשתלה משני החולים מופצים באופן דומה. אנו מציגים גרפים של כל דגימה בנפרד ב-Fig.
+        <xref ref-type="supplementary-material" rid="MOESM1">
+         5
+        </xref>
+        המשלים, שם קל יותר לראות את החפיפה בין דגימות שונות
+       </p>
+      </caption>
+      <graphic href="/ProjectMundo-Anon/MediaObjects/10X1038_s41467-018-04608-8/41467_2018_4608_Fig3_HTML.jpg" mime-subtype="JPEG" specific-use="web"/>
+     </fig>
+    </p>
+    <p id="Par11">
+     אנו מיישמים cPCA על סט נתונים זה תוך שימוש ברקע המורכב ממדידות ביטוי חלבון מקבוצת עכברים שלא נחשפו לטיפול בהלם. הם עכברי בקרה שסביר להניח שיש להם שונות טבעית דומה לעכברים הניסיוניים, אך ללא ההבדלים הנובעים מהטיפול בהלם. עם סט נתונים זה כרקע, cPCA מסוגל לפתור שתי קבוצות שונות בנתוני היעד המומרצים, אחת המתאימה לעכברים שאין להם תסמונת דאון ואחת המתאימה (בעיקר) לעכברים שיש להם תסמונת דאון, כפי שמוצג ב-Fig.
+     <xref ref-type="fig" rid="Fig3">
+      3a
+     </xref>
+     (bottom). כהשוואה, יישמנו גם 8 טכניקות אחרות להפחתת ממדים כדי לזהות כיוונים שמבדילים בין סטי הנתונים של היעד והרקע, אף אחת מהן לא הצליחה להפריד את העכברים כמו cPCA (ראה Supplementary Fig.
+     <xref ref-type="supplementary-material" rid="MOESM1">
+      4
+     </xref>
+     לפרטים).
+    </p>
+   </sec>
+   <sec id="Sec4">
+    <title>
+     גילוי תת-קבוצות בנתוני RNA-Seq של תא בודד
+    </title>
+    <p id="Par12">
+     לאחר מכן, אנו מנתחים סט נתונים ציבורי ממדי גבוה יותר המורכב מרמות ביטוי RNA של תא בודד של תערובת של תאי מח עצם מונונוקלאריים (BMMCs) שנלקחו מחולה לוקמיה לפני השתלת תאי גזע ו-BMMCs מאותו חולה לאחר השתלת תאי גזע
+     <sup>
+      <xref ref-type="bibr" rid="CR24">
+       24
+      </xref>
+     </sup>
+     . כל נתוני ה-RNA-Seq של תא בודד מעובדים מראש תוך שימוש בשיטות דומות כפי שתוארו על ידי המחברים. במיוחד, לפני יישום PCA או cPCA, כל סטי הנתונים מצומצמים ל-500 גנים, שנבחרים על בסיס הפיזור הגבוה ביותר [שונות מחולקת בממוצע] בתוך נתוני היעד. שוב, אנו מבצעים PCA כדי לראות אם אנו יכולים לגלות ויזואלית את שתי הדגימות בנתונים המומרצים. כפי שמוצג ב-Fig.
+     <xref ref-type="fig" rid="Fig3">
+      3b
+     </xref>
+     (top left), שני סוגי התאים עוקבים אחר התפלגות דומה במרחב שנפרס על ידי שני ה-PCs הראשונים. זה כנראה מכיוון שההבדלים בין הדגימות קטנים וה-PCs במקום זאת משקפים את ההטרוגניות של סוגי תאים שונים בתוך כל דגימה או אפילו שינויים בתנאי הניסוי, שיכולים להיות בעלי השפעה משמעותית על מדידות RNA-Seq של תא בודד
+     <sup>
+      <xref ref-type="bibr" rid="CR25">
+       25
+      </xref>
+     </sup>
+     .
+    </p>
+    <p id="Par13">
+     אנו מיישמים cPCA תוך שימוש במערך נתונים רקע המורכב ממדידות RNA-Seq מתאי BMMC של אדם בריא. אנו מצפים שמערך נתונים זה יכיל את השונות הנובעת מאוכלוסיית תאים הטרוגנית וכן שינויים בתנאי הניסוי. אנו עשויים לקוות, אם כן, ש-cPCA יוכל לשחזר כיוונים המועשרים בנתוני המטרה, התואמים להבדלים לפני ואחרי השתלת תאי גזע. אכן, זה מה שאנו מוצאים, כפי שמוצג ב-Fig.
+     <xref ref-type="fig" rid="Fig3">
+      3b
+     </xref>
+     (שמאל תחתון).
+    </p>
+    <p id="Par14">
+     אנו מרחיבים את מערך הנתונים המטרה שלנו עם דגימות BMMC מחולה לוקמיה שני, שוב לפני ואחרי השתלת תאי גזע. כך, ישנן בסך הכל ארבע תת-אוכלוסיות של תאים. יישום PCA על נתונים אלה מראה כי ארבע תת-האוכלוסיות אינן ניתנות להפרדה בתת-המרחב הנפרס על ידי שני הרכיבים הראשיים העליונים (PCs), כפי שמוצג ב-Fig.
+     <xref ref-type="fig" rid="Fig3">
+      3b
+     </xref>
+     (ימין עליון). שוב, עם זאת, כאשר cPCA מיושם עם אותו מערך נתונים רקע, לפחות שלוש מתת-האוכלוסיות מראות הפרדה חזקה יותר, כפי שמוצג ב-Fig.
+     <xref ref-type="fig" rid="Fig3">
+      3b
+     </xref>
+     (ימין תחתון). ההטבעה של cPCA גם מציעה כי דגימות התאים משני החולים דומות יותר זו לזו לאחר השתלת תאי גזע (נקודות כחולות וירוקות) מאשר לפני ההשתלה (נקודות זהובות וורודות), השערה סבירה שניתן לבדוק על ידי החוקר. ניתן לעיין ב-Fig.
+     <xref ref-type="supplementary-material" rid="MOESM1">
+      5
+     </xref>
+     הנוסף לפרטים נוספים של ניסוי זה. אנו רואים ש-cPCA יכול להיות כלי שימושי להסיק את הקשר בין תת-אוכלוסיות, נושא שנחקור בהמשך.
+    </p>
+   </sec>
+   <sec id="Sec5">
+    <title>
+     הקשר בין קבוצות אבות במקסיקו
+    </title>
+    <p id="Par15">
+     בדוגמאות קודמות, ראינו ש-cPCA מאפשר למשתמש לגלות תת-מחלקות בתוך מערך נתונים מטרה שאינן מתויגות מראש. עם זאת, גם כאשר תת-מחלקות ידועות מראש, הפחתת ממדים יכולה להיות דרך שימושית להמחיש את הקשר בתוך קבוצות. לדוגמה, PCA משמש לעיתים קרובות להמחשת הקשר בין אוכלוסיות אתניות על בסיס וריאנטים גנטיים, מכיוון שהשלכת הווריאנטים הגנטיים לשני ממדים לעיתים קרובות מייצרת מפות המציעות המחשות מרשימות של מגמות גיאוגרפיות והיסטוריות
+     <sup>
+      <xref ref-type="bibr" rid="CR26">
+       26
+      </xref>
+      ,
+      <xref ref-type="bibr" rid="CR27">
+       27
+      </xref>
+     </sup>
+     . אך שוב, PCA מוגבל לזיהוי המבנה הדומיננטי ביותר; כאשר זה מייצג שונות אוניברסלית או לא מעניינת, cPCA יכול להיות יעיל יותר בהמחשת מגמות.
+    </p>
+    <p id="Par16">
+     מערך הנתונים שאנו משתמשים בו לדוגמה זו מורכב מפולימורפיזמים של נוקלאוטיד יחיד (SNPs) מהגנומים של אנשים מחמש מדינות במקסיקו, שנאספו במחקר קודם
+     <sup>
+      <xref ref-type="bibr" rid="CR28">
+       28
+      </xref>
+     </sup>
+     . מוצא מקסיקני מאתגר לניתוח באמצעות PCA מכיוון שה-PCs בדרך כלל אינם משקפים את המקור הגיאוגרפי בתוך מקסיקו; במקום זאת, הם משקפים את שיעור המורשת האירופית/אמריקאית ילידית של כל אדם מקסיקני, מה שמדכא ומסתיר הבדלים הנובעים ממקור גיאוגרפי בתוך מקסיקו (ראה Fig.
+     <xref ref-type="fig" rid="Fig4">
+      4a
+     </xref>
+     ). כדי להתגבר על בעיה זו, גנטיקאים של אוכלוסיות גוזמים ידנית SNPs, מסירים את אלה הידועים כמקורם ממוצא אירופי, לפני יישום PCA. עם זאת, הליך זה מוגבל ביישומו מכיוון שהוא דורש לדעת את מקור ה-SNPs ושמקור השונות הרקע שונה מאוד מהשונות המעניינת, מה שלעיתים קרובות אינו המקרה.
+     <fig id="Fig4" position="float">
+      <label>
+       Fig. 4
+      </label>
+      <caption xml:lang="en">
+       <p>
+        הקשר בין קבוצות מוצא מקסיקניות.
+        <bold>
+         a
+        </bold>
+        PCA שהוחל על נתונים גנטיים מאנשים מ-5 מדינות מקסיקניות אינו חושף דפוסים נראים לעין בנתונים המוטמעים.
+        <bold>
+         b
+        </bold>
+        cPCA שהוחל על אותו מערך נתונים חושף דפוסים בנתונים: אנשים מאותה מדינה מקובצים קרוב יותר זה לזה בהטמעת cPCA.
+        <bold>
+         c
+        </bold>
+        יתר על כן, התפלגות הנקודות חושפת קשרים בין הקבוצות שמתאימים למיקום הגיאוגרפי של המדינות השונות: לדוגמה, אנשים ממדינות סמוכות גיאוגרפית סמוכים בהטמעה.
+        <bold>
+         c
+        </bold>
+        מותאם ממפת מקסיקו שהיא במקור עבודתו של משתמש:Allstrak בוויקיפדיה, פורסם תחת רישיון CC-BY-SA, נלקח מ-
+        <ext-link ext-link-type="uri" href="https://commons.wikimedia.org/wiki/File:Mexico_Map.svg">
+         https://commons.wikimedia.org/wiki/File:Mexico_Map.svg
+        </ext-link>
+       </p>
+      </caption>
+      <graphic href="/ProjectMundo-Anon/MediaObjects/10X1038_s41467-018-04608-8/41467_2018_4608_Fig4_HTML.jpg" mime-subtype="JPEG" specific-use="web"/>
+     </fig>
+    </p>
+    <p id="Par17">
+     כחלופה, אנו משתמשים ב-cPCA עם מערך נתונים רקע המורכב מאנשים ממקסיקו ומאירופה. רקע זה נשלט על ידי שונות אמריקאית ילידית/אירופית, מה שמאפשר לנו לבודד את השונות הפנים-מקסיקנית במערך הנתונים המטרה. תוצאות יישום cPCA מוצגות ב-Fig.
+     <xref ref-type="fig" rid="Fig4">
+      4b
+     </xref>
+     <sup/>
+     . אנו מוצאים שאנשים מאותה מדינה במקסיקו מוטבעים קרוב יותר זה לזה. יתר על כן, שתי הקבוצות שהן המגוונות ביותר הן הסונורנים והמאיה מיוקטן, שהן גם המרוחקות ביותר גיאוגרפית בתוך מקסיקו, בעוד שמקסיקנים משלוש המדינות האחרות קרובים זה לזה, הן גיאוגרפית והן בהטבעה שנתפסה על ידי cPCA (ראה Fig.
+     <xref ref-type="fig" rid="Fig4">
+      4c
+     </xref>
+     ). ראה גם Fig.
+     <xref ref-type="supplementary-material" rid="MOESM1">
+      6
+     </xref>
+     הנוסף לפרטים נוספים.
+    </p>
+   </sec>
+  </sec>
+  <sec id="Sec6" sec-type="discussion">
+   <title>
+    דיון
+   </title>
+   <p id="Par18">
+    בהגדרות רבות של מדעי הנתונים, אנו מעוניינים להמחיש ולחקור דפוסים המועשרים במערך נתונים אחד ביחס לנתונים אחרים. הצגנו את cPCA ככלי כללי לביצוע חקירה ניגודית כזו, והדגמנו את השימושיות שלו במגוון רחב של יישומים. היתרונות העיקריים של cPCA הם הכלליות והקלות השימוש שלו. חישוב cPCA מסוים לוקח למעשה את אותו זמן כמו חישוב PCA רגיל. יעילות חישובית זו מאפשרת ל-cPCA להיות שימושי לחקר נתונים אינטראקטיבי, שבו כל פעולה צריכה להיות כמעט מיידית. ככזה, כל הגדרות שבהן PCA מיושם על מערכי נתונים קשורים, cPCA יכול גם להיות מיושם. ב-Note
+    <xref ref-type="supplementary-material" rid="MOESM1">
+     3
+    </xref>
+    הנוסף ו-Fig.
+    <xref ref-type="supplementary-material" rid="MOESM1">
+     8
+    </xref>
+    הנוסף, אנו מראים כיצד ניתן להפעיל cPCA כדי לחשוף דפוסים ניגודיים לא ליניאריים במערכי נתונים.
+   </p>
+   <p id="Par19">
+    הפרמטר החופשי היחיד של cPCA הניגודי הוא עוצמת הניגוד
+    <italic>
+     α
+    </italic>
+    <sup/>
+    . באלגוריתם ברירת המחדל שלנו, פיתחנו תוכנית אוטומטית המבוססת על אשכולות של תת-מרחבים לבחירת הערכים המידעיים ביותר של
+    <italic>
+     α
+    </italic>
+    (ראה שיטות). כל הניסויים שבוצעו עבור מאמר זה משתמשים בערכי
+    <italic>
+     α
+    </italic>
+    שנוצרו אוטומטית, ואנו מאמינים שברירת מחדל זו תהיה מספקת ביישומים רבים של cPCA. המשתמש יכול גם להזין ערכים ספציפיים עבור
+    <italic>
+     α
+    </italic>
+    אם נדרשת חקירה מעמיקה יותר.
+   </p>
+   <p id="Par20">
+    cPCA, כמו PCA רגיל ושיטות אחרות להפחתת ממדים, אינו מספק ערכי
+    <italic>
+     p
+    </italic>
+    או כימותים אחרים של מובהקות סטטיסטית. הדפוסים שהתגלו באמצעות cPCA צריכים להיות מאומתים באמצעות בדיקת השערות או ניתוח נוסף תוך שימוש בידע תחום רלוונטי. שחררנו את הקוד עבור cPCA כחבילת פייתון יחד עם תיעוד ודוגמאות.
+   </p>
+  </sec>
+  <sec id="Sec7" sec-type="materials|methods">
+   <title>
+    שיטות
+   </title>
+   <sec id="Sec8">
+    <title>
+     תיאור האלגוריתם
+    </title>
+    <p id="Par21">
+     For the
+     <italic>
+      d
+     </italic>
+     -dimensional target data
+     <inline-formula id="IEq1">
+      <alternatives>
+       <math id="IEq1_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+        <mfenced close="}" open="{" separators="">
+         <mrow>
+          <msub>
+           <mrow>
+            <mi mathvariant="bold">
+             x
+            </mi>
+           </mrow>
+           <mrow>
+            <mi>
+             i
+            </mi>
+           </mrow>
+          </msub>
+          <mo>
+           ∈
+          </mo>
+          <msup>
+           <mrow>
+            <mi mathvariant="double-struck">
+             R
+            </mi>
+           </mrow>
+           <mrow>
+            <mi>
+             d
+            </mi>
+           </mrow>
+          </msup>
+         </mrow>
+        </mfenced>
+       </math>
+       <tex-math id="IEq1_TeX">
+        \documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym}
+				\usepackage{amsfonts}
+				\usepackage{amssymb}
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\left\{ {{\bf{x}}_i \in {\Bbb R}^d} \right\}$$\end{document}
+       </tex-math>
+       <inline-graphic mime-subtype="GIF" specific-use="web" xlink:href="41467_2018_4608_Article_IEq1.gif"/>
+      </alternatives>
+     </inline-formula>
+     and background data
+     <inline-formula id="IEq2">
+      <alternatives>
+       <math id="IEq2_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+        <mfenced close="}" open="{" separators="">
+         <mrow>
+          <msub>
+           <mrow>
+            <mi mathvariant="bold">
+             y
+            </mi>
+           </mrow>
+           <mrow>
+            <mi>
+             i
+            </mi>
+           </mrow>
+          </msub>
+          <mo>
+           ∈
+          </mo>
+          <msup>
+           <mrow>
+            <mi mathvariant="double-struck">
+             R
+            </mi>
+           </mrow>
+           <mrow>
+            <mi>
+             d
+            </mi>
+           </mrow>
+          </msup>
+         </mrow>
+        </mfenced>
+       </math>
+       <tex-math id="IEq2_TeX">
+        \documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym}
+				\usepackage{amsfonts}
+				\usepackage{amssymb}
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\left\{ {{\bf{y}}_i \in {\Bbb R}^d} \right\}$$\end{document}
+       </tex-math>
+       <inline-graphic mime-subtype="GIF" specific-use="web" xlink:href="41467_2018_4608_Article_IEq2.gif"/>
+      </alternatives>
+     </inline-formula>
+     , let
+     <italic>
+      C
+     </italic>
+     <sub>
+      <italic>
+       X
+      </italic>
+     </sub>
+     ,
+     <italic>
+      C
+     </italic>
+     <sub>
+      <italic>
+       Y
+      </italic>
+     </sub>
+     be their corresponding empirical covariance matrices. Let
+     <inline-formula id="IEq3">
+      <alternatives>
+       <math id="IEq3_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+        <msubsup>
+         <mrow>
+          <mi mathvariant="double-struck">
+           R
+          </mi>
+         </mrow>
+         <mrow>
+          <mi mathvariant="normal">
+           unit
+          </mi>
+         </mrow>
+         <mrow>
+          <mi>
+           d
+          </mi>
+         </mrow>
+        </msubsup>
+        <mover>
+         <mrow>
+          <mo>
+           =
+          </mo>
+         </mrow>
+         <mrow>
+          <mi mathvariant="normal">
+           def
+          </mi>
+         </mrow>
+        </mover>
+        <mfenced close="}" open="{" separators="">
+         <mrow>
+          <mi mathvariant="bold">
+           v
+          </mi>
+          <mo>
+           ∈
+          </mo>
+          <msup>
+           <mrow>
+            <mi mathvariant="double-struck">
+             R
+            </mi>
+           </mrow>
+           <mrow>
+            <mi>
+             d
+            </mi>
+           </mrow>
+          </msup>
+          <mo>
+           :
+          </mo>
+          <msub>
+           <mrow>
+            <mfenced close="∥" open="∥" separators="">
+             <mrow>
+              <mi mathvariant="bold">
+               v
+              </mi>
+             </mrow>
+            </mfenced>
+           </mrow>
+           <mrow>
+            <mn>
+             2
+            </mn>
+           </mrow>
+          </msub>
+          <mo>
+           =
+          </mo>
+          <mn>
+           1
+          </mn>
+         </mrow>
+        </mfenced>
+       </math>
+       <tex-math id="IEq3_TeX">
+        \documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym}
+				\usepackage{amsfonts}
+				\usepackage{amssymb}
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\Bbb R}_{{\mathrm{unit}}}^d\mathop { = }\limits^{{\kern 1pt} {\mathrm{def}}} \left\{ {{\bf{v}} \in {\Bbb R}^d:\left\| {\bf{v}} \right\|_2 = 1} \right\}$$\end{document}
+       </tex-math>
+       <inline-graphic mime-subtype="GIF" specific-use="web" xlink:href="41467_2018_4608_Article_IEq3.gif"/>
+      </alternatives>
+     </inline-formula>
+     be the set of unit vectors. For any direction
+     <inline-formula id="IEq4">
+      <alternatives>
+       <math id="IEq4_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+        <mi mathvariant="bold">
+         v
+        </mi>
+        <mo>
+         ∈
+        </mo>
+        <msubsup>
+         <mrow>
+          <mi mathvariant="double-struck">
+           R
+          </mi>
+         </mrow>
+         <mrow>
+          <mi mathvariant="normal">
+           unit
+          </mi>
+         </mrow>
+         <mrow>
+          <mi>
+           d
+          </mi>
+         </mrow>
+        </msubsup>
+       </math>
+       <tex-math id="IEq4_TeX">
+        \documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym}
+				\usepackage{amsfonts}
+				\usepackage{amssymb}
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\bf{v}} \in {\Bbb R}_{{\mathrm{unit}}}^d$$\end{document}
+       </tex-math>
+       <inline-graphic mime-subtype="GIF" specific-use="web" xlink:href="41467_2018_4608_Article_IEq4.gif"/>
+      </alternatives>
+     </inline-formula>
+     , the variance it accounts for in the target data and in the background data can be written as:
+     <disp-formula id="Equa">
+      <alternatives>
+       <math display="block" id="Equa_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+        <mtable>
+         <mtr>
+          <mtd columnalign="left">
+           <mi mathvariant="normal">
+            Target
+           </mi>
+           <mi mathvariant="normal">
+            data
+           </mi>
+           <mi mathvariant="normal">
+            variance :
+           </mi>
+           <mspace width="1em"/>
+           <msub>
+            <mrow>
+             <mi>
+              λ
+             </mi>
+            </mrow>
+            <mrow>
+             <mi>
+              X
+             </mi>
+            </mrow>
+           </msub>
+           <mrow>
+            <mo>
+             (
+            </mo>
+            <mrow>
+             <mi mathvariant="bold">
+              v
+             </mi>
+            </mrow>
+            <mo>
+             )
+            </mo>
+           </mrow>
+           <mover>
+            <mrow>
+             <mo>
+              =
+             </mo>
+            </mrow>
+            <mrow>
+             <mi mathvariant="normal">
+              def
+             </mi>
+            </mrow>
+           </mover>
+           <msup>
+            <mrow>
+             <mi mathvariant="bold">
+              v
+             </mi>
+            </mrow>
+            <mrow>
+             <mi>
+              T
+             </mi>
+            </mrow>
+           </msup>
+           <msub>
+            <mrow>
+             <mi>
+              C
+             </mi>
+            </mrow>
+            <mrow>
+             <mi>
+              X
+             </mi>
+            </mrow>
+           </msub>
+           <mi mathvariant="bold">
+            v
+           </mi>
+           <mo>
+            ,
+           </mo>
+          </mtd>
+         </mtr>
+         <mtr>
+          <mtd columnalign="left">
+           <mi mathvariant="normal">
+            Background
+           </mi>
+           <mi mathvariant="normal">
+            data
+           </mi>
+           <mi mathvariant="normal">
+            variance :
+           </mi>
+           <mspace width="1em"/>
+           <msub>
+            <mrow>
+             <mi>
+              λ
+             </mi>
+            </mrow>
+            <mrow>
+             <mi>
+              Y
+             </mi>
+            </mrow>
+           </msub>
+           <mrow>
+            <mo>
+             (
+            </mo>
+            <mrow>
+             <mi mathvariant="bold">
+              v
+             </mi>
+            </mrow>
+            <mo>
+             )
+            </mo>
+           </mrow>
+           <mover>
+            <mrow>
+             <mo>
+              =
+             </mo>
+            </mrow>
+            <mrow>
+             <mi mathvariant="normal">
+              def
+             </mi>
+            </mrow>
+           </mover>
+           <msup>
+            <mrow>
+             <mi mathvariant="bold">
+              v
+             </mi>
+            </mrow>
+            <mrow>
+             <mi>
+              T
+             </mi>
+            </mrow>
+           </msup>
+           <msub>
+            <mrow>
+             <mi>
+              C
+             </mi>
+            </mrow>
+            <mrow>
+             <mi>
+              Y
+             </mi>
+            </mrow>
+           </msub>
+           <mi mathvariant="bold">
+            v
+           </mi>
+           <mo>
+            .
+           </mo>
+          </mtd>
+         </mtr>
+        </mtable>
+       </math>
+       <tex-math id="Equa_TeX">
+        \documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym}
+				\usepackage{amsfonts}
+				\usepackage{amssymb}
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\begin{array}{l}{\mathrm{Target}}{\kern 1pt} {\mathrm{data}}{\kern 1pt} {\mathrm{variance:}}\quad \lambda _X({\mathbf{v}})\mathop { = }\limits^{{\mathrm{def}}} {\bf{v}}^TC_X{\bf{v}},\\ {\mathrm{Background}}{\kern 1pt} {\mathrm{data}}{\kern 1pt} {\mathrm{variance:}}\quad \lambda _Y({\bf{v}})\mathop { = }\limits^{{\mathrm{def}}} {\bf{v}}^TC_Y{\bf{v}}.\end{array}$$\end{document}
+       </tex-math>
+       <graphic mime-subtype="GIF" specific-use="web" xlink:href="41467_2018_4608_Article_Equa.gif"/>
+      </alternatives>
+     </disp-formula>
+     Given a contrast parameter
+     <italic>
+      α
+     </italic>
+     ≥ 0 that quantifies the trade-off between having high target variance and low background variance, cPCA computes the contrastive direction
+     <bold>
+      v
+     </bold>
+     * by optimizing
+     <disp-formula id="Equ1">
+      <label>
+       1
+      </label>
+      <alternatives>
+       <math display="block" id="Equ1_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+        <msup>
+         <mrow>
+          <mi mathvariant="bold">
+           v
+          </mi>
+         </mrow>
+         <mrow>
+          <mo>
+           *
+          </mo>
+         </mrow>
+        </msup>
+        <mo>
+         =
+        </mo>
+        <msub>
+         <mrow>
+          <mi mathvariant="normal">
+           argmax
+          </mi>
+         </mrow>
+         <mrow>
+          <mi mathvariant="bold">
+           v
+          </mi>
+          <mo>
+           ∈
+          </mo>
+          <msubsup>
+           <mrow>
+            <mi mathvariant="double-struck">
+             R
+            </mi>
+           </mrow>
+           <mrow>
+            <mi mathvariant="normal">
+             unit
+            </mi>
+           </mrow>
+           <mrow>
+            <mi>
+             d
+            </mi>
+           </mrow>
+          </msubsup>
+         </mrow>
+        </msub>
+        <msub>
+         <mrow>
+          <mi>
+           λ
+          </mi>
+         </mrow>
+         <mrow>
+          <mi>
+           X
+          </mi>
+         </mrow>
+        </msub>
+        <mrow>
+         <mo>
+          (
+         </mo>
+         <mrow>
+          <mi mathvariant="bold">
+           v
+          </mi>
+         </mrow>
+         <mo>
+          )
+         </mo>
+        </mrow>
+        <mo>
+         -
+        </mo>
+        <mi>
+         α
+        </mi>
+        <msub>
+         <mrow>
+          <mi>
+           λ
+          </mi>
+         </mrow>
+         <mrow>
+          <mi>
+           Y
+          </mi>
+         </mrow>
+        </msub>
+        <mrow>
+         <mo>
+          (
+         </mo>
+         <mrow>
+          <mi mathvariant="bold">
+           v
+          </mi>
+         </mrow>
+         <mo>
+          )
+         </mo>
+        </mrow>
+        <mo>
+         .
+        </mo>
+       </math>
+       <tex-math id="Equ1_TeX">
+        \documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym}
+				\usepackage{amsfonts}
+				\usepackage{amssymb}
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\bf{v}}^ \ast = {\mathrm{argmax}}_{{\bf{v}} \in {\Bbb R}_{{\mathrm{unit}}}^d}\lambda _X({\bf{v}}) - \alpha \lambda _Y({\bf{v}}).$$\end{document}
+       </tex-math>
+       <graphic mime-subtype="GIF" specific-use="web" xlink:href="41467_2018_4608_Article_Equ1.gif"/>
+      </alternatives>
+     </disp-formula>
+     This problem can be rewritten as
+     <disp-formula id="Equb">
+      <alternatives>
+       <math display="block" id="Equb_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+        <msup>
+         <mrow>
+          <mi mathvariant="bold">
+           v
+          </mi>
+         </mrow>
+         <mrow>
+          <mo>
+           *
+          </mo>
+         </mrow>
+        </msup>
+        <mo>
+         =
+        </mo>
+        <msub>
+         <mrow>
+          <mi mathvariant="normal">
+           argmax
+          </mi>
+         </mrow>
+         <mrow>
+          <mi mathvariant="bold">
+           v
+          </mi>
+          <mo>
+           ∈
+          </mo>
+          <msubsup>
+           <mrow>
+            <mi mathvariant="double-struck">
+             R
+            </mi>
+           </mrow>
+           <mrow>
+            <mi mathvariant="normal">
+             unit
+            </mi>
+           </mrow>
+           <mrow>
+            <mi>
+             d
+            </mi>
+           </mrow>
+          </msubsup>
+         </mrow>
+        </msub>
+        <msup>
+         <mrow>
+          <mi mathvariant="bold">
+           v
+          </mi>
+         </mrow>
+         <mrow>
+          <mi>
+           T
+          </mi>
+         </mrow>
+        </msup>
+        <mfenced close=")" open="(" separators="">
+         <mrow>
+          <msub>
+           <mrow>
+            <mi>
+             C
+            </mi>
+           </mrow>
+           <mrow>
+            <mi>
+             X
+            </mi>
+           </mrow>
+          </msub>
+          <mo>
+           -
+          </mo>
+          <mi>
+           α
+          </mi>
+          <msub>
+           <mrow>
+            <mi>
+             C
+            </mi>
+           </mrow>
+           <mrow>
+            <mi>
+             Y
+            </mi>
+           </mrow>
+          </msub>
+         </mrow>
+        </mfenced>
+        <mi mathvariant="bold">
+         v
+        </mi>
+        <mo>
+         ,
+        </mo>
+       </math>
+       <tex-math id="Equb_TeX">
+        \documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym}
+				\usepackage{amsfonts}
+				\usepackage{amssymb}
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\bf{v}}^ \ast = {\mathrm{argmax}}_{{\mathbf{v}} \in {\Bbb R}_{{\mathrm{unit}}}^d}{\bf{v}}^T\left( {C_X - \alpha C_Y} \right){\bf{v}},$$\end{document}
+       </tex-math>
+       <graphic mime-subtype="GIF" specific-use="web" xlink:href="41467_2018_4608_Article_Equb.gif"/>
+      </alternatives>
+     </disp-formula>
+     which implies that
+     <bold>
+      v
+     </bold>
+     * corresponds to the first eigenvector of the matrix
+     <inline-formula id="IEq5">
+      <alternatives>
+       <math id="IEq5_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+        <mi>
+         C
+        </mi>
+        <mover>
+         <mrow>
+          <mo>
+           =
+          </mo>
+         </mrow>
+         <mrow>
+          <mi mathvariant="normal">
+           def
+          </mi>
+         </mrow>
+        </mover>
+        <mfenced close=")" open="(" separators="">
+         <mrow>
+          <msub>
+           <mrow>
+            <mi>
+             C
+            </mi>
+           </mrow>
+           <mrow>
+            <mi>
+             X
+            </mi>
+           </mrow>
+          </msub>
+          <mo>
+           -
+          </mo>
+          <mi>
+           α
+          </mi>
+          <msub>
+           <mrow>
+            <mi>
+             C
+            </mi>
+           </mrow>
+           <mrow>
+            <mi>
+             Y
+            </mi>
+           </mrow>
+          </msub>
+         </mrow>
+        </mfenced>
+       </math>
+       <tex-math id="IEq5_TeX">
+        \documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym}
+				\usepackage{amsfonts}
+				\usepackage{amssymb}
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$C\mathop { = }\limits^{{\mathrm{def}}{\kern 1pt} } \left( {C_X - \alpha C_Y} \right)$$\end{document}
+       </tex-math>
+       <inline-graphic mime-subtype="GIF" specific-use="web" xlink:href="41467_2018_4608_Article_IEq5.gif"/>
+      </alternatives>
+     </inline-formula>
+     <sup/>
+     . Hence the contrastive directions can be efficiently computed using eigenvalue decomposition. Analogous to PCA, we call the leading eigenvectors of
+     <italic>
+      C
+     </italic>
+     the contrastive principal components (cPCs). We note the cPCs are eigenvectors of the matrix
+     <italic>
+      C
+     </italic>
+     and are hence orthogonal to each other. For a fixed
+     <italic>
+      α
+     </italic>
+     , we compute (
+     <xref ref-type="disp-formula" rid="Equ1">
+      1
+     </xref>
+     ) and return the subspace spanned by the first few (typically two) cPCs.
+    </p>
+    <p id="Par22">
+     The contrast parameter
+     <italic>
+      α
+     </italic>
+     represents the trade-off between having the high target variance and the low background variance. When
+     <italic>
+      α
+     </italic>
+     = 0, cPCA selects the directions that only maximize the target variance, and hence reduces to PCA applied on the target data {
+     <bold>
+      x
+     </bold>
+     <sub>
+      <italic>
+       i
+      </italic>
+     </sub>
+     }. As
+     <italic>
+      α
+     </italic>
+     increases, directions with smaller background variance become more important and the cPCs are driven towards the null space of the background data {
+     <bold>
+      y
+     </bold>
+     <sub>
+      <italic>
+       i
+      </italic>
+     </sub>
+     }. In the limiting case
+     <italic>
+      α
+     </italic>
+     = ∞, any direction not in the null space of {
+     <bold>
+      y
+     </bold>
+     <sub>
+      <italic>
+       i
+      </italic>
+     </sub>
+     } receives an infinite penalty. In this case, cPCA corresponds to first projecting the target data onto the null space of the background data, and then performing PCA on the projected data.
+    </p>
+    <p id="Par23">
+     במקום לבחור
+     <italic>
+      α
+     </italic>
+     יחיד ולהחזיר את תת-המרחב שלו, cPCA מחשבת את תת-המרחבים של רשימת
+     <italic>
+      α
+     </italic>
+     ומחזירה כמה תת-המרחבים שרחוקים זה מזה במונחים של הזווית הראשית
+     <sup>
+      <xref ref-type="bibr" rid="CR29">
+       29
+      </xref>
+     </sup>
+     . השלכת הנתונים על כל אחד מתת-המרחבים הללו תחשוף מגמות שונות בתוך נתוני המטרה, ועל ידי בחינה חזותית של תרשימי הפיזור המוחזרים, המשתמש יכול להבחין במהירות בתת-המרחב הרלוונטי (והערך המתאים של
+     <italic>
+      α
+     </italic>
+     ) לניתוח שלו או שלה. ראו Fig.
+     <xref ref-type="supplementary-material" rid="MOESM1">
+      1
+     </xref>
+     לדוגמה מפורטת.
+    </p>
+    <p id="Par24">
+     האלגוריתם המלא של cPCA מתואר באלגוריתם 2 (שיטות משלימות). אנו בדרך כלל מגדירים את רשימת הערכים הפוטנציאליים של
+     <italic>
+      α
+     </italic>
+     להיות 40 ערכים המפוזרים לוגריתמית בין 0.1 ל-1000 וזה משמש לכל הניסויים במאמר. כדי לבחור את תת-המרחבים המייצגים, cPCA משתמשת באשכולות ספקטרליים כדי לאגד את תת-המרחבים, כאשר הזיקה מוגדרת כמכפלת הקוסינוס של הזוויות הראשיות בין תת-המרחבים. לאחר מכן, המדיאנים (המייצגים) של כל אשכול משמשים כערכי
+     <italic>
+      α
+     </italic>
+     ליצירת תרשימי הפיזור הנראים על ידי המשתמש
+     <sup>
+      <xref ref-type="bibr" rid="CR30">
+       30
+      </xref>
+     </sup>
+     .
+    </p>
+   </sec>
+   <sec id="Sec9">
+    <title>
+     בחירת מערך הנתונים הרקע
+    </title>
+    <p id="Par25">
+     הבחירה של מערך הנתונים הרקע משפיעה רבות על תוצאת cPCA. באופן כללי, נתוני הרקע צריכים להיות בעלי המבנה שאנו רוצים להסיר מנתוני המטרה. מבנה כזה בדרך כלל תואם לכיוונים במטרה עם שונות גבוהה, אך שאינם מעניינים את האנליסט.
+    </p>
+    <p id="Par26">
+     אנו מספקים כמה דוגמאות כלליות של מערכי נתונים רקע שיכולים לספק ניגודים שימושיים לנתוני המטרה: (1) קבוצת ביקורת {
+     <bold>
+      y
+     </bold>
+     <sub>
+      <italic>
+       i
+      </italic>
+     </sub>
+     } בניגוד לאוכלוסייה חולה {
+     <bold>
+      x
+     </bold>
+     <sub>
+      <italic>
+       i
+      </italic>
+     </sub>
+     } מכיוון שקבוצת הביקורת מכילה שונות ברמת האוכלוסייה דומה אך לא את השונות העדינה הנובעת מתתי-סוגים שונים של המחלה. (2) הנתונים בזמן אפס {
+     <bold>
+      y
+     </bold>
+     <sub>
+      <italic>
+       i
+      </italic>
+     </sub>
+     } המשמשים לניגוד מול נתונים בנקודת זמן מאוחרת יותר {
+     <bold>
+      x
+     </bold>
+     <sub>
+      <italic>
+       i
+      </italic>
+     </sub>
+     }. זה מאפשר ויזואליזציות של השינויים הבולטים ביותר לאורך זמן. (3) קבוצה הומוגנית {
+     <bold>
+      y
+     </bold>
+     <sub>
+      <italic>
+       i
+      </italic>
+     </sub>
+     } בניגוד לקבוצה מעורבת {
+     <bold>
+      x
+     </bold>
+     <sub>
+      <italic>
+       i
+      </italic>
+     </sub>
+     } מכיוון שלשתיהן יש שונות תוך-אוכלוסייתית ורעש מדידה, אך לראשונה אין שונות בין-אוכלוסייתית. (4) מערך נתונים לפני טיפול {
+     <bold>
+      y
+     </bold>
+     <sub>
+      <italic>
+       i
+      </italic>
+     </sub>
+     } בניגוד לנתונים לאחר טיפול {
+     <bold>
+      x
+     </bold>
+     <sub>
+      <italic>
+       i
+      </italic>
+     </sub>
+     } כדי להסיר רעש מדידה אך לשמר שינויים שנגרמו על ידי הטיפול. (5) סט של הקלטות ללא אות {
+     <bold>
+      y
+     </bold>
+     <sub>
+      <italic>
+       i
+      </italic>
+     </sub>
+     } או תמונות המכילות רק רעש, בניגוד למדידות {
+     <bold>
+      x
+     </bold>
+     <sub>
+      <italic>
+       i
+      </italic>
+     </sub>
+     } המכילות גם אות וגם רעש.
+    </p>
+    <p id="Par27">
+     כדאי להוסיף שנתוני הרקע לא צריכים להיות בעלי מבנה השונות המדויק שאנו רוצים להסיר מנתוני המטרה. לדוגמה, בניסוי המוצג ב-Fig.
+     <xref ref-type="fig" rid="Fig2">
+      2
+     </xref>
+     , מתברר שאין צורך להשתמש במערך נתונים רקע המורכב מתמונות של דשא. למעשה, תוצאות דומות מתקבלות גם אם במקום תמונות של דשא, משתמשים בתמונות של השמיים כמערך נתונים רקע. מכיוון שמבנה מטריצות השונות דומה מספיק, cPCA מסירה את מבנה הרקע מנתוני המטרה. בנוסף, cPCA לא דורשת שנתוני המטרה ונתוני הרקע יהיו בעלי מספר דגימות דומה. מכיוון שמטריצות השונות מחושבות באופן עצמאי, cPCA דורשת רק שמטריצות השונות האמפיריות יהיו הערכות טובות של מטריצות השונות של האוכלוסייה הבסיסית, שזה בעצם אותו דרישה כמו PCA.
+    </p>
+   </sec>
+   <sec id="Sec10">
+    <title>
+     הבטחות תיאורטיות של cPCA
+    </title>
+    <p id="Par28">
+     כאן, אנו דנים בפרשנות הגיאומטרית של cPCA כמו גם בתכונות הסטטיסטיות שלה. ראשית, מעניין לשקול אילו כיוונים הם "טובים יותר" למטרת ניתוח ניגודי. עבור כיוון
+     <inline-formula id="IEq6">
+      <alternatives>
+       <math id="IEq6_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+        <mi mathvariant="bold">
+         v
+        </mi>
+        <mo>
+         ∈
+        </mo>
+        <msubsup>
+         <mrow>
+          <mi mathvariant="double-struck">
+           R
+          </mi>
+         </mrow>
+         <mrow>
+          <mi mathvariant="normal">
+           unit
+          </mi>
+         </mrow>
+         <mrow>
+          <mi>
+           d
+          </mi>
+         </mrow>
+        </msubsup>
+       </math>
+       <tex-math id="IEq6_TeX">
+        \documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym}
+				\usepackage{amsfonts}
+				\usepackage{amssymb}
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\bf{v}} \in {\Bbb R}_{{\mathrm{unit}}}^d$$\end{document}
+       </tex-math>
+       <inline-graphic href="41467_2018_4608_Article_IEq6.gif" mime-subtype="GIF" specific-use="web"/>
+      </alternatives>
+     </inline-formula>
+     , החשיבות שלו ב-cPCA נקבעת במלואה על ידי זוג השונות מטרה-רקע (
+     <italic>
+      λ
+     </italic>
+     <sub>
+      <italic>
+       X
+      </italic>
+     </sub>
+     (
+     <bold>
+      v
+     </bold>
+     ),
+     <italic>
+      λ
+     </italic>
+     <sub>
+      <italic>
+       Y
+      </italic>
+     </sub>
+     (
+     <bold>
+      v
+     </bold>
+     )); רצוי שתהיה שונות מטרה גבוהה ושונות רקע נמוכה. בהתבסס על אינטואיציה זו, אנו יכולים להגדיר סדר חלקי של ניגודיות עבור כיוונים שונים: עבור שני כיוונים
+     <bold>
+      v
+     </bold>
+     <sub>
+      1
+     </sub>
+     ו-
+     <bold>
+      v
+     </bold>
+     <sub>
+      2
+     </sub>
+     , אנו עשויים לומר ש-
+     <bold>
+      v
+     </bold>
+     <sub>
+      1
+     </sub>
+     הוא כיוון ניגודי טוב יותר אם יש לו שונות מטרה גבוהה יותר ושונות רקע נמוכה יותר. במקרה זה, זוג השונות מטרה-רקע של
+     <bold>
+      v
+     </bold>
+     <sub>
+      1
+     </sub>
+     יהיה בצד הימני-תחתון של זה של
+     <bold>
+      v
+     </bold>
+     <sub>
+      2
+     </sub>
+     בתרשים של זוגות השונות מטרה-רקע (
+     <italic>
+      λ
+     </italic>
+     <sub>
+      <italic>
+       X
+      </italic>
+     </sub>
+     (
+     <bold>
+      v
+     </bold>
+     ),
+     <italic>
+      λ
+     </italic>
+     <sub>
+      <italic>
+       Y
+      </italic>
+     </sub>
+     (
+     <bold>
+      v
+     </bold>
+     )), לדוגמה, Fig.
+     <xref ref-type="fig" rid="Fig5">
+      5
+     </xref>
+     <sup/>
+     . בהתבסס על סדר חלקי זה, ניתן להגדיר את קבוצת הכיוונים הניגודיים ביותר באופן דומה להגדרת חזית פארטו
+     <sup>
+      <xref ref-type="bibr" rid="CR31">
+       31
+      </xref>
+     </sup>
+     . תנו ל-
+     <inline-formula id="IEq7">
+      <alternatives>
+       <math id="IEq7_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+        <mi mathvariant="script">
+         U
+        </mi>
+       </math>
+       <tex-math id="IEq7_TeX">
+        \documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym}
+				\usepackage{amsfonts}
+				\usepackage{amssymb}
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\cal U}$$\end{document}
+       </tex-math>
+       <inline-graphic href="41467_2018_4608_Article_IEq7.gif" mime-subtype="GIF" specific-use="web"/>
+      </alternatives>
+     </inline-formula>
+     להיות קבוצת זוגות השונות מטרה-רקע עבור כל הכיוונים, כלומר
+     <inline-formula id="IEq8">
+      <alternatives>
+       <math id="IEq8_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+        <mi mathvariant="script">
+         U
+        </mi>
+        <mover>
+         <mrow>
+          <mo>
+           =
+          </mo>
+         </mrow>
+         <mrow>
+          <mi mathvariant="normal">
+           def
+          </mi>
+         </mrow>
+        </mover>
+        <msub>
+         <mrow>
+          <mfenced close="}" open="{" separators="">
+           <mrow>
+            <mrow>
+             <mo>
+              (
+             </mo>
+             <mrow>
+              <msub>
+               <mrow>
+                <mi>
+                 λ
+                </mi>
+               </mrow>
+               <mrow>
+                <mi>
+                 X
+                </mi>
+               </mrow>
+              </msub>
+              <mrow>
+               <mo>
+                (
+               </mo>
+               <mrow>
+                <mi mathvariant="bold">
+                 v
+                </mi>
+               </mrow>
+               <mo>
+                )
+               </mo>
+              </mrow>
+              <mo>
+               ,
+              </mo>
+              <msub>
+               <mrow>
+                <mi>
+                 λ
+                </mi>
+               </mrow>
+               <mrow>
+                <mi>
+                 Y
+                </mi>
+               </mrow>
+              </msub>
+              <mrow>
+               <mo>
+                (
+               </mo>
+               <mrow>
+                <mi mathvariant="bold">
+                 v
+                </mi>
+               </mrow>
+               <mo>
+                )
+               </mo>
+              </mrow>
+             </mrow>
+             <mo>
+              )
+             </mo>
+            </mrow>
+           </mrow>
+          </mfenced>
+          <mrow>
+           <mi mathvariant="bold">
+            v
+           </mi>
+           <mo>
+            ∈
+           </mo>
+           <msubsup>
+            <mrow>
+             <mi mathvariant="double-struck">
+              R
+             </mi>
+            </mrow>
+            <mrow>
+             <mi mathvariant="normal">
+              unit
+             </mi>
+            </mrow>
+            <mrow>
+             <mi>
+              d
+             </mi>
+            </mrow>
+           </msubsup>
+          </mrow>
+         </mrow>
+        </msub>
+        <tex-math id="IEq8_TeX">
+         \documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym}
+				\usepackage{amsfonts}
+				\usepackage{amssymb}
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\cal U}\mathop { = }\limits^{{\mathrm{def}}{\kern 1pt} } \left\{ {(\lambda _X({\bf{v}}),\lambda _Y({\bf{v}}))} \right\}_{{\bf{v}} \in {\Bbb R}_{{\mathrm{unit}}}^d}$$\end{document}
+        </tex-math>
+        <inline-graphic href="41467_2018_4608_Article_IEq8.gif" mime-subtype="GIF" specific-use="web"/>
+       </math>
+      </alternatives>
+      <sup/>
+      . קבוצת הכיוונים הניגודיים ביותר תואמת לגבול הימני-תחתון של
+      <inline-formula id="IEq9">
+       <alternatives>
+        <math id="IEq9_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+         <mi mathvariant="script">
+          U
+         </mi>
+        </math>
+        <tex-math id="IEq9_TeX">
+         \documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym}
+				\usepackage{amsfonts}
+				\usepackage{amssymb}
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\cal U}$$\end{document}
+        </tex-math>
+        <inline-graphic href="41467_2018_4608_Article_IEq9.gif" mime-subtype="GIF" specific-use="web"/>
+       </alternatives>
+      </inline-formula>
+      בתרשים של זוגות השונות מטרה-רקע, כפי שמוצג ב-Fig.
+      <xref ref-type="fig" rid="Fig5">
+       5
+      </xref>
+      <sup/>
+      . (למקרה הספציפי של מטריצות רקע ומטרה הניתנות לדיאגונליזציה בו-זמנית, ראו Fig.
+      <xref ref-type="supplementary-material" rid="MOESM1">
+       7
+      </xref>
+      <sup/>
+      .)
+     </inline-formula>
+     <fig id="Fig5" position="float">
+      <label>
+       Fig. 5
+      </label>
+      <caption xml:lang="en">
+       <p>
+        פרשנות גיאומטרית של cPCA. קבוצת זוגות השונות מטרה–רקע
+        <inline-formula id="IEq10">
+         <alternatives>
+          <math id="IEq10_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+           <mi mathvariant="script">
+            U
+           </mi>
+          </math>
+          <tex-math id="IEq10_TeX">
+           \documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym}
+				\usepackage{amsfonts}
+				\usepackage{amssymb}
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\cal U}$$\end{document}
+          </tex-math>
+          <inline-graphic href="41467_2018_4608_Article_IEq10.gif" mime-subtype="GIF" specific-use="web"/>
+         </alternatives>
+        </inline-formula>
+        מתוארת כאזור טורקיז עבור נתוני מטרה ורקע שנוצרו באקראי. הגבול התחתון-ימני, בצבע זהב, מתאים לקבוצת הכיוונים הניגודיים ביותר
+        <inline-formula id="IEq11">
+         <alternatives>
+          <math id="IEq11_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+           <msub>
+            <mrow>
+             <mi mathvariant="script">
+              S
+             </mi>
+            </mrow>
+            <mrow>
+             <mi>
+              λ
+             </mi>
+            </mrow>
+           </msub>
+          </math>
+          <tex-math id="IEq11_TeX">
+           \documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym}
+				\usepackage{amsfonts}
+				\usepackage{amssymb}
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\cal S}_\lambda$$\end{document}
+          </tex-math>
+          <inline-graphic href="41467_2018_4608_Article_IEq11.gif" mime-subtype="GIF" specific-use="web"/>
+         </alternatives>
+        </inline-formula>
+        . המשולשים הכחולים הם זוגות השונות עבור ה-cPCs שנבחרו עם ערכי
+        <italic>
+         α
+        </italic>
+        0.92 ו-0.29 בהתאמה. אנו מציינים שהם תואמים לנקודות המגע של העקומה הזהובה והקווים המשיקים עם שיפוע
+        <inline-formula id="IEq12">
+         <alternatives>
+          <math id="IEq12_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+           <mfrac>
+            <mrow>
+             <mn>
+              1
+             </mn>
+            </mrow>
+            <mrow>
+             <mi>
+              α
+             </mi>
+            </mrow>
+           </mfrac>
+          </math>
+          <tex-math id="IEq12_TeX">
+           \documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym}
+				\usepackage{amsfonts}
+				\usepackage{amssymb}
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\frac{1}{\alpha }$$\end{document}
+          </tex-math>
+          <inline-graphic href="41467_2018_4608_Article_IEq12.gif" mime-subtype="GIF" specific-use="web"/>
+         </alternatives>
+        </inline-formula>
+        = 1.08, 3.37, בהתאמה
+       </p>
+      </caption>
+      <graphic href="/ProjectMundo-Anon/MediaObjects/10X1038_s41467-018-04608-8/41467_2018_4608_Fig5_HTML.jpg" mime-subtype="JPEG" specific-use="web"/>
+     </fig>
+    </p>
+    <p id="Par29">
+     לגבי cPCA, אנו יכולים להוכיח (ראו הערה משלימה
+     <xref ref-type="supplementary-material" rid="MOESM1">
+      2
+     </xref>
+     ) כי על ידי שינוי
+     <italic>
+      α
+     </italic>
+     , קבוצת ה-cPC העליונה זהה לקבוצת הכיוונים הניגודיים ביותר. יתר על כן, עבור הכיוון
+     <bold>
+      v
+     </bold>
+     שנבחר על ידי cPCA עם פרמטר הניגודיות המוגדר ל-
+     <italic>
+      α
+     </italic>
+     , זוג השונות שלו (
+     <italic>
+      λ
+     </italic>
+     <sub>
+      <italic>
+       X
+      </italic>
+     </sub>
+     (
+     <bold>
+      v
+     </bold>
+     ),
+     <italic>
+      λ
+     </italic>
+     <sub>
+      <italic>
+       Y
+      </italic>
+     </sub>
+     (
+     <bold>
+      v
+     </bold>
+     )) תואם לנקודת המגע של הגבול הימני-תחתון של
+     <inline-formula id="IEq13">
+      <alternatives>
+       <math id="IEq13_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+        <mi mathvariant="script">
+         U
+        </mi>
+       </math>
+       <tex-math id="IEq13_TeX">
+        \documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym}
+				\usepackage{amsfonts}
+				\usepackage{amssymb}
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\cal U}$$\end{document}
+       </tex-math>
+       <inline-graphic href="41467_2018_4608_Article_IEq13.gif" mime-subtype="GIF" specific-use="web"/>
+      </alternatives>
+     </inline-formula>
+     עם קו שיפוע-1/
+     <italic>
+      α
+     </italic>
+     . כתוצאה מכך, על ידי שינוי
+     <italic>
+      α
+     </italic>
+     מאפס לאינסוף, cPCA בוחרת כיוונים עם זוגות שונות הנעים מהקצה השמאלי-תחתון לקצה הימני-עליון של הגבול הימני-תחתון של
+     <inline-formula id="IEq14">
+      <alternatives>
+       <math id="IEq14_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+        <mi mathvariant="script">
+         U
+        </mi>
+       </math>
+       <tex-math id="IEq14_TeX">
+        \documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym}
+				\usepackage{amsfonts}
+				\usepackage{amssymb}
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\cal U}$$\end{document}
+       </tex-math>
+       <inline-graphic href="41467_2018_4608_Article_IEq14.gif" mime-subtype="GIF" specific-use="web"/>
+      </alternatives>
+     </inline-formula>
+     <sup/>
+     .
+    </p>
+    <p id="Par30">
+     אנו גם מעירים כי לגבי האקראיות של הנתונים, קצב ההתכנסות של ה-cPC המדגמי ל-cPC של האוכלוסייה הוא
+     <inline-formula id="IEq15">
+      <alternatives>
+       <math id="IEq15_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+        <msub>
+         <mrow>
+          <mi>
+           O
+          </mi>
+         </mrow>
+         <mrow>
+          <mi>
+           p
+          </mi>
+         </mrow>
+        </msub>
+        <mfenced close=")" open="(" separators="">
+         <mrow>
+          <msqrt>
+           <mfrac>
+            <mrow>
+             <mi>
+              d
+             </mi>
+            </mrow>
+            <mrow>
+             <mi mathvariant="normal">
+              min
+             </mi>
+             <mrow>
+              <mo>
+               (
+              </mo>
+              <mrow>
+               <mi>
+                n
+               </mi>
+               <mo>
+                ,
+               </mo>
+               <mi>
+                m
+               </mi>
+              </mrow>
+              <mo>
+               )
+              </mo>
+             </mrow>
+            </mrow>
+           </mfrac>
+          </msqrt>
+         </mrow>
+        </mfenced>
+       </math>
+       <tex-math id="IEq15_TeX">
+        \documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym}
+				\usepackage{amsfonts}
+				\usepackage{amssymb}
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$O_p\left( {\sqrt {\frac{d}{{{\mathrm{min}}(n,m)}}} } \right)$$\end{document}
+       </tex-math>
+       <inline-graphic href="41467_2018_4608_Article_IEq15.gif" mime-subtype="GIF" specific-use="web"/>
+      </alternatives>
+     </inline-formula>
+     תחת הנחות מתונות, כאשר
+     <italic>
+      d
+     </italic>
+     הוא הממד ו-
+     <italic>
+      n
+     </italic>
+     ,
+     <italic>
+      m
+     </italic>
+     הם הגדלים של נתוני המטרה והרקע. קצב זה דומה לקצב ההתכנסות הסטנדרטי של וקטור עצמי מדגמי עבור מטריצת שונות. ראו הערה משלימה
+     <xref ref-type="supplementary-material" rid="MOESM1">
+      2
+     </xref>
+     <sup/>
+     .
+    </p>
+   </sec>
+   <sec id="Sec11">
+    <title>
+     זמינות קוד
+    </title>
+    <p id="Par31">
+     שחררנו מימוש Python של cPCA ב-GitHub (
+     <ext-link ext-link-type="uri" href="https://github.com/abidlabs/contrastive">
+      https://github.com/abidlabs/contrastive
+     </ext-link>
+     ). מאגר ה-GitHub כולל גם מחברות Python ומערכי נתונים המשחזרים את רוב התרשימים במאמר זה ובמידע המשלים.
+    </p>
+   </sec>
+   <sec id="Sec12">
+    <title>
+     זמינות נתונים
+    </title>
+    <p id="Par32">
+     מערכי הנתונים ששימשו להערכת cPCA במאמר זה זמינים מאיתנו או מהמחברים של המחקרים המקוריים. אנא ראו את מאגר ה-GitHub המפורט בסעיף הקודם עבור מערכי הנתונים ששחררנו.
+    </p>
+   </sec>
+  </sec>
+ </body>
+ <back>
+  <ack>
+   <title>
+    תודות
+   </title>
+   <p>
+    אנו מודים לאלכס יואנידיס על הסיוע בביצוע הניסויים על הקשר בין קבוצות אבות במקסיקו. אנו מודים לפרופסור דיוויד טסה על מתן הצעות מועילות ותמיכה כספית ל-M.Z. ו-V.B. אנו מודים לעמיתינו אמיראטה גורבאני, שינקון ני, ורושאן ליו על הערות מועילות בפיתוח טכניקה זו. A.A. ו-M.Z. נתמכים חלקית על ידי מלגת בוגרים של סטנפורד. J.Z. נתמך על ידי מענק חוקר צ'אן-צוקרברג ועל ידי מענק הקרן הלאומית למדע CRII 1657155.
+   </p>
+  </ack>
+  <sec sec-type="author-contribution">
+   <title>
+    תרומות המחברים
+   </title>
+   <p>
+    J.Z. הציע את הרעיון המקורי של cPCA ופיקח על המחקר. A.A., M.Z., ו-V.B. תכננו את האלגוריתם. A.A. יישם את האלגוריתם וביצע את הניסויים האמפיריים. M.Z. ו-V.B. הוכיחו את התוצאות התיאורטיות. A.A. ו-M.Z. כתבו את כתב היד. כל המחברים סקרו את כתב היד.
+   </p>
+  </sec>
+  <sec sec-type="ethics-statement">
+   <sec id="FPar1" sec-type="COI-statement">
+    <title>
+     אינטרסים מתחרים
+    </title>
+    <p id="Par33">
+     The authors declare no competing interests.
+    </p>
+   </sec>
+  </sec>
+  <ref-list id="Bib1">
+   <title>
+    מקורות
+   </title>
+   <ref-list>
+    <ref id="CR1">
+     <label>
+      1.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Hotelling
+        </surname>
+        <given-names>
+         H
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Analysis of a complex of statistical variables into principal components
+      </article-title>
+      <source>
+       J. Educ. Psychol.
+      </source>
+      <year>
+       1933
+      </year>
+      <volume>
+       24
+      </volume>
+      <fpage>
+       417
+      </fpage>
+      <pub-id pub-id-type="doi">
+       10.1037/h0071325
+      </pub-id>
+      <pub-id assigning-authority="Zentralblatt MATH" pub-id-type="other">
+       59.1182.04
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR2">
+     <label>
+      2.
+     </label>
+     <mixed-citation publication-type="other">
+      Jolliffe, I. T (ed.).
+      <italic>
+       Principal Component Analysis
+      </italic>
+      , 115–128 (Springer, New York, NY, 1986).
+     </mixed-citation>
+    </ref>
+    <ref id="CR3">
+     <label>
+      3.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Maaten
+        </surname>
+        <given-names>
+         L
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Hinton
+        </surname>
+        <given-names>
+         G
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Visualizing data using t-sne
+      </article-title>
+      <source>
+       J. Mach. Learn. Res.
+      </source>
+      <year>
+       2008
+      </year>
+      <volume>
+       9
+      </volume>
+      <fpage>
+       2579
+      </fpage>
+      <lpage>
+       2605
+      </lpage>
+      <pub-id assigning-authority="Zentralblatt MATH" pub-id-type="other">
+       1225.68219
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR4">
+     <label>
+      4.
+     </label>
+     <mixed-citation publication-type="other">
+      Cox, M. A. &amp; Cox, T. F.
+      <italic>
+       Multidimensional Scaling. Handbook of Data Visualization
+      </italic>
+      315–347 (Springer, Berlin, 2008).
+     </mixed-citation>
+    </ref>
+    <ref id="CR5">
+     <label>
+      5.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Chen
+        </surname>
+        <given-names>
+         W
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Ma
+        </surname>
+        <given-names>
+         H
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Yu
+        </surname>
+        <given-names>
+         D
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Zhang
+        </surname>
+        <given-names>
+         H
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       SVD-based technique for interference cancellation and noise reduction in NMR measurement of time-dependent magnetic fields
+      </article-title>
+      <source>
+       Sensors
+      </source>
+      <year>
+       2016
+      </year>
+      <volume>
+       16
+      </volume>
+      <fpage>
+       323
+      </fpage>
+      <pub-id pub-id-type="doi">
+       10.3390/s16030323
+      </pub-id>
+      <pub-id pub-id-type="pmcid">
+       4813898
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR6">
+     <label>
+      6.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Zhou
+        </surname>
+        <given-names>
+         F
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Wu
+        </surname>
+        <given-names>
+         R
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Xing
+        </surname>
+        <given-names>
+         M
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Bao
+        </surname>
+        <given-names>
+         Z
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Eigensubspace-based filtering with application in narrow-band interference suppression for sar
+      </article-title>
+      <source>
+       IEEE Geosci. Remote Sens. Lett.
+      </source>
+      <year>
+       2007
+      </year>
+      <volume>
+       4
+      </volume>
+      <fpage>
+       75
+      </fpage>
+      <lpage>
+       79
+      </lpage>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2007IGRSL...4...75Z
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1109/LGRS.2006.887033
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR7">
+     <label>
+      7.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Garte
+        </surname>
+        <given-names>
+         S
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       The role of ethnicity in cancer susceptibility gene polymorphisms: the example of CYP1A1
+      </article-title>
+      <source>
+       Carcinogenesis
+      </source>
+      <year>
+       1998
+      </year>
+      <volume>
+       19
+      </volume>
+      <fpage>
+       1329
+      </fpage>
+      <lpage>
+       1332
+      </lpage>
+      <pub-id pub-id-type="doi">
+       10.1093/carcin/19.8.1329
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       9744524
+      </pub-id>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DyaK1cXls1elt7g%3D
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR8">
+     <label>
+      8.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Wold
+        </surname>
+        <given-names>
+         S
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Esbensen
+        </surname>
+        <given-names>
+         K
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Geladi
+        </surname>
+        <given-names>
+         P
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Principal component analysis
+      </article-title>
+      <source>
+       Chemom. Intell. Lab. Syst.
+      </source>
+      <year>
+       1987
+      </year>
+      <volume>
+       2
+      </volume>
+      <fpage>
+       37
+      </fpage>
+      <lpage>
+       52
+      </lpage>
+      <pub-id pub-id-type="doi">
+       10.1016/0169-7439(87)80084-9
+      </pub-id>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DyaL1cXjtVyjsw%3D%3D
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR9">
+     <label>
+      9.
+     </label>
+     <mixed-citation publication-type="other">
+      Izenman, A. J.
+      <italic>
+       Modern Multivariate Statistical Techniques
+      </italic>
+      237–280 (Springer, New York, 2013).
+     </mixed-citation>
+    </ref>
+    <ref id="CR10">
+     <label>
+      10.
+     </label>
+     <mixed-citation publication-type="other">
+      Mika, S., Ratsch, G., Weston, J., Scholkopf, B. &amp; Mullers, K.-R. Fisher discriminant analysis with kernels. In
+      <italic>
+       Proc. of the 1999 IEEE Signal Processing Society Workshop Neural Networks for Signal Processing IX, 1999
+      </italic>
+      , 41–48 (IEEE, Beijing, 1999).
+     </mixed-citation>
+    </ref>
+    <ref id="CR11">
+     <label>
+      11.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Barshan
+        </surname>
+        <given-names>
+         E
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Ghodsi
+        </surname>
+        <given-names>
+         A
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Azimifar
+        </surname>
+        <given-names>
+         Z
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Jahromi
+        </surname>
+        <given-names>
+         MZ
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Supervised principal component analysis: visualization, classification and regression on subspaces and submanifolds
+      </article-title>
+      <source>
+       Pattern Recognit.
+      </source>
+      <year>
+       2011
+      </year>
+      <volume>
+       44
+      </volume>
+      <fpage>
+       1357
+      </fpage>
+      <lpage>
+       1371
+      </lpage>
+      <pub-id pub-id-type="doi">
+       10.1016/j.patcog.2010.12.015
+      </pub-id>
+      <pub-id assigning-authority="Zentralblatt MATH" pub-id-type="other">
+       1214.62067
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR12">
+     <label>
+      12.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Fan
+        </surname>
+        <given-names>
+         J
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Ke
+        </surname>
+        <given-names>
+         ZT
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Liu
+        </surname>
+        <given-names>
+         H
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Xia
+        </surname>
+        <given-names>
+         L
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Quadro: a supervised dimension reduction method via rayleigh quotient optimization
+      </article-title>
+      <source>
+       Ann. Stat.
+      </source>
+      <year>
+       2015
+      </year>
+      <volume>
+       43
+      </volume>
+      <fpage>
+       1498
+      </fpage>
+      <pub-id assigning-authority="American Mathematical Society" pub-id-type="other">
+       3357869
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1214/14-AOS1307
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       26778864
+      </pub-id>
+      <pub-id pub-id-type="pmcid">
+       4712455
+      </pub-id>
+      <pub-id assigning-authority="Zentralblatt MATH" pub-id-type="other">
+       1317.62054
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR13">
+     <label>
+      13.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Meng
+        </surname>
+        <given-names>
+         C
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Dimension reduction techniques for the integrative analysis of multi-omics data
+      </article-title>
+      <source>
+       Brief. Bioinformatics
+      </source>
+      <year>
+       2016
+      </year>
+      <volume>
+       17
+      </volume>
+      <fpage>
+       628
+      </fpage>
+      <lpage>
+       641
+      </lpage>
+      <pub-id pub-id-type="doi">
+       10.1093/bib/bbv108
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       26969681
+      </pub-id>
+      <pub-id pub-id-type="pmcid">
+       4945831
+      </pub-id>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BC1cXlsVSqs7o%3D
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR14">
+     <label>
+      14.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Rohart
+        </surname>
+        <given-names>
+         F
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Gautier
+        </surname>
+        <given-names>
+         B
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Singh
+        </surname>
+        <given-names>
+         A
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Le Cao
+        </surname>
+        <given-names>
+         KA
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       mixomics: An r package for omics feature selection and multiple data integration
+      </article-title>
+      <source>
+       PLoS Comput. Biol.
+      </source>
+      <year>
+       2017
+      </year>
+      <volume>
+       13
+      </volume>
+      <fpage>
+       e1005752
+      </fpage>
+      <pub-id pub-id-type="doi">
+       10.1371/journal.pcbi.1005752
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       29099853
+      </pub-id>
+      <pub-id pub-id-type="pmcid">
+       5687754
+      </pub-id>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BC1cXht1Wjs73K
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR15">
+     <label>
+      15.
+     </label>
+     <mixed-citation publication-type="other">
+      Garali, I. et al. A strategy for multimodal data integration: application to biomarkers identification in spinocerebellar ataxia.
+      <italic>
+       Brief. Bioinform.
+      </italic>
+      <bold>
+       bbx060
+      </bold>
+      , 1–14 (2017).
+     </mixed-citation>
+    </ref>
+    <ref id="CR16">
+     <label>
+      16.
+     </label>
+     <mixed-citation publication-type="other">
+      Stein-O’Brien, G. L. et al. Enter the matrix: Interpreting unsupervised feature learning with matrix decomposition to discover hidden knowledge in high-throughput omics data. Preprint at
+      <italic>
+       bioRxiv
+      </italic>
+      <ext-link ext-link-type="doi" xlink:href="10.1101/196915">
+       https://doi.org/10.1101/196915
+      </ext-link>
+      (2017).
+     </mixed-citation>
+    </ref>
+    <ref id="CR17">
+     <label>
+      17.
+     </label>
+     <mixed-citation publication-type="other">
+      Zhou, Z., Li, X., Wright, J., Candes, E. &amp; Ma, Y. Stable principal component pursuit. In
+      <italic>
+       IEEE International Symposium on Information Theory Proceedings (ISIT), 2010
+      </italic>
+      1518–1522 (IEEE, Austin, TX, 2010).
+     </mixed-citation>
+    </ref>
+    <ref id="CR18">
+     <label>
+      18.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Moreno-Estrada
+        </surname>
+        <given-names>
+         A
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       The genetics of Mexico recapitulates native american substructure and affects biomedical traits
+      </article-title>
+      <source>
+       Science
+      </source>
+      <year>
+       2014
+      </year>
+      <volume>
+       344
+      </volume>
+      <fpage>
+       1280
+      </fpage>
+      <lpage>
+       1285
+      </lpage>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2014Sci...344.1280M
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1126/science.1251688
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       24926019
+      </pub-id>
+      <pub-id pub-id-type="pmcid">
+       4156478
+      </pub-id>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BC2cXpsVGnsbc%3D
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR19">
+     <label>
+      19.
+     </label>
+     <mixed-citation publication-type="other">
+      Zou, J. Y., Hsu, D. J., Parkes, D. C. &amp; Adams, R. P. Contrastive learning using spectral methods. In
+      <italic>
+       Advances in Neural Information Processing Systems
+      </italic>
+      2238–2246 (NIPS, Lake Tahoe, 2013).
+     </mixed-citation>
+    </ref>
+    <ref id="CR20">
+     <label>
+      20.
+     </label>
+     <mixed-citation publication-type="other">
+      Ge, R. &amp; Zou, J. Rich component analysis. In
+      <italic>
+       Proc. International Conference on Machine Learning
+      </italic>
+      1502–1510 (ICML, New York, 2016).
+     </mixed-citation>
+    </ref>
+    <ref id="CR21">
+     <label>
+      21.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Ringner
+        </surname>
+        <given-names>
+         M
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       What is principal component analysis?
+      </article-title>
+      <source>
+       Nat. Biotechnol.
+      </source>
+      <year>
+       2008
+      </year>
+      <volume>
+       26
+      </volume>
+      <fpage>
+       303
+      </fpage>
+      <pub-id pub-id-type="doi">
+       10.1038/nbt0308-303
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       18327243
+      </pub-id>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BD1cXjsVGitrg%3D
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR22">
+     <label>
+      22.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Ahmed
+        </surname>
+        <given-names>
+         MM
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Protein dynamics associated with failed and rescued learning in the ts65dn mouse model of down syndrome
+      </article-title>
+      <source>
+       PLoS ONE
+      </source>
+      <year>
+       2015
+      </year>
+      <volume>
+       10
+      </volume>
+      <fpage>
+       e0119491
+      </fpage>
+      <pub-id pub-id-type="doi">
+       10.1371/journal.pone.0119491
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       25793384
+      </pub-id>
+      <pub-id pub-id-type="pmcid">
+       4368539
+      </pub-id>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BC2MXhslaqt77P
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR23">
+     <label>
+      23.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Higuera
+        </surname>
+        <given-names>
+         C
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Gardiner
+        </surname>
+        <given-names>
+         KJ
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Cios
+        </surname>
+        <given-names>
+         KJ
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Self-organizing feature maps identify proteins critical to learning in a mouse model of down syndrome
+      </article-title>
+      <source>
+       PLoS ONE
+      </source>
+      <year>
+       2015
+      </year>
+      <volume>
+       10
+      </volume>
+      <fpage>
+       e0129126
+      </fpage>
+      <pub-id pub-id-type="doi">
+       10.1371/journal.pone.0129126
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       26111164
+      </pub-id>
+      <pub-id pub-id-type="pmcid">
+       4482027
+      </pub-id>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BC28XosVCrurg%3D
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR24">
+     <label>
+      24.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Zheng
+        </surname>
+        <given-names>
+         GXY
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Massively parallel digital transcriptional profiling of single cells
+      </article-title>
+      <source>
+       Nat. Commun.
+      </source>
+      <year>
+       2017
+      </year>
+      <volume>
+       8
+      </volume>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2017NatCo...814049Z
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1038/ncomms14049
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       28091601
+      </pub-id>
+      <pub-id pub-id-type="pmcid">
+       5241818
+      </pub-id>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BC2sXht1WlsLo%3D
+      </pub-id>
+      <elocation-id>
+       14049
+      </elocation-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR25">
+     <label>
+      25.
+     </label>
+     <mixed-citation publication-type="other">
+      Bhargava, V., Head, S. R., Ordoukhanian, P., Mercola, M. &amp; Subramaniam, S. Technical variations in low-input RNA-seq methodologies.
+      <italic>
+       Sci. Rep
+      </italic>
+      .
+      <bold>
+       4
+      </bold>
+      , 3678 (2014).
+     </mixed-citation>
+    </ref>
+    <ref id="CR26">
+     <label>
+      26.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Cavalli-Sforza
+        </surname>
+        <given-names>
+         LL
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       The DNA revolution in population genetics
+      </article-title>
+      <source>
+       Trends Genet.
+      </source>
+      <year>
+       1998
+      </year>
+      <volume>
+       14
+      </volume>
+      <fpage>
+       60
+      </fpage>
+      <lpage>
+       65
+      </lpage>
+      <pub-id pub-id-type="doi">
+       10.1016/S0168-9525(97)01327-9
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       9520599
+      </pub-id>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DyaK1cXhsFKhsbg%3D
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR27">
+     <label>
+      27.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Novembre
+        </surname>
+        <given-names>
+         J
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Genes mirror geography within Europe
+      </article-title>
+      <source>
+       Nature
+      </source>
+      <year>
+       2008
+      </year>
+      <volume>
+       456
+      </volume>
+      <fpage>
+       98
+      </fpage>
+      <lpage>
+       101
+      </lpage>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2008Natur.456...98N
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1038/nature07331
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       18758442
+      </pub-id>
+      <pub-id pub-id-type="pmcid">
+       2735096
+      </pub-id>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BD1cXhtlCjtrjM
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR28">
+     <label>
+      28.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Silva-Zolezzi
+        </surname>
+        <given-names>
+         I
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Analysis of genomic diversity in Mexican mestizo populations to develop genomic medicine in Mexico
+      </article-title>
+      <source>
+       Proc. Natl. Acad. Sci. USA
+      </source>
+      <year>
+       2009
+      </year>
+      <volume>
+       106
+      </volume>
+      <fpage>
+       8611
+      </fpage>
+      <lpage>
+       8616
+      </lpage>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2009PNAS..106.8611S
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1073/pnas.0903045106
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       19433783
+      </pub-id>
+      <pub-id pub-id-type="pmcid">
+       2680428
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR29">
+     <label>
+      29.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Miao
+        </surname>
+        <given-names>
+         J
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Ben-Israel
+        </surname>
+        <given-names>
+         A
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       On principal angles between subspaces in Rn
+      </article-title>
+      <source>
+       Linear Algebra Appl.
+      </source>
+      <year>
+       1992
+      </year>
+      <volume>
+       171
+      </volume>
+      <fpage>
+       81
+      </fpage>
+      <lpage>
+       98
+      </lpage>
+      <pub-id assigning-authority="American Mathematical Society" pub-id-type="other">
+       1165446
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1016/0024-3795(92)90251-5
+      </pub-id>
+      <pub-id assigning-authority="Zentralblatt MATH" pub-id-type="other">
+       0779.15003
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR30">
+     <label>
+      30.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Ng
+        </surname>
+        <given-names>
+         AY
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Jordan
+        </surname>
+        <given-names>
+         MI
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Weiss
+        </surname>
+        <given-names>
+         Y
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       On spectral clustering: analysis and an algorithm
+      </article-title>
+      <source>
+       Adv. Neural. Inf. Process. Syst.
+      </source>
+      <year>
+       2002
+      </year>
+      <volume>
+       14
+      </volume>
+      <fpage>
+       849
+      </fpage>
+      <lpage>
+       856
+      </lpage>
+     </mixed-citation>
+    </ref>
+    <ref id="CR31">
+     <label>
+      31.
+     </label>
+     <mixed-citation publication-type="other">
+      Fudenberg, D. D. &amp; Tirole, J.
+      <italic>
+       Game Theory
+      </italic>
+      (MIT Press, Cambridge, MA, 1991).
+     </mixed-citation>
+    </ref>
+    <ref id="CR32">
+     <label>
+      32.
+     </label>
+     <mixed-citation publication-type="other">
+      LeCun, Y., Cortes, C. &amp; Burges, C. J. Mnist handwritten digit database.
+      <italic>
+       AT&amp;T Labs
+      </italic>
+      .
+      <bold>
+       2
+      </bold>
+      ,
+      <ext-link ext-link-type="uri" xlink:href="http://yann.lecun.com/exdb/mnist">
+       http://yann.lecun.com/exdb/mnist
+      </ext-link>
+      (2010).
+     </mixed-citation>
+    </ref>
+    <ref id="CR33">
+     <label>
+      33.
+     </label>
+     <mixed-citation publication-type="other">
+      Deng, J. et al. Imagenet: a large-scale hierarchical image database. In
+      <italic>
+       IEEE Conference on
+      </italic>
+      <italic>
+       Computer Vision and Pattern Recognition, 2009. CVPR 2009
+      </italic>
+      , 248–255 (IEEE, Washington, DC, 2009).
+     </mixed-citation>
+    </ref>
+   </ref-list>
+  </ref-list>
+  <app-group>
+   <app id="App1" specific-use="web-only">
+    <sec id="Sec14">
+     <title>
+      חומר משלים אלקטרוני
+     </title>
+     <p id="Par34">
+      <supplementary-material content-type="local-data" id="MOESM1" xlink:title="Electronic supplementary material">
+       <media mime-subtype="pdf" mimetype="application" xlink:href="MediaObjects/41467_2018_4608_MOESM1_ESM.pdf">
+        <caption xml:lang="en">
+         <p>
+          Supplementary Information
+         </p>
+        </caption>
+       </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="MOESM2" xlink:title="Electronic supplementary material">
+       <media mime-subtype="pdf" mimetype="application" xlink:href="MediaObjects/41467_2018_4608_MOESM2_ESM.pdf">
+        <caption xml:lang="en">
+         <p>
+          Peer Review File
+         </p>
+        </caption>
+       </media>
+      </supplementary-material>
+     </p>
+    </sec>
+   </app>
+  </app-group>
+  <notes notes-type="ESMHint">
+   <title>
+    חומר משלים אלקטרוני
+   </title>
+   <p>
+    <bold>
+     Supplementary Information
+    </bold>
+    accompanies this paper at
+    <ext-link ext-link-type="doi" xlink:href="10.1038/s41467-018-04608-8">
+     https://doi.org/10.1038/s41467-018-04608-8
+    </ext-link>
+    .
+   </p>
+  </notes>
+  <notes notes-type="Misc">
+   <p>
+    <bold>
+     Publisher's note:
+    </bold>
+    Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.
+   </p>
+  </notes>
+ </back>
+</article>

@@ -1,0 +1,4620 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type='text/xsl' href='/ProjectMundo-Anon/style/jats-html.xsl'?>
+<!DOCTYPE response>
+<article article-type="research-article" dtd-version="1.2" xml:lang="en" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <front>
+  <journal-meta>
+   <journal-id journal-id-type="publisher-id">
+    41746
+   </journal-id>
+   <journal-id journal-id-type="doi">
+    10.1038/41746.2398-6352
+   </journal-id>
+   <journal-title-group>
+    <journal-title>
+     npj Digital Medicine
+    </journal-title>
+    <abbrev-journal-title abbrev-type="publisher">
+     npj Digit. Med.
+    </abbrev-journal-title>
+   </journal-title-group>
+   <issn pub-type="epub">
+    2398-6352
+   </issn>
+   <publisher>
+    <publisher-name>
+     Nature Publishing Group UK
+    </publisher-name>
+    <publisher-loc>
+     London
+    </publisher-loc>
+   </publisher>
+  </journal-meta>
+  <article-meta>
+   <article-id pub-id-type="publisher-id">
+    s41746-019-0216-8
+   </article-id>
+   <article-id pub-id-type="manuscript">
+    216
+   </article-id>
+   <article-id pub-id-type="doi">
+    10.1038/s41746-019-0216-8
+   </article-id>
+   <article-categories>
+    <subj-group subj-group-type="heading">
+     <subject>
+      Article
+     </subject>
+    </subj-group>
+    <subj-group subj-group-type="SubjectPath">
+     <subject>
+      /692/699/75
+     </subject>
+    </subj-group>
+    <subj-group subj-group-type="SubjectPath">
+     <subject>
+      /631/114/1305
+     </subject>
+    </subj-group>
+    <subj-group subj-group-type="SubjectPath">
+     <subject>
+      /631/114/1564
+     </subject>
+    </subj-group>
+    <subj-group subj-group-type="NatureArticleTypeID">
+     <subject>
+      article
+     </subject>
+    </subj-group>
+   </article-categories>
+   <title-group>
+    <article-title xml:lang="en">
+     Deep learning interpretation of echocardiograms
+    </article-title>
+   </title-group>
+   <contrib-group>
+    <contrib contrib-type="author" equal-contrib="yes" id="Au1">
+     <name name-style="western">
+      <surname>
+       Ghorbani
+      </surname>
+      <given-names>
+       Amirata
+      </given-names>
+     </name>
+     <xref ref-type="aff" rid="Aff1">
+      1
+     </xref>
+     <xref ref-type="author-notes" rid="fn1"/>
+    </contrib>
+    <contrib contrib-type="author" corresp="yes" equal-contrib="yes" id="Au2">
+     <contrib-id contrib-id-type="orcid">
+      http://orcid.org/0000-0002-3813-7518
+     </contrib-id>
+     <name name-style="western">
+      <surname>
+       Ouyang
+      </surname>
+      <given-names>
+       David
+      </given-names>
+     </name>
+     <address>
+      <email>
+       ouyangd@stanford.edu
+      </email>
+     </address>
+     <xref ref-type="aff" rid="Aff2">
+      2
+     </xref>
+     <xref ref-type="corresp" rid="IDs4174601902168_cor2">
+      b
+     </xref>
+     <xref ref-type="author-notes" rid="fn1"/>
+    </contrib>
+    <contrib contrib-type="author" id="Au3">
+     <name name-style="western">
+      <surname>
+       Abid
+      </surname>
+      <given-names>
+       Abubakar
+      </given-names>
+     </name>
+     <xref ref-type="aff" rid="Aff1">
+      1
+     </xref>
+    </contrib>
+    <contrib contrib-type="author" id="Au4">
+     <name name-style="western">
+      <surname>
+       He
+      </surname>
+      <given-names>
+       Bryan
+      </given-names>
+     </name>
+     <xref ref-type="aff" rid="Aff3">
+      3
+     </xref>
+    </contrib>
+    <contrib contrib-type="author" id="Au5">
+     <name name-style="western">
+      <surname>
+       Chen
+      </surname>
+      <given-names>
+       Jonathan H.
+      </given-names>
+     </name>
+     <xref ref-type="aff" rid="Aff2">
+      2
+     </xref>
+    </contrib>
+    <contrib contrib-type="author" id="Au6">
+     <name name-style="western">
+      <surname>
+       Harrington
+      </surname>
+      <given-names>
+       Robert A.
+      </given-names>
+     </name>
+     <xref ref-type="aff" rid="Aff2">
+      2
+     </xref>
+    </contrib>
+    <contrib contrib-type="author" id="Au7">
+     <name name-style="western">
+      <surname>
+       Liang
+      </surname>
+      <given-names>
+       David H.
+      </given-names>
+     </name>
+     <xref ref-type="aff" rid="Aff2">
+      2
+     </xref>
+    </contrib>
+    <contrib contrib-type="author" id="Au8">
+     <contrib-id contrib-id-type="orcid">
+      http://orcid.org/0000-0001-9418-9577
+     </contrib-id>
+     <name name-style="western">
+      <surname>
+       Ashley
+      </surname>
+      <given-names>
+       Euan A.
+      </given-names>
+     </name>
+     <xref ref-type="aff" rid="Aff2">
+      2
+     </xref>
+    </contrib>
+    <contrib contrib-type="author" corresp="yes" id="Au9">
+     <contrib-id contrib-id-type="orcid">
+      http://orcid.org/0000-0001-8880-4764
+     </contrib-id>
+     <name name-style="western">
+      <surname>
+       Zou
+      </surname>
+      <given-names>
+       James Y.
+      </given-names>
+     </name>
+     <address>
+      <email>
+       jamesz@stanford.edu
+      </email>
+     </address>
+     <xref ref-type="aff" rid="Aff1">
+      1
+     </xref>
+     <xref ref-type="aff" rid="Aff3">
+      3
+     </xref>
+     <xref ref-type="aff" rid="Aff4">
+      4
+     </xref>
+     <xref ref-type="aff" rid="Aff5">
+      5
+     </xref>
+     <xref ref-type="corresp" rid="IDs4174601902168_cor9">
+      j
+     </xref>
+    </contrib>
+    <aff id="Aff1">
+     <label>
+      1
+     </label>
+     <institution-wrap>
+      <institution-id institution-id-type="GRID">
+       grid.168010.e
+      </institution-id>
+      <institution-id institution-id-type="ISNI">
+       0000000419368956
+      </institution-id>
+      <institution content-type="org-division">
+       Department of Electrical Engineering
+      </institution>
+      <institution content-type="org-name">
+       Stanford University
+      </institution>
+     </institution-wrap>
+     <addr-line content-type="city">
+      Stanford
+     </addr-line>
+     <addr-line content-type="state">
+      CA
+     </addr-line>
+     <country country="US">
+      USA
+     </country>
+    </aff>
+    <aff id="Aff2">
+     <label>
+      2
+     </label>
+     <institution-wrap>
+      <institution-id institution-id-type="GRID">
+       grid.168010.e
+      </institution-id>
+      <institution-id institution-id-type="ISNI">
+       0000000419368956
+      </institution-id>
+      <institution content-type="org-division">
+       Department of Medicine
+      </institution>
+      <institution content-type="org-name">
+       Stanford University
+      </institution>
+     </institution-wrap>
+     <addr-line content-type="city">
+      Stanford
+     </addr-line>
+     <addr-line content-type="state">
+      CA
+     </addr-line>
+     <country country="US">
+      USA
+     </country>
+    </aff>
+    <aff id="Aff3">
+     <label>
+      3
+     </label>
+     <institution-wrap>
+      <institution-id institution-id-type="GRID">
+       grid.168010.e
+      </institution-id>
+      <institution-id institution-id-type="ISNI">
+       0000000419368956
+      </institution-id>
+      <institution content-type="org-division">
+       Department of Computer Science
+      </institution>
+      <institution content-type="org-name">
+       Stanford University
+      </institution>
+     </institution-wrap>
+     <addr-line content-type="city">
+      Stanford
+     </addr-line>
+     <addr-line content-type="state">
+      CA
+     </addr-line>
+     <country country="US">
+      USA
+     </country>
+    </aff>
+    <aff id="Aff4">
+     <label>
+      4
+     </label>
+     <institution-wrap>
+      <institution-id institution-id-type="GRID">
+       grid.168010.e
+      </institution-id>
+      <institution-id institution-id-type="ISNI">
+       0000000419368956
+      </institution-id>
+      <institution content-type="org-division">
+       Department of Biomedical Data Science
+      </institution>
+      <institution content-type="org-name">
+       Stanford University
+      </institution>
+     </institution-wrap>
+     <addr-line content-type="city">
+      Stanford
+     </addr-line>
+     <addr-line content-type="state">
+      CA
+     </addr-line>
+     <country country="US">
+      USA
+     </country>
+    </aff>
+    <aff id="Aff5">
+     <label>
+      5
+     </label>
+     <institution-wrap>
+      <institution-id institution-id-type="GRID">
+       grid.499295.a
+      </institution-id>
+      <institution content-type="org-name">
+       Chan-Zuckerberg Biohub
+      </institution>
+     </institution-wrap>
+     <addr-line content-type="city">
+      San Francisco
+     </addr-line>
+     <addr-line content-type="state">
+      CA
+     </addr-line>
+     <country country="US">
+      USA
+     </country>
+    </aff>
+   </contrib-group>
+   <author-notes>
+    <fn fn-type="equal" id="fn1">
+     <p>
+      These authors contributed equally: Amirata Ghorbani, David Ouyang
+     </p>
+    </fn>
+    <corresp id="IDs4174601902168_cor2">
+     <label>
+      b
+     </label>
+     <email>
+      ouyangd@stanford.edu
+     </email>
+    </corresp>
+    <corresp id="IDs4174601902168_cor9">
+     <label>
+      j
+     </label>
+     <email>
+      jamesz@stanford.edu
+     </email>
+    </corresp>
+   </author-notes>
+   <pub-date date-type="pub" publication-format="electronic">
+    <day>
+     24
+    </day>
+    <month>
+     1
+    </month>
+    <year>
+     2020
+    </year>
+   </pub-date>
+   <pub-date date-type="collection" publication-format="electronic">
+    <month>
+     12
+    </month>
+    <year>
+     2020
+    </year>
+   </pub-date>
+   <volume>
+    3
+   </volume>
+   <issue seq="10">
+    1
+   </issue>
+   <elocation-id>
+    10
+   </elocation-id>
+   <history>
+    <date date-type="registration">
+     <day>
+      21
+     </day>
+     <month>
+      12
+     </month>
+     <year>
+      2019
+     </year>
+    </date>
+    <date date-type="received">
+     <day>
+      25
+     </day>
+     <month>
+      6
+     </month>
+     <year>
+      2019
+     </year>
+    </date>
+    <date date-type="accepted">
+     <day>
+      19
+     </day>
+     <month>
+      12
+     </month>
+     <year>
+      2019
+     </year>
+    </date>
+    <date date-type="online">
+     <day>
+      24
+     </day>
+     <month>
+      1
+     </month>
+     <year>
+      2020
+     </year>
+    </date>
+   </history>
+   <permissions>
+    <copyright-statement content-type="compact">
+     © The Author(s) 2020
+    </copyright-statement>
+    <copyright-year>
+     2020
+    </copyright-year>
+    <copyright-holder>
+     The Author(s)
+    </copyright-holder>
+    <license license-type="open-access" xlink:href="http://creativecommons.org/licenses/by/4.0/">
+     <license-p>
+      <bold>
+       Open Access
+      </bold>
+      This article is licensed under a Creative Commons Attribution 4.0 International License, which permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons license, and indicate if changes were made. The images or other third party material in this article are included in the article’s Creative Commons license, unless indicated otherwise in a credit line to the material. If material is not included in the article’s Creative Commons license and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this license, visit
+      <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/">
+       http://creativecommons.org/licenses/by/4.0/
+      </ext-link>
+      .
+     </license-p>
+    </license>
+   </permissions>
+   <abstract id="Abs1" xml:lang="en">
+    <title>
+     Abstract
+    </title>
+    <p id="Par1">
+     Echocardiography uses ultrasound technology to capture high temporal and spatial resolution images of the heart and surrounding structures, and is the most common imaging modality in cardiovascular medicine. Using convolutional neural networks on a large new dataset, we show that deep learning applied to echocardiography can identify local cardiac structures, estimate cardiac function, and predict systemic phenotypes that modify cardiovascular risk but not readily identifiable to human interpretation. Our deep learning model, EchoNet, accurately identified the presence of pacemaker leads (AUC = 0.89), enlarged left atrium (AUC = 0.86), left ventricular hypertrophy (AUC = 0.75), left ventricular end systolic and diastolic volumes (
+     <inline-formula id="IEq1">
+      <alternatives>
+       <math id="IEq1_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+        <msup>
+         <mrow>
+          <mi>
+           R
+          </mi>
+         </mrow>
+         <mrow>
+          <mn>
+           2
+          </mn>
+         </mrow>
+        </msup>
+       </math>
+       <tex-math id="IEq1_TeX">
+        \documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym}
+				\usepackage{amsfonts}
+				\usepackage{amssymb}
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${R}^{2}$$\end{document}
+       </tex-math>
+       <inline-graphic mime-subtype="GIF" specific-use="web" xlink:href="41746_2019_216_Article_IEq1.gif"/>
+      </alternatives>
+     </inline-formula>
+     = 0.74 and
+     <inline-formula id="IEq2">
+      <alternatives>
+       <math id="IEq2_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+        <msup>
+         <mrow>
+          <mi>
+           R
+          </mi>
+         </mrow>
+         <mrow>
+          <mn>
+           2
+          </mn>
+         </mrow>
+        </msup>
+       </math>
+       <tex-math id="IEq2_TeX">
+        \documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym}
+				\usepackage{amsfonts}
+				\usepackage{amssymb}
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${R}^{2}$$\end{document}
+       </tex-math>
+       <inline-graphic mime-subtype="GIF" specific-use="web" xlink:href="41746_2019_216_Article_IEq2.gif"/>
+      </alternatives>
+     </inline-formula>
+     = 0.70), and ejection fraction (
+     <inline-formula id="IEq3">
+      <alternatives>
+       <math id="IEq3_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+        <msup>
+         <mrow>
+          <mi>
+           R
+          </mi>
+         </mrow>
+         <mrow>
+          <mn>
+           2
+          </mn>
+         </mrow>
+        </msup>
+       </math>
+       <tex-math id="IEq3_TeX">
+        \documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym}
+				\usepackage{amsfonts}
+				\usepackage{amssymb}
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${R}^{2}$$\end{document}
+       </tex-math>
+       <inline-graphic mime-subtype="GIF" specific-use="web" xlink:href="41746_2019_216_Article_IEq3.gif"/>
+      </alternatives>
+     </inline-formula>
+     = 0.50), as well as predicted systemic phenotypes of age (
+     <inline-formula id="IEq4">
+      <alternatives>
+       <math id="IEq4_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+        <msup>
+         <mrow>
+          <mi>
+           R
+          </mi>
+         </mrow>
+         <mrow>
+          <mn>
+           2
+          </mn>
+         </mrow>
+        </msup>
+       </math>
+       <tex-math id="IEq4_TeX">
+        \documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym}
+				\usepackage{amsfonts}
+				\usepackage{amssymb}
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${R}^{2}$$\end{document}
+       </tex-math>
+       <inline-graphic mime-subtype="GIF" specific-use="web" xlink:href="41746_2019_216_Article_IEq4.gif"/>
+      </alternatives>
+     </inline-formula>
+     = 0.46), sex (AUC = 0.88), weight (
+     <inline-formula id="IEq5">
+      <alternatives>
+       <math id="IEq5_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+        <msup>
+         <mrow>
+          <mi>
+           R
+          </mi>
+         </mrow>
+         <mrow>
+          <mn>
+           2
+          </mn>
+         </mrow>
+        </msup>
+       </math>
+       <tex-math id="IEq5_TeX">
+        \documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym}
+				\usepackage{amsfonts}
+				\usepackage{amssymb}
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${R}^{2}$$\end{document}
+       </tex-math>
+       <inline-graphic mime-subtype="GIF" specific-use="web" xlink:href="41746_2019_216_Article_IEq5.gif"/>
+      </alternatives>
+     </inline-formula>
+     = 0.56), and height (
+     <inline-formula id="IEq6">
+      <alternatives>
+       <math id="IEq6_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+        <msup>
+         <mrow>
+          <mi>
+           R
+          </mi>
+         </mrow>
+         <mrow>
+          <mn>
+           2
+          </mn>
+         </mrow>
+        </msup>
+       </math>
+       <tex-math id="IEq6_TeX">
+        \documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym}
+				\usepackage{amsfonts}
+				\usepackage{amssymb}
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${R}^{2}$$\end{document}
+       </tex-math>
+       <inline-graphic mime-subtype="GIF" specific-use="web" xlink:href="41746_2019_216_Article_IEq6.gif"/>
+      </alternatives>
+     </inline-formula>
+     = 0.33). Interpretation analysis validates that EchoNet shows appropriate attention to key cardiac structures when performing human-explainable tasks and highlights hypothesis-generating regions of interest when predicting systemic phenotypes difficult for human interpretation. Machine learning on echocardiography images can streamline repetitive tasks in the clinical workflow, provide preliminary interpretation in areas with insufficient qualified cardiologists, and predict phenotypes challenging for human evaluation.
+    </p>
+   </abstract>
+   <kwd-group kwd-group-type="hierarchical" vocab="FoR" vocab-identifier="ANZSRC 2008">
+    <kwd content-type="term" vocab-term-identifier="11">
+     Medical and Health Sciences
+    </kwd>
+    <nested-kwd>
+     <kwd content-type="term" vocab-term-identifier="1102">
+      Cardiorespiratory Medicine and Haematology
+     </kwd>
+    </nested-kwd>
+   </kwd-group>
+   <funding-group>
+    <award-group>
+     <funding-source>
+      <institution-wrap>
+       <institution>
+        American College of Cardiology/ Merck Research Fellowship
+       </institution>
+      </institution-wrap>
+     </funding-source>
+    </award-group>
+   </funding-group>
+   <custom-meta-group>
+    <custom-meta>
+     <meta-name>
+      publisher-imprint-name
+     </meta-name>
+     <meta-value>
+      Nature Research
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      volume-issue-count
+     </meta-name>
+     <meta-value>
+      1
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      issue-article-count
+     </meta-name>
+     <meta-value>
+      161
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      issue-toc-levels
+     </meta-name>
+     <meta-value>
+      0
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      issue-pricelist-year
+     </meta-name>
+     <meta-value>
+      2020
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      issue-copyright-holder
+     </meta-name>
+     <meta-value>
+      The Author(s)
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      issue-copyright-year
+     </meta-name>
+     <meta-value>
+      2020
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      article-contains-esm
+     </meta-name>
+     <meta-value>
+      Yes
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      article-numbering-style
+     </meta-name>
+     <meta-value>
+      Unnumbered
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      article-registration-date-year
+     </meta-name>
+     <meta-value>
+      2019
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      article-registration-date-month
+     </meta-name>
+     <meta-value>
+      12
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      article-registration-date-day
+     </meta-name>
+     <meta-value>
+      21
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      article-toc-levels
+     </meta-name>
+     <meta-value>
+      0
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      toc-levels
+     </meta-name>
+     <meta-value>
+      0
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      volume-type
+     </meta-name>
+     <meta-value>
+      Regular
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      journal-product
+     </meta-name>
+     <meta-value>
+      NonStandardArchiveJournal
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      numbering-style
+     </meta-name>
+     <meta-value>
+      Unnumbered
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      article-grants-type
+     </meta-name>
+     <meta-value>
+      OpenChoice
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      metadata-grant
+     </meta-name>
+     <meta-value>
+      OpenAccess
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      abstract-grant
+     </meta-name>
+     <meta-value>
+      OpenAccess
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      bodypdf-grant
+     </meta-name>
+     <meta-value>
+      OpenAccess
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      bodyhtml-grant
+     </meta-name>
+     <meta-value>
+      OpenAccess
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      bibliography-grant
+     </meta-name>
+     <meta-value>
+      OpenAccess
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      esm-grant
+     </meta-name>
+     <meta-value>
+      OpenAccess
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      online-first
+     </meta-name>
+     <meta-value>
+      false
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      pdf-file-reference
+     </meta-name>
+     <meta-value>
+      BodyRef/PDF/41746_2019_Article_216.pdf
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      pdf-type
+     </meta-name>
+     <meta-value>
+      Typeset
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      target-type
+     </meta-name>
+     <meta-value>
+      OnlinePDF
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      issue-type
+     </meta-name>
+     <meta-value>
+      Regular
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      article-type
+     </meta-name>
+     <meta-value>
+      OriginalPaper
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      journal-subject-primary
+     </meta-name>
+     <meta-value>
+      Medicine &amp; Public Health
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      journal-subject-secondary
+     </meta-name>
+     <meta-value>
+      Medicine/Public Health, general
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      journal-subject-secondary
+     </meta-name>
+     <meta-value>
+      Biomedicine, general
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      journal-subject-secondary
+     </meta-name>
+     <meta-value>
+      Biotechnology
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      journal-subject-collection
+     </meta-name>
+     <meta-value>
+      Medicine
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      open-access
+     </meta-name>
+     <meta-value>
+      true
+     </meta-value>
+    </custom-meta>
+   </custom-meta-group>
+  </article-meta>
+ </front>
+ <body>
+  <sec id="Sec1" sec-type="introduction">
+   <title>
+    Introduction
+   </title>
+   <p id="Par2">
+    Cardiovascular disease has a substantial impact on overall health, well-being, and life-expectancy. In addition to being the leading cause of mortality for both men and women, cardiovascular disease is responsible for 17% of the United States’ national health expenditures.
+    <sup>
+     <xref ref-type="bibr" rid="CR1">
+      1
+     </xref>
+    </sup>
+    Even as the burden of cardiovascular disease is expected to rise with an aging population,
+    <sup>
+     <xref ref-type="bibr" rid="CR1">
+      1
+     </xref>
+    </sup>
+    there continues to be significant racial, socioeconomic, and geographic disparities in both access to care and disease outcomes.
+    <sup>
+     <xref ref-type="bibr" rid="CR2">
+      2
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR3">
+      3
+     </xref>
+    </sup>
+    Variation in access to and quality of cardiovascular imaging has been linked to disparities in outcomes.
+    <sup>
+     <xref ref-type="bibr" rid="CR3">
+      3
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR4">
+      4
+     </xref>
+    </sup>
+    It has been hypothesized that automated image interpretation can enable more available and accurate cardiovascular care and begin to alleviate some of the disparities in cardiovascular care.
+    <sup>
+     <xref ref-type="bibr" rid="CR5">
+      5
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR6">
+      6
+     </xref>
+    </sup>
+    The application of machine learning in cardiology is still in its infancy, however there is significant interest in bringing neural network based approaches to cardiovascular imaging.
+   </p>
+   <p id="Par3">
+    Machine learning has transformed many fields, ranging from image processing and voice recognition systems to super-human performance in complex strategy games.
+    <sup>
+     <xref ref-type="bibr" rid="CR7">
+      7
+     </xref>
+    </sup>
+    Many of the biggest recent advances in machine learning come from computer vision algorithms and processing image data with deep learning.
+    <sup>
+     <xref ref-type="bibr" rid="CR8">
+      8
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR9">
+      9
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR10">
+      10
+     </xref>
+     –
+     <xref ref-type="bibr" rid="CR11">
+      11
+     </xref>
+    </sup>
+    Recent advances in machine learning suggest deep learning can identify human-identifiable characteristics as well as phenotypes unrecognized by human experts.
+    <sup>
+     <xref ref-type="bibr" rid="CR12">
+      12
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR13">
+      13
+     </xref>
+    </sup>
+    Efforts to apply machine learning to other modalities of medical imaging have shown promise in computer-assisted diagnosis.
+    <sup>
+     <xref ref-type="bibr" rid="CR12">
+      12
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR13">
+      13
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR14">
+      14
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR15">
+      15
+     </xref>
+     –
+     <xref ref-type="bibr" rid="CR16">
+      16
+     </xref>
+    </sup>
+    Seemingly unrelated imaging of individual organ systems, such as fundoscopic retina images, can predict systemic phenotypes and predict cardiovascular risk factors.
+    <sup>
+     <xref ref-type="bibr" rid="CR12">
+      12
+     </xref>
+    </sup>
+    Additionally, deep learning algorithms perform well in risk stratification and classification of disease.
+    <sup>
+     <xref ref-type="bibr" rid="CR14">
+      14
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR16">
+      16
+     </xref>
+    </sup>
+    Multiple recent medical examples outside of cardiology show convolutional neural network (CNN) algorithms can match or even exceed human experts in identifying and classifying diseases.
+    <sup>
+     <xref ref-type="bibr" rid="CR13">
+      13
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR14">
+      14
+     </xref>
+    </sup>
+   </p>
+   <p id="Par4">
+    Echocardiography is a uniquely well-suited approach for the application of deep learning in cardiology. The most readily available and widely used imaging technique to assess cardiac function and structure, echocardiography combines rapid image acquisition with the lack of ionizing radiation to serve as the backbone of cardiovascular imaging.
+    <sup>
+     <xref ref-type="bibr" rid="CR4">
+      4
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR17">
+      17
+     </xref>
+    </sup>
+    Echocardiography is both frequently used as a screening modality for healthy, asymptomatic patients as well as in order to diagnose and manage patients with complex cardiovascular disease.
+    <sup>
+     <xref ref-type="bibr" rid="CR17">
+      17
+     </xref>
+    </sup>
+    For indications ranging from cardiomyopathies to valvular heart diseases, echocardiography is both necessary and sufficient to diagnose many cardiovascular diseases. Despite its importance in clinical phenotyping, there is variance in the human interpretation of echocardiogram images that could impact clinical care.
+    <sup>
+     <xref ref-type="bibr" rid="CR18">
+      18
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR19">
+      19
+     </xref>
+     –
+     <xref ref-type="bibr" rid="CR20">
+      20
+     </xref>
+    </sup>
+    Formalized training guidelines for cardiologists recognize the value of experience in interpreting echocardiogram images and basic cardiology training might be insufficient to interpret echocardiograms at the highest level.
+    <sup>
+     <xref ref-type="bibr" rid="CR21">
+      21
+     </xref>
+    </sup>
+   </p>
+   <p id="Par5">
+    Given the importance of imaging to cardiovascular care, an automated pipeline for interpreting cardiovascular imaging can improve peri-operative risk stratification, manage the cardiovascular risk of patients with oncologic disease undergoing chemotherapy, and aid in the diagnosis of cardiovascular disease.
+    <sup>
+     <xref ref-type="bibr" rid="CR1">
+      1
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR22">
+      22
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR23">
+      23
+     </xref>
+    </sup>
+    While other works applying machine learning to medical imaging required re-annotation of images by human experts, the clinical workflow for echocardiography inherently includes many measurements and calculations and often is reported through structured reporting systems. The ability to use previous annotations and interpretations from clinical reports can greatly accelerate adoption of machine learning in medical imaging. Given the availability of previously annotated clinical reports, the density of information in image and video datasets, and many available machine learning architectures already applied to image datasets, echocardiography is a high impact and highly tractable application of machine learning in medical imaging.
+   </p>
+   <p id="Par6">
+    Current literature have already shown that it is possible to identify standard echocardiogram views from unlabeled datasets.
+    <sup>
+     <xref ref-type="bibr" rid="CR5">
+      5
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR6">
+      6
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR24">
+      24
+     </xref>
+    </sup>
+    Previous works have used CNNs trained on images and videos from echocardiography to perform segmentation to identify cardiac structures and derive cardiac function. In this study, we extend previous analyses to show that EchoNet, our deep learning model using echocardiography images, can reliably identify local cardiac structures and anatomy, estimate volumetric measurements and metrics of cardiac function, and predict systemic human phenotypes that modify cardiovascular risk. Additionally, we show the first application of interpretation frameworks to understand deep learning models from echocardiogram images. Human-identifiable features, such as the presence of pacemaker and defibrillator leads, left ventricular hypertrophy, and abnormal left atrial chamber size identified by our CNN were validated using interpretation frameworks to highlight the most relevant regions of interest. To the best of our knowledge, we develop the first deep learning model that can directly predict age, sex, weight, and height from echocardiogram images and use interpretation methods to understand how the model predicts these systemic phenotypes difficult for human interpreters.
+   </p>
+  </sec>
+  <sec id="Sec2" sec-type="results">
+   <title>
+    Results
+   </title>
+   <p id="Par7">
+    We trained a CNN model on a data set of more than 2.6 million echocardiogram images from 2850 patients to identify local cardiac structures, estimate cardiac function, and predict systemic risk factors (Fig.
+    <xref ref-type="fig" rid="Fig1">
+     1
+    </xref>
+    ). Echocardiogram images, reports, and measurements were obtained from an accredited echocardiography lab of a large academic medical center (Table
+    <xref ref-type="table" rid="Tab1">
+     1
+    </xref>
+    ). Echocardiography visualizes cardiac structures from various different orientations and geometries, so images were classified by cardiac view to homogenize the input data set. Echocardiogram images were sampled from echocardiogram videos, pre-processed by de-identifying the images, and cropped to eliminate information outside of the scanning sector. These processed images were used to train EchoNet on the relevant medical classification or prediction task.
+    <fig id="Fig1" position="float">
+     <label>
+      Fig. 1
+     </label>
+     <caption xml:lang="en">
+      <title>
+       EchoNet machine learning pipeline for outcome prediction.
+      </title>
+      <p>
+       <bold>
+        a
+       </bold>
+       EchoNet workflow for image selection, cleaning, and model training.
+       <bold>
+        b
+       </bold>
+       Comparison of model performance with different cardiac views as input.
+       <bold>
+        c
+       </bold>
+       Examples of data augmentation. The original frame is rotated (left to right) and its intensity is increase (top to bottom) as augmentations.
+      </p>
+     </caption>
+     <graphic mime-subtype="PNG" specific-use="web" xlink:href="/ProjectMundo-Anon/MediaObjects/10X1038_s41746-019-0216-8/41746_2019_216_Fig1_HTML.png"/>
+    </fig>
+    <table-wrap id="Tab1">
+     <label>
+      Table 1
+     </label>
+     <caption xml:lang="en">
+      <p>
+       Baseline characteristics of patients in the training and test datasets.
+      </p>
+     </caption>
+     <table frame="hsides" rules="groups">
+      <thead>
+       <tr>
+        <th>
+         <p>
+          Characteristics
+         </p>
+        </th>
+        <th colspan="2">
+         <p>
+          Complete data
+         </p>
+        </th>
+        <th colspan="2">
+         <p>
+          A4C view data
+         </p>
+        </th>
+       </tr>
+       <tr>
+        <th/>
+        <th>
+         <p>
+          Train data
+         </p>
+        </th>
+        <th>
+         <p>
+          Test data
+         </p>
+        </th>
+        <th>
+         <p>
+          Train data
+         </p>
+        </th>
+        <th>
+         <p>
+          Test data
+         </p>
+        </th>
+       </tr>
+      </thead>
+      <tbody>
+       <tr>
+        <td>
+         <p>
+          Number of patients
+         </p>
+        </td>
+        <td>
+         <p>
+          2850
+         </p>
+        </td>
+        <td>
+         <p>
+          373
+         </p>
+        </td>
+        <td>
+         <p>
+          2546
+         </p>
+        </td>
+        <td>
+         <p>
+          337
+         </p>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <p>
+          Number of images
+         </p>
+        </td>
+        <td>
+         <p>
+          1,624,780
+         </p>
+        </td>
+        <td>
+         <p>
+          169,880
+         </p>
+        </td>
+        <td>
+         <p>
+          172,080
+         </p>
+        </td>
+        <td>
+         <p>
+          21,540
+         </p>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <p>
+          Sex (% Male)
+         </p>
+        </td>
+        <td>
+         <p>
+          52.4%
+         </p>
+        </td>
+        <td>
+         <p>
+          52.8%
+         </p>
+        </td>
+        <td>
+         <p>
+          52.2%
+         </p>
+        </td>
+        <td>
+         <p>
+          53.7%
+         </p>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <p>
+          Age: mean, years (std)
+         </p>
+        </td>
+        <td>
+         <p>
+          61.3 (17.2)
+         </p>
+        </td>
+        <td>
+         <p>
+          62.8 (16.8)
+         </p>
+        </td>
+        <td>
+         <p>
+          61.1 (17.1)
+         </p>
+        </td>
+        <td>
+         <p>
+          63.2 (16.9)
+         </p>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <p>
+          Weight: mean, Kg (std)
+         </p>
+        </td>
+        <td>
+         <p>
+          78.8 (22.7)
+         </p>
+        </td>
+        <td>
+         <p>
+          78.9 (20.8)
+         </p>
+        </td>
+        <td>
+         <p>
+          78.0 (21.7)
+         </p>
+        </td>
+        <td>
+         <p>
+          78.5 (20.2)
+         </p>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <p>
+          Height: mean, m (std)
+         </p>
+        </td>
+        <td>
+         <p>
+          1.69 (0.11)
+         </p>
+        </td>
+        <td>
+         <p>
+          1.69 (0.11)
+         </p>
+        </td>
+        <td>
+         <p>
+          1.69 (0.12)
+         </p>
+        </td>
+        <td>
+         <p>
+          1.69 (0.11)
+         </p>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <p>
+          BMI: mean (std)
+         </p>
+        </td>
+        <td>
+         <p>
+          27.3 (6.7)
+         </p>
+        </td>
+        <td>
+         <p>
+          27.5 (6.5)
+         </p>
+        </td>
+        <td>
+         <p>
+          27.1 (6.5)
+         </p>
+        </td>
+        <td>
+         <p>
+          27.3 (6.1)
+         </p>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <p>
+          Pacemaker or defibrillator lead (% Present)
+         </p>
+        </td>
+        <td>
+         <p>
+          13.2
+         </p>
+        </td>
+        <td>
+         <p>
+          14.7
+         </p>
+        </td>
+        <td>
+         <p>
+          13.1
+         </p>
+        </td>
+        <td>
+         <p>
+          15.1
+         </p>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <p>
+          Severe left atrial enlargement (% Present)
+         </p>
+        </td>
+        <td>
+         <p>
+          17.2
+         </p>
+        </td>
+        <td>
+         <p>
+          20.3
+         </p>
+        </td>
+        <td>
+         <p>
+          18.0
+         </p>
+        </td>
+        <td>
+         <p>
+          21.9
+         </p>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <p>
+          Left ventricular hypertrophy (% Present)
+         </p>
+        </td>
+        <td>
+         <p>
+          33.3
+         </p>
+        </td>
+        <td>
+         <p>
+          38.0
+         </p>
+        </td>
+        <td>
+         <p>
+          32.7
+         </p>
+        </td>
+        <td>
+         <p>
+          37.9
+         </p>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <p>
+          End diastolic volume, mL: mean (std)
+         </p>
+        </td>
+        <td>
+         <p>
+          94.3 (47.2)
+         </p>
+        </td>
+        <td>
+         <p>
+          94.6 (13.0)
+         </p>
+        </td>
+        <td>
+         <p>
+          95.1 (48.2)
+         </p>
+        </td>
+        <td>
+         <p>
+          96.9 (48.0)
+         </p>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <p>
+          End systolic volume, mL: mean (std)
+         </p>
+        </td>
+        <td>
+         <p>
+          45.6 (38.3)
+         </p>
+        </td>
+        <td>
+         <p>
+          46.2 (36.1)
+         </p>
+        </td>
+        <td>
+         <p>
+          46.0 (39.3)
+         </p>
+        </td>
+        <td>
+         <p>
+          47.0 (36.6)
+         </p>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <p>
+          Ejection fraction: mean (std)
+         </p>
+        </td>
+        <td>
+         <p>
+          55.2 (12.3)
+         </p>
+        </td>
+        <td>
+         <p>
+          54.7 (13.0)
+         </p>
+        </td>
+        <td>
+         <p>
+          55.1 (12.2)
+         </p>
+        </td>
+        <td>
+         <p>
+          54.8 (13.1)
+         </p>
+        </td>
+       </tr>
+      </tbody>
+     </table>
+    </table-wrap>
+   </p>
+   <sec id="Sec3">
+    <title>
+     Predicting anatomic structures and local features
+    </title>
+    <p id="Par8">
+     A standard part of the clinical workflow of echocardiography interpretation is the identification of local cardiac structures and characterization of its location, size, and shape. Local cardiac structures can have significant variation in image characteristics, ranging from bright echos of metallic intracardiac structures to dark regions denoting blood pools in cardiac chambers. As our first task, we trained EchoNet on three classification tasks frequently evaluated by cardiologists that rely on recognition of local features (Fig.
+     <xref ref-type="fig" rid="Fig2">
+      2
+     </xref>
+     ). Labels of the presence of intracardiac devices (such as catheters, pacemaker, and defibrillator leads), severe left atrial dilation, and left ventricular hypertrophy were extracted from the physician-interpreted report and used to train EchoNet on unlabeled apical-4-chamber input images. The presence of a pacemaker lead was predicted with high accuracy (AUC of 0.89, F1 score of 0.73), followed by the identification of a severely dilated left atrium (AUC of 0.85, F1 score of 0.68), and left ventricular hypertrophy (AUC of 0.75, F1 score of 0.57). Similarly high performance was achieved in predicting right atrium major axis length and left atrial volume estimate. Scatter plots are shown in the Supplemental Materials. To understand the model’s predictions, we used gradient-based sensitivity map methods
+     <sup>
+      <xref ref-type="bibr" rid="CR25">
+       25
+      </xref>
+     </sup>
+     to identify the regions of interest for the interpretation and show that EchoNet highlights relevant areas that correspond to intracardiac devices, the left atrium, and the left ventricle respectively. Models’ prediction robustness was additionally examined with direct input image manipulations, including occlusion of human recognizable features, to validate that EchoNet arrives at its predictions by focusing on biologically plausible regions of interest.
+     <sup>
+      <xref ref-type="bibr" rid="CR26">
+       26
+      </xref>
+     </sup>
+     For example, in the frames in Fig.
+     <xref ref-type="fig" rid="Fig2">
+      2
+     </xref>
+     with pacemaker lead, when we manually mask out the lead in the frame, EchoNet changes its prediction to no pacemaker.
+     <fig id="Fig2" position="float">
+      <label>
+       Fig. 2
+      </label>
+      <caption xml:lang="en">
+       <title>
+        EchoNet performance and interpretation for three clinical interpretations of local structures and features.
+       </title>
+       <p>
+        For each task, representative positive examples are shown side-by-side with regions of interest from the respective model. Shaded areas indicate
+        <inline-formula id="IEq7">
+         <alternatives>
+          <math id="IEq7_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+           <mrow>
+            <mn>
+             95
+            </mn>
+            <mi>
+             %
+            </mi>
+           </mrow>
+          </math>
+          <tex-math id="IEq7_TeX">
+           \documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym}
+				\usepackage{amsfonts}
+				\usepackage{amssymb}
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$95 \%$$\end{document}
+          </tex-math>
+          <inline-graphic mime-subtype="GIF" specific-use="web" xlink:href="41746_2019_216_Article_IEq7.gif"/>
+         </alternatives>
+        </inline-formula>
+        confidence intervals.
+       </p>
+      </caption>
+      <graphic mime-subtype="PNG" specific-use="web" xlink:href="/ProjectMundo-Anon/MediaObjects/10X1038_s41746-019-0216-8/41746_2019_216_Fig2_HTML.png"/>
+     </fig>
+    </p>
+   </sec>
+   <sec id="Sec4">
+    <title>
+     Predicting cardiac function
+    </title>
+    <p id="Par9">
+     Quantification of cardiac function is a crucial assessment addressed by echocardiography. However, it has significant variation in human interpretation.
+     <sup>
+      <xref ref-type="bibr" rid="CR18">
+       18
+      </xref>
+      ,
+      <xref ref-type="bibr" rid="CR19">
+       19
+      </xref>
+     </sup>
+     The ejection fraction, a measure of the volume change in the left ventricle with each heart beat, is a key metric of cardiac function, but its measurement relies on the time-consuming manual tracing of left ventricular areas and volumes at different times during the cardiac cycle. We trained EchoNet to predict left ventricular end systolic volume (ESV), end diastolic volume (EDV), and ejection fraction from sampled apical-four-chamber view images (Fig.
+     <xref ref-type="fig" rid="Fig3">
+      3
+     </xref>
+     ). Left ventricular ESV and EDV were accurately predicted. For the prediction of ESV, an
+     <inline-formula id="IEq8">
+      <alternatives>
+       <math id="IEq8_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+        <msup>
+         <mrow>
+          <mi>
+           R
+          </mi>
+         </mrow>
+         <mrow>
+          <mn>
+           2
+          </mn>
+         </mrow>
+        </msup>
+       </math>
+       <tex-math id="IEq8_TeX">
+        \documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym}
+				\usepackage{amsfonts}
+				\usepackage{amssymb}
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${R}^{2}$$\end{document}
+       </tex-math>
+       <inline-graphic mime-subtype="GIF" specific-use="web" xlink:href="41746_2019_216_Article_IEq8.gif"/>
+      </alternatives>
+     </inline-formula>
+     score of 0.74 and mean absolute error (MAE) of 13.3 mL was achieved versus MAE of 25.4 mL if we use mean prediction which is to predict every patient’s ESV as the average ESCV value of patients. The result for the EDV prediction was an
+     <inline-formula id="IEq9">
+      <alternatives>
+       <math id="IEq9_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+        <msup>
+         <mrow>
+          <mi>
+           R
+          </mi>
+         </mrow>
+         <mrow>
+          <mn>
+           2
+          </mn>
+         </mrow>
+        </msup>
+       </math>
+       <tex-math id="IEq9_TeX">
+        \documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym}
+				\usepackage{amsfonts}
+				\usepackage{amssymb}
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${R}^{2}$$\end{document}
+       </tex-math>
+       <inline-graphic mime-subtype="GIF" specific-use="web" xlink:href="41746_2019_216_Article_IEq9.gif"/>
+      </alternatives>
+     </inline-formula>
+     score of 0.70 and MAE of 20.5 mL (mean prediction MAE = 35.4 mL). Conventionally, ejection fraction is calculated from a ratio of these two volumetric measurements, however, calculated ejection fraction from the predicted volumes were less accurate (Fig.
+     <xref ref-type="fig" rid="Fig3">
+      3
+     </xref>
+     c) than EchoNet trained directly on the ejection fraction (Fig.
+     <xref ref-type="fig" rid="Fig3">
+      3
+     </xref>
+     d). We show the relative performance of a deep learning model undergoing a standard human workflow of evaluating ESV and EDV then subsequently calculating ejection fraction from the two volumetric measurements vs. direct “end-to-end” deep learning prediction of ejection fraction and show that the “end-to-end” deep learning prediction model had improved performance. Using the trained EchoNet, an
+     <inline-formula id="IEq10">
+      <alternatives>
+       <math id="IEq10_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+        <msup>
+         <mrow>
+          <mi>
+           R
+          </mi>
+         </mrow>
+         <mrow>
+          <mn>
+           2
+          </mn>
+         </mrow>
+        </msup>
+       </math>
+       <tex-math id="IEq10_TeX">
+        \documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym}
+				\usepackage{amsfonts}
+				\usepackage{amssymb}
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${R}^{2}$$\end{document}
+       </tex-math>
+       <inline-graphic mime-subtype="GIF" specific-use="web" xlink:href="41746_2019_216_Article_IEq10.gif"/>
+      </alternatives>
+     </inline-formula>
+     score of 0.50 and MAE of
+     <inline-formula id="IEq11">
+      <alternatives>
+       <math id="IEq11_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+        <mrow>
+         <mn>
+          7.0
+         </mn>
+         <mi>
+          %
+         </mi>
+        </mrow>
+       </math>
+       <tex-math id="IEq11_TeX">
+        \documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym}
+				\usepackage{amsfonts}
+				\usepackage{amssymb}
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$7.0 \%$$\end{document}
+       </tex-math>
+       <inline-graphic mime-subtype="GIF" specific-use="web" xlink:href="41746_2019_216_Article_IEq11.gif"/>
+      </alternatives>
+     </inline-formula>
+     is achieved (MAE of mean prediction =
+     <inline-formula id="IEq12">
+      <alternatives>
+       <math id="IEq12_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+        <mrow>
+         <mn>
+          9.9
+         </mn>
+         <mi>
+          %
+         </mi>
+        </mrow>
+       </math>
+       <tex-math id="IEq12_TeX">
+        \documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym}
+				\usepackage{amsfonts}
+				\usepackage{amssymb}
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$9.9 \%$$\end{document}
+       </tex-math>
+       <inline-graphic mime-subtype="GIF" specific-use="web" xlink:href="41746_2019_216_Article_IEq12.gif"/>
+      </alternatives>
+     </inline-formula>
+     ). For each model, interpretation methods show appropriate attention over left ventricle as the region of interest to generate the predictions. A comparison of model performance based on number of sampled video frames did not show gain in model performance after 11 frames per prediction task.
+     <fig id="Fig3" position="float">
+      <label>
+       Fig. 3
+      </label>
+      <caption xml:lang="en">
+       <title>
+        EchoNet performance and interpretation for ventricular size and function.
+       </title>
+       <p>
+        EchoNet performance for
+        <bold>
+         a
+        </bold>
+        predicted left ventricular end systolic volume,
+        <bold>
+         b
+        </bold>
+        predicted end diastolic volume,
+        <bold>
+         c
+        </bold>
+        calculated ejection fraction from predicted ESV and EDV, and
+        <bold>
+         d
+        </bold>
+        predicted ejection fraction.
+        <bold>
+         e
+        </bold>
+        Input image, interpretation, and overlap for ejection fraction model.
+       </p>
+      </caption>
+      <graphic mime-subtype="PNG" specific-use="web" xlink:href="/ProjectMundo-Anon/MediaObjects/10X1038_s41746-019-0216-8/41746_2019_216_Fig3_HTML.png"/>
+     </fig>
+    </p>
+   </sec>
+   <sec id="Sec5">
+    <title>
+     Predicting systemic cardiovascular risk factors
+    </title>
+    <p id="Par10">
+     With good performance in identifying local structures and estimating volumetric measurements of the heart, we sought to determine if EchoNet can also identify systemic phenotypes that modify cardiovascular risk. Previous work has shown that deep CNNs have powerful capacity to aggregate the information on visual correlations between medical imaging data and systemic phenotypes.
+     <sup>
+      <xref ref-type="bibr" rid="CR12">
+       12
+      </xref>
+     </sup>
+     EchoNet predicted systemic phenotypes of age (
+     <inline-formula id="IEq13">
+      <alternatives>
+       <math id="IEq13_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+        <msup>
+         <mrow>
+          <mi>
+           R
+          </mi>
+         </mrow>
+         <mrow>
+          <mn>
+           2
+          </mn>
+         </mrow>
+        </msup>
+       </math>
+       <tex-math id="IEq13_TeX">
+        \documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym}
+				\usepackage{amsfonts}
+				\usepackage{amssymb}
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${R}^{2}$$\end{document}
+       </tex-math>
+       <inline-graphic mime-subtype="GIF" specific-use="web" xlink:href="41746_2019_216_Article_IEq13.gif"/>
+      </alternatives>
+     </inline-formula>
+     = 0.46, MAE = 9.8 year, mean prediction MAE = 13.4 year), sex (AUC = 0.88), weight (
+     <inline-formula id="IEq14">
+      <alternatives>
+       <math id="IEq14_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+        <msup>
+         <mrow>
+          <mi>
+           R
+          </mi>
+         </mrow>
+         <mrow>
+          <mn>
+           2
+          </mn>
+         </mrow>
+        </msup>
+       </math>
+       <tex-math id="IEq14_TeX">
+        \documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym}
+				\usepackage{amsfonts}
+				\usepackage{amssymb}
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${R}^{2}$$\end{document}
+       </tex-math>
+       <inline-graphic mime-subtype="GIF" specific-use="web" xlink:href="41746_2019_216_Article_IEq14.gif"/>
+      </alternatives>
+     </inline-formula>
+     = 0.56, MAE = 10.7 Kg, mean prediction MAE = 15.4 Kg), and height (
+     <inline-formula id="IEq15">
+      <alternatives>
+       <math id="IEq15_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+        <msup>
+         <mrow>
+          <mi>
+           R
+          </mi>
+         </mrow>
+         <mrow>
+          <mn>
+           2
+          </mn>
+         </mrow>
+        </msup>
+       </math>
+       <tex-math id="IEq15_TeX">
+        \documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym}
+				\usepackage{amsfonts}
+				\usepackage{amssymb}
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${R}^{2}$$\end{document}
+       </tex-math>
+       <inline-graphic mime-subtype="GIF" specific-use="web" xlink:href="41746_2019_216_Article_IEq15.gif"/>
+      </alternatives>
+     </inline-formula>
+     = 0.33, MAE = 0.07 m, mean prediction MAE = 0.09 m) with similar performance to previous predictions of cardiac specific features (Fig.
+     <xref ref-type="fig" rid="Fig4">
+      4
+     </xref>
+     a). It is recognized that characteristics such as heart chamber size and geometry vary by age, sex, weight, and height,
+     <sup>
+      <xref ref-type="bibr" rid="CR27">
+       27
+      </xref>
+      ,
+      <xref ref-type="bibr" rid="CR28">
+       28
+      </xref>
+     </sup>
+     however, human interpreters cannot predict these systemic phenotypes from echocardiogram images alone. We also investigated multi-task learning—sharing some of the model parameters while predicting across the different phenotypes—and this did not improve the model performance. Bland-Altman plots of the model accuracy in relationship to the predictions are shown in Fig.
+     <xref ref-type="fig" rid="Fig5">
+      5
+     </xref>
+     and in the Supplemental Materials.
+     <fig id="Fig4" position="float">
+      <label>
+       Fig. 4
+      </label>
+      <caption xml:lang="en">
+       <title>
+        EchoNet performance and interpretation for systemic phenotypes.
+       </title>
+       <p>
+        <bold>
+         a
+        </bold>
+        EchoNet performance for prediction of four systemic phenotypes (sex, weight, height and age) using apical-4-chamber view images. Shaded areas indicate 95% confidence intervals.
+        <bold>
+         b
+        </bold>
+        Interpretation of systemic phenotype models with representative positive examples shown side-by-side with regions of interest.
+       </p>
+      </caption>
+      <graphic mime-subtype="PNG" specific-use="web" xlink:href="/ProjectMundo-Anon/MediaObjects/10X1038_s41746-019-0216-8/41746_2019_216_Fig4_HTML.png"/>
+     </fig>
+     <fig id="Fig5" position="float">
+      <label>
+       Fig. 5
+      </label>
+      <caption xml:lang="en">
+       <title>
+        Bland-Altman plotsBland-Altman plots of EchoNet performance for regression predictiontasks.
+       </title>
+       <p>
+        The solid black line indicates the median. Orange, red, and blue dashed lines delineate the central 50%, 75%, and 95% of cases based on differences between automated and measured values.
+       </p>
+      </caption>
+      <graphic mime-subtype="PNG" specific-use="web" xlink:href="/ProjectMundo-Anon/MediaObjects/10X1038_s41746-019-0216-8/41746_2019_216_Fig5_HTML.png"/>
+     </fig>
+    </p>
+    <p id="Par11">
+     Lastly, we used the same gradient-based sensitivity map methods to identify regions of interest for models predicting systemic phenotypes difficult for human experts to predict. These regions of interest for these models tend to be more diffuse, highlighting the models for systemic phenotypes do not rely as much on individual features or local regions (Fig.
+     <xref ref-type="fig" rid="Fig4">
+      4
+     </xref>
+     b). The interpretations for models predicting weight and height had particular attention on the apex of the scanning sector, suggesting information related to the thickness and characteristics of the chest wall and extra-cardiac tissue was predictive of weight and height.
+    </p>
+   </sec>
+  </sec>
+  <sec id="Sec6" sec-type="discussion">
+   <title>
+    Discussion
+   </title>
+   <p id="Par12">
+    In this study, we show that deep CNNs trained on standard echocardiograms images can identify local features, human-interpretable metrics of cardiac function, and systemic phenotypes, such as patient age, sex, weight, and height. Our models achieved high prediction accuracy for tasks readily performed by human interpreters, such as estimating ejection fraction and chamber volumes and identifying of pacemaker leads, as well as for tasks that would be challenging for human interpreters, such as predicting systemic phenotypes from images of the heart alone. Unique from prior work in the field, instead of using hand-labeled outcomes, we describe and exemplify an approach of using previously obtained phenotypes and interpretations from clinical records for model training, which can allow for more external validity and more rapid generalization with larger training data sets.
+   </p>
+   <p id="Par13">
+    One common critique of deep learning models on medical imaging datasets is the “black-box” nature of the predictions and the inability to understand the models ability to identity relevant features. In addition to showing the predictive performance of our methods, we validate the model’s predictions by highlighting important biologically plausible regions of interest that correspond to each interpretation. These results represent the first presentation of interpretation techniques for deep learning models on echocardiographic images and can build confidence in simple models as the relevant pixels are highlighted when identifying local structures such as pacemaker leads. In addition, this approach of using interpretability frameworks to identify regions of interest may lay additional groundwork toward understanding human physiology when interpreting outputs of deep learning models for challenging, human-unexplainable phenotypes in medical imaging. These results represent a step towards automated image evaluation of echocardiograms through deep learning. We believe this research could supplement future approaches to screen for subclinical cardiovascular disease and understand the biological basis of cardiovascular aging.
+   </p>
+   <p id="Par14">
+    While age, sex, weight, and height are relatively obvious visual phenotypes, our paper presents models predicting these systemic phenotypes in the roadmap of progressing from simple local feature based predictions, to more complex dynamic measurement predictions, and finally to human-difficult classifications of systemic phenotypes without obvious local features. Previous studies have shown that medical imaging of other organ systems can predict cardiovascular risk factors including age, gender, and blood pressure by identifying local features of systemic phenotypes.
+    <sup>
+     <xref ref-type="bibr" rid="CR12">
+      12
+     </xref>
+    </sup>
+    Recently, 12-lead ECG based deep learning models have been shown to accurately predict age and sex, further validating a cardiac phenotype for aging and gender dysmorphism.
+    <sup>
+     <xref ref-type="bibr" rid="CR29">
+      29
+     </xref>
+    </sup>
+    Our results identify another avenue of detecting systemic phenotypes through organ-system specific imaging. These results are supported by previous studies that showed population level normative values for the chamber sizes of cardiac structures as participants vary by age, sex, height, and weight.
+    <sup>
+     <xref ref-type="bibr" rid="CR27">
+      27
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR28">
+      28
+     </xref>
+    </sup>
+    Age-related changes in the heart, in particular changing chamber sizes and diastolic filling parameters, have been well characterized,
+    <sup>
+     <xref ref-type="bibr" rid="CR30">
+      30
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR31">
+      31
+     </xref>
+    </sup>
+    and our study builds upon this body of work to demonstrate that these signals are present to allow for prediction of these phenotypes to a degree of precision not previously reported. As systemic phenotypes of age, sex, and body mass index are highly correlated with cardiovascular outcomes and overall life expectancy, the ability of deep learning models to identify predictive latent features suggest that future work on image-based deep learning models can identify features hidden from human observers and predict outcomes and mortality.
+    <sup>
+     <xref ref-type="bibr" rid="CR32">
+      32
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR33">
+      33
+     </xref>
+     –
+     <xref ref-type="bibr" rid="CR34">
+      34
+     </xref>
+    </sup>
+   </p>
+   <p id="Par15">
+    In addition to chamber size, extracardiac characteristics as well as additional unlabeled features, are incorporated in our models to predict patient systemic phenotypes. The area closest to the transducer, representing subcutaneous tissue, chest wall, lung parenchyma, and other extracardiac structures are highlighted in the weight and height prediction models. These interpretation maps are consistent with prior knowledge that obese patients often have challenging image acquisition,
+    <sup>
+     <xref ref-type="bibr" rid="CR35">
+      35
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR36">
+      36
+     </xref>
+    </sup>
+    however, it is surprising the degree of precision it brings to predicting height and weight. Retrospective review of predictions by our model suggest human-interpretable features that show biologic plausibility. In the saliency maps for the age prediction model, significant attention was paid to the crux of the heart, involving the intra-atrial septum, where the aortic annulus as the view becomes closer to an apical-five-chamber view, septal insertion of the mitral and tricuspid leaflets, and the mitral apparatus. This is an area of where differential calcification can be seen, particularly of the aortic valve and mitral annulus, and is known to be highly correlated with age-related changes.
+    <sup>
+     <xref ref-type="bibr" rid="CR37">
+      37
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR38">
+      38
+     </xref>
+    </sup>
+    Images predicted to be of younger patients also show preference for small atria and is consistent with prior studies showing age-related changes to the left atrium.
+    <sup>
+     <xref ref-type="bibr" rid="CR31">
+      31
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR39">
+      39
+     </xref>
+    </sup>
+    The feedback loop between physician and machine learning models with clinician review of appropriate and inappropriately predicted images can assist in greater understanding of normal variation in human echocardiograms as well as identify features previously neglected by human interpreters. Understanding misclassifications, such as patients with young biological age but high predicted age, and further investigation of extreme individuals can potentially help identify subclinical cardiovascular disease and better understand the aging process.
+   </p>
+   <p id="Par16">
+    Prior foundational work on deep learning interpretation of echocardiogram images have focused on the mechanics of obtaining the correct echocardiographic view and hand-crafted scenarios with closely curated patient populations and multi-step processing and post-processing feature selection and calculation.
+    <sup>
+     <xref ref-type="bibr" rid="CR5">
+      5
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR24">
+      24
+     </xref>
+    </sup>
+    The work described here focuses on using more modern deep learning architectures and techniques in the framework of using previously adjudicated phenotypes with the potential of rapid scaling of algorithms to clinical practice. With the continued rapid expansion of computational resources, we were able to input higher resolution images (299 × 299 instead of 60 × 80 in prior studies)
+    <sup>
+     <xref ref-type="bibr" rid="CR24">
+      24
+     </xref>
+    </sup>
+    and present an ’end-to-end’ approach to predicting complex phenotypes like ejection fraction that has decreased variance over multi-step techniques which require identification of end-systole, end-diastole, and separate segmentation steps.
+    <sup>
+     <xref ref-type="bibr" rid="CR5">
+      5
+     </xref>
+    </sup>
+   </p>
+   <p id="Par17">
+    While our model performance improves upon the results of prior work, EchoNet’s evaluation of clinical measurements of ESV, EDV, and EF have non-negligible variance and does not surpass human assessment of these metrics. For these tasks, clinical context and understanding of contextual information and other measurements likely has significant relevance to the training task. For example, evaluation of EF as a ratio of ESV and EDV magnifies errors and performs worse than estimation of ESV or EDV individually. Future work requires greater integration of temporal information between frames to better assess cardiac motion and interdependencies in cardiac structures. In addition to quantitative measurements, human evaluation of cardiac structures, such as tracings of the left ventricle, are potentially high value training datasets.
+   </p>
+   <p id="Par18">
+    Recent novel machine learning techniques for interpreting network activations are also presented for the first time to understand regions of interest in the interpretation of echocardiogram images.
+    <sup>
+     <xref ref-type="bibr" rid="CR25">
+      25
+     </xref>
+    </sup>
+    While prior work used hand-labeled outcomes and patient cohorts for the majority of their outcome labels, we describe and showcase an approach of using previously obtained phenotypes and interpretations from clinical records for model training, which can allow for more external validity and more rapid generalization with larger training data sets. Additionally, given the significant difference between images in ImageNet vs. echocardiogram images, pretraining with ImageNet weights did not significantly help model performance, however, our models trained on systemic phenotypes can be good starting weights for future work on training on echocardiogram images of more complex phenotypes.
+   </p>
+   <p id="Par19">
+    Previous studies of deep learning on medical imaging focused on resource-intensive imaging modalities common in resource-rich settings
+    <sup>
+     <xref ref-type="bibr" rid="CR40">
+      40
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR41">
+      41
+     </xref>
+    </sup>
+    or sub-speciality imaging with focused indication.
+    <sup>
+     <xref ref-type="bibr" rid="CR12">
+      12
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR13">
+      13
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR16">
+      16
+     </xref>
+    </sup>
+    These modalities often need retrospective annotation by experts as the clinical workflow often does not require detailed measurements or localizations. In the development of any machine learning models to healthcare questions, external validity of first-order importance. An important caveat of our work is that the images obtained were from one type of ultrasound machine and our test dataset was of different patients but also scanned using the sample machine and at the same institution. Our approach trains deep learning models on previous studies and associated annotations from the EMR to leverage past data for rapid deployment of machine learning models. This approach leverages two advantages of echocardiography, first that echocardiography is one of the most frequently using imaging studies in the United States
+    <sup>
+     <xref ref-type="bibr" rid="CR42">
+      42
+     </xref>
+    </sup>
+    and second, echocardiography often uses structured reporting, making advances in deep learning particularly applicable and generalizable. However, such a method depends on the clinical standard, as there is known variability between MRI and echocardiography derived methods and training on clinical reports require rigorous quality control from the institution’s echocardiography lab. Future work on deep learning of echocardiography would need to confirm the performance in broader populations and settings. Automation of echocardiography interpretation through deep learning can make cardiovascular care more readily available. With point-of-care ultrasound is being more frequently used by an increasing number of physicians, ranging from emergency room physicians, internists, to anesthesiologists, and deep learning on cardiac ultrasound images can provide accurate predictions and diagnoses to an even wider range of patients.
+   </p>
+   <p id="Par20">
+    In summary, we provide evidence that deep learning can reproduce common human interpretation tasks and leverage additional information to predict systemic phenotypes that could allow for better cardiovascular risk stratification. We used interpretation methods that could feedback relevant regions of interest for further investigation by cardiologists to better understand aging and prevent cardiovascular disease. Our work could enable assessment of cardiac physiology, anatomy, and risk stratification at the population level by automating common workflows in clinical echocardiography and democratize expert interpretation to general patient populations.
+   </p>
+  </sec>
+  <sec id="Sec7" sec-type="methods">
+   <title>
+    Methods
+   </title>
+   <sec id="Sec8">
+    <title>
+     Dataset
+    </title>
+    <p id="Par21">
+     The Stanford Echocardiography Database contains images, physician reports, and clinical data from patients at Stanford Hospital who underwent echocardiography in the course of routine care. The accredited echocardiography laboratory provides cardiac imaging to a range of patients with a variety of cardiac conditions including atrial fibrillation, coronary artery disease, cardiomyopathy, aortic stenosis, and amyloidosis. For this study, we used 3312 consecutive comprehensive non-stress echocardiography studies obtained between June 2018 and December 2018, and randomly split the patients into independent training, validation, and test cohorts. Videos of standard cardiac views, color Doppler videos, and still images comprise each study and is stored in Digital Imaging and Communications in Medicine (DICOM) format. The videos were sampled to obtain 1,624,780 scaled 299 × 299 pixel images. The sampling rate was chosen to optimize model size and training time while maintaining model performance and additional preprocessing details are described in the Supplementary Materials. For each image, information pertained to image acquisition, identifying information, and other information outside the imaging sector was removed through masking. Human interpretations from the physician-interpreted report and clinical features from the electronic medical record were matched to each echocardiography study for model training. This study was approved by the Stanford University IRB. Written informed consent was waived for retrospective review of imaging obtained in the course of standard care.
+    </p>
+   </sec>
+   <sec id="Sec9">
+    <title>
+     Model
+    </title>
+    <p id="Par22">
+     We chose a CNN architecture that balances network width and depth in order to manage the computational cost of training. We used the architecture based on Inception-Resnet-v1
+     <sup>
+      <xref ref-type="bibr" rid="CR10">
+       10
+      </xref>
+     </sup>
+     to predict all of our phenotypes. This architecture has strong performance on benchmark datasets like ILSVR2012 image recognition challenge (Imagenet)
+     <sup>
+      <xref ref-type="bibr" rid="CR9">
+       9
+      </xref>
+     </sup>
+     and is computationally efficient compared to other networks.
+     <sup>
+      <xref ref-type="bibr" rid="CR43">
+       43
+      </xref>
+     </sup>
+     Pretraining Inception-ResNet with ImageNet did not significantly increase model performance, and our ultimate model used randomly initiated weights.
+    </p>
+    <p id="Par23">
+     For each prediction task, one CNN architecture was trained on individual frames from each echocardiogram video with output labels that were extracted either from the electronic medical record or from the physician report. From each video, we sampled 20 frames (one frame per 100 milliseconds) starting from the first frame of the video. The final prediction was performed by averaging all the predictions from individual frames. Several alternative methods were explored in order to aggregate frame-level predictions into one patient-level prediction and did not yield better results compared to simple averaging.
+    </p>
+    <p id="Par24">
+     Model training was performed using the TensorFlow library
+     <sup>
+      <xref ref-type="bibr" rid="CR44">
+       44
+      </xref>
+     </sup>
+     which is capable of utilizing parallel-processing capabilites of Graphical Processing Units (GPUs) for fast training of deep learning models. We chose Adam optimizer as our optimization algorithm which is computationally efficient, has little memory usage, and has shown superior performance in many deep learning tasks.
+     <sup>
+      <xref ref-type="bibr" rid="CR45">
+       45
+      </xref>
+     </sup>
+     As our prediction loss, we used cross-entropy loss for classification tasks and squared error loss for regressions tasks along with using weight-decay regularization loss to prevent over-fitting.
+     <sup>
+      <xref ref-type="bibr" rid="CR46">
+       46
+      </xref>
+     </sup>
+     We investigated other variants of prediction loss (absolute loss, Huber loss
+     <sup>
+      <xref ref-type="bibr" rid="CR47">
+       47
+      </xref>
+     </sup>
+     for regression and Focal loss
+     <sup>
+      <xref ref-type="bibr" rid="CR48">
+       48
+      </xref>
+     </sup>
+     for classification), and they did not improve performance. For each prediction task, we chose the best performing hyper-parameters using grid search (24 models trained for each task) to optimize learning rate and weight decay regularization factor. In order to perform model selection, for each tasks, we split the training data into training and validation set by using
+     <inline-formula id="IEq16">
+      <alternatives>
+       <math id="IEq16_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+        <mrow>
+         <mn>
+          10
+         </mn>
+         <mi>
+          %
+         </mi>
+        </mrow>
+       </math>
+       <tex-math id="IEq16_TeX">
+        \documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym}
+				\usepackage{amsfonts}
+				\usepackage{amssymb}
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$10 \%$$\end{document}
+       </tex-math>
+       <inline-graphic mime-subtype="GIF" specific-use="web" xlink:href="41746_2019_216_Article_IEq16.gif"/>
+      </alternatives>
+     </inline-formula>
+     of train data as a held-out validation set in; the model with the best performance on the validation set is then examined on the test set to report the final performance results. After the models were trained, they were evaluated on a separate set of test frames gathered from echocardiogram studies of 337 other patients with similar demographics (Table
+     <xref ref-type="table" rid="Tab1">
+      1
+     </xref>
+     ). These patients were randomly chosen for a 10% held-out test set and were not seen by the model during training.
+    </p>
+   </sec>
+   <sec id="Sec10">
+    <title>
+     Data augmentation
+    </title>
+    <p id="Par25">
+     Model performance improved with increasing input data sample size. Our experiments suggested additional relative improvement with increase in the number of patients represented in the training cohort compared to oversampling of frames per patient. Data augmentation using previously validated methods,
+     <sup>
+      <xref ref-type="bibr" rid="CR49">
+       49
+      </xref>
+      ,
+      <xref ref-type="bibr" rid="CR50">
+       50
+      </xref>
+     </sup>
+     also greatly improving generalization of model predictions by reducing over-fitting on the training set. Through the training process, at each optimization step each training image is transformed through geometric transformations (such as flipping, reflection, and translation) and changes in contrast and saturation. As a result, the training data set is augmented into a larger effective data set. In this work, mimicking variation in echocardiography image acquisition, we used random rotation and random saturation augmentation for data augmentation (Fig.
+     <xref ref-type="fig" rid="Fig1">
+      1
+     </xref>
+     c). During each step of stochastic gradient descent in the training process, we randomly sample 24 training frames, and we perturb each training frame with a random rotation between −20 to 20 degrees and with adding a number sampled uniformly between −0.1 to 0.1 to image pixels (pixels values are normalized) to increase or decrease brightness of the image. Data augmentation results in improvement for all of the tasks; between 1–4% improvement in AUC metric for classification tasks and 2–10% improvement in
+     <inline-formula id="IEq17">
+      <alternatives>
+       <math id="IEq17_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+        <msup>
+         <mrow>
+          <mi>
+           R
+          </mi>
+         </mrow>
+         <mrow>
+          <mn>
+           2
+          </mn>
+         </mrow>
+        </msup>
+       </math>
+       <tex-math id="IEq17_TeX">
+        \documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym}
+				\usepackage{amsfonts}
+				\usepackage{amssymb}
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${R}^{2}$$\end{document}
+       </tex-math>
+       <inline-graphic mime-subtype="GIF" specific-use="web" xlink:href="41746_2019_216_Article_IEq17.gif"/>
+      </alternatives>
+     </inline-formula>
+     score for regression tasks.
+    </p>
+   </sec>
+   <sec id="Sec11">
+    <title>
+     Cardiac view selection
+    </title>
+    <p id="Par26">
+     We first tried using all echocardiogram images for prediction tasks but given the size of echocardiogram studies, initial efforts struggled with long training times, poor model convergence, and difficulty with model saturation. With the knowledge that, in a single comprehensive echocardiography study, the same cardiac structures are often visualized from multiple views to confirm and corroborate assessments from other views, we experimented with model training using subsets of images by cardiac view. As described in Fig.
+     <xref ref-type="fig" rid="Fig1">
+      1
+     </xref>
+     b, a selection of the most common standard echocardiogram views were evaluated for model performance. Images from each study were classified using a previously described supervised training method.
+     <sup>
+      <xref ref-type="bibr" rid="CR5">
+       5
+      </xref>
+     </sup>
+     We sought to identify the most information-rich views by training separate models on the subsets of dataset images of only one cardiac view. Training a model using only one cardiac view results in one order of magnitude reduction of training time and computational cost with the benefit of maintaining similar predictive performance when information-rich views were used. For each of the prediction tasks and specific choice of hyper-parameters, training a model on the A4C-View data set converges in ~30 h using one Titan XP GPU. The training process of the same model and prediction task converges in ~240 h using all the views in the dataset. Given the favorable balance of performance to computational cost as well as prior knowledge on which views most cardiologists frequently prioritize, we chose the apical-four-chamber view as the input training set for subsequent experiments on training local features, volumetric estimates and systemic phenotypes.
+    </p>
+   </sec>
+   <sec id="Sec12">
+    <title>
+     Interpretability
+    </title>
+    <p id="Par27">
+     Interpretability methods for deep learning models have been developed to explain the predictions of the black-box deep neural network. One family of interpretations methods are the sensitivity map methods that seek to explain a trained model’s prediction on a given input by assigning a scalar importance score to each of the input features or pixels. If the model’s input is an image, the resulting sensitivity map could be depicted as a two-dimensional heat-map with the same size as the image where more important pixels of the image are brighter than other pixels. The sensitivity map methods compute the importance of each input feature as the effect of its perturbation on model’s prediction. If the pixel is not important, the change should be small and vice versa.
+    </p>
+    <p id="Par28">
+     Introduced by Baehrens et al.
+     <sup>
+      <xref ref-type="bibr" rid="CR51">
+       51
+      </xref>
+     </sup>
+     and applied to deep neural networks by Simonyan et al.,
+     <sup>
+      <xref ref-type="bibr" rid="CR52">
+       52
+      </xref>
+     </sup>
+     the simplest way to compute such score is to have a first-order linear approximation of the model by taking the gradient of the output with respect to the input; the weights of the resulting linear model are the sensitivity of the output to perturbation of their corresponding features (pixels). More formally, given the
+     <inline-formula id="IEq18">
+      <alternatives>
+       <math id="IEq18_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+        <mi>
+         d
+        </mi>
+       </math>
+       <tex-math id="IEq18_TeX">
+        \documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym}
+				\usepackage{amsfonts}
+				\usepackage{amssymb}
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$d$$\end{document}
+       </tex-math>
+       <inline-graphic mime-subtype="GIF" specific-use="web" xlink:href="41746_2019_216_Article_IEq18.gif"/>
+      </alternatives>
+     </inline-formula>
+     -dimensional input
+     <inline-formula id="IEq19">
+      <alternatives>
+       <math id="IEq19_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+        <mrow>
+         <msub>
+          <mrow>
+           <mi mathvariant="bold">
+            x
+           </mi>
+          </mrow>
+          <mrow>
+           <mi>
+            t
+           </mi>
+          </mrow>
+         </msub>
+         <mo>
+          ∈
+         </mo>
+         <msup>
+          <mrow>
+           <mi mathvariant="double-struck">
+            R
+           </mi>
+          </mrow>
+          <mrow>
+           <mi>
+            d
+           </mi>
+          </mrow>
+         </msup>
+        </mrow>
+       </math>
+       <tex-math id="IEq19_TeX">
+        \documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym}
+				\usepackage{amsfonts}
+				\usepackage{amssymb}
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${{\bf{x}}}_{t}\in {{\mathbb{R}}}^{d}$$\end{document}
+       </tex-math>
+       <inline-graphic mime-subtype="GIF" specific-use="web" xlink:href="41746_2019_216_Article_IEq19.gif"/>
+      </alternatives>
+     </inline-formula>
+     and the model’s prediction function
+     <inline-formula id="IEq20">
+      <alternatives>
+       <math id="IEq20_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+        <mrow>
+         <mi>
+          f
+         </mi>
+         <mrow>
+          <mo>
+           (
+          </mo>
+          <mrow>
+           <mo>
+            .
+           </mo>
+          </mrow>
+          <mo>
+           )
+          </mo>
+         </mrow>
+        </mrow>
+       </math>
+       <tex-math id="IEq20_TeX">
+        \documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym}
+				\usepackage{amsfonts}
+				\usepackage{amssymb}
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$f(.)$$\end{document}
+       </tex-math>
+       <inline-graphic mime-subtype="GIF" specific-use="web" xlink:href="41746_2019_216_Article_IEq20.gif"/>
+      </alternatives>
+     </inline-formula>
+     , the importance score of the
+     <inline-formula id="IEq21">
+      <alternatives>
+       <math id="IEq21_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+        <mi>
+         j
+        </mi>
+       </math>
+       <tex-math id="IEq21_TeX">
+        \documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym}
+				\usepackage{amsfonts}
+				\usepackage{amssymb}
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$j$$\end{document}
+       </tex-math>
+       <inline-graphic mime-subtype="GIF" specific-use="web" xlink:href="41746_2019_216_Article_IEq21.gif"/>
+      </alternatives>
+     </inline-formula>
+     ’th feature is
+     <inline-formula id="IEq22">
+      <alternatives>
+       <math id="IEq22_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+        <mrow>
+         <mo>
+          ∣
+         </mo>
+         <msub>
+          <mrow>
+           <mo>
+            ∇
+           </mo>
+          </mrow>
+          <mrow>
+           <mi mathvariant="bold">
+            x
+           </mi>
+          </mrow>
+         </msub>
+         <mi>
+          f
+         </mi>
+         <msub>
+          <mrow>
+           <mrow>
+            <mo>
+             (
+            </mo>
+            <mrow>
+             <msub>
+              <mrow>
+               <mi mathvariant="bold">
+                x
+               </mi>
+              </mrow>
+              <mrow>
+               <mi>
+                t
+               </mi>
+              </mrow>
+             </msub>
+            </mrow>
+            <mo>
+             )
+            </mo>
+           </mrow>
+          </mrow>
+          <mrow>
+           <mi>
+            j
+           </mi>
+          </mrow>
+         </msub>
+         <mo>
+          ∣
+         </mo>
+        </mrow>
+       </math>
+       <tex-math id="IEq22_TeX">
+        \documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym}
+				\usepackage{amsfonts}
+				\usepackage{amssymb}
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$| {\nabla }_{{\bf{x}}}f{({{\bf{x}}}_{t})}_{j}|$$\end{document}
+       </tex-math>
+       <inline-graphic mime-subtype="GIF" specific-use="web" xlink:href="41746_2019_216_Article_IEq22.gif"/>
+      </alternatives>
+     </inline-formula>
+     . Further extensions to this gradient method were introduced to achieve better interpretations of the model and to output sensitivity maps that are perceptually easier to understand by human users: LRP,
+     <sup>
+      <xref ref-type="bibr" rid="CR53">
+       53
+      </xref>
+     </sup>
+     DeepLIFT,
+     <sup>
+      <xref ref-type="bibr" rid="CR54">
+       54
+      </xref>
+     </sup>
+     Integrated Gradients,
+     <sup>
+      <xref ref-type="bibr" rid="CR55">
+       55
+      </xref>
+     </sup>
+     and so forth. These sensitivity map methods, however, suffer from visual noise
+     <sup>
+      <xref ref-type="bibr" rid="CR25">
+       25
+      </xref>
+     </sup>
+     and sensitivity to input perturbations.
+     <sup>
+      <xref ref-type="bibr" rid="CR56">
+       56
+      </xref>
+     </sup>
+     SmoothGrad
+     <sup>
+      <xref ref-type="bibr" rid="CR25">
+       25
+      </xref>
+     </sup>
+     method alleviates both problems
+     <sup>
+      <xref ref-type="bibr" rid="CR57">
+       57
+      </xref>
+     </sup>
+     by adding white noise to the image and then take the average of the resulting sensitivity maps. In this work, we use SmoothGrad with the simple gradient method due to its computational efficiency. Other interpretation methods including Integrated Gradients were tested but did not result in better visualizations.
+    </p>
+   </sec>
+   <sec id="Sec13">
+    <title>
+     Lessons from model training and experiments
+    </title>
+    <p id="Par29">
+     EchoNet performance greatly improved with efforts to augment data size, homogenize input data, and with optimize model training with hyperparameter search. Our experience shows that increasing number of unique patients in the training set can significantly improve the model, more so than increasing the sampling rate of frames from the same patients. Homogenizing the input images by selection of cardiac view prior to model training greatly improved training speed and decreased computational time without significant loss in model performance. Finally, we found that results can be significantly improved with careful hyperparameter choice; between 7–9% in AUC metric for classification tasks and 3–10% in
+     <inline-formula id="IEq23">
+      <alternatives>
+       <math id="IEq23_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+        <msup>
+         <mrow>
+          <mi>
+           R
+          </mi>
+         </mrow>
+         <mrow>
+          <mn>
+           2
+          </mn>
+         </mrow>
+        </msup>
+       </math>
+       <tex-math id="IEq23_TeX">
+        \documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym}
+				\usepackage{amsfonts}
+				\usepackage{amssymb}
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${R}^{2}$$\end{document}
+       </tex-math>
+       <inline-graphic mime-subtype="GIF" specific-use="web" xlink:href="41746_2019_216_Article_IEq23.gif"/>
+      </alternatives>
+     </inline-formula>
+     score for regression tasks.
+    </p>
+   </sec>
+   <sec id="Sec14">
+    <title>
+     Reporting summary
+    </title>
+    <p id="Par30">
+     Further information on research design is available in the
+     <xref ref-type="supplementary-material" rid="MOESM2">
+      Nature Research Reporting Summary
+     </xref>
+     linked to this article.
+    </p>
+   </sec>
+  </sec>
+ </body>
+ <back>
+  <ack>
+   <title>
+    Acknowledgements
+   </title>
+   <p>
+    This work is supported by the Stanford Translational Research and Applied Medicine pilot grant and an Stanford Artificial Intelligence in Imaging and Medicine Center seed grant. D.O. is supported by the American College of Cardiology Foundation/Merck Research Fellowship. A.G. is supported by the Stanford-Robert Bosch Graduate Fellowship in Science and Engineering. J.Y.Z. is supported by NSF CCF 1763191, NIH R21 MD012867-01, NIH P30AG059307, and grants from the Silicon Valley Foundation and the Chan-Zuckerberg Initiative.
+   </p>
+  </ack>
+  <sec sec-type="author-contribution">
+   <title>
+    Author contributions
+   </title>
+   <p>
+    Initial study concept and design: D.O. Acquisition of data: D.O., D.H.L. Model training: A.G., J.Y.Z. Analysis and interpretation of data: A.G., D.O., E.A.A., and J.Y.Z. Drafting of the paper: A.G., D.O. Critical revision of the manuscript for important intellectual content: A.G., D.O., A.A., B.H., J.H.C., R.A.H., D.H.L., E.A.A. and J.Y.Z. Statistical analysis: A.G., D.O., E.A.A., J.Y.Z.
+   </p>
+  </sec>
+  <sec sec-type="data-availability">
+   <title>
+    Data availability
+   </title>
+   <p>
+    The data comes from medical records and imaging from Stanford Healthcare and is not publicly available. The de-identified data is available from the authors upon reasonable request and with permission of the institutional review board.
+   </p>
+  </sec>
+  <sec sec-type="data-availability">
+   <title>
+    Code availability
+   </title>
+   <p>
+    The code is freely available at
+    <ext-link ext-link-type="uri" xlink:href="https://github.com/amiratag/EchoNet">
+     https://github.com/amiratag/EchoNet
+    </ext-link>
+    .
+   </p>
+  </sec>
+  <sec sec-type="ethics-statement">
+   <sec id="FPar1" sec-type="COI-statement">
+    <title>
+     Competing Interests
+    </title>
+    <p id="Par31">
+     The authors declare no competing interests.
+    </p>
+   </sec>
+  </sec>
+  <ref-list id="Bib1">
+   <title>
+    References
+   </title>
+   <ref-list>
+    <ref id="CR1">
+     <label>
+      1.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Heidenreich
+        </surname>
+        <given-names>
+         P
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Forecasting the future of cardiovascular disease in the united states: a policy statement from the american heart association
+      </article-title>
+      <source>
+       Circulation
+      </source>
+      <year>
+       2011
+      </year>
+      <volume>
+       123
+      </volume>
+      <fpage>
+       933
+      </fpage>
+      <lpage>
+       944
+      </lpage>
+      <pub-id pub-id-type="doi">
+       10.1161/CIR.0b013e31820a55f5
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR2">
+     <label>
+      2.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Cohen
+        </surname>
+        <given-names>
+         M
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Racial and ethnic differences in the treatment of acute myocardial infarction: findings from the get with the guidelines-coronary artery disease program
+      </article-title>
+      <source>
+       Circulation
+      </source>
+      <year>
+       2010
+      </year>
+      <volume>
+       121
+      </volume>
+      <fpage>
+       2294
+      </fpage>
+      <lpage>
+       2301
+      </lpage>
+      <pub-id pub-id-type="doi">
+       10.1161/CIRCULATIONAHA.109.922286
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR3">
+     <label>
+      3.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Havranek
+        </surname>
+        <given-names>
+         E
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Social determinants of risk and outcomes of cardiovascular disease a scientific statement from the american heart association
+      </article-title>
+      <source>
+       Circulation
+      </source>
+      <year>
+       2015
+      </year>
+      <volume>
+       132
+      </volume>
+      <fpage>
+       873
+      </fpage>
+      <lpage>
+       898
+      </lpage>
+      <pub-id pub-id-type="doi">
+       10.1161/CIR.0000000000000228
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR4">
+     <label>
+      4.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Madani
+        </surname>
+        <given-names>
+         A
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Ong
+        </surname>
+        <given-names>
+         JR
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Tiberwal
+        </surname>
+        <given-names>
+         A
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Mofrad
+        </surname>
+        <given-names>
+         MR
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       US hospital use of echocardiography: Insights from the nationwide inpatient sample
+      </article-title>
+      <source>
+       J. Am. Coll. Cardiol.
+      </source>
+      <year>
+       2016
+      </year>
+      <volume>
+       67
+      </volume>
+      <fpage>
+       502
+      </fpage>
+      <lpage>
+       511
+      </lpage>
+     </mixed-citation>
+    </ref>
+    <ref id="CR5">
+     <label>
+      5.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Zhang
+        </surname>
+        <given-names>
+         J
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Fully automated echocardiogram interpretation in clinical practice: feasibility and diagnostic accuracy
+      </article-title>
+      <source>
+       Circulation
+      </source>
+      <year>
+       2018
+      </year>
+      <volume>
+       138
+      </volume>
+      <fpage>
+       1623
+      </fpage>
+      <lpage>
+       1635
+      </lpage>
+      <pub-id pub-id-type="doi">
+       10.1161/CIRCULATIONAHA.118.034338
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR6">
+     <label>
+      6.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Madani
+        </surname>
+        <given-names>
+         A
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Ong
+        </surname>
+        <given-names>
+         JR
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Tiberwal
+        </surname>
+        <given-names>
+         A
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Mofrad
+        </surname>
+        <given-names>
+         MR
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Deep echocardiography: data-efficient supervised and semisupervised deep learning towards automated diagnosis of cardiac disease
+      </article-title>
+      <source>
+       npj Digital Med.
+      </source>
+      <year>
+       2018
+      </year>
+      <volume>
+       1
+      </volume>
+      <pub-id pub-id-type="doi">
+       10.1038/s41746-018-0065-x
+      </pub-id>
+      <elocation-id>
+       59
+      </elocation-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR7">
+     <label>
+      7.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Chen
+        </surname>
+        <given-names>
+         JH
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Asch
+        </surname>
+        <given-names>
+         SM
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Machine learning and prediction in medicine-beyond the peak of inflated expectations
+      </article-title>
+      <source>
+       N. Engl. J. Med.
+      </source>
+      <year>
+       2017
+      </year>
+      <volume>
+       376
+      </volume>
+      <fpage>
+       2507
+      </fpage>
+      <pub-id pub-id-type="doi">
+       10.1056/NEJMp1702071
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR8">
+     <label>
+      8.
+     </label>
+     <mixed-citation publication-type="other">
+      Dong, C., Loy, C.C., He, K. &amp; Tang, X. Learning a deep convolutional network for image super-resolution. in
+      <italic>
+       European conference on computer vision
+      </italic>
+      , 184–199 (Springer, 2014).
+     </mixed-citation>
+    </ref>
+    <ref id="CR9">
+     <label>
+      9.
+     </label>
+     <mixed-citation publication-type="other">
+      Russakovsky, O. et al. Imagenet large scale visual recognition challenge.
+      <italic>
+       Int. j. comp. vis
+      </italic>
+      .
+      <bold>
+       115
+      </bold>
+      , 211–252 (2015).
+     </mixed-citation>
+    </ref>
+    <ref id="CR10">
+     <label>
+      10.
+     </label>
+     <mixed-citation publication-type="other">
+      Szegedy, C., Ioffe, S., Vanhoucke, V. &amp; Alemi, A.A., Inception-v4, inception-resnet and the impact of residual connections on learning. In
+      <italic>
+       Thirty-First AAAI Conference on Artificial Intelligence
+      </italic>
+      (AAAI.org, 2017).
+     </mixed-citation>
+    </ref>
+    <ref id="CR11">
+     <label>
+      11.
+     </label>
+     <mixed-citation publication-type="other">
+      Karpathy, A. et al. Large-scale video classification with convolutional neural networks. In
+      <italic>
+       Proc. of the IEEE conference on Computer Vision and Pattern Recognition
+      </italic>
+      , 1725–1732 (IEEE, 2014).
+     </mixed-citation>
+    </ref>
+    <ref id="CR12">
+     <label>
+      12.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Poplin
+        </surname>
+        <given-names>
+         R
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Prediction of cardiovascular risk factors from retinal fundus photographs via deep learning
+      </article-title>
+      <source>
+       Nat. Biomed. Eng.
+      </source>
+      <year>
+       2018
+      </year>
+      <volume>
+       2
+      </volume>
+      <fpage>
+       158
+      </fpage>
+      <pub-id pub-id-type="doi">
+       10.1038/s41551-018-0195-0
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR13">
+     <label>
+      13.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Esteva
+        </surname>
+        <given-names>
+         A
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Dermatologist-level classification of skin cancer with deep neural networks
+      </article-title>
+      <source>
+       Nature
+      </source>
+      <year>
+       2017
+      </year>
+      <volume>
+       542
+      </volume>
+      <fpage>
+       115
+      </fpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BC2sXhsFGltrY%3D
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1038/nature21056
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR14">
+     <label>
+      14.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Coudray
+        </surname>
+        <given-names>
+         N
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Classification and mutation prediction from non-small cell lung cancer histopathology images using deep learning
+      </article-title>
+      <source>
+       Nat. Med.
+      </source>
+      <year>
+       2018
+      </year>
+      <volume>
+       24
+      </volume>
+      <fpage>
+       1559
+      </fpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BC1cXhslCjtrbJ
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1038/s41591-018-0177-5
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR15">
+     <label>
+      15.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Ounkomol
+        </surname>
+        <given-names>
+         C
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Seshamani
+        </surname>
+        <given-names>
+         S
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Maleckar
+        </surname>
+        <given-names>
+         MM
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Collman
+        </surname>
+        <given-names>
+         F
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Johnson
+        </surname>
+        <given-names>
+         GR
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Label-free prediction of three-dimensional fluorescence images from transmitted-light microscopy
+      </article-title>
+      <source>
+       Nat. Methods
+      </source>
+      <year>
+       2018
+      </year>
+      <volume>
+       15
+      </volume>
+      <fpage>
+       917
+      </fpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BC1cXhslCjt7%2FN
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1038/s41592-018-0111-2
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR16">
+     <label>
+      16.
+     </label>
+     <mixed-citation publication-type="other">
+      Nagpal, K. et al. Development and validation of a deep learning algorithm for improving Gleason scoring of prostate cancer.
+      <italic>
+       npj Digit. Med.
+      </italic>
+      <bold>
+       2
+      </bold>
+      , 48 (2019).
+     </mixed-citation>
+    </ref>
+    <ref id="CR17">
+     <label>
+      17.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Douglas
+        </surname>
+        <given-names>
+         P
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Accf/ase/aha/asnc/hfsa/hrs/scai/sccm/scct/scmr 2011 appropriate use criteria for echocardiography
+      </article-title>
+      <source>
+       J. Am. Soc. Echocardiogr.
+      </source>
+      <year>
+       2011
+      </year>
+      <volume>
+       24
+      </volume>
+      <fpage>
+       229
+      </fpage>
+      <lpage>
+       267
+      </lpage>
+      <pub-id pub-id-type="doi">
+       10.1016/j.echo.2010.12.008
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR18">
+     <label>
+      18.
+     </label>
+     <mixed-citation publication-type="other">
+      Wood, P.W., Choy, J.B., Nanda, N.C. &amp; Becher, H. Left ventricular ejection fraction and volumes: it depends on the imaging method.
+      <italic>
+       Echocardiography
+      </italic>
+      <bold>
+       31
+      </bold>
+      , 87–100 (2014).
+     </mixed-citation>
+    </ref>
+    <ref id="CR19">
+     <label>
+      19.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Geer
+        </surname>
+        <given-names>
+         DD
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Oscarsson
+        </surname>
+        <given-names>
+         A
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Engvall
+        </surname>
+        <given-names>
+         J
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Variability in echocardiographic measurements of left ventricular function in septic shock patients
+      </article-title>
+      <source>
+       J. Cardiovasc Ultrasound.
+      </source>
+      <year>
+       2015
+      </year>
+      <volume>
+       13
+      </volume>
+      <fpage>
+       19
+      </fpage>
+      <pub-id pub-id-type="doi">
+       10.1186/s12947-015-0015-6
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR20">
+     <label>
+      20.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         JA
+        </surname>
+        <given-names>
+         A
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         JM
+        </surname>
+        <given-names>
+         G-S
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Echocardiographic variables used to estimate pulmonary artery pressure in dogs
+      </article-title>
+      <source>
+       J. Vet. Intern. Med.
+      </source>
+      <year>
+       2017
+      </year>
+      <volume>
+       31
+      </volume>
+      <fpage>
+       1622
+      </fpage>
+      <lpage>
+       1628
+      </lpage>
+      <pub-id pub-id-type="doi">
+       10.1111/jvim.14846
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR21">
+     <label>
+      21.
+     </label>
+     <mixed-citation publication-type="other">
+      2019 ACC/AHA/ASE advanced training statement on echocardiography (Revision of the 2003 ACC/AHA Clinical Competence Statement on Echocardiography): a report of the ACC competency management committee.
+      <italic>
+       J. Am. Coll. Cardiol
+      </italic>
+      .
+      <bold>
+       19
+      </bold>
+      , S0735–S1097 (2019)
+     </mixed-citation>
+    </ref>
+    <ref id="CR22">
+     <label>
+      22.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         MK
+        </surname>
+        <given-names>
+         F
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         WS
+        </surname>
+        <given-names>
+         B
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         DN
+        </surname>
+        <given-names>
+         W
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Systematic review: prediction of perioperative cardiac complications and mortality by the revised cardiac risk index
+      </article-title>
+      <source>
+       Ann. Intern. Med.
+      </source>
+      <year>
+       2010
+      </year>
+      <volume>
+       152
+      </volume>
+      <fpage>
+       26
+      </fpage>
+      <lpage>
+       35
+      </lpage>
+      <pub-id pub-id-type="doi">
+       10.7326/0003-4819-152-1-201001050-00007
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR23">
+     <label>
+      23.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Abdel-Qadir
+        </surname>
+        <given-names>
+         H
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       A population-based study of cardiovascular mortality following early-stage breast cancer
+      </article-title>
+      <source>
+       JAMA Cardiol.
+      </source>
+      <year>
+       2017
+      </year>
+      <volume>
+       2
+      </volume>
+      <fpage>
+       88
+      </fpage>
+      <lpage>
+       93
+      </lpage>
+      <pub-id pub-id-type="doi">
+       10.1001/jamacardio.2016.3841
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR24">
+     <label>
+      24.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Madani
+        </surname>
+        <given-names>
+         A
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Arnaout
+        </surname>
+        <given-names>
+         R
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Mofrad
+        </surname>
+        <given-names>
+         M
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Arnaout
+        </surname>
+        <given-names>
+         R
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Fast and accurate view classification of echocardiograms using deep learning
+      </article-title>
+      <source>
+       npj Digital Med.
+      </source>
+      <year>
+       2018
+      </year>
+      <volume>
+       1
+      </volume>
+      <pub-id pub-id-type="doi">
+       10.1038/s41746-017-0013-1
+      </pub-id>
+      <elocation-id>
+       6
+      </elocation-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR25">
+     <label>
+      25.
+     </label>
+     <mixed-citation publication-type="other">
+      Smilkov, D., Thorat, N., Kim, B., Viégas, F. &amp; Wattenberg, M. Smoothgrad: removing noise by adding noise.
+      <italic>
+       arXiv preprint arXiv:1706.03825
+      </italic>
+      (2017).
+     </mixed-citation>
+    </ref>
+    <ref id="CR26">
+     <label>
+      26.
+     </label>
+     <mixed-citation publication-type="other">
+      Abid, A. et al. Gradio: Hassle-free sharing and testing of ml models in the wild. in
+      <italic>
+       Proc. 36th International Conference on Machine Learning,
+      </italic>
+      Vol. 72 (JMLR.org, 2019).
+     </mixed-citation>
+    </ref>
+    <ref id="CR27">
+     <label>
+      27.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Kou
+        </surname>
+        <given-names>
+         S
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Echocardiographic reference ranges for normal cardiac chamber size: results from the norre study
+      </article-title>
+      <source>
+       Eur. Heart J. Cardiovasc. Imaging
+      </source>
+      <year>
+       2014
+      </year>
+      <volume>
+       15
+      </volume>
+      <fpage>
+       680
+      </fpage>
+      <lpage>
+       690
+      </lpage>
+      <pub-id pub-id-type="doi">
+       10.1093/ehjci/jet284
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR28">
+     <label>
+      28.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Pfaffenberger
+        </surname>
+        <given-names>
+         S
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Size matters! Impact of age, sex, height, and weight on the normal heart size
+      </article-title>
+      <source>
+       Circ. Cardiovasc. Imaging
+      </source>
+      <year>
+       2013
+      </year>
+      <volume>
+       6
+      </volume>
+      <fpage>
+       1073
+      </fpage>
+      <lpage>
+       1079
+      </lpage>
+      <pub-id pub-id-type="doi">
+       10.1161/CIRCIMAGING.113.000690
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR29">
+     <label>
+      29.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Attia
+        </surname>
+        <given-names>
+         Z
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Age and sex estimation using artificial intelligence from standard 12-lead ecgs
+      </article-title>
+      <source>
+       Circ.: Arrhythm. Electrophysiol.
+      </source>
+      <year>
+       2019
+      </year>
+      <volume>
+       12
+      </volume>
+      <elocation-id>
+       e007284
+      </elocation-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR30">
+     <label>
+      30.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Munagala
+        </surname>
+        <given-names>
+         V
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Association of newer diastolic function parameters with age in healthy subjects: a population-based study
+      </article-title>
+      <source>
+       J. Am. Soc. Echocardiogr.
+      </source>
+      <year>
+       2003
+      </year>
+      <volume>
+       16
+      </volume>
+      <fpage>
+       1049
+      </fpage>
+      <lpage>
+       1056
+      </lpage>
+      <pub-id pub-id-type="doi">
+       10.1016/S0894-7317(03)00516-9
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR31">
+     <label>
+      31.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         D’Andrea
+        </surname>
+        <given-names>
+         A
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Left atrial volume index in healthy subjects: clinical and echocardiographic correlates
+      </article-title>
+      <source>
+       Echocardiography
+      </source>
+      <year>
+       2013
+      </year>
+      <volume>
+       30
+      </volume>
+      <fpage>
+       1001
+      </fpage>
+      <lpage>
+       1007
+      </lpage>
+      <pub-id pub-id-type="pmid">
+       23594028
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR32">
+     <label>
+      32.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Bhaskaran
+        </surname>
+        <given-names>
+         K
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         dos Santos Silva
+        </surname>
+        <given-names>
+         I
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Leon
+        </surname>
+        <given-names>
+         DA
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Douglas
+        </surname>
+        <given-names>
+         IJ
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Smeeth
+        </surname>
+        <given-names>
+         L
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Body-mass index and mortality among 1.46 million white adults
+      </article-title>
+      <source>
+       N. Engl. J. Med.
+      </source>
+      <year>
+       2010
+      </year>
+      <volume>
+       363
+      </volume>
+      <fpage>
+       2211
+      </fpage>
+      <lpage>
+       2219
+      </lpage>
+      <pub-id pub-id-type="doi">
+       10.1056/NEJMoa1000367
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR33">
+     <label>
+      33.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         de Gonzalez A
+        </surname>
+        <given-names>
+         B
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         P
+        </surname>
+        <given-names>
+         H
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         JR
+        </surname>
+        <given-names>
+         C
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Association of BMI with overall and cause-specific mortality: a population-based cohort study of 3.6 million adults in the UK
+      </article-title>
+      <source>
+       Lancet Diabetes Endocrinol.
+      </source>
+      <year>
+       2018
+      </year>
+      <volume>
+       6
+      </volume>
+      <fpage>
+       944
+      </fpage>
+      <lpage>
+       953
+      </lpage>
+      <pub-id pub-id-type="doi">
+       10.1016/S2213-8587(18)30288-2
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR34">
+     <label>
+      34.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Xu
+        </surname>
+        <given-names>
+         H
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Cupples
+        </surname>
+        <given-names>
+         LA
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Stokes
+        </surname>
+        <given-names>
+         A
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Liu
+        </surname>
+        <given-names>
+         CT
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Association of obesity with mortality over 24 years of weight history findings from the framingham heart study
+      </article-title>
+      <source>
+       JAMA Netw. Open
+      </source>
+      <year>
+       2018
+      </year>
+      <volume>
+       1
+      </volume>
+      <pub-id pub-id-type="doi">
+       10.1001/jamanetworkopen.2018.4587
+      </pub-id>
+      <elocation-id>
+       e184587
+      </elocation-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR35">
+     <label>
+      35.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Madu
+        </surname>
+        <given-names>
+         EC
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Transesophageal dobutamine stress echocardiography in the evaluation of myocardial ischemia in morbidly obese subjects
+      </article-title>
+      <source>
+       Chest.
+      </source>
+      <year>
+       2000
+      </year>
+      <volume>
+       117
+      </volume>
+      <fpage>
+       657
+      </fpage>
+      <lpage>
+       661
+      </lpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:STN:280:DC%2BD3c7nvFGnsQ%3D%3D
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1378/chest.117.3.657
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR36">
+     <label>
+      36.
+     </label>
+     <mixed-citation publication-type="other">
+      Medical Advisory Secretariat. Use of contrast agents with echocardiography in patients with suboptimal echocardiography.
+      <italic>
+       Ont. Health Technol. Assess. Ser
+      </italic>
+      .
+      <bold>
+       10
+      </bold>
+      , 1–17 (2010).
+     </mixed-citation>
+    </ref>
+    <ref id="CR37">
+     <label>
+      37.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Kälsch
+        </surname>
+        <given-names>
+         H
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Aortic calcification onset and progression: Association with the development of coronary atherosclerosis
+      </article-title>
+      <source>
+       J Am Heart Assoc.
+      </source>
+      <year>
+       2017
+      </year>
+      <volume>
+       6
+      </volume>
+      <pub-id pub-id-type="doi">
+       10.1161/JAHA.116.005093
+      </pub-id>
+      <elocation-id>
+       e005093
+      </elocation-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR38">
+     <label>
+      38.
+     </label>
+     <mixed-citation publication-type="other">
+      Eleid, M.F., Foley, T.A., Said, S.M., Pislaru, S.V. &amp; Rihal, C.S. Severe mitral annular calcification: multimodality imaging for therapeutic strategies and interventions.
+      <italic>
+       JACC: Cardiovas. Imaging
+      </italic>
+      <bold>
+       9
+      </bold>
+      , 1318–1337 (2016).
+     </mixed-citation>
+    </ref>
+    <ref id="CR39">
+     <label>
+      39.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Aurigemma
+        </surname>
+        <given-names>
+         G
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Left atrial volume and geometry in healthy aging: the cardiovascular health study
+      </article-title>
+      <source>
+       Circ. Cardiovasc. Imaging
+      </source>
+      <year>
+       2009
+      </year>
+      <volume>
+       2
+      </volume>
+      <fpage>
+       282
+      </fpage>
+      <lpage>
+       289
+      </lpage>
+      <pub-id pub-id-type="doi">
+       10.1161/CIRCIMAGING.108.826602
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR40">
+     <label>
+      40.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Bello
+        </surname>
+        <given-names>
+         GA
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Deep-learning cardiac motion analysis for human survival prediction
+      </article-title>
+      <source>
+       Nat. Mach. Intell.
+      </source>
+      <year>
+       2019
+      </year>
+      <volume>
+       1
+      </volume>
+      <fpage>
+       95
+      </fpage>
+      <pub-id pub-id-type="doi">
+       10.1038/s42256-019-0019-2
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR41">
+     <label>
+      41.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Ardila
+        </surname>
+        <given-names>
+         D
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       End-to-end lung cancer screening with three-dimensional deep learning on low-dose chest computed tomography
+      </article-title>
+      <source>
+       Nat. Med.
+      </source>
+      <year>
+       2019
+      </year>
+      <volume>
+       25
+      </volume>
+      <fpage>
+       954
+      </fpage>
+      <lpage>
+       961
+      </lpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BC1MXhtVWqurfO
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1038/s41591-019-0447-x
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR42">
+     <label>
+      42.
+     </label>
+     <mixed-citation publication-type="other">
+      Virnig, B.A. et al. Trends in the Use of Echocardiography. Echocardiography Trends. Data Points #20 (prepared by the University of Minnesota DEcIDE Center, under Contract No. HHSA29020100013I). Rockville, MD: Agency for Healthcare Research and Quality; May 2014. AHRQ Publication No. 14-EHC034-EF (2007–2011).
+     </mixed-citation>
+    </ref>
+    <ref id="CR43">
+     <label>
+      43.
+     </label>
+     <mixed-citation publication-type="other">
+      Szegedy, C., Vanhoucke, V., Ioffe, S., Shlens, J. &amp; Wojna, Z. Rethinking the inception architecture for computer vision. In
+      <italic>
+       Proc. of the IEEE conference on computer vision and pattern recognition
+      </italic>
+      , 2818–2826 (IEEE, 2016).
+     </mixed-citation>
+    </ref>
+    <ref id="CR44">
+     <label>
+      44.
+     </label>
+     <mixed-citation publication-type="other">
+      Abadi, M. et al. Tensorflow: A system for large-scale machine learning. In
+      <italic>
+       12th {USENIX} Symposium on Operating Systems Design and Implementation ({OSDI} 16)
+      </italic>
+      265–283 (2016).
+     </mixed-citation>
+    </ref>
+    <ref id="CR45">
+     <label>
+      45.
+     </label>
+     <mixed-citation publication-type="other">
+      Kingma, D.P. &amp; Ba, J. Adam: a method for stochastic optimization. 3rd International Conference on Learning Representations, {ICLR} 2015, (San Diego, CA, USA, 2015) Conference Track Proceedings.
+     </mixed-citation>
+    </ref>
+    <ref id="CR46">
+     <label>
+      46.
+     </label>
+     <mixed-citation publication-type="other">
+      Krogh, A. &amp; Hertz, J.A. A simple weight decay can improve generalization. In
+      <italic>
+       Advances in neural information processing systems
+      </italic>
+      , 950–957 (1992).
+     </mixed-citation>
+    </ref>
+    <ref id="CR47">
+     <label>
+      47.
+     </label>
+     <mixed-citation publication-type="other">
+      Huber, P.J. Robust estimation of a location parameter. in
+      <italic>
+       Breakthroughs in statistics
+      </italic>
+      , 492–518 (Springer, 1992).
+     </mixed-citation>
+    </ref>
+    <ref id="CR48">
+     <label>
+      48.
+     </label>
+     <mixed-citation publication-type="other">
+      Lin, T.Y., Goyal, P., Girshick, R., He, K. &amp; Dollár, P. Focal loss for dense object detection. In
+      <italic>
+       Proc. of the IEEE international conference on computer vision,
+      </italic>
+      2980–2988 (IEEE, 2017).
+     </mixed-citation>
+    </ref>
+    <ref id="CR49">
+     <label>
+      49.
+     </label>
+     <mixed-citation publication-type="other">
+      Perez, L. &amp; Wang, J. The effectiveness of data augmentation in image classification using deep learning.
+      <italic>
+       arXiv preprint arXiv:1712.04621
+      </italic>
+      (2017).
+     </mixed-citation>
+    </ref>
+    <ref id="CR50">
+     <label>
+      50.
+     </label>
+     <mixed-citation publication-type="other">
+      Lim, S., Kim, I., Kim, T., Kim, C. &amp; Kim, S. Fast AutoAugment In Advances in Neural Information Processing Systems, 6662–6672 (2019).
+     </mixed-citation>
+    </ref>
+    <ref id="CR51">
+     <label>
+      51.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Baehrens
+        </surname>
+        <given-names>
+         D
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       How to explain individual classification decisions
+      </article-title>
+      <source>
+       Journal of Machine Learning Research
+      </source>
+      <year>
+       2010
+      </year>
+      <volume>
+       11
+      </volume>
+      <fpage>
+       1803
+      </fpage>
+      <lpage>
+       1831
+      </lpage>
+     </mixed-citation>
+    </ref>
+    <ref id="CR52">
+     <label>
+      52.
+     </label>
+     <mixed-citation publication-type="other">
+      Simonyan, K., Vedaldi, A. &amp; Zisserman, A. Deep inside convolutional networks: Visualising image classification models and saliency maps.
+      <italic>
+       arXiv preprint arXiv:1312.6034
+      </italic>
+      (2013).
+     </mixed-citation>
+    </ref>
+    <ref id="CR53">
+     <label>
+      53.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Bach
+        </surname>
+        <given-names>
+         S
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       On pixel-wise explanations for non-linear classifier decisions by layer-wise relevance propagation
+      </article-title>
+      <source>
+       PloS ONE
+      </source>
+      <year>
+       2015
+      </year>
+      <volume>
+       10
+      </volume>
+      <pub-id pub-id-type="doi">
+       10.1371/journal.pone.0130140
+      </pub-id>
+      <elocation-id>
+       e0130140
+      </elocation-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR54">
+     <label>
+      54.
+     </label>
+     <mixed-citation publication-type="other">
+      Shrikumar, A., Greenside, P. &amp; Kundaje, A. Learning important features through propagating activation differences. In
+      <italic>
+       Proc. of the 34th International Conference on Machine Learning
+      </italic>
+      , vol. 70, 3145–3153 (JMLR, 2017)
+     </mixed-citation>
+    </ref>
+    <ref id="CR55">
+     <label>
+      55.
+     </label>
+     <mixed-citation publication-type="other">
+      Sundararajan, M., Taly, A. &amp; Yan, Q. Axiomatic attribution for deep networks. in
+      <italic>
+       Proc. 34th International Conference on Machine Learning,
+      </italic>
+      Vol. 70, 3319–3328 (JMLR. org, 2017).
+     </mixed-citation>
+    </ref>
+    <ref id="CR56">
+     <label>
+      56.
+     </label>
+     <mixed-citation publication-type="other">
+      Ghorbani, A., Abid, A. &amp; Zou, J. Interpretation of neural networks is fragile. In
+      <italic>
+       Proc. of the AAAI Conference on Artificial Intelligence
+      </italic>
+      , Vol. 33, 3681–3688 (AAAI.org, 2019).
+     </mixed-citation>
+    </ref>
+    <ref id="CR57">
+     <label>
+      57.
+     </label>
+     <mixed-citation publication-type="other">
+      Levine, A., Singla, S. &amp; Feizi, S. Certifiably robust interpretation in deep learning.
+      <italic>
+       arXiv preprint arXiv:1905.12105
+      </italic>
+      (2019).
+     </mixed-citation>
+    </ref>
+   </ref-list>
+  </ref-list>
+  <app-group>
+   <app id="App1" specific-use="web-only">
+    <sec id="Sec15">
+     <title>
+      Supplementary information
+     </title>
+     <p id="Par32">
+      <supplementary-material content-type="local-data" id="MOESM1" xlink:title="Supplementary information">
+       <media mime-subtype="pdf" mimetype="application" xlink:href="MediaObjects/41746_2019_216_MOESM1_ESM.pdf">
+        <caption xml:lang="en">
+         <p>
+          Supplementary Information
+         </p>
+        </caption>
+       </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="MOESM2" xlink:title="Supplementary information">
+       <media mime-subtype="pdf" mimetype="application" xlink:href="MediaObjects/41746_2019_216_MOESM2_ESM.pdf">
+        <caption xml:lang="en">
+         <p>
+          Reporting Summary
+         </p>
+        </caption>
+       </media>
+      </supplementary-material>
+     </p>
+    </sec>
+   </app>
+  </app-group>
+  <notes notes-type="ESMHint">
+   <title>
+    Supplementary information
+   </title>
+   <p>
+    <bold>
+     Supplementary information
+    </bold>
+    is available for this paper at
+    <ext-link ext-link-type="doi" xlink:href="10.1038/s41746-019-0216-8">
+     https://doi.org/10.1038/s41746-019-0216-8
+    </ext-link>
+    .
+   </p>
+  </notes>
+  <notes notes-type="Misc">
+   <p>
+    <bold>
+     Publisher’s note
+    </bold>
+    Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.
+   </p>
+  </notes>
+ </back>
+</article>

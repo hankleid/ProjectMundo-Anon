@@ -1,0 +1,502 @@
+{
+    "1": {
+        "question": "What is the main advantage of contrastive principal component analysis (cPCA) over standard PCA?",
+        "options": {
+            "A": "It uses supervised learning to enhance predictions.",
+            "B": "It automatically identifies the most interesting projections across multiple datasets.",
+            "C": "It requires less computational power compared to PCA.",
+            "D": "It eliminates the need for data preprocessing.",
+            "E": "It introduces non-linear dimensionality reduction techniques."
+        }
+    },
+    "2": {
+        "question": "How does cPCA differentiate itself from other visualization techniques such as t-SNE or MDS?",
+        "options": {
+            "A": "It focuses on generating labels for datasets.",
+            "B": "It visualizes patterns from a single dataset while ignoring others.",
+            "C": "It compares two datasets to identify dataset-specific patterns.",
+            "D": "It embeds data into a fixed two-dimensional space.",
+            "E": "It always provides supervised learning outcomes."
+        }
+    },
+    "3": {
+        "question": "Why might standard PCA fail to reveal important subtypes in gene-expression data as discussed in the article?",
+        "options": {
+            "A": "It highlights the subtypes of cancer with highest priority.",
+            "B": "Its top principal components focus on broader demographic variations.",
+            "C": "It is unable to process large datasets.",
+            "D": "It inherently filters out any noise present in the data.",
+            "E": "Its computational requirements are too high."
+        }
+    },
+    "4": {
+        "question": "In the context of cPCA, what is a 'background dataset'?",
+        "options": {
+            "A": "A dataset containing random noise for contrast.",
+            "B": "A dataset that mirrors the target dataset exactly.",
+            "C": "A dataset that lacks the specific patterns of interest present in the target dataset.",
+            "D": "A dataset that contains all possible target patterns.",
+            "E": "A dataset primarily used for data validation and accuracy testing."
+        }
+    },
+    "5": {
+        "question": "What is the primary computational technique used by cPCA to find contrastive directions?",
+        "options": {
+            "A": "Gradient descent",
+            "B": "Singular value decomposition",
+            "C": "Eigenvalue decomposition of a weighted covariance difference",
+            "D": "Random forest algorithms",
+            "E": "K-means clustering"
+        }
+    },
+    "6": {
+        "question": "What does 'contrast strength α' in cPCA represent?",
+        "options": {
+            "A": "The maximum value of variance in the target data.",
+            "B": "A balance between high target variance and low background variance.",
+            "C": "A fixed parameter used to prevent overfitting.",
+            "D": "The computing capacity required for processing data.",
+            "E": "An arbitrary value chosen by the user."
+        }
+    },
+    "7": {
+        "question": "What is the significance of the eigenvectors obtained from the modified covariance matrix in cPCA?",
+        "options": {
+            "A": "They are orthogonal to each other and represent contrastive principal components.",
+            "B": "They always maximize variance in both target and background datasets.",
+            "C": "They provide linear discriminants similar to LDA.",
+            "D": "They are used to classify datasets in a supervised manner.",
+            "E": "They minimize computation time required for data processing."
+        }
+    },
+    "8": {
+        "question": "Which of the following is NOT a suitable use case for cPCA as mentioned in the article?",
+        "options": {
+            "A": "Visualizing gene expression subtypes in cancer data",
+            "B": "Identifying handmade digits in noisy images",
+            "C": "Exploring genetic ancestries within Mexico",
+            "D": "Predicting stock market trends using economic indicators",
+            "E": "Distinguishing cell samples before and after medical treatment"
+        }
+    },
+    "9": {
+        "question": "How does cPCA handle large datasets computationally?",
+        "options": {
+            "A": "It reduces dimensions using kernel methods to handle non-linear patterns.",
+            "B": "It compresses data using lossy compression techniques.",
+            "C": "It applies a hierarchical clustering approach before analysis.",
+            "D": "It uses a specialized neural network for feature reduction.",
+            "E": "It optimizes the contrast parameter using dynamic methods."
+        }
+    },
+    "10": {
+        "question": "According to the article, what is the relationship between cPCA and statistical significance testing?",
+        "options": {
+            "A": "cPCA provides immediate statistical validation criteria.",
+            "B": "cPCA does not provide p-values and requires further analysis for validation.",
+            "C": "cPCA inherently eliminates the need for statistical testing.",
+            "D": "cPCA comes with built-in hypothesis testing mechanisms.",
+            "E": "cPCA offers a probabilistic framework to test for feature significance."
+        }
+    },
+    "11": {
+        "question": "What improvement does cPCA offer in visualizing pre- and post-transplant bone marrow mononuclear cell (BMMC) data?",
+        "options": {
+            "A": "It mixes the pre- and post-transplant samples for clearer visualization.",
+            "B": "It isolates the pre-transplant samples entirely from the analysis.",
+            "C": "It reveals clear subspaces aligning much of the variance with treatment differences.",
+            "D": "It removes all variance related to patient-specific factors.",
+            "E": "It simplifies the dataset to a single-dimensional representation."
+        }
+    },
+    "12": {
+        "question": "In the article, what was observed when cPCA was applied to genotype data from five Mexican states?",
+        "options": {
+            "A": "It failed to show any discernible patterns.",
+            "B": "Different states' genotypes manifested different coloring patterns.",
+            "C": "Ancestry groups displayed clearer geographic relationships.",
+            "D": "European and Native American variants disappeared completely.",
+            "E": "The genotype data clustered by gender instead of location."
+        }
+    },
+    "13": {
+        "question": "What is one potential drawback of cPCA mentioned in the article?",
+        "options": {
+            "A": "It relies heavily on advanced domain knowledge.",
+            "B": "It requires substantially more computational resources than PCA.",
+            "C": "It does not automatically replace existing specialized dimensionality reduction methods.",
+            "D": "It has limited applicability with only specific types of datasets.",
+            "E": "It cannot be used for interactive data exploration."
+        }
+    },
+    "14": {
+        "question": "What dataset is suggested as the background for gene-expression analysis using cPCA?",
+        "options": {
+            "A": "A dataset with mixed diseases to test against.",
+            "B": "A similar dataset with samples from a different demographic.",
+            "C": "Data from healthy patients with no disease markers.",
+            "D": "Randomly generated control groups.",
+            "E": "Unrelated images or recordings from a different study."
+        }
+    },
+    "15": {
+        "question": "What is suggested for choosing a background dataset for cPCA to work effectively?",
+        "options": {
+            "A": "It should consist of synthetic data generated from the same distribution.",
+            "B": "It should possess similar but uninteresting variance compared to target data.",
+            "C": "It must have identical covariance structure to the target dataset.",
+            "D": "It should include both target and random noise data.",
+            "E": "It needs an equal number of samples as the target dataset."
+        }
+    },
+    "16": {
+        "question": "In what way is cPCA computationally efficient according to the discussion in the article?",
+        "options": {
+            "A": "It uses faster computation algorithms than PCA.",
+            "B": "It does not compute any matrix operations.",
+            "C": "Its computational time is comparable to standard PCA.",
+            "D": "It avoids data preprocessing steps.",
+            "E": "It utilizes distributed computing frameworks."
+        }
+    },
+    "17": {
+        "question": "What is a proposed benefit of using cPCA in dimension reduction over supervised methods mentioned in the article?",
+        "options": {
+            "A": "cPCA requires prior labeling likely needed in supervised learning.",
+            "B": "cPCA avoids bias introduced from labeled training data.",
+            "C": "cPCA directly optimizes classification accuracy.",
+            "D": "cPCA reduces the need for feature selection algorithms.",
+            "E": "cPCA is not affected by nonlinear data patterns."
+        }
+    },
+    "18": {
+        "question": "In the article, which method is NOT mentioned as having been directly compared with cPCA?",
+        "options": {
+            "A": "t-SNE",
+            "B": "Linear Discriminant Analysis (LDA)",
+            "C": "Quadratic Discriminant Analysis (QDA)",
+            "D": "Multi-Dimensional Scaling (MDS)",
+            "E": "Principal Component Pursuit"
+        }
+    },
+    "19": {
+        "question": "How does cPCA contribute to the field of unsupervised learning according to the article?",
+        "options": {
+            "A": "By providing a framework for unsupervised classification tasks.",
+            "B": "By offering a method to explore data without needing labeled datasets.",
+            "C": "By guaranteeing convergence with a defined learning rate.",
+            "D": "By introducing dynamic and interactive visualizations.",
+            "E": "By aligning learning goals with supervised data insights."
+        }
+    },
+    "20": {
+        "question": "What property of the directions found by cPCA differentiates them as discussed in the article?",
+        "options": {
+            "A": "They maximize variance only in the target dataset.",
+            "B": "They reduce dimensionality through non-linear projections.",
+            "C": "They include features entirely unrelated to background variations.",
+            "D": "They enhance the classification potential of features.",
+            "E": "They maximize variance contrast between target and background datasets."
+        }
+    },
+    "21": {
+        "question": "What experimental case study was used to examine cPCA's ability to resolve subpopulations in biological contexts?",
+        "options": {
+            "A": "Genetic diversity in forest ecosystems",
+            "B": "Cancer subtypes in diverse populations",
+            "C": "Protein expression in mice with shock therapy exposure",
+            "D": "Habitat colonization by different species",
+            "E": "Davids' research on food enzymes"
+        }
+    },
+    "22": {
+        "question": "As described in the article, why is a geometric interpretation important for cPCA?",
+        "options": {
+            "A": "It allows calculation of differential calculus measures.",
+            "B": "It visualizes the significance of variance trade-offs between datasets.",
+            "C": "It permits coordinate transformation independent of data.",
+            "D": "It exceeds statistical properties in predictive power.",
+            "E": "It provides a graphical user interface for better usability."
+        }
+    },
+    "23": {
+        "question": "What characteristic of cPCA allows investigation into directions with significant target–background variance?",
+        "options": {
+            "A": "Its orthogonality constraint on selected eigenvectors.",
+            "B": "The use of Pareto frontier to identify variance pairs.",
+            "C": "The restriction of contrastiveness by eigenvalue magnitude.",
+            "D": "Polygonal simplification of data features.",
+            "E": "Dependence on p-values for significance testing."
+        }
+    },
+    "24": {
+        "question": "What does the supplementary GitHub repository provide as mentioned in the article?",
+        "options": {
+            "A": "Real-time support for conducting cPCA experiments",
+            "B": "The datasets used in the research paper and additional analysis scripts",
+            "C": "An interactive web-based platform for visualizations",
+            "D": "A machine learning model trained to automate parameter tuning for cPCA",
+            "E": "Comprehensive statistical packages for hypothesis testing"
+        }
+    },
+    "25": {
+        "question": "What determines the 'most contrastive directions' in a dataset according to the article?",
+        "options": {
+            "A": "Directions that have uniform variance distribution across both datasets",
+            "B": "Directions that maximize the target variance without regard for background variance",
+            "C": "Directions that minimize both target and background variance equally",
+            "D": "Directions with higher target variance and lower background variance",
+            "E": "Directions that maximize the product of target and background variance"
+        }
+    },
+    "26": {
+        "question": "What was a major result of applying cPCA to the synthetic handwritten digit data set as discussed in the article?",
+        "options": {
+            "A": "PCA completely separated the images based on digit type.",
+            "B": "cPCA highlighted background noise more than digit features.",
+            "C": "cPCA separated images on digits, overshadowing background noise.",
+            "D": "cPCA failed to differentiate the handwritten digits any better than PCA.",
+            "E": "The synthetic dataset was reduced to a single principal component."
+        }
+    },
+    "27": {
+        "question": "According to the article, why is PCA generally inadequate for detailed ancestry analysis within Mexico?",
+        "options": {
+            "A": "PCA inherently biases results based on sampling errors.",
+            "B": "Its top components usually capture only broader global ancestry signals.",
+            "C": "PCA cannot handle large-scale genetic data processing.",
+            "D": "PCA tends to confuse patterns in the dataset with environmental variables.",
+            "E": "PCA merges all regional variations into one dimension."
+        }
+    },
+    "28": {
+        "question": "What was a principal accomplishment of cPCA in genetic ancestry visualization as revealed in the article?",
+        "options": {
+            "A": "It failed to identify any significant regional ancestry patterns.",
+            "B": "cPCA was able to clearly visualize and cluster genetic variation linked to geographical ancestry.",
+            "C": "It glossed over essential variations in base pairs.",
+            "D": "It was unable to acknowledge ancestral influence.",
+            "E": "It revealed equal variance across populations."
+        }
+    },
+    "29": {
+        "question": "How does cPCA specifically benefit interactive data exploration scenarios, according to the article?",
+        "options": {
+            "A": "By providing a touch-based visualization platform.",
+            "B": "By ensuring instantaneous computation times for interactive feedback.",
+            "C": "By offering live streaming of computational results.",
+            "D": "By needing minimal input from the analyst during iterations.",
+            "E": "By running optimizations in parallel computing environments."
+        }
+    },
+    "30": {
+        "question": "In the assay of protein expression data from shocked mice, what did cPCA accomplish compared to PCA?",
+        "options": {
+            "A": "Identified subgroups of mice with differing resistance.",
+            "B": "Clustered mice based on chronological age.",
+            "C": "Separated mice with and without Down Syndrome effectively.",
+            "D": "Illustrated culinary preferences among mice.",
+            "E": "Depicted gender-based grouping with higher resolution."
+        }
+    },
+    "31": {
+        "question": "In terms of dataset requirements, what is not necessary for background and target datasets in cPCA?",
+        "options": {
+            "A": "Identical number of samples",
+            "B": "Similar covariance structure for effective contrast",
+            "C": "Clearly defined target variance goals",
+            "D": "Comparable sample size for statistical accuracy",
+            "E": "Balanced representation of all variance elements throughout data"
+        }
+    },
+    "32": {
+        "question": "What is the purpose of using the contrast parameter α during cPCA implementation?",
+        "options": {
+            "A": "To define a predefined path for data examination",
+            "B": "To optimize the trade-off between variance in the target and background",
+            "C": "To select only variance that impacts temporal aspects",
+            "D": "To guarantee low computation times for real-time data usage",
+            "E": "To establish a fixed dimensionality limit for analysis"
+        }
+    },
+    "33": {
+        "question": "How does cPCA handle features associated with target-specific trends according to the article?",
+        "options": {
+            "A": "By applying a strict feature selection filter",
+            "B": "By combining target-specific variance with universal noise",
+            "C": "By isolating asymmetric variance distributions not present in background",
+            "D": "Through learning convolutional neural networks for trend prediction",
+            "E": "By applying traditional supervised learning methods for reduction"
+        }
+    },
+    "34": {
+        "question": "What is the anticipated impact of cPCA in dimensionality reduction tasks as stated in the article?",
+        "options": {
+            "A": "cPCA will eventually be replaced by purely supervised methods.",
+            "B": "It allows for efficient and quick identification of enriched dataset patterns.",
+            "C": "cPCA will fail to handle any dataset size larger than current PCA apps.",
+            "D": "cPCA could become redundant due to future hardware improvements.",
+            "E": "It provides an excessive complexity unnecessary for small datasets."
+        }
+    },
+    "35": {
+        "question": "How does cPCA contribute to greater accuracy in identifying genetic clusters, as discussed in the article?",
+        "options": {
+            "A": "By amplifying existing noise in genetic signals",
+            "B": "By focusing solely on single gene expressions",
+            "C": "By successfully isolating intra-group variations via enhanced pattern recognition",
+            "D": "By introducing genetic mutations in sampling data",
+            "E": "By removing cellular context from genetic data analysis"
+        }
+    },
+    "36": {
+        "question": "What potential application of cPCA is illustrated in visualizing the relationship between subpopulations?",
+        "options": {
+            "A": "Determining dietary preferences within populations",
+            "B": "Pinpointing unique environmental pressures",
+            "C": "Visualizing known subclass relationships for genetic mapping",
+            "D": "Highlighting uniform distribution patterns across geographies",
+            "E": "Recognizing global patterns without regional nuances"
+        }
+    },
+    "37": {
+        "question": "How does cPCA adjust its primary directions of analysis based on different α values?",
+        "options": {
+            "A": "By fixing all directions as principal components",
+            "B": "By identifying directions with maximized combined variance",
+            "C": "By smoothly transitioning from target-exclusive variance to background-exclusive variance",
+            "D": "By relying on external heuristic judgments",
+            "E": "With a fixed set of results regardless of α"
+        }
+    },
+    "38": {
+        "question": "What does the case study about Mexican ancestry reveal about the application of cPCA?",
+        "options": {
+            "A": "It shows that PCA can achieve similar results with less complexity.",
+            "B": "It effectively highlights regional variation in genetic data better than PCA.",
+            "C": "It reveals that underlying genetic markers are always continentally aligned.",
+            "D": "It reinforces geographic separation without need for more complex algorithms.",
+            "E": "It demonstrates the limitation of cPCA in sparsely populated regions."
+        }
+    },
+    "39": {
+        "question": "How does cPCA handle different data input types across varied disciplines, according to the article?",
+        "options": {
+            "A": "By unifying a single method for all analysis scenarios without variation",
+            "B": "By offering a versatile framework adaptable across investigations",
+            "C": "By needing specific algorithms for every individual dataset characteristic",
+            "D": "By integrating machine learning to identify adaptable methods",
+            "E": "By standardizing outputs to fit into a common analytical model"
+        }
+    },
+    "40": {
+        "question": "Which characteristic of background datasets is critical for the effectiveness of cPCA?",
+        "options": {
+            "A": "Their collection from publicly available repositories",
+            "B": "Their capability to mirror target variance entirely",
+            "C": "Their structural variabilities not intersecting with target focus",
+            "D": "Their focus on entirely different demographic distributions",
+            "E": "Their minimal noise across all background samples"
+        }
+    },
+    "41": {
+        "question": "When cPCA was applied to the leukemia patient’s data, what was the observed result?",
+        "options": {
+            "A": "No discernible differences were detected between samples.",
+            "B": "Identical subpopulations appeared larger than expected.",
+            "C": "There was successful separation of pre- and post-transplant samples.",
+            "D": "Subpopulations merged on a random distribution.",
+            "E": "Pre-transplant variations overtook post-transplant characteristics."
+        }
+    },
+    "42": {
+        "question": "What is the significance of eigenvectors in cPCA computations?",
+        "options": {
+            "A": "They are not applicable for such computations.",
+            "B": "They are only partially utilized, with most focus on scalar differences.",
+            "C": "They form the contrastive principal components representing key directions.",
+            "D": "They compute noise variance rather than target variance.",
+            "E": "They provide linear scaling factors for dataset integrity."
+        }
+    },
+    "43": {
+        "question": "In terms of practical applications, what is a primary feature of cPCA according to the article?",
+        "options": {
+            "A": "It suits a narrow range of biological datasets alone.",
+            "B": "It cannot be used until labeled data becomes available.",
+            "C": "Its readiness to highlight unique trends across arbitrary datasets.",
+            "D": "Its reliance on population-level demographic changes.",
+            "E": "Its foundational bridging between unrelated datasets mainly."
+        }
+    },
+    "44": {
+        "question": "Why might researchers swap background datasets freely among types in cPCA studies?",
+        "options": {
+            "A": "To achieve higher dataset variance and results accuracy.",
+            "B": "To deliberately induce errors and test algorithm strength.",
+            "C": "To contrast a different inherent noise covariance against target",
+            "D": "To compare experimental similarities directly.",
+            "E": "To ensure consistent data integrity with swap consistency."
+        }
+    },
+    "45": {
+        "question": "What methodological advantage does cPCA offer over PCA in scenarios with multiple conditions?",
+        "options": {
+            "A": "Simplified mechanics by treating all input as equal contributors.",
+            "B": "Consideration without needing datasets linked across sources.",
+            "C": "Integrated spectral clustering when dealing with variance similarities.",
+            "D": "Mechanisms allowing parallel intra-dataset variance comparisons.",
+            "E": "The ability to pinpoint inter-condition variances automatically."
+        }
+    },
+    "46": {
+        "question": "What major difference occurs when choosing a high α value during cPCA?",
+        "options": {
+            "A": "It neglects target-specific characteristics remarkably.",
+            "B": "It forces attention to areas with maximum target variance alone.",
+            "C": "It increasingly emphasizes areas with low background variance.",
+            "D": "It triggers errors in reducing dimensional spaces.",
+            "E": "It avoids any quadratic increase in data dimensions."
+        }
+    },
+    "47": {
+        "question": "According to the article, in what aspect might specialized algorithms outperform cPCA?",
+        "options": {
+            "A": "In generalizing across different domains with minimal customization",
+            "B": "In being simpler to implement and less computationally expensive",
+            "C": "In outperforming cPCA for a highly domain-specific task",
+            "D": "In allowing for dynamic dimensionality reduction",
+            "E": "In providing immediate results without preprocessing"
+        }
+    },
+    "48": {
+        "question": "What computational step is primarily used to achieve cPCA's efficiency?",
+        "options": {
+            "A": "Parallel processing using GPU clusters",
+            "B": "High-performance computing with singular matrix iteration",
+            "C": "Eigenvalue decomposition of weighted covariance matrices",
+            "D": "Ripple down perspective transformation techniques",
+            "E": "Machine learning via convolutional neural networks"
+        }
+    },
+    "49": {
+        "question": "What scenario is least appropriate for deriving new patterns with cPCA?",
+        "options": {
+            "A": "Analyzing labeled medical trial phases",
+            "B": "Contrasting pre- and post-experiment variations",
+            "C": "Investigating lineage diversity within ecological zones",
+            "D": "Visualizing audio patterns within recordings",
+            "E": "Focusing specifically on cell variance post-treatment"
+        }
+    },
+    "50": {
+        "question": "What is the relationship between α and the identification of cPCs in cPCA?",
+        "options": {
+            "A": "Lower α values strictly enhance background noise sensitivity",
+            "B": "α choices indirectly decide standard PCA dimensional focus",
+            "C": "Changing α effectively chooses subset of most contrastive directions",
+            "D": "Varying α has minimal influence on the algorithm's outcomes",
+            "E": "α directly scales the color mappings in results visualizations"
+        }
+    }
+}

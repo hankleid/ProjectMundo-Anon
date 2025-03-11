@@ -1,0 +1,502 @@
+{
+    "1": {
+        "question": "Kontrastif ana bileşen analizi (cPCA) ile standart PCA arasındaki ana avantaj nedir?",
+        "options": {
+            "A": "Tahminleri geliştirmek için denetimli öğrenme kullanır.",
+            "B": "Birden fazla veri kümesi arasında en ilginç projeksiyonları otomatik olarak tanımlar.",
+            "C": "PCA'ya kıyasla daha az hesaplama gücü gerektirir.",
+            "D": "Veri ön işleme ihtiyacını ortadan kaldırır.",
+            "E": "Doğrusal olmayan boyut indirgeme teknikleri sunar."
+        }
+    },
+    "2": {
+        "question": "cPCA, t-SNE veya MDS gibi diğer görselleştirme tekniklerinden nasıl farklılaşır?",
+        "options": {
+            "A": "Veri kümeleri için etiketler oluşturma üzerine odaklanır.",
+            "B": "Diğerlerini görmezden gelerek tek bir veri kümesinden desenleri görselleştirir.",
+            "C": "Veri kümesine özgü desenleri tanımlamak için iki veri kümesini karşılaştırır.",
+            "D": "Verileri sabit iki boyutlu bir alana gömer.",
+            "E": "Her zaman denetimli öğrenme sonuçları sağlar."
+        }
+    },
+    "3": {
+        "question": "Makalede tartışıldığı gibi, standart PCA neden gen ifadesi verilerinde önemli alt tipleri ortaya çıkarmakta başarısız olabilir?",
+        "options": {
+            "A": "En yüksek öncelikli kanser alt tiplerini vurgular.",
+            "B": "En üst ana bileşenleri daha geniş demografik varyasyonlara odaklanır.",
+            "C": "Büyük veri kümelerini işleyemez.",
+            "D": "Verideki herhangi bir gürültüyü doğal olarak filtreler.",
+            "E": "Hesaplama gereksinimleri çok yüksektir."
+        }
+    },
+    "4": {
+        "question": "cPCA bağlamında, 'arka plan veri kümesi' nedir?",
+        "options": {
+            "A": "Karşıtlık için rastgele gürültü içeren bir veri kümesi.",
+            "B": "Hedef veri kümesini tam olarak yansıtan bir veri kümesi.",
+            "C": "Hedef veri kümesinde bulunan belirli desenlerden yoksun bir veri kümesi.",
+            "D": "Tüm olası hedef desenleri içeren bir veri kümesi.",
+            "E": "Veri doğrulama ve doğruluk testi için öncelikle kullanılan bir veri kümesi."
+        }
+    },
+    "5": {
+        "question": "cPCA'nın karşıt yönleri bulmak için kullandığı birincil hesaplama tekniği nedir?",
+        "options": {
+            "A": "Gradyan inişi",
+            "B": "Tekil değer ayrışımı",
+            "C": "Ağırlıklı kovaryans farkının özdeğer ayrışımı",
+            "D": "Rastgele orman algoritmaları",
+            "E": "K-ortalama kümeleme"
+        }
+    },
+    "6": {
+        "question": "cPCA'daki 'kontrast gücü α' neyi temsil eder?",
+        "options": {
+            "A": "Hedef verideki varyansın maksimum değeri.",
+            "B": "Yüksek hedef varyansı ile düşük arka plan varyansı arasında bir denge.",
+            "C": "Aşırı uyumu önlemek için kullanılan sabit bir parametre.",
+            "D": "Veri işleme için gereken hesaplama kapasitesi.",
+            "E": "Kullanıcı tarafından seçilen keyfi bir değer."
+        }
+    },
+    "7": {
+        "question": "cPCA'da değiştirilmiş kovaryans matrisinden elde edilen özvektörlerin önemi nedir?",
+        "options": {
+            "A": "Birbirine dik olup karşıt ana bileşenleri temsil ederler.",
+            "B": "Her zaman hem hedef hem de arka plan veri kümelerinde varyansı maksimize ederler.",
+            "C": "LDA'ya benzer doğrusal ayırıcılar sağlarlar.",
+            "D": "Veri kümelerini denetimli bir şekilde sınıflandırmak için kullanılırlar.",
+            "E": "Veri işleme için gereken hesaplama süresini en aza indirirler."
+        }
+    },
+    "8": {
+        "question": "Makalede belirtilen cPCA için uygun olmayan bir kullanım durumu hangisidir?",
+        "options": {
+            "A": "Kanser verilerinde gen ifadesi alt tiplerini görselleştirme",
+            "B": "Gürültülü görüntülerde el yapımı rakamları tanımlama",
+            "C": "Meksika'daki genetik kökenleri keşfetme",
+            "D": "Ekonomik göstergeleri kullanarak borsa trendlerini tahmin etme",
+            "E": "Tıbbi tedavi öncesi ve sonrası hücre örneklerini ayırt etme"
+        }
+    },
+    "9": {
+        "question": "cPCA büyük veri kümelerini hesaplamalı olarak nasıl ele alır?",
+        "options": {
+            "A": "Doğrusal olmayan desenleri ele almak için çekirdek yöntemleri kullanarak boyutları azaltır.",
+            "B": "Kayıplı sıkıştırma teknikleri kullanarak verileri sıkıştırır.",
+            "C": "Analizden önce hiyerarşik kümeleme yaklaşımı uygular.",
+            "D": "Özellik azaltma için özel bir sinir ağı kullanır.",
+            "E": "Dinamik yöntemler kullanarak kontrast parametresini optimize eder."
+        }
+    },
+    "10": {
+        "question": "Makaleye göre, cPCA ile istatistiksel anlamlılık testi arasındaki ilişki nedir?",
+        "options": {
+            "A": "cPCA anında istatistiksel doğrulama kriterleri sağlar.",
+            "B": "cPCA p-değerleri sağlamaz ve doğrulama için daha fazla analiz gerektirir.",
+            "C": "cPCA doğal olarak istatistiksel test ihtiyacını ortadan kaldırır.",
+            "D": "cPCA yerleşik hipotez test mekanizmaları ile birlikte gelir.",
+            "E": "cPCA, özellik önemini test etmek için olasılıksal bir çerçeve sunar."
+        }
+    },
+    "11": {
+        "question": "cPCA'nın, nakil öncesi ve sonrası kemik iliği mononükleer hücre (BMMC) verilerini görselleştirmede sunduğu iyileştirme nedir?",
+        "options": {
+            "A": "Daha net bir görselleştirme için nakil öncesi ve sonrası örnekleri karıştırır.",
+            "B": "Analizden tamamen nakil öncesi örnekleri izole eder.",
+            "C": "Varyansın büyük bir kısmını tedavi farklılıkları ile hizalayan net alt alanlar ortaya çıkarır.",
+            "D": "Hasta özel faktörlerle ilgili tüm varyansı kaldırır.",
+            "E": "Veri kümesini tek boyutlu bir temsile indirger."
+        }
+    },
+    "12": {
+        "question": "Makalede, cPCA beş Meksika eyaletinden alınan genotip verilerine uygulandığında ne gözlemlendi?",
+        "options": {
+            "A": "Herhangi bir belirgin desen göstermekte başarısız oldu.",
+            "B": "Farklı eyaletlerin genotipleri farklı renklendirme desenleri gösterdi.",
+            "C": "Köken grupları daha net coğrafi ilişkiler sergiledi.",
+            "D": "Avrupa ve Yerli Amerikalı varyantlar tamamen kayboldu.",
+            "E": "Genotip verileri konum yerine cinsiyete göre kümelendi."
+        }
+    },
+    "13": {
+        "question": "Makalede belirtilen cPCA'nın potansiyel bir dezavantajı nedir?",
+        "options": {
+            "A": "Gelişmiş alan bilgisine büyük ölçüde dayanır.",
+            "B": "PCA'dan önemli ölçüde daha fazla hesaplama kaynağı gerektirir.",
+            "C": "Mevcut özel boyut indirgeme yöntemlerini otomatik olarak değiştirmez.",
+            "D": "Sadece belirli veri kümesi türleriyle sınırlı uygulanabilirliği vardır.",
+            "E": "Etkileşimli veri keşfi için kullanılamaz."
+        }
+    },
+    "14": {
+        "question": "cPCA kullanarak gen ifadesi analizi için arka plan olarak hangi veri kümesi önerilir?",
+        "options": {
+            "A": "Karşılaştırmak için karışık hastalıklar içeren bir veri kümesi.",
+            "B": "Farklı bir demografiden örnekler içeren benzer bir veri kümesi.",
+            "C": "Hastalık belirteçleri olmayan sağlıklı hastalardan alınan veriler.",
+            "D": "Rastgele oluşturulmuş kontrol grupları.",
+            "E": "Farklı bir çalışmadan ilgisiz görüntüler veya kayıtlar."
+        }
+    },
+    "15": {
+        "question": "cPCA'nın etkili çalışması için arka plan veri kümesi seçimi için ne önerilir?",
+        "options": {
+            "A": "Aynı dağılımdan üretilen sentetik verilerden oluşmalıdır.",
+            "B": "Hedef veriye kıyasla benzer ancak ilginç olmayan varyansa sahip olmalıdır.",
+            "C": "Hedef veri kümesi ile aynı kovaryans yapısına sahip olmalıdır.",
+            "D": "Hem hedef hem de rastgele gürültü verilerini içermelidir.",
+            "E": "Hedef veri kümesi ile eşit sayıda örnek içermelidir."
+        }
+    },
+    "16": {
+        "question": "Makalede tartışıldığı gibi, cPCA hesaplamalı olarak nasıl verimlidir?",
+        "options": {
+            "A": "PCA'dan daha hızlı hesaplama algoritmaları kullanır.",
+            "B": "Herhangi bir matris işlemi hesaplamaz.",
+            "C": "Hesaplama süresi standart PCA ile karşılaştırılabilir.",
+            "D": "Veri ön işleme adımlarından kaçınır.",
+            "E": "Dağıtılmış hesaplama çerçevelerini kullanır."
+        }
+    },
+    "17": {
+        "question": "Makalede belirtilen denetimli yöntemlere göre boyut indirgeme konusunda cPCA'nın sunduğu bir fayda nedir?",
+        "options": {
+            "A": "cPCA, denetimli öğrenmede muhtemelen gerekli olan ön etiketlemeyi gerektirir.",
+            "B": "cPCA, etiketli eğitim verilerinden kaynaklanan önyargıdan kaçınır.",
+            "C": "cPCA doğrudan sınıflandırma doğruluğunu optimize eder.",
+            "D": "cPCA, özellik seçimi algoritmalarına olan ihtiyacı azaltır.",
+            "E": "cPCA, doğrusal olmayan veri desenlerinden etkilenmez."
+        }
+    },
+    "18": {
+        "question": "Makalede cPCA ile doğrudan karşılaştırıldığı belirtilmeyen yöntem hangisidir?",
+        "options": {
+            "A": "t-SNE",
+            "B": "Doğrusal Ayırıcı Analiz (LDA)",
+            "C": "Karesel Ayırıcı Analiz (QDA)",
+            "D": "Çok Boyutlu Ölçekleme (MDS)",
+            "E": "Ana Bileşen Takibi"
+        }
+    },
+    "19": {
+        "question": "Makaleye göre, cPCA'nın denetimsiz öğrenme alanına katkısı nedir?",
+        "options": {
+            "A": "Denetimsiz sınıflandırma görevleri için bir çerçeve sağlayarak.",
+            "B": "Etiketli veri kümelerine ihtiyaç duymadan veri keşfi sunarak.",
+            "C": "Tanımlı bir öğrenme oranı ile yakınsama garantisi vererek.",
+            "D": "Dinamik ve etkileşimli görselleştirmeler sunarak.",
+            "E": "Öğrenme hedeflerini denetimli veri içgörüleriyle hizalayarak."
+        }
+    },
+    "20": {
+        "question": "Makalede tartışıldığı gibi, cPCA tarafından bulunan yönlerin hangi özelliği onları farklılaştırır?",
+        "options": {
+            "A": "Sadece hedef veri kümesinde varyansı maksimize ederler.",
+            "B": "Doğrusal olmayan projeksiyonlar yoluyla boyutları azaltırlar.",
+            "C": "Arka plan varyasyonlarıyla tamamen ilgisiz özellikler içerirler.",
+            "D": "Özelliklerin sınıflandırma potansiyelini artırırlar.",
+            "E": "Hedef ve arka plan veri kümeleri arasındaki varyans karşıtlığını maksimize ederler."
+        }
+    },
+    "21": {
+        "question": "Biyolojik bağlamlarda alt popülasyonları çözme yeteneğini incelemek için cPCA'nın kullanıldığı deneysel vaka çalışması nedir?",
+        "options": {
+            "A": "Orman ekosistemlerinde genetik çeşitlilik",
+            "B": "Farklı popülasyonlarda kanser alt tipleri",
+            "C": "Şok tedavisi maruziyeti olan farelerde protein ifadesi",
+            "D": "Farklı türler tarafından habitat kolonizasyonu",
+            "E": "Davids'in gıda enzimleri üzerine araştırması"
+        }
+    },
+    "22": {
+        "question": "Makalede tanımlandığı gibi, cPCA için geometrik yorum neden önemlidir?",
+        "options": {
+            "A": "Diferansiyel hesaplama ölçümlerinin hesaplanmasına izin verir.",
+            "B": "Veri kümeleri arasındaki varyans takaslarının önemini görselleştirir.",
+            "C": "Veriden bağımsız koordinat dönüşümüne izin verir.",
+            "D": "Tahmin gücünde istatistiksel özellikleri aşar.",
+            "E": "Daha iyi kullanılabilirlik için grafiksel bir kullanıcı arayüzü sağlar."
+        }
+    },
+    "23": {
+        "question": "cPCA'nın hedef-arka plan varyansı ile önemli yönleri araştırmasına olanak tanıyan hangi özelliği vardır?",
+        "options": {
+            "A": "Seçilen özvektörler üzerindeki diklik kısıtlaması.",
+            "B": "Varyans çiftlerini tanımlamak için Pareto sınırının kullanımı.",
+            "C": "Özdeğer büyüklüğü ile karşıtlığın kısıtlanması.",
+            "D": "Veri özelliklerinin çokgen basitleştirilmesi.",
+            "E": "Önem testi için p-değerlerine bağımlılık."
+        }
+    },
+    "24": {
+        "question": "Makalede belirtilen ek GitHub deposu ne sağlar?",
+        "options": {
+            "A": "cPCA deneyleri yürütmek için gerçek zamanlı destek",
+            "B": "Araştırma makalesinde kullanılan veri kümeleri ve ek analiz betikleri",
+            "C": "Görselleştirmeler için etkileşimli web tabanlı bir platform",
+            "D": "cPCA için parametre ayarını otomatikleştirmek üzere eğitilmiş bir makine öğrenme modeli",
+            "E": "Hipotez testi için kapsamlı istatistiksel paketler"
+        }
+    },
+    "25": {
+        "question": "Makaleye göre, bir veri kümesindeki 'en karşıt yönleri' ne belirler?",
+        "options": {
+            "A": "Her iki veri kümesinde de eşit varyans dağılımına sahip yönler",
+            "B": "Arka plan varyansını dikkate almadan hedef varyansı maksimize eden yönler",
+            "C": "Hem hedef hem de arka plan varyansını eşit şekilde minimize eden yönler",
+            "D": "Daha yüksek hedef varyansı ve daha düşük arka plan varyansı olan yönler",
+            "E": "Hedef ve arka plan varyansının çarpımını maksimize eden yönler"
+        }
+    },
+    "26": {
+        "question": "Makalede tartışıldığı gibi, cPCA'nın sentetik el yazısı rakam veri setine uygulanmasının önemli bir sonucu neydi?",
+        "options": {
+            "A": "PCA, görüntüleri rakam türüne göre tamamen ayırdı.",
+            "B": "cPCA, rakam özelliklerinden daha fazla arka plan gürültüsünü vurguladı.",
+            "C": "cPCA, arka plan gürültüsünü gölgede bırakarak rakamlar üzerinde görüntüleri ayırdı.",
+            "D": "cPCA, el yazısı rakamları PCA'dan daha iyi ayırt edemedi.",
+            "E": "Sentetik veri seti tek bir ana bileşene indirildi."
+        }
+    },
+    "27": {
+        "question": "Makaleye göre, PCA neden Meksika içinde ayrıntılı köken analizi için genellikle yetersizdir?",
+        "options": {
+            "A": "PCA, örnekleme hatalarına dayalı olarak sonuçları doğal olarak önyargılı hale getirir.",
+            "B": "En üst bileşenleri genellikle sadece daha geniş küresel köken sinyallerini yakalar.",
+            "C": "PCA, büyük ölçekli genetik veri işleme ile başa çıkamaz.",
+            "D": "PCA, veri kümesindeki desenleri çevresel değişkenlerle karıştırma eğilimindedir.",
+            "E": "PCA, tüm bölgesel varyasyonları tek bir boyuta birleştirir."
+        }
+    },
+    "28": {
+        "question": "Makalede ortaya konduğu gibi, genetik köken görselleştirmede cPCA'nın başlıca başarısı neydi?",
+        "options": {
+            "A": "Herhangi bir önemli bölgesel köken desenini tanımlamakta başarısız oldu.",
+            "B": "cPCA, coğrafi kökenle bağlantılı genetik varyasyonu net bir şekilde görselleştirdi ve kümelendirdi.",
+            "C": "Baz çiftlerindeki temel varyasyonları göz ardı etti.",
+            "D": "Atasal etkiyi kabul edemedi.",
+            "E": "Popülasyonlar arasında eşit varyans ortaya çıkardı."
+        }
+    },
+    "29": {
+        "question": "Makaleye göre, cPCA etkileşimli veri keşfi senaryolarına nasıl özel bir fayda sağlar?",
+        "options": {
+            "A": "Dokunmatik tabanlı bir görselleştirme platformu sağlayarak.",
+            "B": "Etkileşimli geri bildirim için anlık hesaplama süreleri sağlayarak.",
+            "C": "Hesaplama sonuçlarının canlı akışını sunarak.",
+            "D": "Yinelemeler sırasında analistten minimum girdi gerektirerek.",
+            "E": "Paralel hesaplama ortamlarında optimizasyonlar çalıştırarak."
+        }
+    },
+    "30": {
+        "question": "Şoklanmış farelerden alınan protein ifadesi verilerinin analizinde, cPCA'nın PCA'ya kıyasla başardığı nedir?",
+        "options": {
+            "A": "Farklı dirençlere sahip fare alt gruplarını tanımladı.",
+            "B": "Fareleri kronolojik yaşa göre kümelendirdi.",
+            "C": "Down Sendromu olan ve olmayan fareleri etkili bir şekilde ayırdı.",
+            "D": "Fareler arasında mutfak tercihlerini gösterdi.",
+            "E": "Cinsiyete dayalı gruplamayı daha yüksek çözünürlükle gösterdi."
+        }
+    },
+    "31": {
+        "question": "Veri kümesi gereksinimleri açısından, cPCA'da arka plan ve hedef veri kümeleri için gerekli olmayan nedir?",
+        "options": {
+            "A": "Aynı sayıda örnek",
+            "B": "Etkili karşıtlık için benzer kovaryans yapısı",
+            "C": "Açıkça tanımlanmış hedef varyans hedefleri",
+            "D": "İstatistiksel doğruluk için karşılaştırılabilir örnek boyutu",
+            "E": "Veri boyunca tüm varyans unsurlarının dengeli temsili"
+        }
+    },
+    "32": {
+        "question": "cPCA uygulaması sırasında kontrast parametresi α'nın kullanımı nedir?",
+        "options": {
+            "A": "Veri incelemesi için önceden tanımlanmış bir yol tanımlamak",
+            "B": "Hedef ve arka plan varyansı arasındaki dengeyi optimize etmek",
+            "C": "Sadece zamansal yönleri etkileyen varyansı seçmek",
+            "D": "Gerçek zamanlı veri kullanımı için düşük hesaplama sürelerini garanti etmek",
+            "E": "Analiz için sabit bir boyut sınırı belirlemek"
+        }
+    },
+    "33": {
+        "question": "Makaleye göre, cPCA hedefe özgü eğilimlerle ilişkili özellikleri nasıl ele alır?",
+        "options": {
+            "A": "Katı bir özellik seçimi filtresi uygulayarak",
+            "B": "Hedefe özgü varyansı evrensel gürültü ile birleştirerek",
+            "C": "Arka planda bulunmayan asimetrik varyans dağılımlarını izole ederek",
+            "D": "Eğilim tahmini için evrişimli sinir ağları öğrenerek",
+            "E": "Azaltma için geleneksel denetimli öğrenme yöntemlerini uygulayarak"
+        }
+    },
+    "34": {
+        "question": "Makalede belirtildiği gibi, cPCA'nın boyut indirgeme görevlerindeki beklenen etkisi nedir?",
+        "options": {
+            "A": "cPCA sonunda tamamen denetimli yöntemlerle değiştirilecektir.",
+            "B": "Zenginleştirilmiş veri kümesi desenlerinin verimli ve hızlı bir şekilde tanımlanmasına olanak tanır.",
+            "C": "cPCA, mevcut PCA uygulamalarından daha büyük herhangi bir veri kümesi boyutunu işleyemeyecektir.",
+            "D": "Gelecekteki donanım iyileştirmeleri nedeniyle cPCA gereksiz hale gelebilir.",
+            "E": "Küçük veri kümeleri için gereksiz bir karmaşıklık sağlar."
+        }
+    },
+    "35": {
+        "question": "Makalede tartışıldığı gibi, cPCA genetik kümeleri tanımlamada daha yüksek doğruluğa nasıl katkıda bulunur?",
+        "options": {
+            "A": "Genetik sinyallerde mevcut gürültüyü artırarak",
+            "B": "Sadece tek gen ifadelerine odaklanarak",
+            "C": "Gelişmiş desen tanıma yoluyla grup içi varyasyonları başarıyla izole ederek",
+            "D": "Örnekleme verilerinde genetik mutasyonlar tanıtarak",
+            "E": "Genetik veri analizinden hücresel bağlamı kaldırarak"
+        }
+    },
+    "36": {
+        "question": "Alt popülasyonlar arasındaki ilişkiyi görselleştirmede cPCA'nın potansiyel uygulaması nedir?",
+        "options": {
+            "A": "Popülasyonlar içinde diyet tercihlerini belirleme",
+            "B": "Benzersiz çevresel baskıları belirleme",
+            "C": "Genetik haritalama için bilinen alt sınıf ilişkilerini görselleştirme",
+            "D": "Coğrafyalar arasında eşit dağılım desenlerini vurgulama",
+            "E": "Bölgesel nüanslar olmadan küresel desenleri tanıma"
+        }
+    },
+    "37": {
+        "question": "cPCA, farklı α değerlerine dayalı olarak analizinin birincil yönlerini nasıl ayarlar?",
+        "options": {
+            "A": "Tüm yönleri ana bileşenler olarak sabitleyerek",
+            "B": "Birleştirilmiş varyansı maksimize eden yönleri belirleyerek",
+            "C": "Hedefe özel varyanstan arka plana özel varyansa yumuşak geçiş yaparak",
+            "D": "Dışsal sezgisel yargılara dayanarak",
+            "E": "α'ya bakılmaksızın sabit bir sonuç seti ile"
+        }
+    },
+    "38": {
+        "question": "Meksika kökeni hakkındaki vaka çalışması, cPCA'nın uygulanması hakkında neyi ortaya koyuyor?",
+        "options": {
+            "A": "PCA'nın daha az karmaşıklıkla benzer sonuçlar elde edebileceğini gösterir.",
+            "B": "Genetik verilerdeki bölgesel varyasyonu PCA'dan daha iyi vurgular.",
+            "C": "Altta yatan genetik belirteçlerin her zaman kıtasal olarak hizalandığını ortaya koyar.",
+            "D": "Daha karmaşık algoritmalara ihtiyaç duymadan coğrafi ayrımı güçlendirir.",
+            "E": "Seyrek nüfuslu bölgelerde cPCA'nın sınırlamalarını gösterir."
+        }
+    },
+    "39": {
+        "question": "Makaleye göre, cPCA farklı disiplinlerdeki çeşitli veri giriş türlerini nasıl ele alır?",
+        "options": {
+            "A": "Tüm analiz senaryoları için tek bir yöntemi birleştirerek",
+            "B": "Araştırmalar arasında uyarlanabilir bir çerçeve sunarak",
+            "C": "Her bireysel veri kümesi özelliği için özel algoritmalar gerektirerek",
+            "D": "Uyarlanabilir yöntemleri belirlemek için makine öğrenimini entegre ederek",
+            "E": "Çıktıları ortak bir analitik modele uyacak şekilde standartlaştırarak"
+        }
+    },
+    "40": {
+        "question": "Arka plan veri kümelerinin hangi özelliği cPCA'nın etkinliği için kritiktir?",
+        "options": {
+            "A": "Herkese açık depolardan toplanmaları",
+            "B": "Hedef varyansı tamamen yansıtma yetenekleri",
+            "C": "Hedef odakla kesişmeyen yapısal değişkenlikleri",
+            "D": "Tamamen farklı demografik dağılımlara odaklanmaları",
+            "E": "Tüm arka plan örneklerinde minimum gürültü"
+        }
+    },
+    "41": {
+        "question": "cPCA lösemi hastasının verilerine uygulandığında, gözlemlenen sonuç neydi?",
+        "options": {
+            "A": "Örnekler arasında belirgin bir fark tespit edilmedi.",
+            "B": "Aynı alt popülasyonlar beklenenden daha büyük göründü.",
+            "C": "Nakil öncesi ve sonrası örneklerin başarılı bir şekilde ayrılması sağlandı.",
+            "D": "Alt popülasyonlar rastgele bir dağılımda birleşti.",
+            "E": "Nakil öncesi varyasyonlar nakil sonrası özellikleri aştı."
+        }
+    },
+    "42": {
+        "question": "cPCA hesaplamalarında özvektörlerin önemi nedir?",
+        "options": {
+            "A": "Bu tür hesaplamalar için geçerli değildirler.",
+            "B": "Sadece kısmen kullanılırlar, çoğunlukla skaler farklara odaklanılır.",
+            "C": "Anahtar yönleri temsil eden karşıt ana bileşenleri oluştururlar.",
+            "D": "Hedef varyansı yerine gürültü varyansını hesaplarlar.",
+            "E": "Veri kümesi bütünlüğü için doğrusal ölçekleme faktörleri sağlarlar."
+        }
+    },
+    "43": {
+        "question": "Makaleye göre, cPCA'nın pratik uygulamalarda birincil özelliği nedir?",
+        "options": {
+            "A": "Sadece dar bir biyolojik veri kümesi aralığına uygundur.",
+            "B": "Etiketli veriler kullanılabilir hale gelene kadar kullanılamaz.",
+            "C": "Rastgele veri kümeleri arasında benzersiz eğilimleri vurgulama hazır olması.",
+            "D": "Nüfus düzeyinde demografik değişikliklere dayanması.",
+            "E": "Temelde ilgisiz veri kümeleri arasında köprü kurması."
+        }
+    },
+    "44": {
+        "question": "Araştırmacılar neden cPCA çalışmalarında arka plan veri kümelerini türler arasında serbestçe değiştirebilirler?",
+        "options": {
+            "A": "Daha yüksek veri kümesi varyansı ve sonuç doğruluğu elde etmek için.",
+            "B": "Hataları kasıtlı olarak indüklemek ve algoritma gücünü test etmek için.",
+            "C": "Hedefe karşı farklı bir içsel gürültü kovaryansını karşılaştırmak için",
+            "D": "Deneysel benzerlikleri doğrudan karşılaştırmak için.",
+            "E": "Değişim tutarlılığı ile veri bütünlüğünü sağlamak için."
+        }
+    },
+    "45": {
+        "question": "cPCA, birden fazla koşul içeren senaryolarda PCA'ya göre hangi metodolojik avantajı sunar?",
+        "options": {
+            "A": "Tüm girdileri eşit katkı sağlayıcılar olarak ele alarak basitleştirilmiş mekanikler.",
+            "B": "Kaynaklar arasında bağlantılı veri kümelerine ihtiyaç duymadan değerlendirme.",
+            "C": "Varyans benzerlikleriyle başa çıkarken entegre spektral kümeleme.",
+            "D": "Veri kümesi içi varyans karşılaştırmalarına paralel olarak izin veren mekanizmalar.",
+            "E": "Koşullar arası varyansları otomatik olarak belirleme yeteneği."
+        }
+    },
+    "46": {
+        "question": "cPCA sırasında yüksek bir α değeri seçildiğinde hangi büyük fark meydana gelir?",
+        "options": {
+            "A": "Hedefe özgü özellikleri önemli ölçüde ihmal eder.",
+            "B": "Sadece maksimum hedef varyansı olan alanlara dikkat çeker.",
+            "C": "Düşük arka plan varyansı olan alanları giderek vurgular.",
+            "D": "Boyutsal alanları azaltmada hatalara neden olur.",
+            "E": "Veri boyutlarında herhangi bir ikinci dereceden artışı önler."
+        }
+    },
+    "47": {
+        "question": "Makaleye göre, hangi açıdan özel algoritmalar cPCA'dan daha iyi performans gösterebilir?",
+        "options": {
+            "A": "Farklı alanlar arasında minimal özelleştirme ile genelleme yapmada",
+            "B": "Daha basit uygulanabilir ve daha az hesaplama maliyetli olmada",
+            "C": "Çok alan spesifik bir görevde cPCA'dan daha iyi performans göstermede",
+            "D": "Dinamik boyut indirgeme sağlamada",
+            "E": "Ön işleme olmadan anında sonuç sağlamada"
+        }
+    },
+    "48": {
+        "question": "cPCA'nın verimliliğini sağlamak için öncelikle hangi hesaplama adımı kullanılır?",
+        "options": {
+            "A": "GPU kümeleri kullanarak paralel işlem",
+            "B": "Tekil matris yinelemesi ile yüksek performanslı hesaplama",
+            "C": "Ağırlıklı kovaryans matrislerinin özdeğer ayrışımı",
+            "D": "Dalga aşağı perspektif dönüşüm teknikleri",
+            "E": "Evrişimli sinir ağları aracılığıyla makine öğrenimi"
+        }
+    },
+    "49": {
+        "question": "cPCA ile yeni desenler türetmek için en az uygun senaryo hangisidir?",
+        "options": {
+            "A": "Etiketli tıbbi deneme aşamalarını analiz etme",
+            "B": "Deney öncesi ve sonrası varyasyonları karşılaştırma",
+            "C": "Ekolojik bölgelerde soy çeşitliliğini araştırma",
+            "D": "Kayıtlar içinde ses desenlerini görselleştirme",
+            "E": "Tedavi sonrası hücre varyansına özel odaklanma"
+        }
+    },
+    "50": {
+        "question": "cPCA'da α ile cPC'lerin tanımlanması arasındaki ilişki nedir?",
+        "options": {
+            "A": "Düşük α değerleri arka plan gürültü duyarlılığını kesinlikle artırır",
+            "B": "α seçimleri dolaylı olarak standart PCA boyutsal odağını belirler",
+            "C": "α'yı değiştirmek, en karşıt yönlerin alt kümesini etkili bir şekilde seçer",
+            "D": "α'yı değiştirmek, algoritmanın sonuçları üzerinde minimal etkiye sahiptir",
+            "E": "α, sonuç görselleştirmelerinde renk eşlemelerini doğrudan ölçeklendirir"
+        }
+    }
+}

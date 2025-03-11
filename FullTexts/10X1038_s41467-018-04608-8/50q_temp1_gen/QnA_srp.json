@@ -1,0 +1,502 @@
+{
+    "1": {
+        "question": "Koja je glavna prednost kontrastivne analize glavnih komponenti (cPCA) u odnosu na standardnu PCA?",
+        "options": {
+            "A": "Koristi nadgledano učenje za poboljšanje predikcija.",
+            "B": "Automatski identifikuje najzanimljivije projekcije kroz više skupova podataka.",
+            "C": "Zahteva manje računarske snage u poređenju sa PCA.",
+            "D": "Eliminiše potrebu za predobradu podataka.",
+            "E": "Uvodi tehnike nelinearnog smanjenja dimenzionalnosti."
+        }
+    },
+    "2": {
+        "question": "Kako se cPCA razlikuje od drugih tehnika vizualizacije kao što su t-SNE ili MDS?",
+        "options": {
+            "A": "Fokusira se na generisanje oznaka za skupove podataka.",
+            "B": "Vizualizuje obrasce iz jednog skupa podataka dok ignoriše druge.",
+            "C": "Poredi dva skupa podataka kako bi identifikovao obrasce specifične za dataset.",
+            "D": "Ugrađuje podatke u fiksni dvodimenzionalni prostor.",
+            "E": "Uvek pruža rezultate nadgledanog učenja."
+        }
+    },
+    "3": {
+        "question": "Zašto standardna PCA možda neće otkriti važne podtipove u podacima o ekspresiji gena, kako je diskutovano u članku?",
+        "options": {
+            "A": "Ističe podtipove raka sa najvišim prioritetom.",
+            "B": "Njene glavne komponente se fokusiraju na šire demografske varijacije.",
+            "C": "Nije u stanju da obradi velike skupove podataka.",
+            "D": "Inherentno filtrira bilo kakvu buku prisutnu u podacima.",
+            "E": "Njeni računarski zahtevi su preveliki."
+        }
+    },
+    "4": {
+        "question": "U kontekstu cPCA, šta je 'pozadinski skup podataka'?",
+        "options": {
+            "A": "Skup podataka koji sadrži slučajnu buku za kontrast.",
+            "B": "Skup podataka koji tačno odražava ciljni skup podataka.",
+            "C": "Skup podataka kojem nedostaju specifični obrasci od interesa prisutni u ciljnom skupu podataka.",
+            "D": "Skup podataka koji sadrži sve moguće ciljne obrasce.",
+            "E": "Skup podataka koji se prvenstveno koristi za validaciju podataka i testiranje tačnosti."
+        }
+    },
+    "5": {
+        "question": "Koja je primarna računarska tehnika koju cPCA koristi za pronalaženje kontrastivnih pravaca?",
+        "options": {
+            "A": "Gradijentni spust",
+            "B": "Singularna dekompozicija vrednosti",
+            "C": "Dekompozicija sopstvenih vrednosti razlike ponderisane kovarijanse",
+            "D": "Algoritmi slučajnih šuma",
+            "E": "K-srednje klasterisanje"
+        }
+    },
+    "6": {
+        "question": "Šta predstavlja 'snaga kontrasta α' u cPCA?",
+        "options": {
+            "A": "Maksimalna vrednost varijanse u ciljanim podacima.",
+            "B": "Ravnoteža između visoke ciljne varijanse i niske pozadinske varijanse.",
+            "C": "Fiksni parametar koji se koristi za sprečavanje prekomernog prilagođavanja.",
+            "D": "Računarski kapacitet potreban za obradu podataka.",
+            "E": "Proizvoljna vrednost koju bira korisnik."
+        }
+    },
+    "7": {
+        "question": "Koji je značaj sopstvenih vektora dobijenih iz modifikovane matrice kovarijanse u cPCA?",
+        "options": {
+            "A": "Oni su ortogonalni jedan drugom i predstavljaju kontrastivne glavne komponente.",
+            "B": "Uvek maksimizuju varijansu u oba ciljna i pozadinska skupa podataka.",
+            "C": "Pružaju linearne diskriminante slične LDA.",
+            "D": "Koriste se za klasifikaciju skupova podataka na nadgledan način.",
+            "E": "Minimizuju vreme potrebno za obradu podataka."
+        }
+    },
+    "8": {
+        "question": "Koji od sledećih nije pogodan slučaj upotrebe za cPCA kako je navedeno u članku?",
+        "options": {
+            "A": "Vizualizacija podtipova ekspresije gena u podacima o raku",
+            "B": "Identifikacija ručno pisanih cifara u bučnim slikama",
+            "C": "Istraživanje genetskih predaka unutar Meksika",
+            "D": "Predviđanje trendova na berzi koristeći ekonomske pokazatelje",
+            "E": "Razlikovanje uzoraka ćelija pre i posle medicinskog tretmana"
+        }
+    },
+    "9": {
+        "question": "Kako cPCA računski obrađuje velike skupove podataka?",
+        "options": {
+            "A": "Smanjuje dimenzije koristeći metode kernela za obradu nelinearnih obrazaca.",
+            "B": "Kompresuje podatke koristeći tehnike gubitničke kompresije.",
+            "C": "Primjenjuje hijerarhijski pristup klasterisanju pre analize.",
+            "D": "Koristi specijalizovanu neuronsku mrežu za smanjenje karakteristika.",
+            "E": "Optimizuje parametar kontrasta koristeći dinamičke metode."
+        }
+    },
+    "10": {
+        "question": "Prema članku, kakav je odnos između cPCA i testiranja statističke značajnosti?",
+        "options": {
+            "A": "cPCA pruža trenutne kriterijume za statističku validaciju.",
+            "B": "cPCA ne pruža p-vrednosti i zahteva dalju analizu za validaciju.",
+            "C": "cPCA inherentno eliminiše potrebu za statističkim testiranjem.",
+            "D": "cPCA dolazi sa ugrađenim mehanizmima za testiranje hipoteza.",
+            "E": "cPCA nudi probabilistički okvir za testiranje značajnosti karakteristika."
+        }
+    },
+    "11": {
+        "question": "Koje poboljšanje cPCA nudi u vizualizaciji podataka o mononuklearnim ćelijama koštane srži (BMMC) pre i posle transplantacije?",
+        "options": {
+            "A": "Meša uzorke pre i posle transplantacije za jasniju vizualizaciju.",
+            "B": "Potpuno izdvaja uzorke pre transplantacije iz analize.",
+            "C": "Otkriva jasne podprostore koji usklađuju većinu varijanse sa razlikama u tretmanu.",
+            "D": "Uklanja svu varijansu povezanu sa faktorima specifičnim za pacijenta.",
+            "E": "Pojednostavljuje skup podataka na jednodimenzionalnu reprezentaciju."
+        }
+    },
+    "12": {
+        "question": "U članku, šta je primećeno kada je cPCA primenjena na genotipske podatke iz pet meksičkih država?",
+        "options": {
+            "A": "Nije uspela da pokaže bilo kakve prepoznatljive obrasce.",
+            "B": "Genotipovi različitih država manifestovali su različite obrasce bojenja.",
+            "C": "Grupe predaka su prikazale jasnije geografske odnose.",
+            "D": "Evropski i domorodački američki varijanti su potpuno nestali.",
+            "E": "Genotipski podaci su se grupisali prema polu umesto prema lokaciji."
+        }
+    },
+    "13": {
+        "question": "Koji je potencijalni nedostatak cPCA pomenut u članku?",
+        "options": {
+            "A": "U velikoj meri se oslanja na napredno znanje iz oblasti.",
+            "B": "Zahteva znatno više računarskih resursa nego PCA.",
+            "C": "Ne zamenjuje automatski postojeće specijalizovane metode smanjenja dimenzionalnosti.",
+            "D": "Ima ograničenu primenljivost samo na specifične tipove skupova podataka.",
+            "E": "Ne može se koristiti za interaktivno istraživanje podataka."
+        }
+    },
+    "14": {
+        "question": "Koji skup podataka se predlaže kao pozadina za analizu ekspresije gena koristeći cPCA?",
+        "options": {
+            "A": "Skup podataka sa mešovitim bolestima za testiranje.",
+            "B": "Sličan skup podataka sa uzorcima iz različite demografske grupe.",
+            "C": "Podaci od zdravih pacijenata bez markera bolesti.",
+            "D": "Nasumično generisane kontrolne grupe.",
+            "E": "Nepovezane slike ili snimci iz druge studije."
+        }
+    },
+    "15": {
+        "question": "Šta se predlaže za izbor pozadinskog skupa podataka kako bi cPCA efikasno radila?",
+        "options": {
+            "A": "Treba da se sastoji od sintetičkih podataka generisanih iz iste distribucije.",
+            "B": "Treba da poseduje sličnu, ali nezanimljivu varijansu u poređenju sa ciljanim podacima.",
+            "C": "Mora imati identičnu strukturu kovarijanse kao ciljni skup podataka.",
+            "D": "Treba da uključuje i ciljne i nasumične podatke o buci.",
+            "E": "Treba da ima jednak broj uzoraka kao ciljni skup podataka."
+        }
+    },
+    "16": {
+        "question": "Na koji način je cPCA računarski efikasna prema diskusiji u članku?",
+        "options": {
+            "A": "Koristi brže algoritme za računanje nego PCA.",
+            "B": "Ne računa nikakve matrične operacije.",
+            "C": "Njeno vreme računanja je uporedivo sa standardnom PCA.",
+            "D": "Izbegava korake predobrade podataka.",
+            "E": "Koristi distribuirane računarske okvire."
+        }
+    },
+    "17": {
+        "question": "Koja je prednost korišćenja cPCA u smanjenju dimenzionalnosti u odnosu na nadgledane metode pomenute u članku?",
+        "options": {
+            "A": "cPCA zahteva prethodno označavanje koje je verovatno potrebno u nadgledanom učenju.",
+            "B": "cPCA izbegava pristrasnost uvedenu iz označenih podataka za obuku.",
+            "C": "cPCA direktno optimizuje tačnost klasifikacije.",
+            "D": "cPCA smanjuje potrebu za algoritmima za selekciju karakteristika.",
+            "E": "cPCA nije pogođena nelinearnim obrascima podataka."
+        }
+    },
+    "18": {
+        "question": "Koja metoda nije pomenuta kao direktno upoređena sa cPCA u članku?",
+        "options": {
+            "A": "t-SNE",
+            "B": "Linearna diskriminantna analiza (LDA)",
+            "C": "Kvadratna diskriminantna analiza (QDA)",
+            "D": "Višedimenzionalno skaliranje (MDS)",
+            "E": "Potraga za glavnim komponentama"
+        }
+    },
+    "19": {
+        "question": "Kako cPCA doprinosi oblasti nenadgledanog učenja prema članku?",
+        "options": {
+            "A": "Pružanjem okvira za nenadgledane zadatke klasifikacije.",
+            "B": "Nudeći metodu za istraživanje podataka bez potrebe za označenim skupovima podataka.",
+            "C": "Garantovanjem konvergencije sa definisanom brzinom učenja.",
+            "D": "Uvođenjem dinamičkih i interaktivnih vizualizacija.",
+            "E": "Usklađivanjem ciljeva učenja sa uvidima iz nadgledanih podataka."
+        }
+    },
+    "20": {
+        "question": "Koja osobina pravaca pronađenih pomoću cPCA ih razlikuje kako je diskutovano u članku?",
+        "options": {
+            "A": "Maksimizuju varijansu samo u ciljnom skupu podataka.",
+            "B": "Smanjuju dimenzionalnost kroz nelinearne projekcije.",
+            "C": "Uključuju karakteristike potpuno nepovezane sa pozadinskim varijacijama.",
+            "D": "Povećavaju potencijal klasifikacije karakteristika.",
+            "E": "Maksimizuju kontrast varijanse između ciljnog i pozadinskog skupa podataka."
+        }
+    },
+    "21": {
+        "question": "Koja eksperimentalna studija slučaja je korišćena za ispitivanje sposobnosti cPCA da razreši subpopulacije u biološkim kontekstima?",
+        "options": {
+            "A": "Genetska raznolikost u šumskim ekosistemima",
+            "B": "Podtipovi raka u različitim populacijama",
+            "C": "Ekspresija proteina kod miševa izloženih šok terapiji",
+            "D": "Kolonizacija staništa od strane različitih vrsta",
+            "E": "Davidovo istraživanje o enzimima u hrani"
+        }
+    },
+    "22": {
+        "question": "Kako je opisano u članku, zašto je geometrijska interpretacija važna za cPCA?",
+        "options": {
+            "A": "Omogućava izračunavanje mera diferencijalnog računa.",
+            "B": "Vizualizuje značaj kompromisa varijanse između skupova podataka.",
+            "C": "Dozvoljava transformaciju koordinata nezavisno od podataka.",
+            "D": "Prevazilazi statistička svojstva u prediktivnoj moći.",
+            "E": "Pruža grafički korisnički interfejs za bolju upotrebljivost."
+        }
+    },
+    "23": {
+        "question": "Koja karakteristika cPCA omogućava istraživanje pravaca sa značajnom varijansom cilja i pozadine?",
+        "options": {
+            "A": "Njeno ograničenje ortogonalnosti na odabrane sopstvene vektore.",
+            "B": "Korišćenje Pareto fronta za identifikaciju parova varijanse.",
+            "C": "Ograničenje kontrastivnosti prema veličini sopstvene vrednosti.",
+            "D": "Poligonalna simplifikacija karakteristika podataka.",
+            "E": "Zavisnost od p-vrednosti za testiranje značajnosti."
+        }
+    },
+    "24": {
+        "question": "Šta pruža dodatni GitHub repozitorijum kako je navedeno u članku?",
+        "options": {
+            "A": "Podršku u realnom vremenu za sprovođenje cPCA eksperimenata",
+            "B": "Skupove podataka korišćene u istraživačkom radu i dodatne skripte za analizu",
+            "C": "Interaktivnu web platformu za vizualizacije",
+            "D": "Model mašinskog učenja obučen za automatsko podešavanje parametara za cPCA",
+            "E": "Sveobuhvatne statističke pakete za testiranje hipoteza"
+        }
+    },
+    "25": {
+        "question": "Šta određuje 'najkontrastivnije pravce' u skupu podataka prema članku?",
+        "options": {
+            "A": "Pravci koji imaju uniformnu distribuciju varijanse preko oba skupa podataka",
+            "B": "Pravci koji maksimizuju ciljne varijanse bez obzira na pozadinsku varijansu",
+            "C": "Pravci koji minimizuju i ciljne i pozadinske varijanse podjednako",
+            "D": "Pravci sa većom ciljnom varijansom i nižom pozadinskom varijansom",
+            "E": "Pravci koji maksimizuju proizvod ciljne i pozadinske varijanse"
+        }
+    },
+    "26": {
+        "question": "Koji je bio glavni rezultat primene cPCA na sintetički skup podataka ručno pisanih cifara kako je diskutovano u članku?",
+        "options": {
+            "A": "PCA je potpuno razdvojila slike na osnovu tipa cifre.",
+            "B": "cPCA je istakla pozadinsku buku više nego karakteristike cifara.",
+            "C": "cPCA je razdvojila slike na cifre, zasenjujući pozadinsku buku.",
+            "D": "cPCA nije uspela da diferencira ručno pisane cifre bolje od PCA.",
+            "E": "Sintetički skup podataka je smanjen na jednu glavnu komponentu."
+        }
+    },
+    "27": {
+        "question": "Prema članku, zašto je PCA generalno neadekvatna za detaljnu analizu predaka unutar Meksika?",
+        "options": {
+            "A": "PCA inherentno pristrasno prikazuje rezultate na osnovu grešaka u uzorkovanju.",
+            "B": "Njene glavne komponente obično obuhvataju samo šire globalne signale predaka.",
+            "C": "PCA ne može da obradi velike genetske podatke.",
+            "D": "PCA ima tendenciju da pomeša obrasce u skupu podataka sa varijablama okoline.",
+            "E": "PCA spaja sve regionalne varijacije u jednu dimenziju."
+        }
+    },
+    "28": {
+        "question": "Koje je bilo glavno postignuće cPCA u vizualizaciji genetskog porekla kako je otkriveno u članku?",
+        "options": {
+            "A": "Nije uspela da identifikuje bilo kakve značajne regionalne obrasce predaka.",
+            "B": "cPCA je bila u stanju da jasno vizualizuje i grupiše genetske varijacije povezane sa geografskim poreklom.",
+            "C": "Prešla je preko suštinskih varijacija u baznim parovima.",
+            "D": "Nije bila u stanju da prizna uticaj predaka.",
+            "E": "Otkrila je jednaku varijansu među populacijama."
+        }
+    },
+    "29": {
+        "question": "Kako cPCA specifično koristi interaktivne scenarije istraživanja podataka, prema članku?",
+        "options": {
+            "A": "Pružanjem platforme za vizualizaciju zasnovane na dodiru.",
+            "B": "Osiguravanjem trenutnih vremena računanja za interaktivne povratne informacije.",
+            "C": "Nudeći prenos uživo računarskih rezultata.",
+            "D": "Potrebno je minimalno unosa od analitičara tokom iteracija.",
+            "E": "Pokretanjem optimizacija u paralelnim računarskim okruženjima."
+        }
+    },
+    "30": {
+        "question": "U analizi podataka o ekspresiji proteina kod miševa izloženih šoku, šta je cPCA postigla u poređenju sa PCA?",
+        "options": {
+            "A": "Identifikovala je podgrupe miševa sa različitim otporom.",
+            "B": "Grupisala je miševe na osnovu hronološke starosti.",
+            "C": "Efikasno je razdvojila miševe sa i bez Daunovog sindroma.",
+            "D": "Ilustrovala je kulinarske preferencije među miševima.",
+            "E": "Prikazala je grupisanje po polu sa većom rezolucijom."
+        }
+    },
+    "31": {
+        "question": "U smislu zahteva za skupovima podataka, šta nije neophodno za pozadinske i ciljne skupove podataka u cPCA?",
+        "options": {
+            "A": "Identičan broj uzoraka",
+            "B": "Slična struktura kovarijanse za efikasan kontrast",
+            "C": "Jasno definisani ciljevi varijanse",
+            "D": "Uporediva veličina uzorka za statističku tačnost",
+            "E": "Uravnotežena reprezentacija svih elemenata varijanse kroz podatke"
+        }
+    },
+    "32": {
+        "question": "Koja je svrha korišćenja parametra kontrasta α tokom implementacije cPCA?",
+        "options": {
+            "A": "Da definiše unapred određeni put za ispitivanje podataka",
+            "B": "Da optimizuje kompromis između varijanse u cilju i pozadini",
+            "C": "Da izabere samo varijansu koja utiče na vremenske aspekte",
+            "D": "Da garantuje nisko vreme računanja za upotrebu podataka u realnom vremenu",
+            "E": "Da uspostavi fiksni limit dimenzionalnosti za analizu"
+        }
+    },
+    "33": {
+        "question": "Kako cPCA obrađuje karakteristike povezane sa trendovima specifičnim za cilj prema članku?",
+        "options": {
+            "A": "Primjenom strogog filtera za selekciju karakteristika",
+            "B": "Kombinovanjem ciljne varijanse sa univerzalnom bukom",
+            "C": "Izolovanjem asimetričnih distribucija varijanse koje nisu prisutne u pozadini",
+            "D": "Kroz učenje konvolucionih neuronskih mreža za predikciju trendova",
+            "E": "Primjenom tradicionalnih metoda nadgledanog učenja za redukciju"
+        }
+    },
+    "34": {
+        "question": "Koji je očekivani uticaj cPCA u zadacima smanjenja dimenzionalnosti kako je navedeno u članku?",
+        "options": {
+            "A": "cPCA će na kraju biti zamenjena isključivo nadgledanim metodama.",
+            "B": "Omogućava efikasnu i brzu identifikaciju obogaćenih obrazaca u skupu podataka.",
+            "C": "cPCA neće moći da obradi bilo koju veličinu skupa podataka veću od trenutnih PCA aplikacija.",
+            "D": "cPCA bi mogla postati suvišna zbog budućih poboljšanja hardvera.",
+            "E": "Pruža prekomernu složenost nepotrebnu za male skupove podataka."
+        }
+    },
+    "35": {
+        "question": "Kako cPCA doprinosi većoj tačnosti u identifikaciji genetskih klastera, kako je diskutovano u članku?",
+        "options": {
+            "A": "Pojačavanjem postojeće buke u genetskim signalima",
+            "B": "Fokusiranjem isključivo na ekspresije pojedinačnih gena",
+            "C": "Uspešnim izolovanjem intra-grupnih varijacija putem poboljšanog prepoznavanja obrazaca",
+            "D": "Uvođenjem genetskih mutacija u uzorkovanje podataka",
+            "E": "Uklanjanjem ćelijskog konteksta iz analize genetskih podataka"
+        }
+    },
+    "36": {
+        "question": "Koja potencijalna primena cPCA je ilustrovana u vizualizaciji odnosa između subpopulacija?",
+        "options": {
+            "A": "Određivanje dijetetskih preferencija unutar populacija",
+            "B": "Identifikacija jedinstvenih pritisaka okoline",
+            "C": "Vizualizacija poznatih odnosa podklasa za genetsko mapiranje",
+            "D": "Isticanje uniformnih obrazaca distribucije preko geografija",
+            "E": "Prepoznavanje globalnih obrazaca bez regionalnih nijansi"
+        }
+    },
+    "37": {
+        "question": "Kako cPCA prilagođava svoje primarne pravce analize na osnovu različitih vrednosti α?",
+        "options": {
+            "A": "Fiksiranjem svih pravaca kao glavnih komponenti",
+            "B": "Identifikovanjem pravaca sa maksimizovanom kombinovanom varijansom",
+            "C": "Gladi prelazak sa varijanse isključivo cilja na varijansu isključivo pozadine",
+            "D": "Oslanjanjem na spoljašnje heurističke procene",
+            "E": "Sa fiksnim skupom rezultata bez obzira na α"
+        }
+    },
+    "38": {
+        "question": "Šta studija slučaja o meksičkom poreklu otkriva o primeni cPCA?",
+        "options": {
+            "A": "Pokazuje da PCA može postići slične rezultate sa manje složenosti.",
+            "B": "Efikasno ističe regionalne varijacije u genetskim podacima bolje od PCA.",
+            "C": "Otkriva da su osnovni genetski markeri uvek kontinentalno usklađeni.",
+            "D": "Pojačava geografsko razdvajanje bez potrebe za složenijim algoritmima.",
+            "E": "Pokazuje ograničenje cPCA u retko naseljenim regionima."
+        }
+    },
+    "39": {
+        "question": "Kako cPCA obrađuje različite tipove ulaznih podataka kroz različite discipline, prema članku?",
+        "options": {
+            "A": "Ujedinjujući jedinstvenu metodu za sve scenarije analize bez varijacija",
+            "B": "Nudeći svestran okvir prilagodljiv kroz istraživanja",
+            "C": "Potrebni su specifični algoritmi za svaku pojedinačnu karakteristiku skupa podataka",
+            "D": "Integrisanjem mašinskog učenja za identifikaciju prilagodljivih metoda",
+            "E": "Standardizovanjem izlaza kako bi se uklopili u zajednički analitički model"
+        }
+    },
+    "40": {
+        "question": "Koja karakteristika pozadinskih skupova podataka je kritična za efikasnost cPCA?",
+        "options": {
+            "A": "Njihovo prikupljanje iz javno dostupnih repozitorijuma",
+            "B": "Njihova sposobnost da u potpunosti odraze ciljnu varijansu",
+            "C": "Njihove strukturne varijabilnosti koje se ne preklapaju sa fokusom cilja",
+            "D": "Njihov fokus na potpuno različite demografske distribucije",
+            "E": "Njihova minimalna buka kroz sve pozadinske uzorke"
+        }
+    },
+    "41": {
+        "question": "Kada je cPCA primenjena na podatke pacijenata sa leukemijom, koji je bio primećeni rezultat?",
+        "options": {
+            "A": "Nisu otkrivene prepoznatljive razlike između uzoraka.",
+            "B": "Identične subpopulacije su se pojavile veće nego što se očekivalo.",
+            "C": "Uspešno je razdvojila uzorke pre i posle transplantacije.",
+            "D": "Subpopulacije su se spojile na nasumičnu distribuciju.",
+            "E": "Varijacije pre transplantacije su nadmašile karakteristike posle transplantacije."
+        }
+    },
+    "42": {
+        "question": "Koji je značaj sopstvenih vektora u cPCA proračunima?",
+        "options": {
+            "A": "Nisu primenljivi za takve proračune.",
+            "B": "Koriste se samo delimično, sa većim fokusom na skalarne razlike.",
+            "C": "Oni formiraju kontrastivne glavne komponente koje predstavljaju ključne pravce.",
+            "D": "Računaju varijansu buke umesto ciljne varijanse.",
+            "E": "Pružaju linearne faktore skaliranja za integritet skupa podataka."
+        }
+    },
+    "43": {
+        "question": "U smislu praktičnih primena, koja je primarna karakteristika cPCA prema članku?",
+        "options": {
+            "A": "Pogodna je samo za uski raspon bioloških skupova podataka.",
+            "B": "Ne može se koristiti dok ne postanu dostupni označeni podaci.",
+            "C": "Njena spremnost da istakne jedinstvene trendove kroz proizvoljne skupove podataka.",
+            "D": "Njeno oslanjanje na demografske promene na nivou populacije.",
+            "E": "Njeno osnovno povezivanje između nepovezanih skupova podataka uglavnom."
+        }
+    },
+    "44": {
+        "question": "Zašto istraživači mogu slobodno menjati pozadinske skupove podataka među tipovima u cPCA studijama?",
+        "options": {
+            "A": "Da postignu veću varijansu skupa podataka i tačnost rezultata.",
+            "B": "Da namerno izazovu greške i testiraju snagu algoritma.",
+            "C": "Da kontrastiraju različitu inherentnu kovarijansu buke u odnosu na cilj",
+            "D": "Da direktno uporede eksperimentalne sličnosti.",
+            "E": "Da osiguraju doslednost integriteta podataka sa doslednošću zamene."
+        }
+    },
+    "45": {
+        "question": "Koju metodološku prednost cPCA nudi u odnosu na PCA u scenarijima sa više uslova?",
+        "options": {
+            "A": "Pojednostavljenu mehaniku tretiranjem svih ulaza kao jednakih doprinosa.",
+            "B": "Razmatranje bez potrebe za skupovima podataka povezanim preko izvora.",
+            "C": "Integrisano spektralno klasterisanje kada se radi o sličnostima varijanse.",
+            "D": "Mehanizme koji omogućavaju paralelna poređenja varijanse unutar skupa podataka.",
+            "E": "Sposobnost automatskog identifikovanja varijansi između uslova."
+        }
+    },
+    "46": {
+        "question": "Koja glavna razlika se javlja pri izboru visoke vrednosti α tokom cPCA?",
+        "options": {
+            "A": "Zanemaruje karakteristike specifične za cilj na izvanredan način.",
+            "B": "Forsira pažnju na oblasti sa maksimalnom ciljnom varijansom.",
+            "C": "Sve više naglašava oblasti sa niskom pozadinskom varijansom.",
+            "D": "Izaziva greške u smanjenju dimenzionalnih prostora.",
+            "E": "Izbegava bilo kakvo kvadratno povećanje dimenzija podataka."
+        }
+    },
+    "47": {
+        "question": "Prema članku, u kojem aspektu specijalizovani algoritmi mogu nadmašiti cPCA?",
+        "options": {
+            "A": "U generalizaciji preko različitih domena sa minimalnim prilagođavanjem",
+            "B": "U tome što su jednostavniji za implementaciju i manje računarski skupi",
+            "C": "U nadmašivanju cPCA za visoko specifičan zadatak u domenu",
+            "D": "U omogućavanju dinamičkog smanjenja dimenzionalnosti",
+            "E": "U pružanju trenutnih rezultata bez predobrade"
+        }
+    },
+    "48": {
+        "question": "Koji računarski korak se prvenstveno koristi za postizanje efikasnosti cPCA?",
+        "options": {
+            "A": "Paralelna obrada koristeći GPU klastere",
+            "B": "Visokoperformansno računanje sa singularnom iteracijom matrice",
+            "C": "Dekompozicija sopstvenih vrednosti ponderisanih matrica kovarijanse",
+            "D": "Tehnike transformacije perspektive sa smanjenjem",
+            "E": "Mašinsko učenje putem konvolucionih neuronskih mreža"
+        }
+    },
+    "49": {
+        "question": "Koji scenario je najmanje prikladan za izvođenje novih obrazaca sa cPCA?",
+        "options": {
+            "A": "Analiza označenih faza medicinskih ispitivanja",
+            "B": "Kontrastiranje varijacija pre i posle eksperimenta",
+            "C": "Istraživanje raznolikosti loza unutar ekoloških zona",
+            "D": "Vizualizacija audio obrazaca unutar snimaka",
+            "E": "Fokusiranje specifično na varijansu ćelija nakon tretmana"
+        }
+    },
+    "50": {
+        "question": "Kakva je veza između α i identifikacije cPC-a u cPCA?",
+        "options": {
+            "A": "Niže vrednosti α strogo povećavaju osetljivost na pozadinsku buku",
+            "B": "Izbori α indirektno odlučuju o standardnom fokusu dimenzionalnosti PCA",
+            "C": "Promena α efikasno bira podskup najkontrastivnijih pravaca",
+            "D": "Variranje α ima minimalan uticaj na rezultate algoritma",
+            "E": "α direktno skalira mapiranja boja u vizualizacijama rezultata"
+        }
+    }
+}

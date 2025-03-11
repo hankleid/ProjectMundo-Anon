@@ -1,0 +1,502 @@
+{
+    "1": {
+        "question": "Qual è l'obiettivo principale dell'analisi delle componenti principali contrastive (cPCA) come presentato nell'articolo?",
+        "options": {
+            "A": "Eseguire trasformazioni lineari che massimizzano la varianza del dataset.",
+            "B": "Identificare strutture a bassa dimensionalità arricchite in un dataset rispetto a un dataset di confronto.",
+            "C": "Applicare proiezioni non lineari dei dati per un miglior riconoscimento dei modelli.",
+            "D": "Sostituire completamente la PCA in tutte le applicazioni attuali.",
+            "E": "Automatizzare la classificazione dei dati per compiti di apprendimento supervisionato."
+        }
+    },
+    "2": {
+        "question": "Secondo l'articolo, qual è una limitazione della PCA tradizionale quando si lavora con più dataset?",
+        "options": {
+            "A": "La PCA può essere utilizzata solo su dati numerici.",
+            "B": "La PCA è computazionalmente intensiva e lenta.",
+            "C": "La PCA non consente il confronto diretto di diversi dataset.",
+            "D": "La PCA richiede grandi dataset per funzionare efficacemente.",
+            "E": "La PCA genera troppe componenti principali."
+        }
+    },
+    "3": {
+        "question": "Come determina la cPCA le direzioni di interesse per la proiezione dei dati?",
+        "options": {
+            "A": "Trovando gli autovettori della somma delle matrici di covarianza di due dataset.",
+            "B": "Considerando gli autovettori della matrice di covarianza derivata direttamente dal dataset target.",
+            "C": "Calcolando la varianza attraverso la combinazione di dataset target e di sfondo.",
+            "D": "Calcolando i vettori singolari della differenza ponderata delle matrici di covarianza dai dataset target e di sfondo.",
+            "E": "Utilizzando un insieme arbitrario di direzioni predefinite dall'utente."
+        }
+    },
+    "4": {
+        "question": "Quale ruolo gioca il parametro di contrasto \u03b1 nel metodo cPCA?",
+        "options": {
+            "A": "Determina la scala del calcolo della varianza della PCA.",
+            "B": "Quantifica il compromesso tra alta varianza del target e bassa varianza di sfondo.",
+            "C": "Stabilisce il numero di componenti principali da estrarre.",
+            "D": "Controlla la velocità dell'algoritmo cPCA.",
+            "E": "Detta il processo di normalizzazione per i dataset."
+        }
+    },
+    "5": {
+        "question": "Nel contesto dell'articolo, qual è il principale vantaggio dell'uso della cPCA rispetto alla PCA tradizionale per i dati di espressione genica dei pazienti oncologici?",
+        "options": {
+            "A": "Affina i dati per una migliore integrazione con i modelli di apprendimento supervisionato.",
+            "B": "Si concentra sulle variazioni genetiche dovute ai sottotipi di cancro, piuttosto che sulle variazioni demografiche.",
+            "C": "Elimina la necessità di pre-elaborazione dei livelli grezzi di espressione genica.",
+            "D": "Automatizza l'identificazione di tutti i possibili sottotipi di cancro.",
+            "E": "Aumenta significativamente la velocità di analisi per grandi dataset."
+        }
+    },
+    "6": {
+        "question": "Quale risultato sperimentale è stato osservato quando la cPCA è stata applicata a immagini sintetiche di cifre scritte a mano sovrapposte a sfondi complessi?",
+        "options": {
+            "A": "Non sono stati identificati cluster distinti.",
+            "B": "Le caratteristiche dello sfondo sono state più evidenziate rispetto a quelle delle cifre.",
+            "C": "Sono emersi due cluster distinti corrispondenti alle diverse cifre.",
+            "D": "È stato introdotto un rumore significativo, oscurando i modelli principali.",
+            "E": "Le immagini sintetiche sono state perfettamente separate dai loro sfondi."
+        }
+    },
+    "7": {
+        "question": "Quale delle seguenti affermazioni sulla cPCA l'articolo enfatizza?",
+        "options": {
+            "A": "È principalmente un metodo di apprendimento supervisionato per la classificazione dei dataset.",
+            "B": "Sostituisce algoritmi specializzati per dataset specifici in diversi domini.",
+            "C": "Consente l'interpretazione geometrica attraverso le sue componenti principali contrastive.",
+            "D": "Richiede una conoscenza significativa del dominio per la sua applicazione.",
+            "E": "Aumenta la complessità del dataset piuttosto che ridurla."
+        }
+    },
+    "8": {
+        "question": "Come mira la cPCA a scoprire sottogruppi più significativi all'interno dei dataset biologici rispetto alla PCA tradizionale?",
+        "options": {
+            "A": "Ignorando completamente le variazioni demografiche.",
+            "B": "Aumentando la prominenza delle variazioni universali comuni.",
+            "C": "Annullando la variazione universale ma non interessante utilizzando un dataset di sfondo.",
+            "D": "Amplificando i segnali primari senza dataset di riferimento.",
+            "E": "Concentrandosi solo sui valori medi dei dataset."
+        }
+    },
+    "9": {
+        "question": "Nello studio dato, come ha superato la cPCA altre tecniche di riduzione della dimensionalità nel dataset di espressione proteica della Sindrome di Down?",
+        "options": {
+            "A": "Identificando il gruppo di età specifico con la più alta espressione proteica.",
+            "B": "Separando efficacemente i topi scioccati in quelli con e senza Sindrome di Down.",
+            "C": "Generando più componenti del necessario per la classificazione.",
+            "D": "Determinando le caratteristiche di genere più prominenti.",
+            "E": "Riducendo i dati a una rappresentazione a variabile singola."
+        }
+    },
+    "10": {
+        "question": "Cosa suggerisce l'articolo sulla scelta del dataset di sfondo per la cPCA?",
+        "options": {
+            "A": "Dovrebbe avere una varianza minima per non influenzare la proiezione dei dati target.",
+            "B": "Dovrebbe essere casuale per garantire un approccio imparziale.",
+            "C": "Dovrebbe contenere la struttura che si intende eliminare dai dati target.",
+            "D": "Deve corrispondere esattamente alla struttura di covarianza con il dataset target.",
+            "E": "Dovrebbe sempre essere della stessa dimensione del dataset target."
+        }
+    },
+    "11": {
+        "question": "Per quali scenari l'articolo raccomanda l'uso della cPCA?",
+        "options": {
+            "A": "Compiti di classificazione supervisionata con dataset ben etichettati.",
+            "B": "Compiti esplorativi in cui la PCA è utilizzata su dataset correlati.",
+            "C": "Scenari in cui non si prevedono differenze significative tra i dataset.",
+            "D": "Progetti di costruzione di modelli puramente teorici.",
+            "E": "Miglioramenti del modello di regressione lineare."
+        }
+    },
+    "12": {
+        "question": "Che tipo di visualizzazione viene prodotta dalla cPCA quando si analizzano dati genetici delle popolazioni messicane?",
+        "options": {
+            "A": "Modelli visivi distribuiti uniformemente senza struttura discernibile.",
+            "B": "Mappe che riflettono principalmente la proporzione di ascendenza europea.",
+            "C": "Cluster chiari che corrispondono alle origini geografiche all'interno del Messico.",
+            "D": "Sovrapposizioni confuse senza apparente significato.",
+            "E": "Rappresentazioni lineari semplici della varianza genetica."
+        }
+    },
+    "13": {
+        "question": "Quale caratteristica algoritmica della cPCA la distingue da metodi come LDA e QUADRO secondo l'articolo?",
+        "options": {
+            "A": "La sua capacità di integrare informazioni da più dataset.",
+            "B": "La sua efficienza nell'eseguire calcoli paralleli.",
+            "C": "La sua natura non supervisionata che si concentra su modelli specifici del dataset senza classificazione.",
+            "D": "La sua dipendenza da dati etichettati per prestazioni ottimali.",
+            "E": "La sua necessità di parametri di regolazione specifici del dominio."
+        }
+    },
+    "14": {
+        "question": "Nell'esempio del dataset dei pazienti con leucemia, cosa è stato osservato quando è stata utilizzata la cPCA rispetto alla PCA?",
+        "options": {
+            "A": "La PCA ha fornito una separazione più chiara dei campioni pre- e post-trapianto.",
+            "B": "La cPCA non è stata in grado di separare efficacemente i campioni.",
+            "C": "Le variazioni dei campioni all'interno del paziente sono state minimizzate nei risultati della cPCA.",
+            "D": "La cPCA ha mostrato una separazione più forte delle sottopopolazioni.",
+            "E": "Non c'era alcuna differenza discernibile tra i risultati della PCA e della cPCA."
+        }
+    },
+    "15": {
+        "question": "Quale vantaggio computazionale offre la cPCA come menzionato nell'articolo?",
+        "options": {
+            "A": "Riduzione del numero di autovettori calcolati.",
+            "B": "Significativamente più veloce rispetto ad altri metodi di riduzione della dimensionalità.",
+            "C": "Efficienza computazionale simile alla PCA regolare.",
+            "D": "Riduce la necessità computazionale per la normalizzazione dei dati.",
+            "E": "Elimina la necessità di ulteriore pre-elaborazione dei dati."
+        }
+    },
+    "16": {
+        "question": "Qual è lo scopo principale della selezione di diversi valori di \u03b1 quando si utilizza la cPCA?",
+        "options": {
+            "A": "Garantire una distribuzione uniforme dei punti dati attraverso le dimensioni.",
+            "B": "Esplorare varie tendenze dei dati proiettando su diversi sottospazi.",
+            "C": "Ottimizzare la velocità di calcolo dell'algoritmo.",
+            "D": "Garantire la massimizzazione della varianza in entrambi i dataset.",
+            "E": "Standardizzare i dataset prima dell'analisi."
+        }
+    },
+    "17": {
+        "question": "Perché la struttura del dataset di sfondo è significativa nell'analisi cPCA?",
+        "options": {
+            "A": "Influenza la varianza catturata nel sottospazio dei dati target.",
+            "B": "Migliora direttamente le caratteristiche di interesse nel dataset target.",
+            "C": "Determina il numero di componenti principali estratti.",
+            "D": "Si allinea automaticamente con la matrice di covarianza del dataset target.",
+            "E": "Standardizza i calcoli degli autovettori."
+        }
+    },
+    "18": {
+        "question": "Quale fattore NON è tipicamente considerato quando si sceglie un dataset di sfondo per la cPCA, secondo l'articolo?",
+        "options": {
+            "A": "Dovrebbe contrastare fortemente con i componenti legati al rumore nei dati target.",
+            "B": "Ha bisogno di una mappatura uno a uno esatta con i campioni del dataset target.",
+            "C": "Beneficia di una struttura simile alla variazione indesiderata nei dati target.",
+            "D": "Dovrebbe catturare la variazione sistematica indesiderata per la rimozione.",
+            "E": "Può differire nel numero di campioni rispetto al dataset target."
+        }
+    },
+    "19": {
+        "question": "Come migliora la cPCA l'analisi esplorativa dei dati?",
+        "options": {
+            "A": "Automatizzando i processi di classificazione e etichettatura dei dati.",
+            "B": "Raffinando la selezione delle caratteristiche basata sulla varianza specifica del target.",
+            "C": "Prevedendo tendenze future dei dati dai dati storici.",
+            "D": "Concentrandosi esclusivamente sulla riduzione della dimensionalità del dataset.",
+            "E": "Produzione di p-value per la significatività statistica."
+        }
+    },
+    "20": {
+        "question": "Che tipo di dataset beneficia maggiormente della cPCA, come discusso nell'articolo?",
+        "options": {
+            "A": "Dataset con un numero significativo di punti dati etichettati.",
+            "B": "Dataset che richiedono un rilevamento preciso degli outlier.",
+            "C": "Dataset con classificazioni precedenti ben definite.",
+            "D": "Dataset con variazioni temporali o spaziali sovrapposte.",
+            "E": "Dataset con confini esistenti chiari."
+        }
+    },
+    "21": {
+        "question": "Quale limitazione della PCA tradizionale nel rivelare sottoclassi è affrontata dalla cPCA?",
+        "options": {
+            "A": "Rileva principalmente etichette invece di modelli continui.",
+            "B": "Si concentra sulle strutture più ampie piuttosto che su quelle più fini.",
+            "C": "Standardizza tutte le variazioni, rendendo più prominenti gli outlier.",
+            "D": "Manca di basi teoriche per l'analisi dei dati biologici.",
+            "E": "Non fornisce una replica esatta delle proprietà del dataset."
+        }
+    },
+    "22": {
+        "question": "Cosa suggerisce l'articolo sul parametro di contrasto \u03b1 nell'implementazione della cPCA?",
+        "options": {
+            "A": "Un \u03b1 fisso è sempre raccomandato per tutti i dataset.",
+            "B": "I valori di \u03b1 generati automaticamente spesso sono sufficienti per molte applicazioni.",
+            "C": "Un \u03b1 più piccolo è preferito per tutti i dataset per una varianza ottimale.",
+            "D": "La regolazione manuale è obbligatoria per risultati significativi.",
+            "E": "Aumentare \u03b1 linearmente migliora la selettività del contrasto."
+        }
+    },
+    "23": {
+        "question": "Qual è un'applicazione comune della cPCA come inferito dall'articolo?",
+        "options": {
+            "A": "Progettare strutture complesse di apprendimento supervisionato.",
+            "B": "Analizzare efficientemente dati statici di serie temporali.",
+            "C": "Scoprire contrasti nei dataset attraverso varie condizioni.",
+            "D": "Sostituire tutte le tecniche di riduzione della dimensionalità.",
+            "E": "Iniziare la frammentazione del dataset per l'elaborazione a lotti."
+        }
+    },
+    "24": {
+        "question": "Come si relaziona il metodo della cPCA al concetto di frontiera di Pareto menzionato nell'articolo?",
+        "options": {
+            "A": "La cPCA costruisce varie frontiere di Pareto per diversi dataset.",
+            "B": "Seleziona direzioni corrispondenti al confine inferiore-destro delle coppie di varianza.",
+            "C": "La frontiera di Pareto aiuta ad espandere la copertura dimensionale della cPCA.",
+            "D": "Inizializza la PCA con un'enfasi direzionale basata su principi di Pareto.",
+            "E": "La frontiera di Pareto è irrilevante per le implementazioni della cPCA."
+        }
+    },
+    "25": {
+        "question": "Cosa ha rivelato l'applicazione della cPCA negli esperimenti con dati di RNA-Seq a singola cellula?",
+        "options": {
+            "A": "La cPCA ha diminuito le differenze tra i vari campioni di RNA.",
+            "B": "Non si potevano trarre modelli significativi dalle proiezioni della cPCA.",
+            "C": "Separazione significativa tra campioni pre- e post-trapianto.",
+            "D": "Sequenze di RNA omogenee nonostante i trattamenti variabili.",
+            "E": "Più rumore introdotto nei dati sperimentali."
+        }
+    },
+    "26": {
+        "question": "Quale fattore influenza principalmente le direzioni ottimali per l'analisi contrastiva nella cPCA?",
+        "options": {
+            "A": "La dimensione del dataset target da solo.",
+            "B": "Varianza di sfondo rispetto alla varianza del target.",
+            "C": "Consistenza della varianza universale tra i dataset.",
+            "D": "La linearità delle strutture di covarianza.",
+            "E": "Conteggio dei componenti nel dataset."
+        }
+    },
+    "27": {
+        "question": "Nell'esempio che discute i dati genetici del Messico, come ha suggerito l'articolo di gestire la variazione universale?",
+        "options": {
+            "A": "Potare tutti gli SNP prima dell'analisi.",
+            "B": "Applicare la PCA come se si trattasse di un grande dataset singolo.",
+            "C": "Usare la cPCA con un dataset di sfondo più ampio per concentrarsi sulla variazione intra-messicana.",
+            "D": "Selezionare solo un sottoinsieme di campioni in modo casuale.",
+            "E": "Ignorare completamente le variazioni universali per semplificazione."
+        }
+    },
+    "28": {
+        "question": "Quale vantaggio detiene la cPCA riguardo all'efficienza computazionale, come evidenziato nell'articolo?",
+        "options": {
+            "A": "Richiede più tempo rispetto alla PCA standard ma fornisce risultati migliori.",
+            "B": "Offre un rinnovamento algoritmico completo rispetto alla PCA.",
+            "C": "Richiede essenzialmente lo stesso sforzo computazionale della PCA.",
+            "D": "Riduce la dimensionalità più velocemente con meno iterazioni.",
+            "E": "Parallelizza automaticamente il processo di analisi dei dati."
+        }
+    },
+    "29": {
+        "question": "Quale dei seguenti scenari NON è suggerito come sfondo contrastante per la cPCA?",
+        "options": {
+            "A": "Utilizzare dati del gruppo di controllo contro soggetti malati.",
+            "B": "Contrasto tra immagini di architettura storica e moderna.",
+            "C": "Dati a un punto temporale iniziale rispetto a un punto temporale conclusivo.",
+            "D": "Popolazione omogenea contro un mix diversificato.",
+            "E": "Dati pre-trattamento opposti a dati post-trattamento."
+        }
+    },
+    "30": {
+        "question": "Cosa afferma l'articolo sull'uso della cPCA nella scoperta di sottoclassi?",
+        "options": {
+            "A": "Le sottoclassi possono essere rilevate solo quando pre-etichettate.",
+            "B": "È efficace anche quando le sottoclassi non sono etichettate a priori.",
+            "C": "La PCA è generalmente preferita per la scoperta rispetto alla cPCA.",
+            "D": "Utile solo in scenari di dataset strettamente clusterizzati.",
+            "E": "Richiede una selezione esplicita delle caratteristiche per essere efficace."
+        }
+    },
+    "31": {
+        "question": "Come intende la cPCA gestire il rumore all'interno del dataset secondo l'articolo?",
+        "options": {
+            "A": "Ignorando di default qualsiasi componente rumoroso.",
+            "B": "Amplificando il rumore per evidenziare meglio le caratteristiche principali.",
+            "C": "Annullando il rumore attraverso l'uso di registrazioni di sfondo prive di segnale.",
+            "D": "Integrando il rumore come parte della matrice di covarianza.",
+            "E": "Filtrando il rumore attraverso aggiustamenti di apprendimento supervisionato."
+        }
+    },
+    "32": {
+        "question": "Quale passaggio è necessario per calcolare le direzioni contrastive nella cPCA?",
+        "options": {
+            "A": "Estrarre valori centrati sulla media dai dataset.",
+            "B": "Definire una matrice di contrasto dalla differenza delle matrici di covarianza.",
+            "C": "Randomizzare i campioni del dataset prima dell'analisi.",
+            "D": "Assicurarsi che i dataset abbiano dimensioni di campione identiche.",
+            "E": "Allineare tutti i componenti del dataset a una singola soglia dimensionale."
+        }
+    },
+    "33": {
+        "question": "Che tipo di separazione visiva è stata ottenuta in modo notevole utilizzando la cPCA sul dataset di espressione proteica dei topi?",
+        "options": {
+            "A": "Separazione basata su soggetti di controllo rispetto a soggetti sperimentali.",
+            "B": "Separazione basata sul genere all'interno dei campioni.",
+            "C": "Separazione dei topi con e senza Sindrome di Down.",
+            "D": "Clustering dipendente dall'età dei topi.",
+            "E": "Distribuzione casuale senza un modello specifico."
+        }
+    },
+    "34": {
+        "question": "Quale principio sottende la selezione delle migliori direzioni contrastive della cPCA?",
+        "options": {
+            "A": "Concentrarsi sulla massimizzazione della somma delle varianze in tutte le direzioni.",
+            "B": "Cercare direzioni con bassa correlazione tra i dataset.",
+            "C": "Minimizzare uniformemente sia le varianze del target che dello sfondo.",
+            "D": "Massimizzare la varianza del target minimizzando la varianza di sfondo.",
+            "E": "Massimizzare la varianza di sfondo irrilevante per i dati target."
+        }
+    },
+    "35": {
+        "question": "Nella cPCA, cosa implica l'uso di diversi valori di \u03b1?",
+        "options": {
+            "A": "Regola il bias dell'algoritmo verso una maggiore varianza di sfondo.",
+            "B": "Consente di esplorare una varietà di sottospazi per diverse tendenze.",
+            "C": "Modifica direttamente la dimensionalità tra i dataset.",
+            "D": "Influisce sull'ordine di analisi dei campioni del dataset.",
+            "E": "Standardizza l'intera struttura di varianza del dataset."
+        }
+    },
+    "36": {
+        "question": "Cosa rappresenta la Fig. 5 nell'articolo riguardo alla cPCA?",
+        "options": {
+            "A": "Fluttuazioni casuali nella varianza tra i dataset.",
+            "B": "La selezione delle direzioni che coincidono con i massimi di varianza del target.",
+            "C": "L'interpretazione geometrica e la selezione delle migliori direzioni contrastive.",
+            "D": "Disallineamenti tra coppie target-sfondo all'interno della struttura di covarianza.",
+            "E": "Allineamento completo dei dataset target e di sfondo."
+        }
+    },
+    "37": {
+        "question": "Qual è la relazione tra le direzioni contrastive nella cPCA e gli autovettori?",
+        "options": {
+            "A": "Le direzioni contrastive non sono correlate agli autovettori.",
+            "B": "Differiscono sempre in dimensione dagli autovettori veri.",
+            "C": "Corrispondono agli autovettori della matrice di contrasto.",
+            "D": "Si riferiscono solo agli autovettori con i minori autovalori.",
+            "E": "Si allineano esclusivamente con gli autovettori dei dati di sfondo."
+        }
+    },
+    "38": {
+        "question": "Quale dei seguenti l'articolo evidenzia come requisito iniziale per la cPCA?",
+        "options": {
+            "A": "Pre-elaborazione manuale dei dataset per eliminare tutto il rumore.",
+            "B": "Pre-assegnazione di dimensioni specifiche per l'analisi.",
+            "C": "Disponibilità delle matrici di covarianza sia del dataset target che di sfondo.",
+            "D": "Impostazione di una soglia di varianza fissa per tutte le proiezioni.",
+            "E": "Etichettatura completa di tutti i componenti dei dati."
+        }
+    },
+    "39": {
+        "question": "Perché la cPCA è particolarmente utile per studi genetici che si concentrano su modelli di eredità e ascendenza?",
+        "options": {
+            "A": "Aumenta l'importanza delle variazioni ancestrali dominanti.",
+            "B": "Automatizza l'interpretazione dei dati genetici di sfondo.",
+            "C": "Evidenzia variazioni sottili all'interno delle metriche intra-popolazione.",
+            "D": "Sfrutta principalmente le somiglianze genetiche universali.",
+            "E": "Propone la classificazione automatizzata delle origini etniche."
+        }
+    },
+    "40": {
+        "question": "Cosa dettaglia l'articolo come un vantaggio relativo della cPCA rispetto al multidimensional scaling (MDS)?",
+        "options": {
+            "A": "Visualizzazione superiore di strutture di dati intrinsecamente non lineari.",
+            "B": "Capacità di utilizzare dataset di sfondo per un contrasto migliorato.",
+            "C": "Tempi computazionali più rapidi su dataset variati.",
+            "D": "Correzione integrata per le tendenze di clustering dei dati.",
+            "E": "Bias intrinseco verso la prevenzione dell'overfitting dei dati."
+        }
+    },
+    "41": {
+        "question": "In un'analisi cPCA tipica, come influisce la variazione del parametro \u03b1 sui risultati?",
+        "options": {
+            "A": "Aumenta la dimensionalità più di quanto consenta il target.",
+            "B": "Raggiunge l'equilibrio tra la varianza del target e quella di sfondo.",
+            "C": "Riduce naturalmente la complessità della decomposizione degli autovalori.",
+            "D": "Riduce la correlazione incrociata del dataset in modo esponenziale.",
+            "E": "Migliora la standardizzazione del rilevamento degli outlier."
+        }
+    },
+    "42": {
+        "question": "In che modo la cPCA è diversa nel suo approccio statistico rispetto alla PCA?",
+        "options": {
+            "A": "La cPCA calcola la varianza del dataset in modo interdipendente.",
+            "B": "La cPCA ottimizza le varianze in modo indipendente tra due dataset.",
+            "C": "La cPCA ignora completamente le informazioni sulla varianza.",
+            "D": "La cPCA assume una dipendenza lineare diretta tra i dataset.",
+            "E": "La cPCA massimizza entrambe le varianze in modo uniforme per default."
+        }
+    },
+    "43": {
+        "question": "Secondo l'articolo, quali risultati sperimentali dimostrano il vantaggio della cPCA su altri 8 metodi di riduzione della dimensionalità?",
+        "options": {
+            "A": "Prestazioni simili su tutti i dataset e metodi.",
+            "B": "Incapacità di altri metodi di raggruppare separatamente i topi con Sindrome di Down.",
+            "C": "Tempi di esecuzione più rapidi ma tassi di errore più elevati rispetto agli altri.",
+            "D": "Eclissato dagli approcci supervisionati in precisione.",
+            "E": "Analisi della varianza meno informativa rispetto ai metodi alternativi."
+        }
+    },
+    "44": {
+        "question": "Cosa nota l'articolo sull'effetto della casualità sui dati riguardo alla cPCA?",
+        "options": {
+            "A": "Il campione cPC converge al cPC della popolazione a un tasso simile agli autovettori della PCA standard.",
+            "B": "I cambiamenti casuali non influenzano la struttura di covarianza della cPCA.",
+            "C": "La cPCA introduce una casualità modellata per l'equilibrio.",
+            "D": "La cPCA tiene automaticamente conto degli outlier casuali.",
+            "E": "Non si basa su matrici di covarianza dei dati stabili."
+        }
+    },
+    "45": {
+        "question": "Quale ruolo gioca la dimensione d nel tasso di convergenza della cPCA?",
+        "options": {
+            "A": "Limita significativamente il potenziale di convergenza.",
+            "B": "Risulta in tassi di convergenza costanti per valori di d bassi.",
+            "C": "Influenza la rapidità con cui il campione cPC si avvicina al cPC della popolazione.",
+            "D": "Determina il totale possibile degli autovettori del dataset.",
+            "E": "Dirige aumenti proporzionali dello sforzo computazionale."
+        }
+    },
+    "46": {
+        "question": "Come si relaziona computazionalmente la cPCA alle versioni kernelizzate dimostrate nelle informazioni supplementari?",
+        "options": {
+            "A": "Integra la PCA di base con strati kernel aggiuntivi.",
+            "B": "Ignora intrinsecamente i modelli non lineari.",
+            "C": "La cPCA può essere kernelizzata per rivelare modelli non lineari.",
+            "D": "La cPCA esclude le applicazioni kernel in tutti i casi.",
+            "E": "Richiede un aumento della pre-elaborazione dei dati per il supporto kernel."
+        }
+    },
+    "47": {
+        "question": "Quale compito computazionale gestisce la cPCA che è spesso significativo nei progetti di data science esplorativa?",
+        "options": {
+            "A": "Calcolo dei componenti di varianza universale.",
+            "B": "Applicazione di modelli supervisionati prima dell'esplorazione.",
+            "C": "Determinare modelli arricchiti nei dati target rispetto a un dataset di sfondo.",
+            "D": "Standardizzazione delle soglie di varianza dimensionale.",
+            "E": "Duplicazione automatizzata di dataset sparsi per profondità."
+        }
+    },
+    "48": {
+        "question": "Quale caratteristica distingue la cPCA dalla PCA supervisionata e dalla QDA?",
+        "options": {
+            "A": "Il suo focus sui risultati di classificazione basati su etichette.",
+            "B": "La sua capacità di distinguere tra sottogruppi etichettati.",
+            "C": "La sua strategia non supervisionata per chiarire modelli specifici del dataset.",
+            "D": "La sua preferenza per dataset più piccoli rispetto a quelli più grandi.",
+            "E": "La necessità integrata di parametri di input precisi dell'utente."
+        }
+    },
+    "49": {
+        "question": "Quando si esegue la cPCA, cosa distingue le componenti principali contrastive (cPC) dalle PC regolari?",
+        "options": {
+            "A": "Le cPC si concentrano sulla massimizzazione della varianza di sfondo.",
+            "B": "Le cPC analizzano le stesse dimensioni delle PC ma attraverso la riscalatura.",
+            "C": "Le cPC riducono intrinsecamente la dimensionalità basata sulla varianza specifica del target.",
+            "D": "Le cPC impiegano inevitabilmente direzioni non ortogonali.",
+            "E": "Le cPC ignorano i dati target a favore della covarianza di sfondo."
+        }
+    },
+    "50": {
+        "question": "In termini di interpretazione geometrica menzionata nell'articolo, cosa mira a raggiungere la cPCA?",
+        "options": {
+            "A": "Allinea i dataset basandosi su metriche fisse attraverso gli assi.",
+            "B": "Massimizza la varianza del target verso l'estremità superiore-sinistra del confine delle coppie di varianza.",
+            "C": "Seleziona direzioni che si trovano lungo il confine inferiore-destro delle coppie di varianza.",
+            "D": "Integra eccezioni di varianza oltre le tendenze universali.",
+            "E": "Standardizza la configurazione geometrica della varianza tra i dataset."
+        }
+    }
+}

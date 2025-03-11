@@ -1,0 +1,502 @@
+{
+    "1": {
+        "question": "Qual é a principal vantagem da análise de componentes principais contrastiva (cPCA) sobre a PCA padrão?",
+        "options": {
+            "A": "Ela usa aprendizado supervisionado para melhorar as previsões.",
+            "B": "Ela identifica automaticamente as projeções mais interessantes em vários conjuntos de dados.",
+            "C": "Ela requer menos poder computacional em comparação com a PCA.",
+            "D": "Ela elimina a necessidade de pré-processamento de dados.",
+            "E": "Ela introduz técnicas de redução de dimensionalidade não lineares."
+        }
+    },
+    "2": {
+        "question": "Como a cPCA se diferencia de outras técnicas de visualização como t-SNE ou MDS?",
+        "options": {
+            "A": "Ela se concentra em gerar rótulos para conjuntos de dados.",
+            "B": "Ela visualiza padrões de um único conjunto de dados enquanto ignora outros.",
+            "C": "Ela compara dois conjuntos de dados para identificar padrões específicos do conjunto de dados.",
+            "D": "Ela embute dados em um espaço bidimensional fixo.",
+            "E": "Ela sempre fornece resultados de aprendizado supervisionado."
+        }
+    },
+    "3": {
+        "question": "Por que a PCA padrão pode falhar em revelar subtipos importantes em dados de expressão gênica, conforme discutido no artigo?",
+        "options": {
+            "A": "Ela destaca os subtipos de câncer com maior prioridade.",
+            "B": "Seus principais componentes focam em variações demográficas mais amplas.",
+            "C": "Ela é incapaz de processar grandes conjuntos de dados.",
+            "D": "Ela filtra inerentemente qualquer ruído presente nos dados.",
+            "E": "Seus requisitos computacionais são muito altos."
+        }
+    },
+    "4": {
+        "question": "No contexto da cPCA, o que é um 'conjunto de dados de fundo'?",
+        "options": {
+            "A": "Um conjunto de dados contendo ruído aleatório para contraste.",
+            "B": "Um conjunto de dados que espelha exatamente o conjunto de dados alvo.",
+            "C": "Um conjunto de dados que não possui os padrões específicos de interesse presentes no conjunto de dados alvo.",
+            "D": "Um conjunto de dados que contém todos os possíveis padrões alvo.",
+            "E": "Um conjunto de dados usado principalmente para validação de dados e teste de precisão."
+        }
+    },
+    "5": {
+        "question": "Qual é a principal técnica computacional usada pela cPCA para encontrar direções contrastivas?",
+        "options": {
+            "A": "Descida de gradiente",
+            "B": "Decomposição de valor singular",
+            "C": "Decomposição de autovalores de uma diferença de covariância ponderada",
+            "D": "Algoritmos de floresta aleatória",
+            "E": "Agrupamento K-means"
+        }
+    },
+    "6": {
+        "question": "O que representa a 'força de contraste α' na cPCA?",
+        "options": {
+            "A": "O valor máximo de variância nos dados alvo.",
+            "B": "Um equilíbrio entre alta variância alvo e baixa variância de fundo.",
+            "C": "Um parâmetro fixo usado para evitar overfitting.",
+            "D": "A capacidade computacional necessária para processar dados.",
+            "E": "Um valor arbitrário escolhido pelo usuário."
+        }
+    },
+    "7": {
+        "question": "Qual é a importância dos autovetores obtidos da matriz de covariância modificada na cPCA?",
+        "options": {
+            "A": "Eles são ortogonais entre si e representam componentes principais contrastivos.",
+            "B": "Eles sempre maximizam a variância nos conjuntos de dados alvo e de fundo.",
+            "C": "Eles fornecem discriminantes lineares semelhantes ao LDA.",
+            "D": "Eles são usados para classificar conjuntos de dados de maneira supervisionada.",
+            "E": "Eles minimizam o tempo de computação necessário para o processamento de dados."
+        }
+    },
+    "8": {
+        "question": "Qual das seguintes opções NÃO é um caso de uso adequado para cPCA, conforme mencionado no artigo?",
+        "options": {
+            "A": "Visualizar subtipos de expressão gênica em dados de câncer",
+            "B": "Identificar dígitos feitos à mão em imagens ruidosas",
+            "C": "Explorar ancestrais genéticos dentro do México",
+            "D": "Prever tendências do mercado de ações usando indicadores econômicos",
+            "E": "Distinguir amostras de células antes e depois do tratamento médico"
+        }
+    },
+    "9": {
+        "question": "Como a cPCA lida computacionalmente com grandes conjuntos de dados?",
+        "options": {
+            "A": "Ela reduz dimensões usando métodos de kernel para lidar com padrões não lineares.",
+            "B": "Ela comprime dados usando técnicas de compressão com perda.",
+            "C": "Ela aplica uma abordagem de agrupamento hierárquico antes da análise.",
+            "D": "Ela usa uma rede neural especializada para redução de características.",
+            "E": "Ela otimiza o parâmetro de contraste usando métodos dinâmicos."
+        }
+    },
+    "10": {
+        "question": "De acordo com o artigo, qual é a relação entre cPCA e teste de significância estatística?",
+        "options": {
+            "A": "cPCA fornece critérios imediatos de validação estatística.",
+            "B": "cPCA não fornece valores p e requer análise adicional para validação.",
+            "C": "cPCA elimina inerentemente a necessidade de testes estatísticos.",
+            "D": "cPCA vem com mecanismos de teste de hipóteses embutidos.",
+            "E": "cPCA oferece uma estrutura probabilística para testar a significância de características."
+        }
+    },
+    "11": {
+        "question": "Qual melhoria a cPCA oferece na visualização de dados de células mononucleares da medula óssea (BMMC) pré e pós-transplante?",
+        "options": {
+            "A": "Ela mistura as amostras pré e pós-transplante para uma visualização mais clara.",
+            "B": "Ela isola completamente as amostras pré-transplante da análise.",
+            "C": "Ela revela subespaços claros alinhando grande parte da variância com diferenças de tratamento.",
+            "D": "Ela remove toda a variância relacionada a fatores específicos do paciente.",
+            "E": "Ela simplifica o conjunto de dados para uma representação unidimensional."
+        }
+    },
+    "12": {
+        "question": "No artigo, o que foi observado quando a cPCA foi aplicada a dados de genótipos de cinco estados mexicanos?",
+        "options": {
+            "A": "Ela não mostrou nenhum padrão discernível.",
+            "B": "Os genótipos de diferentes estados manifestaram diferentes padrões de coloração.",
+            "C": "Grupos de ancestrais exibiram relações geográficas mais claras.",
+            "D": "Variantes europeias e nativo-americanas desapareceram completamente.",
+            "E": "Os dados de genótipos se agruparam por gênero em vez de localização."
+        }
+    },
+    "13": {
+        "question": "Qual é uma possível desvantagem da cPCA mencionada no artigo?",
+        "options": {
+            "A": "Ela depende fortemente de conhecimento avançado do domínio.",
+            "B": "Ela requer substancialmente mais recursos computacionais do que a PCA.",
+            "C": "Ela não substitui automaticamente os métodos especializados existentes de redução de dimensionalidade.",
+            "D": "Ela tem aplicabilidade limitada apenas a tipos específicos de conjuntos de dados.",
+            "E": "Ela não pode ser usada para exploração interativa de dados."
+        }
+    },
+    "14": {
+        "question": "Qual conjunto de dados é sugerido como fundo para análise de expressão gênica usando cPCA?",
+        "options": {
+            "A": "Um conjunto de dados com doenças mistas para testar contra.",
+            "B": "Um conjunto de dados semelhante com amostras de um demográfico diferente.",
+            "C": "Dados de pacientes saudáveis sem marcadores de doença.",
+            "D": "Grupos de controle gerados aleatoriamente.",
+            "E": "Imagens ou gravações não relacionadas de um estudo diferente."
+        }
+    },
+    "15": {
+        "question": "O que é sugerido para escolher um conjunto de dados de fundo para a cPCA funcionar efetivamente?",
+        "options": {
+            "A": "Deve consistir em dados sintéticos gerados a partir da mesma distribuição.",
+            "B": "Deve possuir variância semelhante, mas não interessante, em comparação com os dados alvo.",
+            "C": "Deve ter estrutura de covariância idêntica ao conjunto de dados alvo.",
+            "D": "Deve incluir tanto dados alvo quanto ruído aleatório.",
+            "E": "Precisa de um número igual de amostras que o conjunto de dados alvo."
+        }
+    },
+    "16": {
+        "question": "De que forma a cPCA é computacionalmente eficiente de acordo com a discussão no artigo?",
+        "options": {
+            "A": "Ela usa algoritmos de computação mais rápidos que a PCA.",
+            "B": "Ela não realiza nenhuma operação de matriz.",
+            "C": "Seu tempo de computação é comparável à PCA padrão.",
+            "D": "Ela evita etapas de pré-processamento de dados.",
+            "E": "Ela utiliza estruturas de computação distribuída."
+        }
+    },
+    "17": {
+        "question": "Qual é um benefício proposto do uso da cPCA na redução de dimensão em relação a métodos supervisionados mencionados no artigo?",
+        "options": {
+            "A": "cPCA requer rotulagem prévia provavelmente necessária no aprendizado supervisionado.",
+            "B": "cPCA evita o viés introduzido a partir de dados de treinamento rotulados.",
+            "C": "cPCA otimiza diretamente a precisão da classificação.",
+            "D": "cPCA reduz a necessidade de algoritmos de seleção de características.",
+            "E": "cPCA não é afetada por padrões de dados não lineares."
+        }
+    },
+    "18": {
+        "question": "No artigo, qual método NÃO é mencionado como tendo sido diretamente comparado com a cPCA?",
+        "options": {
+            "A": "t-SNE",
+            "B": "Análise Discriminante Linear (LDA)",
+            "C": "Análise Discriminante Quadrática (QDA)",
+            "D": "Escalonamento Multidimensional (MDS)",
+            "E": "Busca de Componentes Principais"
+        }
+    },
+    "19": {
+        "question": "Como a cPCA contribui para o campo do aprendizado não supervisionado de acordo com o artigo?",
+        "options": {
+            "A": "Fornecendo uma estrutura para tarefas de classificação não supervisionadas.",
+            "B": "Oferecendo um método para explorar dados sem a necessidade de conjuntos de dados rotulados.",
+            "C": "Garantindo convergência com uma taxa de aprendizado definida.",
+            "D": "Introduzindo visualizações dinâmicas e interativas.",
+            "E": "Alinhando objetivos de aprendizado com insights de dados supervisionados."
+        }
+    },
+    "20": {
+        "question": "Qual propriedade das direções encontradas pela cPCA as diferencia conforme discutido no artigo?",
+        "options": {
+            "A": "Elas maximizam a variância apenas no conjunto de dados alvo.",
+            "B": "Elas reduzem a dimensionalidade através de projeções não lineares.",
+            "C": "Elas incluem características totalmente não relacionadas a variações de fundo.",
+            "D": "Elas aumentam o potencial de classificação das características.",
+            "E": "Elas maximizam o contraste de variância entre os conjuntos de dados alvo e de fundo."
+        }
+    },
+    "21": {
+        "question": "Qual estudo de caso experimental foi usado para examinar a capacidade da cPCA de resolver subpopulações em contextos biológicos?",
+        "options": {
+            "A": "Diversidade genética em ecossistemas florestais",
+            "B": "Subtipos de câncer em populações diversas",
+            "C": "Expressão de proteínas em camundongos expostos a terapia de choque",
+            "D": "Colonização de habitat por diferentes espécies",
+            "E": "Pesquisa de Davids sobre enzimas alimentares"
+        }
+    },
+    "22": {
+        "question": "Conforme descrito no artigo, por que uma interpretação geométrica é importante para a cPCA?",
+        "options": {
+            "A": "Ela permite o cálculo de medidas de cálculo diferencial.",
+            "B": "Ela visualiza a significância das trocas de variância entre conjuntos de dados.",
+            "C": "Ela permite a transformação de coordenadas independente dos dados.",
+            "D": "Ela excede as propriedades estatísticas em poder preditivo.",
+            "E": "Ela fornece uma interface gráfica de usuário para melhor usabilidade."
+        }
+    },
+    "23": {
+        "question": "Qual característica da cPCA permite a investigação de direções com variância significativa entre alvo e fundo?",
+        "options": {
+            "A": "Sua restrição de ortogonalidade nos autovetores selecionados.",
+            "B": "O uso da fronteira de Pareto para identificar pares de variância.",
+            "C": "A restrição da contrastividade pela magnitude do autovalor.",
+            "D": "Simplificação poligonal das características dos dados.",
+            "E": "Dependência de valores p para teste de significância."
+        }
+    },
+    "24": {
+        "question": "O que o repositório suplementar do GitHub fornece conforme mencionado no artigo?",
+        "options": {
+            "A": "Suporte em tempo real para conduzir experimentos de cPCA",
+            "B": "Os conjuntos de dados usados no artigo de pesquisa e scripts de análise adicionais",
+            "C": "Uma plataforma interativa baseada na web para visualizações",
+            "D": "Um modelo de aprendizado de máquina treinado para automatizar a afinação de parâmetros para cPCA",
+            "E": "Pacotes estatísticos abrangentes para teste de hipóteses"
+        }
+    },
+    "25": {
+        "question": "O que determina as 'direções mais contrastantes' em um conjunto de dados de acordo com o artigo?",
+        "options": {
+            "A": "Direções que têm distribuição uniforme de variância em ambos os conjuntos de dados",
+            "B": "Direções que maximizam a variância alvo sem considerar a variância de fundo",
+            "C": "Direções que minimizam tanto a variância alvo quanto a de fundo igualmente",
+            "D": "Direções com maior variância alvo e menor variância de fundo",
+            "E": "Direções que maximizam o produto da variância alvo e de fundo"
+        }
+    },
+    "26": {
+        "question": "Qual foi um resultado importante da aplicação da cPCA ao conjunto de dados sintéticos de dígitos manuscritos conforme discutido no artigo?",
+        "options": {
+            "A": "A PCA separou completamente as imagens com base no tipo de dígito.",
+            "B": "A cPCA destacou mais o ruído de fundo do que as características dos dígitos.",
+            "C": "A cPCA separou imagens em dígitos, ofuscando o ruído de fundo.",
+            "D": "A cPCA não conseguiu diferenciar os dígitos manuscritos melhor do que a PCA.",
+            "E": "O conjunto de dados sintético foi reduzido a um único componente principal."
+        }
+    },
+    "27": {
+        "question": "De acordo com o artigo, por que a PCA geralmente é inadequada para análise detalhada de ancestralidade dentro do México?",
+        "options": {
+            "A": "A PCA inerentemente tende a resultados baseados em erros de amostragem.",
+            "B": "Seus principais componentes geralmente capturam apenas sinais de ancestralidade global mais amplos.",
+            "C": "A PCA não pode lidar com o processamento de dados genéticos em grande escala.",
+            "D": "A PCA tende a confundir padrões no conjunto de dados com variáveis ambientais.",
+            "E": "A PCA mescla todas as variações regionais em uma dimensão."
+        }
+    },
+    "28": {
+        "question": "Qual foi uma realização principal da cPCA na visualização de ancestralidade genética conforme revelado no artigo?",
+        "options": {
+            "A": "Ela não conseguiu identificar quaisquer padrões significativos de ancestralidade regional.",
+            "B": "A cPCA foi capaz de visualizar e agrupar claramente a variação genética ligada à ancestralidade geográfica.",
+            "C": "Ela ignorou variações essenciais em pares de bases.",
+            "D": "Ela não conseguiu reconhecer a influência ancestral.",
+            "E": "Ela revelou variância igual entre as populações."
+        }
+    },
+    "29": {
+        "question": "Como a cPCA beneficia especificamente cenários de exploração interativa de dados, de acordo com o artigo?",
+        "options": {
+            "A": "Fornecendo uma plataforma de visualização baseada em toque.",
+            "B": "Garantindo tempos de computação instantâneos para feedback interativo.",
+            "C": "Oferecendo transmissão ao vivo de resultados computacionais.",
+            "D": "Necessitando de entrada mínima do analista durante as iterações.",
+            "E": "Executando otimizações em ambientes de computação paralela."
+        }
+    },
+    "30": {
+        "question": "No ensaio de dados de expressão de proteínas de camundongos chocados, o que a cPCA realizou em comparação com a PCA?",
+        "options": {
+            "A": "Identificou subgrupos de camundongos com resistência diferente.",
+            "B": "Agrupou camundongos com base na idade cronológica.",
+            "C": "Separou camundongos com e sem Síndrome de Down de forma eficaz.",
+            "D": "Ilustrou preferências culinárias entre camundongos.",
+            "E": "Retratou agrupamento baseado em gênero com maior resolução."
+        }
+    },
+    "31": {
+        "question": "Em termos de requisitos de conjunto de dados, o que não é necessário para conjuntos de dados de fundo e alvo na cPCA?",
+        "options": {
+            "A": "Número idêntico de amostras",
+            "B": "Estrutura de covariância semelhante para contraste eficaz",
+            "C": "Objetivos de variância alvo claramente definidos",
+            "D": "Tamanho de amostra comparável para precisão estatística",
+            "E": "Representação equilibrada de todos os elementos de variância ao longo dos dados"
+        }
+    },
+    "32": {
+        "question": "Qual é o propósito de usar o parâmetro de contraste α durante a implementação da cPCA?",
+        "options": {
+            "A": "Definir um caminho predefinido para exame de dados",
+            "B": "Otimizar a troca entre variância no alvo e no fundo",
+            "C": "Selecionar apenas a variância que impacta aspectos temporais",
+            "D": "Garantir tempos de computação baixos para uso de dados em tempo real",
+            "E": "Estabelecer um limite fixo de dimensionalidade para análise"
+        }
+    },
+    "33": {
+        "question": "Como a cPCA lida com características associadas a tendências específicas do alvo de acordo com o artigo?",
+        "options": {
+            "A": "Aplicando um filtro estrito de seleção de características",
+            "B": "Combinando variância específica do alvo com ruído universal",
+            "C": "Isolando distribuições de variância assimétricas não presentes no fundo",
+            "D": "Através do aprendizado de redes neurais convolucionais para previsão de tendências",
+            "E": "Aplicando métodos tradicionais de aprendizado supervisionado para redução"
+        }
+    },
+    "34": {
+        "question": "Qual é o impacto antecipado da cPCA em tarefas de redução de dimensionalidade conforme declarado no artigo?",
+        "options": {
+            "A": "A cPCA eventualmente será substituída por métodos puramente supervisionados.",
+            "B": "Ela permite a identificação eficiente e rápida de padrões enriquecidos no conjunto de dados.",
+            "C": "A cPCA falhará em lidar com qualquer tamanho de conjunto de dados maior do que os aplicativos de PCA atuais.",
+            "D": "A cPCA pode se tornar redundante devido a melhorias futuras de hardware.",
+            "E": "Ela fornece uma complexidade excessiva desnecessária para pequenos conjuntos de dados."
+        }
+    },
+    "35": {
+        "question": "Como a cPCA contribui para maior precisão na identificação de clusters genéticos, conforme discutido no artigo?",
+        "options": {
+            "A": "Amplificando o ruído existente nos sinais genéticos",
+            "B": "Focando exclusivamente em expressões de um único gene",
+            "C": "Isolando com sucesso variações intra-grupo através de reconhecimento de padrões aprimorado",
+            "D": "Introduzindo mutações genéticas nos dados de amostragem",
+            "E": "Removendo o contexto celular da análise de dados genéticos"
+        }
+    },
+    "36": {
+        "question": "Qual aplicação potencial da cPCA é ilustrada na visualização da relação entre subpopulações?",
+        "options": {
+            "A": "Determinar preferências alimentares dentro das populações",
+            "B": "Identificar pressões ambientais únicas",
+            "C": "Visualizar relações de subclasses conhecidas para mapeamento genético",
+            "D": "Destacar padrões de distribuição uniforme em geografias",
+            "E": "Reconhecer padrões globais sem nuances regionais"
+        }
+    },
+    "37": {
+        "question": "Como a cPCA ajusta suas direções principais de análise com base em diferentes valores de α?",
+        "options": {
+            "A": "Fixando todas as direções como componentes principais",
+            "B": "Identificando direções com variância combinada maximizada",
+            "C": "Transicionando suavemente de variância exclusiva do alvo para variância exclusiva do fundo",
+            "D": "Dependendo de julgamentos heurísticos externos",
+            "E": "Com um conjunto fixo de resultados independentemente de α"
+        }
+    },
+    "38": {
+        "question": "O que o estudo de caso sobre ancestralidade mexicana revela sobre a aplicação da cPCA?",
+        "options": {
+            "A": "Mostra que a PCA pode alcançar resultados semelhantes com menos complexidade.",
+            "B": "Destaca efetivamente a variação regional em dados genéticos melhor do que a PCA.",
+            "C": "Revela que marcadores genéticos subjacentes estão sempre alinhados continentalmente.",
+            "D": "Reforça a separação geográfica sem necessidade de algoritmos mais complexos.",
+            "E": "Demonstra a limitação da cPCA em regiões pouco povoadas."
+        }
+    },
+    "39": {
+        "question": "Como a cPCA lida com diferentes tipos de entrada de dados em várias disciplinas, de acordo com o artigo?",
+        "options": {
+            "A": "Unificando um único método para todos os cenários de análise sem variação",
+            "B": "Oferecendo uma estrutura versátil adaptável em várias investigações",
+            "C": "Necessitando de algoritmos específicos para cada característica individual do conjunto de dados",
+            "D": "Integrando aprendizado de máquina para identificar métodos adaptáveis",
+            "E": "Padronizando saídas para se encaixar em um modelo analítico comum"
+        }
+    },
+    "40": {
+        "question": "Qual característica dos conjuntos de dados de fundo é crítica para a eficácia da cPCA?",
+        "options": {
+            "A": "Sua coleta de repositórios publicamente disponíveis",
+            "B": "Sua capacidade de espelhar completamente a variância alvo",
+            "C": "Suas variabilidades estruturais não se cruzando com o foco alvo",
+            "D": "Seu foco em distribuições demográficas totalmente diferentes",
+            "E": "Seu ruído mínimo em todas as amostras de fundo"
+        }
+    },
+    "41": {
+        "question": "Quando a cPCA foi aplicada aos dados de pacientes com leucemia, qual foi o resultado observado?",
+        "options": {
+            "A": "Nenhuma diferença discernível foi detectada entre as amostras.",
+            "B": "Subpopulações idênticas apareceram maiores do que o esperado.",
+            "C": "Houve separação bem-sucedida de amostras pré e pós-transplante.",
+            "D": "Subpopulações se fundiram em uma distribuição aleatória.",
+            "E": "Variações pré-transplante superaram características pós-transplante."
+        }
+    },
+    "42": {
+        "question": "Qual é a importância dos autovetores nos cálculos da cPCA?",
+        "options": {
+            "A": "Eles não são aplicáveis para tais cálculos.",
+            "B": "Eles são apenas parcialmente utilizados, com foco principal em diferenças escalares.",
+            "C": "Eles formam os componentes principais contrastivos representando direções chave.",
+            "D": "Eles calculam a variância do ruído em vez da variância alvo.",
+            "E": "Eles fornecem fatores de escala linear para a integridade do conjunto de dados."
+        }
+    },
+    "43": {
+        "question": "Em termos de aplicações práticas, qual é uma característica principal da cPCA de acordo com o artigo?",
+        "options": {
+            "A": "Ela se adequa a um intervalo estreito de conjuntos de dados biológicos apenas.",
+            "B": "Ela não pode ser usada até que dados rotulados estejam disponíveis.",
+            "C": "Sua prontidão para destacar tendências únicas em conjuntos de dados arbitrários.",
+            "D": "Sua dependência de mudanças demográficas em nível populacional.",
+            "E": "Sua ponte fundamental entre conjuntos de dados não relacionados principalmente."
+        }
+    },
+    "44": {
+        "question": "Por que os pesquisadores podem trocar conjuntos de dados de fundo livremente entre tipos em estudos de cPCA?",
+        "options": {
+            "A": "Para alcançar maior variância do conjunto de dados e precisão dos resultados.",
+            "B": "Para induzir deliberadamente erros e testar a força do algoritmo.",
+            "C": "Para contrastar uma covariância de ruído inerente diferente contra o alvo",
+            "D": "Para comparar diretamente semelhanças experimentais.",
+            "E": "Para garantir a integridade consistente dos dados com consistência de troca."
+        }
+    },
+    "45": {
+        "question": "Qual vantagem metodológica a cPCA oferece sobre a PCA em cenários com múltiplas condições?",
+        "options": {
+            "A": "Mecânica simplificada tratando toda entrada como contribuintes iguais.",
+            "B": "Consideração sem necessidade de conjuntos de dados vinculados entre fontes.",
+            "C": "Agrupamento espectral integrado ao lidar com semelhanças de variância.",
+            "D": "Mecanismos que permitem comparações de variância intra-conjunto de dados em paralelo.",
+            "E": "A capacidade de identificar automaticamente variâncias entre condições."
+        }
+    },
+    "46": {
+        "question": "Qual grande diferença ocorre ao escolher um valor alto de α durante a cPCA?",
+        "options": {
+            "A": "Ela negligencia notavelmente características específicas do alvo.",
+            "B": "Ela força a atenção apenas para áreas com máxima variância alvo.",
+            "C": "Ela enfatiza cada vez mais áreas com baixa variância de fundo.",
+            "D": "Ela desencadeia erros na redução de espaços dimensionais.",
+            "E": "Ela evita qualquer aumento quadrático nas dimensões dos dados."
+        }
+    },
+    "47": {
+        "question": "De acordo com o artigo, em que aspecto algoritmos especializados podem superar a cPCA?",
+        "options": {
+            "A": "Em generalizar através de diferentes domínios com personalização mínima",
+            "B": "Em serem mais simples de implementar e menos dispendiosos computacionalmente",
+            "C": "Em superar a cPCA para uma tarefa altamente específica do domínio",
+            "D": "Em permitir redução de dimensionalidade dinâmica",
+            "E": "Em fornecer resultados imediatos sem pré-processamento"
+        }
+    },
+    "48": {
+        "question": "Qual etapa computacional é usada principalmente para alcançar a eficiência da cPCA?",
+        "options": {
+            "A": "Processamento paralelo usando clusters de GPU",
+            "B": "Computação de alto desempenho com iteração de matriz singular",
+            "C": "Decomposição de autovalores de matrizes de covariância ponderadas",
+            "D": "Técnicas de transformação de perspectiva em cascata",
+            "E": "Aprendizado de máquina via redes neurais convolucionais"
+        }
+    },
+    "49": {
+        "question": "Qual cenário é menos apropriado para derivar novos padrões com cPCA?",
+        "options": {
+            "A": "Analisar fases de ensaios médicos rotulados",
+            "B": "Contrastar variações pré e pós-experimento",
+            "C": "Investigar diversidade de linhagens dentro de zonas ecológicas",
+            "D": "Visualizar padrões de áudio dentro de gravações",
+            "E": "Focar especificamente na variância celular pós-tratamento"
+        }
+    },
+    "50": {
+        "question": "Qual é a relação entre α e a identificação de cPCs na cPCA?",
+        "options": {
+            "A": "Valores mais baixos de α aumentam estritamente a sensibilidade ao ruído de fundo",
+            "B": "Escolhas de α decidem indiretamente o foco dimensional da PCA padrão",
+            "C": "Alterar α escolhe efetivamente o subconjunto das direções mais contrastantes",
+            "D": "Variar α tem influência mínima nos resultados do algoritmo",
+            "E": "α escala diretamente os mapeamentos de cores nas visualizações de resultados"
+        }
+    }
+}

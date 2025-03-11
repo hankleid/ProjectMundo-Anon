@@ -1,0 +1,502 @@
+{
+    "1": {
+        "question": "Vad är den största fördelen med kontrastiv huvudkomponentanalys (cPCA) jämfört med standard PCA?",
+        "options": {
+            "A": "Den använder övervakad inlärning för att förbättra förutsägelser.",
+            "B": "Den identifierar automatiskt de mest intressanta projektionerna över flera dataset.",
+            "C": "Den kräver mindre beräkningskraft jämfört med PCA.",
+            "D": "Den eliminerar behovet av datapreprocessering.",
+            "E": "Den introducerar icke-linjära tekniker för dimensionsreduktion."
+        }
+    },
+    "2": {
+        "question": "Hur skiljer sig cPCA från andra visualiseringstekniker som t-SNE eller MDS?",
+        "options": {
+            "A": "Den fokuserar på att generera etiketter för dataset.",
+            "B": "Den visualiserar mönster från ett enda dataset medan den ignorerar andra.",
+            "C": "Den jämför två dataset för att identifiera dataset-specifika mönster.",
+            "D": "Den inbäddar data i ett fast tvådimensionellt utrymme.",
+            "E": "Den ger alltid resultat från övervakad inlärning."
+        }
+    },
+    "3": {
+        "question": "Varför kan standard PCA misslyckas med att avslöja viktiga undertyper i genuttrycksdata som diskuterats i artikeln?",
+        "options": {
+            "A": "Den lyfter fram cancerundertypen med högsta prioritet.",
+            "B": "Dess främsta huvudkomponenter fokuserar på bredare demografiska variationer.",
+            "C": "Den kan inte bearbeta stora dataset.",
+            "D": "Den filtrerar i grunden bort allt brus som finns i datan.",
+            "E": "Dess beräkningskrav är för höga."
+        }
+    },
+    "4": {
+        "question": "I cPCA-sammanhang, vad är ett 'bakgrundsdatamängd'?",
+        "options": {
+            "A": "Ett dataset som innehåller slumpmässigt brus för kontrast.",
+            "B": "Ett dataset som speglar måldatasetet exakt.",
+            "C": "Ett dataset som saknar de specifika mönster av intresse som finns i måldatasetet.",
+            "D": "Ett dataset som innehåller alla möjliga mål-mönster.",
+            "E": "Ett dataset som främst används för datavalidering och noggrannhetstestning."
+        }
+    },
+    "5": {
+        "question": "Vilken är den primära beräkningstekniken som används av cPCA för att hitta kontrastiva riktningar?",
+        "options": {
+            "A": "Gradientnedstigning",
+            "B": "Singulärvärdesuppdelning",
+            "C": "Egenvärdesuppdelning av en viktad kovariansskillnad",
+            "D": "Slumpmässiga skogsalgoritmer",
+            "E": "K-means klustring"
+        }
+    },
+    "6": {
+        "question": "Vad representerar 'kontraststyrka α' i cPCA?",
+        "options": {
+            "A": "Det maximala värdet av varians i måldatan.",
+            "B": "En balans mellan hög målvarians och låg bakgrundsvarians.",
+            "C": "En fast parameter som används för att förhindra överanpassning.",
+            "D": "Den beräkningskapacitet som krävs för databehandling.",
+            "E": "Ett godtyckligt värde valt av användaren."
+        }
+    },
+    "7": {
+        "question": "Vad är betydelsen av egenvektorerna som erhålls från den modifierade kovariansmatrisen i cPCA?",
+        "options": {
+            "A": "De är ortogonala mot varandra och representerar kontrastiva huvudkomponenter.",
+            "B": "De maximerar alltid variansen i både mål- och bakgrundsdatamängder.",
+            "C": "De ger linjära diskriminanter liknande LDA.",
+            "D": "De används för att klassificera dataset på ett övervakat sätt.",
+            "E": "De minimerar beräkningstiden som krävs för databehandling."
+        }
+    },
+    "8": {
+        "question": "Vilket av följande är INTE ett lämpligt användningsfall för cPCA som nämns i artikeln?",
+        "options": {
+            "A": "Visualisera genuttrycksundertyp i cancerdata",
+            "B": "Identifiera handgjorda siffror i brusiga bilder",
+            "C": "Utforska genetiska härkomster inom Mexiko",
+            "D": "Förutsäga börstrender med hjälp av ekonomiska indikatorer",
+            "E": "Skilja cellprover före och efter medicinsk behandling"
+        }
+    },
+    "9": {
+        "question": "Hur hanterar cPCA stora dataset beräkningsmässigt?",
+        "options": {
+            "A": "Den reducerar dimensioner med hjälp av kärnmetoder för att hantera icke-linjära mönster.",
+            "B": "Den komprimerar data med hjälp av förlustkomprimeringstekniker.",
+            "C": "Den tillämpar en hierarkisk klustringsmetod före analys.",
+            "D": "Den använder ett specialiserat neuralt nätverk för funktionsreduktion.",
+            "E": "Den optimerar kontrastparametern med hjälp av dynamiska metoder."
+        }
+    },
+    "10": {
+        "question": "Enligt artikeln, vad är förhållandet mellan cPCA och statistisk signifikansprövning?",
+        "options": {
+            "A": "cPCA ger omedelbara statistiska valideringskriterier.",
+            "B": "cPCA ger inte p-värden och kräver ytterligare analys för validering.",
+            "C": "cPCA eliminerar i grunden behovet av statistisk testning.",
+            "D": "cPCA kommer med inbyggda hypotesprövningsmekanismer.",
+            "E": "cPCA erbjuder en probabilistisk ram för att testa funktionssignifikans."
+        }
+    },
+    "11": {
+        "question": "Vilken förbättring erbjuder cPCA vid visualisering av pre- och post-transplantation benmärgsmononukleära celler (BMMC) data?",
+        "options": {
+            "A": "Den blandar pre- och post-transplantationsprover för tydligare visualisering.",
+            "B": "Den isolerar pre-transplantationsprover helt från analysen.",
+            "C": "Den avslöjar tydliga delrum som anpassar mycket av variansen med behandlingsskillnader.",
+            "D": "Den tar bort all varians relaterad till patient-specifika faktorer.",
+            "E": "Den förenklar datasetet till en endimensionell representation."
+        }
+    },
+    "12": {
+        "question": "I artikeln, vad observerades när cPCA tillämpades på genotypdata från fem mexikanska stater?",
+        "options": {
+            "A": "Den misslyckades med att visa några urskiljbara mönster.",
+            "B": "Olika staters genotyper manifesterade olika färgmönster.",
+            "C": "Härkomstgrupper visade tydligare geografiska relationer.",
+            "D": "Europeiska och amerikanska varianter försvann helt.",
+            "E": "Genotypdata klustrade efter kön istället för plats."
+        }
+    },
+    "13": {
+        "question": "Vad är en potentiell nackdel med cPCA som nämns i artikeln?",
+        "options": {
+            "A": "Den förlitar sig starkt på avancerad domänkunskap.",
+            "B": "Den kräver avsevärt mer beräkningsresurser än PCA.",
+            "C": "Den ersätter inte automatiskt befintliga specialiserade metoder för dimensionsreduktion.",
+            "D": "Den har begränsad tillämpbarhet med endast specifika typer av dataset.",
+            "E": "Den kan inte användas för interaktiv datautforskning."
+        }
+    },
+    "14": {
+        "question": "Vilket dataset föreslås som bakgrund för genuttrycksanalys med cPCA?",
+        "options": {
+            "A": "Ett dataset med blandade sjukdomar att testa mot.",
+            "B": "Ett liknande dataset med prover från en annan demografisk grupp.",
+            "C": "Data från friska patienter utan sjukdomsmarkörer.",
+            "D": "Slumpmässigt genererade kontrollgrupper.",
+            "E": "Orelaterade bilder eller inspelningar från en annan studie."
+        }
+    },
+    "15": {
+        "question": "Vad föreslås för att välja ett bakgrundsdatamängd för att cPCA ska fungera effektivt?",
+        "options": {
+            "A": "Det bör bestå av syntetiska data genererade från samma distribution.",
+            "B": "Det bör ha liknande men ointressant varians jämfört med måldata.",
+            "C": "Det måste ha identisk kovariansstruktur som måldatasetet.",
+            "D": "Det bör inkludera både mål- och slumpmässiga brusdata.",
+            "E": "Det behöver ett lika antal prover som måldatasetet."
+        }
+    },
+    "16": {
+        "question": "På vilket sätt är cPCA beräkningsmässigt effektiv enligt diskussionen i artikeln?",
+        "options": {
+            "A": "Den använder snabbare beräkningsalgoritmer än PCA.",
+            "B": "Den beräknar inga matrisoperationer.",
+            "C": "Dess beräkningstid är jämförbar med standard PCA.",
+            "D": "Den undviker datapreprocesseringssteg.",
+            "E": "Den använder distribuerade beräkningsramverk."
+        }
+    },
+    "17": {
+        "question": "Vilken föreslagen fördel erbjuder cPCA i dimensionsreduktion jämfört med övervakade metoder som nämns i artikeln?",
+        "options": {
+            "A": "cPCA kräver förhandsmärkning som sannolikt behövs i övervakad inlärning.",
+            "B": "cPCA undviker bias som introduceras från märkt träningsdata.",
+            "C": "cPCA optimerar direkt klassificeringsnoggrannhet.",
+            "D": "cPCA minskar behovet av funktionsvalalgoritmer.",
+            "E": "cPCA påverkas inte av icke-linjära datapmönster."
+        }
+    },
+    "18": {
+        "question": "I artikeln, vilken metod nämns INTE som direkt jämförd med cPCA?",
+        "options": {
+            "A": "t-SNE",
+            "B": "Linjär diskriminantanalys (LDA)",
+            "C": "Kvadratisk diskriminantanalys (QDA)",
+            "D": "Multidimensionell skalning (MDS)",
+            "E": "Huvudkomponentjakt"
+        }
+    },
+    "19": {
+        "question": "Hur bidrar cPCA till området för oövervakad inlärning enligt artikeln?",
+        "options": {
+            "A": "Genom att tillhandahålla en ram för oövervakade klassificeringsuppgifter.",
+            "B": "Genom att erbjuda en metod för att utforska data utan behov av märkta dataset.",
+            "C": "Genom att garantera konvergens med en definierad inlärningshastighet.",
+            "D": "Genom att introducera dynamiska och interaktiva visualiseringar.",
+            "E": "Genom att anpassa inlärningsmål med insikter från övervakade data."
+        }
+    },
+    "20": {
+        "question": "Vilken egenskap hos riktningarna som hittas av cPCA skiljer dem som diskuterats i artikeln?",
+        "options": {
+            "A": "De maximerar variansen endast i måldatasetet.",
+            "B": "De reducerar dimensioner genom icke-linjära projektioner.",
+            "C": "De inkluderar funktioner som är helt orelaterade till bakgrundsvariationer.",
+            "D": "De förbättrar klassificeringspotentialen hos funktioner.",
+            "E": "De maximerar varianskontrasten mellan mål- och bakgrundsdatamängder."
+        }
+    },
+    "21": {
+        "question": "Vilken experimentell fallstudie användes för att undersöka cPCA:s förmåga att lösa subpopulationer i biologiska sammanhang?",
+        "options": {
+            "A": "Genetisk mångfald i skogsekosystem",
+            "B": "Cancerundertyp i olika populationer",
+            "C": "Proteinuttryck hos möss med chockterapiexponering",
+            "D": "Habitatkolonisering av olika arter",
+            "E": "Davids forskning om matenzymer"
+        }
+    },
+    "22": {
+        "question": "Som beskrivs i artikeln, varför är en geometrisk tolkning viktig för cPCA?",
+        "options": {
+            "A": "Den möjliggör beräkning av differentialkalkylmått.",
+            "B": "Den visualiserar betydelsen av variansavvägningar mellan dataset.",
+            "C": "Den tillåter koordinattransformation oberoende av data.",
+            "D": "Den överträffar statistiska egenskaper i prediktiv kraft.",
+            "E": "Den tillhandahåller ett grafiskt användargränssnitt för bättre användbarhet."
+        }
+    },
+    "23": {
+        "question": "Vilken egenskap hos cPCA möjliggör undersökning av riktningar med betydande mål-bakgrundsvarians?",
+        "options": {
+            "A": "Dess ortogonalitetsbegränsning på valda egenvektorer.",
+            "B": "Användningen av Paretofronten för att identifiera varianspar.",
+            "C": "Begränsningen av kontrastivitet genom egenvärdesstorlek.",
+            "D": "Polygonal förenkling av datafunktioner.",
+            "E": "Beroende av p-värden för signifikansprövning."
+        }
+    },
+    "24": {
+        "question": "Vad tillhandahåller det kompletterande GitHub-förrådet som nämns i artikeln?",
+        "options": {
+            "A": "Realtidsstöd för att genomföra cPCA-experiment",
+            "B": "Dataseten som användes i forskningsartikeln och ytterligare analyskript",
+            "C": "En interaktiv webbaserad plattform för visualiseringar",
+            "D": "En maskininlärningsmodell tränad för att automatisera parametertuning för cPCA",
+            "E": "Omfattande statistiska paket för hypotesprövning"
+        }
+    },
+    "25": {
+        "question": "Vad bestämmer de 'mest kontrastiva riktningarna' i ett dataset enligt artikeln?",
+        "options": {
+            "A": "Riktningar som har enhetlig variansfördelning över båda dataset",
+            "B": "Riktningar som maximerar målvariansen utan hänsyn till bakgrundsvarians",
+            "C": "Riktningar som minimerar både mål- och bakgrundsvarians lika",
+            "D": "Riktningar med högre målvarians och lägre bakgrundsvarians",
+            "E": "Riktningar som maximerar produkten av mål- och bakgrundsvarians"
+        }
+    },
+    "26": {
+        "question": "Vad var ett stort resultat av att tillämpa cPCA på det syntetiska handskrivna sifferdatasetet som diskuterats i artikeln?",
+        "options": {
+            "A": "PCA separerade helt bilderna baserat på siffertyp.",
+            "B": "cPCA lyfte fram bakgrundsbrus mer än sifferfunktioner.",
+            "C": "cPCA separerade bilder på siffror, överskuggande bakgrundsbrus.",
+            "D": "cPCA misslyckades med att skilja de handskrivna siffrorna bättre än PCA.",
+            "E": "Det syntetiska datasetet reducerades till en enda huvudkomponent."
+        }
+    },
+    "27": {
+        "question": "Enligt artikeln, varför är PCA generellt otillräcklig för detaljerad härkomstanalys inom Mexiko?",
+        "options": {
+            "A": "PCA förvränger i grunden resultaten baserat på urvalsfel.",
+            "B": "Dess främsta komponenter fångar vanligtvis endast bredare globala härkomstsignaler.",
+            "C": "PCA kan inte hantera storskalig genetisk databehandling.",
+            "D": "PCA tenderar att förväxla mönster i datasetet med miljövariabler.",
+            "E": "PCA slår samman alla regionala variationer till en dimension."
+        }
+    },
+    "28": {
+        "question": "Vad var en huvudprestation av cPCA i genetisk härkomstvisualisering som avslöjats i artikeln?",
+        "options": {
+            "A": "Den misslyckades med att identifiera några betydande regionala härkomstmönster.",
+            "B": "cPCA kunde tydligt visualisera och klustra genetisk variation kopplad till geografisk härkomst.",
+            "C": "Den överskuggade väsentliga variationer i baspar.",
+            "D": "Den kunde inte erkänna härkomstpåverkan.",
+            "E": "Den avslöjade lika varians över populationer."
+        }
+    },
+    "29": {
+        "question": "Hur gynnar cPCA specifikt interaktiva datautforskningsscenarier, enligt artikeln?",
+        "options": {
+            "A": "Genom att tillhandahålla en beröringsbaserad visualiseringsplattform.",
+            "B": "Genom att säkerställa omedelbara beräkningstider för interaktiv feedback.",
+            "C": "Genom att erbjuda live-streaming av beräkningsresultat.",
+            "D": "Genom att behöva minimalt input från analytikern under iterationer.",
+            "E": "Genom att köra optimeringar i parallella beräkningsmiljöer."
+        }
+    },
+    "30": {
+        "question": "I analysen av proteinuttrycksdata från chockade möss, vad åstadkom cPCA jämfört med PCA?",
+        "options": {
+            "A": "Identifierade undergrupper av möss med olika motstånd.",
+            "B": "Klustrade möss baserat på kronologisk ålder.",
+            "C": "Skilde effektivt möss med och utan Downs syndrom.",
+            "D": "Illustrerade kulinariska preferenser bland möss.",
+            "E": "Visade könsbaserad gruppering med högre upplösning."
+        }
+    },
+    "31": {
+        "question": "I termer av datasetkrav, vad är inte nödvändigt för bakgrunds- och måldataset i cPCA?",
+        "options": {
+            "A": "Identiskt antal prover",
+            "B": "Liknande kovariansstruktur för effektiv kontrast",
+            "C": "Tydligt definierade målvariansmål",
+            "D": "Jämförbar provstorlek för statistisk noggrannhet",
+            "E": "Balanserad representation av alla varianskomponenter genom hela datan"
+        }
+    },
+    "32": {
+        "question": "Vad är syftet med att använda kontrastparametern α under cPCA-implementering?",
+        "options": {
+            "A": "För att definiera en fördefinierad väg för dataundersökning",
+            "B": "För att optimera avvägningen mellan varians i mål och bakgrund",
+            "C": "För att välja endast varians som påverkar tidsaspekter",
+            "D": "För att garantera låga beräkningstider för realtidsanvändning av data",
+            "E": "För att fastställa en fast dimensionsgräns för analys"
+        }
+    },
+    "33": {
+        "question": "Hur hanterar cPCA funktioner associerade med mål-specifika trender enligt artikeln?",
+        "options": {
+            "A": "Genom att tillämpa ett strikt funktionsvalfilter",
+            "B": "Genom att kombinera mål-specifik varians med universellt brus",
+            "C": "Genom att isolera asymmetriska variansfördelningar som inte finns i bakgrunden",
+            "D": "Genom att lära sig konvolutionella neurala nätverk för trendprognos",
+            "E": "Genom att tillämpa traditionella övervakade inlärningsmetoder för reduktion"
+        }
+    },
+    "34": {
+        "question": "Vad är den förväntade påverkan av cPCA i dimensionsreduktionstillämpningar som anges i artikeln?",
+        "options": {
+            "A": "cPCA kommer så småningom att ersättas av rent övervakade metoder.",
+            "B": "Den möjliggör effektiv och snabb identifiering av berikade datamönster.",
+            "C": "cPCA kommer att misslyckas med att hantera någon datasetstorlek större än nuvarande PCA-appar.",
+            "D": "cPCA kan bli överflödig på grund av framtida hårdvaruförbättringar.",
+            "E": "Den ger en överdriven komplexitet som är onödig för små dataset."
+        }
+    },
+    "35": {
+        "question": "Hur bidrar cPCA till större noggrannhet i att identifiera genetiska kluster, som diskuterats i artikeln?",
+        "options": {
+            "A": "Genom att förstärka befintligt brus i genetiska signaler",
+            "B": "Genom att fokusera enbart på enskilda genuttryck",
+            "C": "Genom att framgångsrikt isolera intra-gruppvariationer via förbättrad mönsterigenkänning",
+            "D": "Genom att introducera genetiska mutationer i urvalsdata",
+            "E": "Genom att ta bort cellulär kontext från genetisk dataanalys"
+        }
+    },
+    "36": {
+        "question": "Vilken potentiell tillämpning av cPCA illustreras i visualiseringen av förhållandet mellan subpopulationer?",
+        "options": {
+            "A": "Bestämma kostpreferenser inom populationer",
+            "B": "Identifiera unika miljötryck",
+            "C": "Visualisera kända underklassrelationer för genetisk kartläggning",
+            "D": "Framhäva enhetliga distributionsmönster över geografier",
+            "E": "Känna igen globala mönster utan regionala nyanser"
+        }
+    },
+    "37": {
+        "question": "Hur justerar cPCA sina primära analysriktningar baserat på olika α-värden?",
+        "options": {
+            "A": "Genom att fixa alla riktningar som huvudkomponenter",
+            "B": "Genom att identifiera riktningar med maximerad kombinerad varians",
+            "C": "Genom att smidigt övergå från mål-exklusiv varians till bakgrunds-exklusiv varians",
+            "D": "Genom att förlita sig på externa heuristiska bedömningar",
+            "E": "Med en fast uppsättning resultat oavsett α"
+        }
+    },
+    "38": {
+        "question": "Vad avslöjar fallstudien om mexikansk härkomst om tillämpningen av cPCA?",
+        "options": {
+            "A": "Den visar att PCA kan uppnå liknande resultat med mindre komplexitet.",
+            "B": "Den effektivt framhäver regional variation i genetiska data bättre än PCA.",
+            "C": "Den avslöjar att underliggande genetiska markörer alltid är kontinentalt anpassade.",
+            "D": "Den förstärker geografisk separation utan behov av mer komplexa algoritmer.",
+            "E": "Den demonstrerar begränsningen av cPCA i glest befolkade regioner."
+        }
+    },
+    "39": {
+        "question": "Hur hanterar cPCA olika datainmatningstyper över varierade discipliner, enligt artikeln?",
+        "options": {
+            "A": "Genom att förena en enda metod för alla analyscenarier utan variation",
+            "B": "Genom att erbjuda en mångsidig ram anpassningsbar över undersökningar",
+            "C": "Genom att behöva specifika algoritmer för varje enskild datasetkaraktäristik",
+            "D": "Genom att integrera maskininlärning för att identifiera anpassningsbara metoder",
+            "E": "Genom att standardisera utdata för att passa in i en gemensam analytisk modell"
+        }
+    },
+    "40": {
+        "question": "Vilken egenskap hos bakgrundsdatamängder är kritisk för effektiviteten av cPCA?",
+        "options": {
+            "A": "Deras insamling från offentligt tillgängliga arkiv",
+            "B": "Deras förmåga att spegla målvarians helt",
+            "C": "Deras strukturella variationer som inte korsar målens fokus",
+            "D": "Deras fokus på helt olika demografiska fördelningar",
+            "E": "Deras minimala brus över alla bakgrundsprover"
+        }
+    },
+    "41": {
+        "question": "När cPCA tillämpades på leukemipatientens data, vad var det observerade resultatet?",
+        "options": {
+            "A": "Inga urskiljbara skillnader upptäcktes mellan prover.",
+            "B": "Identiska subpopulationer verkade större än förväntat.",
+            "C": "Det fanns en framgångsrik separation av pre- och post-transplantationsprover.",
+            "D": "Subpopulationer slogs samman på en slumpmässig fördelning.",
+            "E": "Pre-transplantationsvariationer överträffade post-transplantationsegenskaper."
+        }
+    },
+    "42": {
+        "question": "Vad är betydelsen av egenvektorer i cPCA-beräkningar?",
+        "options": {
+            "A": "De är inte tillämpliga för sådana beräkningar.",
+            "B": "De används endast delvis, med mest fokus på skalära skillnader.",
+            "C": "De bildar de kontrastiva huvudkomponenterna som representerar nyckelriktningar.",
+            "D": "De beräknar brusvarians snarare än målvarians.",
+            "E": "De tillhandahåller linjära skalningsfaktorer för datasetintegritet."
+        }
+    },
+    "43": {
+        "question": "I termer av praktiska tillämpningar, vad är en primär funktion av cPCA enligt artikeln?",
+        "options": {
+            "A": "Den passar ett smalt utbud av biologiska dataset enbart.",
+            "B": "Den kan inte användas förrän märkta data blir tillgängliga.",
+            "C": "Dess beredskap att lyfta fram unika trender över godtyckliga dataset.",
+            "D": "Dess beroende av demografiska förändringar på befolkningsnivå.",
+            "E": "Dess grundläggande bro mellan orelaterade dataset främst."
+        }
+    },
+    "44": {
+        "question": "Varför kan forskare byta bakgrundsdatamängder fritt mellan typer i cPCA-studier?",
+        "options": {
+            "A": "För att uppnå högre datasetvarians och resultatnoggrannhet.",
+            "B": "För att medvetet inducera fel och testa algoritmens styrka.",
+            "C": "För att kontrastera en annan inneboende bruskovarians mot mål",
+            "D": "För att direkt jämföra experimentella likheter.",
+            "E": "För att säkerställa konsekvent dataintegritet med byteskonsekvens."
+        }
+    },
+    "45": {
+        "question": "Vilken metodologisk fördel erbjuder cPCA över PCA i scenarier med flera förhållanden?",
+        "options": {
+            "A": "Förenklade mekanismer genom att behandla all input som lika bidragsgivare.",
+            "B": "Övervägande utan behov av dataset länkade över källor.",
+            "C": "Integrerad spektralklustring vid hantering av varianslikheter.",
+            "D": "Mekanismer som möjliggör parallella intra-dataset variansjämförelser.",
+            "E": "Förmågan att automatiskt identifiera inter-konditionsvarians."
+        }
+    },
+    "46": {
+        "question": "Vilken stor skillnad uppstår när man väljer ett högt α-värde under cPCA?",
+        "options": {
+            "A": "Det försummar mål-specifika egenskaper märkbart.",
+            "B": "Det tvingar uppmärksamhet till områden med maximal målvarians enbart.",
+            "C": "Det betonar alltmer områden med låg bakgrundsvarians.",
+            "D": "Det utlöser fel i att minska dimensionsutrymmen.",
+            "E": "Det undviker någon kvadratisk ökning i datadimensioner."
+        }
+    },
+    "47": {
+        "question": "Enligt artikeln, i vilket avseende kan specialiserade algoritmer överträffa cPCA?",
+        "options": {
+            "A": "I att generalisera över olika domäner med minimal anpassning",
+            "B": "I att vara enklare att implementera och mindre beräkningskrävande",
+            "C": "I att överträffa cPCA för en mycket domänspecifik uppgift",
+            "D": "I att tillåta dynamisk dimensionsreduktion",
+            "E": "I att tillhandahålla omedelbara resultat utan förbehandling"
+        }
+    },
+    "48": {
+        "question": "Vilket beräkningssteg används främst för att uppnå cPCA:s effektivitet?",
+        "options": {
+            "A": "Parallell bearbetning med hjälp av GPU-kluster",
+            "B": "Högpresterande beräkning med singulär matrisiteration",
+            "C": "Egenvärdesuppdelning av viktade kovariansmatriser",
+            "D": "Ripple down perspektivtransformationstekniker",
+            "E": "Maskininlärning via konvolutionella neurala nätverk"
+        }
+    },
+    "49": {
+        "question": "Vilket scenario är minst lämpligt för att härleda nya mönster med cPCA?",
+        "options": {
+            "A": "Analysera märkta medicinska försöksfaser",
+            "B": "Kontrastera pre- och post-experimentella variationer",
+            "C": "Undersöka släktdiversitet inom ekologiska zoner",
+            "D": "Visualisera ljudmönster inom inspelningar",
+            "E": "Fokusera specifikt på cellvarians efter behandling"
+        }
+    },
+    "50": {
+        "question": "Vad är förhållandet mellan α och identifieringen av cPC:er i cPCA?",
+        "options": {
+            "A": "Lägre α-värden förstärker strikt bakgrundsbruskänslighet",
+            "B": "α-val bestämmer indirekt standard PCA-dimensionellt fokus",
+            "C": "Att ändra α väljer effektivt en delmängd av de mest kontrastiva riktningarna",
+            "D": "Varierande α har minimal inverkan på algoritmens resultat",
+            "E": "α skalar direkt färgkartorna i resultatvisualiseringar"
+        }
+    }
+}

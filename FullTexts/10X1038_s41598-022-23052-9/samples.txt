@@ -1,0 +1,69 @@
+While generalization is a theoretical virtue, real-world models often succeed by (over)fitting to a specific dataset and task. In practice, generalization has been considered both hard to achieve and economically undesirable for large-scale use cases. In this context, the advent of large-scale, self-supervised models such as Contrastive Language-Image Pre-training (CLIP) is particularly interesting both from a theoretical and a practical point of view. Building upon large pre-trained models to learn general concepts in specific verticals/industries (e.g., Fashion, Electronics, DIY, etc.) may provide a new and sustainable way to bring the benefits of ML capabilities to a broader set of practitioners, especially outside of large tech companies. The idea would be to fine-tune general foundational models to learn concepts that are specific to a domain (e.g., fashion), but general enough to be applicable to all the use cases within that domain.
+
+Contrastive learning has recently become a predominant approach to learn meaningful representations of concepts in ML. The learning framework builds on the idea that semantically related concepts (e.g., two pictures of the same object from different viewpoints) should have similar representations, while unrelated ones should be dissimilar. Initially devised for self-supervised image representation learning, contrastive learning has recently been applied to language as well. Recent work has used contrastive training to bridge different modalities, e.g., vision and language, audio and language,, or a combination of the three. These models learn concept representations from different modalities (e.g., a textual excerpt such as “a dog running on a field” and a picture depicting the scene) and optimize them to be close in a shared latent space. Crucially, the typical pipeline is self-supervised: since no manual annotation is involved (e.g., in the previous example, one can gather image-text pairs from the web), human intervention is limited to deciding which pre-training task shall be used.
+
+CLIP is a vision-language multi-modal neural network trained via CL to associate vision concepts with text. The model comprises a vision and text encoder, each followed by a linear layer to project the image and text representations to the same latent space. CLIP is trained to position images and matching descriptions (e.g. an image of a red shirt and its description “a red shirt”) close together in the vector space (see Fig.  [1]  for an example). When trained on 400 million <image, text> pairs collected from the internet, CLIP has demonstrated competitive zero-shot or few-shot transfer to downstream tasks such as OCR and fine-grained object classification.
+
+**List of highly domain-specific words to keep in English:**
+
+1. generalization
+2. overfitting
+3. dataset
+4. task
+5. Contrastive Language-Image Pre-training (CLIP)
+6. large-scale
+7. self-supervised models
+8. pre-trained models
+9. ML (Machine Learning)
+10. fine-tune
+11. foundational models
+12. domain
+13. multi-modal neural network
+14. CL (Contrastive Learning)
+15. encoder
+16. linear layer
+17. latent space
+18. vector space
+19. zero-shot
+20. few-shot
+21. downstream tasks
+22. OCR (Optical Character Recognition)
+
+**Translation:**
+
+Mentre la generalization è una virtù teorica, i modelli del mondo reale spesso hanno successo adattandosi (overfitting) a uno specifico dataset e task. In pratica, la generalization è stata considerata sia difficile da raggiungere che economicamente indesiderabile per casi d'uso su larga scala. In questo contesto, l'avvento di modelli su larga scala, self-supervised models come il Contrastive Language-Image Pre-training (CLIP) è particolarmente interessante sia dal punto di vista teorico che pratico. Costruire su modelli pre-trained models per apprendere concetti generali in specifici verticali/settori (ad esempio, Moda, Elettronica, Fai-da-te, ecc.) può fornire un modo nuovo e sostenibile per portare i benefici delle capacità di ML a un insieme più ampio di professionisti, specialmente al di fuori delle grandi aziende tecnologiche. L'idea sarebbe di fine-tune modelli foundational models generali per apprendere concetti specifici di un domain (ad esempio, moda), ma abbastanza generali da essere applicabili a tutti i casi d'uso all'interno di quel domain.
+
+CLIP è una multi-modal neural network visione-linguaggio addestrata tramite CL per associare concetti visivi con il testo. Il modello comprende un encoder per la visione e uno per il testo, ciascuno seguito da un linear layer per proiettare le rappresentazioni delle immagini e del testo nello stesso latent space. CLIP è addestrato per posizionare immagini e descrizioni corrispondenti (ad esempio, un'immagine di una maglietta rossa e la sua descrizione "una maglietta rossa") vicine nello vector space (vedi Fig. [1] per un esempio). Quando addestrato su 400 milioni di coppie <image, text> raccolte da internet, CLIP ha dimostrato di poter trasferire in modo competitivo zero-shot o few-shot ai downstream tasks come OCR e classificazione fine-grained degli oggetti.
+
+
+**List of words to keep in English:**
+- generalization
+- dataset
+- Contrastive Language-Image Pre-training (CLIP)
+- ML
+- Contrastive learning
+- semantically
+- representation
+- self-supervised
+- latent space
+- pipeline
+- annotation
+- pre-training
+- vision-language
+- multi-modal
+- neural network
+- encoder
+- linear layer
+- vector space
+- zero-shot
+- few-shot
+- OCR
+
+**Translation:**
+
+Mentre la generalization è una virtù teorica, i modelli del mondo reale spesso riescono adattandosi (anche eccessivamente) a uno specifico dataset e compito. In pratica, la generalization è stata considerata difficile da raggiungere e economicamente indesiderabile per casi d'uso su larga scala. In questo contesto, l'avvento di modelli su larga scala, self-supervised come il Contrastive Language-Image Pre-training (CLIP) è particolarmente interessante sia dal punto di vista teorico che pratico. Costruire su grandi modelli pre-addestrati per apprendere concetti generali in settori/industrie specifici (ad esempio, Moda, Elettronica, Fai da te, ecc.) può fornire un modo nuovo e sostenibile per portare i benefici delle capacità di ML a un insieme più ampio di professionisti, specialmente al di fuori delle grandi aziende tecnologiche. L'idea sarebbe di perfezionare modelli fondamentali generali per apprendere concetti specifici di un dominio (ad esempio, la moda), ma abbastanza generali da essere applicabili a tutti i casi d'uso all'interno di quel dominio.
+
+Il Contrastive learning è recentemente diventato un approccio predominante per apprendere representation significative di concetti in ML. Il framework di apprendimento si basa sull'idea che concetti semanticamente correlati (ad esempio, due immagini dello stesso oggetto da punti di vista diversi) dovrebbero avere representation simili, mentre quelli non correlati dovrebbero essere dissimili. Inizialmente concepito per il self-supervised image representation learning, il contrastive learning è stato recentemente applicato anche al linguaggio. Lavori recenti hanno utilizzato l'addestramento contrastivo per collegare diverse modalità, ad esempio, visione e linguaggio, audio e linguaggio, o una combinazione delle tre. Questi modelli apprendono representation di concetti da diverse modalità (ad esempio, un testo come "un cane che corre su un campo" e un'immagine che raffigura la scena) e li ottimizzano per essere vicini in uno stesso latent space condiviso. Fondamentalmente, il pipeline tipico è self-supervised: poiché non è coinvolta alcuna annotation manuale (ad esempio, nell'esempio precedente, si possono raccogliere coppie immagine-testo dal web), l'intervento umano è limitato a decidere quale compito di pre-training debba essere utilizzato.
+
+CLIP è una neural network vision-language multi-modal addestrata tramite CL per associare concetti di visione con testo. Il modello comprende un encoder per la visione e uno per il testo, ciascuno seguito da un linear layer per proiettare le representation delle immagini e dei testi nello stesso latent space. CLIP è addestrato a posizionare immagini e descrizioni corrispondenti (ad esempio, un'immagine di una maglietta rossa e la sua descrizione "una maglietta rossa") vicini nel vector space (vedi Fig. [1] per un esempio). Quando addestrato su 400 milioni di coppie <image, text> raccolte da internet, CLIP ha dimostrato un trasferimento competitivo zero-shot o few-shot a compiti downstream come OCR e classificazione di oggetti a grana fine.
+

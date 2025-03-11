@@ -1,0 +1,502 @@
+{
+    "1": {
+        "question": "Wat is het hoofddoel van contrastieve hoofdcomponentenanalyse (cPCA) zoals gepresenteerd in het artikel?",
+        "options": {
+            "A": "Lineaire transformaties uitvoeren die de variantie van de dataset maximaliseren.",
+            "B": "Laag-dimensionale structuren identificeren die verrijkt zijn in één dataset ten opzichte van een vergelijkingsdataset.",
+            "C": "Niet-lineaire dataprojecties toepassen voor betere patroonherkenning.",
+            "D": "PCA volledig vervangen in alle huidige toepassingen.",
+            "E": "Gegevensclassificatie automatiseren voor taken van begeleid leren."
+        }
+    },
+    "2": {
+        "question": "Volgens het artikel, wat is een beperking van traditionele PCA bij het omgaan met meerdere datasets?",
+        "options": {
+            "A": "PCA kan alleen worden gebruikt op numerieke gegevens.",
+            "B": "PCA is rekenintensief en traag.",
+            "C": "PCA staat niet toe om verschillende datasets direct te vergelijken.",
+            "D": "PCA vereist grote datasets om effectief te functioneren.",
+            "E": "PCA genereert te veel hoofdcomponenten."
+        }
+    },
+    "3": {
+        "question": "Hoe bepaalt cPCA de richtingen van interesse voor dataprojectie?",
+        "options": {
+            "A": "Door eigenvectoren te vinden van de som van covariantiematrices van twee datasets.",
+            "B": "Door de eigenvectoren van de covariantiematrix direct afgeleid van de doeldataset te beschouwen.",
+            "C": "Door de variantie over de combinatie van doel- en achtergronddatasets te berekenen.",
+            "D": "Door de singuliere vectoren van het gewogen verschil van covariantiematrices van de doel- en achtergronddatasets te berekenen.",
+            "E": "Door een willekeurige set richtingen te gebruiken die vooraf door de gebruiker zijn gedefinieerd."
+        }
+    },
+    "4": {
+        "question": "Welke rol speelt de contrastparameter \u03b1 in de cPCA-methode?",
+        "options": {
+            "A": "Het bepaalt de schaal van de variantieberekening van PCA.",
+            "B": "Het kwantificeert de afweging tussen hoge doelvariantie en lage achtergrondvariantie.",
+            "C": "Het stelt het aantal te extraheren hoofdcomponenten vast.",
+            "D": "Het regelt de snelheid van het cPCA-algoritme.",
+            "E": "Het dicteert het normalisatieproces voor de datasets."
+        }
+    },
+    "5": {
+        "question": "In de context van het artikel, wat is het primaire voordeel van het gebruik van cPCA boven traditionele PCA voor genexpressiegegevens van kankerpatiënten?",
+        "options": {
+            "A": "Het verfijnt gegevens voor betere integratie met modellen voor begeleid leren.",
+            "B": "Het richt zich op genetische variaties als gevolg van subtypes van kanker, in plaats van demografische variaties.",
+            "C": "Het elimineert de noodzaak voor voorverwerking van ruwe genexpressieniveaus.",
+            "D": "Het automatiseert de identificatie van alle mogelijke kankersubtypes.",
+            "E": "Het verhoogt de snelheid van analyse voor grote datasets aanzienlijk."
+        }
+    },
+    "6": {
+        "question": "Welk experimenteel resultaat werd opgemerkt toen cPCA werd toegepast op synthetische afbeeldingen van handgeschreven cijfers over complexe achtergronden?",
+        "options": {
+            "A": "Er werden geen duidelijke clusters geïdentificeerd.",
+            "B": "De achtergrondkenmerken werden meer benadrukt dan de cijferkenmerken.",
+            "C": "Twee duidelijke clusters die overeenkomen met de verschillende cijfers kwamen naar voren.",
+            "D": "Er werd aanzienlijke ruis geïntroduceerd, waardoor de primaire patronen werden verduisterd.",
+            "E": "De synthetische afbeeldingen werden perfect gescheiden van hun achtergronden."
+        }
+    },
+    "7": {
+        "question": "Welke van de volgende uitspraken over cPCA benadrukt het artikel?",
+        "options": {
+            "A": "Het is primair een methode voor begeleid leren voor datasetclassificatie.",
+            "B": "Het vervangt gespecialiseerde algoritmen voor specifieke datasets in verschillende domeinen.",
+            "C": "Het maakt geometrische interpretatie mogelijk via zijn contrastieve hoofdcomponenten.",
+            "D": "Het vereist aanzienlijke domeinkennis voor de toepassing.",
+            "E": "Het verhoogt de complexiteit van datasets in plaats van deze te verminderen."
+        }
+    },
+    "8": {
+        "question": "Hoe streeft cPCA ernaar om meer significante subgroepen binnen biologische datasets te ontdekken in vergelijking met traditionele PCA?",
+        "options": {
+            "A": "Door demografische variaties volledig te negeren.",
+            "B": "Door de prominentie van gemeenschappelijke universele variaties te vergroten.",
+            "C": "Door de universele maar oninteressante variatie te annuleren met behulp van een achtergronddataset.",
+            "D": "Door de primaire signalen te versterken zonder referentiedatasets.",
+            "E": "Door zich alleen te richten op de gemiddelde waarden van datasets."
+        }
+    },
+    "9": {
+        "question": "In de gegeven studie, hoe presteerde cPCA beter dan andere technieken voor dimensiereductie in de Downsyndroom-eiwitexpressiedataset?",
+        "options": {
+            "A": "Door de specifieke leeftijdsgroep met de hoogste eiwitexpressie te identificeren.",
+            "B": "Door de geschokte muizen efficiënt te scheiden in die met en zonder Downsyndroom.",
+            "C": "Door meer componenten te genereren dan nodig voor classificatie.",
+            "D": "Door de meest prominente geslachtskenmerken te bepalen.",
+            "E": "Door de gegevens te reduceren tot een enkele variabele representatie."
+        }
+    },
+    "10": {
+        "question": "Wat suggereert het artikel over de keuze van de achtergronddataset voor cPCA?",
+        "options": {
+            "A": "Het moet minimale variantie hebben om de projectie van de doeldataset niet te beïnvloeden.",
+            "B": "Het moet willekeurig zijn om een onbevooroordeelde benadering te garanderen.",
+            "C": "Het moet de structuur bevatten die we willen elimineren uit de doeldataset.",
+            "D": "Het moet de covariatiestructuur precies overeenkomen met de doeldataset.",
+            "E": "Het moet altijd dezelfde grootte hebben als de doeldataset."
+        }
+    },
+    "11": {
+        "question": "Voor welke scenario's raadt het artikel het gebruik van cPCA aan?",
+        "options": {
+            "A": "Taken van begeleide classificatie met goed gelabelde datasets.",
+            "B": "Verkennende taken waarbij PCA wordt gebruikt op gerelateerde datasets.",
+            "C": "Scenario's waarin geen significante datasetverschillen worden verwacht.",
+            "D": "Puur theoretische modelbouwprojecten.",
+            "E": "Verbeteringen van lineaire regressiemodellen."
+        }
+    },
+    "12": {
+        "question": "Wat voor soort visualisatie wordt geproduceerd door cPCA bij het analyseren van genetische gegevens van Mexicaanse populaties?",
+        "options": {
+            "A": "Uniform verdeelde visuele patronen zonder waarneembare structuur.",
+            "B": "Kaarten die voornamelijk de proportie van Europese afkomst weerspiegelen.",
+            "C": "Duidelijke clusters die overeenkomen met geografische oorsprong binnen Mexico.",
+            "D": "Verwarrende overlappingen zonder duidelijke betekenis.",
+            "E": "Eenvoudige lineaire representaties van genetische variantie."
+        }
+    },
+    "13": {
+        "question": "Welke algoritmische eigenschap van cPCA onderscheidt het van methoden zoals LDA en QUADRO volgens het artikel?",
+        "options": {
+            "A": "Het vermogen om informatie uit meerdere datasets te integreren.",
+            "B": "De efficiëntie in het uitvoeren van parallelle berekeningen.",
+            "C": "De onbewaakte aard die zich richt op dataset-specifieke patronen zonder classificatie.",
+            "D": "De afhankelijkheid van gelabelde gegevens voor optimale prestaties.",
+            "E": "De vereiste voor domeinspecifieke aanpassingsparameters."
+        }
+    },
+    "14": {
+        "question": "In het voorbeeld van de leukemiepatiëntendataset, wat werd waargenomen toen cPCA werd gebruikt in vergelijking met PCA?",
+        "options": {
+            "A": "PCA zorgde voor een duidelijkere scheiding van pre- en post-transplantatiemonsters.",
+            "B": "cPCA was niet in staat om de monsters effectief te scheiden.",
+            "C": "Variaties binnen patiëntenmonsters werden geminimaliseerd in cPCA-resultaten.",
+            "D": "cPCA toonde een sterkere scheiding van de subpopulaties.",
+            "E": "Er was geen waarneembaar verschil tussen de uitkomsten van PCA en cPCA."
+        }
+    },
+    "15": {
+        "question": "Welke computationele voordelen biedt cPCA zoals vermeld in het artikel?",
+        "options": {
+            "A": "Vermindering van het aantal berekende eigenvectoren.",
+            "B": "Significant sneller dan andere methoden voor dimensiereductie.",
+            "C": "Rekenkundige efficiëntie vergelijkbaar met reguliere PCA.",
+            "D": "Vermindert de computationele behoefte aan gegevensnormalisatie.",
+            "E": "Elimineert de noodzaak voor aanvullende gegevensvoorverwerking."
+        }
+    },
+    "16": {
+        "question": "Wat is het primaire doel van het selecteren van verschillende waarden van \u03b1 bij het gebruik van cPCA?",
+        "options": {
+            "A": "Om een uniforme verdeling van gegevenspunten over dimensies te garanderen.",
+            "B": "Om verschillende datatrends te verkennen door projectie op verschillende deelruimten.",
+            "C": "Om de berekeningssnelheid van het algoritme te optimaliseren.",
+            "D": "Om variantie maximalisatie in beide datasets te garanderen.",
+            "E": "Om datasets te standaardiseren voorafgaand aan analyse."
+        }
+    },
+    "17": {
+        "question": "Waarom is de structuur van de achtergronddataset significant in cPCA-analyse?",
+        "options": {
+            "A": "Het beïnvloedt de variantie die wordt vastgelegd in de subruimte van de doeldataset.",
+            "B": "Het verbetert direct de kenmerken van interesse in de doeldataset.",
+            "C": "Het bepaalt het aantal geëxtraheerde hoofdcomponenten.",
+            "D": "Het stemt automatisch af op de covariantiematrix van de doeldataset.",
+            "E": "Het standaardiseert de berekeningen van eigenvectoren."
+        }
+    },
+    "18": {
+        "question": "Welke factor wordt NIET typisch overwogen bij het kiezen van een achtergronddataset voor cPCA, volgens het artikel?",
+        "options": {
+            "A": "Het moet sterk contrasteren met ruisgerelateerde componenten in de doeldataset.",
+            "B": "Het heeft een exacte één-op-één mapping met de monsters van de doeldataset nodig.",
+            "C": "Het profiteert van een vergelijkbare structuur met de ongewenste variatie in de doeldataset.",
+            "D": "Het moet ongewenste systematische variatie vastleggen voor verwijdering.",
+            "E": "Het kan verschillen in aantal monsters ten opzichte van de doeldataset."
+        }
+    },
+    "19": {
+        "question": "Hoe verbetert cPCA verkennende data-analyse?",
+        "options": {
+            "A": "Door gegevensclassificatie en labelprocessen te automatiseren.",
+            "B": "Door kenmerkselectie te verfijnen op basis van doel-specifieke variantie.",
+            "C": "Door toekomstige datatrends te voorspellen op basis van historische gegevens.",
+            "D": "Door zich uitsluitend te richten op het verminderen van de dimensie van datasets.",
+            "E": "Door p-waarden te produceren voor statistische significantie."
+        }
+    },
+    "20": {
+        "question": "Welke soort datasets profiteren het meest van cPCA, zoals besproken in het artikel?",
+        "options": {
+            "A": "Datasets met significante gelabelde gegevenspunten.",
+            "B": "Datasets die nauwkeurige detectie van uitschieters vereisen.",
+            "C": "Datasets met goed gedefinieerde voorafgaande classificaties.",
+            "D": "Datasets met overlappende temporele of ruimtelijke variaties.",
+            "E": "Datasets met duidelijke bestaande grenzen."
+        }
+    },
+    "21": {
+        "question": "Welke beperking van traditionele PCA bij het ontdekken van subklassen wordt aangepakt door cPCA?",
+        "options": {
+            "A": "Het detecteert voornamelijk labels in plaats van continue patronen.",
+            "B": "Het richt zich op de breedste in plaats van de fijnste structuren.",
+            "C": "Het standaardiseert alle variaties, waardoor uitschieters prominenter worden.",
+            "D": "Het mist theoretische onderbouwing voor biologische data-analyse.",
+            "E": "Het biedt geen exacte replicatie van dataset-eigenschappen."
+        }
+    },
+    "22": {
+        "question": "Wat suggereert het artikel over de contrastparameter \u03b1 in cPCA-implementatie?",
+        "options": {
+            "A": "Een vaste \u03b1 wordt altijd aanbevolen voor alle datasets.",
+            "B": "Automatisch gegenereerde \u03b1-waarden volstaan vaak voor veel toepassingen.",
+            "C": "Kleinere \u03b1 wordt geprefereerd voor alle datasets voor optimale variantie.",
+            "D": "Handmatige aanpassing is verplicht voor betekenisvolle resultaten.",
+            "E": "Het lineair verhogen van \u03b1 verbetert de contrastselectiviteit."
+        }
+    },
+    "23": {
+        "question": "Wat is een veelvoorkomende toepassing van cPCA zoals afgeleid uit het artikel?",
+        "options": {
+            "A": "Het ontwerpen van complexe structuren voor begeleid leren.",
+            "B": "Het efficiënt analyseren van statische tijdreeksgegevens.",
+            "C": "Het ontdekken van contrasten in datasets onder verschillende omstandigheden.",
+            "D": "Het vervangen van alle technieken voor dimensiereductie.",
+            "E": "Het initiëren van datasetfragmentatie voor batchverwerking."
+        }
+    },
+    "24": {
+        "question": "Hoe relateert de methode van cPCA aan het Pareto-frontierconcept dat in het artikel wordt genoemd?",
+        "options": {
+            "A": "cPCA construeert verschillende Pareto-frontiers voor verschillende datasets.",
+            "B": "Het selecteert richtingen die overeenkomen met de onder-rechtergrens van variantieparen.",
+            "C": "Pareto-frontier helpt bij het uitbreiden van de dimensionale dekking van cPCA.",
+            "D": "Het initieert PCA met nadruk op Pareto-gebaseerde richtingen.",
+            "E": "Pareto-frontier is irrelevant voor cPCA-implementaties."
+        }
+    },
+    "25": {
+        "question": "Wat onthulde de toepassing van cPCA in de experimenten met single-cell RNA-Seq-gegevens?",
+        "options": {
+            "A": "cPCA verminderde de verschillen tussen verschillende RNA-monsters.",
+            "B": "Er konden geen significante patronen worden afgeleid uit cPCA-projecties.",
+            "C": "Significante scheiding tussen pre- en post-transplantatiemonsters.",
+            "D": "Homogene RNA-sequenties ondanks variërende behandelingen.",
+            "E": "Meer ruis geïntroduceerd in de experimentele gegevens."
+        }
+    },
+    "26": {
+        "question": "Welke factor beïnvloedt primair de richtingen die optimaal zijn voor contrastieve analyse in cPCA?",
+        "options": {
+            "A": "Alleen de grootte van de doeldataset.",
+            "B": "Achtergrondvariantie vergeleken met doelvariantie.",
+            "C": "Universele variantieconsistentie over datasets.",
+            "D": "De lineariteit van de covariatiestructuren.",
+            "E": "Het aantal componenten in de dataset."
+        }
+    },
+    "27": {
+        "question": "In het voorbeeld dat genetische gegevens uit Mexico bespreekt, hoe suggereerde het artikel om universele variatie aan te pakken?",
+        "options": {
+            "A": "Alle SNP's snoeien voorafgaand aan analyse.",
+            "B": "PCA toepassen alsof het een grote enkele dataset betreft.",
+            "C": "Gebruik cPCA met een bredere achtergronddataset om te focussen op intra-Mexicaanse variatie.",
+            "D": "Selecteer alleen een willekeurige subset van monsters.",
+            "E": "Universele variaties volledig negeren voor vereenvoudiging."
+        }
+    },
+    "28": {
+        "question": "Welk voordeel heeft cPCA met betrekking tot computationele efficiëntie, zoals benadrukt in het artikel?",
+        "options": {
+            "A": "Het vereist meer tijd dan standaard PCA maar levert betere resultaten.",
+            "B": "Het biedt een volledige algoritmische vernieuwing vergeleken met PCA.",
+            "C": "Het vereist in wezen dezelfde computationele inspanning als PCA.",
+            "D": "Het reduceert de dimensie sneller met minder iteraties.",
+            "E": "Het paralleliseert automatisch het data-analyseproces."
+        }
+    },
+    "29": {
+        "question": "Welke van de volgende scenario's wordt NIET voorgesteld als een contrasterende achtergrond voor cPCA?",
+        "options": {
+            "A": "Het gebruik van controlegroepgegevens tegen zieke proefpersonen.",
+            "B": "Contrasterende afbeeldingen van historische en moderne architectuur.",
+            "C": "Gegevens op een initieel tijdstip versus een eindtijdstip.",
+            "D": "Homogene populatie tegen een diverse mix.",
+            "E": "Pre-behandelingsgegevens tegenover post-behandelingsgegevens."
+        }
+    },
+    "30": {
+        "question": "Wat beweert het artikel over het gebruik van cPCA bij het ontdekken van subklassen?",
+        "options": {
+            "A": "Subklassen kunnen alleen worden gedetecteerd wanneer ze vooraf zijn gelabeld.",
+            "B": "Het is effectief, zelfs wanneer subklassen niet vooraf zijn gelabeld.",
+            "C": "PCA wordt over het algemeen geprefereerd voor ontdekking boven cPCA.",
+            "D": "Alleen nuttig in scenario's met strak geclusterde datasets.",
+            "E": "Vereist expliciete kenmerkselectie voor effectiviteit."
+        }
+    },
+    "31": {
+        "question": "Hoe is cPCA van plan om ruis binnen de dataset te behandelen volgens het artikel?",
+        "options": {
+            "A": "Standaard alle ruiscomponenten negeren.",
+            "B": "Ruis versterken om primaire kenmerken beter te benadrukken.",
+            "C": "Ruis annuleren door gebruik te maken van signaalvrije achtergrondopnamen.",
+            "D": "Ruis integreren als onderdeel van de covariantiematrix.",
+            "E": "Ruis filteren door aanpassingen voor begeleid leren."
+        }
+    },
+    "32": {
+        "question": "Welke stap is noodzakelijk voor het berekenen van contrastieve richtingen in cPCA?",
+        "options": {
+            "A": "Gemiddelde gecentreerde waarden uit de datasets extraheren.",
+            "B": "Een contrastmatrix definiëren vanuit het verschil in covariantiematrix.",
+            "C": "De datasetmonsters willekeurig maken voor analyse.",
+            "D": "Zorgen dat de datasets identieke monstergroottes hebben.",
+            "E": "Alle datasetcomponenten afstemmen op een enkele dimensionale drempel."
+        }
+    },
+    "33": {
+        "question": "Wat voor soort visuele scheiding werd opmerkelijk bereikt met cPCA op de muizen-eiwitexpressiedataset?",
+        "options": {
+            "A": "Scheiding op basis van controle versus experimentele proefpersonen.",
+            "B": "Geslachtsgebonden scheiding binnen monsters.",
+            "C": "Scheiding van muizen met en zonder Downsyndroom.",
+            "D": "Leeftijdsafhankelijke clustering van de muizen.",
+            "E": "Willekeurige verdeling zonder specifiek patroon."
+        }
+    },
+    "34": {
+        "question": "Welk principe ligt ten grondslag aan de selectie van de beste contrastieve richtingen door cPCA?",
+        "options": {
+            "A": "Focussen op het maximaliseren van de som van varianties over alle richtingen.",
+            "B": "Zoeken naar richtingen met lage correlatie over datasets.",
+            "C": "Zowel doel- als achtergrondvarianties uniform minimaliseren.",
+            "D": "Doelvariantie maximaliseren terwijl achtergrondvariantie minimaliseren.",
+            "E": "Achtergrondvariantie maximaliseren die niet relevant is voor de doeldataset."
+        }
+    },
+    "35": {
+        "question": "Wat wordt geïmpliceerd door het gebruik van verschillende \u03b1-waarden in cPCA?",
+        "options": {
+            "A": "Het past de bias van het algoritme aan naar hogere achtergrondvariantie.",
+            "B": "Het maakt het mogelijk om een verscheidenheid aan deelruimten voor verschillende trends te verkennen.",
+            "C": "Het wijzigt de dimensionaliteit direct over datasets.",
+            "D": "Het beïnvloedt de volgorde van datasetmonsteranalyse.",
+            "E": "Het standaardiseert de gehele variantiestructuur van de dataset."
+        }
+    },
+    "36": {
+        "question": "Wat toont Fig. 5 in het artikel met betrekking tot cPCA?",
+        "options": {
+            "A": "Willekeurige fluctuaties in variantie over datasets.",
+            "B": "De selectie van richtingen die samenvallen met de maxima van de doelvariantie.",
+            "C": "De geometrische interpretatie en selectie van de beste contrastieve richting.",
+            "D": "Doel-achtergrond paar mismatches binnen de covariatiestructuur.",
+            "E": "Volledige afstemming van doel- en achtergronddatasets."
+        }
+    },
+    "37": {
+        "question": "Wat is de relatie tussen contrastieve richtingen in cPCA en eigenvectoren?",
+        "options": {
+            "A": "Contrastieve richtingen zijn niet gerelateerd aan eigenvectoren.",
+            "B": "Ze verschillen altijd in dimensie van echte eigenvectoren.",
+            "C": "Ze komen overeen met eigenvectoren van de contrastmatrix.",
+            "D": "Ze hebben alleen betrekking op eigenvectoren met de kleinste eigenwaarden.",
+            "E": "Ze stemmen alleen overeen met eigenvectoren van de achtergrondgegevens."
+        }
+    },
+    "38": {
+        "question": "Welke van de volgende zaken benadrukt het artikel als een initiële vereiste voor cPCA?",
+        "options": {
+            "A": "Handmatige voorverwerking van datasets om alle ruis te elimineren.",
+            "B": "Vooraf toewijzen van specifieke dimensies voor analyse.",
+            "C": "Beschikbaarheid van zowel doel- als achtergronddatasetcovariantiematrices.",
+            "D": "Instellen van een vaste variantiedrempel voor alle projecties.",
+            "E": "Uitgebreide labeling van alle gegevenscomponenten."
+        }
+    },
+    "39": {
+        "question": "Waarom is cPCA bijzonder nuttig voor genetische studies die zich richten op erfgoed- en afstammingspatronen?",
+        "options": {
+            "A": "Het vergroot het belang van dominante voorouderlijke variaties.",
+            "B": "Het automatiseert de interpretatie van genetische achtergrondgegevens.",
+            "C": "Het benadrukt subtiele variaties binnen intra-populatiemetrieken.",
+            "D": "Het maakt voornamelijk gebruik van universele genetische overeenkomsten.",
+            "E": "Het stelt geautomatiseerde classificatie van etnische oorsprong voor."
+        }
+    },
+    "40": {
+        "question": "Wat beschrijft het artikel als een relatief voordeel van cPCA ten opzichte van multidimensionale schaling (MDS)?",
+        "options": {
+            "A": "Superieure visualisatie van inherent niet-lineaire datastructuren.",
+            "B": "Mogelijkheid om achtergronddatasets te gebruiken voor verbeterd contrast.",
+            "C": "Snellere computationele tijden over verschillende datasets.",
+            "D": "Ingebouwde correctie voor neigingen tot dataclustering.",
+            "E": "Intrinsieke bias naar het voorkomen van data-overfitting."
+        }
+    },
+    "41": {
+        "question": "Hoe beïnvloedt het variëren van de \u03b1-parameter de resultaten in een typische cPCA-analyse?",
+        "options": {
+            "A": "Vergroot de dimensionaliteit meer dan het doel toestaat.",
+            "B": "Bereikt de balans tussen doel- en achtergrondvariantie.",
+            "C": "Vermindert de complexiteit van eigendecompositie op natuurlijke wijze.",
+            "D": "Vermindert datasetkruiscorrelatie exponentieel.",
+            "E": "Verbetert de standaardisatie van uitschieter detectie."
+        }
+    },
+    "42": {
+        "question": "Hoe verschilt cPCA in zijn statistische benadering vergeleken met PCA?",
+        "options": {
+            "A": "cPCA berekent datasetvariantie onderling afhankelijk.",
+            "B": "cPCA optimaliseert varianties onafhankelijk over twee datasets.",
+            "C": "cPCA negeert variantie-informatie volledig.",
+            "D": "cPCA gaat uit van directe lineaire afhankelijkheid tussen datasets.",
+            "E": "cPCA maximaliseert standaard beide varianties uniform."
+        }
+    },
+    "43": {
+        "question": "Welke experimentele resultaten tonen volgens het artikel het voordeel van cPCA ten opzichte van 8 andere methoden voor dimensiereductie?",
+        "options": {
+            "A": "Vergelijkbare prestaties over alle datasets en methoden.",
+            "B": "Onvermogen van andere methoden om Downsyndroommuizen afzonderlijk te clusteren.",
+            "C": "Snellere looptijden maar hogere foutpercentages vergeleken met anderen.",
+            "D": "Overshadowed door begeleide benaderingen in precisie.",
+            "E": "Minder informatieve variantieanalyse dan alternatieve methoden."
+        }
+    },
+    "44": {
+        "question": "Wat merkt het artikel op over het effect van willekeur op de gegevens met betrekking tot cPCA?",
+        "options": {
+            "A": "De steekproef cPC convergeert naar de populatie cPC met een snelheid vergelijkbaar met standaard PCA-eigenvectoren.",
+            "B": "Willekeurige veranderingen beïnvloeden de cPCA-covariatiestructuur niet.",
+            "C": "cPCA introduceert gestructureerde willekeur voor balans.",
+            "D": "cPCA houdt automatisch rekening met willekeurige uitschieters.",
+            "E": "Het is niet afhankelijk van stabiele datacovariantiematrices."
+        }
+    },
+    "45": {
+        "question": "Welke rol speelt de dimensie d in de convergentiesnelheid van cPCA?",
+        "options": {
+            "A": "Beperkt de convergentiepotentieel aanzienlijk.",
+            "B": "Resulteert in constante convergentiesnelheden voor lage d-waarden.",
+            "C": "Beïnvloedt hoe snel de steekproef cPC de populatie cPC benadert.",
+            "D": "Bepaalt het totale aantal mogelijke eigenvectoren van de dataset.",
+            "E": "Stuurt proportionele toenames in computationele inspanning."
+        }
+    },
+    "46": {
+        "question": "Hoe relateert cPCA computationeel aan kernelversies zoals gedemonstreerd in aanvullende informatie?",
+        "options": {
+            "A": "Vult kern PCA aan met extra kernlagen.",
+            "B": "Negeert inherent niet-lineaire patronen.",
+            "C": "cPCA kan worden gekerneliseerd om niet-lineaire patronen te onthullen.",
+            "D": "cPCA sluit kernapplicaties in alle gevallen uit.",
+            "E": "Het vereist verhoogde gegevensvoorverwerking voor kernondersteuning."
+        }
+    },
+    "47": {
+        "question": "Welke computationele taak behandelt cPCA die vaak significant is in verkennende datawetenschapsprojecten?",
+        "options": {
+            "A": "Berekening van universele variantiecomponenten.",
+            "B": "Toepassing van begeleide modellen voorafgaand aan verkenning.",
+            "C": "Bepalen van patronen verrijkt in doeldataset ten opzichte van een achtergronddataset.",
+            "D": "Standaardisatie van dimensionale variantiedrempels.",
+            "E": "Geautomatiseerde duplicatie van schaarse datasets voor diepte."
+        }
+    },
+    "48": {
+        "question": "Welke eigenschap onderscheidt cPCA van begeleide PCA en QDA?",
+        "options": {
+            "A": "De focus op labelgebaseerde classificatieresultaten.",
+            "B": "Het onderscheidend vermogen tussen gelabelde subgroepen.",
+            "C": "De onbewaakte strategie voor het verduidelijken van dataset-specifieke patronen.",
+            "D": "De voorkeur voor kleinere datasets boven grotere.",
+            "E": "De ingebouwde behoefte aan precieze gebruikersinvoeraparameters."
+        }
+    },
+    "49": {
+        "question": "Wat onderscheidt de contrastieve hoofdcomponenten (cPC's) van reguliere PC's bij het uitvoeren van cPCA?",
+        "options": {
+            "A": "cPC's richten zich op het maximaliseren van achtergrondvariantie.",
+            "B": "cPC's analyseren dezelfde dimensies als PC's maar door herschaling.",
+            "C": "cPC's verminderen inherent de dimensionaliteit op basis van doel-specifieke variantie.",
+            "D": "cPC's gebruiken onvermijdelijk niet-orthogonale richtingen.",
+            "E": "cPC's negeren doeldataset ten gunste van achtergrondcovariantie."
+        }
+    },
+    "50": {
+        "question": "Wat streeft cPCA na in termen van zijn geometrische interpretatie zoals vermeld in het artikel?",
+        "options": {
+            "A": "Lijnt datasets uit op basis van vaste metriek over assen.",
+            "B": "Maximaliseert doelvariantie naar het boven-linker einde van de variantiepaargens.",
+            "C": "Selecteert richtingen die langs de onder-rechtergrens van variantieparen liggen.",
+            "D": "Integreert variantie-uitzonderingen buiten universele trends.",
+            "E": "Standaardiseert geometrische variantieconfiguratie over datasets."
+        }
+    }
+}

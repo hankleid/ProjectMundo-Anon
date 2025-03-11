@@ -1,0 +1,49 @@
+To optimize the geometry of the metasurface gratings for maximum diffraction efficiency and uniformity of angular response, we employ a rigorous-coupled-wave-analysis solver. Our metasurface couplers operate in transverse electric polarization mode to provide a more uniform optical response. The optimization process uses the gradient descent method, starting from a randomly initialized geometry in the 2D spatial domain and utilizing the Adam solver to refine the profiles of the metasurface gratings. The loss function in the optimization loop maximizes the sum of the first diffraction order efficiencies for red, green and blue wavelengths (638 nm, 521 nm and 445 nm), while minimizing the standard deviations of efficiencies for different incident angles, ranging from −5° to 5°, for these three wavelengths. We simplify the design process to one dimension by assuming x axis symmetry and account for fabrication tolerances of these large-area metasurfaces by adding Gaussian blur. The resulting design converged to a double-lined metasurface grating, as shown in Fig. [2c]. This geometry yields metasurface couplers that steer the incident wave to high diffraction angles for red, green and blue wavelengths, as confirmed by the electric field profiles and overlaid Poynting vectors (Fig. [2b]). Importantly, the optimized asymmetric nanostructure not only enhances the diffraction efficiency in one direction but also improves uniformity over the angle of incidence.
+
+We show experimentally captured results from our prototype in Fig. [4]. In Fig. [4a], we qualitatively and quantitatively assess the 2D image quality and compare a naive free-space propagation model, a physically motivated wave propagation model using the rigorous-coupled-wave-analysis-simulated transfer functions and the proposed artificial-intelligence-based variant combining the physical model with camera-calibrated learnable parameters. In all examples, the artificial-intelligence-based wave propagation model outperforms the baselines by a large margin of 3–5 dB peak signal-to-noise ratio. The full-colour 3D results shown in Fig. [4b] validate the high image quality our system achieves for both in- and out-of-focus regions of the presented digital content. The accurate depiction of 3D defocus behaviour can mitigate the vergence–accommodation conflict and associated discomfort for users of our display system. To our knowledge, no existing waveguide-based AR display has demonstrated full-colour 3D results with a comparable quality. Finally, we also show experimental full-colour 3D results in Fig. [4c] where we optically combine a physical scene with digitally overlaid content and capture the scene using different focus settings of the camera. Again, our approach outperforms baseline models by a large margin.
+
+Domain-specific words identified:  
+- metasurface  
+- diffraction efficiency  
+- rigorous-coupled-wave-analysis  
+- transverse electric polarization  
+- gradient descent method  
+- Adam solver  
+- loss function  
+- diffraction order efficiencies  
+- Gaussian blur  
+- Poynting vectors  
+- asymmetric nanostructure  
+- peak signal-to-noise ratio  
+- vergence–accommodation conflict  
+- waveguide-based AR display  
+
+Translation:  
+메타서피스 격자의 기하학적 구조를 최적화하여 최대 회절 효율과 각도 응답의 균일성을 달성하기 위해, 우리는 rigorous-coupled-wave-analysis 솔버를 사용합니다. 우리의 메타서피스 커플러는 transverse electric polarization 모드에서 작동하여 보다 균일한 광학적 응답을 제공합니다. 최적화 과정은 2D 공간 도메인에서 무작위로 초기화된 기하학적 구조에서 시작하여 Adam solver를 사용하여 메타서피스 격자의 프로파일을 정제하는 gradient descent method를 사용합니다. 최적화 루프의 loss function은 빨강, 초록, 파랑 파장(638 nm, 521 nm, 445 nm)에 대한 첫 번째 회절 차수 효율의 합을 최대화하면서, 이 세 가지 파장에 대해 -5°에서 5°까지의 다양한 입사각에 대한 효율의 표준 편차를 최소화합니다. 우리는 x축 대칭을 가정하여 설계 과정을 1차원으로 단순화하고, Gaussian blur를 추가하여 이러한 대면적 메타서피스의 제작 허용 오차를 고려합니다. 결과적으로 설계는 Fig. [2c]에 표시된 이중선 메타서피스 격자로 수렴되었습니다. 이 기하학적 구조는 Fig. [2b]에 나타난 전기장 프로파일과 중첩된 Poynting vectors에 의해 확인된 바와 같이, 빨강, 초록, 파랑 파장에 대해 높은 회절 각도로 입사파를 조향하는 메타서피스 커플러를 제공합니다. 중요하게도, 최적화된 비대칭 나노구조는 한 방향에서 회절 효율을 향상시킬 뿐만 아니라 입사각에 대한 균일성도 개선합니다.
+
+우리는 Fig. [4]에서 프로토타입으로부터 실험적으로 캡처된 결과를 보여줍니다. Fig. [4a]에서는 2D 이미지 품질을 정성적 및 정량적으로 평가하고, naive free-space propagation 모델, rigorous-coupled-wave-analysis로 시뮬레이션된 전송 함수를 사용하는 물리적으로 동기화된 파동 전파 모델, 그리고 카메라 보정 가능한 학습 가능한 매개변수를 물리적 모델과 결합한 제안된 인공지능 기반 변형을 비교합니다. 모든 예에서, 인공지능 기반 파동 전파 모델은 3–5 dB의 peak signal-to-noise ratio의 큰 차이로 기준선을 능가합니다. Fig. [4b]에 표시된 풀 컬러 3D 결과는 제시된 디지털 콘텐츠의 초점 내 및 초점 외 영역 모두에 대해 시스템이 달성하는 높은 이미지 품질을 검증합니다. 3D 디포커스 동작의 정확한 묘사는 우리의 디스플레이 시스템 사용자에게 vergence–accommodation conflict와 관련된 불편함을 완화할 수 있습니다. 우리가 아는 한, 기존의 waveguide-based AR display는 이와 비교할 만한 품질의 풀 컬러 3D 결과를 보여준 적이 없습니다. 마지막으로, 우리는 Fig. [4c]에서 물리적 장면과 디지털로 중첩된 콘텐츠를 광학적으로 결합하고 카메라의 다양한 초점 설정을 사용하여 장면을 캡처한 실험적 풀 컬러 3D 결과도 보여줍니다. 다시 한번, 우리의 접근 방식은 기준 모델을 큰 차이로 능가합니다.
+
+
+다음은 번역할 과학적 발췌문에서 식별된 고도로 전문적인 용어입니다: 
+
+- metasurface gratings
+- diffraction efficiency
+- rigorous-coupled-wave-analysis
+- transverse electric polarization mode
+- gradient descent method
+- Adam solver
+- loss function
+- diffraction order efficiencies
+- Gaussian blur
+- Poynting vectors
+- asymmetric nanostructure
+- peak signal-to-noise ratio
+- vergence–accommodation conflict
+- waveguide-based AR display
+
+이제 번역을 진행하겠습니다:
+
+metasurface gratings의 최대 회절 효율과 각도 응답의 균일성을 최적화하기 위해, 우리는 rigorous-coupled-wave-analysis solver를 사용합니다. 우리의 metasurface couplers는 보다 균일한 광학적 응답을 제공하기 위해 transverse electric polarization mode에서 작동합니다. 최적화 과정은 2D 공간 도메인에서 무작위로 초기화된 기하학에서 시작하여 Adam solver를 사용하여 metasurface gratings의 프로파일을 정제하는 gradient descent method를 사용합니다. 최적화 루프의 loss function은 빨강, 초록 및 파랑 파장(638 nm, 521 nm 및 445 nm)에 대한 첫 번째 회절 차수 효율의 합을 최대화하면서, 이 세 가지 파장에 대해 -5°에서 5°까지의 다양한 입사각에 대한 효율의 표준 편차를 최소화합니다. 우리는 x축 대칭을 가정하여 설계 과정을 1차원으로 단순화하고, Gaussian blur를 추가하여 이러한 대면적 metasurfaces의 제작 허용 오차를 고려합니다. 결과 설계는 Fig. [2c]에 표시된 것처럼 이중선 metasurface grating으로 수렴되었습니다. 이 기하학은 Fig. [2b]에 표시된 전기장 프로파일과 중첩된 Poynting vectors에 의해 확인된 바와 같이 빨강, 초록 및 파랑 파장에 대해 높은 회절 각도로 입사파를 조향하는 metasurface couplers를 제공합니다. 중요하게도, 최적화된 asymmetric nanostructure는 한 방향으로 회절 효율을 향상시킬 뿐만 아니라 입사각에 대한 균일성도 개선합니다.
+
+우리는 Fig. [4]에서 우리의 프로토타입으로부터 실험적으로 캡처된 결과를 보여줍니다. Fig. [4a]에서는 2D 이미지 품질을 정성적 및 정량적으로 평가하고, naive free-space propagation model, rigorous-coupled-wave-analysis-simulated transfer functions를 사용하는 물리적으로 동기화된 wave propagation model 및 카메라 보정 가능한 학습 가능한 매개변수를 물리적 모델과 결합한 제안된 artificial-intelligence-based variant를 비교합니다. 모든 예에서, artificial-intelligence-based wave propagation model은 3–5 dB의 peak signal-to-noise ratio의 큰 차이로 기준선을 능가합니다. Fig. [4b]에 표시된 풀 컬러 3D 결과는 제시된 디지털 콘텐츠의 초점 내 및 초점 외 영역 모두에 대해 우리 시스템이 달성하는 높은 이미지 품질을 검증합니다. 3D 디포커스 동작의 정확한 묘사는 우리의 디스플레이 시스템 사용자에게 vergence–accommodation conflict 및 관련 불편함을 완화할 수 있습니다. 우리가 아는 한, 기존의 waveguide-based AR display는 비교 가능한 품질의 풀 컬러 3D 결과를 보여준 적이 없습니다. 마지막으로, 우리는 Fig. [4c]에서 물리적 장면과 디지털로 중첩된 콘텐츠를 광학적으로 결합하고 카메라의 다양한 초점 설정을 사용하여 장면을 캡처한 실험적 풀 컬러 3D 결과도 보여줍니다. 다시 한번, 우리의 접근 방식은 기준 모델을 큰 차이로 능가합니다.
+
