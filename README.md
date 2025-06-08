@@ -1,4 +1,4 @@
-Browse the database of translated articles here: [w/ProjectMundo-Anon-106A/index/eng.html](https://anonymous.4open.science/w/ProjectMundo-Anon-106A/index/eng.html)
+Browse the database of translated articles here: [w/ProjectMundo-Anon-106A/index/eng.html](https://anonymous.4open.science/w/ProjectMundo-Anon-106A/index/eng.html) (if you see a 404 error after clicking this link, refresh the page)
 
 **Please note**: due to anonymization for the review process, this website seems to have some HTML issues when switching languages. If you would like to view translated articles (e.g. [**this article**](https://anonymous.4open.science/w/ProjectMundo-Anon-106A/articles/10X1038_s41467-023-42766-6/zh2.xml), which has been translated to all the languages below), please do the following:
 
