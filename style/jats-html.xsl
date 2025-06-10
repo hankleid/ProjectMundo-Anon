@@ -191,7 +191,7 @@ or pipeline) parameterized.
         <div id="nav-placeholder"></div>
         <xsl:apply-templates/>
         <script>
-          $.get("/ProjectMundo/style/navigation.html", function(data){
+          $.get("/w/ProjectMundo-Anon-106A/style/navigation.html", function(data){
             $("#nav-placeholder").replaceWith(data);
           });
         </script>
