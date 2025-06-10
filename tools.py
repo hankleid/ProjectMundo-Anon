@@ -118,24 +118,24 @@ if __name__ == "__main__":
     langs = all_langs
     update_index_files(langs)
 
-    # count = 0
-    # for d in all_articles:
-    #     for l in list(load_langs()['translation'].values())[1:]:
-    #         path = f"articles/{d}/{l}.xml"
-    #         if os.path.exists(path):
-    #             count += 1
-    #             data = None
-    #             with open(path, "r") as f:
-    #                 data = BeautifulSoup(str(f.read()), features="xml")
+    count = 0
+    for d in all_articles:
+        for l in list(load_langs()['translation'].values()):
+            path = f"articles/{d}/{l}.xml"
+            if os.path.exists(path):
+                count += 1
+                data = None
+                with open(path, "r") as f:
+                    data = BeautifulSoup(str(f.read()), features="xml")
 
-    #             new_xsl_el = BeautifulSoup(f"<?xml-stylesheet type='text/xsl' href='/w/ProjectMundo-Anon-106A/style/jats-html.xsl'?>", features="xml")
-    #             data.contents[0].replace_with(new_xsl_el)
-    #             change_graphic_dir(data)
-    #             print(d, l)
+                new_xsl_el = BeautifulSoup(f"<?xml-stylesheet type='text/xsl' href='/w/ProjectMundo-Anon-106A/style/jats-html.xsl'?>", features="xml")
+                data.contents[0].replace_with(new_xsl_el)
+                change_graphic_dir(data)
+                print(d, l)
 
-    #             with open(path, "w") as f:
-    #                 f.write(data.prettify())
-    # print(count)
+                with open(path, "w") as f:
+                    f.write(data.prettify())
+    print(count)
 
     # title = this_data.find("article-title").string
     # print(title)
