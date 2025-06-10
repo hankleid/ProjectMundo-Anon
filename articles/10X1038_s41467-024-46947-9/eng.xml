@@ -1,0 +1,5711 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="/style/jats-html.xsl"?>
+<!DOCTYPE response>
+<article article-type="research-article" dtd-version="1.2" xml:lang="en" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <front>
+  <journal-meta>
+   <journal-id journal-id-type="publisher-id">
+    41467
+   </journal-id>
+   <journal-id journal-id-type="doi">
+    10.1038/41467.2041-1723
+   </journal-id>
+   <journal-title-group>
+    <journal-title>
+     Nature Communications
+    </journal-title>
+    <abbrev-journal-title abbrev-type="publisher">
+     Nat Commun
+    </abbrev-journal-title>
+   </journal-title-group>
+   <issn pub-type="epub">
+    2041-1723
+   </issn>
+   <publisher>
+    <publisher-name>
+     Nature Publishing Group UK
+    </publisher-name>
+    <publisher-loc>
+     London
+    </publisher-loc>
+   </publisher>
+  </journal-meta>
+  <article-meta>
+   <article-id pub-id-type="publisher-id">
+    s41467-024-46947-9
+   </article-id>
+   <article-id pub-id-type="manuscript">
+    46947
+   </article-id>
+   <article-id pub-id-type="doi">
+    10.1038/s41467-024-46947-9
+   </article-id>
+   <article-categories>
+    <subj-group subj-group-type="heading">
+     <subject>
+      Article
+     </subject>
+    </subj-group>
+    <subj-group subj-group-type="SubjectPath">
+     <subject>
+      /631/114/1305
+     </subject>
+    </subj-group>
+    <subj-group subj-group-type="SubjectPath">
+     <subject>
+      /631/114/2397
+     </subject>
+    </subj-group>
+    <subj-group subj-group-type="SubjectPath">
+     <subject>
+      /631/326/325
+     </subject>
+    </subj-group>
+    <subj-group subj-group-type="TechniquePath">
+     <subject>
+      /45
+     </subject>
+    </subj-group>
+    <subj-group subj-group-type="TechniquePath">
+     <subject>
+      /45/23
+     </subject>
+    </subj-group>
+    <subj-group subj-group-type="NatureArticleTypeID">
+     <subject>
+      article
+     </subject>
+    </subj-group>
+   </article-categories>
+   <title-group>
+    <article-title xml:lang="en">
+     Genomic language model predicts protein co-regulation and function
+    </article-title>
+   </title-group>
+   <contrib-group>
+    <contrib contrib-type="author" corresp="yes" id="Au1">
+     <contrib-id contrib-id-type="orcid">
+      http://orcid.org/0000-0003-0554-5598
+     </contrib-id>
+     <name name-style="western">
+      <surname>
+       Hwang
+      </surname>
+      <given-names>
+       Yunha
+      </given-names>
+     </name>
+     <address>
+      <email>
+       yhwang@g.harvard.edu
+      </email>
+     </address>
+     <xref ref-type="aff" rid="Aff1">
+      1
+     </xref>
+     <xref ref-type="corresp" rid="IDs41467024469479_cor1">
+      a
+     </xref>
+    </contrib>
+    <contrib contrib-type="author" id="Au2">
+     <name name-style="western">
+      <surname>
+       Cornman
+      </surname>
+      <given-names>
+       Andre L.
+      </given-names>
+     </name>
+     <xref ref-type="aff" rid="Aff2">
+      2
+     </xref>
+    </contrib>
+    <contrib contrib-type="author" id="Au3">
+     <name name-style="western">
+      <surname>
+       Kellogg
+      </surname>
+      <given-names>
+       Elizabeth H.
+      </given-names>
+     </name>
+     <xref ref-type="aff" rid="Aff3">
+      3
+     </xref>
+     <xref ref-type="aff" rid="Aff5">
+      5
+     </xref>
+     <xref ref-type="fn" rid="pa5">
+      5
+     </xref>
+    </contrib>
+    <contrib contrib-type="author" corresp="yes" id="Au4">
+     <contrib-id contrib-id-type="orcid">
+      http://orcid.org/0000-0003-2774-2744
+     </contrib-id>
+     <name name-style="western">
+      <surname>
+       Ovchinnikov
+      </surname>
+      <given-names>
+       Sergey
+      </given-names>
+     </name>
+     <address>
+      <email>
+       so3@mit.edu
+      </email>
+     </address>
+     <xref ref-type="aff" rid="Aff4">
+      4
+     </xref>
+     <xref ref-type="aff" rid="Aff6">
+      6
+     </xref>
+     <xref ref-type="corresp" rid="IDs41467024469479_cor4">
+      d
+     </xref>
+     <xref ref-type="fn" rid="pa6">
+      6
+     </xref>
+    </contrib>
+    <contrib contrib-type="author" corresp="yes" id="Au5">
+     <contrib-id contrib-id-type="orcid">
+      http://orcid.org/0000-0002-3599-8160
+     </contrib-id>
+     <name name-style="western">
+      <surname>
+       Girguis
+      </surname>
+      <given-names>
+       Peter R.
+      </given-names>
+     </name>
+     <address>
+      <email>
+       pgirguis@oeb.harvard.edu
+      </email>
+     </address>
+     <xref ref-type="aff" rid="Aff1">
+      1
+     </xref>
+     <xref ref-type="corresp" rid="IDs41467024469479_cor5">
+      e
+     </xref>
+    </contrib>
+    <aff id="Aff1">
+     <label>
+      1
+     </label>
+     <institution-wrap>
+      <institution-id institution-id-type="ROR">
+       https://ror.org/03vek6s52
+      </institution-id>
+      <institution-id institution-id-type="GRID">
+       grid.38142.3c
+      </institution-id>
+      <institution-id institution-id-type="ISNI">
+       0000 0004 1936 754X
+      </institution-id>
+      <institution content-type="org-division">
+       Department of Organismic and Evolutionary Biology
+      </institution>
+      <institution content-type="org-name">
+       Harvard University
+      </institution>
+     </institution-wrap>
+     <addr-line content-type="city">
+      Cambridge
+     </addr-line>
+     <addr-line content-type="state">
+      MA
+     </addr-line>
+     <country country="US">
+      USA
+     </country>
+    </aff>
+    <aff id="Aff2">
+     <label>
+      2
+     </label>
+     <institution-wrap>
+      <institution content-type="org-name">
+       Tatta Bio
+      </institution>
+     </institution-wrap>
+     <addr-line content-type="city">
+      Baltimore
+     </addr-line>
+     <addr-line content-type="state">
+      MD
+     </addr-line>
+     <country country="US">
+      USA
+     </country>
+    </aff>
+    <aff id="Aff3">
+     <label>
+      3
+     </label>
+     <institution-wrap>
+      <institution-id institution-id-type="ROR">
+       https://ror.org/05bnh6r87
+      </institution-id>
+      <institution-id institution-id-type="GRID">
+       grid.5386.8
+      </institution-id>
+      <institution-id institution-id-type="ISNI">
+       0000 0004 1936 877X
+      </institution-id>
+      <institution content-type="org-division">
+       Department of Molecular Biology and Genetics
+      </institution>
+      <institution content-type="org-name">
+       Cornell University
+      </institution>
+     </institution-wrap>
+     <addr-line content-type="city">
+      Ithaca
+     </addr-line>
+     <addr-line content-type="state">
+      NY
+     </addr-line>
+     <country country="US">
+      USA
+     </country>
+    </aff>
+    <aff id="Aff4">
+     <label>
+      4
+     </label>
+     <institution-wrap>
+      <institution-id institution-id-type="ROR">
+       https://ror.org/03vek6s52
+      </institution-id>
+      <institution-id institution-id-type="GRID">
+       grid.38142.3c
+      </institution-id>
+      <institution-id institution-id-type="ISNI">
+       0000 0004 1936 754X
+      </institution-id>
+      <institution content-type="org-division">
+       John Harvard Distinguished Science Fellowship Program
+      </institution>
+      <institution content-type="org-name">
+       Harvard University
+      </institution>
+     </institution-wrap>
+     <addr-line content-type="city">
+      Cambridge
+     </addr-line>
+     <addr-line content-type="state">
+      MA
+     </addr-line>
+     <country country="US">
+      USA
+     </country>
+    </aff>
+    <aff id="Aff5">
+     <label>
+      5
+     </label>
+     <institution-wrap>
+      <institution-id institution-id-type="ROR">
+       https://ror.org/02r3e0967
+      </institution-id>
+      <institution-id institution-id-type="GRID">
+       grid.240871.8
+      </institution-id>
+      <institution-id institution-id-type="ISNI">
+       0000 0001 0224 711X
+      </institution-id>
+      <institution content-type="org-division">
+       Department of Structural Biology
+      </institution>
+      <institution content-type="org-name">
+       St. Jude Children’s Research Hospital
+      </institution>
+     </institution-wrap>
+     <addr-line content-type="city">
+      Memphis
+     </addr-line>
+     <addr-line content-type="state">
+      TN
+     </addr-line>
+     <country country="US">
+      USA
+     </country>
+    </aff>
+    <aff id="Aff6">
+     <label>
+      6
+     </label>
+     <institution-wrap>
+      <institution-id institution-id-type="ROR">
+       https://ror.org/042nb2s44
+      </institution-id>
+      <institution-id institution-id-type="GRID">
+       grid.116068.8
+      </institution-id>
+      <institution-id institution-id-type="ISNI">
+       0000 0001 2341 2786
+      </institution-id>
+      <institution content-type="org-division">
+       Department of Biology
+      </institution>
+      <institution content-type="org-name">
+       Massachusetts Institute of Technology
+      </institution>
+     </institution-wrap>
+     <addr-line content-type="city">
+      Cambridge
+     </addr-line>
+     <addr-line content-type="state">
+      MA
+     </addr-line>
+     <country country="US">
+      USA
+     </country>
+    </aff>
+   </contrib-group>
+   <author-notes>
+    <corresp id="IDs41467024469479_cor1">
+     <label>
+      a
+     </label>
+     <email>
+      yhwang@g.harvard.edu
+     </email>
+    </corresp>
+    <corresp id="IDs41467024469479_cor4">
+     <label>
+      d
+     </label>
+     <email>
+      so3@mit.edu
+     </email>
+    </corresp>
+    <corresp id="IDs41467024469479_cor5">
+     <label>
+      e
+     </label>
+     <email>
+      pgirguis@oeb.harvard.edu
+     </email>
+    </corresp>
+    <fn fn-type="present-address" id="pa5">
+     <p>
+      Present address: Department of Structural Biology, St. Jude Children’s Research Hospital, Memphis, TN, USA
+     </p>
+    </fn>
+    <fn fn-type="present-address" id="pa6">
+     <p>
+      Present address: Department of Biology, Massachusetts Institute of Technology, Cambridge, MA, USA
+     </p>
+    </fn>
+   </author-notes>
+   <pub-date date-type="pub" publication-format="electronic">
+    <day>
+     3
+    </day>
+    <month>
+     4
+    </month>
+    <year>
+     2024
+    </year>
+   </pub-date>
+   <pub-date date-type="collection" publication-format="electronic">
+    <month>
+     12
+    </month>
+    <year>
+     2024
+    </year>
+   </pub-date>
+   <volume>
+    15
+   </volume>
+   <issue seq="2880">
+    1
+   </issue>
+   <elocation-id>
+    2880
+   </elocation-id>
+   <history>
+    <date date-type="registration">
+     <day>
+      15
+     </day>
+     <month>
+      3
+     </month>
+     <year>
+      2024
+     </year>
+    </date>
+    <date date-type="received">
+     <day>
+      30
+     </day>
+     <month>
+      5
+     </month>
+     <year>
+      2023
+     </year>
+    </date>
+    <date date-type="accepted">
+     <day>
+      13
+     </day>
+     <month>
+      3
+     </month>
+     <year>
+      2024
+     </year>
+    </date>
+    <date date-type="online">
+     <day>
+      3
+     </day>
+     <month>
+      4
+     </month>
+     <year>
+      2024
+     </year>
+    </date>
+   </history>
+   <permissions>
+    <copyright-statement content-type="compact">
+     © The Author(s) 2024
+    </copyright-statement>
+    <copyright-year>
+     2024
+    </copyright-year>
+    <copyright-holder>
+     The Author(s)
+    </copyright-holder>
+    <license license-type="open-access" xlink:href="http://creativecommons.org/licenses/by/4.0/">
+     <license-p>
+      <bold>
+       Open Access
+      </bold>
+      This article is licensed under a Creative Commons Attribution 4.0 International License, which permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if changes were made. The images or other third party material in this article are included in the article’s Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not included in the article’s Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this licence, visit
+      <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/">
+       http://creativecommons.org/licenses/by/4.0/
+      </ext-link>
+      .
+     </license-p>
+    </license>
+   </permissions>
+   <abstract id="Abs1" xml:lang="en">
+    <title>
+     <bold>
+      Abstract
+     </bold>
+    </title>
+    <p id="Par1">
+     Deciphering the relationship between a gene and its genomic context is fundamental to understanding and engineering biological systems. Machine learning has shown promise in learning latent relationships underlying the sequence-structure-function paradigm from massive protein sequence datasets. However, to date, limited attempts have been made in extending this continuum to include higher order genomic context information. Evolutionary processes dictate the specificity of genomic contexts in which a gene is found across phylogenetic distances, and these emergent genomic patterns can be leveraged to uncover functional relationships between gene products. Here, we train a genomic language model (gLM) on millions of metagenomic scaffolds to learn the latent functional and regulatory relationships between genes. gLM learns contextualized protein embeddings that capture the genomic context as well as the protein sequence itself, and encode biologically meaningful and functionally relevant information (e.g. enzymatic function, taxonomy). Our analysis of the attention patterns demonstrates that gLM is learning co-regulated functional modules (i.e. operons). Our findings illustrate that gLM’s unsupervised deep learning of the metagenomic corpus is an effective and promising approach to encode functional semantics and regulatory syntax of genes in their genomic contexts and uncover complex relationships between genes in a genomic region.
+    </p>
+   </abstract>
+   <abstract abstract-type="ShortSummary" id="Abs2" xml:lang="en">
+    <p id="Par2">
+     A gene’s function is governed by its sequence, structure and context. Here, the authors develop a genomic language model that learns contextualized functional representations from diverse and large-scale metagenomic datasets.
+    </p>
+   </abstract>
+   <kwd-group kwd-group-type="hierarchical" vocab="FoR" vocab-identifier="ANZSRC 2008">
+    <kwd content-type="term" vocab-term-identifier="06">
+     Biological Sciences
+    </kwd>
+    <nested-kwd>
+     <kwd content-type="term" vocab-term-identifier="0604">
+      Genetics
+     </kwd>
+    </nested-kwd>
+   </kwd-group>
+   <funding-group>
+    <award-group>
+     <funding-source>
+      <institution-wrap>
+       <institution>
+        Gordon and Betty Moore Foundation (Gordon E. and Betty I. Moore Foundation)
+       </institution>
+       <institution-id institution-id-type="doi" vocab="open-funder-registry">
+        https://doi.org/10.13039/100000936
+       </institution-id>
+      </institution-wrap>
+     </funding-source>
+     <award-id award-type="FundRef grant">
+      9208
+     </award-id>
+     <principal-award-recipient>
+      <name name-style="western">
+       <surname>
+        Girguis
+       </surname>
+       <given-names>
+        Peter R.
+       </given-names>
+      </name>
+     </principal-award-recipient>
+    </award-group>
+    <award-group>
+     <funding-source>
+      <institution-wrap>
+       <institution>
+        National Science Foundation (NSF)
+       </institution>
+       <institution-id institution-id-type="doi" vocab="open-funder-registry">
+        https://doi.org/10.13039/100000001
+       </institution-id>
+      </institution-wrap>
+     </funding-source>
+     <award-id award-type="FundRef grant">
+      OCE-1635365
+     </award-id>
+     <principal-award-recipient>
+      <name name-style="western">
+       <surname>
+        Girguis
+       </surname>
+       <given-names>
+        Peter R.
+       </given-names>
+      </name>
+     </principal-award-recipient>
+    </award-group>
+    <award-group>
+     <funding-source>
+      <institution-wrap>
+       <institution>
+        National Aeronautics and Space Administration (NASA)
+       </institution>
+       <institution-id institution-id-type="doi" vocab="open-funder-registry">
+        https://doi.org/10.13039/100000104
+       </institution-id>
+      </institution-wrap>
+     </funding-source>
+     <award-id award-type="FundRef grant">
+      80NSSC19K1427
+     </award-id>
+     <principal-award-recipient>
+      <name name-style="western">
+       <surname>
+        Girguis
+       </surname>
+       <given-names>
+        Peter R.
+       </given-names>
+      </name>
+     </principal-award-recipient>
+    </award-group>
+   </funding-group>
+   <custom-meta-group>
+    <custom-meta>
+     <meta-name>
+      publisher-imprint-name
+     </meta-name>
+     <meta-value>
+      Nature Portfolio
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      volume-issue-count
+     </meta-name>
+     <meta-value>
+      1
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      issue-article-count
+     </meta-name>
+     <meta-value>
+      2880
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      issue-toc-levels
+     </meta-name>
+     <meta-value>
+      0
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      issue-pricelist-year
+     </meta-name>
+     <meta-value>
+      2024
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      issue-copyright-holder
+     </meta-name>
+     <meta-value>
+      Springer Nature Limited
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      issue-copyright-year
+     </meta-name>
+     <meta-value>
+      2024
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      article-contains-esm
+     </meta-name>
+     <meta-value>
+      Yes
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      article-numbering-style
+     </meta-name>
+     <meta-value>
+      Unnumbered
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      article-registration-date-year
+     </meta-name>
+     <meta-value>
+      2024
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      article-registration-date-month
+     </meta-name>
+     <meta-value>
+      3
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      article-registration-date-day
+     </meta-name>
+     <meta-value>
+      15
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      article-toc-levels
+     </meta-name>
+     <meta-value>
+      0
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      toc-levels
+     </meta-name>
+     <meta-value>
+      0
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      volume-type
+     </meta-name>
+     <meta-value>
+      Regular
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      journal-product
+     </meta-name>
+     <meta-value>
+      NonStandardArchiveJournal
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      numbering-style
+     </meta-name>
+     <meta-value>
+      Unnumbered
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      article-grants-type
+     </meta-name>
+     <meta-value>
+      OpenChoice
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      metadata-grant
+     </meta-name>
+     <meta-value>
+      OpenAccess
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      abstract-grant
+     </meta-name>
+     <meta-value>
+      OpenAccess
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      bodypdf-grant
+     </meta-name>
+     <meta-value>
+      OpenAccess
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      bodyhtml-grant
+     </meta-name>
+     <meta-value>
+      OpenAccess
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      bibliography-grant
+     </meta-name>
+     <meta-value>
+      OpenAccess
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      esm-grant
+     </meta-name>
+     <meta-value>
+      OpenAccess
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      online-first
+     </meta-name>
+     <meta-value>
+      false
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      pdf-file-reference
+     </meta-name>
+     <meta-value>
+      BodyRef/PDF/41467_2024_Article_46947.pdf
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      pdf-type
+     </meta-name>
+     <meta-value>
+      Typeset
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      target-type
+     </meta-name>
+     <meta-value>
+      OnlinePDF
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      issue-type
+     </meta-name>
+     <meta-value>
+      Regular
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      article-type
+     </meta-name>
+     <meta-value>
+      OriginalPaper
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      journal-subject-primary
+     </meta-name>
+     <meta-value>
+      Science, Humanities and Social Sciences, multidisciplinary
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      journal-subject-secondary
+     </meta-name>
+     <meta-value>
+      Science, Humanities and Social Sciences, multidisciplinary
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      journal-subject-secondary
+     </meta-name>
+     <meta-value>
+      Science, multidisciplinary
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      journal-subject-collection
+     </meta-name>
+     <meta-value>
+      Science (multidisciplinary)
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      open-access
+     </meta-name>
+     <meta-value>
+      true
+     </meta-value>
+    </custom-meta>
+   </custom-meta-group>
+  </article-meta>
+ </front>
+ <body>
+  <sec id="Sec1" sec-type="introduction">
+   <title>
+    Introduction
+   </title>
+   <p id="Par3">
+    Evolutionary processes result in the linkage between protein sequences, structure and function. The resulting sequence-structure-function paradigm
+    <sup>
+     <xref ref-type="bibr" rid="CR1">
+      1
+     </xref>
+    </sup>
+    has long provided the basis for interpreting vast amounts of genomic data. Recent advances in neural network (NN)-based protein structure prediction methods
+    <sup>
+     <xref ref-type="bibr" rid="CR2">
+      2
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR3">
+      3
+     </xref>
+    </sup>
+    , and more recently protein language models (pLMs)
+    <sup>
+     <xref ref-type="bibr" rid="CR4">
+      4
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR5">
+      5
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR6">
+      6
+     </xref>
+     –
+     <xref ref-type="bibr" rid="CR7">
+      7
+     </xref>
+    </sup>
+    suggest that data-centric approaches in unsupervised learning can represent these complex relationships shaped by evolution. To date, these models largely consider each protein as an independent and standalone entity. However, proteins are encoded in genomes alongside other proteins, and the specific genomic context that a protein occurs in is determined by evolutionary processes where each gene gain, loss, duplication and transposition event is subject to selection and drift
+    <sup>
+     <xref ref-type="bibr" rid="CR8">
+      8
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR9">
+      9
+     </xref>
+     –
+     <xref ref-type="bibr" rid="CR10">
+      10
+     </xref>
+    </sup>
+    . These processes are particularly pronounced in bacterial and archaeal genomes where frequent horizontal gene transfers (HGT) shape genomic organization and diversity
+    <sup>
+     <xref ref-type="bibr" rid="CR11">
+      11
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR12">
+      12
+     </xref>
+    </sup>
+    . Thus, there exists an inherent evolutionary linkage between genes, their genomic context, and gene function
+    <sup>
+     <xref ref-type="bibr" rid="CR13">
+      13
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR14">
+      14
+     </xref>
+     –
+     <xref ref-type="bibr" rid="CR15">
+      15
+     </xref>
+    </sup>
+    , which can be explored by characterizing patterns that emerge from large metagenomic datasets.
+   </p>
+   <p id="Par4">
+    Recent efforts to model genomic information have shown predictive power of genomic context in gene function
+    <sup>
+     <xref ref-type="bibr" rid="CR16">
+      16
+     </xref>
+    </sup>
+    and metabolic trait evolution
+    <sup>
+     <xref ref-type="bibr" rid="CR17">
+      17
+     </xref>
+    </sup>
+    in bacterial and archaeal genomes. However, these methods represent genes as categorical entities, despite these genes existing in continuous space where multidimensional properties such as phylogeny, structure, and function are abstracted in their sequences. On the other end of the spectrum of representations, there have been efforts to use unsupervised learning on nucleotide sequences to predict gene expression level
+    <sup>
+     <xref ref-type="bibr" rid="CR18">
+      18
+     </xref>
+    </sup>
+    and detect regulatory motifs
+    <sup>
+     <xref ref-type="bibr" rid="CR19">
+      19
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR20">
+      20
+     </xref>
+     –
+     <xref ref-type="bibr" rid="CR21">
+      21
+     </xref>
+    </sup>
+    . These models are largely trained and benchmarked on the human genome and focus on predicting gene regulation rather than function. Most recent efforts to leverage diverse microbial sequences to model genome-scale information include GenSLMs
+    <sup>
+     <xref ref-type="bibr" rid="CR22">
+      22
+     </xref>
+    </sup>
+    , which is pretrained on codon-level representations of diverse bacterial and viral gene sequences and later fine-tuned on SARS-CoV-2 genomes. In order to learn generalizable gene-to-gene-context interactions across biology, a model needs to be pretrained on 1) diverse lineages of organisms, 2) rich and continuous representation of genes and 3) longer segments of genomes with multiple genes. To our knowledge, there has been no method that combines all three aspects of pretraining to learn genomic information across diverse lineages of biology (see summary of previous studies in Supplementary Table
+    <xref ref-type="supplementary-material" rid="MOESM1">
+     1
+    </xref>
+    ).
+   </p>
+   <p id="Par5">
+    In order to close the gap between genomic-context and gene sequence-structure-function, we develop a genomic language model (gLM) that learns contextual representations of genes. gLM leverages pLM embeddings as input, which encode relational properties
+    <sup>
+     <xref ref-type="bibr" rid="CR4">
+      4
+     </xref>
+    </sup>
+    and structure information
+    <sup>
+     <xref ref-type="bibr" rid="CR23">
+      23
+     </xref>
+    </sup>
+    of the gene products. Our model is based on the transformer
+    <sup>
+     <xref ref-type="bibr" rid="CR24">
+      24
+     </xref>
+    </sup>
+    architecture and is trained using millions of unlabelled metagenomic sequences via the masked language modeling
+    <sup>
+     <xref ref-type="bibr" rid="CR25">
+      25
+     </xref>
+    </sup>
+    objective, with the hypothesis that its ability to attend to different parts of a multi-gene sequence will result in the learning of gene functional semantics and regulatory syntax (e.g. operons). Here, we report evidence of the learned contextualized protein embeddings and attention patterns capturing biologically relevant information. We demonstrate gLM’s potential for predicting gene function and co-regulation, and propose future applications and research directions, including transfer learning capabilities of gLM.
+   </p>
+  </sec>
+  <sec id="Sec2" sec-type="results">
+   <title>
+    Results
+   </title>
+   <sec id="Sec3">
+    <title>
+     Masked language modeling of genomic sequences
+    </title>
+    <p id="Par6">
+     Language models, such as Bidirectional Encoder Representations from Transformers (BERT
+     <sup>
+      <xref ref-type="bibr" rid="CR25">
+       25
+      </xref>
+     </sup>
+     ), learn the semantics and syntax of natural languages using unsupervised training of a large corpus. In masked language modeling, the model is tasked with reconstructing corrupted input text
+     <sup>
+      <xref ref-type="bibr" rid="CR25">
+       25
+      </xref>
+     </sup>
+     , where some fraction of the words are masked. Significant advances in language modeling performance was achieved by adopting the transformer
+     <sup>
+      <xref ref-type="bibr" rid="CR24">
+       24
+      </xref>
+     </sup>
+     neural network architecture, where each token (i.e. word) is able to attend to other tokens. This is in contrast to Long-Short-Term-Memory networks (LSTMs)
+     <sup>
+      <xref ref-type="bibr" rid="CR26">
+       26
+      </xref>
+     </sup>
+     that sequentially processes tokens. To model genomic sequences, we trained a 19-layer transformer model (Fig.
+     <xref ref-type="fig" rid="Fig1">
+      1A
+     </xref>
+     ; for a detailed figure see Supplementary Fig.
+     <xref ref-type="supplementary-material" rid="MOESM1">
+      1
+     </xref>
+     ) on seven million metagenomic contig fragments consisting of 15 to 30 genes from the MGnify
+     <sup>
+      <xref ref-type="bibr" rid="CR27">
+       27
+      </xref>
+     </sup>
+     database. Each gene in a genomic sequence is represented by a 1280 feature vector (context-free protein embeddings) generated by using ESM2 pLM
+     <sup>
+      <xref ref-type="bibr" rid="CR23">
+       23
+      </xref>
+     </sup>
+     , concatenated with an orientation feature (forward or backward). For each sequence, 15% of genes are randomly masked, and the model learns to predict the masked label using the genomic context. Based on the insight that more than one gene can legitimately be found in a particular genomic context, we allow the model to make four different predictions and also predict their associated probabilities (Supplementary Fig.
+     <xref ref-type="supplementary-material" rid="MOESM1">
+      1
+     </xref>
+     ). Thus, instead of predicting their mean value, the model can approximate the underlying distribution of multiple genes that can occupy a genomic niche. We assess the model’s performance using a pseudo-accuracy metric, where a prediction is considered correct if it is closest to the masked protein in euclidean distance compared to the other proteins encoded in the sequence (see Methods). We validate our model’s performance on the
+     <italic>
+      Escherichia coli
+     </italic>
+     K-12 genome
+     <sup>
+      <xref ref-type="bibr" rid="CR28">
+       28
+      </xref>
+     </sup>
+     by excluding from training 5.1% of MGnify subcontigs in which more than half of the proteins are similar (&gt;70% sequence identity) to
+     <italic>
+      E. coli
+     </italic>
+     K-12 proteins. It is important to note that our goal was not to remove all
+     <italic>
+      E. coli
+     </italic>
+     K-12 homologs from the training, which would have removed a vast majority of training data as many essential genes are shared across organisms. Instead, our goal was to remove as many
+     <italic>
+      E.coli
+     </italic>
+     K-12-like genomic contexts (subcontigs) from training, which is more appropriate for the training objective. gLM achieves 71.9% in validation pseudo-accuracy and 59.2% in validation absolute accuracy (Supplementary Fig.
+     <xref ref-type="supplementary-material" rid="MOESM1">
+      2
+     </xref>
+     ). Notably, 53.0% of the predictions made during validation are with high confidence (with prediction likelihood &gt; 0.75), and 75.8% of the high confidence predictions are correct, indicating gLM’s ability to learn a confidence metric that corresponds to increased accuracy. We baseline our performance with a bidirectional LSTM model trained using the same language modeling task on the same training dataset, where validation performance plateaus at 28% pseudo-accuracy and 15% absolute accuracy (Supplementary Fig.
+     <xref ref-type="supplementary-material" rid="MOESM1">
+      2
+     </xref>
+     and Supplementary Table
+     <xref ref-type="supplementary-material" rid="MOESM1">
+      2
+     </xref>
+     , note that biLSTM is smaller because it failed to converge when scaling the number of layers). We ablate the use of pLM representations as input to gLM by replacing them with one-hot amino acid representations (Supplementary Table
+     <xref ref-type="supplementary-material" rid="MOESM1">
+      3
+     </xref>
+     ) and report performance equivalent to random predictions (3% pseudo-accuracy and 0.02% absolute accuracy).
+     <fig id="Fig1" position="float">
+      <label>
+       Fig. 1
+      </label>
+      <caption xml:lang="en">
+       <title>
+        gLM training and inference schematics.
+       </title>
+       <p>
+        <bold>
+         A
+        </bold>
+        For training, contigs (contiguous genomic sequences) containing up to 30 genes are first translated into proteins, which are subsequently embedded using a protein language model (pLM) encoder (ESM2). Masked inputs are generated by random masking at 15% probability and genomic language model (gLM; a transformer encoder) is trained to make four predictions for each masked protein, with associated likelihoods. Training loss is calculated on both the prediction and likelihoods.
+        <bold>
+         B
+        </bold>
+        At inference time, inputs are generated from a contig using ESM2 output. Contextualized protein embeddings (hidden layers of gLM) and attention patterns are used for various downstream tasks. See Supplementary Fig.
+        <xref ref-type="supplementary-material" rid="MOESM1">
+         1
+        </xref>
+        for detailed schematics. Source data are provided as a Source Data file.
+       </p>
+      </caption>
+      <graphic mime-subtype="PNG" specific-use="web" xlink:href="MediaObjects/41467_2024_46947_Fig1_HTML.png"/>
+     </fig>
+    </p>
+   </sec>
+   <sec id="Sec4">
+    <title>
+     Contextualized gene embeddings capture gene semantics
+    </title>
+    <p id="Par7">
+     The mapping from gene to gene-function in organisms is not one-to-one. Similar to words in natural language, a gene can confer different functions
+     <sup>
+      <xref ref-type="bibr" rid="CR29">
+       29
+      </xref>
+     </sup>
+     depending on its context
+     <sup>
+      <xref ref-type="bibr" rid="CR30">
+       30
+      </xref>
+     </sup>
+     , and many genes confer similar functions (i.e. convergent evolution
+     <sup>
+      <xref ref-type="bibr" rid="CR31">
+       31
+      </xref>
+     </sup>
+     , remote homology
+     <sup>
+      <xref ref-type="bibr" rid="CR32">
+       32
+      </xref>
+     </sup>
+     ). We used gLM to generate 1280-feature contextualized protein embeddings at inference time (Fig.
+     <xref ref-type="fig" rid="Fig1">
+      1B
+     </xref>
+     ), and we examined the “semantic” information captured in these embeddings. Analogous to how words are likely to have different meanings depending on the type of text in which they are found (Fig.
+     <xref ref-type="fig" rid="Fig2">
+      2A
+     </xref>
+     ), we find that contextualized protein embeddings of genes that appear across multiple environments (biomes) tend to cluster based on biome types. We identified 31 proteins in our training database (MGYPs) that occurred more than 100 times and distributed with at least 20 occurrences in each “Host-associated”, “Environmental”, and “Engineered” biomes according to MGnify’s designation. We find that gLM’s contextualized protein embeddings capture biome information for the majority (
+     <italic>
+      n
+     </italic>
+     = 21) of these multi-biome MGYPs. For instance, a gene encoding a protein annotated “translation initiation factor IF-1” occurs multiple times across biomes. While the input to gLM (context-free protein embedding; ESM2 representation) is identical across all occurrences, gLM’s output (contextualized protein embeddings) cluster with biome types (Fig.
+     <xref ref-type="fig" rid="Fig2">
+      2B
+     </xref>
+     ; silhouette score = 0.17, see the other 30 multi-biome MGYP visualizations in Supplementary Fig.
+     <xref ref-type="supplementary-material" rid="MOESM1">
+      3
+     </xref>
+     ). This suggests that the diverse genomic contexts that a gene occupies are specific for different biomes, implying biome-specific gene semantics.
+     <fig id="Fig2" position="float">
+      <label>
+       Fig. 2
+      </label>
+      <caption xml:lang="en">
+       <title>
+        Contextualized protein embedding analysis and comparison with concepts in natural language modeling.
+       </title>
+       <p>
+        <bold>
+         A
+        </bold>
+        A word upon contextualization can be mapped to embedding space. For many words, the semantic meaning varies in different types of literature, and therefore their contextualized embeddings cluster with source text type. Figure was created for qualitative visualization.
+        <bold>
+         B
+        </bold>
+        The input protein embedding (output of ESM2 and context-free protein embedding) is the same across all occurrences of the protein in the database. Upon contextualization with gLM, contextualized protein embeddings of the same protein (last hidden layer of gLM at inference time) cluster with biome type, analogous to the source text type in natural language (
+        <bold>
+         A
+        </bold>
+        ). Contextualization of 30 other multi-biome MGYPs can be found in Supplementary Fig.
+        <xref ref-type="supplementary-material" rid="MOESM1">
+         3
+        </xref>
+        .
+        <bold>
+         C
+        </bold>
+        A word’s meaning upon contextualization varies across a continuous spectrum and can be ambiguous even with contextualization (e.g. double entendre).
+        <bold>
+         D
+        </bold>
+        Reaction 1, carried out by the MCR complex, either backward (Methanotrophy) or forward (Methanogenesis).
+        <bold>
+         E
+        </bold>
+        Principal Component Analysis (PCA) of context-free protein embeddings of McrA sequences in genomes (total explained variances = 0.56), colored by metabolic classification of the organism (ANME, methanogen) based on previous studies and labeled by class-level taxonomy.
+        <bold>
+         F
+        </bold>
+        PCA of contextualized McrA embeddings (total explained variance = 0.68), where gLM embeddings cluster with the direction of Reaction 1 that the MCR complex is likely to carry out.
+        <bold>
+         G
+        </bold>
+        Geometric relationship between contextualized protein embeddings based on the semantic closeness of words.
+        <bold>
+         H
+        </bold>
+        Input (context-free) protein embeddings of Cas1, Cas2, lipopolysaccharide synthases (LPS) and polyketide synthases (PKS) showing clustering based on structural and sequence similarity.
+        <bold>
+         I
+        </bold>
+        Clustering of contextualized protein embeddings where phage defense proteins cluster (Cas1 and Cas2) and biosynthetic gene products cluster (lipopolysaccharide synthases [LPS] and polyketide synthases [PKS]). Source data are provided as a Source Data file.
+       </p>
+      </caption>
+      <graphic mime-subtype="PNG" specific-use="web" xlink:href="MediaObjects/41467_2024_46947_Fig2_HTML.png"/>
+     </fig>
+    </p>
+    <p id="Par8">
+     We explored an ecologically important example of genomic “polysemy” (multiple meanings conferred by the same word; Fig.
+     <xref ref-type="fig" rid="Fig2">
+      2C
+     </xref>
+     ) of methyl-coenzyme M reductase (MCR) complex. The MCR complex is able to carry out a reversible reaction (Reaction 1 in Fig.
+     <xref ref-type="fig" rid="Fig2">
+      2D
+     </xref>
+     ), whereby the forward reaction results in the production of methane (methanogenesis) while the reverse results in methane oxidation (methanotrophy). We first examine the McrA (methyl-coenzyme M reductase subunit alpha) protein in diverse lineages of ANME (ANaerobic MEthane oxidizing) and methanogenic archaeal genomes. These archaea are polyphyletic and occupy specific ecological niches. Notably, similar to how a semantic meaning of a word exists on a spectrum and a word can have multiple semantically appropriate meanings in a context (Fig.
+     <xref ref-type="fig" rid="Fig2">
+      2C
+     </xref>
+     <bold>
+      )
+     </bold>
+     , the MCR complex can confer different functions depending on the context. Previous reports demonstrate the capacities of ANME (ANME-2 in particular) carrying out methanogenesis
+     <sup>
+      <xref ref-type="bibr" rid="CR33">
+       33
+      </xref>
+     </sup>
+     and methanogens conducting methane oxidation in specific growth conditions
+     <sup>
+      <xref ref-type="bibr" rid="CR34">
+       34
+      </xref>
+     </sup>
+     . The context-free ESM2 embedding of these proteins (Fig.
+     <xref ref-type="fig" rid="Fig2">
+      2E
+     </xref>
+     ) shows little organization, with little separation between ANME-1 and ANME-2 McrA proteins. However, contextualized gLM embeddings (Fig.
+     <xref ref-type="fig" rid="Fig2">
+      2F
+     </xref>
+     ) of the McrA proteins show distinct organization where ANME-1 McrA proteins form a tight cluster, while ANME-2 McrA proteins form a cluster with methanogens (silhouette score after contextualization: 0.24; before contextualization: 0.027). This organization reflects the phylogenetic relationships between the organisms that McrAs are found in, as well as the distinct operonic and structural divergence of MCR complexes in ANME-1 compared to those found in ANME-2 and methanogens
+     <sup>
+      <xref ref-type="bibr" rid="CR35">
+       35
+      </xref>
+     </sup>
+     . As proposed by Shao et al.
+     <sup>
+      <xref ref-type="bibr" rid="CR35">
+       35
+      </xref>
+     </sup>
+     ., the preferred directionality in Reaction 1 (Fig.
+     <xref ref-type="fig" rid="Fig2">
+      2D
+     </xref>
+     ) in ANME-2 and some methanogens may be more dependent on thermodynamics.
+    </p>
+    <p id="Par9">
+     We also demonstrate that contextualized gLM embeddings are more suitable for determining the functional relationship between gene classes. Analogous to how the words “dog” and “cat” are closer in meaning relative to “dog” and “train” (Fig.
+     <xref ref-type="fig" rid="Fig2">
+      2G
+     </xref>
+     ), we see a pattern where Cas1- and Cas2-encoding genes appear diffuse in multiple subclusters in context-free protein embedding space (Fig.
+     <xref ref-type="fig" rid="Fig2">
+      2H
+     </xref>
+     ) cluster in contextualized embedding space (Fig.
+     <xref ref-type="fig" rid="Fig2">
+      2I
+     </xref>
+     ). This reflects their similarity in function (e.g. phage defense). This is also demonstrated in biosynthetic genes, where genes encoding lipopolysaccharide synthase (LPS) and polyketide synthase (PKS) cluster closer together in contextualized embedding space distinct from the Cas proteins (Fig.
+     <xref ref-type="fig" rid="Fig2">
+      2I
+     </xref>
+     ). We quantitate this pattern with a higher silhouette score measuring phage defense and biosynthetic gene separation (gLM representation: 0.123 ± 0.021, pLM representation: 0.085 ± 0.007; paired t-test, t-statistic: 5.30, two-sided,
+     <italic>
+      p
+     </italic>
+     value = 0.0005,
+     <italic>
+      n
+     </italic>
+     = 10). Contextualized protein embeddings are therefore able to capture relational properties akin to semantic information
+     <sup>
+      <xref ref-type="bibr" rid="CR36">
+       36
+      </xref>
+     </sup>
+     , where genes encoding proteins that are more similar in their function are found in similar genomic contexts.
+    </p>
+    <p id="Par10">
+     In order to quantify the information gain as a result of training a transformer on genomic contexts, we compare clustering results in 2B, F, and I with clustering conducted on (sub)contig-averaged pLM embeddings (Supplementary Fig.
+     <xref ref-type="supplementary-material" rid="MOESM1">
+      4
+     </xref>
+     ). By mean-pooling pLM embeddings across a given subcontig, we can summarize the context information as a naive baseline. We report a most consistent clustering (higher silhouette scores) of gLM embeddings compared to contig-averaged pLM for all three analyses (see Supplementary Fig.
+     <xref ref-type="supplementary-material" rid="MOESM1">
+      4
+     </xref>
+     figure captions for values). We demonstrate that the gLM transformer model learns representations that correlate with biological function, which are not captured by the naive baseline.
+    </p>
+   </sec>
+   <sec id="Sec5">
+    <title>
+     Characterizing the unknown
+    </title>
+    <p id="Par11">
+     Metagenomic sequences feature many genes with unknown or generic functions, and some are so divergent that they do not contain sufficient sequence similarity to the annotated fraction of the database
+     <sup>
+      <xref ref-type="bibr" rid="CR37">
+       37
+      </xref>
+     </sup>
+     . In our dataset, of the 30.8 M protein sequences, 19.8% could not be associated with any known annotation (see Methods), and 27.5% could not be associated with any known Pfam domains using a recent deep learning approach (ProtENN
+     <sup>
+      <xref ref-type="bibr" rid="CR38">
+       38
+      </xref>
+     </sup>
+     ). Understanding the functional role of these proteins in their organismal and environmental contexts remains a major challenge because most of the organisms that house such proteins are difficult to culture and laboratory validation is often low-throughput. In microbial genomes, proteins conferring similar functions are found in similar genomic contexts due to selective pressures bestowed by functional relationships (e.g. protein-protein interactions, co-regulations) between genes. Based on this observation, we posited that contextualization would provide richer information that pushes the distribution of unannotated genes closer to the distribution of annotated genes. We compared the distributions of unannotated and annotated fractions of proteins in our dataset using context-free pLM embeddings and contextualized gLM embeddings. We found a statistically significant lower divergence between distributions of unannotated and annotated genes in gLM embeddings compared to pLM embeddings (paired t-test of Kullback-Leibler divergences, t-test statistic = 7.61, two-sided, p-value &lt; 1e-4,
+     <italic>
+      n
+     </italic>
+     = 10; see Methods for sampling and metric calculation). This suggests a greater potential for using gLM embeddings to transfer validated knowledge in cultivable and well-studied strains (e.g.
+     <italic>
+      E. coli
+     </italic>
+     K-12) to the vastly uncultivated metagenomic sequence space. Genomic context, along with molecular structure and phylogeny, appear to be important information to abstract in order to effectively represent sequences such that we can uncover hidden associations between the known and the unknown fractions of biology.
+    </p>
+   </sec>
+   <sec id="Sec6">
+    <title>
+     Contextualization improves enzyme function prediction
+    </title>
+    <p id="Par12">
+     To test the hypothesis that the genomic context of proteins can be used to aid function prediction, we evaluated how contextualization can improve the expressiveness of protein representations for enzyme function prediction. First, we generated a custom MGYP-EC dataset where the train and test data were split at 30% sequence identity for each EC class (see Methods). Second, we apply a linear probe (LP) to compare the expressiveness of representations at each gLM layer, with and without masking the queried protein (Supplementary Fig.
+     <xref ref-type="supplementary-material" rid="MOESM1">
+      5
+     </xref>
+     ). By masking the queried protein, we can assess gLM’s ability to learn functional information of a given protein, only from its genomic context, without the propagation of information from the protein’s pLM embeddings. We observed that a large fraction of contextual information pertaining to enzymatic function is learned in the first six layers of gLM. We also demonstrate that context information alone can be predictive of protein function, reaching up to 24.4 ± 0.8% accuracy. In contrast, without masking, gLM can incorporate information present in the context with the original pLM information for each queried protein. We observed an increase in expressivity of gLM embeddings also in the shallower layers, with accuracy reaching up to 51.6 ± 0.5% in the first hidden layer. This marks a 4.6 ± 0.5% increase from context-free pLM prediction accuracy (Fig.
+     <xref ref-type="fig" rid="Fig3">
+      3A
+     </xref>
+     ) and 5.5 ± 1.0% increase in mean average precision (Fig.
+     <xref ref-type="fig" rid="Fig3">
+      3C
+     </xref>
+     ) Thus, we demonstrate that information that gLM learns from the context is orthogonal to information captured in pLM embedding. We also observed diminishing expressivity in enzyme function information with deeper layers of gLM; this is consistent with previous examinations of LLMs, where deeper layers are specialized to the pretraining task (masked token prediction), and is consistent with previous examinations of LLMs, where the best-performing layer depends on the specific downstream tasks
+     <sup>
+      <xref ref-type="bibr" rid="CR39">
+       39
+      </xref>
+     </sup>
+     . Finally, to further examine the expressiveness of these representations, we compared per-class F1 score gains (Fig.
+     <xref ref-type="fig" rid="Fig3">
+      3B
+     </xref>
+     ). We observe statistically significant differences in F1 scores (t-test, two-sided, Benjamini/Hochberg corrected
+     <italic>
+      p
+     </italic>
+     value &lt; 0.05,
+     <italic>
+      n
+     </italic>
+     = 5) between the two models in 36 out of 73 EC classes with more than ten samples in the test set. Majority (27 out of 36) of the statistical differences resulted in improved F1 score in LP trained on gLM representations.
+     <fig id="Fig3" position="float">
+      <label>
+       Fig. 3
+      </label>
+      <caption xml:lang="en">
+       <title>
+        Contextualization of gene function.
+       </title>
+       <p>
+        <bold>
+         A
+        </bold>
+        Linear probe enzyme commission (EC) number classification accuracy for pLM (ESM2) representations and gLM (1st hidden layer) representations. Data are presented as mean values +/- standard deviation over five technical replicates.
+        <bold>
+         B
+        </bold>
+        F1-score comparisons of statistically significant (t-test, two-sided, Benjamini/Hochberg corrected
+        <italic>
+         p
+        </italic>
+        value &lt; 0.05, technical replicates = 5) differences in performance of pLM- and gLM-based EC number linear probes. EC classes are ordered with the largest gain with contextualization on the left to the largest loss with contextualization on the right. Data are presented as mean values +/- standard deviation. Adjusted p-value (with two significant figures) for each class is specified above the bars.
+        <bold>
+         C
+        </bold>
+        Precision-Recall curves of pLM- and gLM-based EC number linear probes.
+        <bold>
+         D
+        </bold>
+        Histogram of variance (# bins = 100) calculated using contextualized embeddings (gLM; orange) and contig-averaged pLM (blue) embeddings of MGYPs that occur at least 100 times in the database. Histograms for unannotated and annotated fraction of the MGYPs are plotted separately and bars are not stacked. Annotated examples in the long right tail include phage proteins and transposases, reflecting their ability to self-mobilize (see annotations of top tens most variant genes in Supplementary Table
+        <xref ref-type="supplementary-material" rid="MOESM1">
+         4
+        </xref>
+        ). Source data are provided as a Source Data file.
+       </p>
+      </caption>
+      <graphic mime-subtype="PNG" specific-use="web" xlink:href="MediaObjects/41467_2024_46947_Fig3_HTML.png"/>
+     </fig>
+    </p>
+   </sec>
+   <sec id="Sec7">
+    <title>
+     Horizontal transfer frequency corresponds to genomic context embedding variance
+    </title>
+    <p id="Par13">
+     A key process that shapes microbial genome organization and evolution is horizontal gene transfer (HGT). The taxonomic range in which genes are distributed across the tree of life depends on their function and the selective advantage they incur in different environments. Relatively little is known about the specificity in the genomic region into which a gene gets transferred across phylogenetic distances. We examined the variance of gLM embeddings for proteins that occur at least one hundred times in the database. Variance of gLM-learned genomic contexts are calculated by taking a random sample of 100 occurrences and then calculating the mean pairwise distances between the hundred gLM embeddings. We conduct such independent random sampling and distance calculation ten times per gene and then calculate the mean value. As a baseline, we calculate variance of subcontig-averaged pLM embeddings using the same sampling method, to compare the information learned from training gLM. Our results show that gLM-learned genomic context variances have a longer right-hand tail (kurtosis = 1.02, skew = 1.08) compared to the contig-averaged pLM baseline that is more peaked (kurtosis = 2.2, skew = 1.05) (Fig.
+     <xref ref-type="fig" rid="Fig3">
+      3D
+     </xref>
+     ). Notably, the most context-variant genes in the right tail of gLM-learned context variance distribution (orange) included phage genes and transposases, reflecting their ability to self-mobilize. Interestingly, we did not find any phage genes in the right-most tail of contig-averaged pLM embedding variance distribution (blue), although we did find genes involved in transposition (Supplementary Table
+     <xref ref-type="supplementary-material" rid="MOESM1">
+      4
+     </xref>
+     ). gLM-learned genomic context variances can be used as a proxy for horizontal transfer frequencies and can be used to compare the fitness effects of the genomic context on the evolutionary trajectory (e.g. gene flow) of genes, as well as to identify undercharacterized and functional transposable elements.
+    </p>
+   </sec>
+   <sec id="Sec8">
+    <title>
+     Transformer’s attention captures operons
+    </title>
+    <p id="Par14">
+     The transformer attention mechanism
+     <sup>
+      <xref ref-type="bibr" rid="CR24">
+       24
+      </xref>
+     </sup>
+     models pairwise interaction between different tokens in the input sequence. Previous examinations of the attention patterns of transformer models in natural language processing (NLP)
+     <sup>
+      <xref ref-type="bibr" rid="CR39">
+       39
+      </xref>
+     </sup>
+     have suggested that different heads appear to specialize in syntactic functions. Subsequently, different attention heads in pLMs
+     <sup>
+      <xref ref-type="bibr" rid="CR40">
+       40
+      </xref>
+     </sup>
+     have been shown to correlate to specific structural elements and functional sites in a protein. For our gLM, we hypothesized that specific attention heads focus on learning operons, a “syntactic” feature pronounced in microbial genomes where multiple genes of related function are expressed as single polycistronic transcripts. Operons are prevalent in bacterial, archaeal and their viral genomes, while rare in eukaryotic genomes. We used the
+     <italic>
+      E.coli
+     </italic>
+     K-12 operon database
+     <sup>
+      <xref ref-type="bibr" rid="CR41">
+       41
+      </xref>
+     </sup>
+     consisting of 817 operons for validation. gLM contains 190 attention heads across 19 layers. We found that heads in shallower layers correlated more with operons (Fig.
+     <xref ref-type="fig" rid="Fig4">
+      4A
+     </xref>
+     , Supplementary Fig.
+     <xref ref-type="supplementary-material" rid="MOESM1">
+      6
+     </xref>
+     , with raw attention scores in the 7th head of the 2nd layer [L2-H7] linearly correlating with operons with 0.44 correlation coefficient (Pearson’s rho, Bonferroni adjusted
+     <italic>
+      p
+     </italic>
+     value &lt; 1E-5) (Fig.
+     <xref ref-type="fig" rid="Fig4">
+      4B
+     </xref>
+     ). We further trained a logistic regression classifier (operon predictor) using all attention patterns across all heads. Our classifier predicts the presence of an operonic relationship between a pair of neighboring proteins in a sequence with high precision (mean average precision = 0.775 ± 0.028, five-fold cross-validation) (Fig.
+     <xref ref-type="fig" rid="Fig4">
+      4C
+     </xref>
+     ). We baseline this performance by training an operon predictor on the one-hot amino acid representation-based gLM ablation (mean average precision = 0.426 ± 0.015, five-fold cross-validation; Supplementary Table
+     <xref ref-type="supplementary-material" rid="MOESM1">
+      3
+     </xref>
+     ), that learns from the orientation and co-occurrence information but cannot fully leverage rich representation of genes.
+     <fig id="Fig4" position="float">
+      <label>
+       Fig. 4
+      </label>
+      <caption xml:lang="en">
+       <title>
+        Attention analysis.
+       </title>
+       <p>
+        <bold>
+         A
+        </bold>
+        Correlation coefficients (Pearson’s rho) between attention heads across layers and operons. Darker color corresponds to stronger correlation with previously identified operons. Attention patterns of the second layer-seventh head [L2-H7] is most strongly correlated with the operons.
+        <bold>
+         B
+        </bold>
+        Three random examples of contigs and predicted operonic relationship between neighboring proteins. Proteins are listed in the order they are encoded in the contig. Ground truth
+        <italic>
+         E.coli
+        </italic>
+        K-12 operons (top row), raw attention scores in the attention head [L2-H7] most correlated with operons (middle row) and logistic regression prediction using all attention heads (last row) where false positive predictions (or possibly misannotated ground truths in the case of flagellar proteins in the first example) are marked in red.
+        <bold>
+         C
+        </bold>
+        Five-fold cross-validation precision-recall curves of logistic regression trained using all operons and attention heads.
+        <bold>
+         D
+        </bold>
+        AAA+ regulator associations characterized using attention-based prediction of operons (
+        <bold>
+         Extended Fig. 11A
+        </bold>
+        ) corresponding to labeled examples in panels
+        <bold>
+         E
+        </bold>
+        and
+        <bold>
+         F
+        </bold>
+        .
+        <bold>
+         E
+        </bold>
+        ESM2 generated input protein embeddings of AAA+ regulator proteins that are structural homologs to TnsC (grey and red; using Foldseek
+        <sup>
+         <xref ref-type="bibr" rid="CR60">
+          60
+         </xref>
+        </sup>
+        ). Structural homologs of TnsC with confirmed involvement in Tn7-like transposons upon manual inspection were designated “TnsC-like AAA+ (manually inspected)” and are colored red. Other MGYP proteins annotated as “TnsC” against the UniRef90 database (orange) were added as positive controls for TnsC function. NuoA (NADH-quinone oxidoreductase subunit
+        <bold>
+         A
+        </bold>
+        ; purple) were added as structural and functional negative controls. DnaB helicases (blues) were added as functional negative controls, as these proteins have similar folds to TnsC but are not associated with transposition.
+        <bold>
+         F
+        </bold>
+        Combined input protein and context embeddings of genes in panel
+        <bold>
+         E
+        </bold>
+        . These embeddings are generated through concatenation of pLM (ESM2) embeddings and context (last layer of gLM) embeddings. Negative controls (NuoA and DnaB helicases) form distinct clusters in both
+        <bold>
+         E
+        </bold>
+        and
+        <bold>
+         F
+        </bold>
+        . Numbered labels in grey boxes indicate the AAA+ proteins with various functional association predictions listed in panel
+        <bold>
+         D
+        </bold>
+        and Supplementary Fig.
+        <xref ref-type="supplementary-material" rid="MOESM1">
+         7
+        </xref>
+        . Raw distance based clustering of the embeddings are shown in Supplementary Fig.
+        <xref ref-type="supplementary-material" rid="MOESM1">
+         8
+        </xref>
+        . Source data are provided as a Source Data file.
+       </p>
+      </caption>
+      <graphic mime-subtype="PNG" specific-use="web" xlink:href="MediaObjects/41467_2024_46947_Fig4_HTML.png"/>
+     </fig>
+    </p>
+   </sec>
+   <sec id="Sec9">
+    <title>
+     Context dependency of AAA+ regulator functions in complex genetic systems
+    </title>
+    <p id="Par15">
+     Understanding the functional role of a regulatory protein in an organism remains a challenging task because the same protein fold may carry out different functions depending on the context. For instance, AAA+ proteins (ATPases associated with diverse cellular activities) utilize the chemical energy from ATP hydrolysis to confer diverse mechanical cellular functions
+     <sup>
+      <xref ref-type="bibr" rid="CR42">
+       42
+      </xref>
+     </sup>
+     . However, AAA+ regulators can also play very different, broad functional roles depending on their cellular interacting partners from protein degradation and DNA replication to DNA transposition. One particularly interesting example is the TnsC protein, which regulates DNA insertion activity
+     <sup>
+      <xref ref-type="bibr" rid="CR43">
+       43
+      </xref>
+     </sup>
+     in Tn7-like transposon systems. Multiple bioinformatic efforts focused on discovery of previously uncharacterized transposons through metagenome search
+     <sup>
+      <xref ref-type="bibr" rid="CR44">
+       44
+      </xref>
+     </sup>
+     and sequence searches of assembled genomes
+     <sup>
+      <xref ref-type="bibr" rid="CR45">
+       45
+      </xref>
+     </sup>
+     aimed at identifying suitable homologs for genome-editing applications
+     <sup>
+      <xref ref-type="bibr" rid="CR46">
+       46
+      </xref>
+     </sup>
+     . In order to test whether the methods developed here could identify Tn7-like transposition systems as well as distinguish these from other functional contexts, we explored the contextualized semantics of TnsC’s structural homologs in the MGnify database. Without contextualization, there appears no clustering with associated transposase activity (KL divergence ratio = 1.03; see Methods for calculation of this metric, Fig.
+     <xref ref-type="fig" rid="Fig4">
+      4E
+     </xref>
+     ). However, with added contextualization, previously identified TnsC (orange) and manually inspected TnsC-like structural homolog (red, labeled “TnsC-like”) cluster together (KL divergence ratio = 0.38; Fig.
+     <xref ref-type="fig" rid="Fig4">
+      4F
+     </xref>
+     ; see Supplementary Fig.
+     <xref ref-type="supplementary-material" rid="MOESM1">
+      7B, C
+     </xref>
+     for comparison with gLM-only and contig-averaged pLM baselines). We further validate this visualization using embedding distance-based clustering (Supplementary Fig.
+     <xref ref-type="supplementary-material" rid="MOESM1">
+      8
+     </xref>
+     ). Many structural homologs of TnsC were not involved in transposition and this is reflected in distinct clusters of gray data points away from known TnsC (oranges) and TnsC-like structural homologs (red) in Fig.
+     <xref ref-type="fig" rid="Fig4">
+      4F
+     </xref>
+     . These clusters represent diverse and context-dependent AAA+ regulation activity that cannot be predicted from neither structure nor raw sequence alone. We predicted an operonic relationship between these AAA+ regulators and their neighboring genes and found many to be in operonic relationships with gene modules of diverse function, including pilus assembly and viral host-nuclease inhibition (Fig.
+     <xref ref-type="fig" rid="Fig4">
+      4D
+     </xref>
+     , Supplementary Fig.
+     <xref ref-type="supplementary-material" rid="MOESM1">
+      7A
+     </xref>
+     ). In some cases, queried AAA+ proteins did not appear to be in an operonic association with the neighboring proteins, suggesting some AAA+ proteins are less likely to be functionally associated with their neighbors than others (Supplementary Fig.
+     <xref ref-type="supplementary-material" rid="MOESM1">
+      7A
+     </xref>
+     , example 6). Using this example of AAA+ regulators, we illustrate that combining the contextualized protein embeddings and attention-based operon interaction may provide an important avenue for exploring and characterizing the functional diversity of regulatory proteins.
+    </p>
+   </sec>
+   <sec id="Sec10">
+    <title>
+     gLM predicts paralogy in protein-protein interactions
+    </title>
+    <p id="Par16">
+     Proteins in an organism are found in complexes and interact physically with each other. Recent advances in protein-protein interaction (PPI) prediction and structural complex research has largely been guided by identifying interologs (conserved PPI across organisms) and co-evolutionary signals between residues
+     <sup>
+      <xref ref-type="bibr" rid="CR47">
+       47
+      </xref>
+     </sup>
+     . However, distinguishing paralogs from orthologs (otherwise known as the “Paralog matching” problem) in the expanding sequence dataset remains a computational challenge requiring queries across the entire database and/or phylogenetic profiling. In cases where multiple interacting pairs are found within an organism (e.g. histidine kinases (HK) and response regulators (RR)), prediction of interacting pairs is particularly difficult
+     <sup>
+      <xref ref-type="bibr" rid="CR48">
+       48
+      </xref>
+     </sup>
+     . We reasoned that gLM, although not directly trained for this task, may have learned the relationships between paralogs versus orthologs. In order to test this capability, we used a well-studied example of interacting paralogs (ModC and ModA, Fig.
+     <xref ref-type="fig" rid="Fig5">
+      5A
+     </xref>
+     ) which form an ABC transporter complex. We queried gLM to predict the embedding of an interacting pair given no context except the protein sequence of either ModA or ModC. We find that without any fine-tuning gLM performs at least an order of magnitude better than what is expected by random chance (see Methods). Specifically, for 398 out of 2700 interacting pairs, gLM makes predictions that belong to the same cluster (50% sequence identity,
+     <italic>
+      n
+     </italic>
+     = 2100 clusters) as the true label, and in 73 pairs, the gLM predicts a label that is closest to the exact interacting pair (simulated random chance expected match=1.6 ± 1.01,
+     <italic>
+      n
+     </italic>
+     = 10) (Fig.
+     <xref ref-type="fig" rid="Fig5">
+      5B
+     </xref>
+     ). Importantly, when considering only very high confidence predictions (prediction likelihood &gt; 0.9,
+     <italic>
+      n
+     </italic>
+     = 466), gLM is able to match paralogs with an increased accuracy of 25.1%. When paralogs are correctly paired, gLM is more confident about the prediction (average confidence for correct prediction = 0.79, average confidence across all predictions = 0.53), while less certain predictions are either out of distribution, or closer to the mean of labels (Fig.
+     <xref ref-type="fig" rid="Fig5">
+      5C
+     </xref>
+     ). We attribute part of the inaccuracies in prediction due to the fact that gLM was not trained on the task of predicting a masked gene given only a single gene as genomic context, though we expect the performance to improve with expanding the training sequence length range and fine-tuning the model specifically for the “paralog matching” problem.
+     <fig id="Fig5" position="float">
+      <label>
+       Fig. 5
+      </label>
+      <caption xml:lang="en">
+       <title>
+        Potential for transfer learning.
+       </title>
+       <p>
+        <bold>
+         A
+        </bold>
+        ModA and ModC interaction (protein data bank structure 2ONK)
+        <sup>
+         <xref ref-type="bibr" rid="CR47">
+          47
+         </xref>
+        </sup>
+        <bold>
+         B
+        </bold>
+        UMAP projection of predictions (orange) and labels (blues) of paralogs (ModAC shown in A), where correct predictions are colored in green.
+        <bold>
+         C
+        </bold>
+        Predicted embeddings are colored based on the predicted confidence. Out of distribution predictions and predictions closer to the mean are generally of lower confidence, while correct predictions are of higher confidence.
+        <bold>
+         D, E
+        </bold>
+        Random 30-gene contigs from representative bacterial (“bac”) and archaeal (“arch”) genomes and reference viral (“vir”) genomes were embedded by mean-pooling ESM2 protein embeddings (context-free contig embeddings,
+        <bold>
+         D
+        </bold>
+        ) and by mean-pooling the last hidden layer of gLM (contextualized contig embeddings,
+        <bold>
+         E
+        </bold>
+        ).
+        <bold>
+         F
+        </bold>
+        Micro-averaged precision-recall curves and average precisions for logistic regression classifiers trained using context-free contig embeddings (grey lines) and contextualized contig embeddings (colored lines) for class-level taxonomy classification task. Each line represents a fold in stratified k-fold cross-validation (k = 5). Class-level taxonomy for each contig is shown in Supplementary Fig.
+        <xref ref-type="supplementary-material" rid="MOESM1">
+         9A, B
+        </xref>
+        and the confusion matrices for logistic regression classifiers are shown in Supplementary Fig.
+        <xref ref-type="supplementary-material" rid="MOESM1">
+         9C, D
+        </xref>
+        . Source data are provided as a Source Data file.
+       </p>
+      </caption>
+      <graphic mime-subtype="PNG" specific-use="web" xlink:href="MediaObjects/41467_2024_46947_Fig5_HTML.png"/>
+     </fig>
+    </p>
+   </sec>
+   <sec id="Sec11">
+    <title>
+     Contextualized contig embeddings and potential for transfer learning
+    </title>
+    <p id="Par17">
+     Contextualized protein embeddings encode the relationship between a specific protein and its genomic context, retaining the sequential information within a contig. We hypothesized that this contextualization adds biologically meaningful information that can be utilized for further characterization of the multi-gene genomic contigs. Here, we define a contextualized contig embedding as a mean-pooled hidden layer across all proteins in the subcontig, and a context-free contig embedding as mean-pooled ESM2 protein embeddings across the sequence (see methods). Both embeddings consist of 1280 features. We test our hypothesis by examining each of these embeddings’ ability to linearly distinguish viral sequences from bacterial and archaeal subcontigs. In metagenomic datasets, the taxonomic identity of assembled sequences must be inferred post-hoc, therefore the identification of viral sequences is conducted based on the presence of viral genes and viral genomic signatures
+     <sup>
+      <xref ref-type="bibr" rid="CR49">
+       49
+      </xref>
+     </sup>
+     . However, such classification task remains a challenge particularly for smaller contig fragments and less characterized viral sequences. Here, we sampled random 30-protein subcontigs from the representative bacterial and archaeal genome database and reference viral genomes in the NCBI and visualized their context-free contig embeddings (Fig.
+     <xref ref-type="fig" rid="Fig5">
+      5D
+     </xref>
+     ) and contextualized contig embeddings (Fig.
+     <xref ref-type="fig" rid="Fig5">
+      5E
+     </xref>
+     ). We observed more separation and taxonomic clusters at both domain- and class-levels (Supplementary Fig.
+     <xref ref-type="supplementary-material" rid="MOESM1">
+      9
+     </xref>
+     <bold>
+      <italic>
+       )
+      </italic>
+     </bold>
+     , suggesting that taxonomic signature is enhanced by encoding the latent relationships between proteins. This is further validated by training a logistic regression classifier on context-free and contextualized contig embeddings for class-level taxonomy (Supplementary Fig.
+     <xref ref-type="supplementary-material" rid="MOESM1">
+      9A, B
+     </xref>
+     ), where we see a statistically significant improvement in average precision (Fig.
+     <xref ref-type="fig" rid="Fig5">
+      5F
+     </xref>
+     , see Supplementary Fig.
+     <xref ref-type="supplementary-material" rid="MOESM1">
+      7C, D
+     </xref>
+     for confusion matrices). This emphasizes the biological importance of a protein’s relative position in the genome and its relationship with the genomic context, and further indicates that this information can be effectively encoded using gLM. Contextualized contig embeddings present opportunities for transfer learning beyond viral sequence prediction, such as improved metagenomically-assembled genome (MAG) binning and assembly correction.
+    </p>
+   </sec>
+  </sec>
+  <sec id="Sec12" sec-type="discussion">
+   <title>
+    Discussion
+   </title>
+   <p id="Par18">
+    The unprecedented amount and diversity of metagenomic data, coupled with advances in deep learning, presents exciting opportunities for building models that can learn hidden patterns and structures of biological systems. Such models build upon the conceptual and statistical frameworks that evolutionary biologists have developed for the past century. With capabilities of abstracting much larger amounts of data, these models can disentangle the extraordinary complexity of organismal genomes and their encoded functions; this is a key step in furthering our understanding of biological processes. The work presented here demonstrates and validates the concept of genomic language modeling. Our implementation of the masked genomic language modeling illustrates the feasibility of training such a model, and provides evidence that biologically meaningful information is being captured in learned contextualized embeddings and yielding meaningful interpretations of the attention patterns. We show that gLM can be used for diverse downstream tasks, including enzyme function prediction, operon prediction, paralog matching and contig taxonomy prediction. Furthermore, we demonstrate gLM’s ability to illuminate context dependency in functions across structural and sequence homology through the example of AAA+ regulators. Taken together, gLM presents a highly promising direction for interpreting biology and we propose key areas for further development: First, the transformer architecture has shown to be successful in efficient scaling; in both natural language
+    <sup>
+     <xref ref-type="bibr" rid="CR50">
+      50
+     </xref>
+    </sup>
+    and protein language processing
+    <sup>
+     <xref ref-type="bibr" rid="CR23">
+      23
+     </xref>
+    </sup>
+    , increasing the number of parameters in the model along with the training dataset size have been shown to lead to vastly improved performance and generalizability. Our model consists of ~1B parameters which is at least a magnitude smaller compared to state-of-the-art pLMs. With further hyperparameter tuning and scaling, we expect better performance of the model. Second, our model currently uses pLM embeddings to represent proteins in the input. These embeddings are generated by mean-pooling the amino acid residue-level hidden states across the protein sequence, and therefore the residue-specific information and synonymous mutation effects are likely obscured. Future iterations of the model could use raw residue-level or codon-level embeddings as input to allow modeling of residue-to-residue co-evolutionary interactions between proteins and synonymous mutation effects on gene function. Third, the task of reconstructing masked protein embeddings requires modeling a distribution over possible embeddings; our method approximates this distribution using a fixed number of predictions. Future work could improve upon this by using a generative approach, such as a diffusion or GAN model. This may allow for better prediction accuracy and greater generalizability for unseen datasets. Fourth, adding non-protein modalities (e.g. non-coding regulatory elements) as input to gLM may also greatly improve gLM’s representation of biological sequence data, and can learn protein function and regulation conditioned upon other modalities
+    <sup>
+     <xref ref-type="bibr" rid="CR51">
+      51
+     </xref>
+    </sup>
+    . Finally, our model was trained largely on bacterial, archaeal and viral genomes, therefore, how this method can be adapted for eukaryotic genomes, especially those with extensive intergenic regions, remains to be further explored.
+   </p>
+   <p id="Par19">
+    One of the most powerful aspects of the transformer-based language models is their potential for transfer learning and fine-tuning. We tested some of the capabilities of gLM and successfully showed that higher-order biological information, including gene function and regulation can be learned using genomic sequences. Our results highlight the importance of contextualization of biological data, particularly as we scale our modeling efforts from biomolecules to whole organisms. We propose the following promising future directions for applying gLM for advancing biological research. 1) Feature-based transfer learning for predicting protein function (e.g. Gene Ontology [GO] term), particularly those with limited sequence and structural homology. 2) Fine-tuning gLM for the protein-protein-interactome prediction task. 3) Using gLM features to encode genomic contexts as additional input for improved and contextualized protein structure predictions. In conclusion, genomic language modeling is a powerful tool to unbiasedly condense important biological information from full metagenomic sequences. Coupled with the advances in long-read sequencing, we expect a drastic increase in the input data quality, quantity and diversity. Genomic language modeling presents an avenue to bridge the gap between atomic structure and organismal function, and thereby brings us closer to modeling biological systems, and ultimately, manipulating biology with precision (e.g. genome editing, synthetic biology).
+   </p>
+  </sec>
+  <sec id="Sec13" sec-type="methods">
+   <title>
+    Methods
+   </title>
+   <sec id="Sec14">
+    <title>
+     Sequence database
+    </title>
+    <p id="Par20">
+     The genomic corpus was generated using the MGnify
+     <sup>
+      <xref ref-type="bibr" rid="CR27">
+       27
+      </xref>
+     </sup>
+     dataset (released 2022-05-06 and downloaded 2022-06-07). First, genomic contigs with greater than 30 genes were divided into 30 gene non-overlapping subcontigs resulting in a total of 7,324,684 subcontigs with lengths between 15 and 30 genes (subcontigs &lt;15 genes in length were removed from the dataset). We chose 30 as maximum context length because while longer context results in higher modeling performance (Supplementary Fig.
+     <xref ref-type="supplementary-material" rid="MOESM1">
+      10A
+     </xref>
+     ), 67% of the raw MGnify contigs with &gt; 15 genes were of =&lt;30 genes in length (Supplementary Fig.
+     <xref ref-type="supplementary-material" rid="MOESM1">
+      10B
+     </xref>
+     ), and therefore increasing the context length beyond 30 would have resulted in many examples with padding (reduced computational efficiency). Each gene in the subcontig was mapped to a representative protein sequence (representative MGYP) using mmseqs/linclust
+     <sup>
+      <xref ref-type="bibr" rid="CR52">
+       52
+      </xref>
+     </sup>
+     , with coverage and sequence identity thresholds set at 90% (pre-computed in the MGnify database), resulting in a total of 30,800,563 representative MGYPs. Each representative MGYP was represented by a 1280-feature protein embedding, generated by mean-pooling the last hidden layer of the ESM2
+     <sup>
+      <xref ref-type="bibr" rid="CR23">
+       23
+      </xref>
+     </sup>
+     “esm2_t33_650M_UR50D” model. Due to the memory limitation in computing embeddings for very long sequences, 116 of the MGYP sequences longer than 12290 amino acids were truncated to 12290 amino acids. ESM2 embeddings were normalized (by subtracting the mean of each feature and dividing by its standard deviation) and clipped such that all features range from −10 to 10, to improve training stability. A small fraction (0.4%) of the genes could not be mapped to a representative MGYP and therefore the corresponding sequence information could not be retrieved from the MGnify server; these sequences were assigned a 1280 feature vector of ones. For each gene in the sub-sequence, we added a gene orientation feature to the standardized MGYP protein embedding, where 0.5 denotes “forward” orientation relative to the direction of sequencing, and −0.5 denotes “reverse” orientation. Thus, each gene was represented by a 1281 feature vector in our corpus.
+    </p>
+   </sec>
+   <sec id="Sec15">
+    <title>
+     gLM architecture and training
+    </title>
+    <p id="Par21">
+     gLM was built on the huggingface implementation of the RoBERTa
+     <sup>
+      <xref ref-type="bibr" rid="CR53">
+       53
+      </xref>
+     </sup>
+     transformer architecture. gLM consisted of 19 layers with hidden size 1280 and ten attention heads per layer, with relative position embedding (“relative_key_query”)
+     <sup>
+      <xref ref-type="bibr" rid="CR54">
+       54
+      </xref>
+     </sup>
+     . For training, 15% of the tokens (genes) in the sequence (subcontig) were randomly masked to a value of −1. We then tasked the model with the objective of predicting the label of the masked token, where the label consists of a 100-feature vector that consists of the PCA whitened 99 principal components (explained variance = 89.7%. Supplementary Fig.
+     <xref ref-type="supplementary-material" rid="MOESM1">
+      11
+     </xref>
+     <bold>
+      )
+     </bold>
+     of the corresponding ESM2 protein embedding concatenated with its orientation feature. Reduced dimensionality of labels using PCA increased the stability of training. Specifically, gLM projects the last hidden state of the model into four 100-feature vectors and four corresponding likelihood values using a linear layer. Total loss is calculated using the following Eq. (
+     <xref ref-type="disp-formula" rid="Equ1">
+      1
+     </xref>
+     ).
+     <disp-formula id="Equ1">
+      <label>
+       1
+      </label>
+      <alternatives>
+       <mml:math id="Equ1_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+        <mml:mi mathvariant="normal">
+         MSE
+        </mml:mi>
+        <mml:mrow>
+         <mml:mo>
+          (
+         </mml:mo>
+         <mml:mrow>
+          <mml:mi mathvariant="normal">
+           closest
+          </mml:mi>
+          <mml:mspace width="0.16em"/>
+          <mml:mi mathvariant="normal">
+           prediction
+          </mml:mi>
+          <mml:mo>
+           ,
+          </mml:mo>
+          <mml:mi mathvariant="normal">
+           label
+          </mml:mi>
+         </mml:mrow>
+         <mml:mo>
+          )
+         </mml:mo>
+        </mml:mrow>
+        <mml:mo>
+         +
+        </mml:mo>
+        <mml:mi>
+         α
+        </mml:mi>
+        <mml:mspace width="0.25em"/>
+        <mml:mo>
+         *
+        </mml:mo>
+        <mml:mspace width="0.25em"/>
+        <mml:mi mathvariant="normal">
+         CrossEntropyLoss
+        </mml:mi>
+        <mml:mfenced close=")" open="(">
+         <mml:mrow>
+          <mml:mi mathvariant="normal">
+           likelihoods
+          </mml:mi>
+          <mml:mo>
+           ,
+          </mml:mo>
+          <mml:mi mathvariant="normal">
+           closest
+          </mml:mi>
+          <mml:mspace width="0.16em"/>
+          <mml:mi mathvariant="normal">
+           prediction
+          </mml:mi>
+          <mml:mspace width="0.16em"/>
+          <mml:mi mathvariant="normal">
+           index
+          </mml:mi>
+         </mml:mrow>
+        </mml:mfenced>
+       </mml:math>
+       <tex-math id="Equ1_TeX">
+        \documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym}
+				\usepackage{amsfonts}
+				\usepackage{amssymb}
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$	{{{{{\rm{MSE}}}}}}({{{{{\rm{closest}}}}}}\; {{{{{\rm{prediction}}}}}},{{{{{\rm{label}}}}}}) \\ 	+ \alpha \, * \, {{{{{\rm{CrossEntropyLoss}}}}}}\left({{{{{\rm{likelihoods}}}}}},{{{{{\rm{closest}}}}}}\; {{{{{\rm{prediction}}}}}}\; {{{{{\rm{index}}}}}}\right)$$\end{document}
+       </tex-math>
+       <graphic mime-subtype="GIF" specific-use="web" xlink:href="41467_2024_46947_Article_Equ1.gif"/>
+      </alternatives>
+     </disp-formula>
+     The closest prediction is defined as the prediction that is closest to the label, computed by L2 distance. We set α = 1e-4. gLM was trained in half-precision with batch size 3000 with distributed data parallelization on four NVIDIA A100 GPUs over 1,296,960 steps (560 epochs), including 5000 warm-up steps to reach a learning rate of 1e-4 with AdamW
+     <sup>
+      <xref ref-type="bibr" rid="CR55">
+       55
+      </xref>
+     </sup>
+     optimizer.
+    </p>
+   </sec>
+   <sec id="Sec16">
+    <title>
+     Performance metric and validation
+    </title>
+    <p id="Par22">
+     In order to evaluate the model quality and its generalizability beyond the training dataset, we use a pseudo-accuracy metric, where we deem a prediction to be “correct” if it is closest in Euclidean distance to the label of the masked gene relative to the other genes in the subcontig. Pseudo-accuracy calculation is described in Eq. (
+     <xref ref-type="disp-formula" rid="Equ2">
+      2
+     </xref>
+     ).
+     <disp-formula id="Equ2">
+      <label>
+       2
+      </label>
+      <alternatives>
+       <mml:math id="Equ2_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+        <mml:mi mathvariant="normal">
+         pseudo
+        </mml:mi>
+        <mml:mspace width="0.16em"/>
+        <mml:mi mathvariant="normal">
+         accuracy
+        </mml:mi>
+        <mml:mo>
+         =
+        </mml:mo>
+        <mml:mfrac>
+         <mml:mrow>
+          <mml:mi>
+           #
+          </mml:mi>
+          <mml:mi mathvariant="normal">
+           count
+          </mml:mi>
+          <mml:mrow>
+           <mml:mo>
+            (
+           </mml:mo>
+           <mml:mrow>
+            <mml:mi mathvariant="normal">
+             argmin
+            </mml:mi>
+            <mml:mrow>
+             <mml:mo>
+              (
+             </mml:mo>
+             <mml:mrow>
+              <mml:mi mathvariant="normal">
+               dist
+              </mml:mi>
+              <mml:mrow>
+               <mml:mo>
+                (
+               </mml:mo>
+               <mml:mrow>
+                <mml:mi mathvariant="normal">
+                 prediction
+                </mml:mi>
+                <mml:mo>
+                 ,
+                </mml:mo>
+                <mml:mi mathvariant="normal">
+                 labels
+                </mml:mi>
+                <mml:mspace width="0.16em"/>
+                <mml:mi mathvariant="normal">
+                 in
+                </mml:mi>
+                <mml:mspace width="0.16em"/>
+                <mml:mi mathvariant="normal">
+                 subcontig
+                </mml:mi>
+               </mml:mrow>
+               <mml:mo>
+                )
+               </mml:mo>
+              </mml:mrow>
+             </mml:mrow>
+             <mml:mo>
+              )
+             </mml:mo>
+            </mml:mrow>
+            <mml:mo>
+             =
+            </mml:mo>
+            <mml:mo>
+             =
+            </mml:mo>
+            <mml:mi mathvariant="normal">
+             index
+            </mml:mi>
+            <mml:mrow>
+             <mml:mo>
+              (
+             </mml:mo>
+             <mml:mrow>
+              <mml:mi mathvariant="normal">
+               masked
+              </mml:mi>
+              <mml:mspace width="0.16em"/>
+              <mml:mi mathvariant="normal">
+               gene
+              </mml:mi>
+             </mml:mrow>
+             <mml:mo>
+              )
+             </mml:mo>
+            </mml:mrow>
+           </mml:mrow>
+           <mml:mo>
+            )
+           </mml:mo>
+          </mml:mrow>
+         </mml:mrow>
+         <mml:mrow>
+          <mml:mi>
+           #
+          </mml:mi>
+          <mml:mi mathvariant="normal">
+           masked
+          </mml:mi>
+          <mml:mspace width="0.16em"/>
+          <mml:mi mathvariant="normal">
+           genes
+          </mml:mi>
+         </mml:mrow>
+        </mml:mfrac>
+       </mml:math>
+       <tex-math id="Equ2_TeX">
+        \documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym}
+				\usepackage{amsfonts}
+				\usepackage{amssymb}
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$	{{{{{\rm{pseudo}}}}}} \; {{{{{\rm{accuracy}}}}}} \\=	\frac{{\# }{{{{{\rm{count}}}}}}({{{{{\rm{argmin}}}}}}({{{{{\rm{dist}}}}}}({{{{{\rm{prediction}}}}}},{{{{{\rm{labels}}}}}} \; {{{{{\rm{in}}}}}} \; {{{{{\rm{subcontig}}}}}}))=={{{{{\rm{index}}}}}}({{{{{\rm{masked}}}}}} \; {{{{{\rm{gene}}}}}}))} {{ \# }{{{{{\rm{masked}}}}}} \; {{{{{\rm{genes}}}}}}}$$\end{document}
+       </tex-math>
+       <graphic mime-subtype="GIF" specific-use="web" xlink:href="41467_2024_46947_Article_Equ2.gif"/>
+      </alternatives>
+     </disp-formula>
+    </p>
+    <p id="Par23">
+     We chose to validate our metric and subsequent analyses on the best-annotated genome to date:
+     <italic>
+      E.coli
+     </italic>
+     K-12
+     <sup>
+      <xref ref-type="bibr" rid="CR56">
+       56
+      </xref>
+     </sup>
+     . In order to remove as many
+     <italic>
+      E.coli
+     </italic>
+     K-12 like subcontigs from the training dataset, we removed 5.2% of the subcontigs in which more than half of the genes were &gt; 70% similar (calculated using mmseqs2 search
+     <sup>
+      <xref ref-type="bibr" rid="CR52">
+       52
+      </xref>
+     </sup>
+     ) in amino acid sequence to
+     <italic>
+      E.coli
+     </italic>
+     K-12 genes. We validate our pseudo accuracy metric by calculating the absolute accuracy on the
+     <italic>
+      E.coli
+     </italic>
+     K-12 genome for which each gene was masked sequentially (Eq. (
+     <xref ref-type="disp-formula" rid="Equ3">
+      3
+     </xref>
+     ))
+     <disp-formula id="Equ3">
+      <label>
+       3
+      </label>
+      <alternatives>
+       <mml:math id="Equ3_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+        <mml:mi mathvariant="normal">
+         absolute
+        </mml:mi>
+        <mml:mspace width="0.16em"/>
+        <mml:mi mathvariant="normal">
+         accuracy
+        </mml:mi>
+        <mml:mo>
+         =
+        </mml:mo>
+        <mml:mfrac>
+         <mml:mrow>
+          <mml:mi>
+           #
+          </mml:mi>
+          <mml:mi mathvariant="normal">
+           count
+          </mml:mi>
+          <mml:mrow>
+           <mml:mo>
+            (
+           </mml:mo>
+           <mml:mrow>
+            <mml:mi mathvariant="normal">
+             argmin
+            </mml:mi>
+            <mml:mrow>
+             <mml:mo>
+              (
+             </mml:mo>
+             <mml:mrow>
+              <mml:mi mathvariant="normal">
+               dist
+              </mml:mi>
+              <mml:mrow>
+               <mml:mo>
+                (
+               </mml:mo>
+               <mml:mrow>
+                <mml:mi mathvariant="normal">
+                 prediction
+                </mml:mi>
+                <mml:mo>
+                 ,
+                </mml:mo>
+                <mml:mi mathvariant="normal">
+                 all
+                </mml:mi>
+                <mml:mspace width="0.16em"/>
+                <mml:mi mathvariant="normal">
+                 genes
+                </mml:mi>
+                <mml:mspace width="0.16em"/>
+                <mml:mi mathvariant="normal">
+                 in
+                </mml:mi>
+                <mml:mspace width="0.16em"/>
+                <mml:mi mathvariant="normal">
+                 E
+                </mml:mi>
+                <mml:mo>
+                 .
+                </mml:mo>
+                <mml:mi mathvariant="normal">
+                 coli
+                </mml:mi>
+                <mml:mspace width="0.16em"/>
+                <mml:mi mathvariant="normal">
+                 K
+                </mml:mi>
+                <mml:mo>
+                 −
+                </mml:mo>
+                <mml:mn>
+                 12
+                </mml:mn>
+               </mml:mrow>
+               <mml:mo>
+                )
+               </mml:mo>
+              </mml:mrow>
+             </mml:mrow>
+             <mml:mo>
+              )
+             </mml:mo>
+            </mml:mrow>
+            <mml:mo>
+             =
+            </mml:mo>
+            <mml:mo>
+             =
+            </mml:mo>
+            <mml:mi mathvariant="normal">
+             index
+            </mml:mi>
+            <mml:mrow>
+             <mml:mo>
+              (
+             </mml:mo>
+             <mml:mrow>
+              <mml:mi mathvariant="normal">
+               masked
+              </mml:mi>
+              <mml:mspace width="0.16em"/>
+              <mml:mi mathvariant="normal">
+               gene
+              </mml:mi>
+             </mml:mrow>
+             <mml:mo>
+              )
+             </mml:mo>
+            </mml:mrow>
+           </mml:mrow>
+           <mml:mo>
+            )
+           </mml:mo>
+          </mml:mrow>
+         </mml:mrow>
+         <mml:mrow>
+          <mml:mi>
+           #
+          </mml:mi>
+          <mml:mi mathvariant="normal">
+           genes
+          </mml:mi>
+          <mml:mspace width="0.16em"/>
+          <mml:mi mathvariant="normal">
+           in
+          </mml:mi>
+          <mml:mspace width="0.16em"/>
+          <mml:mi mathvariant="normal">
+           E
+          </mml:mi>
+          <mml:mo>
+           .
+          </mml:mo>
+          <mml:mi mathvariant="normal">
+           coli
+          </mml:mi>
+          <mml:mspace width="0.16em"/>
+          <mml:mi mathvariant="normal">
+           K
+          </mml:mi>
+          <mml:mo>
+           −
+          </mml:mo>
+          <mml:mn>
+           12
+          </mml:mn>
+         </mml:mrow>
+        </mml:mfrac>
+       </mml:math>
+       <tex-math id="Equ3_TeX">
+        \documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym}
+				\usepackage{amsfonts}
+				\usepackage{amssymb}
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$	{{{{{\rm{absolute}}}}}} \; {{{{{\rm{accuracy}}}}}} \\=	\frac{ { \# }{{{{{\rm{count}}}}}}({{{{{\rm{argmin}}}}}}({{{{{\rm{dist}}}}}}({{{{{\rm{prediction}}}}}},{{{{{\rm{all}}}}}} \; {{{{{\rm{genes}}}}}} \; {{{{{\rm{in}}}}}} \; {{{{{\rm{E}}}}}} . {{{{{\rm{coli}}}}}} \; {{{{{\rm{K}}}}}} - 12))=={{{{{\rm{index}}}}}}({{{{{\rm{masked}}}}}} \; {{{{{\rm{gene}}}}}}))}{ { \# }{{{{{\rm{genes}}}}}} \; {{{{{\rm{in}}}}}} \; {{{{{\rm{E}}}}}} . {{{{{\rm{coli}}}}}} \; {{{{{\rm{K}}}}}} - 12}$$\end{document}
+       </tex-math>
+       <graphic mime-subtype="GIF" specific-use="web" xlink:href="41467_2024_46947_Article_Equ3.gif"/>
+      </alternatives>
+     </disp-formula>
+    </p>
+   </sec>
+   <sec id="Sec17">
+    <title>
+     Contextualized embedding calculation and visualization
+    </title>
+    <p id="Par24">
+     Contextualized protein embedding of a gene is calculated by first inputting a 15-30 gene subcontig containing the gene of interest, and then running inference on the subcontig using the trained gLM without masking. We then use the last hidden layer of the model corresponding to the gene as the embedding consisting of 1280 features.
+    </p>
+   </sec>
+   <sec id="Sec18">
+    <title>
+     Gene annotation
+    </title>
+    <p id="Par25">
+     Genes were annotated using Diamond v2.0.7.145
+     <sup>
+      <xref ref-type="bibr" rid="CR57">
+       57
+      </xref>
+     </sup>
+     against the UniRef90 database
+     <sup>
+      <xref ref-type="bibr" rid="CR58">
+       58
+      </xref>
+     </sup>
+     with an e-value cut-off 1E-5. Genes were labeled as “unannotated” if either 1) no match was found in the UniRef90 database, or 2) the match was annotated with following keywords: “unannotated”, “uncharacterized”, “hypothetical”, “DUF”(domain of unknown function).
+    </p>
+   </sec>
+   <sec id="Sec19">
+    <title>
+     McrA protein analysis
+    </title>
+    <p id="Par26">
+     McrA protein encoding Methanogens and ANME genomes were selected from the accession ID list found in the supplement of Shao et al.
+     <sup>
+      <xref ref-type="bibr" rid="CR35">
+       35
+      </xref>
+     </sup>
+     . subcontigs containing
+     <italic>
+      mcrA
+     </italic>
+     were extracted with at most 15 genes before and after
+     <italic>
+      mcrA
+     </italic>
+     . The context-free and contextualized embeddings of McrA were calculated using the ESM2 and gLM, respectively.
+    </p>
+   </sec>
+   <sec id="Sec20">
+    <title>
+     Distributions of unannotated and annotated embeddings
+    </title>
+    <p id="Par27">
+     Distributions of unannotated and annotated embeddings in the database were compared using Kullback-Leibler (KL) divergence analysis. First, ten random samples of 10,000 subcontigs from the MGnify corpus. pLM and gLM embeddings of the genes were calculated using mean-pooled last hidden layer of ESM2 embeddings and mean-pooled last hidden layer of gLM, respectively. Outliers were removed using Mahalanobis distance and a chi-squared threshold of 0.975. pLM and gLM embedding dimensions were reduced to 256 principal components (91.9 ± 1.72% and 80.1 ± 6.89% total variances explained, respectively). KL divergence was calculated using the following Eq. (
+     <xref ref-type="disp-formula" rid="Equ4">
+      4
+     </xref>
+     ).
+     <disp-formula id="Equ4">
+      <label>
+       4
+      </label>
+      <alternatives>
+       <mml:math id="Equ4_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+        <mml:msub>
+         <mml:mrow>
+          <mml:mi>
+           D
+          </mml:mi>
+         </mml:mrow>
+         <mml:mrow>
+          <mml:mi>
+           K
+          </mml:mi>
+          <mml:mi>
+           L
+          </mml:mi>
+         </mml:mrow>
+        </mml:msub>
+        <mml:mrow>
+         <mml:mo>
+          (
+         </mml:mo>
+         <mml:mrow>
+          <mml:mi>
+           P
+          </mml:mi>
+          <mml:mo>
+           ∣
+          </mml:mo>
+          <mml:mo>
+           ∣
+          </mml:mo>
+          <mml:mi>
+           Q
+          </mml:mi>
+         </mml:mrow>
+         <mml:mo>
+          )
+         </mml:mo>
+        </mml:mrow>
+        <mml:mo>
+         =
+        </mml:mo>
+        <mml:mfrac>
+         <mml:mrow>
+          <mml:mn>
+           1
+          </mml:mn>
+         </mml:mrow>
+         <mml:mrow>
+          <mml:mn>
+           2
+          </mml:mn>
+         </mml:mrow>
+        </mml:mfrac>
+        <mml:mfenced close=")" open="(">
+         <mml:mrow>
+          <mml:mi mathvariant="normal">
+           tr
+          </mml:mi>
+          <mml:mrow>
+           <mml:mo>
+            (
+           </mml:mo>
+           <mml:mrow>
+            <mml:msubsup>
+             <mml:mrow>
+              <mml:mi mathvariant="normal">
+               Σ
+              </mml:mi>
+             </mml:mrow>
+             <mml:mrow>
+              <mml:mn>
+               1
+              </mml:mn>
+             </mml:mrow>
+             <mml:mrow>
+              <mml:mo>
+               −
+              </mml:mo>
+              <mml:mn>
+               1
+              </mml:mn>
+             </mml:mrow>
+            </mml:msubsup>
+            <mml:msub>
+             <mml:mrow>
+              <mml:mi mathvariant="normal">
+               Σ
+              </mml:mi>
+             </mml:mrow>
+             <mml:mrow>
+              <mml:mn>
+               0
+              </mml:mn>
+             </mml:mrow>
+            </mml:msub>
+           </mml:mrow>
+           <mml:mo>
+            )
+           </mml:mo>
+          </mml:mrow>
+          <mml:mo>
+           −
+          </mml:mo>
+          <mml:mi>
+           k
+          </mml:mi>
+          <mml:mo>
+           +
+          </mml:mo>
+          <mml:msup>
+           <mml:mrow>
+            <mml:mrow>
+             <mml:mo>
+              (
+             </mml:mo>
+             <mml:mrow>
+              <mml:msub>
+               <mml:mrow>
+                <mml:mi>
+                 μ
+                </mml:mi>
+               </mml:mrow>
+               <mml:mrow>
+                <mml:mn>
+                 1
+                </mml:mn>
+               </mml:mrow>
+              </mml:msub>
+              <mml:mo>
+               −
+              </mml:mo>
+              <mml:msub>
+               <mml:mrow>
+                <mml:mi>
+                 μ
+                </mml:mi>
+               </mml:mrow>
+               <mml:mrow>
+                <mml:mn>
+                 2
+                </mml:mn>
+               </mml:mrow>
+              </mml:msub>
+             </mml:mrow>
+             <mml:mo>
+              )
+             </mml:mo>
+            </mml:mrow>
+           </mml:mrow>
+           <mml:mrow>
+            <mml:mi>
+             T
+            </mml:mi>
+           </mml:mrow>
+          </mml:msup>
+          <mml:msubsup>
+           <mml:mrow>
+            <mml:mi mathvariant="normal">
+             Σ
+            </mml:mi>
+           </mml:mrow>
+           <mml:mrow>
+            <mml:mn>
+             1
+            </mml:mn>
+           </mml:mrow>
+           <mml:mrow>
+            <mml:mo>
+             −
+            </mml:mo>
+            <mml:mn>
+             1
+            </mml:mn>
+           </mml:mrow>
+          </mml:msubsup>
+          <mml:mrow>
+           <mml:mo>
+            (
+           </mml:mo>
+           <mml:mrow>
+            <mml:msub>
+             <mml:mrow>
+              <mml:mi>
+               μ
+              </mml:mi>
+             </mml:mrow>
+             <mml:mrow>
+              <mml:mn>
+               1
+              </mml:mn>
+             </mml:mrow>
+            </mml:msub>
+            <mml:mo>
+             −
+            </mml:mo>
+            <mml:msub>
+             <mml:mrow>
+              <mml:mi>
+               μ
+              </mml:mi>
+             </mml:mrow>
+             <mml:mrow>
+              <mml:mn>
+               0
+              </mml:mn>
+             </mml:mrow>
+            </mml:msub>
+           </mml:mrow>
+           <mml:mo>
+            )
+           </mml:mo>
+          </mml:mrow>
+          <mml:mo>
+           +
+          </mml:mo>
+          <mml:mi mathvariant="normal">
+           ln
+          </mml:mi>
+          <mml:mfenced close=")" open="(">
+           <mml:mrow>
+            <mml:mfrac>
+             <mml:mrow>
+              <mml:mi>
+               det
+              </mml:mi>
+              <mml:msub>
+               <mml:mrow>
+                <mml:mi mathvariant="normal">
+                 Σ
+                </mml:mi>
+               </mml:mrow>
+               <mml:mrow>
+                <mml:mn>
+                 1
+                </mml:mn>
+               </mml:mrow>
+              </mml:msub>
+             </mml:mrow>
+             <mml:mrow>
+              <mml:mi>
+               det
+              </mml:mi>
+              <mml:mn>
+               0
+              </mml:mn>
+             </mml:mrow>
+            </mml:mfrac>
+           </mml:mrow>
+          </mml:mfenced>
+         </mml:mrow>
+        </mml:mfenced>
+       </mml:math>
+       <tex-math id="Equ4_TeX">
+        \documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym}
+				\usepackage{amsfonts}
+				\usepackage{amssymb}
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${D}_{{KL}}({P||Q})=\frac{1}{2}\left({{{{{\rm{tr}}}}}}({\Sigma }_{1}^{-1}{\Sigma }_{0})-k+{({{\mu }}_{1}-{{\mu }}_{2})}^{T}{\Sigma }_{1}^{-1}({{\mu }}_{1}-{{\mu }}_{0})+{{{{\mathrm{ln}}}}}\left(\frac{\det {\Sigma }_{1}}{\det 0}\right)\right)$$\end{document}
+       </tex-math>
+       <graphic mime-subtype="GIF" specific-use="web" xlink:href="41467_2024_46947_Article_Equ4.gif"/>
+      </alternatives>
+     </disp-formula>
+     where P corresponds to the distribution of unannotated genes and Q corresponds to the distribution of annotated genes, with
+     <inline-formula id="IEq1">
+      <alternatives>
+       <mml:math id="IEq1_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+        <mml:msub>
+         <mml:mrow>
+          <mml:mi>
+           μ
+          </mml:mi>
+         </mml:mrow>
+         <mml:mrow>
+          <mml:mn>
+           0
+          </mml:mn>
+         </mml:mrow>
+        </mml:msub>
+        <mml:mo>
+         ,
+        </mml:mo>
+        <mml:msub>
+         <mml:mrow>
+          <mml:mi>
+           μ
+          </mml:mi>
+         </mml:mrow>
+         <mml:mrow>
+          <mml:mn>
+           1
+          </mml:mn>
+         </mml:mrow>
+        </mml:msub>
+       </mml:math>
+       <tex-math id="IEq1_TeX">
+        \documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym}
+				\usepackage{amsfonts}
+				\usepackage{amssymb}
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${{\mu }}_{0},{{\mu }}_{1}$$\end{document}
+       </tex-math>
+       <inline-graphic mime-subtype="GIF" specific-use="web" xlink:href="41467_2024_46947_Article_IEq1.gif"/>
+      </alternatives>
+     </inline-formula>
+     respectively as means and
+     <inline-formula id="IEq2">
+      <alternatives>
+       <mml:math id="IEq2_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+        <mml:msub>
+         <mml:mrow>
+          <mml:mi mathvariant="normal">
+           Σ
+          </mml:mi>
+         </mml:mrow>
+         <mml:mrow>
+          <mml:mn>
+           0
+          </mml:mn>
+         </mml:mrow>
+        </mml:msub>
+        <mml:mo>
+         ,
+        </mml:mo>
+        <mml:msub>
+         <mml:mrow>
+          <mml:mi mathvariant="normal">
+           Σ
+          </mml:mi>
+         </mml:mrow>
+         <mml:mrow>
+          <mml:mn>
+           1
+          </mml:mn>
+         </mml:mrow>
+        </mml:msub>
+       </mml:math>
+       <tex-math id="IEq2_TeX">
+        \documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym}
+				\usepackage{amsfonts}
+				\usepackage{amssymb}
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\Sigma }_{0},{\Sigma }_{1}$$\end{document}
+       </tex-math>
+       <inline-graphic mime-subtype="GIF" specific-use="web" xlink:href="41467_2024_46947_Article_IEq2.gif"/>
+      </alternatives>
+     </inline-formula>
+     respectively as covariance matrices. The significance of the KL divergence differences between pLM and gLM embeddings is calculated using a paired t-test across the ten samples.
+    </p>
+   </sec>
+   <sec id="Sec21">
+    <title>
+     Enzyme Commission number prediction
+    </title>
+    <p id="Par28">
+     Custom MGYP-Enzyme Commission (MGYP-EC) dataset was created by first searching (mmseqs2
+     <sup>
+      <xref ref-type="bibr" rid="CR52">
+       52
+      </xref>
+     </sup>
+     with default setting) MGYPs against the “split30.csv” dataset previously used to train CLEAN
+     <sup>
+      <xref ref-type="bibr" rid="CR59">
+       59
+      </xref>
+     </sup>
+     . “split30.csv” dataset consists of EC numbers assigned to UniProt sequences clustered at 30% identity. Only MGYP hits with &gt;70% sequences to “split30.csv” were considered and MGYPs with multiple hits with &gt;70% similarity were removed. Test split was selected by randomly selecting 10% of “split30.csv” UniProt IDs in each EC category that map to MGYPs. EC categories with less than four distinct UniProt IDs with MGYP mapping were removed from the dataset, resulting in 253 EC categories. The train set consisted of MGnify subcontigs in the corpus that contained at least one the 27936 MGYPs mapping to 1878 UniProt IDs. The test set consisted of randomly selected MGnify subcontig containing each of 4441 MGYPs mapping to 344 UniProt IDs. pLM (context-free) embeddings were calculated for each of MGYP with EC number assignment by mean-pooling the last hidden layer of its ESM2 embedding. Masked (context-only) gLM embeddings were calculated for each of the 19 layers by running inference on subcontigs with masks at the positions of MGYPs with EC number assignment and subsequently extracting per-layer hidden representations for masked positions. gLM (contextualized) embeddings were calculated also for each layer by running inference without masking and subsequently extracting per-layer hidden representations for MGYPs with EC number assignments. Linear probing was conducted for these embeddings with a single linear layer. Linear probes were trained with early stopping (patience = 10, github.com/Bjarten/early-stopping-pytorch/blob/master/pytorchtools.py) and batch size = 5000, and training results were replicated five times with random seeds to calculate error ranges.
+    </p>
+   </sec>
+   <sec id="Sec22">
+    <title>
+     Variance of contextualized protein embedding analysis
+    </title>
+    <p id="Par29">
+     Contextualized protein embeddings are generated at inference time. Variances of contextualized protein embeddings were calculated for MGYPs that occur at least 100 times in the dataset, excluding the occurrences at the edges of the subcontig (first or last token). For each such MGYP, we take 10 random independent samples consisting of 100 occurrences and calculate the mean pairwise euclidean distances between the contextualized embeddings. To assess the role gLM plays in contextualization, we used the above sampling method to calculate the variance of contig-averaged pLM embeddings (pLM embeddings mean-pooled across the contig) for each MGYP that occurs at least 100 times in the dataset.
+    </p>
+   </sec>
+   <sec id="Sec23">
+    <title>
+     Attention analysis
+    </title>
+    <p id="Par30">
+     Attention heads (n = 190) were extracted by running inference on unmasked subcontigs, and the raw attention weights were subsequently symmetrized.
+     <italic>
+      E.coli
+     </italic>
+     K-12 RegulonDB
+     <sup>
+      <xref ref-type="bibr" rid="CR56">
+       56
+      </xref>
+     </sup>
+     was used to probe heads with attention patterns that correspond the most with operons. Pearson’s correlation between symmetrized raw attentions and operons were calculated for each head. We trained a logistic regression classifier that predicts whether two neighboring genes belong to the same operon based on the attention weights across all attention heads corresponding to the gene pair.
+    </p>
+   </sec>
+   <sec id="Sec24">
+    <title>
+     TnsC structural homolog analysis
+    </title>
+    <p id="Par31">
+     TnsC structural homologs were identified by searching ShCAST TnsC (PDB 7M99 chain H) against the MGYP database using Foldseek
+     <sup>
+      <xref ref-type="bibr" rid="CR60">
+       60
+      </xref>
+     </sup>
+     on ESM Atlas (
+     <ext-link ext-link-type="uri" xlink:href="https://esmatlas.com/">
+      https://esmatlas.com/
+     </ext-link>
+     ). The contigs containing these homologs in the MGnify database were used to calculate the contextualized protein embeddings of the identified structural homologs. Contigs with less than 15 genes were excluded from the analysis. Contigs encoding proteins that were previously identified as “TnsC” using the UniRef90 database (see Gene annotation methods section above) were included in the database. “TnsC-like” contigs were manually annotated based on the presence of transposase genes (TnsB) and TniQ. Fifty random examples of MGnify contigs containing MGYPs annotated as NuoA and DnaB were added as negative controls for the UMAP visualization. We calculated KL divergence ratios using the following Eq. (
+     <xref ref-type="disp-formula" rid="Equ5">
+      5
+     </xref>
+     ).
+     <disp-formula id="Equ5">
+      <label>
+       5
+      </label>
+      <alternatives>
+       <mml:math id="Equ5_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+        <mml:mfrac>
+         <mml:mrow>
+          <mml:msub>
+           <mml:mrow>
+            <mml:mi>
+             D
+            </mml:mi>
+           </mml:mrow>
+           <mml:mrow>
+            <mml:mi>
+             K
+            </mml:mi>
+            <mml:mi>
+             L
+            </mml:mi>
+           </mml:mrow>
+          </mml:msub>
+          <mml:mrow>
+           <mml:mo>
+            (
+           </mml:mo>
+           <mml:mrow>
+            <mml:mi>
+             B
+            </mml:mi>
+            <mml:mi mathvariant="normal">
+             ∣∣
+            </mml:mi>
+            <mml:mi>
+             A
+            </mml:mi>
+           </mml:mrow>
+           <mml:mo>
+            )
+           </mml:mo>
+          </mml:mrow>
+         </mml:mrow>
+         <mml:mrow>
+          <mml:msub>
+           <mml:mrow>
+            <mml:mi>
+             D
+            </mml:mi>
+           </mml:mrow>
+           <mml:mrow>
+            <mml:mi>
+             K
+            </mml:mi>
+            <mml:mi>
+             L
+            </mml:mi>
+           </mml:mrow>
+          </mml:msub>
+          <mml:mrow>
+           <mml:mo>
+            (
+           </mml:mo>
+           <mml:mrow>
+            <mml:mi>
+             C
+            </mml:mi>
+            <mml:mi mathvariant="normal">
+             ∣∣
+            </mml:mi>
+            <mml:mi>
+             A
+            </mml:mi>
+           </mml:mrow>
+           <mml:mo>
+            )
+           </mml:mo>
+          </mml:mrow>
+         </mml:mrow>
+        </mml:mfrac>
+       </mml:math>
+       <tex-math id="Equ5_TeX">
+        \documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym}
+				\usepackage{amsfonts}
+				\usepackage{amssymb}
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\frac{{D}_{{KL}}(B{{{{{\rm{||}}}}}}A)}{{D}_{{KL}}(C{{{{{\rm{||}}}}}}A)}$$\end{document}
+       </tex-math>
+       <graphic mime-subtype="GIF" specific-use="web" xlink:href="41467_2024_46947_Article_Equ5.gif"/>
+      </alternatives>
+     </disp-formula>
+     where A is the distribution of representations of known TnsC, B is the distribution of representations of manually curated TnsC-like AAA+ regulators, C is the distribution of representations of other AAA+ regulators that are functionally unrelated structural homologs of known TnsC. Therefore, this metric ranges from 0 to 1, where a lower ratio represents increased ability to functionally discriminate distribution of B from C relative to A. KL divergence was calculated using the same formula as in the methods section Distributions of unannotated and annotated embeddings, except with 20 principal components that explained &gt;85% of variances across all embeddings.
+    </p>
+   </sec>
+   <sec id="Sec25">
+    <title>
+     Paralogy and orthology analysis
+    </title>
+    <p id="Par32">
+     UniProt IDs from ABC transporter ModA and ModC protein interacting paralog pairs (
+     <italic>
+      n
+     </italic>
+     = 4823) were previously identified by Ovchinnikov et al.
+     <sup>
+      <xref ref-type="bibr" rid="CR47">
+       47
+      </xref>
+     </sup>
+     and were downloaded from
+     <ext-link ext-link-type="uri" xlink:href="https://gremlin.bakerlab.org/cplx.php?uni_a=2ONK_A&amp;uni_b=2ONK_C">
+      https://gremlin.bakerlab.org/cplx.php?uni_a=2ONK_A&amp;uni_b=2ONK_C
+     </ext-link>
+     and subsequently used to download raw protein sequences from the UniProt server. Only pairs (
+     <italic>
+      n
+     </italic>
+     = 2700) where both raw sequences were available for download, and where the UniProt ID differed by one (indicating adjacent positioning in the reference genome) were selected for subsequent analyses. We constructed test contigs consisting of three genes, where first and third genes are masked, and the second gene encodes one of the pair in forward direction. We then queried gLM to predict the two neighboring masked genes, and considered the prediction to be correct if either of the proteins closest to masked genes’s highest confidence prediction in embedding space belongs to the same sequence cluster as the interacting protein (50% amino acid sequence identity, calculated using CD-HIT v4.6
+     <sup>
+      <xref ref-type="bibr" rid="CR61">
+       61
+      </xref>
+     </sup>
+     ). Random chance correct prediction rate (1.6 ± 1.0 was simulated using 1000 iterations of random predictions generated within the standard normal distribution and performing the same operation as above to compute the rate of correct predictions
+     <sup>
+      <xref ref-type="bibr" rid="CR62">
+       62
+      </xref>
+     </sup>
+     .
+    </p>
+   </sec>
+   <sec id="Sec26">
+    <title>
+     Taxonomic analysis and visualization
+    </title>
+    <p id="Par33">
+     4551 bacterial and archeal representative genomes and 11660 reference viral genomes were downloaded from the RefSeq database (
+     <ext-link ext-link-type="uri" xlink:href="ftp://ftp.ncbi.nlm.nih.gov/genomes/refseq">
+      ftp://ftp.ncbi.nlm.nih.gov/genomes/refseq
+     </ext-link>
+     ) on 12 Feb 2023. A random 30-gene subcontig is chosen and encoded using ESM2, which then were subsequently concatenated with an orientation vector and then used as input for the trained gLM. The last hidden layer was mean-pooled across the sequence to retrieve 1280-feature contextualized contig embeddings. The ESM2 protein embeddings were also mean-pooled across the sequence to retrieve 1280-feature context-free contig embeddings. We trained a logistic regression classifier to predict the class-level taxonomy of subcontigs and evaluated the performance using stratified k-fold cross-validation (k = 5).
+    </p>
+   </sec>
+   <sec id="Sec27">
+    <title>
+     UMAP visualization and statistical tests
+    </title>
+    <p id="Par34">
+     All UMAP dimensionality reductions calculated with following parameters: n_neighbors = 15, min_dist = 0.1. Silhouette scores were calculated using the
+     <italic>
+      sklearn
+     </italic>
+     package using the default setting with euclidean distance metric.
+    </p>
+   </sec>
+   <sec id="Sec28">
+    <title>
+     Reporting summary
+    </title>
+    <p id="Par35">
+     Further information on research design is available in the
+     <xref ref-type="supplementary-material" rid="MOESM3">
+      Nature Portfolio Reporting Summary
+     </xref>
+     linked to this article.
+    </p>
+   </sec>
+  </sec>
+ </body>
+ <back>
+  <ack>
+   <title>
+    Acknowledgements
+   </title>
+   <p>
+    We would like to thank the EBI MGnify team for generating and maintaining the metagenome database. We would also like to thank Meta AI’s ESM developers who made both the folded MGnify proteins structures and source-code openly available. We also thank Simon Roux and Landen Goszashti for insightful discussions. This work was supported by the Gordon and Betty Moore Foundation grant #9208 to P.R.G., NSF OCE-1635365 to P.R.G, and by the National Aeronautics and Space Administration under grant no. 80NSSC18K1140 and 80NSSC19K1427 issued through the NASA Network for Life Detection program to P.R.G. S.O. was supported by NIH Grant No. DP5OD026389 and NSF Grant No. MCB2032259. The computations in this paper were run on the FASRC Cannon cluster supported by the FAS Division of Science Research Computing Group at Harvard University.
+   </p>
+  </ack>
+  <sec sec-type="author-contribution">
+   <title>
+    Author contributions
+   </title>
+   <p>
+    Y.H. prepared the datasets and trained the model with support from A.L.C. and S.O.; E.H.K. and Y.H. conducted the TnsC analysis; A.L.C., S.O. and P.R.G. provided input in analysis and data interpretation; Y.H. wrote the manuscript with input from all authors; All authors read and approved the final manuscript.
+   </p>
+  </sec>
+  <sec sec-type="peer-review">
+   <title>
+    Peer review
+   </title>
+   <sec id="FPar1">
+    <title>
+     Peer review information
+    </title>
+    <p id="Par36">
+     <italic>
+      Nature Communications
+     </italic>
+     thanks Christian Dallago, Michael Heinzinger and the other, anonymous, reviewer(s) for their contribution to the peer review of this work. A peer review file is available.
+    </p>
+   </sec>
+  </sec>
+  <sec sec-type="data-availability">
+   <title>
+    <bold>
+     Data availability
+    </bold>
+   </title>
+   <p>
+    Dataset used for training is available for download from the MGnify server (
+    <ext-link ext-link-type="uri" xlink:href="http://ftp.ebi.ac.uk/pub/databases/metagenomics/peptide_database/2022_05/">
+     http://ftp.ebi.ac.uk/pub/databases/metagenomics/peptide_database/2022_05/
+    </ext-link>
+    ). The model is available at zenodo under accession number 10.5281/zenodo.7855545. Source data for the main Fig. (
+    <xref ref-type="fig" rid="Fig2">
+     2
+    </xref>
+    c,e,f,i&amp;h;
+    <xref ref-type="fig" rid="Fig3">
+     3a,b,c&amp;d
+    </xref>
+    ;
+    <xref ref-type="fig" rid="Fig4">
+     4a,b,c,e&amp;f
+    </xref>
+    ;
+    <xref ref-type="fig" rid="Fig5">
+     5b,c,d,e&amp;f
+    </xref>
+    ) and supplementary Figs. (
+    <xref ref-type="supplementary-material" rid="MOESM1">
+     2
+    </xref>
+    ,
+    <xref ref-type="supplementary-material" rid="MOESM1">
+     3
+    </xref>
+    ,
+    <xref ref-type="supplementary-material" rid="MOESM1">
+     4
+    </xref>
+    ,
+    <xref ref-type="supplementary-material" rid="MOESM1">
+     5
+    </xref>
+    ,
+    <xref ref-type="supplementary-material" rid="MOESM1">
+     7
+    </xref>
+    ,
+    <xref ref-type="supplementary-material" rid="MOESM1">
+     8
+    </xref>
+    ,
+    <xref ref-type="supplementary-material" rid="MOESM1">
+     9
+    </xref>
+    ,
+    <xref ref-type="supplementary-material" rid="MOESM1">
+     10
+    </xref>
+    &amp;
+    <xref ref-type="supplementary-material" rid="MOESM1">
+     11
+    </xref>
+    ) are provided with this paper as a zip file.
+    <xref ref-type="sec" rid="Sec30">
+     Source data
+    </xref>
+    are provided with this paper.
+   </p>
+  </sec>
+  <sec sec-type="data-availability">
+   <title>
+    <bold>
+     Code availability
+    </bold>
+   </title>
+   <p>
+    Training and inference code and analysis scripts are available at
+    <ext-link ext-link-type="uri" xlink:href="https://github.com/y-hwang/gLM">
+     https://github.com/y-hwang/gLM
+    </ext-link>
+    (
+    <ext-link ext-link-type="doi" xlink:href="10.5281/zenodo.10512240">
+     https://doi.org/10.5281/zenodo.10512240
+    </ext-link>
+    ).
+   </p>
+  </sec>
+  <sec sec-type="ethics-statement">
+   <sec id="FPar2" sec-type="COI-statement">
+    <title>
+     Competing interests
+    </title>
+    <p id="Par37">
+     A provisional patent (App. Serial No.: 63/491,019) on this work was filed by Harvard University with YH and SO as inventors. The remaining authors declare no competing interests.
+    </p>
+   </sec>
+  </sec>
+  <ref-list id="Bib1">
+   <title>
+    References
+   </title>
+   <ref-list>
+    <ref id="CR1">
+     <label>
+      1.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Redfern
+        </surname>
+        <given-names>
+         OC
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Dessailly
+        </surname>
+        <given-names>
+         B
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Orengo
+        </surname>
+        <given-names>
+         CA
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Exploring the structure and function paradigm
+      </article-title>
+      <source>
+       Curr. Opin. Struct. Biol.
+      </source>
+      <year>
+       2008
+      </year>
+      <volume>
+       18
+      </volume>
+      <fpage>
+       394
+      </fpage>
+      <lpage>
+       402
+      </lpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BD1cXntlWntr8%3D
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       18554899
+      </pub-id>
+      <pub-id pub-id-type="pmcid">
+       2561214
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1016/j.sbi.2008.05.007
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR2">
+     <label>
+      2.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Jumper
+        </surname>
+        <given-names>
+         J
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Highly accurate protein structure prediction with AlphaFold
+      </article-title>
+      <source>
+       Nature
+      </source>
+      <year>
+       2021
+      </year>
+      <volume>
+       596
+      </volume>
+      <fpage>
+       583
+      </fpage>
+      <lpage>
+       589
+      </lpage>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2021Natur.596..583J
+      </pub-id>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BB3MXhvVaktrrL
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       34265844
+      </pub-id>
+      <pub-id pub-id-type="pmcid">
+       8371605
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1038/s41586-021-03819-2
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR3">
+     <label>
+      3.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Baek
+        </surname>
+        <given-names>
+         M
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Accurate prediction of protein structures and interactions using a three-track neural network
+      </article-title>
+      <source>
+       Science
+      </source>
+      <year>
+       2021
+      </year>
+      <volume>
+       373
+      </volume>
+      <fpage>
+       871
+      </fpage>
+      <lpage>
+       876
+      </lpage>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2021Sci...373..871B
+      </pub-id>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BB3MXhvVCku7zM
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       34282049
+      </pub-id>
+      <pub-id pub-id-type="pmcid">
+       7612213
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1126/science.abj8754
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR4">
+     <label>
+      4.
+     </label>
+     <mixed-citation publication-type="other">
+      Rives, A. et al. Biological structure and function emerge from scaling unsupervised learning to 250 million protein sequences.
+      <italic>
+       Proc. Natl. Acad. Sci. USA
+      </italic>
+      .
+      <bold>
+       118
+      </bold>
+      , e2016239118 (2021).
+     </mixed-citation>
+    </ref>
+    <ref id="CR5">
+     <label>
+      5.
+     </label>
+     <mixed-citation publication-type="other">
+      Elnaggar, A. et al. ProtTrans: Toward Understanding the Language of Life Through Self-Supervised Learning. IEEE Trans. Pattern Anal. Mach. Intell.
+      <bold>
+       44
+      </bold>
+      , 7112–7127 (2022).
+     </mixed-citation>
+    </ref>
+    <ref id="CR6">
+     <label>
+      6.
+     </label>
+     <mixed-citation publication-type="other">
+      Madani, A. et al. Large language models generate functional protein sequences across diverse families.
+      <italic>
+       Nat. Biotechnol
+      </italic>
+      .
+      <bold>
+       41
+      </bold>
+      , 1099–1106 (2023).
+     </mixed-citation>
+    </ref>
+    <ref id="CR7">
+     <label>
+      7.
+     </label>
+     <mixed-citation publication-type="other">
+      Outeiral, C. &amp; Deane, C. M. Codon language embeddings provide strong signals for use in protein engineering.
+      <italic>
+       Nat Mach Intell
+      </italic>
+      <bold>
+       6
+      </bold>
+      , 170–179 (2024).
+     </mixed-citation>
+    </ref>
+    <ref id="CR8">
+     <label>
+      8.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Wright
+        </surname>
+        <given-names>
+         S
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       On the roles of directed and random changes in gene frequency in the genetics of populations
+      </article-title>
+      <source>
+       Evolution
+      </source>
+      <year>
+       1948
+      </year>
+      <volume>
+       2
+      </volume>
+      <fpage>
+       279
+      </fpage>
+      <lpage>
+       294
+      </lpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:STN:280:DyaH1M%2Fgs1WrsA%3D%3D
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       18104586
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.2307/2405519
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR9">
+     <label>
+      9.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Lynch
+        </surname>
+        <given-names>
+         M
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Conery
+        </surname>
+        <given-names>
+         JS
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       The Origins of Genome Complexity
+      </article-title>
+      <source>
+       Science
+      </source>
+      <year>
+       2003
+      </year>
+      <volume>
+       302
+      </volume>
+      <fpage>
+       1401
+      </fpage>
+      <lpage>
+       1404
+      </lpage>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2003Sci...302.1401L
+      </pub-id>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BD3sXptVGjsrs%3D
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       14631042
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1126/science.1089370
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR10">
+     <label>
+      10.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Cordero
+        </surname>
+        <given-names>
+         OX
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Polz
+        </surname>
+        <given-names>
+         MF
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Explaining microbial genomic diversity in light of evolutionary ecology
+      </article-title>
+      <source>
+       Nat. Rev. Microbiol.
+      </source>
+      <year>
+       2014
+      </year>
+      <volume>
+       12
+      </volume>
+      <fpage>
+       263
+      </fpage>
+      <lpage>
+       273
+      </lpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BC2cXjtlyitLo%3D
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       24590245
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1038/nrmicro3218
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR11">
+     <label>
+      11.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Treangen
+        </surname>
+        <given-names>
+         TJ
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Rocha
+        </surname>
+        <given-names>
+         EPC
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Horizontal transfer, not duplication, drives the expansion of protein families in prokaryotes
+      </article-title>
+      <source>
+       PLoS Genet.
+      </source>
+      <year>
+       2011
+      </year>
+      <volume>
+       7
+      </volume>
+      <fpage>
+       e1001284
+      </fpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BC3MXhvVKmurs%3D
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       21298028
+      </pub-id>
+      <pub-id pub-id-type="pmcid">
+       3029252
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1371/journal.pgen.1001284
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR12">
+     <label>
+      12.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Shapiro
+        </surname>
+        <given-names>
+         BJ
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Population genomics of early events in the ecological differentiation of bacteria
+      </article-title>
+      <source>
+       Science
+      </source>
+      <year>
+       2012
+      </year>
+      <volume>
+       336
+      </volume>
+      <fpage>
+       48
+      </fpage>
+      <lpage>
+       51
+      </lpage>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2012Sci...336...48S
+      </pub-id>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BC38XkvV2rs7w%3D
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       22491847
+      </pub-id>
+      <pub-id pub-id-type="pmcid">
+       3337212
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1126/science.1218198
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR13">
+     <label>
+      13.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Kountz
+        </surname>
+        <given-names>
+         DJ
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Balskus
+        </surname>
+        <given-names>
+         EP
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Leveraging Microbial Genomes and Genomic Context for Chemical Discovery
+      </article-title>
+      <source>
+       Acc. Chem. Res.
+      </source>
+      <year>
+       2021
+      </year>
+      <volume>
+       54
+      </volume>
+      <fpage>
+       2788
+      </fpage>
+      <lpage>
+       2797
+      </lpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BB3MXht1aktLbI
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       34087065
+      </pub-id>
+      <pub-id pub-id-type="pmcid">
+       8264950
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1021/acs.accounts.1c00100
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR14">
+     <label>
+      14.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Shmakov
+        </surname>
+        <given-names>
+         SA
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Systematic prediction of functionally linked genes in bacterial and archaeal genomes
+      </article-title>
+      <source>
+       Nat. Protoc.
+      </source>
+      <year>
+       2019
+      </year>
+      <volume>
+       14
+      </volume>
+      <fpage>
+       3013
+      </fpage>
+      <lpage>
+       3031
+      </lpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BC1MXhslOgtbbJ
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       31520072
+      </pub-id>
+      <pub-id pub-id-type="pmcid">
+       6938587
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1038/s41596-019-0211-1
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR15">
+     <label>
+      15.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Yelton
+        </surname>
+        <given-names>
+         AP
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       A semi-quantitative, synteny-based method to improve functional predictions for hypothetical and poorly annotated bacterial and archaeal genes
+      </article-title>
+      <source>
+       PLoS Comput. Biol.
+      </source>
+      <year>
+       2011
+      </year>
+      <volume>
+       7
+      </volume>
+      <fpage>
+       e1002230
+      </fpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BC3MXhsVCku7vP
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       22028637
+      </pub-id>
+      <pub-id pub-id-type="pmcid">
+       3197636
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1371/journal.pcbi.1002230
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR16">
+     <label>
+      16.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Miller
+        </surname>
+        <given-names>
+         D
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Stern
+        </surname>
+        <given-names>
+         A
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Burstein
+        </surname>
+        <given-names>
+         D
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Deciphering microbial gene function using natural language processing
+      </article-title>
+      <source>
+       Nat. Commun.
+      </source>
+      <year>
+       2022
+      </year>
+      <volume>
+       13
+      </volume>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2022NatCo..13.5731M
+      </pub-id>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BB38XisFOht7bI
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       36175448
+      </pub-id>
+      <pub-id pub-id-type="pmcid">
+       9523054
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1038/s41467-022-33397-4
+      </pub-id>
+      <elocation-id>
+       5731
+      </elocation-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR17">
+     <label>
+      17.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Konno
+        </surname>
+        <given-names>
+         N
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Iwasaki
+        </surname>
+        <given-names>
+         W
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Machine learning enables prediction of metabolic system evolution in bacteria
+      </article-title>
+      <source>
+       Sci. Adv.
+      </source>
+      <year>
+       2023
+      </year>
+      <volume>
+       9
+      </volume>
+      <fpage>
+       eadc9130
+      </fpage>
+      <pub-id pub-id-type="pmid">
+       36630500
+      </pub-id>
+      <pub-id pub-id-type="pmcid">
+       9833677
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1126/sciadv.adc9130
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR18">
+     <label>
+      18.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Avsec
+        </surname>
+        <given-names>
+         Ž
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Effective gene expression prediction from sequence by integrating long-range interactions
+      </article-title>
+      <source>
+       Nat. Methods
+      </source>
+      <year>
+       2021
+      </year>
+      <volume>
+       18
+      </volume>
+      <fpage>
+       1196
+      </fpage>
+      <lpage>
+       1203
+      </lpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BB3MXitFOltLbP
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       34608324
+      </pub-id>
+      <pub-id pub-id-type="pmcid">
+       8490152
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1038/s41592-021-01252-x
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR19">
+     <label>
+      19.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Ji
+        </surname>
+        <given-names>
+         Y
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Zhou
+        </surname>
+        <given-names>
+         Z
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Liu
+        </surname>
+        <given-names>
+         H
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Davuluri
+        </surname>
+        <given-names>
+         RV
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       DNABERT: pre-trained Bidirectional Encoder Representations from Transformers model for DNA-language in genome
+      </article-title>
+      <source>
+       Bioinformatics
+      </source>
+      <year>
+       2021
+      </year>
+      <volume>
+       37
+      </volume>
+      <fpage>
+       2112
+      </fpage>
+      <lpage>
+       2120
+      </lpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BB3MXisFantbzM
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       33538820
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1093/bioinformatics/btab083
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR20">
+     <label>
+      20.
+     </label>
+     <mixed-citation publication-type="other">
+      Dalla-Torre, H. et al. The Nucleotide Transformer: Building and Evaluating Robust Foundation Models for Human Genomics.
+      <italic>
+       bioRxiv
+      </italic>
+      2023.01.11.523679
+      <ext-link ext-link-type="doi" xlink:href="10.1101/2023.01.11.523679">
+       https://doi.org/10.1101/2023.01.11.523679
+      </ext-link>
+      (2023).
+     </mixed-citation>
+    </ref>
+    <ref id="CR21">
+     <label>
+      21.
+     </label>
+     <mixed-citation publication-type="other">
+      Nguyen, E. et al. HyenaDNA: Long-Range Genomic Sequence Modeling at Single Nucleotide Resolution. arXiv:2306.15794v2. [Preprint] (2023).
+     </mixed-citation>
+    </ref>
+    <ref id="CR22">
+     <label>
+      22.
+     </label>
+     <mixed-citation publication-type="other">
+      Zvyagin, M. et al. GenSLMs: Genome-scale language models reveal SARS-CoV-2 evolutionary dynamics.
+      <italic>
+       bioRxiv
+      </italic>
+      <ext-link ext-link-type="doi" xlink:href="10.1101/2022.10.10.511571">
+       https://doi.org/10.1101/2022.10.10.511571
+      </ext-link>
+      (2022).
+     </mixed-citation>
+    </ref>
+    <ref id="CR23">
+     <label>
+      23.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Lin
+        </surname>
+        <given-names>
+         Z
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Evolutionary-scale prediction of atomic-level protein structure with a language model
+      </article-title>
+      <source>
+       Science
+      </source>
+      <year>
+       2023
+      </year>
+      <volume>
+       379
+      </volume>
+      <fpage>
+       1123
+      </fpage>
+      <lpage>
+       1130
+      </lpage>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2023Sci...379.1123L
+      </pub-id>
+      <pub-id assigning-authority="American Mathematical Society" pub-id-type="other">
+       4567681
+      </pub-id>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BB3sXls1ertrk%3D
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       36927031
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1126/science.ade2574
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR24">
+     <label>
+      24.
+     </label>
+     <mixed-citation publication-type="other">
+      Vaswani, A. et al. Attention is All you Need. In
+      <italic>
+       Advances in Neural Information Processing Systems
+      </italic>
+      Vol. 30 (2017).
+     </mixed-citation>
+    </ref>
+    <ref id="CR25">
+     <label>
+      25.
+     </label>
+     <mixed-citation publication-type="other">
+      Devlin, J., Chang, M.-W., Lee, K. &amp; Toutanova, K. BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding. In
+      <italic>
+       Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1
+      </italic>
+      (Long and Short Papers) 4171–4186
+      <ext-link ext-link-type="doi" xlink:href="10.18653/v1/N19-1423">
+       https://doi.org/10.18653/v1/N19-1423
+      </ext-link>
+      (2019).
+     </mixed-citation>
+    </ref>
+    <ref id="CR26">
+     <label>
+      26.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Hochreiter
+        </surname>
+        <given-names>
+         S
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Schmidhuber
+        </surname>
+        <given-names>
+         J
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Long short-term memory
+      </article-title>
+      <source>
+       Neural Comput
+      </source>
+      <year>
+       1997
+      </year>
+      <volume>
+       9
+      </volume>
+      <fpage>
+       1735
+      </fpage>
+      <lpage>
+       1780
+      </lpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:STN:280:DyaK1c%2FhvVahsQ%3D%3D
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       9377276
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1162/neco.1997.9.8.1735
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR27">
+     <label>
+      27.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Richardson
+        </surname>
+        <given-names>
+         L
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       MGnify: the microbiome sequence data analysis resource in 2023
+      </article-title>
+      <source>
+       Nucleic Acids Res
+      </source>
+      <year>
+       2023
+      </year>
+      <volume>
+       51
+      </volume>
+      <fpage>
+       D753
+      </fpage>
+      <lpage>
+       D759
+      </lpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BB3sXhtl2itb7F
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       36477304
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1093/nar/gkac1080
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR28">
+     <label>
+      28.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Blattner
+        </surname>
+        <given-names>
+         FR
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       The complete genome sequence of Escherichia coli K-12
+      </article-title>
+      <source>
+       Science
+      </source>
+      <year>
+       1997
+      </year>
+      <volume>
+       277
+      </volume>
+      <fpage>
+       1453
+      </fpage>
+      <lpage>
+       1462
+      </lpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DyaK2sXlvVGnu78%3D
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       9278503
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1126/science.277.5331.1453
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR29">
+     <label>
+      29.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Jeffery
+        </surname>
+        <given-names>
+         CJ
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Protein moonlighting: what is it, and why is it important?
+      </article-title>
+      <source>
+       Philos. Trans. R. Soc. Lond. B Biol. Sci.
+      </source>
+      <year>
+       2018
+      </year>
+      <volume>
+       373
+      </volume>
+      <fpage>
+       20160523
+      </fpage>
+      <pub-id pub-id-type="pmid">
+       29203708
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1098/rstb.2016.0523
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR30">
+     <label>
+      30.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Miskei
+        </surname>
+        <given-names>
+         M
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Fuzziness enables context dependence of protein interactions
+      </article-title>
+      <source>
+       FEBS Lett.
+      </source>
+      <year>
+       2017
+      </year>
+      <volume>
+       591
+      </volume>
+      <fpage>
+       2682
+      </fpage>
+      <lpage>
+       2695
+      </lpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BC2sXhtlGhs7vP
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       28762260
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1002/1873-3468.12762
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR31">
+     <label>
+      31.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Gherardini
+        </surname>
+        <given-names>
+         PF
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Wass
+        </surname>
+        <given-names>
+         MN
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Helmer-Citterich
+        </surname>
+        <given-names>
+         M
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Sternberg
+        </surname>
+        <given-names>
+         MJE
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Convergent evolution of enzyme active sites is not a rare phenomenon
+      </article-title>
+      <source>
+       J. Mol. Biol.
+      </source>
+      <year>
+       2007
+      </year>
+      <volume>
+       372
+      </volume>
+      <fpage>
+       817
+      </fpage>
+      <lpage>
+       845
+      </lpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BD2sXpvFGktb0%3D
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       17681532
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1016/j.jmb.2007.06.017
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR32">
+     <label>
+      32.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Ben-Hur
+        </surname>
+        <given-names>
+         A
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Brutlag
+        </surname>
+        <given-names>
+         D
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Remote homology detection: a motif based approach
+      </article-title>
+      <source>
+       Bioinformatics
+      </source>
+      <year>
+       2003
+      </year>
+      <volume>
+       19
+      </volume>
+      <fpage>
+       i26
+      </fpage>
+      <lpage>
+       i33
+      </lpage>
+      <pub-id pub-id-type="pmid">
+       12855434
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1093/bioinformatics/btg1002
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR33">
+     <label>
+      33.
+     </label>
+     <mixed-citation publication-type="other">
+      Bertram, S. et al. Methanogenic capabilities of ANME-archaea deduced from
+      <sup>
+       13
+      </sup>
+      C-labelling approaches.
+      <italic>
+       Environmental Microbiology
+      </italic>
+      <bold>
+       15
+      </bold>
+      , 2384–2393 (2013).
+     </mixed-citation>
+    </ref>
+    <ref id="CR34">
+     <label>
+      34.
+     </label>
+     <mixed-citation publication-type="other">
+      Moran, J. J., House, C. H., Thomas, B. &amp; Freeman, K. H. Products of trace methane oxidation during nonmethyltrophic growth by Methanosarcina.
+      <italic>
+       J. Geophys. Res.
+      </italic>
+      <bold>
+       112
+      </bold>
+      , G02011 (2007).
+     </mixed-citation>
+    </ref>
+    <ref id="CR35">
+     <label>
+      35.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Shao
+        </surname>
+        <given-names>
+         N
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Expression of divergent methyl/alkyl coenzyme M reductases from uncultured archaea
+      </article-title>
+      <source>
+       Commun. Biol.
+      </source>
+      <year>
+       2022
+      </year>
+      <volume>
+       5
+      </volume>
+      <fpage>
+       1113
+      </fpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BB38XislansLnL
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       36266535
+      </pub-id>
+      <pub-id pub-id-type="pmcid">
+       9584954
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1038/s42003-022-04057-6
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR36">
+     <label>
+      36.
+     </label>
+     <mixed-citation publication-type="other">
+      Coenen, A. et al. Visualizing and Measuring the Geometry of BERT. In:
+      <italic>
+       Proceedings of the Neural Information Processing Systems
+      </italic>
+      , 2019.
+     </mixed-citation>
+    </ref>
+    <ref id="CR37">
+     <label>
+      37.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Vanni
+        </surname>
+        <given-names>
+         C
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Unifying the known and unknown microbial coding sequence space
+      </article-title>
+      <source>
+       Elife
+      </source>
+      <year>
+       2022
+      </year>
+      <volume>
+       11
+      </volume>
+      <fpage>
+       e67667
+      </fpage>
+      <pub-id pub-id-type="pmid">
+       35356891
+      </pub-id>
+      <pub-id pub-id-type="pmcid">
+       9132574
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.7554/eLife.67667
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR38">
+     <label>
+      38.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Bileschi
+        </surname>
+        <given-names>
+         ML
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Using deep learning to annotate the protein universe
+      </article-title>
+      <source>
+       Nat. Biotechnol.
+      </source>
+      <year>
+       2022
+      </year>
+      <volume>
+       40
+      </volume>
+      <fpage>
+       932
+      </fpage>
+      <lpage>
+       937
+      </lpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BB38XksFCnsLk%3D
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       35190689
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1038/s41587-021-01179-w
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR39">
+     <label>
+      39.
+     </label>
+     <mixed-citation publication-type="other">
+      Rogers, A., Kovaleva, O. &amp; Rumshisky, A. A Primer in BERTology: What We Know About How BERT Works.
+      <italic>
+       Transactions of the Association for Computational Linguistics
+      </italic>
+      <bold>
+       8
+      </bold>
+      , 842–866 (2020).
+     </mixed-citation>
+    </ref>
+    <ref id="CR40">
+     <label>
+      40.
+     </label>
+     <mixed-citation publication-type="other">
+      Vig, J. et al. BERTology Meets Biology: Interpreting Attention in Protein Language Models. In:
+      <italic>
+       Proceedings of the International Conference on Learning Representations
+      </italic>
+      , 2021.
+     </mixed-citation>
+    </ref>
+    <ref id="CR41">
+     <label>
+      41.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Salgado
+        </surname>
+        <given-names>
+         H
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Using RegulonDB, the Escherichia coli K-12 Gene Regulatory Transcriptional Network Database
+      </article-title>
+      <source>
+       Curr. Protoc. Bioinforma.
+      </source>
+      <year>
+       2018
+      </year>
+      <volume>
+       61
+      </volume>
+      <fpage>
+       1.32.1
+      </fpage>
+      <lpage>
+       1.32.30
+      </lpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BC1MXivVWmu78%3D
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1002/cpbi.43
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR42">
+     <label>
+      42.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         White
+        </surname>
+        <given-names>
+         SR
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Lauring
+        </surname>
+        <given-names>
+         B
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       AAA+ ATPases: achieving diversity of function with conserved machinery
+      </article-title>
+      <source>
+       Traffic
+      </source>
+      <year>
+       2007
+      </year>
+      <volume>
+       8
+      </volume>
+      <fpage>
+       1657
+      </fpage>
+      <lpage>
+       1667
+      </lpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BD2sXhsVeit7%2FJ
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       17897320
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1111/j.1600-0854.2007.00642.x
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR43">
+     <label>
+      43.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Park
+        </surname>
+        <given-names>
+         J-U
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Structures of the holo CRISPR RNA-guided transposon integration complex
+      </article-title>
+      <source>
+       Nature
+      </source>
+      <year>
+       2023
+      </year>
+      <volume>
+       613
+      </volume>
+      <fpage>
+       775
+      </fpage>
+      <lpage>
+       782
+      </lpage>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2023Natur.613..775P
+      </pub-id>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BB3sXpt1OlsQ%3D%3D
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       36442503
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1038/s41586-022-05573-5
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR44">
+     <label>
+      44.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Rybarski
+        </surname>
+        <given-names>
+         JR
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Hu
+        </surname>
+        <given-names>
+         K
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Hill
+        </surname>
+        <given-names>
+         AM
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Wilke
+        </surname>
+        <given-names>
+         CO
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Finkelstein
+        </surname>
+        <given-names>
+         IJ
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Metagenomic discovery of CRISPR-associated transposons
+      </article-title>
+      <source>
+       Proc. Natl Acad. Sci. USA
+      </source>
+      <year>
+       2021
+      </year>
+      <volume>
+       118
+      </volume>
+      <fpage>
+       e2112279118
+      </fpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BB38XitVejtbk%3D
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       34845024
+      </pub-id>
+      <pub-id pub-id-type="pmcid">
+       8670466
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1073/pnas.2112279118
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR45">
+     <label>
+      45.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Benler
+        </surname>
+        <given-names>
+         S
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Cargo Genes of Tn7-Like Transposons Comprise an Enormous Diversity of Defense Systems, Mobile Genetic Elements, and Antibiotic Resistance Genes
+      </article-title>
+      <source>
+       MBio
+      </source>
+      <year>
+       2021
+      </year>
+      <volume>
+       12
+      </volume>
+      <pub-id pub-id-type="pmid">
+       34872347
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1128/mBio.02938-21
+      </pub-id>
+      <elocation-id>
+       e0293821
+      </elocation-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR46">
+     <label>
+      46.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Klompe
+        </surname>
+        <given-names>
+         SE
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Vo
+        </surname>
+        <given-names>
+         PLH
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Halpin-Healy
+        </surname>
+        <given-names>
+         TS
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Sternberg
+        </surname>
+        <given-names>
+         SH
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Transposon-encoded CRISPR–Cas systems direct RNA-guided DNA integration
+      </article-title>
+      <source>
+       Nature
+      </source>
+      <year>
+       2019
+      </year>
+      <volume>
+       571
+      </volume>
+      <fpage>
+       219
+      </fpage>
+      <lpage>
+       225
+      </lpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BC1MXhtlamtbzN
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       31189177
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1038/s41586-019-1323-z
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR47">
+     <label>
+      47.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Ovchinnikov
+        </surname>
+        <given-names>
+         S
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Kamisetty
+        </surname>
+        <given-names>
+         H
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Baker
+        </surname>
+        <given-names>
+         D
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Robust and accurate prediction of residue-residue interactions across protein interfaces using evolutionary information
+      </article-title>
+      <source>
+       Elife
+      </source>
+      <year>
+       2014
+      </year>
+      <volume>
+       3
+      </volume>
+      <fpage>
+       e02030
+      </fpage>
+      <pub-id pub-id-type="pmid">
+       24842992
+      </pub-id>
+      <pub-id pub-id-type="pmcid">
+       4034769
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.7554/eLife.02030
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR48">
+     <label>
+      48.
+     </label>
+     <mixed-citation publication-type="other">
+      Sgarbossa, D., Lupo, U. &amp; Bitbol, A.-F. Pairing interacting protein sequences using masked language modeling. In:
+      <italic>
+       Proceedings of the ICLR 2024 Workshop on Machine Learning for Genomics Explorations
+      </italic>
+      , 2024.
+     </mixed-citation>
+    </ref>
+    <ref id="CR49">
+     <label>
+      49.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Guo
+        </surname>
+        <given-names>
+         J
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       VirSorter2: a multi-classifier, expert-guided approach to detect diverse DNA and RNA viruses
+      </article-title>
+      <source>
+       Microbiome
+      </source>
+      <year>
+       2021
+      </year>
+      <volume>
+       9
+      </volume>
+      <pub-id pub-id-type="pmid">
+       33522966
+      </pub-id>
+      <pub-id pub-id-type="pmcid">
+       7852108
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1186/s40168-020-00990-y
+      </pub-id>
+      <elocation-id>
+       37
+      </elocation-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR50">
+     <label>
+      50.
+     </label>
+     <mixed-citation publication-type="other">
+      Kaplan, J. et al. Scaling Laws for Neural Language Models.
+      <italic>
+       arXiv [cs.LG]
+      </italic>
+      (2020).
+     </mixed-citation>
+    </ref>
+    <ref id="CR51">
+     <label>
+      51.
+     </label>
+     <mixed-citation publication-type="other">
+      Kiros, R., Salakhutdinov, R. &amp; Zemel, R. Multimodal Neural Language Models. In:
+      <italic>
+       Proceedings of the 31st International Conference on Machine Learning
+      </italic>
+      , Vol. 32, No. 2, pp. 595–603. PMLR, Beijing, China, 22–24 Jun 2014.
+     </mixed-citation>
+    </ref>
+    <ref id="CR52">
+     <label>
+      52.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Steinegger
+        </surname>
+        <given-names>
+         M
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Söding
+        </surname>
+        <given-names>
+         J
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       MMseqs2 enables sensitive protein sequence searching for the analysis of massive data sets
+      </article-title>
+      <source>
+       Nat. Biotechnol.
+      </source>
+      <year>
+       2017
+      </year>
+      <volume>
+       35
+      </volume>
+      <fpage>
+       1026
+      </fpage>
+      <lpage>
+       1028
+      </lpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BC2sXhs1GqsLzE
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       29035372
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1038/nbt.3988
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR53">
+     <label>
+      53.
+     </label>
+     <mixed-citation publication-type="other">
+      Liu, Y. et al. RoBERTa: A Robustly Optimized BERT Pretraining Approach.
+      <italic>
+       arXiv [cs.CL]
+      </italic>
+      (2019).
+     </mixed-citation>
+    </ref>
+    <ref id="CR54">
+     <label>
+      54.
+     </label>
+     <mixed-citation publication-type="other">
+      Huang, Z., Liang, D., Xu, P. &amp; Xiang, B. In: Cohn, T., He, Y. &amp; Liu, Y. (eds.)
+      <italic>
+       Findings of the Association for Computational Linguistics: EMNLP 2020
+      </italic>
+      , pp. 3327–3335. Association for Computational Linguistics, Online, Nov 2020.
+      <ext-link ext-link-type="doi" xlink:href="10.18653/v1/2020.findings-emnlp.298">
+       https://doi.org/10.18653/v1/2020.findings-emnlp.298
+      </ext-link>
+      .
+     </mixed-citation>
+    </ref>
+    <ref id="CR55">
+     <label>
+      55.
+     </label>
+     <mixed-citation publication-type="other">
+      Loshchilov, I. &amp; Hutter, F. Decoupled Weight Decay Regularization. In:
+      <italic>
+       Proceedings of the International Conference on Learning Representations
+      </italic>
+      , 2019.
+     </mixed-citation>
+    </ref>
+    <ref id="CR56">
+     <label>
+      56.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Tierrafría
+        </surname>
+        <given-names>
+         VH
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       RegulonDB 11.0: Comprehensive high-throughput datasets on transcriptional regulation in Escherichia coli K-12
+      </article-title>
+      <source>
+       Micro. Genom.
+      </source>
+      <year>
+       2022
+      </year>
+      <volume>
+       8
+      </volume>
+      <fpage>
+       mgen000833
+      </fpage>
+     </mixed-citation>
+    </ref>
+    <ref id="CR57">
+     <label>
+      57.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Buchfink
+        </surname>
+        <given-names>
+         B
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Xie
+        </surname>
+        <given-names>
+         C
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Huson
+        </surname>
+        <given-names>
+         DH
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Fast and sensitive protein alignment using DIAMOND
+      </article-title>
+      <source>
+       Nat. Methods
+      </source>
+      <year>
+       2015
+      </year>
+      <volume>
+       12
+      </volume>
+      <fpage>
+       59
+      </fpage>
+      <lpage>
+       60
+      </lpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BC2cXhvFKlsrzN
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       25402007
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1038/nmeth.3176
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR58">
+     <label>
+      58.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Suzek
+        </surname>
+        <given-names>
+         BE
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Huang
+        </surname>
+        <given-names>
+         H
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         McGarvey
+        </surname>
+        <given-names>
+         P
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Mazumder
+        </surname>
+        <given-names>
+         R
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Wu
+        </surname>
+        <given-names>
+         CH
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       UniRef: comprehensive and non-redundant UniProt reference clusters
+      </article-title>
+      <source>
+       Bioinformatics
+      </source>
+      <year>
+       2007
+      </year>
+      <volume>
+       23
+      </volume>
+      <fpage>
+       1282
+      </fpage>
+      <lpage>
+       1288
+      </lpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BD2sXntVOjurw%3D
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       17379688
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1093/bioinformatics/btm098
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR59">
+     <label>
+      59.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Yu
+        </surname>
+        <given-names>
+         T
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Enzyme function prediction using contrastive learning
+      </article-title>
+      <source>
+       Science
+      </source>
+      <year>
+       2023
+      </year>
+      <volume>
+       379
+      </volume>
+      <fpage>
+       1358
+      </fpage>
+      <lpage>
+       1363
+      </lpage>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2023Sci...379.1358Y
+      </pub-id>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BB3sXmslGksbY%3D
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       36996195
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1126/science.adf2465
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR60">
+     <label>
+      60.
+     </label>
+     <mixed-citation publication-type="other">
+      van Kempen, M. et al. Fast and accurate protein structure search with Foldseek.
+      <italic>
+       Nat. Biotechnol.
+      </italic>
+      <bold>
+       42
+      </bold>
+      , 243–246 (2024).
+     </mixed-citation>
+    </ref>
+    <ref id="CR61">
+     <label>
+      61.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Li
+        </surname>
+        <given-names>
+         W
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Jaroszewski
+        </surname>
+        <given-names>
+         L
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Godzik
+        </surname>
+        <given-names>
+         A
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Clustering of highly homologous sequences to reduce the size of large protein databases
+      </article-title>
+      <source>
+       Bioinformatics
+      </source>
+      <year>
+       2001
+      </year>
+      <volume>
+       17
+      </volume>
+      <fpage>
+       282
+      </fpage>
+      <lpage>
+       283
+      </lpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BD3MXjsFSit7Y%3D
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       11294794
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1093/bioinformatics/17.3.282
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR62">
+     <label>
+      62.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Piovesan
+        </surname>
+        <given-names>
+         A
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Caracausi
+        </surname>
+        <given-names>
+         M
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Antonaros
+        </surname>
+        <given-names>
+         F
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Pelleri
+        </surname>
+        <given-names>
+         MC
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Vitale
+        </surname>
+        <given-names>
+         L
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       GeneBase 1.1: a tool to summarize data from NCBI gene datasets and its application to an update of human gene statistics
+      </article-title>
+      <source>
+       Database
+      </source>
+      <year>
+       2016
+      </year>
+      <volume>
+       2016
+      </volume>
+      <fpage>
+       baw153
+      </fpage>
+      <pub-id pub-id-type="pmid">
+       28025344
+      </pub-id>
+      <pub-id pub-id-type="pmcid">
+       5199132
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1093/database/baw153
+      </pub-id>
+     </mixed-citation>
+    </ref>
+   </ref-list>
+  </ref-list>
+  <app-group>
+   <app id="App1" specific-use="web-only">
+    <sec id="Sec29">
+     <title>
+      Supplementary information
+     </title>
+     <p id="Par38">
+      <supplementary-material content-type="local-data" id="MOESM1" xlink:title="Supplementary information">
+       <media mime-subtype="pdf" mimetype="application" xlink:href="MediaObjects/41467_2024_46947_MOESM1_ESM.pdf">
+        <caption xml:lang="en">
+         <p>
+          Supplementary Information
+         </p>
+        </caption>
+       </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="MOESM2" xlink:title="Supplementary information">
+       <media mime-subtype="pdf" mimetype="application" xlink:href="MediaObjects/41467_2024_46947_MOESM2_ESM.pdf">
+        <caption xml:lang="en">
+         <p>
+          Peer Review File
+         </p>
+        </caption>
+       </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="MOESM3" xlink:title="Supplementary information">
+       <media mime-subtype="pdf" mimetype="application" xlink:href="MediaObjects/41467_2024_46947_MOESM3_ESM.pdf">
+        <caption xml:lang="en">
+         <p>
+          Reporting Summary
+         </p>
+        </caption>
+       </media>
+      </supplementary-material>
+     </p>
+    </sec>
+    <sec id="Sec30">
+     <title>
+      Source data
+     </title>
+     <p id="Par39">
+      <supplementary-material content-type="local-data" id="MOESM4" xlink:title="Source data">
+       <media mime-subtype="x-zip-compressed" mimetype="application" xlink:href="MediaObjects/41467_2024_46947_MOESM4_ESM.zip">
+        <caption xml:lang="en">
+         <p>
+          Source Data
+         </p>
+        </caption>
+       </media>
+      </supplementary-material>
+     </p>
+    </sec>
+   </app>
+  </app-group>
+  <notes notes-type="ESMHint">
+   <title>
+    Supplementary information
+   </title>
+   <p>
+    The online version contains supplementary material available at
+    <ext-link ext-link-type="doi" xlink:href="10.1038/s41467-024-46947-9">
+     https://doi.org/10.1038/s41467-024-46947-9
+    </ext-link>
+    .
+   </p>
+  </notes>
+  <notes notes-type="Misc">
+   <p>
+    <bold>
+     Publisher’s note
+    </bold>
+    Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.
+   </p>
+  </notes>
+ </back>
+</article>

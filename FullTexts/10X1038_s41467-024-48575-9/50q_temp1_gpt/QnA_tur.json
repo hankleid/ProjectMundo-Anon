@@ -1,0 +1,552 @@
+{
+  "1": {
+    "question": "ZS-DeconvNet'in geleneksel denetimli derin öğrenme modellerine göre birincil avantajı nedir?",
+    "options": {
+      "A": "Yüksek kaliteli gerçek veri gerektirir.",
+      "B": "Denetimli bir şekilde çalışır.",
+      "C": "Denetimsiz öğrenme kullanarak anında görüntü çözünürlüğünü artırır.",
+      "D": "Eğitim için büyük veri setlerine dayanır.",
+      "E": "Çıkarım için önceden eğitilmiş modeller kullanır.",
+      "F": "Bilmiyorum."
+    }
+  },
+  "2": {
+    "question": "Makalede gösterildiği gibi ZS-DeconvNet ile uyumlu mikroskopi modları hangileridir?",
+    "options": {
+      "A": "Sadece toplam iç yansıma floresan mikroskobu ve geniş alan mikroskobu.",
+      "B": "Sadece konfokal mikroskopi.",
+      "C": "Sadece iki-foton mikroskopi.",
+      "D": "Lattice ışık tabakası mikroskobu ve çok modlu yapılandırılmış aydınlatma mikroskobu dahil birden fazla mod.",
+      "E": "Sadece tarama tabanlı modlar.",
+      "F": "Bilmiyorum."
+    }
+  },
+  "3": {
+    "question": "ZS-DeconvNet, eğitim sırasında düşük sinyal-gürültü oranı (SNR) koşullarını nasıl ele alır?",
+    "options": {
+      "A": "Gürültüyü artırarak netliği artırır.",
+      "B": "Bağımsız gürültü sinyalleri oluşturmak için yeniden bozma şeması uygular.",
+      "C": "Gürültülü bölümleri önceden kaydedilmiş verilerle değiştirir.",
+      "D": "Düşük SNR koşullarında iyi performans göstermez.",
+      "E": "Eğitim sırasında gürültüyü tamamen görmezden gelir.",
+      "F": "Bilmiyorum."
+    }
+  },
+  "4": {
+    "question": "ZS-DeconvNet'in mikroskop görüntülerinin kırınım sınırı üzerindeki etkisi nedir?",
+    "options": {
+      "A": "Kırınım sınırını aşamaz.",
+      "B": "Kırınım sınırına göre görüntü netliğini kötüleştirir.",
+      "C": "Kırınım sınırının üzerinde 1.5 kat daha fazla çözünürlük sağlar.",
+      "D": "Tam olarak kırınım sınırına ulaşır.",
+      "E": "Kırınım sınırını sadece 0.5 kat marjinal olarak iyileştirir.",
+      "F": "Bilmiyorum."
+    }
+  },
+  "5": {
+    "question": "Makalede, ZS-DeconvNet'in floresan mikroskopi için sunduğu ana özellik nedir?",
+    "options": {
+      "A": "Yoğun manuel parametre ayarlaması gerektirir.",
+      "B": "Görüntüleme için yüksek floresan seviyeleri talep eder.",
+      "C": "Geleneksel yöntemlere göre daha düşük floresan seviyelerine izin verir.",
+      "D": "Görüntü kalitesini düşürür.",
+      "E": "Süreci tamamen bilgisayar tabanlı hale getirir.",
+      "F": "Bilmiyorum."
+    }
+  },
+  "6": {
+    "question": "ZS-DeconvNet, çekirdek çerçevesi olarak hangi model mimarisini kullanır?",
+    "options": {
+      "A": "Tek katmanlı Perceptron.",
+      "B": "Konvolüsyonel Katman Ağı.",
+      "C": "Çift aşamalı U-Net mimarisi.",
+      "D": "Tekrarlayan Sinir Ağı.",
+      "E": "Yukarıdakilerin hiçbiri.",
+      "F": "Bilmiyorum."
+    }
+  },
+  "7": {
+    "question": "Aşağıdakilerden hangisi ZS-DeconvNet'in kayıp fonksiyonunun bir bileşeni DEĞİLDİR?",
+    "options": {
+      "A": "Hessian düzenleme terimi.",
+      "B": "Boşluk düzeltme düzenlemesi.",
+      "C": "Konvolüsyonel Sinir Ağı sınıflandırıcısı.",
+      "D": "Gürültü giderme terimi.",
+      "E": "Dekonvolüsyon terimi.",
+      "F": "Bilmiyorum."
+    }
+  },
+  "8": {
+    "question": "Metne göre ZS-DeconvNet, konfokal mikroskopi verilerini nasıl geliştirir?",
+    "options": {
+      "A": "Sinyal-gürültü oranını düşürerek.",
+      "B": "Foton bütçesi gereksinimlerini artırarak.",
+      "C": "Kapsamlı donanım değişiklikleri yoluyla.",
+      "D": "SNR, kontrast ve çözünürlüğü artırarak.",
+      "E": "Görüntü sadakatini önemli ölçüde azaltarak.",
+      "F": "Bilmiyorum."
+    }
+  },
+  "9": {
+    "question": "ZS-DeconvNet, biyolojik araştırmalarda hangi zorluğu etkili bir şekilde ele alır?",
+    "options": {
+      "A": "Biyolojik örneklere erişim zorluğu.",
+      "B": "Biyolojik görüntülemenin düşük zamansal çözünürlüğü.",
+      "C": "Görüntülemede yüksek ışık maruziyeti gereksinimi.",
+      "D": "Gerçek eğitim verilerini elde etmenin pratik olmaması.",
+      "E": "Görüntü işleme sırasında manuel müdahale ihtiyacı.",
+      "F": "Bilmiyorum."
+    }
+  },
+  "10": {
+    "question": "Testlerde, ZS-DeconvNet PSNR verilerine göre hangi yöntemi önemli ölçüde geride bıraktı?",
+    "options": {
+      "A": "Geleneksel elle açıklamalı veri işleme.",
+      "B": "Rastgele tahmin gürültü modelleri.",
+      "C": "Geleneksel analitik model tabanlı yaklaşımlar.",
+      "D": "Basit ortalama filtreler kullanarak.",
+      "E": "Hiçbir şeyi, başka bir yöntemi geride bırakmadı.",
+      "F": "Bilmiyorum."
+    }
+  },
+  "11": {
+    "question": "3D ZS-DeconvNet'in performansını test etmek için hangi mikroskopi sistemi kullanıldı?",
+    "options": {
+      "A": "Sadece Nikon ticari konfokal sistemi.",
+      "B": "Belgesiz bir ev yapımı floresan sistemi.",
+      "C": "Ev yapımı lattice ışık tabakası yapılandırılmış aydınlatma mikroskobu (LLS-SIM).",
+      "D": "Yüksek yoğunluklu lazer mikroskobu.",
+      "E": "Basit faz-kontrast mikroskobu.",
+      "F": "Bilmiyorum."
+    }
+  },
+  "12": {
+    "question": "ZS-DeconvNet, hücre yapışması ve göçü çalışmasına nasıl katkıda bulundu?",
+    "options": {
+      "A": "Floresan sinyallerini tamamen kaldırarak.",
+      "B": "Görüntü çözünürlüğünü artırmada başarısız olarak.",
+      "C": "Hem SNR hem de zaman atlamalı kayıtların çözünürlüğünü önemli ölçüde artırarak.",
+      "D": "Hücre dinamiklerinin manuel transkripsiyonunu artırarak.",
+      "E": "Ayrıntılı veri setleri şeklinde ek veri alımı gerektirerek.",
+      "F": "Bilmiyorum."
+    }
+  },
+  "13": {
+    "question": "ZS-DeconvNet, görüntülerdeki foton gürültü amplifikasyonu sorununu ele almak için hangi yöntemi kullanır?",
+    "options": {
+      "A": "Gürültü amplifikasyonunu bir strateji olarak görmezden gelerek.",
+      "B": "Gürültü azaltımı için Fura-2 kalsiyum görüntüleme kullanarak.",
+      "C": "Gauss yaklaşımı ve yeniden bozma şeması benimseyerek.",
+      "D": "Gürültü sinyallerini kaldırmak için yüksek yoğunluklu lazerler kullanarak.",
+      "E": "Daha yüksek çözünürlüklü kameralara geçerek.",
+      "F": "Bilmiyorum."
+    }
+  },
+  "14": {
+    "question": "ZS-DeconvNet kullanılarak zaman atlamalı çalışmalarda hangi biyolojik fenomenler detaylandırıldı?",
+    "options": {
+      "A": "Kas kasılması ve gevşeme döngüleri.",
+      "B": "Mitoz ve hücre yapışması sırasında etkileşim dinamikleri.",
+      "C": "Yapraklı bitkilerde foton sinyalleşmesi.",
+      "D": "Mantar büyümesinde elektron dinamikleri.",
+      "E": "İnsan doku örneklerinde manyetik rezonans görüntüleme.",
+      "F": "Bilmiyorum."
+    }
+  },
+  "15": {
+    "question": "Makaleye göre ZS-DeconvNet, yüksek verimli görüntülemeyi nasıl destekler?",
+    "options": {
+      "A": "Daha yavaş ve daha ayrıntılı veri işleme ihtiyacını genişleterek.",
+      "B": "Artan foton maruziyeti yoluyla.",
+      "C": "Milisaniye zaman ölçeklerinde yüksek çözünürlüklü görüntüler çıkararak.",
+      "D": "Öncelikle donanım iyileştirmelerine odaklanarak.",
+      "E": "Sistemi fiziksel olarak daha geniş görüntüleme bölgelerini kapsayacak şekilde genişleterek.",
+      "F": "Bilmiyorum."
+    }
+  },
+  "16": {
+    "question": "ZS-DeconvNet'in çift aşamalı mimarisi hangi zorluğu ele alır?",
+    "options": {
+      "A": "Yüksek ışık yoğunluğu alanlarında gereksizlik.",
+      "B": "Farklı renk kanalları arasında sinyal karışıklığı.",
+      "C": "Gürültü giderme ve dekonvolüsyon görevlerini sıralı olarak ele alma.",
+      "D": "Optik artefaktları sanal olarak azaltma.",
+      "E": "Artan karmaşıklık ve hesaplama kaynakları üzerindeki yük.",
+      "F": "Bilmiyorum."
+    }
+  },
+  "17": {
+    "question": "ZS-DeconvNet-SIM, yapılandırılmış aydınlatma mikroskobunun (SIM) yeteneğini nasıl genişletir?",
+    "options": {
+      "A": "Kalibrasyon için ek ham veri gerektirerek.",
+      "B": "Sadece belirli mikroskopi türleri altında çalışarak.",
+      "C": "SR SIM görüntülerini aynı anda gürültü giderme ve keskinleştirme yoluyla.",
+      "D": "Görüntüleme kontrastını gereksiz yere azaltarak.",
+      "E": "Önemli ölçüde daha basit görüntüler sağlayarak.",
+      "F": "Bilmiyorum."
+    }
+  },
+  "18": {
+    "question": "Makaleye göre ZS-DeconvNet hangi sınırlamayla karşılaşır?",
+    "options": {
+      "A": "Yüksek SNR verilerini işleyememe.",
+      "B": "Mikroskopiyi manuel ayarlamalarla sınırlama.",
+      "C": "Uyumsuz PSF'lerle halüsinasyon üretme riski.",
+      "D": "Makine öğrenme modelleriyle düşük uyumluluk.",
+      "E": "Sürekli manuel gözetim gereksinimi.",
+      "F": "Bilmiyorum."
+    }
+  },
+  "19": {
+    "question": "Şekillere göre RL dekonvolüsyonun ZS-DeconvNet'e kıyasla birincil dezavantajı nedir?",
+    "options": {
+      "A": "Daha az işlem süresi gerektirir.",
+      "B": "Daha az bilinen uygulamalara sahiptir.",
+      "C": "Daha düşük çözünürlük sonuçları üretir.",
+      "D": "Parametredeki küçük değişikliklere karşı çok hassastır.",
+      "E": "ZS-DeconvNet'e kıyasla daha yüksek SNR üretir.",
+      "F": "Bilmiyorum."
+    }
+  },
+  "20": {
+    "question": "ZS-DeconvNet, hangi tür görüntülerde seyrek dekonvolüsyon modellerini geride bıraktı?",
+    "options": {
+      "A": "Artefaktlarla dolu görüntüler.",
+      "B": "Ham renkli görüntüler.",
+      "C": "Net geniş alan görüntüleri.",
+      "D": "Sadece bileşik görüntüler.",
+      "E": "Yüksek gürültü koşullarında 3D SIM görüntüleri.",
+      "F": "Bilmiyorum."
+    }
+  },
+  "21": {
+    "question": "ZS-DeconvNet, 3D görüntü çözünürlüğünü daha da artırmak için hangi entegrasyon tekniğini benimser?",
+    "options": {
+      "A": "Otomatik yoğunluk ölçekleme.",
+      "B": "Kendi kendine öğrenmeye dayalı eksenel çözünürlük artırma yöntemleri.",
+      "C": "Tüm operatör işlevlerini basitleştirme.",
+      "D": "Tamamen analog sinyal yakalamaya geçiş.",
+      "E": "Görüntülerin büyütme faktörünü azaltma.",
+      "F": "Bilmiyorum."
+    }
+  },
+  "22": {
+    "question": "Makalede, canlı hücre ortamlarını görüntülemek için ZS-DeconvNet kullanmanın bir avantajı nedir?",
+    "options": {
+      "A": "Görüntülerin manuel izlenmesi gereksiniminin artması.",
+      "B": "Yapay sinyal artırımı ihtiyacı.",
+      "C": "Daha yüksek çözünürlükle daha az invazivlik.",
+      "D": "Daha yüksek arka plan gürültüsü tanıtımını gerektirir.",
+      "E": "Sadece kontrollü laboratuvar ortamlarında çalışır.",
+      "F": "Bilmiyorum."
+    }
+  },
+  "23": {
+    "question": "Yazarlar tarafından belirtilen ZS-DeconvNet'in dikkat çekici bir sınırlaması nedir?",
+    "options": {
+      "A": "Uyumsuz PSF ile eşleştirildiğinde çınlama artefaktları oluşturur.",
+      "B": "RL dekonvolüsyona kıyasla hesaplama yükü vardır.",
+      "C": "Eğitim kurumlarına erişilemez.",
+      "D": "Çalışmak için belirli donanım gerektirir.",
+      "E": "Aşırı miktarda hesaplama gücü tüketir.",
+      "F": "Bilmiyorum."
+    }
+  },
+  "24": {
+    "question": "ZS-DeconvNet'in görüntü sadakatini artırma yeteneğini gösteren deneysel sonuç nedir?",
+    "options": {
+      "A": "Mitokondriyal görüntülemenin karmaşıklığının azalması.",
+      "B": "Lizosomların süper çözünürlük görüntülerinin iyileştirilmesi.",
+      "C": "Klatrin kaplı çukurların gereksiz görüntülenmesi.",
+      "D": "Yüksek frekanslı gürültünün izole edilmesi.",
+      "E": "Elektron bulutlarının daha iyi görüntülenmesi.",
+      "F": "Bilmiyorum."
+    }
+  },
+  "25": {
+    "question": "3D ZS-DeconvNet için omurga mimarisi olarak hangi ağ modeli kullanıldı?",
+    "options": {
+      "A": "Tekrarlayan Konvolüsyonel Ağ.",
+      "B": "Basit Sinir Ağı.",
+      "C": "Artık Kanal Dikkat Ağı (RCAN).",
+      "D": "Tek yönlü Perceptron.",
+      "E": "Yukarıdakilerin hiçbiri.",
+      "F": "Bilmiyorum."
+    }
+  },
+  "26": {
+    "question": "ZS-DeconvNet'in eğitim ortamı hesaplama gücü ve zaman açısından nasıl tanımlanır?",
+    "options": {
+      "A": "Uzun işlem süreleriyle yüksek performans.",
+      "B": "Tipik derin öğrenme hesaplama yapılarıyla orta derecede yoğun.",
+      "C": "Uzun süreler boyunca düşük hesaplama ihtiyaçları.",
+      "D": "Sürekli hesaplama girdisiyle maksimum yoğunluk.",
+      "E": "Hızlı bir şekilde tamamlanan minimal tek seferlik hesaplamalar.",
+      "F": "Bilmiyorum."
+    }
+  },
+  "27": {
+    "question": "ZS-DeconvNet'in 3D modeli, biyolojik içgörü için kritik olan ne tür bir gözlem sağlar?",
+    "options": {
+      "A": "Elektrik darbe imzası kurtarma.",
+      "B": "Katmanlı faz algılama.",
+      "C": "Üç boyutlu hacimsel gözlem.",
+      "D": "İki yönlü sinyal genişlemeleri.",
+      "E": "Mikro-abone sinyal yakalama.",
+      "F": "Bilmiyorum."
+    }
+  },
+  "28": {
+    "question": "ZS-DeconvNet, örneklerdeki ışık hassasiyetini ele alırken geleneksel yöntemlerden nasıl farklıdır?",
+    "options": {
+      "A": "Görünürlüğü artırmak için daha fazla ışık maruziyeti gerektirerek.",
+      "B": "Geleneksel dekonvolüsyon algoritmalarını kullanarak.",
+      "C": "Düşük ışıkta, yüksek çözünürlüklü görüntülemeyi zararsız bir şekilde sağlayarak.",
+      "D": "Görüntülemeden faz kaymalarını tamamen kaldırarak.",
+      "E": "Işık koşullarının alakasızlığını artırarak.",
+      "F": "Bilmiyorum."
+    }
+  },
+  "29": {
+    "question": "Makalede özetlenen ZS-DeconvNet'in potansiyeli nedir?",
+    "options": {
+      "A": "Optikte temel fizik kısıtlamalarını aşmak.",
+      "B": "Mevcut optik mikroskop sistemlerini önemli ölçüde yükseltmek.",
+      "C": "Biyolojik veri algoritmalarını kökten yeniden yazmak.",
+      "D": "Görüntülemeden tamamen dijital dönüşümler.",
+      "E": "Mevcut tüm mikroskopi türlerini aniden değiştirmek.",
+      "F": "Bilmiyorum."
+    }
+  },
+  "30": {
+    "question": "Geleneksel el yapımı modeller, mikroskopi görüntülemede genellikle hangi tür artefaktlar oluşturur?",
+    "options": {
+      "A": "Aşırı sinyal artefaktları.",
+      "B": "3D mekansal anomaliler.",
+      "C": "Gürültü kaynaklı artefaktlar.",
+      "D": "Görünmez geçiş noktaları.",
+      "E": "Rastgele dijitalleştirme hataları.",
+      "F": "Bilmiyorum."
+    }
+  },
+  "31": {
+    "question": "Çift aşamalı gürültü giderme ve süper çözünürlük mimarisinin birincil avantajı nedir?",
+    "options": {
+      "A": "Görevleri tek bir aşamada birleştirerek süreci basitleştirir.",
+      "B": "Tek aşamalı modellere kıyasla daha az hesaplama kaynağı kullanır.",
+      "C": "Gürültü giderme ve dekonvolüsyon görevlerini ayrı ayrı ele almayı sağlar.",
+      "D": "Birden fazla gürültü türünü etkili bir şekilde görmezden gelir.",
+      "E": "Ek bir fayda olmadan işlem süresini doğrusal olarak artırır.",
+      "F": "Bilmiyorum."
+    }
+  },
+  "32": {
+    "question": "3D ZS-DeconvNet'in eşzamanlı gürültü giderme ve çözünürlük artırımı sağlamasını hangi özellik mümkün kılar?",
+    "options": {
+      "A": "Entegre ışık yakalama modülleri.",
+      "B": "Mekansal olarak dağıtılmış enerji alanlarının kullanımı.",
+      "C": "Mekansal olarak iç içe geçmiş kendi kendine denetimli öğrenme şeması.",
+      "D": "Ortalama almak için birden fazla görüntü çerçevesinin üst üste bindirilmesi.",
+      "E": "Harici yüksek çözünürlüklü kaynaklara güvenme.",
+      "F": "Bilmiyorum."
+    }
+  },
+  "33": {
+    "question": "ZS-DeconvNet'in eğitim aşaması hangi tür görüntü artırımı kullanır?",
+    "options": {
+      "A": "Gürültülü ortam çıkarımı.",
+      "B": "Frekans kayması tersine çevirmeleri.",
+      "C": "Rastgele döndürme, kırpma ve çevirme.",
+      "D": "Yüksek yoğunluklu piksel değiştirme.",
+      "E": "Dengeli pozlama yoluyla yük dengeleme.",
+      "F": "Bilmiyorum."
+    }
+  },
+  "34": {
+    "question": "ZS-DeconvNet, RE'lerin gözlemlenmesini hangi keşif yoluyla kolaylaştırdı?",
+    "options": {
+      "A": "Statik durumlarda artan zaman çizelgeleri.",
+      "B": "Ekzositoz hazırlığı ile yönlü hareket.",
+      "C": "RE'lerin hücrelerden tamamen çıkarılması.",
+      "D": "Rastgele hücresel difüzyon desenleri.",
+      "E": "Otomatik hücre görüntüleme metodolojileri.",
+      "F": "Bilmiyorum."
+    }
+  },
+  "35": {
+    "question": "Tanımlanan nihai hedefe göre, ZS-DeconvNet canlı görüntülemede neyi dengelemeyi amaçlar?",
+    "options": {
+      "A": "Fototoksisite riski ve elektronik girişim seviyeleri.",
+      "B": "Analog ve dijital veri akışının senkronizasyonu.",
+      "C": "Minimum invazivlikle yüksek mekansal-zamansal bilgi elde etme.",
+      "D": "Hücre içi perspektiften taşıma mekanizmaları.",
+      "E": "Yakalanan ve işlenen sinyal çıktıları arasında titiz uyum.",
+      "F": "Bilmiyorum."
+    }
+  },
+  "36": {
+    "question": "Makalede, geleneksel denetimli öğrenme yöntemleri ZS-DeconvNet ile nasıl karşılaştırılmıştır?",
+    "options": {
+      "A": "Zaman ve kaynak açısından daha verimli.",
+      "B": "Önemli ölçüde daha geniş uzmanlık alanlarına sahip.",
+      "C": "Eğitim verisi toplama talebiyle önemli ölçüde engellenmiş.",
+      "D": "Doğrusal olarak ölçeklenememe nedeniyle modası geçmiş.",
+      "E": "Görüntülemede uygun geri bildirim sağlamıyor.",
+      "F": "Bilmiyorum."
+    }
+  },
+  "37": {
+    "question": "ZS-DeconvNet, 3D hacimsel süper çözünürlük görüntüleme yoluyla hangi alanı keşfeder?",
+    "options": {
+      "A": "Statik nesnelerin çevresel görüntülemesi.",
+      "B": "Nöronik zarların derinlemesine analizi.",
+      "C": "Hücre altı yapıların ayrıntılı 3D mimarilerini haritalama.",
+      "D": "Kronolojik zamansal dizileri izleme.",
+      "E": "Karışık sinyallerden yeniden hizalamaları filtreleme.",
+      "F": "Bilmiyorum."
+    }
+  },
+  "38": {
+    "question": "ZS-DeconvNet sayesinde, özellikle ışık hassasiyeti bağlamında hangi biyolojik süreç daha iyi gözlemlenebilir?",
+    "options": {
+      "A": "Gelişmiş fotosentez izleme.",
+      "B": "Geliştirilmiş radyoaktif bozunma analizi.",
+      "C": "Mitotik hücre bölünmesinin ayrıntılı incelenmesi.",
+      "D": "Viral replikasyon çalışmaları.",
+      "E": "Retinal görüntülemede fotosensörleme.",
+      "F": "Bilmiyorum."
+    }
+  },
+  "39": {
+    "question": "ZS-DeconvNet, kapsamlı eğitim veri setlerinin eksikliğini nasıl ele alır?",
+    "options": {
+      "A": "Simülasyon için önceden tanımlanmış veri setlerini kullanarak.",
+      "B": "Kapsamlı laboratuvar tabanlı veri artırımı kullanarak.",
+      "C": "Tek görüntülerden uyum sağlamak için sıfır atış öğrenmeyi kullanarak.",
+      "D": "Sadece statik ve kontrollü görüntü senaryolarına odaklanarak.",
+      "E": "Mevcut veri setlerini yeni koşullara uyacak şekilde yeniden kalibre ederek.",
+      "F": "Bilmiyorum."
+    }
+  },
+  "40": {
+    "question": "ZS-DeconvNet'in görüntü işleme görevlerine göre optimize edilen performans özelliği nedir?",
+    "options": {
+      "A": "Kalite kaybı olmadan görüntü boyutunu küçültme.",
+      "B": "Yüksek çözünürlük standartlarına yüksek uyum ile hızlı işleme.",
+      "C": "Hassas detay geri alımı için bellek yükünü artırma.",
+      "D": "Detay pahasına daha yüksek kare hızları elde etme.",
+      "E": "Detay katmanlarında faz kayması değişikliklerini optimize etme.",
+      "F": "Bilmiyorum."
+    }
+  },
+  "41": {
+    "question": "Makaleye göre ZS-DeconvNet-SIM, iki katlı bir iyileştirme nasıl sağlar?",
+    "options": {
+      "A": "SIM'i tamamen değiştirerek.",
+      "B": "Birden fazla görüntü yığınını birleştirerek.",
+      "C": "Yapılandırılmış aydınlatma için on ham görüntü gerektirerek.",
+      "D": "SIM ekipmanında pozlama sürelerini iki katına çıkararak.",
+      "E": "Keyfi tekrarlayan veri setlerini takip ederek.",
+      "F": "Bilmiyorum."
+    }
+  },
+  "42": {
+    "question": "sCMOS sensörler, ZS-DeconvNet'in ele aldığı endişelerle nasıl ilişkilidir?",
+    "options": {
+      "A": "Gerçek zamanlı veri noktası geliştirmeyi sağlarlar.",
+      "B": "Sabit desen gürültüsünün (FPN) yaygın bir nedenidirler.",
+      "C": "ZS-DeconvNet teknolojileriyle artık kullanılmamaktadırlar.",
+      "D": "Diğer türlerden daha hızlı film çekerler.",
+      "E": "Verileri standart olmayan bir şekilde ters çevirirler.",
+      "F": "Bilmiyorum."
+    }
+  },
+  "43": {
+    "question": "ZS-DeconvNet'i gelecekteki geliştirmelerde genişletmek için belirtilen bir hedef nedir?",
+    "options": {
+      "A": "Görüntüleme görevlerinde tüm hesaplama katılımını kaldırmak.",
+      "B": "Daha geniş uygulama için alan genelleme tekniklerini dahil etmek.",
+      "C": "Optik görüntülemeden tamamen uzaklaşmak.",
+      "D": "Gerekli foton sayısını önemli ölçüde azaltmak.",
+      "E": "Ses verisi eşleştirmeye yeniden odaklanmak.",
+      "F": "Bilmiyorum."
+    }
+  },
+  "44": {
+    "question": "Makaleye göre ZS-DeconvNet'in optik spektrum boyunca potansiyel iyileştirme erişimini ne tanımlar?",
+    "options": {
+      "A": "Belirli dalga boylarını diğerlerine tercih ederek.",
+      "B": "Mükemmel olduğu belirli çevresel koşulları seçerek.",
+      "C": "Tüm mikroskopi modlarına genel uygulama ile.",
+      "D": "Çalışmak için benzersiz ortamlar belirleyerek.",
+      "E": "Optik kırılma ayarlama modelleri geliştirerek.",
+      "F": "Bilmiyorum."
+    }
+  },
+  "45": {
+    "question": "3D ZS-DeconvNet'teki parametresiz yaklaşım neyi yansıtır?",
+    "options": {
+      "A": "Temel veri artışlarıyla ilgilenmeme.",
+      "B": "Mekansal alanlar dışında parametre ayarlamalarından bağımsız.",
+      "C": "Manuel kontrol istisnaları ihtiyacı.",
+      "D": "Kayıtlar için yapısal seyrekliği.",
+      "E": "Öğretim yöntemlerinde tam bir duraklama.",
+      "F": "Bilmiyorum."
+    }
+  },
+  "46": {
+    "question": "ZS-DeconvNet, makalede özellikle belirtilen organel dinamiklerinin analizi için ne sunar?",
+    "options": {
+      "A": "Protein bozunma dizilerini ayrıntılı bir şekilde inceleme.",
+      "B": "Hücre döngüsü olayları sırasında birden fazla organelin etkileşimlerini izleme.",
+      "C": "Optik kaynakları dinamik olarak yeniden kalibre etme yöntemi.",
+      "D": "Düğüm başına veri tüketimini keşfetme.",
+      "E": "Statik görüntülerden özet analitikler.",
+      "F": "Bilmiyorum."
+    }
+  },
+  "47": {
+    "question": "Hessian düzenleme teriminin dahil edilmesi ZS-DeconvNet'e nasıl fayda sağlar?",
+    "options": {
+      "A": "Elektronik yolların daha yüksek sadakatini garanti eder.",
+      "B": "Artefaktları hafifleterek bir denge mekanizması sağlar.",
+      "C": "Daha fazla özgürlük için doğal olarak alanının ötesine geçer.",
+      "D": "Görüntü odaklamada manuel ayarlamaların yerini alır.",
+      "E": "Uyarma dalga boyuna bağımlılığı tamamen ortadan kaldırır.",
+      "F": "Bilmiyorum."
+    }
+  },
+  "48": {
+    "question": "ZS-DeconvNet'in eğitim koşulları ve araçları, daha geleneksel SR algoritmalarıyla nasıl karşılaştırılır?",
+    "options": {
+      "A": "Daha yüksek sıcaklıklar ve birden fazla aşama gerektirir.",
+      "B": "Diğer SR koşullarıyla aynıdır.",
+      "C": "SR için mevcut olmayan özel donanım gerektirir.",
+      "D": "Tipik derin öğrenme ortamlarını ve orta koşulları kullanır.",
+      "E": "Manuel giriş gerektiren büyük ölçüde sapar.",
+      "F": "Bilmiyorum."
+    }
+  },
+  "49": {
+    "question": "ZS-DeconvNet, yapılandırılmış görüntülemenin ötesinde hangi tür mikroskopiyi öngörülebilir şekilde geliştirir?",
+    "options": {
+      "A": "X-ışını kristalografisi.",
+      "B": "Temel atomik yapı hesaplaması.",
+      "C": "Fotoaktive lokalizasyon mikroskobu.",
+      "D": "Kromatik sapma telafisi.",
+      "E": "Kuantum elektron kırınımı.",
+      "F": "Bilmiyorum."
+    }
+  },
+  "50": {
+    "question": "ZS-DeconvNet'in araştırma ortamları, görüntüleme uygulamaları için nasıl karşılaştırılır?",
+    "options": {
+      "A": "Çoğu görüntüleme kurulumunda ihtiyaç duyulan katı oksidasyon kontrolleri içerir.",
+      "B": "Film tabanlı kamera teknolojisinde iyileştirmeler gerektirir.",
+      "C": "Köprü seçimi yoluyla geliştirilmiş sinyal dağıtımı sunar.",
+      "D": "Çeşitli uygulamalı koşullar arasında kolayca kullanım sağlar.",
+      "E": "Normların ötesinde uzaktan sensör farklılığını yansıtır.",
+      "F": "Bilmiyorum."
+    }
+  }
+}

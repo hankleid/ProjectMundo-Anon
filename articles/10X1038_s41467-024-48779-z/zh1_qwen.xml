@@ -1,0 +1,5694 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="/ProjectMundo/style/jats-html.xsl"?>
+<!DOCTYPE response>
+<article article-type="research-article" dtd-version="1.2" xml:lang="en" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <front>
+  <journal-meta>
+   <journal-id journal-id-type="publisher-id">
+    41467
+   </journal-id>
+   <journal-id journal-id-type="doi">
+    10.1038/41467.2041-1723
+   </journal-id>
+   <journal-title-group>
+    <journal-title>
+     Nature Communications
+    </journal-title>
+    <abbrev-journal-title abbrev-type="publisher">
+     Nat Commun
+    </abbrev-journal-title>
+   </journal-title-group>
+   <issn pub-type="epub">
+    2041-1723
+   </issn>
+   <publisher>
+    <publisher-name>
+     Nature Publishing Group UK
+    </publisher-name>
+    <publisher-loc>
+     London
+    </publisher-loc>
+   </publisher>
+  </journal-meta>
+  <article-meta>
+   <article-id pub-id-type="publisher-id">
+    s41467-024-48779-z
+   </article-id>
+   <article-id pub-id-type="manuscript">
+    48779
+   </article-id>
+   <article-id pub-id-type="doi">
+    10.1038/s41467-024-48779-z
+   </article-id>
+   <article-categories>
+    <subj-group subj-group-type="heading">
+     <subject>
+      Article
+     </subject>
+    </subj-group>
+    <subj-group subj-group-type="SubjectPath">
+     <subject>
+      /639/4077/4079/891
+     </subject>
+    </subj-group>
+    <subj-group subj-group-type="SubjectPath">
+     <subject>
+      /639/301/299/891
+     </subject>
+    </subj-group>
+    <subj-group subj-group-type="NatureArticleTypeID">
+     <subject>
+      article
+     </subject>
+    </subj-group>
+   </article-categories>
+   <title-group>
+    <article-title xml:lang="en">
+     Physics-informed neural network for lithium-ion battery degradation stable modeling and prognosis
+    </article-title>
+   </title-group>
+   <contrib-group>
+    <contrib contrib-type="author" equal-contrib="yes" id="Au1">
+     <contrib-id contrib-id-type="orcid">
+      http://orcid.org/0000-0003-0236-3705
+     </contrib-id>
+     <name name-style="western">
+      <surname>
+       Wang
+      </surname>
+      <given-names>
+       Fujin
+      </given-names>
+     </name>
+     <xref ref-type="aff" rid="Aff1">
+      1
+     </xref>
+     <xref ref-type="aff" rid="Aff2">
+      2
+     </xref>
+     <xref ref-type="author-notes" rid="fn1"/>
+    </contrib>
+    <contrib contrib-type="author" equal-contrib="yes" id="Au2">
+     <contrib-id contrib-id-type="orcid">
+      http://orcid.org/0000-0003-1746-260X
+     </contrib-id>
+     <name name-style="western">
+      <surname>
+       Zhai
+      </surname>
+      <given-names>
+       Zhi
+      </given-names>
+     </name>
+     <xref ref-type="aff" rid="Aff1">
+      1
+     </xref>
+     <xref ref-type="aff" rid="Aff2">
+      2
+     </xref>
+     <xref ref-type="author-notes" rid="fn1"/>
+    </contrib>
+    <contrib contrib-type="author" corresp="yes" id="Au3">
+     <contrib-id contrib-id-type="orcid">
+      http://orcid.org/0000-0003-4180-7137
+     </contrib-id>
+     <name name-style="western">
+      <surname>
+       Zhao
+      </surname>
+      <given-names>
+       Zhibin
+      </given-names>
+     </name>
+     <address>
+      <email>
+       zhaozhibin@xjtu.edu.cn
+      </email>
+     </address>
+     <xref ref-type="aff" rid="Aff1">
+      1
+     </xref>
+     <xref ref-type="aff" rid="Aff2">
+      2
+     </xref>
+     <xref ref-type="corresp" rid="IDs4146702448779z_cor3">
+      c
+     </xref>
+    </contrib>
+    <contrib contrib-type="author" id="Au4">
+     <name name-style="western">
+      <surname>
+       Di
+      </surname>
+      <given-names>
+       Yi
+      </given-names>
+     </name>
+     <xref ref-type="aff" rid="Aff1">
+      1
+     </xref>
+     <xref ref-type="aff" rid="Aff2">
+      2
+     </xref>
+    </contrib>
+    <contrib contrib-type="author" corresp="yes" id="Au5">
+     <name name-style="western">
+      <surname>
+       Chen
+      </surname>
+      <given-names>
+       Xuefeng
+      </given-names>
+     </name>
+     <address>
+      <email>
+       chenxf@mail.xjtu.edu.cn
+      </email>
+     </address>
+     <xref ref-type="aff" rid="Aff1">
+      1
+     </xref>
+     <xref ref-type="aff" rid="Aff2">
+      2
+     </xref>
+     <xref ref-type="corresp" rid="IDs4146702448779z_cor5">
+      e
+     </xref>
+    </contrib>
+    <aff id="Aff1">
+     <label>
+      1
+     </label>
+     <institution-wrap>
+      <institution-id institution-id-type="ROR">
+       https://ror.org/017zhmm22
+      </institution-id>
+      <institution-id institution-id-type="GRID">
+       grid.43169.39
+      </institution-id>
+      <institution-id institution-id-type="ISNI">
+       0000 0001 0599 1243
+      </institution-id>
+      <institution content-type="org-division">
+       National and Local Joint Engineering Research Center of Equipment Operation Safety and Intelligent Monitoring
+      </institution>
+      <institution content-type="org-name">
+       Xi’an Jiaotong University
+      </institution>
+     </institution-wrap>
+     <addr-line content-type="postcode">
+      710049
+     </addr-line>
+     <addr-line content-type="city">
+      Xi’an
+     </addr-line>
+     <addr-line content-type="state">
+      Shaanxi
+     </addr-line>
+     <country country="CN">
+      PR China
+     </country>
+    </aff>
+    <aff id="Aff2">
+     <label>
+      2
+     </label>
+     <institution-wrap>
+      <institution-id institution-id-type="ROR">
+       https://ror.org/017zhmm22
+      </institution-id>
+      <institution-id institution-id-type="GRID">
+       grid.43169.39
+      </institution-id>
+      <institution-id institution-id-type="ISNI">
+       0000 0001 0599 1243
+      </institution-id>
+      <institution content-type="org-division">
+       School of Mechanical Engineering
+      </institution>
+      <institution content-type="org-name">
+       Xi’an Jiaotong University
+      </institution>
+     </institution-wrap>
+     <addr-line content-type="postcode">
+      710049
+     </addr-line>
+     <addr-line content-type="city">
+      Xi’an
+     </addr-line>
+     <addr-line content-type="state">
+      Shaanxi
+     </addr-line>
+     <country country="CN">
+      PR China
+     </country>
+    </aff>
+   </contrib-group>
+   <author-notes>
+    <fn fn-type="equal" id="fn1">
+     <p>
+      These authors contributed equally: Fujin Wang, Zhi Zhai.
+     </p>
+    </fn>
+    <corresp id="IDs4146702448779z_cor3">
+     <label>
+      c
+     </label>
+     <email>
+      zhaozhibin@xjtu.edu.cn
+     </email>
+    </corresp>
+    <corresp id="IDs4146702448779z_cor5">
+     <label>
+      e
+     </label>
+     <email>
+      chenxf@mail.xjtu.edu.cn
+     </email>
+    </corresp>
+   </author-notes>
+   <pub-date date-type="pub" publication-format="electronic">
+    <day>
+     21
+    </day>
+    <month>
+     5
+    </month>
+    <year>
+     2024
+    </year>
+   </pub-date>
+   <pub-date date-type="collection" publication-format="electronic">
+    <month>
+     12
+    </month>
+    <year>
+     2024
+    </year>
+   </pub-date>
+   <volume>
+    15
+   </volume>
+   <issue seq="4332">
+    1
+   </issue>
+   <elocation-id>
+    4332
+   </elocation-id>
+   <history>
+    <date date-type="registration">
+     <day>
+      14
+     </day>
+     <month>
+      5
+     </month>
+     <year>
+      2024
+     </year>
+    </date>
+    <date date-type="received">
+     <day>
+      28
+     </day>
+     <month>
+      9
+     </month>
+     <year>
+      2023
+     </year>
+    </date>
+    <date date-type="accepted">
+     <day>
+      7
+     </day>
+     <month>
+      5
+     </month>
+     <year>
+      2024
+     </year>
+    </date>
+    <date date-type="online">
+     <day>
+      21
+     </day>
+     <month>
+      5
+     </month>
+     <year>
+      2024
+     </year>
+    </date>
+   </history>
+   <permissions>
+    <copyright-statement content-type="compact">
+     © The Author(s) 2024
+    </copyright-statement>
+    <copyright-year>
+     2024
+    </copyright-year>
+    <copyright-holder>
+     The Author(s)
+    </copyright-holder>
+    <license license-type="open-access" xlink:href="http://creativecommons.org/licenses/by/4.0/">
+     <license-p>
+      <bold>
+       Open Access
+      </bold>
+      This article is licensed under a Creative Commons Attribution 4.0 International License, which permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if changes were made. The images or other third party material in this article are included in the article’s Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not included in the article’s Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this licence, visit
+      <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/">
+       http://creativecommons.org/licenses/by/4.0/
+      </ext-link>
+      .
+     </license-p>
+    </license>
+   </permissions>
+   <abstract id="Abs1" xml:lang="en">
+    <title>
+     Abstract
+    </title>
+    <p id="Par1">
+     准确的状态健康度（SOH）估计对于锂离子电池的可靠和安全运行至关重要。然而，由于电池类型和运行条件的多样性，可靠的电池SOH估计仍然具有挑战性。在本文中，我们提出了一种物理信息神经网络（PINN），用于准确和稳定的电池SOH估计。具体来说，我们从经验退化和状态空间方程的角度建模影响电池退化的属性，并利用神经网络捕捉电池退化动态。设计了一种通用特征提取方法，从电池完全充电前的短时间段数据中提取统计特征，使我们的方法适用于不同类型的电池和充放电协议。此外，我们生成了一个包含55个锂镍钴锰氧化物（NCM）电池的综合数据集。结合来自不同制造商的其他三个数据集，我们使用总共387个电池和310,705个样本验证了我们的方法。平均绝对百分比误差（MAPE）为0.87%。与替代神经网络相比，我们提出的PINN在常规实验、小样本实验和迁移实验中表现出显著的性能。本研究突显了物理信息机器学习在电池退化建模和SOH估计中的潜力。
+    </p>
+   </abstract>
+   <abstract abstract-type="ShortSummary" id="Abs2" xml:lang="en">
+    <p id="Par2">
+     Reliable lithium-ion battery health assessment is vital for safety. Here, authors present a physics-informed neural network for accurate and stable state-of-health estimation, overcoming challenges of varied battery types and usage conditions.
+    </p>
+   </abstract>
+   <kwd-group kwd-group-type="hierarchical" vocab="FoR" vocab-identifier="ANZSRC 2008">
+    <kwd content-type="term" vocab-term-identifier="03">
+     Chemical Sciences
+    </kwd>
+    <nested-kwd>
+     <kwd content-type="term" vocab-term-identifier="0306">
+      Physical Chemistry (incl. Structural)
+     </kwd>
+    </nested-kwd>
+   </kwd-group>
+   <funding-group>
+    <award-group>
+     <funding-source>
+      <institution-wrap>
+       <institution>
+        Fundamental Research Funds for the Central Universities (xzy022023060)
+       </institution>
+      </institution-wrap>
+     </funding-source>
+    </award-group>
+    <award-group>
+     <funding-source>
+      <institution-wrap>
+       <institution>
+        National Natural Science Foundation of China (National Science Foundation of China)
+       </institution>
+       <institution-id institution-id-type="doi" vocab="open-funder-registry">
+        501100001809
+       </institution-id>
+      </institution-wrap>
+     </funding-source>
+     <award-id award-type="FundRef grant">
+      52105113
+     </award-id>
+    </award-group>
+    <award-group>
+     <funding-source>
+      <institution-wrap>
+       <institution>
+        China Postdoctoral Science Foundation
+       </institution>
+       <institution-id institution-id-type="doi" vocab="open-funder-registry">
+        501100002858
+       </institution-id>
+      </institution-wrap>
+     </funding-source>
+     <award-id award-type="FundRef grant">
+      2021M692557
+     </award-id>
+    </award-group>
+    <award-group>
+     <funding-source>
+      <institution-wrap>
+       <institution>
+        China Postdoctoral Science Foundation
+       </institution>
+       <institution-id institution-id-type="doi" vocab="open-funder-registry">
+        501100002858
+       </institution-id>
+      </institution-wrap>
+     </funding-source>
+     <award-id award-type="FundRef grant">
+      2021TQ0263
+     </award-id>
+    </award-group>
+    <award-group>
+     <funding-source>
+      <institution-wrap>
+       <institution>
+        National Natural Science Foundation of China (National Science Foundation of China)
+       </institution>
+       <institution-id institution-id-type="doi" vocab="open-funder-registry">
+        501100001809
+       </institution-id>
+      </institution-wrap>
+     </funding-source>
+     <award-id award-type="FundRef grant">
+      U22B2013
+     </award-id>
+    </award-group>
+   </funding-group>
+   <custom-meta-group>
+    <custom-meta>
+     <meta-name>
+      publisher-imprint-name
+     </meta-name>
+     <meta-value>
+      Nature Portfolio
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      volume-issue-count
+     </meta-name>
+     <meta-value>
+      1
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      issue-article-count
+     </meta-name>
+     <meta-value>
+      4332
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      issue-toc-levels
+     </meta-name>
+     <meta-value>
+      0
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      issue-pricelist-year
+     </meta-name>
+     <meta-value>
+      2024
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      issue-copyright-holder
+     </meta-name>
+     <meta-value>
+      Springer Nature Limited
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      issue-copyright-year
+     </meta-name>
+     <meta-value>
+      2024
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      article-contains-esm
+     </meta-name>
+     <meta-value>
+      Yes
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      article-numbering-style
+     </meta-name>
+     <meta-value>
+      Unnumbered
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      article-registration-date-year
+     </meta-name>
+     <meta-value>
+      2024
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      article-registration-date-month
+     </meta-name>
+     <meta-value>
+      5
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      article-registration-date-day
+     </meta-name>
+     <meta-value>
+      14
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      article-toc-levels
+     </meta-name>
+     <meta-value>
+      0
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      toc-levels
+     </meta-name>
+     <meta-value>
+      0
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      volume-type
+     </meta-name>
+     <meta-value>
+      Regular
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      journal-product
+     </meta-name>
+     <meta-value>
+      NonStandardArchiveJournal
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      numbering-style
+     </meta-name>
+     <meta-value>
+      Unnumbered
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      article-grants-type
+     </meta-name>
+     <meta-value>
+      OpenChoice
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      metadata-grant
+     </meta-name>
+     <meta-value>
+      OpenAccess
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      abstract-grant
+     </meta-name>
+     <meta-value>
+      OpenAccess
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      bodypdf-grant
+     </meta-name>
+     <meta-value>
+      OpenAccess
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      bodyhtml-grant
+     </meta-name>
+     <meta-value>
+      OpenAccess
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      bibliography-grant
+     </meta-name>
+     <meta-value>
+      OpenAccess
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      esm-grant
+     </meta-name>
+     <meta-value>
+      OpenAccess
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      online-first
+     </meta-name>
+     <meta-value>
+      false
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      pdf-file-reference
+     </meta-name>
+     <meta-value>
+      BodyRef/PDF/41467_2024_Article_48779.pdf
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      pdf-type
+     </meta-name>
+     <meta-value>
+      Typeset
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      target-type
+     </meta-name>
+     <meta-value>
+      OnlinePDF
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      issue-type
+     </meta-name>
+     <meta-value>
+      Regular
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      article-type
+     </meta-name>
+     <meta-value>
+      OriginalPaper
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      journal-subject-primary
+     </meta-name>
+     <meta-value>
+      Science, Humanities and Social Sciences, multidisciplinary
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      journal-subject-secondary
+     </meta-name>
+     <meta-value>
+      Science, Humanities and Social Sciences, multidisciplinary
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      journal-subject-secondary
+     </meta-name>
+     <meta-value>
+      Science, multidisciplinary
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      journal-subject-collection
+     </meta-name>
+     <meta-value>
+      Science (multidisciplinary)
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      open-access
+     </meta-name>
+     <meta-value>
+      true
+     </meta-value>
+    </custom-meta>
+   </custom-meta-group>
+  </article-meta>
+ </front>
+ <body>
+  <sec id="Sec1" sec-type="introduction">
+   <title>
+    引言
+   </title>
+   <p id="Par3">
+    近年来，锂离子电池在全社会的数量以惊人的速度增长，这为可再生能源设备的普及提供了前所未有的推动力。凭借高能量密度、低自放电率和长使用寿命等优点，锂离子电池已成为便携式电子设备、电动汽车、航空航天等众多领域的主要储能装置
+    <sup>
+     <xref ref-type="bibr" rid="CR1">
+      1
+     </xref>
+     <xref ref-type="bibr" rid="CR2">
+      2
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR3">
+      3
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR4">
+      4
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR5">
+      5
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR6">
+      6
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR7">
+      7
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR8">
+      8
+     </xref>
+    </sup>
+    。2019年，仅新能源汽车用锂离子电池的全球出货量就达到了116.6 GWh
+    <sup>
+     <xref ref-type="bibr" rid="CR9">
+      9
+     </xref>
+    </sup>
+    。据估计，到2025年，全球锂离子电池的装机容量将达到800 GWh，市场价值将达到91.8亿美元
+    <sup>
+     <xref ref-type="bibr" rid="CR10">
+      10
+     </xref>
+    </sup>
+    。锂离子电池的爆炸性增长为人们的生活带来了便利，但其老化和健康管理也引起了人们的关注。锂离子电池的老化是一个重要问题，其性能会随着时间的推移而下降，直至失效。为了确保长期、安全和持续的运行，锂离子电池必须得到适当的维护和控制，这包括状态健康度（SOH）评估。电池的SOH定义为当前可用容量与初始容量的比值，可以作为衡量电池退化的指标
+    <sup>
+     <xref ref-type="bibr" rid="CR11">
+      11
+     </xref>
+    </sup>
+    。当SOH降至80%时，电池达到其首次使用寿命。达到首次使用寿命的电池仍可在储能电站等领域进行二次利用。因此，准确估计电池的SOH尤为重要。
+   </p>
+   <p id="Par4">
+    近年来，提出了各种锂离子电池的SOH估计方法，极大地推动了该领域的发展
+    <sup>
+     <xref ref-type="bibr" rid="CR12">
+      12
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR13">
+      13
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR14">
+      14
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR15">
+      15
+     </xref>
+    </sup>
+    。然而，准确估计SOH仍然是一个具有挑战性的问题。通常，容量可以通过从上限截止电压到下限截止电压的完整放电曲线通过安时积分获得，从而获得SOH。在实际应用中，由于电池很少完全放电，因此很难获得完整的充电或放电曲线。一些学者通过建立电池老化模型来估计SOH。Baghdadi等人提出了一种基于Dakin退化方法的物理方法，用于模拟电池的线性退化过程。考虑到时变温度条件对锂离子电池放电容量和老化规律的重要影响，Xu等人基于Arrhenius温度模型提出了一个随机退化率模型，并基于Wiener过程建立了锂离子电池在时变温度条件下的老化模型。Dong等人提出了一种结合化学和机械退化机制的物理模型，通过模拟固体电解质界面（SEI）的形成和生长来预测容量衰减。Lui等人通过建模正负极活性材料损失和锂库存损失等退化机制，提出了一种物理方法来预测锂离子电池的容量
+    <sup>
+     <xref ref-type="bibr" rid="CR16">
+      16
+     </xref>
+     <xref ref-type="bibr" rid="CR17">
+      17
+     </xref>
+     <xref ref-type="bibr" rid="CR18">
+      18
+     </xref>
+     <xref ref-type="bibr" rid="CR19">
+      19
+     </xref>
+    </sup>
+    。
+   </p>
+   <p id="Par5">
+    鉴于建立物理模型的难度和获得完整放电容量的困难，许多研究使用了数据驱动的方法，基于充放电过程中的电流和电压曲线来估计SOH。常用的数据驱动方法包括线性回归、支持向量机、高斯过程回归、深度神经网络等。Xia等人从增量容量（IC）曲线和差分电压（DV）曲线中提取特征来估计SOH。Wang等人从电化学阻抗谱（EIS）中提取有价值的健康指标作为高斯过程回归的输入来估计SOH。数据驱动方法不需要物理知识，只关注输入和输出之间的关系，因此退化特征的提取是数据驱动方法的关键部分，很大程度上决定了SOH估计的性能
+    <sup>
+     <xref ref-type="bibr" rid="CR20">
+      20
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR21">
+      21
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR22">
+      22
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR23">
+      23
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR24">
+      24
+     </xref>
+     <xref ref-type="bibr" rid="CR25">
+      25
+     </xref>
+     <xref ref-type="bibr" rid="CR26">
+      26
+     </xref>
+     <xref ref-type="bibr" rid="CR27">
+      27
+     </xref>
+     <xref ref-type="bibr" rid="CR28">
+      28
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR29">
+      29
+     </xref>
+     <xref ref-type="bibr" rid="CR30">
+      30
+     </xref>
+     <xref ref-type="bibr" rid="CR31">
+      31
+     </xref>
+    </sup>
+    。
+   </p>
+   <p id="Par6"/>
+   <p id="Par7"/>
+   <p id="Par8">
+    在本研究中，我们提出了一种用于电池SOH估计的PINN，属于B2架构。该方法实现了控制方程和神经网络的真正集成，从而实现稳定和精确的SOH估计。与现有的PINN方法不同，我们还验证了其在小样本学习和不同化学成分及充放电配置的电池之间的迁移学习中的优势。具体来说，首先，考虑到电化学方程的复杂性，阻碍了B2型PINN的发展。因此，我们从经验退化和状态空间方程的角度建模电池退化动态，并利用神经网络捕捉电池退化动态。其次，为了使模型更具通用性，我们开发了一种新的特征提取方法。电池的放电过程具有用户特定性，且电池很少完全放电。相比之下，一旦充电开始，完全充电的概率较高，且更加固定和规律。因此，我们从电池完全充电前的短时间段数据中提取特征。第三，为了验证我们的方法，我们进行了电池退化实验并发布了一个包含55个电池的运行至失效数据的数据集。此外，我们还在其他三个具有不同化学成分和充放电协议的大规模数据集上验证了我们的方法，证明了我们方法的优越性和通用性。我们还通过将退化知识从一个数据集转移到另一个数据集来进一步估计SOH。这些用于执行迁移任务的数据集包含具有不同化学成分和充放电协议的电池。结果表明，所提出的PINN在SOH估计中具有有效性和通用性。
+   </p>
+  </sec>
+  <sec id="Sec2" sec-type="results">
+   <title>
+    结果
+   </title>
+   <sec id="Sec3">
+    <title>
+     框架概述和流程图
+    </title>
+    <p id="Par9">
+     我们开发了一种用于锂离子电池SOH估计的PINN，其流程图如图 Fig.
+     <xref ref-type="fig" rid="Fig1">
+      1
+     </xref>
+     所示。我们的方法通过考虑电池退化的动态行为和退化趋势，旨在实现更通用、可靠、稳定和高精度的SOH估计。
+     <fig id="Fig1" position="float">
+      <label>
+       Fig. 1
+      </label>
+      <caption xml:lang="en">
+       <title>
+        所提出的用于锂离子电池SOH估计的PINN的流程图。
+       </title>
+       <p>
+        <bold>
+         a
+        </bold>
+        锂离子电池可能具有不同的化学成分（例如，锂镍钴锰酸盐（NCM）、锂镍钴铝酸盐（NCA）和锂铁磷酸盐（LFP）等）。不同的用户具有个性化的电池放电策略，导致不同的退化轨迹。
+        <bold>
+         b
+        </bold>
+        用于特征提取的选定数据的示意图。我们从电池完全充电前的短时间段数据中提取特征。这些特征用作所提出的PINN的输入以估计SOH。上图是第10个循环的曲线，下图是整个生命周期中的所有曲线。电池老化和充放电协议的变化导致曲线偏移。
+        <bold>
+         c
+        </bold>
+        所提出的PINN的结构，其中
+        <italic>
+         u
+        </italic>
+        和
+        <inline-formula id="IEq1">
+         <alternatives>
+          <math id="IEq1_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+           <mover accent="true">
+            <mrow>
+             <mi>
+              u
+             </mi>
+            </mrow>
+            <mrow>
+             <mo>
+              ̂
+             </mo>
+            </mrow>
+           </mover>
+          </math>
+          <tex-math id="IEq1_TeX">
+           \documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym}
+				\usepackage{amsfonts}
+				\usepackage{amssymb}
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\hat{u}$$\end{document}
+          </tex-math>
+          <inline-graphic href="41467_2024_48779_Article_IEq1.gif" mime-subtype="GIF" specific-use="web"/>
+         </alternatives>
+        </inline-formula>
+        分别表示真实的和估计的SOH，
+        <italic>
+         t
+        </italic>
+        和
+        <bold>
+         x
+        </bold>
+        分别表示循环和特征，上标
+        <italic>
+         i
+        </italic>
+        表示样本索引，下标
+        <italic>
+         t
+        </italic>
+        和
+        <bold>
+         x
+        </bold>
+        表示相应的偏导数。函数
+        <italic>
+         f
+        </italic>
+        ( ⋅ ) 和
+        <italic>
+         g
+        </italic>
+        ( ⋅ ) 分别建模特征到SOH的映射和电池的退化动态，
+        <inline-formula id="IEq2">
+         <alternatives>
+          <math id="IEq2_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+           <mi class="MJX-tex-caligraphic" mathvariant="script">
+            F
+           </mi>
+           <mrow>
+            <mo>
+             (
+            </mo>
+            <mrow>
+             <mo>
+              ⋅
+             </mo>
+            </mrow>
+            <mo>
+             )
+            </mo>
+           </mrow>
+          </math>
+          <tex-math id="IEq2_TeX">
+           \documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym}
+				\usepackage{amsfonts}
+				\usepackage{amssymb}
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${{{{{{{\mathcal{F}}}}}}}}(\cdot )$$\end{document}
+          </tex-math>
+          <inline-graphic href="41467_2024_48779_Article_IEq2.gif" mime-subtype="GIF" specific-use="web"/>
+         </alternatives>
+        </inline-formula>
+        和
+        <inline-formula id="IEq3">
+         <alternatives>
+          <math id="IEq3_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+           <mi class="MJX-tex-caligraphic" mathvariant="script">
+            G
+           </mi>
+           <mrow>
+            <mo>
+             (
+            </mo>
+            <mrow>
+             <mo>
+              ⋅
+             </mo>
+            </mrow>
+            <mo>
+             )
+            </mo>
+           </mrow>
+          </math>
+          <tex-math id="IEq3_TeX">
+           \documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym}
+				\usepackage{amsfonts}
+				\usepackage{amssymb}
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${{{{{{{\mathcal{G}}}}}}}}(\cdot )$$\end{document}
+          </tex-math>
+          <inline-graphic href="41467_2024_48779_Article_IEq3.gif" mime-subtype="GIF" specific-use="web"/>
+         </alternatives>
+        </inline-formula>
+        表示用于近似
+        <italic>
+         f
+        </italic>
+        ( ⋅ ) 和
+        <italic>
+         g
+        </italic>
+        ( ⋅ ) 的神经网络（更多详细信息见“方法”部分）。
+       </p>
+      </caption>
+      <graphic href="/ProjectMundo/MediaObjects/10X1038_s41467-024-48779-z/41467_2024_48779_Fig1_HTML.png" mime-subtype="PNG" specific-use="web"/>
+     </fig>
+    </p>
+    <p id="Par10">
+     在数据预处理阶段（如图 Fig.
+     <xref ref-type="fig" rid="Fig1">
+      1
+     </xref>
+     b 所示），从电池完全充电前的短时间段数据中提取统计特征作为模型的输入，这确保了这一时间段的数据存在于大多数电池数据集中，解决了现有研究中特征不通用的问题。因此，我们的方法适用于具有不同化学成分和充放电协议的电池。
+    </p>
+    <p id="Par11"/>
+    <p id="Par12"/>
+   </sec>
+   <sec id="Sec4">
+    <title>
+     数据生成
+    </title>
+    <p id="Par13">
+     为了涵盖不同类型的电池和化学成分，我们使用了来自4个不同大规模数据集的387个电池的310,705个样本进行验证。第一个数据集来自我们为本研究进行的电池退化实验，其他三个数据集是来自Zhu等人、Ye等人和Severson等人的知名公共数据集
+     <sup>
+      <xref ref-type="bibr" rid="CR44">
+       44
+      </xref>
+      <xref ref-type="bibr" rid="CR45">
+       45
+      </xref>
+      <xref ref-type="bibr" rid="CR25">
+       25
+      </xref>
+     </sup>
+     。为了方便起见，我们将这四个数据集分别称为XJTU电池数据集、TJU数据集、HUST数据集和MIT数据集
+     <sup>
+      <xref ref-type="bibr" rid="CR44">
+       44
+      </xref>
+      <xref ref-type="bibr" rid="CR45">
+       45
+      </xref>
+      <xref ref-type="bibr" rid="CR25">
+       25
+      </xref>
+     </sup>
+     。四个数据集的基本信息见表
+     <xref ref-type="table" rid="Tab1">
+      1
+     </xref>
+     <sup/>
+     。
+     <table-wrap id="Tab1">
+      <label>
+       表1
+      </label>
+      <caption xml:lang="en">
+       <p>
+        四个数据集的化学成分和基本实验条件
+       </p>
+      </caption>
+      <table frame="hsides" rules="groups">
+       <thead>
+        <tr>
+         <th>
+          <p>
+           数据集
+          </p>
+         </th>
+         <th>
+          <p>
+           批次
+          </p>
+         </th>
+         <th>
+          <p>
+           化学成分
+          </p>
+         </th>
+         <th>
+          <p>
+           标称容量 (mAh)
+          </p>
+         </th>
+         <th>
+          <p>
+           截止电压 (V)
+          </p>
+         </th>
+         <th>
+          <p>
+           实验温度 (°C)
+          </p>
+         </th>
+         <th>
+          <p>
+           电池数量
+          </p>
+         </th>
+        </tr>
+       </thead>
+       <tbody>
+        <tr>
+         <td>
+          <p>
+           XJTU
+          </p>
+         </td>
+         <td>
+          <p>
+           1,2,3,4,5,6
+          </p>
+         </td>
+         <td>
+          <p>
+           LiNi
+           <sub>
+            0.5
+           </sub>
+           Co
+           <sub>
+            0.2
+           </sub>
+           Mn
+           <sub>
+            0.3
+           </sub>
+           O
+           <sub>
+            2
+           </sub>
+          </p>
+         </td>
+         <td>
+          <p>
+           2000
+          </p>
+         </td>
+         <td>
+          <p>
+           2.5–4.2
+          </p>
+         </td>
+         <td>
+          <p>
+           室温
+          </p>
+         </td>
+         <td>
+          <p>
+           55
+          </p>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          <p>
+           TJU
+          </p>
+         </td>
+         <td>
+          <p>
+           1
+          </p>
+         </td>
+         <td>
+          <p>
+           Li
+           <sub>
+            0.86
+           </sub>
+           Ni
+           <sub>
+            0.86
+           </sub>
+           Co
+           <sub>
+            0.11
+           </sub>
+           Al
+           <sub>
+            0.03
+           </sub>
+           O
+           <sub>
+            2
+           </sub>
+          </p>
+         </td>
+         <td>
+          <p>
+           3500
+          </p>
+         </td>
+         <td>
+          <p>
+           2.65–4.2
+          </p>
+         </td>
+         <td>
+          <p>
+           25,35,45
+          </p>
+         </td>
+         <td>
+          <p>
+           66
+          </p>
+         </td>
+        </tr>
+        <tr>
+         <td/>
+         <td>
+          <p>
+           2
+          </p>
+         </td>
+         <td>
+          <p>
+           Li
+           <sub>
+            0.84
+           </sub>
+           Ni
+           <sub>
+            0.83
+           </sub>
+           Co
+           <sub>
+            0.11
+           </sub>
+           Mn
+           <sub>
+            0.07
+           </sub>
+           O
+           <sub>
+            2
+           </sub>
+          </p>
+         </td>
+         <td>
+          <p>
+           3500
+          </p>
+         </td>
+         <td>
+          <p>
+           2.5–4.2
+          </p>
+         </td>
+         <td>
+          <p>
+           25,35,45
+          </p>
+         </td>
+         <td>
+          <p>
+           55
+          </p>
+         </td>
+        </tr>
+        <tr>
+         <td/>
+         <td>
+          <p>
+           3
+          </p>
+         </td>
+         <td>
+          <p>
+           42 (3) wt.% LiNiCoMnO
+           <sub>
+            2
+           </sub>
+           和 58 (3) wt.% LiNiCoAlO
+           <sub>
+            2
+           </sub>
+           的混合物
+          </p>
+         </td>
+         <td>
+          <p>
+           2500
+          </p>
+         </td>
+         <td>
+          <p>
+           2.5–4.2
+          </p>
+         </td>
+         <td>
+          <p>
+           25
+          </p>
+         </td>
+         <td>
+          <p>
+           9
+          </p>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          <p>
+           MIT
+          </p>
+         </td>
+         <td>
+          <p>
+           –
+          </p>
+         </td>
+         <td>
+          <p>
+           LiFePO
+           <sub>
+            4
+           </sub>
+          </p>
+         </td>
+         <td>
+          <p>
+           1100
+          </p>
+         </td>
+         <td>
+          <p>
+           2.0–3.6
+          </p>
+         </td>
+         <td>
+          <p>
+           30
+          </p>
+         </td>
+         <td>
+          <p>
+           125
+          </p>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          <p>
+           HUST
+          </p>
+         </td>
+         <td>
+          <p>
+           –
+          </p>
+         </td>
+         <td>
+          <p>
+           LiFePO
+           <sub>
+            4
+           </sub>
+          </p>
+         </td>
+         <td>
+          <p>
+           1100
+          </p>
+         </td>
+         <td>
+          <p>
+           2.0–3.6
+          </p>
+         </td>
+         <td>
+          <p>
+           30
+          </p>
+         </td>
+         <td>
+          <p>
+           77
+          </p>
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <table-wrap-foot>
+       <p>
+        充放电协议在不同数据集中有所不同。
+       </p>
+      </table-wrap-foot>
+     </table-wrap>
+    </p>
+    <p id="Par14">
+     在本研究中，我们开发了一个电池退化实验，如图
+     <xref ref-type="supplementary-material" rid="MOESM1">
+      S1
+     </xref>
+     <sup/>
+     所示。总共55个由LISHEN制造的电池（LiNi
+     <sub>
+      0.5
+     </sub>
+     Co
+     <sub>
+      0.2
+     </sub>
+     Mn
+     <sub>
+      0.3
+     </sub>
+     O
+     <sub>
+      2
+     </sub>
+     ，标称容量2000 mAh，标称电压3.6 V，充电和放电截止电压分别为4.2 V和2.5 V）在室温下按照6种充放电协议循环至失效。这些协议包括固定充放电、不同循环中的固定电流随机放电、随机行走，以及地球同步轨道（GEO）卫星的充放电策略。我们用批次1到批次6分别表示这6种充放电协议。退化轨迹如图
+     <xref ref-type="fig" rid="Fig2">
+      2
+     </xref>
+     <sup/>
+     所示。关于我们的数据集的更多详细信息可以在补充说明
+     <xref ref-type="supplementary-material" rid="MOESM1">
+      1
+     </xref>
+     <sup/>
+     中找到。
+    </p>
+    <p id="Par15">
+     TJU数据集包含三种类型的电池：NCA电池（标称容量3500 mAh，截止电压2.65–4.2 V），NCM电池（标称容量3500 mAh，截止电压2.5–4.2 V），以及NCM + NCA电池（标称容量2500 mAh，截止电压2.5–4.2 V）。这些电池在温度控制室中以不同的温度和不同的充电电流率循环。温度候选集包括25、35和45 °C。电流率范围从0.25 C到4 C。我们用批次1、批次2和批次3分别表示NCA、NCM和NCM + NCA电池。
+     <fig id="Fig2" position="float">
+      <label>
+       Fig. 2
+      </label>
+      <caption xml:lang="en">
+       <title>
+        XJTU电池数据集的退化轨迹。
+       </title>
+       <p>
+        总共有6个批次（55个电池），所有批次都包含8个电池，除了批次2包含15个电池。各批次的充放电协议不同。更多详细信息见补充说明
+        <xref ref-type="supplementary-material" rid="MOESM1">
+         1
+        </xref>
+        。
+       </p>
+      </caption>
+      <graphic href="/ProjectMundo/MediaObjects/10X1038_s41467-024-48779-z/41467_2024_48779_Fig2_HTML.png" mime-subtype="PNG" specific-use="web"/>
+     </fig>
+    </p>
+    <p id="Par16">
+     HUST数据集包含77个LFP/石墨电池在77种不同的多阶段放电协议下的数据。这些电池由A123（APR18650M1A）制造，标称容量为1100 mAh，标称电压为3.3 V。它们在30 °C的温度下以相同的充电协议但不同的放电协议循环至失效。
+    </p>
+    <p id="Par17">
+     MIT数据集中的电池与HUST数据集中的电池类型和化学成分相同。然而，与HUST数据集的实验设置不同，MIT数据集考虑了多种快速充电策略和一种放电策略。具体来说，它们在快速充电实验中以一步或两步快速充电策略循环，并以4 C的电流放电。实验温度为30 °C。
+    </p>
+   </sec>
+   <sec id="Sec5">
+    <title>
+     特征提取
+    </title>
+    <p id="Par18">
+     稳健的特征通常可以提高SOH估计的性能。然而，如何提取通用且稳健的特征是一个值得研究的问题。在现有的研究中，提出了针对特定数据集和充放电协议的各种特征提取方法，但特征的泛化性尚未得到充分考虑。关于不同电池类型或充放电协议的通用特征提取方法的研究较少。为了提取更稳健和通用的特征，我们提出了一种方法，通过观察和探索多个数据集，从充电电压曲线和电流曲线的短时间段中提取特征。电池的放电过程具有用户特定性。相比之下，充电过程是必要的，更加固定和规律，且电池完全充电的概率相对较高。我们发现，大多数数据集包含恒流和恒压（CC-CV）充电模式。对于我们使用的四个公共数据集，无论电池采用何种放电策略或是否完全放电，最终都会在充电时完全充满。
+    </p>
+    <p id="Par19">
+     因此，我们选择了电池完全充电前的短时间段数据来提取特征，如图
+     <xref ref-type="fig" rid="Fig1">
+      1
+     </xref>
+     b所示。定义电池的充电截止电压为
+     <italic>
+      V
+     </italic>
+     <sub>
+      end
+     </sub>
+     ，选择电压值在[
+     <italic>
+      V
+     </italic>
+     <sub>
+      end−0.2
+     </sub>
+     ,
+     <italic>
+      V
+     </italic>
+     <sub>
+      end
+     </sub>
+     ] V范围内的电压数据。对于电流数据，我们选择恒压充电期间电流在0.5 A和0.1 A之间的数据。无论电池是否完全放电，只要电池完全充电，电压范围和电流范围总是存在的。
+    </p>
+    <p id="Par20">
+     从选定的电流和电压曲线中分别提取均值、标准差、峰度、偏度、充电时间、累积充电量、曲线斜率和曲线熵（这些特征分别编号为1–16。更多详细信息见补充说明
+     <xref ref-type="supplementary-material" rid="MOESM1">
+      2
+     </xref>
+     ）。从XJTU数据集的第1批中提取的特征示例如图
+     <xref ref-type="fig" rid="Fig3">
+      3
+     </xref>
+     a所示。进一步，我们从4个数据集中的387个电池中分别提取特征，并计算每个数据集中特征与SOH之间的皮尔逊相关系数，如图
+     <xref ref-type="fig" rid="Fig3">
+      3
+     </xref>
+     b所示。
+     <fig id="Fig3" position="float">
+      <label>
+       Fig. 3
+      </label>
+      <caption xml:lang="en">
+       <title>
+        提取特征和相关系数的示例。
+       </title>
+       <p>
+        <bold>
+         a
+        </bold>
+        XJTU数据集批次1中8个电池的特征。每个子图的
+        <italic>
+         x
+        </italic>
+        -轴是SOH，
+        <italic>
+         y
+        </italic>
+        -轴是相应特征的归一化值。每个子图右侧的数字代表特征编号。
+        <bold>
+         b
+        </bold>
+        四个数据集中提取特征与SOH之间的相关性热图。数字1–16代表16个特征，特征的顺序与(
+        <bold>
+         a
+        </bold>
+        )中一致。
+       </p>
+      </caption>
+      <graphic href="/ProjectMundo/MediaObjects/10X1038_s41467-024-48779-z/41467_2024_48779_Fig3_HTML.png" mime-subtype="PNG" specific-use="web"/>
+     </fig>
+    </p>
+    <p id="Par21">
+     基于图
+     <xref ref-type="fig" rid="Fig3">
+      3
+     </xref>
+     b的实验现象和分析，我们提出一个自然的猜想：每个特征与SOH之间的相关系数的大小与电池的化学成分有关，而受充放电协议的影响较小。据我们所知，我们是第一个关注这一现象的研究。从表
+     <xref ref-type="table" rid="Tab1">
+      1
+     </xref>
+     可以看出，XJTU数据集和TJU数据集都是LiNiCo-x型电池。尽管它们的标称容量和充放电协议完全不同，但从我们选择的范围内提取的特征高度相似。例如，特征11–16与SOH之间存在非常强的负相关。特征9和10与SOH之间存在强正相关。相比之下，MIT数据集和HUST数据集都是LiFePO
+     <sub>
+      4
+     </sub>
+     电池。特征11–16与SOH之间存在弱正相关，而特征9和10与SOH之间存在负相关。此外，后两个数据集的特征3–6和8与SOH之间存在强正相关。
+    </p>
+   </sec>
+   <sec id="Sec6">
+    <title>
+     SOH估计
+    </title>
+    <p id="Par22">
+     提取的16个特征和时间（循环）作为所提出的PINN的输入来估计SOH。为了减少特征量级差异对模型的影响并使模型训练更加稳定，对特征进行了最小-最大归一化。即，所有特征都被缩放到[−1,1]范围内。所提出的PINN在4个数据集上的SOH估计结果如图
+     <xref ref-type="fig" rid="Fig4">
+      4
+     </xref>
+     a所示（每个数据集的测试电池数量见补充说明
+     <xref ref-type="supplementary-material" rid="MOESM1">
+      S2
+     </xref>
+     ）。
+     <fig id="Fig4" position="float">
+      <label>
+       Fig. 4
+      </label>
+      <caption xml:lang="en">
+       <title>
+        SOH估计结果的示例。
+       </title>
+       <p>
+        <bold>
+         a
+        </bold>
+        所提出的PINN在四个数据集上的SOH估计结果。预测的和真实的SOH分布在对角线附近，表明模型表现良好。
+        <bold>
+         b
+        </bold>
+        三个模型（所提出的PINN（Ours）、多层感知器（MLP）和卷积神经网络（CNN））在四个数据集上的平均绝对误差（MAE）、平均绝对百分比误差（MAPE）和均方根误差（RMSE）的分布。每个误差条包含10个点（10次实验），并标记有均值和标准差线。与另外两种方法相比，我们的方法具有更小的预测误差且更加稳定。源数据作为源数据文件提供。
+       </p>
+      </caption>
+      <graphic href="/ProjectMundo/MediaObjects/10X1038_s41467-024-48779-z/41467_2024_48779_Fig4_HTML.png" mime-subtype="PNG" specific-use="web"/>
+     </fig>
+    </p>
+    <p id="Par23">
+     为了展示所提出的PINN的先进性，使用了具有相同结构和参数量的多层感知器（MLP）和具有相似参数量的卷积神经网络（CNN）作为比较方法。MLP和CNN的详细信息可以在补充说明
+     <xref ref-type="supplementary-material" rid="MOESM1">
+      3
+     </xref>
+     <sup/>
+     中找到。对于每个数据集，我们将训练电池、验证电池和测试电池大致按6:2:2的比例划分。每个数据集的测试电池数量可以在表
+     <xref ref-type="supplementary-material" rid="MOESM1">
+      S2
+     </xref>
+     <sup/>
+     中找到。为了确保公平性，测试电池的数量在整个数据集中均匀分布，如表
+     <xref ref-type="supplementary-material" rid="MOESM1">
+      S3
+     </xref>
+     –
+     <xref ref-type="supplementary-material" rid="MOESM1">
+      S6
+     </xref>
+     <sup/>
+     所示。3个模型在4个数据集上的结果如表
+     <xref ref-type="table" rid="Tab2">
+      2
+     </xref>
+     所示（仅给出每个数据集的平均测试误差，每个电池的测试结果可以在表
+     <xref ref-type="supplementary-material" rid="MOESM1">
+      S3
+     </xref>
+     –
+     <xref ref-type="supplementary-material" rid="MOESM1">
+      S6
+     </xref>
+     <sup/>
+     中查看）。从表中可以看出，我们的方法在大多数情况下具有最小的估计误差。所提出的PINN在4个数据集上的平均MAPE分别为0.85%、1.21%、0.65%和0.78%，而MLP的平均MAPE分别为2.60%、1.72%、0.83%和0.83%。值得注意的是，它们在推理过程中具有相同的参数数量和模型结构。
+    </p>
+    <p id="Par24">
+     此外，为了反映模型的稳定性，每个模型在每个数据集上的训练和测试过程重复10次。测试结果如图
+     <xref ref-type="fig" rid="Fig4">
+      4
+     </xref>
+     b所示。从图中可以看出，我们提出的PINN在所有任务和所有指标上都是最稳定的。XJTU电池数据集的每个批次的样本量较小，导致MLP和CNN的波动较大。相比之下，我们的方法更加稳定，测试误差更小。对于HUST数据集和MIT数据集，它们包含大量的训练样本，因此MLP和CNN的波动变小，测试误差也变小。然而，我们提出的PINN仍然是表现最好的模型。
+    </p>
+   </sec>
+   <sec id="Sec7">
+    <title>
+     小样本实验
+    </title>
+    <p id="Par25">
+     我们提出的PINN模型考虑了更多的物理定律，因此可以用更少的数据进行训练。与纯数据驱动方法相比，当可用训练数据量较小时，我们的方法可以表现出更大的优势。为了验证上述推论，我们在XJTU数据集和HUST数据集上进行了小样本实验。
+    </p>
+    <p id="Par26">
+     具体来说，我们使用1个电池的数据训练3个模型，并在多个电池上进行测试（测试集与2.4节相同），并记录测试结果。此外，我们逐渐增加训练电池的数量，并观察每个模型在测试集上的性能变化。结果如表
+     <xref ref-type="table" rid="Tab3">
+      3
+     </xref>
+     和图
+     <xref ref-type="fig" rid="Fig5">
+      5
+     </xref>
+     所示（仅给出XJTU数据集的批次1结果，更多结果可以在表
+     <xref ref-type="supplementary-material" rid="MOESM1">
+      S7
+     </xref>
+     和图
+     <xref ref-type="supplementary-material" rid="MOESM1">
+      S5
+     </xref>
+     中找到）。
+     <fig id="Fig5" position="float">
+      <label>
+       Fig. 5
+      </label>
+      <caption xml:lang="en">
+       <title>
+        三种模型（所提出的PINN（Ours）、多层感知器（MLP）和卷积神经网络（CNN））在两个数据集上的测试均方根误差（RMSE）分布图。
+       </title>
+       <p>
+        每个误差条包含10个点（10次实验），并标记有均值和标准差线。图例中的“1 battery”表示我们仅使用1个电池的数据来训练模型。其他情况类似。随着电池数量的增加，三种模型的性能逐渐提高。然而，我们的方法在其中仍然表现最佳。
+        <bold>
+         a
+        </bold>
+        XJTU数据集批次1的结果。
+        <bold>
+         b
+        </bold>
+        HUST数据集的结果。源数据作为源数据文件提供。
+       </p>
+      </caption>
+      <graphic href="/ProjectMundo/MediaObjects/10X1038_s41467-024-48779-z/41467_2024_48779_Fig5_HTML.png" mime-subtype="PNG" specific-use="web"/>
+     </fig>
+     <table-wrap id="Tab3">
+      <label>
+       表 3
+      </label>
+      <caption xml:lang="en">
+       <p>
+        在XJTU数据集批次1和HUST数据集上的小样本实验结果
+       </p>
+      </caption>
+      <table frame="hsides" rules="groups">
+       <thead>
+        <tr>
+         <th>
+          <p>
+           数据集
+          </p>
+         </th>
+         <th>
+          <p>
+           训练电池
+          </p>
+         </th>
+         <th colspan="2">
+          <p>
+           我们的方法
+          </p>
+         </th>
+         <th colspan="2">
+          <p>
+           MLP
+          </p>
+         </th>
+         <th colspan="2">
+          <p>
+           CNN
+          </p>
+         </th>
+        </tr>
+        <tr>
+         <th/>
+         <th/>
+         <th>
+          <p>
+           MAPE
+          </p>
+         </th>
+         <th>
+          <p>
+           RMSE
+          </p>
+         </th>
+         <th>
+          <p>
+           MAPE
+          </p>
+         </th>
+         <th>
+          <p>
+           RMSE
+          </p>
+         </th>
+         <th>
+          <p>
+           MAPE
+          </p>
+         </th>
+         <th>
+          <p>
+           RMSE
+          </p>
+         </th>
+        </tr>
+       </thead>
+       <tbody>
+        <tr>
+         <td>
+          <p>
+           XJTU
+          </p>
+         </td>
+         <td>
+          <p>
+           1
+          </p>
+         </td>
+         <td>
+          <p>
+           <bold>
+            0.0141
+           </bold>
+          </p>
+         </td>
+         <td>
+          <p>
+           <bold>
+            0.0184
+           </bold>
+          </p>
+         </td>
+         <td>
+          <p>
+           0.0343
+          </p>
+         </td>
+         <td>
+          <p>
+           0.0390
+          </p>
+         </td>
+         <td>
+          <p>
+           0.0929
+          </p>
+         </td>
+         <td>
+          <p>
+           0.0949
+          </p>
+         </td>
+        </tr>
+        <tr>
+         <td/>
+         <td>
+          <p>
+           2
+          </p>
+         </td>
+         <td>
+          <p>
+           <bold>
+            0.0105
+           </bold>
+          </p>
+         </td>
+         <td>
+          <p>
+           <bold>
+            0.0134
+           </bold>
+          </p>
+         </td>
+         <td>
+          <p>
+           0.0267
+          </p>
+         </td>
+         <td>
+          <p>
+           0.0304
+          </p>
+         </td>
+         <td>
+          <p>
+           0.0728
+          </p>
+         </td>
+         <td>
+          <p>
+           0.0826
+          </p>
+         </td>
+        </tr>
+        <tr>
+         <td/>
+         <td>
+          <p>
+           3
+          </p>
+         </td>
+         <td>
+          <p>
+           <bold>
+            0.0069
+           </bold>
+          </p>
+         </td>
+         <td>
+          <p>
+           <bold>
+            0.0096
+           </bold>
+          </p>
+         </td>
+         <td>
+          <p>
+           0.0347
+          </p>
+         </td>
+         <td>
+          <p>
+           0.0383
+          </p>
+         </td>
+         <td>
+          <p>
+           0.0548
+          </p>
+         </td>
+         <td>
+          <p>
+           0.0666
+          </p>
+         </td>
+        </tr>
+        <tr>
+         <td/>
+         <td>
+          <p>
+           4
+          </p>
+         </td>
+         <td>
+          <p>
+           <bold>
+            0.0056
+           </bold>
+          </p>
+         </td>
+         <td>
+          <p>
+           <bold>
+            0.0076
+           </bold>
+          </p>
+         </td>
+         <td>
+          <p>
+           0.0292
+          </p>
+         </td>
+         <td>
+          <p>
+           0.0327
+          </p>
+         </td>
+         <td>
+          <p>
+           0.0560
+          </p>
+         </td>
+         <td>
+          <p>
+           0.0647
+          </p>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          <p>
+           HUST
+          </p>
+         </td>
+         <td>
+          <p>
+           1
+          </p>
+         </td>
+         <td>
+          <p>
+           <bold>
+            0.0446
+           </bold>
+          </p>
+         </td>
+         <td>
+          <p>
+           <bold>
+            0.0485
+           </bold>
+          </p>
+         </td>
+         <td>
+          <p>
+           0.0601
+          </p>
+         </td>
+         <td>
+          <p>
+           0.0682
+          </p>
+         </td>
+         <td>
+          <p>
+           0.3614
+          </p>
+         </td>
+         <td>
+          <p>
+           0.1550
+          </p>
+         </td>
+        </tr>
+        <tr>
+         <td/>
+         <td>
+          <p>
+           2
+          </p>
+         </td>
+         <td>
+          <p>
+           <bold>
+            0.0178
+           </bold>
+          </p>
+         </td>
+         <td>
+          <p>
+           <bold>
+            0.0202
+           </bold>
+          </p>
+         </td>
+         <td>
+          <p>
+           0.0391
+          </p>
+         </td>
+         <td>
+          <p>
+           0.0461
+          </p>
+         </td>
+         <td>
+          <p>
+           0.0826
+          </p>
+         </td>
+         <td>
+          <p>
+           0.0925
+          </p>
+         </td>
+        </tr>
+        <tr>
+         <td/>
+         <td>
+          <p>
+           3
+          </p>
+         </td>
+         <td>
+          <p>
+           <bold>
+            0.0154
+           </bold>
+          </p>
+         </td>
+         <td>
+          <p>
+           <bold>
+            0.0181
+           </bold>
+          </p>
+         </td>
+         <td>
+          <p>
+           0.0251
+          </p>
+         </td>
+         <td>
+          <p>
+           0.0287
+          </p>
+         </td>
+         <td>
+          <p>
+           0.0514
+          </p>
+         </td>
+         <td>
+          <p>
+           0.0618
+          </p>
+         </td>
+        </tr>
+        <tr>
+         <td/>
+         <td>
+          <p>
+           4
+          </p>
+         </td>
+         <td>
+          <p>
+           <bold>
+            0.0144
+           </bold>
+          </p>
+         </td>
+         <td>
+          <p>
+           <bold>
+            0.0173
+           </bold>
+          </p>
+         </td>
+         <td>
+          <p>
+           0.0253
+          </p>
+         </td>
+         <td>
+          <p>
+           0.0288
+          </p>
+         </td>
+         <td>
+          <p>
+           0.0429
+          </p>
+         </td>
+         <td>
+          <p>
+           0.0521
+          </p>
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <table-wrap-foot>
+       <p>
+        MAPE 是平均绝对百分比误差，RMSE 是均方根误差。最佳结果以粗体显示。所有值均取自十次实验的平均值。"训练电池" 意味着我们分别使用 1、2、3 和 4 个电池来训练模型，然后在测试集上进行测试。
+       </p>
+      </table-wrap-foot>
+     </table-wrap>
+    </p>
+    <p id="Par27">
+     可以观察到，我们提出的PINN在所有任务和设置中都取得了最佳结果。随着训练电池数量的增加，3个模型的测试误差都减小。这是一个普遍接受的事实：当训练数据较少时，增加训练样本的数量可以提高模型的性能。在图
+     <xref ref-type="fig" rid="Fig4">
+      4
+     </xref>
+     b中，由于HUST数据集的样本量较大，CNN和MLP的性能与我们的PINN相当。这也说明了当模型的结构或参数数量相同或相似时，只要有足够的训练样本，模型的性能差异不大。然而，从图
+     <xref ref-type="fig" rid="Fig5">
+      5
+     </xref>
+     可以看出，当训练样本数量较小时，我们的方法具有显著的优势。此外，值得注意的是，仅用1个电池训练的PINN的性能与用3-4个电池训练的MLP和CNN相当，这表明我们的PINN在小样本场景中具有优势。
+    </p>
+   </sec>
+   <sec id="Sec8">
+    <title>
+     不同数据集之间的微调
+    </title>
+    <p id="Par28">
+     微调是迁移学习的一种实现方式，通过使用少量新收集的数据快速调整模型来提高学习能力。其优势在于可以使用在其他场景（源域）中收集的大量数据来预训练模型并学习特征与标签之间的基本关系。然后使用少量目标域数据快速微调模型以获得良好的性能。现有的大多数关于SOH估计的迁移学习研究都是在不同的充放电协议之间进行的，而关于不同数据集（不同化学成分）之间的迁移研究较少。在本文中，我们将4个数据集配对进行微调实验。
+    </p>
+    <p id="Par29">
+     我们认为退化动态
+     <inline-formula id="IEq8">
+      <alternatives>
+       <math id="IEq8_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+        <mi class="MJX-tex-caligraphic" mathvariant="script">
+         G
+        </mi>
+        <mrow>
+         <mo>
+          (
+         </mo>
+         <mrow>
+          <mo>
+           ⋅
+          </mo>
+         </mrow>
+         <mo>
+          )
+         </mo>
+        </mrow>
+       </math>
+       <tex-math id="IEq8_TeX">
+        \documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym}
+				\usepackage{amsfonts}
+				\usepackage{amssymb}
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${{{{{{{\mathcal{G}}}}}}}}(\cdot )$$\end{document}
+       </tex-math>
+       <inline-graphic href="41467_2024_48779_Article_IEq8.gif" mime-subtype="GIF" specific-use="web"/>
+      </alternatives>
+     </inline-formula>
+     独立于充放电协议和数据集，而解
+     <inline-formula id="IEq9">
+      <alternatives>
+       <math id="IEq9_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+        <mi class="MJX-tex-caligraphic" mathvariant="script">
+         F
+        </mi>
+        <mrow>
+         <mo>
+          (
+         </mo>
+         <mrow>
+          <mo>
+           ⋅
+          </mo>
+         </mrow>
+         <mo>
+          )
+         </mo>
+        </mrow>
+       </math>
+       <tex-math id="IEq9_TeX">
+        \documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym}
+				\usepackage{amsfonts}
+				\usepackage{amssymb}
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${{{{{{{\mathcal{F}}}}}}}}(\cdot )$$\end{document}
+       </tex-math>
+       <inline-graphic href="41467_2024_48779_Article_IEq9.gif" mime-subtype="GIF" specific-use="web"/>
+      </alternatives>
+     </inline-formula>
+     与它们相关。在从大量数据中学习后，
+     <inline-formula id="IEq10">
+      <alternatives>
+       <math id="IEq10_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+        <mi class="MJX-tex-caligraphic" mathvariant="script">
+         G
+        </mi>
+        <mrow>
+         <mo>
+          (
+         </mo>
+         <mrow>
+          <mo>
+           ⋅
+          </mo>
+         </mrow>
+         <mo>
+          )
+         </mo>
+        </mrow>
+       </math>
+       <tex-math id="IEq10_TeX">
+        \documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym}
+				\usepackage{amsfonts}
+				\usepackage{amssymb}
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${{{{{{{\mathcal{G}}}}}}}}(\cdot )$$\end{document}
+       </tex-math>
+       <inline-graphic href="41467_2024_48779_Article_IEq10.gif" mime-subtype="GIF" specific-use="web"/>
+      </alternatives>
+     </inline-formula>
+     应包含可以反映电池退化本质的一般信息，这对于跨场景的SOH估计是有用的。因此，我们仅微调解
+     <inline-formula id="IEq11">
+      <alternatives>
+       <math id="IEq11_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+        <mi class="MJX-tex-caligraphic" mathvariant="script">
+         F
+        </mi>
+        <mrow>
+         <mo>
+          (
+         </mo>
+         <mrow>
+          <mo>
+           ⋅
+          </mo>
+         </mrow>
+         <mo>
+          )
+         </mo>
+        </mrow>
+       </math>
+       <tex-math id="IEq11_TeX">
+        \documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym}
+				\usepackage{amsfonts}
+				\usepackage{amssymb}
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${{{{{{{\mathcal{F}}}}}}}}(\cdot )$$\end{document}
+       </tex-math>
+       <inline-graphic href="41467_2024_48779_Article_IEq11.gif" mime-subtype="GIF" specific-use="web"/>
+      </alternatives>
+     </inline-formula>
+     的权重，并冻结动态
+     <inline-formula id="IEq12">
+      <alternatives>
+       <math id="IEq12_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+        <mi class="MJX-tex-caligraphic" mathvariant="script">
+         G
+        </mi>
+        <mrow>
+         <mo>
+          (
+         </mo>
+         <mrow>
+          <mo>
+           ⋅
+          </mo>
+         </mrow>
+         <mo>
+          )
+         </mo>
+        </mrow>
+       </math>
+       <tex-math id="IEq12_TeX">
+        \documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym}
+				\usepackage{amsfonts}
+				\usepackage{amssymb}
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${{{{{{{\mathcal{G}}}}}}}}(\cdot )$$\end{document}
+       </tex-math>
+       <inline-graphic href="41467_2024_48779_Article_IEq12.gif" mime-subtype="GIF" specific-use="web"/>
+      </alternatives>
+     </inline-formula>
+     的权重，如图 Fig. 6b 所示。
+     <fig id="Fig6" position="float">
+      <label>
+       Fig. 6
+      </label>
+      <caption xml:lang="en">
+       <title>
+        所提出的物理信息神经网络的示意图。
+       </title>
+       <p>
+        <bold>
+         a
+        </bold>
+        提取的特征
+        <bold>
+         x
+        </bold>
+        和循环
+        <italic>
+         t
+        </italic>
+        用于估计SOH
+        <italic>
+         u
+        </italic>
+        。
+        <inline-formula id="IEq16">
+         <alternatives>
+          <math id="IEq16_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+           <mover accent="true">
+            <mrow>
+             <mi>
+              u
+             </mi>
+            </mrow>
+            <mrow>
+             <mo>
+              ̂
+             </mo>
+            </mrow>
+           </mover>
+          </math>
+          <tex-math id="IEq16_TeX">
+           \documentclass[12pt]{minimal}
+                \usepackage{amsmath}
+                \usepackage{wasysym}
+                \usepackage{amsfonts}
+                \usepackage{amssymb}
+                \usepackage{amsbsy}
+                \usepackage{mathrsfs}
+                \usepackage{upgreek}
+                \setlength{\oddsidemargin}{-69pt}
+                \begin{document}$$\hat{u}$$\end{document}
+          </tex-math>
+          <inline-graphic href="41467_2024_48779_Article_IEq16.gif" mime-subtype="GIF" specific-use="web"/>
+         </alternatives>
+        </inline-formula>
+        表示估计的SOH，下标
+        <italic>
+         t
+        </italic>
+        和
+        <bold>
+         x
+        </bold>
+        表示相应的偏导数。神经网络
+        <inline-formula id="IEq17">
+         <alternatives>
+          <math id="IEq17_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+           <mi class="MJX-tex-caligraphic" mathvariant="script">
+            F
+           </mi>
+           <mrow>
+            <mo>
+             (
+            </mo>
+            <mrow>
+             <mo>
+              ⋅
+             </mo>
+            </mrow>
+            <mo>
+             )
+            </mo>
+           </mrow>
+          </math>
+          <tex-math id="IEq17_TeX">
+           \documentclass[12pt]{minimal}
+                \usepackage{amsmath}
+                \usepackage{wasysym}
+                \usepackage{amsfonts}
+                \usepackage{amssymb}
+                \usepackage{amsbsy}
+                \usepackage{mathrsfs}
+                \usepackage{upgreek}
+                \setlength{\oddsidemargin}{-69pt}
+                \begin{document}$${{{{{{{\mathcal{F}}}}}}}}(\cdot )$$\end{document}
+          </tex-math>
+          <inline-graphic href="41467_2024_48779_Article_IEq17.gif" mime-subtype="GIF" specific-use="web"/>
+         </alternatives>
+        </inline-formula>
+        和
+        <inline-formula id="IEq18">
+         <alternatives>
+          <math id="IEq18_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+           <mi class="MJX-tex-caligraphic" mathvariant="script">
+            G
+           </mi>
+           <mrow>
+            <mo>
+             (
+            </mo>
+            <mrow>
+             <mo>
+              ⋅
+             </mo>
+            </mrow>
+            <mo>
+             )
+            </mo>
+           </mrow>
+          </math>
+          <tex-math id="IEq18_TeX">
+           \documentclass[12pt]{minimal}
+                \usepackage{amsmath}
+                \usepackage{wasysym}
+                \usepackage{amsfonts}
+                \usepackage{amssymb}
+                \usepackage{amsbsy}
+                \usepackage{mathrsfs}
+                \usepackage{upgreek}
+                \setlength{\oddsidemargin}{-69pt}
+                \begin{document}$${{{{{{{\mathcal{G}}}}}}}}(\cdot )$$\end{document}
+          </tex-math>
+          <inline-graphic href="41467_2024_48779_Article_IEq18.gif" mime-subtype="GIF" specific-use="web"/>
+         </alternatives>
+        </inline-formula>
+        分别用于建模特征到SOH的映射和电池退化动态。
+        <bold>
+         b
+        </bold>
+        当所提出的PINN应用于迁移学习场景时，动态
+        <inline-formula id="IEq19">
+         <alternatives>
+          <math id="IEq19_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+           <mi class="MJX-tex-caligraphic" mathvariant="script">
+            G
+           </mi>
+           <mrow>
+            <mo>
+             (
+            </mo>
+            <mrow>
+             <mo>
+              ⋅
+             </mo>
+            </mrow>
+            <mo>
+             )
+            </mo>
+           </mrow>
+          </math>
+          <tex-math id="IEq19_TeX">
+           \documentclass[12pt]{minimal}
+                \usepackage{amsmath}
+                \usepackage{wasysym}
+                \usepackage{amsfonts}
+                \usepackage{amssymb}
+                \usepackage{amsbsy}
+                \usepackage{mathrsfs}
+                \usepackage{upgreek}
+                \setlength{\oddsidemargin}{-69pt}
+                \begin{document}$${{{{{{{\mathcal{G}}}}}}}}(\cdot )$$\end{document}
+          </tex-math>
+          <inline-graphic href="41467_2024_48779_Article_IEq19.gif" mime-subtype="GIF" specific-use="web"/>
+         </alternatives>
+        </inline-formula>
+        被冻结，仅对解
+        <inline-formula id="IEq20">
+         <alternatives>
+          <math id="IEq20_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+           <mi class="MJX-tex-caligraphic" mathvariant="script">
+            F
+           </mi>
+           <mrow>
+            <mo>
+             (
+            </mo>
+            <mrow>
+             <mo>
+              ⋅
+             </mo>
+            </mrow>
+            <mo>
+             )
+            </mo>
+           </mrow>
+          </math>
+          <tex-math id="IEq20_TeX">
+           \documentclass[12pt]{minimal}
+                \usepackage{amsmath}
+                \usepackage{wasysym}
+                \usepackage{amsfonts}
+                \usepackage{amssymb}
+                \usepackage{amsbsy}
+                \usepackage{mathrsfs}
+                \usepackage{upgreek}
+                \setlength{\oddsidemargin}{-69pt}
+                \begin{document}$${{{{{{{\mathcal{F}}}}}}}}(\cdot )$$\end{document}
+          </tex-math>
+          <inline-graphic href="41467_2024_48779_Article_IEq20.gif" mime-subtype="GIF" specific-use="web"/>
+         </alternatives>
+        </inline-formula>
+        进行微调。
+       </p>
+      </caption>
+      <graphic href="/ProjectMundo/MediaObjects/10X1038_s41467-024-48779-z/41467_2024_48779_Fig6_HTML.png" mime-subtype="PNG" specific-use="web"/>
+     </fig>
+    </p>
+    <p id="Par30"/>
+    <p id="Par31"/>
+   </sec>
+  </sec>
+  <sec id="Sec9" sec-type="discussion">
+   <title>
+    讨论
+   </title>
+   <p id="Par32"/>
+   <p id="Par33">
+    为了验证我们的方法，我们进行了电池老化实验并开发了一个包含55个电池的数据集。最后，我们在4个大规模数据集中验证了我们的方法，这些数据集包含387个具有不同化学成分和充放电协议的电池。结果证明了我们提出的方法的有效性和可行性。此外，我们进行了小样本实验和迁移实验，证明了考虑物理知识有助于数据驱动模型更快、更好地从数据中学习。我们的研究突显了物理信息机器学习在电池退化建模和SOH估计中的潜力。它可以通过使用现有的实验数据和少量新数据，促进下一代电池管理系统的快速发展。
+   </p>
+   <p id="Par34">
+    电池退化建模和SOH估计是电池健康管理领域的研究热点。随着电池老化，各种界面退化过程发生，伴随着锂库存和活性材料的损失，导致离子和电子转移以及嵌入反应的电阻增加，从而导致充电曲线的变化
+    <sup>
+     <xref ref-type="bibr" rid="CR46">
+      46
+     </xref>
+    </sup>
+    。因此，充电曲线包含丰富的退化过程信息。然而，使用充放电曲线来估计电池SOH可能会陷入信息泄露的陷阱。Geslin等人指出，不一致的充放电协议、使用条件等可能导致信息泄露，这是一个可能被学者忽视的严重问题。他们认为，固定的恒流-恒压（CC-CV）模式可以缓解信息泄露的问题。因此，在进行SOH估计任务时，应尽量避免纳入与电池内部质量、制造变异性及使用条件相关的因素。在我们的研究中，特征是从电池完全充电前的CC-CV阶段的一小段数据中提取的，这与电池使用条件无关。这确保了我们提取的特征的有用性和通用性，同时避免了由于不一致的充电协议或电池使用条件导致的信息泄露问题。在训练和测试阶段，我们使用电池A的数据训练模型，并在电池B上进行测试；而不是使用电池A的早期数据训练模型并在后期数据上进行测试，这避免了训练集向测试集的信息泄露
+    <sup>
+     <xref ref-type="bibr" rid="CR47">
+      47
+     </xref>
+    </sup>
+    。
+   </p>
+   <p id="Par35">
+    在构建SOH估计模型时，我们提出了一种用于电池SOH估计的PINN。物理信息神经网络作为一种有效的途径，有望利用人工智能解决实际工程问题。通过将传统的物理模型与神经网络模型结合，它可以更准确地捕捉电池系统的复杂动态行为，从而促进更可靠和精确的状态估计。然而，这一新兴领域仍需学者进一步探索。在Aykol等人提出的框架中，混合方法利用物理方程约束神经网络或将物理方程集成到神经网络中，将在长期内占据主导地位。这类混合方法有潜力将基于物理模型的因果关系和外推能力与神经网络的速度、灵活性和高维能力结合起来。然而，这些方法的局限性在于电池物理模型的复杂性（例如P2D模型），其中包含众多参数，且电池的内部参数难以收集。目前还没有令人满意的方法可以无缝集成物理模型和神经网络。本文提出的PINN从经验退化和状态空间方程的角度建模，仅作为这类混合方法的探索，并作为进一步研究的催化剂。此外，我们仅考虑从易于获取的电流和电压数据中提取特征。随着更多数据和内部变量的可用，可以考虑更复杂的电化学模型。在现有数据和计算资源的约束下，电池控制方程和神经网络的最优集成仍需进一步探索
+    <sup>
+     <xref ref-type="bibr" rid="CR38">
+      38
+     </xref>
+    </sup>
+    。
+   </p>
+  </sec>
+  <sec id="Sec10" sec-type="methods">
+   <title>
+    方法
+   </title>
+   <sec id="Sec11">
+    <title>
+     电池退化建模
+    </title>
+    <p id="Par36">
+     电池老化主要表现为可用容量的减少和内部电阻的增加，通常遵循下降轨迹。为了准确描述电池退化轨迹，学者们提出了各种经验模型，描述电池容量随时间或循环次数的损失，包括线性模型、指数模型、幂律模型和失效预测模型（FFM）等。这些模型都将电池的退化轨迹描述为时间的单变量函数
+     <sup>
+      <xref ref-type="bibr" rid="CR48">
+       48
+      </xref>
+      <xref ref-type="bibr" rid="CR49">
+       49
+      </xref>
+      <xref ref-type="bibr" rid="CR50">
+       50
+      </xref>
+      <xref ref-type="bibr" rid="CR51">
+       51
+      </xref>
+      <xref ref-type="bibr" rid="CR52">
+       52
+      </xref>
+     </sup>
+     。
+    </p>
+    <p id="Par37">
+     然而，将电池退化轨迹仅表示为时间的单变量函数过于简化了这一过程。事实上，电池退化不仅与时间有关，还与充电率、放电率、日历时间、温度、放电深度（DOD）等有关。例如，Xu等人将电池老化分为日历老化和循环老化，考虑了荷电状态（SOC）、DOD、电池温度和固体电解质界面（SEI）膜生长等因素。他们将日历老化和循环老化建模为日历时间、SOC、DOD和温度的函数
+     <sup>
+      <xref ref-type="bibr" rid="CR53">
+       53
+      </xref>
+     </sup>
+     。
+    </p>
+    <p id="Par38">
+     因此，仅将电池退化轨迹建模为时间的函数是不充分的。在本研究中，我们提出将其建模为多变量函数：
+     <disp-formula id="Equ1">
+      <label>
+       1
+      </label>
+      <alternatives>
+       <math id="Equ1_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+        <mi>
+         u
+        </mi>
+        <mo>
+         =
+        </mo>
+        <mi>
+         f
+        </mi>
+        <mrow>
+         <mo>
+          (
+         </mo>
+         <mrow>
+          <mi>
+           t
+          </mi>
+          <mo>
+           ,
+          </mo>
+          <mspace width="0.25em"/>
+          <mi mathvariant="bold">
+           x
+          </mi>
+         </mrow>
+         <mo>
+          )
+         </mo>
+        </mrow>
+        <mo>
+         ,
+        </mo>
+       </math>
+       <tex-math id="Equ1_TeX">
+        \\documentclass[12pt]{minimal}\n\\usepackage{amsmath}\n\\usepackage{wasysym}\n\\usepackage{amsfonts}\n\\usepackage{amssymb}\n\\usepackage{amsbsy}\n\\usepackage{mathrsfs}\n\\usepackage{upgreek}\n\\setlength{\\oddsidemargin}{-69pt}\n\\begin{document}$$u=f(t,\\, {{{{{{{\\bf{x}}}}}}}}),$$\\end{document}
+       </tex-math>
+       <graphic href="41467_2024_48779_Article_Equ1.gif" mime-subtype="GIF" specific-use="web"/>
+      </alternatives>
+     </disp-formula>
+     其中
+     <italic>
+      t
+     </italic>
+     表示时间，
+     <bold>
+      x
+     </bold>
+     表示由 SOC、DOD、温度、充电率、放电率、健康指标（HIs）和其他所有因素组成的向量。在我们的工作中，
+     <bold>
+      x
+     </bold>
+     表示从充电数据中提取的 HIs（有关更多详细信息，请参见“特征提取”部分）。
+    </p>
+    <p id="Par39">
+     为了描述电池的退化动态，其 SOH 衰减速率可以描述为：
+     <disp-formula id="Equ2">
+      <label>
+       2
+      </label>
+      <alternatives>
+       <math id="Equ2_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+        <mfrac>
+         <mrow>
+          <mi>
+           ∂
+          </mi>
+          <mi>
+           u
+          </mi>
+         </mrow>
+         <mrow>
+          <mi>
+           ∂
+          </mi>
+          <mi>
+           t
+          </mi>
+         </mrow>
+        </mfrac>
+        <mo>
+         =
+        </mo>
+        <mi>
+         g
+        </mi>
+        <mfenced close=")" open="(">
+         <mrow>
+          <mi>
+           t
+          </mi>
+          <mo>
+           ,
+          </mo>
+          <mspace width="0.25em"/>
+          <mi mathvariant="bold">
+           x
+          </mi>
+          <mo>
+           ,
+          </mo>
+          <mspace width="0.25em"/>
+          <mi>
+           u
+          </mi>
+          <mo>
+           ;
+          </mo>
+          <mi>
+           θ
+          </mi>
+         </mrow>
+        </mfenced>
+        <mo>
+         .
+        </mo>
+       </math>
+       <tex-math id="Equ2_TeX">
+        \\documentclass[12pt]{minimal}\n\\usepackage{amsmath}\n\\usepackage{wasysym}\n\\usepackage{amsfonts}\n\\usepackage{amssymb}\n\\usepackage{amsbsy}\n\\usepackage{mathrsfs}\n\\usepackage{upgreek}\n\\setlength{\\oddsidemargin}{-69pt}\n\\begin{document}$$\\frac{\\partial u}{\\partial t}=g\\left(t,\\, {{{{{{{\\bf{x}}}}}}}},\\, u;\\theta \\right).$$\\end{document}
+       </tex-math>
+       <graphic href="41467_2024_48779_Article_Equ2.gif" mime-subtype="GIF" specific-use="web"/>
+      </alternatives>
+     </disp-formula>
+     上述方程是一个由
+     <italic>
+      θ
+     </italic>
+     参数化的显式偏微分方程（PDE），
+     <italic>
+      g
+     </italic>
+     ( ⋅ ) 表示
+     <italic>
+      t
+     </italic>
+     、
+     <bold>
+      x
+     </bold>
+     和
+     <italic>
+      u
+     </italic>
+     的非线性函数。函数
+     <italic>
+      g
+     </italic>
+     ( ⋅ ) 描述了电池的内部退化动态，通过改变这个非线性函数，可以表示各种形式的退化。当仅考虑时间时，线性模型、指数模型、幂律模型和 FFM 可以视为方程 (
+     <xref ref-type="disp-formula" rid="Equ2">
+      2
+     </xref>
+     ) 的特殊情况。
+    </p>
+   </sec>
+   <sec id="Sec12">
+    <title>
+     物理信息神经网络
+    </title>
+    <p id="Par40"/>
+    <p id="Par41"/>
+    <p id="Par42"/>
+   </sec>
+   <sec id="Sec13">
+    <title>
+     使用物理信息神经网络的迁移学习
+    </title>
+    <p id="Par43"/>
+   </sec>
+  </sec>
+ </body>
+ <back>
+  <ack>
+   <title>
+    Acknowledgements
+   </title>
+   <p>
+    本工作部分得到了中国国家自然科学基金（项目编号52105116（赵志斌）和项目编号92060302（陈曦））和中央高校基本科研业务费专项资金（项目编号xzy022023060（王飞））的支持。
+   </p>
+  </ack>
+  <sec sec-type="author-contribution">
+   <title>
+    Author contributions
+   </title>
+   <p>
+    王飞负责概念设计、方法设计、实验实施和撰写初稿。翟志（Zhi Zhai）对稿件进行了广泛的审阅和编辑，提供了宝贵的建议和修订。赵志斌（Zhibin Zhao）参与了概念设计和方法讨论，在编辑过程中发挥了重要作用。杜洋进行了全面的审阅和编辑，对文章的完善做出了重要贡献。陈曦领导了获取本研究所需资金的工作，提供了关键支持。
+   </p>
+  </sec>
+  <sec sec-type="peer-review">
+   <title>
+    同行评审
+   </title>
+   <sec id="FPar1">
+    <title>
+     同行评审信息
+    </title>
+    <p id="Par44">
+     <italic>
+      Nature Communications
+     </italic>
+     thanks the anonymous reviewers for their contribution to the peer review of this work. A peer review file is available.
+    </p>
+   </sec>
+  </sec>
+  <sec sec-type="data-availability">
+   <title>
+    数据可用性
+   </title>
+   <p>
+    The XJTU battery dataset generated in this study is publicly available in the Zenodo database under accession code [
+    <ext-link ext-link-type="uri" xlink:href="https://zenodo.org/records/10963339">
+     https://doi.org/10.5281/zenodo.10963339
+    </ext-link>
+    ], as reference
+    <sup>
+     <xref ref-type="bibr" rid="CR56">
+      56
+     </xref>
+    </sup>
+    . The TJU dataset is available at:
+    <ext-link ext-link-type="uri" xlink:href="https://zenodo.org/record/6405084">
+     https://zenodo.org/record/6405084
+    </ext-link>
+    . The HUST dataset is available at:
+    <ext-link ext-link-type="uri" xlink:href="https://data.mendeley.com/datasets/nsc7hnsg4s/2">
+     https://data.mendeley.com/datasets/nsc7hnsg4s/2
+    </ext-link>
+    . The MIT dataset is available at:
+    <ext-link ext-link-type="uri" xlink:href="https://data.matr.io/1/projects/5c48dd2bc625d700019f3204">
+     https://data.matr.io/1/projects/5c48dd2bc625d700019f3204
+    </ext-link>
+    .
+    <xref ref-type="sec" rid="Sec15">
+     Source data
+    </xref>
+    are provided with this paper.
+   </p>
+  </sec>
+  <sec sec-type="data-availability">
+   <title>
+    代码可用性
+   </title>
+   <p>
+    Our code is available on Github [
+    <ext-link ext-link-type="uri" xlink:href="https://github.com/wang-fujin/PINN4SOH">
+     https://github.com/wang-fujin/PINN4SOH
+    </ext-link>
+    ] or on Zenodo database under accession code [
+    <ext-link ext-link-type="doi" xlink:href="10.5281/zenodo.11046967">
+     https://doi.org/10.5281/zenodo.11046967
+    </ext-link>
+    ], as reference
+    <sup>
+     <xref ref-type="bibr" rid="CR57">
+      57
+     </xref>
+    </sup>
+    .
+   </p>
+  </sec>
+  <sec sec-type="ethics-statement">
+   <sec id="FPar2" sec-type="COI-statement">
+    <title>
+     竞争利益
+    </title>
+    <p id="Par45">
+     The authors declare no competing interests.
+    </p>
+   </sec>
+  </sec>
+  <ref-list id="Bib1">
+   <title>
+    参考文献
+   </title>
+   <ref-list>
+    <ref id="CR1">
+     <label>
+      1.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Schmuch
+        </surname>
+        <given-names>
+         R
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Wagner
+        </surname>
+        <given-names>
+         R
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Hörpel
+        </surname>
+        <given-names>
+         G
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Placke
+        </surname>
+        <given-names>
+         T
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Winter
+        </surname>
+        <given-names>
+         M
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Performance and cost of materials for lithium-based rechargeable automotive batteries
+      </article-title>
+      <source>
+       Nat. Energy
+      </source>
+      <year>
+       2018
+      </year>
+      <volume>
+       3
+      </volume>
+      <fpage>
+       267
+      </fpage>
+      <lpage>
+       278
+      </lpage>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2018NatEn...3..267S
+      </pub-id>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BC1cXos1KhtLs%3D
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1038/s41560-018-0107-2
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR2">
+     <label>
+      2.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Harper
+        </surname>
+        <given-names>
+         G
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Recycling lithium-ion batteries from electric vehicles
+      </article-title>
+      <source>
+       Nature
+      </source>
+      <year>
+       2019
+      </year>
+      <volume>
+       575
+      </volume>
+      <fpage>
+       75
+      </fpage>
+      <lpage>
+       86
+      </lpage>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2019Natur.575...75H
+      </pub-id>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BC1MXitFWnurvF
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       31695206
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1038/s41586-019-1682-5
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR3">
+     <label>
+      3.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Zubi
+        </surname>
+        <given-names>
+         G
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Adhikari
+        </surname>
+        <given-names>
+         RS
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Sánchez
+        </surname>
+        <given-names>
+         NE
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Acuña-Bravo
+        </surname>
+        <given-names>
+         W
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Lithium-ion battery-packs for solar home systems: layout, cost and implementation perspectives
+      </article-title>
+      <source>
+       J. Energy Storage
+      </source>
+      <year>
+       2020
+      </year>
+      <volume>
+       32
+      </volume>
+      <fpage>
+       101985
+      </fpage>
+      <pub-id pub-id-type="doi">
+       10.1016/j.est.2020.101985
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR4">
+     <label>
+      4.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Zhao
+        </surname>
+        <given-names>
+         D
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Online estimation of satellite lithium-ion battery capacity based on approximate belief rule base and hidden Markov model
+      </article-title>
+      <source>
+       Energy
+      </source>
+      <year>
+       2022
+      </year>
+      <volume>
+       256
+      </volume>
+      <fpage>
+       124632
+      </fpage>
+      <pub-id pub-id-type="doi">
+       10.1016/j.energy.2022.124632
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR5">
+     <label>
+      5.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Yun
+        </surname>
+        <given-names>
+         S-T
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Kong
+        </surname>
+        <given-names>
+         S-H
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Data-driven in-orbit current and voltage prediction using Bi-LSTM for LEO satellite lithium-ion battery SOC estimation
+      </article-title>
+      <source>
+       IEEE Trans. Aerosp. Electron. Syst.
+      </source>
+      <year>
+       2022
+      </year>
+      <volume>
+       58
+      </volume>
+      <fpage>
+       5292
+      </fpage>
+      <lpage>
+       5306
+      </lpage>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2022ITAES..58.5292Y
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1109/TAES.2022.3167624
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR6">
+     <label>
+      6.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Shen
+        </surname>
+        <given-names>
+         L
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Cheng
+        </surname>
+        <given-names>
+         Q
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Cheng
+        </surname>
+        <given-names>
+         Y
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Wei
+        </surname>
+        <given-names>
+         L
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Wang
+        </surname>
+        <given-names>
+         Y
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Hierarchical control of DC micro-grid for photovoltaic EV charging station based on flywheel and battery energy storage system
+      </article-title>
+      <source>
+       Electr. Power Syst. Res.
+      </source>
+      <year>
+       2020
+      </year>
+      <volume>
+       179
+      </volume>
+      <fpage>
+       106079
+      </fpage>
+      <pub-id pub-id-type="doi">
+       10.1016/j.epsr.2019.106079
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR7">
+     <label>
+      7.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Deng
+        </surname>
+        <given-names>
+         J
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Bae
+        </surname>
+        <given-names>
+         C
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Denlinger
+        </surname>
+        <given-names>
+         A
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Miller
+        </surname>
+        <given-names>
+         T
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Electric vehicles batteries: requirements and challenges
+      </article-title>
+      <source>
+       Joule
+      </source>
+      <year>
+       2020
+      </year>
+      <volume>
+       4
+      </volume>
+      <fpage>
+       511
+      </fpage>
+      <lpage>
+       515
+      </lpage>
+      <pub-id pub-id-type="doi">
+       10.1016/j.joule.2020.01.013
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR8">
+     <label>
+      8.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Liang
+        </surname>
+        <given-names>
+         Y
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       A review of rechargeable batteries for portable electronic devices
+      </article-title>
+      <source>
+       InfoMat
+      </source>
+      <year>
+       2019
+      </year>
+      <volume>
+       1
+      </volume>
+      <fpage>
+       6
+      </fpage>
+      <lpage>
+       32
+      </lpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BB3cXhsVKnsbnM
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1002/inf2.12000
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR9">
+     <label>
+      9.
+     </label>
+     <mixed-citation publication-type="other">
+      Markets, R. Global and China Li-ion power battery industry report, 2019-2025. Research and Markets.
+      <ext-link ext-link-type="uri" xlink:href="https://www.researchandmarkets.com/reports/5021667/globaland-china-li-ion-power-battery-industry">
+       https://www.researchandmarkets.com/reports/5021667/globaland-china-li-ion-power-battery-industry
+      </ext-link>
+      (2020).
+     </mixed-citation>
+    </ref>
+    <ref id="CR10">
+     <label>
+      10.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Miao
+        </surname>
+        <given-names>
+         Y
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Liu
+        </surname>
+        <given-names>
+         L
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Zhang
+        </surname>
+        <given-names>
+         Y
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Tan
+        </surname>
+        <given-names>
+         Q
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Li
+        </surname>
+        <given-names>
+         J
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       An overview of global power lithium-ion batteries and associated critical metal recycling
+      </article-title>
+      <source>
+       J. Hazard. Mater.
+      </source>
+      <year>
+       2022
+      </year>
+      <volume>
+       425
+      </volume>
+      <fpage>
+       127900
+      </fpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BB3MXislSgsrbK
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       34896721
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1016/j.jhazmat.2021.127900
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR11">
+     <label>
+      11.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Zhang
+        </surname>
+        <given-names>
+         Y
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Li
+        </surname>
+        <given-names>
+         Y-F
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Prognostics and health management of lithium-ion battery using deep learning methods: a review
+      </article-title>
+      <source>
+       Renew. Sustain. Energy Rev.
+      </source>
+      <year>
+       2022
+      </year>
+      <volume>
+       161
+      </volume>
+      <fpage>
+       112282
+      </fpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BB38XovF2rsL0%3D
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1016/j.rser.2022.112282
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR12">
+     <label>
+      12.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Berecibar
+        </surname>
+        <given-names>
+         M
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Critical review of state of health estimation methods of Li-ion batteries for real applications
+      </article-title>
+      <source>
+       Renew. Sustain. Energy Rev.
+      </source>
+      <year>
+       2016
+      </year>
+      <volume>
+       56
+      </volume>
+      <fpage>
+       572
+      </fpage>
+      <lpage>
+       587
+      </lpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BC2MXhvFGkt7rK
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1016/j.rser.2015.11.042
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR13">
+     <label>
+      13.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Ng
+        </surname>
+        <given-names>
+         M-F
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Zhao
+        </surname>
+        <given-names>
+         J
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Yan
+        </surname>
+        <given-names>
+         Q
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Conduit
+        </surname>
+        <given-names>
+         GJ
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Seh
+        </surname>
+        <given-names>
+         ZW
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Predicting the state of charge and health of batteries using data-driven machine learning
+      </article-title>
+      <source>
+       Nat. Mach. Intell.
+      </source>
+      <year>
+       2020
+      </year>
+      <volume>
+       2
+      </volume>
+      <fpage>
+       161
+      </fpage>
+      <lpage>
+       170
+      </lpage>
+      <pub-id pub-id-type="doi">
+       10.1038/s42256-020-0156-7
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR14">
+     <label>
+      14.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Che
+        </surname>
+        <given-names>
+         Y
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Hu
+        </surname>
+        <given-names>
+         X
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Lin
+        </surname>
+        <given-names>
+         X
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Guo
+        </surname>
+        <given-names>
+         J
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Teodorescu
+        </surname>
+        <given-names>
+         R
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Health prognostics for lithium-ion batteries: mechanisms, methods, and prospects
+      </article-title>
+      <source>
+       Energy Environ. Sci.
+      </source>
+      <year>
+       2023
+      </year>
+      <volume>
+       16
+      </volume>
+      <fpage>
+       338
+      </fpage>
+      <lpage>
+       371
+      </lpage>
+      <pub-id pub-id-type="doi">
+       10.1039/D2EE03019E
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR15">
+     <label>
+      15.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Wang
+        </surname>
+        <given-names>
+         F
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       A transferable lithium-ion battery remaining useful life prediction method from cycle-consistency of degradation trend
+      </article-title>
+      <source>
+       J. Power Sources
+      </source>
+      <year>
+       2022
+      </year>
+      <volume>
+       521
+      </volume>
+      <fpage>
+       230975
+      </fpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BB38XlsFCltg%3D%3D
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1016/j.jpowsour.2022.230975
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR16">
+     <label>
+      16.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Baghdadi
+        </surname>
+        <given-names>
+         I
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Briat
+        </surname>
+        <given-names>
+         O
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Delétage
+        </surname>
+        <given-names>
+         J-Y
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Gyan
+        </surname>
+        <given-names>
+         P
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Vinassa
+        </surname>
+        <given-names>
+         J-M
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Lithium battery aging model based on Dakin’s degradation approach
+      </article-title>
+      <source>
+       J. Power Sources
+      </source>
+      <year>
+       2016
+      </year>
+      <volume>
+       325
+      </volume>
+      <fpage>
+       273
+      </fpage>
+      <lpage>
+       285
+      </lpage>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2016JPS...325..273B
+      </pub-id>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BC28XhtVSktrrP
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1016/j.jpowsour.2016.06.036
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR17">
+     <label>
+      17.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Xu
+        </surname>
+        <given-names>
+         X
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Remaining useful life prediction of lithium-ion batteries based on wiener process under time-varying temperature condition
+      </article-title>
+      <source>
+       Reliab. Eng. Syst. Saf.
+      </source>
+      <year>
+       2021
+      </year>
+      <volume>
+       214
+      </volume>
+      <fpage>
+       107675
+      </fpage>
+      <pub-id pub-id-type="doi">
+       10.1016/j.ress.2021.107675
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR18">
+     <label>
+      18.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Dong
+        </surname>
+        <given-names>
+         G
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Wei
+        </surname>
+        <given-names>
+         J
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       A physics-based aging model for lithium-ion battery with coupled chemical/mechanical degradation mechanisms
+      </article-title>
+      <source>
+       Electrochim. Acta
+      </source>
+      <year>
+       2021
+      </year>
+      <volume>
+       395
+      </volume>
+      <fpage>
+       139133
+      </fpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BB3MXitVClt7rE
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1016/j.electacta.2021.139133
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR19">
+     <label>
+      19.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Lui
+        </surname>
+        <given-names>
+         YH
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Physics-based prognostics of implantable-grade lithium-ion battery for remaining useful life prediction
+      </article-title>
+      <source>
+       J. Power Sources
+      </source>
+      <year>
+       2021
+      </year>
+      <volume>
+       485
+      </volume>
+      <fpage>
+       229327
+      </fpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BB3cXis1Wku7bN
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1016/j.jpowsour.2020.229327
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR20">
+     <label>
+      20.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Attia
+        </surname>
+        <given-names>
+         PM
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Closed-loop optimization of fast-charging protocols for batteries with machine learning
+      </article-title>
+      <source>
+       Nature
+      </source>
+      <year>
+       2020
+      </year>
+      <volume>
+       578
+      </volume>
+      <fpage>
+       397
+      </fpage>
+      <lpage>
+       402
+      </lpage>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2020Natur.578..397A
+      </pub-id>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BB3cXksFKmtLc%3D
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       32076218
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1038/s41586-020-1994-5
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR21">
+     <label>
+      21.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Rauf
+        </surname>
+        <given-names>
+         H
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Khalid
+        </surname>
+        <given-names>
+         M
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Arshad
+        </surname>
+        <given-names>
+         N
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Machine learning in state of health and remaining useful life estimation: theoretical and technological development in battery degradation modelling
+      </article-title>
+      <source>
+       Renew. Sustain. Energy Rev.
+      </source>
+      <year>
+       2022
+      </year>
+      <volume>
+       156
+      </volume>
+      <fpage>
+       111903
+      </fpage>
+      <pub-id pub-id-type="doi">
+       10.1016/j.rser.2021.111903
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR22">
+     <label>
+      22.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Li
+        </surname>
+        <given-names>
+         W
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Zhang
+        </surname>
+        <given-names>
+         H
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         van Vlijmen
+        </surname>
+        <given-names>
+         B
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Dechent
+        </surname>
+        <given-names>
+         P
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Sauer
+        </surname>
+        <given-names>
+         DU
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Forecasting battery capacity and power degradation with multi-task learning
+      </article-title>
+      <source>
+       Energy Storage Mater.
+      </source>
+      <year>
+       2022
+      </year>
+      <volume>
+       53
+      </volume>
+      <fpage>
+       453
+      </fpage>
+      <lpage>
+       466
+      </lpage>
+      <pub-id pub-id-type="doi">
+       10.1016/j.ensm.2022.09.013
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR23">
+     <label>
+      23.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Wang
+        </surname>
+        <given-names>
+         F
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Explainability-driven model improvement for SOH estimation of lithium-ion battery
+      </article-title>
+      <source>
+       Reliab. Eng. Syst. Saf.
+      </source>
+      <year>
+       2023
+      </year>
+      <volume>
+       232
+      </volume>
+      <fpage>
+       109046
+      </fpage>
+      <pub-id pub-id-type="doi">
+       10.1016/j.ress.2022.109046
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR24">
+     <label>
+      24.
+     </label>
+     <mixed-citation publication-type="other">
+      Berecibar, M. Machine-learning techniques used to accurately predict battery life.
+      <italic>
+       Nature
+      </italic>
+      <bold>
+       568
+      </bold>
+      , 325-326 (2019).
+     </mixed-citation>
+    </ref>
+    <ref id="CR25">
+     <label>
+      25.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Severson
+        </surname>
+        <given-names>
+         KA
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Data-driven prediction of battery cycle life before capacity degradation
+      </article-title>
+      <source>
+       Nat. Energy
+      </source>
+      <year>
+       2019
+      </year>
+      <volume>
+       4
+      </volume>
+      <fpage>
+       383
+      </fpage>
+      <lpage>
+       391
+      </lpage>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2019NatEn...4..383S
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1038/s41560-019-0356-8
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR26">
+     <label>
+      26.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Nuhic
+        </surname>
+        <given-names>
+         A
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Terzimehic
+        </surname>
+        <given-names>
+         T
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Soczka-Guth
+        </surname>
+        <given-names>
+         T
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Buchholz
+        </surname>
+        <given-names>
+         M
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Dietmayer
+        </surname>
+        <given-names>
+         K
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Health diagnosis and remaining useful life prognostics of lithium-ion batteries using data-driven methods
+      </article-title>
+      <source>
+       J. Power Sources
+      </source>
+      <year>
+       2013
+      </year>
+      <volume>
+       239
+      </volume>
+      <fpage>
+       680
+      </fpage>
+      <lpage>
+       688
+      </lpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BC3sXot1Wi
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1016/j.jpowsour.2012.11.146
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR27">
+     <label>
+      27.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Richardson
+        </surname>
+        <given-names>
+         RR
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Osborne
+        </surname>
+        <given-names>
+         MA
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Howey
+        </surname>
+        <given-names>
+         DA
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Gaussian process regression for forecasting battery state of health
+      </article-title>
+      <source>
+       J. Power Sources
+      </source>
+      <year>
+       2017
+      </year>
+      <volume>
+       357
+      </volume>
+      <fpage>
+       209
+      </fpage>
+      <lpage>
+       219
+      </lpage>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2017JPS...357..209R
+      </pub-id>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BC2sXnsFSitLs%3D
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1016/j.jpowsour.2017.05.004
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR28">
+     <label>
+      28.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Luo
+        </surname>
+        <given-names>
+         K
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Chen
+        </surname>
+        <given-names>
+         X
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Zheng
+        </surname>
+        <given-names>
+         H
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Shi
+        </surname>
+        <given-names>
+         Z
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       A review of deep learning approach to predicting the state of health and state of charge of lithium-ion batteries
+      </article-title>
+      <source>
+       J. Energy Chem.
+      </source>
+      <year>
+       2022
+      </year>
+      <volume>
+       74
+      </volume>
+      <fpage>
+       159
+      </fpage>
+      <lpage>
+       173
+      </lpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BB38XisFOisb7J
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1016/j.jechem.2022.06.049
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR29">
+     <label>
+      29.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Wang
+        </surname>
+        <given-names>
+         F
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Feature disentanglement and tendency retainment with domain adaptation for lithium-ion battery capacity estimation
+      </article-title>
+      <source>
+       Reliab. Eng. Syst. Saf.
+      </source>
+      <year>
+       2023
+      </year>
+      <volume>
+       230
+      </volume>
+      <fpage>
+       108897
+      </fpage>
+      <pub-id pub-id-type="doi">
+       10.1016/j.ress.2022.108897
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR30">
+     <label>
+      30.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Xia
+        </surname>
+        <given-names>
+         F
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Wang
+        </surname>
+        <given-names>
+         K
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Chen
+        </surname>
+        <given-names>
+         J
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       State of health and remaining useful life prediction of lithium-ion batteries based on a disturbance-free incremental capacity and differential voltage analysis method
+      </article-title>
+      <source>
+       J. Energy Storage
+      </source>
+      <year>
+       2023
+      </year>
+      <volume>
+       64
+      </volume>
+      <fpage>
+       107161
+      </fpage>
+      <pub-id pub-id-type="doi">
+       10.1016/j.est.2023.107161
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR31">
+     <label>
+      31.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Wang
+        </surname>
+        <given-names>
+         J
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       High-efficient prediction of state of health for lithium-ion battery based on AC impedance feature tuned with Gaussian process regression
+      </article-title>
+      <source>
+       J. Power Sources
+      </source>
+      <year>
+       2023
+      </year>
+      <volume>
+       561
+      </volume>
+      <fpage>
+       232737
+      </fpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BB3sXit1Kqt7w%3D
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1016/j.jpowsour.2023.232737
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR32">
+     <label>
+      32.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Fuller
+        </surname>
+        <given-names>
+         TF
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Doyle
+        </surname>
+        <given-names>
+         M
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Newman
+        </surname>
+        <given-names>
+         J
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Simulation and optimization of the dual lithium ion insertion cell
+      </article-title>
+      <source>
+       J. Electrochem. Soc.
+      </source>
+      <year>
+       1994
+      </year>
+      <volume>
+       141
+      </volume>
+      <fpage>
+       1
+      </fpage>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       1994JElS..141....1F
+      </pub-id>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DyaK2cXhtFWltrg%3D
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1149/1.2054684
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR33">
+     <label>
+      33.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Liu
+        </surname>
+        <given-names>
+         X
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       A generalizable, data-driven online approach to forecast capacity degradation trajectory of lithium batteries
+      </article-title>
+      <source>
+       J. Energy Chem.
+      </source>
+      <year>
+       2022
+      </year>
+      <volume>
+       68
+      </volume>
+      <fpage>
+       548
+      </fpage>
+      <lpage>
+       555
+      </lpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BB38XisFOju7rP
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1016/j.jechem.2021.12.004
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR34">
+     <label>
+      34.
+     </label>
+     <mixed-citation publication-type="other">
+      Wang, F. et al. Remaining useful life prediction of lithium-ion battery based on cycle-consistency learning. in
+      <italic>
+       2021 International Conference on Sensing, Measurement &amp; Data Analytics in the era of Artificial Intelligence (ICSMD)
+      </italic>
+      1–6 (IEEE, 2021).
+     </mixed-citation>
+    </ref>
+    <ref id="CR35">
+     <label>
+      35.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Lin
+        </surname>
+        <given-names>
+         M
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       A data-driven approach for estimating state-of-health of lithium-ion batteries considering internal resistance
+      </article-title>
+      <source>
+       Energy
+      </source>
+      <year>
+       2023
+      </year>
+      <volume>
+       277
+      </volume>
+      <fpage>
+       127675
+      </fpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BB3sXptlSit7c%3D
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1016/j.energy.2023.127675
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR36">
+     <label>
+      36.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Chen
+        </surname>
+        <given-names>
+         Z
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Liu
+        </surname>
+        <given-names>
+         Y
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Sun
+        </surname>
+        <given-names>
+         H
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Physics-informed learning of governing equations from scarce data
+      </article-title>
+      <source>
+       Nat. Commun.
+      </source>
+      <year>
+       2021
+      </year>
+      <volume>
+       12
+      </volume>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2021NatCo..12.6136C
+      </pub-id>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BB3MXit12gsb7K
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       34675223
+      </pub-id>
+      <pub-id pub-id-type="pmcid">
+       8531004
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1038/s41467-021-26434-1
+      </pub-id>
+      <elocation-id>
+       6136
+      </elocation-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR37">
+     <label>
+      37.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Karniadakis
+        </surname>
+        <given-names>
+         GE
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Physics-informed machine learning
+      </article-title>
+      <source>
+       Nat. Rev. Phys.
+      </source>
+      <year>
+       2021
+      </year>
+      <volume>
+       3
+      </volume>
+      <fpage>
+       422
+      </fpage>
+      <lpage>
+       440
+      </lpage>
+      <pub-id pub-id-type="doi">
+       10.1038/s42254-021-00314-5
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR38">
+     <label>
+      38.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Aykol
+        </surname>
+        <given-names>
+         M
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Perspective—Combining physics and machine learning to predict battery lifetime
+      </article-title>
+      <source>
+       J. Electrochem. Soc.
+      </source>
+      <year>
+       2021
+      </year>
+      <volume>
+       168
+      </volume>
+      <fpage>
+       030525
+      </fpage>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2021JElS..168c0525A
+      </pub-id>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BB3MXptFaqtbs%3D
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1149/1945-7111/abec55
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR39">
+     <label>
+      39.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Nascimento
+        </surname>
+        <given-names>
+         RG
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Viana
+        </surname>
+        <given-names>
+         FA
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Corbetta
+        </surname>
+        <given-names>
+         M
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Kulkarni
+        </surname>
+        <given-names>
+         CS
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       A framework for Li-ion battery prognosis based on hybrid Bayesian physics-informed neural networks
+      </article-title>
+      <source>
+       Sci. Rep.
+      </source>
+      <year>
+       2023
+      </year>
+      <volume>
+       13
+      </volume>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2023NatSR..1313856N
+      </pub-id>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BB3sXhslOntrvK
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       37620364
+      </pub-id>
+      <pub-id pub-id-type="pmcid">
+       10449926
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1038/s41598-023-33018-0
+      </pub-id>
+      <elocation-id>
+       13856
+      </elocation-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR40">
+     <label>
+      40.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Thelen
+        </surname>
+        <given-names>
+         A
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Integrating physics-based modeling and machine learning for degradation diagnostics of lithium-ion batteries
+      </article-title>
+      <source>
+       Energy Storage Mater.
+      </source>
+      <year>
+       2022
+      </year>
+      <volume>
+       50
+      </volume>
+      <fpage>
+       668
+      </fpage>
+      <lpage>
+       695
+      </lpage>
+      <pub-id pub-id-type="doi">
+       10.1016/j.ensm.2022.05.047
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR41">
+     <label>
+      41.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Shi
+        </surname>
+        <given-names>
+         J
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Rivera
+        </surname>
+        <given-names>
+         A
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Wu
+        </surname>
+        <given-names>
+         D
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Battery health management using physics-informed machine learning: online degradation modeling and remaining useful life prediction
+      </article-title>
+      <source>
+       Mech. Syst. Signal Process.
+      </source>
+      <year>
+       2022
+      </year>
+      <volume>
+       179
+      </volume>
+      <fpage>
+       109347
+      </fpage>
+      <pub-id pub-id-type="doi">
+       10.1016/j.ymssp.2022.109347
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR42">
+     <label>
+      42.
+     </label>
+     <mixed-citation publication-type="other">
+      Wang, F. et al. Inherently interpretable physics-informed neural network for battery modeling and prognosis.
+      <italic>
+       IEEE Trans. Neural Netw. Learn. Syst.
+      </italic>
+      1–15
+      <ext-link ext-link-type="doi" xlink:href="10.1109/TNNLS.2023.3329368">
+       https://doi.org/10.1109/TNNLS.2023.3329368
+      </ext-link>
+      (2023).
+     </mixed-citation>
+    </ref>
+    <ref id="CR43">
+     <label>
+      43.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Hofmann
+        </surname>
+        <given-names>
+         T
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Physics-informed neural networks for state of health estimation in lithium-ion batteries
+      </article-title>
+      <source>
+       J. Electrochem. Soc.
+      </source>
+      <year>
+       2023
+      </year>
+      <volume>
+       170
+      </volume>
+      <fpage>
+       090524
+      </fpage>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2023JElS..170i0524H
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1149/1945-7111/acf0ef
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR44">
+     <label>
+      44.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Zhu
+        </surname>
+        <given-names>
+         J
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Data-driven capacity estimation of commercial lithium-ion batteries from voltage relaxation
+      </article-title>
+      <source>
+       Nat. Commun.
+      </source>
+      <year>
+       2022
+      </year>
+      <volume>
+       13
+      </volume>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2022NatCo..13.2261Z
+      </pub-id>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BB38XhtFGgtb%2FN
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       35477711
+      </pub-id>
+      <pub-id pub-id-type="pmcid">
+       9046220
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1038/s41467-022-29837-w
+      </pub-id>
+      <elocation-id>
+       2261
+      </elocation-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR45">
+     <label>
+      45.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Ma
+        </surname>
+        <given-names>
+         G
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Real-time personalized health status prediction of lithium-ion batteries using deep transfer learning
+      </article-title>
+      <source>
+       Energy Environ. Sci.
+      </source>
+      <year>
+       2022
+      </year>
+      <volume>
+       15
+      </volume>
+      <fpage>
+       4083
+      </fpage>
+      <lpage>
+       4094
+      </lpage>
+      <pub-id pub-id-type="doi">
+       10.1039/D2EE01676A
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR46">
+     <label>
+      46.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Jiang
+        </surname>
+        <given-names>
+         B
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Bayesian learning for rapid prediction of lithium-ion battery-cycling protocols
+      </article-title>
+      <source>
+       Joule
+      </source>
+      <year>
+       2021
+      </year>
+      <volume>
+       5
+      </volume>
+      <fpage>
+       3187
+      </fpage>
+      <lpage>
+       3203
+      </lpage>
+      <pub-id assigning-authority="American Mathematical Society" pub-id-type="other">
+       4211601
+      </pub-id>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BB3MXis12hs7vN
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1016/j.joule.2021.10.010
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR47">
+     <label>
+      47.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Geslin
+        </surname>
+        <given-names>
+         A
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Chueh, selecting the appropriate features in battery lifetime predictions
+      </article-title>
+      <source>
+       Joule
+      </source>
+      <year>
+       2023
+      </year>
+      <volume>
+       7
+      </volume>
+      <fpage>
+       1956
+      </fpage>
+      <lpage>
+       1965
+      </lpage>
+      <pub-id pub-id-type="doi">
+       10.1016/j.joule.2023.07.021
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR48">
+     <label>
+      48.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Spotnitz
+        </surname>
+        <given-names>
+         R
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Simulation of capacity fade in lithium-ion batteries
+      </article-title>
+      <source>
+       J. Power Sources
+      </source>
+      <year>
+       2003
+      </year>
+      <volume>
+       113
+      </volume>
+      <fpage>
+       72
+      </fpage>
+      <lpage>
+       80
+      </lpage>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2003JPS...113...72S
+      </pub-id>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BD38XpsFSju7s%3D
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1016/S0378-7753(02)00490-1
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR49">
+     <label>
+      49.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         He
+        </surname>
+        <given-names>
+         W
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Williard
+        </surname>
+        <given-names>
+         N
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Osterman
+        </surname>
+        <given-names>
+         M
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Pecht
+        </surname>
+        <given-names>
+         M
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Prognostics of lithium-ion batteries based on Dempster–Shafer theory and the Bayesian Monte Carlo method
+      </article-title>
+      <source>
+       J. Power Sources
+      </source>
+      <year>
+       2011
+      </year>
+      <volume>
+       196
+      </volume>
+      <fpage>
+       10314
+      </fpage>
+      <lpage>
+       10321
+      </lpage>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2011JPS...19610314H
+      </pub-id>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BC3MXht1CktbzJ
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1016/j.jpowsour.2011.08.040
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR50">
+     <label>
+      50.
+     </label>
+     <mixed-citation publication-type="other">
+      Chen, C. &amp; Pecht, M. Prognostics of lithium-ion batteries using model-based and data-driven methods. in
+      <italic>
+       Proceedings of the IEEE 2012 Prognostics and System Health Management Conference (PHM-2012 Beijing)
+      </italic>
+      , 1–6 (IEEE, 2012).
+     </mixed-citation>
+    </ref>
+    <ref id="CR51">
+     <label>
+      51.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Ramadesigan
+        </surname>
+        <given-names>
+         V
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Parameter estimation and capacity fade analysis of lithium-ion batteries using reformulated models
+      </article-title>
+      <source>
+       J. Electrochem. Soc.
+      </source>
+      <year>
+       2011
+      </year>
+      <volume>
+       158
+      </volume>
+      <fpage>
+       A1048
+      </fpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BC3MXpt1Onu7o%3D
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1149/1.3609926
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR52">
+     <label>
+      52.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Najera-Flores
+        </surname>
+        <given-names>
+         DA
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Hu
+        </surname>
+        <given-names>
+         Z
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Chadha
+        </surname>
+        <given-names>
+         M
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Todd
+        </surname>
+        <given-names>
+         MD
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       A physics-constrained Bayesian neural network for battery remaining useful life prediction
+      </article-title>
+      <source>
+       Appl. Math. Model.
+      </source>
+      <year>
+       2023
+      </year>
+      <volume>
+       122
+      </volume>
+      <fpage>
+       42
+      </fpage>
+      <lpage>
+       59
+      </lpage>
+      <pub-id assigning-authority="American Mathematical Society" pub-id-type="other">
+       4597361
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1016/j.apm.2023.05.038
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR53">
+     <label>
+      53.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Xu
+        </surname>
+        <given-names>
+         B
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Oudalov
+        </surname>
+        <given-names>
+         A
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Ulbig
+        </surname>
+        <given-names>
+         A
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Andersson
+        </surname>
+        <given-names>
+         G
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Kirschen
+        </surname>
+        <given-names>
+         DS
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Modeling of lithium-ion battery degradation for cell life assessment
+      </article-title>
+      <source>
+       IEEE Trans. Smart Grid
+      </source>
+      <year>
+       2016
+      </year>
+      <volume>
+       9
+      </volume>
+      <fpage>
+       1131
+      </fpage>
+      <lpage>
+       1140
+      </lpage>
+      <pub-id pub-id-type="doi">
+       10.1109/TSG.2016.2578950
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR54">
+     <label>
+      54.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Raissi
+        </surname>
+        <given-names>
+         M
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Deep hidden physics models: deep learning of nonlinear partial differential equations
+      </article-title>
+      <source>
+       J. Mach. Learn. Res.
+      </source>
+      <year>
+       2018
+      </year>
+      <volume>
+       19
+      </volume>
+      <fpage>
+       932
+      </fpage>
+      <lpage>
+       955
+      </lpage>
+      <pub-id assigning-authority="American Mathematical Society" pub-id-type="other">
+       3862432
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR55">
+     <label>
+      55.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Raissi
+        </surname>
+        <given-names>
+         M
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Perdikaris
+        </surname>
+        <given-names>
+         P
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Karniadakis
+        </surname>
+        <given-names>
+         GE
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Physics-informed neural networks: a deep learning framework for solving forward and inverse problems involving nonlinear partial differential equations
+      </article-title>
+      <source>
+       J. Comput. Phys.
+      </source>
+      <year>
+       2019
+      </year>
+      <volume>
+       378
+      </volume>
+      <fpage>
+       686
+      </fpage>
+      <lpage>
+       707
+      </lpage>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2019JCoPh.378..686R
+      </pub-id>
+      <pub-id assigning-authority="American Mathematical Society" pub-id-type="other">
+       3881695
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1016/j.jcp.2018.10.045
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR56">
+     <label>
+      56.
+     </label>
+     <mixed-citation publication-type="other">
+      Wang, F. Project—Physics-informed neural network for lithium-ion battery degradation stable modeling and prognosis.
+      <ext-link ext-link-type="doi" xlink:href="10.5281/zenodo.10963339">
+       https://doi.org/10.5281/zenodo.10963339
+      </ext-link>
+      (2024).
+     </mixed-citation>
+    </ref>
+    <ref id="CR57">
+     <label>
+      57.
+     </label>
+     <mixed-citation publication-type="other">
+      Wang, F. wang-fujin/PINN4SOH: physics-informed neural network for lithium-ion battery degradation stable modeling and prognosis.
+      <ext-link ext-link-type="doi" xlink:href="10.5281/zenodo.11046967">
+       https://doi.org/10.5281/zenodo.11046967
+      </ext-link>
+      (2024).
+     </mixed-citation>
+    </ref>
+   </ref-list>
+  </ref-list>
+  <app-group>
+   <app id="App1" specific-use="web-only">
+    <sec id="Sec14">
+     <title>
+      补充信息
+     </title>
+     <p id="Par46">
+      <supplementary-material content-type="local-data" id="MOESM1" xlink:title="Supplementary information">
+       <media mime-subtype="pdf" mimetype="application" xlink:href="MediaObjects/41467_2024_48779_MOESM1_ESM.pdf">
+        <caption xml:lang="en">
+         <p>
+          Supplementary Information
+         </p>
+        </caption>
+       </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="MOESM2" xlink:title="Supplementary information">
+       <media mime-subtype="pdf" mimetype="application" xlink:href="MediaObjects/41467_2024_48779_MOESM2_ESM.pdf">
+        <caption xml:lang="en">
+         <p>
+          Peer Review File
+         </p>
+        </caption>
+       </media>
+      </supplementary-material>
+     </p>
+    </sec>
+    <sec id="Sec15">
+     <title>
+      源数据
+     </title>
+     <p id="Par47">
+      <supplementary-material content-type="local-data" id="MOESM3" xlink:title="Source data">
+       <media mime-subtype="vnd.ms-excel" mimetype="application" xlink:href="MediaObjects/41467_2024_48779_MOESM3_ESM.xlsx">
+        <caption xml:lang="en">
+         <p>
+          Source Data
+         </p>
+        </caption>
+       </media>
+      </supplementary-material>
+     </p>
+    </sec>
+   </app>
+  </app-group>
+  <notes notes-type="ESMHint">
+   <title>
+    补充信息
+   </title>
+   <p>
+    The online version contains supplementary material available at
+    <ext-link ext-link-type="doi" xlink:href="10.1038/s41467-024-48779-z">
+     https://doi.org/10.1038/s41467-024-48779-z
+    </ext-link>
+    .
+   </p>
+  </notes>
+  <notes notes-type="Misc">
+   <p>
+    <bold>
+     Publisher’s note
+    </bold>
+    Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.
+   </p>
+  </notes>
+ </back>
+</article>

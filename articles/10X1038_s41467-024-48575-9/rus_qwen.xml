@@ -1,0 +1,5905 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="/ProjectMundo/style/jats-html.xsl"?>
+<!DOCTYPE response>
+<article article-type="research-article" dtd-version="1.2" xml:lang="en" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <front>
+  <journal-meta>
+   <journal-id journal-id-type="publisher-id">
+    41467
+   </journal-id>
+   <journal-id journal-id-type="doi">
+    10.1038/41467.2041-1723
+   </journal-id>
+   <journal-title-group>
+    <journal-title>
+     Nature Communications
+    </journal-title>
+    <abbrev-journal-title abbrev-type="publisher">
+     Nat Commun
+    </abbrev-journal-title>
+   </journal-title-group>
+   <issn pub-type="epub">
+    2041-1723
+   </issn>
+   <publisher>
+    <publisher-name>
+     Nature Publishing Group UK
+    </publisher-name>
+    <publisher-loc>
+     London
+    </publisher-loc>
+   </publisher>
+  </journal-meta>
+  <article-meta>
+   <article-id pub-id-type="publisher-id">
+    s41467-024-48575-9
+   </article-id>
+   <article-id pub-id-type="manuscript">
+    48575
+   </article-id>
+   <article-id pub-id-type="doi">
+    10.1038/s41467-024-48575-9
+   </article-id>
+   <article-categories>
+    <subj-group subj-group-type="heading">
+     <subject>
+      Article
+     </subject>
+    </subj-group>
+    <subj-group subj-group-type="SubjectPath">
+     <subject>
+      /631/1647/245/2225
+     </subject>
+    </subj-group>
+    <subj-group subj-group-type="SubjectPath">
+     <subject>
+      /631/1647/328/2238
+     </subject>
+    </subj-group>
+    <subj-group subj-group-type="SubjectPath">
+     <subject>
+      /639/624/1107/328/2238
+     </subject>
+    </subj-group>
+    <subj-group subj-group-type="TechniquePath">
+     <subject>
+      /14/63
+     </subject>
+    </subj-group>
+    <subj-group subj-group-type="TechniquePath">
+     <subject>
+      /123
+     </subject>
+    </subj-group>
+    <subj-group subj-group-type="TechniquePath">
+     <subject>
+      /14/19
+     </subject>
+    </subj-group>
+    <subj-group subj-group-type="TechniquePath">
+     <subject>
+      /14/69
+     </subject>
+    </subj-group>
+    <subj-group subj-group-type="TechniquePath">
+     <subject>
+      /139
+     </subject>
+    </subj-group>
+    <subj-group subj-group-type="NatureArticleTypeID">
+     <subject>
+      article
+     </subject>
+    </subj-group>
+   </article-categories>
+   <title-group>
+    <article-title xml:lang="en">
+     Zero-shot learning enables instant denoising and super-resolution in optical fluorescence microscopy
+    </article-title>
+   </title-group>
+   <contrib-group>
+    <contrib contrib-type="author" equal-contrib="yes" id="Au1">
+     <contrib-id contrib-id-type="orcid">
+      http://orcid.org/0000-0002-6037-0842
+     </contrib-id>
+     <name name-style="western">
+      <surname>
+       Qiao
+      </surname>
+      <given-names>
+       Chang
+      </given-names>
+     </name>
+     <xref ref-type="aff" rid="Aff1">
+      1
+     </xref>
+     <xref ref-type="aff" rid="Aff2">
+      2
+     </xref>
+     <xref ref-type="aff" rid="Aff3">
+      3
+     </xref>
+     <xref ref-type="aff" rid="Aff4">
+      4
+     </xref>
+     <xref ref-type="author-notes" rid="fn1"/>
+    </contrib>
+    <contrib contrib-type="author" equal-contrib="yes" id="Au2">
+     <contrib-id contrib-id-type="orcid">
+      http://orcid.org/0009-0005-4082-4391
+     </contrib-id>
+     <name name-style="western">
+      <surname>
+       Zeng
+      </surname>
+      <given-names>
+       Yunmin
+      </given-names>
+     </name>
+     <xref ref-type="aff" rid="Aff1">
+      1
+     </xref>
+     <xref ref-type="author-notes" rid="fn1"/>
+    </contrib>
+    <contrib contrib-type="author" equal-contrib="yes" id="Au3">
+     <name name-style="western">
+      <surname>
+       Meng
+      </surname>
+      <given-names>
+       Quan
+      </given-names>
+     </name>
+     <xref ref-type="aff" rid="Aff5">
+      5
+     </xref>
+     <xref ref-type="aff" rid="Aff6">
+      6
+     </xref>
+     <xref ref-type="author-notes" rid="fn1"/>
+    </contrib>
+    <contrib contrib-type="author" equal-contrib="yes" id="Au4">
+     <name name-style="western">
+      <surname>
+       Chen
+      </surname>
+      <given-names>
+       Xingye
+      </given-names>
+     </name>
+     <xref ref-type="aff" rid="Aff1">
+      1
+     </xref>
+     <xref ref-type="aff" rid="Aff2">
+      2
+     </xref>
+     <xref ref-type="aff" rid="Aff3">
+      3
+     </xref>
+     <xref ref-type="aff" rid="Aff4">
+      4
+     </xref>
+     <xref ref-type="aff" rid="Aff7">
+      7
+     </xref>
+     <xref ref-type="author-notes" rid="fn1"/>
+    </contrib>
+    <contrib contrib-type="author" id="Au5">
+     <name name-style="western">
+      <surname>
+       Chen
+      </surname>
+      <given-names>
+       Haoyu
+      </given-names>
+     </name>
+     <xref ref-type="aff" rid="Aff5">
+      5
+     </xref>
+     <xref ref-type="aff" rid="Aff6">
+      6
+     </xref>
+    </contrib>
+    <contrib contrib-type="author" id="Au6">
+     <name name-style="western">
+      <surname>
+       Jiang
+      </surname>
+      <given-names>
+       Tao
+      </given-names>
+     </name>
+     <xref ref-type="aff" rid="Aff5">
+      5
+     </xref>
+     <xref ref-type="aff" rid="Aff6">
+      6
+     </xref>
+    </contrib>
+    <contrib contrib-type="author" id="Au7">
+     <name name-style="western">
+      <surname>
+       Wei
+      </surname>
+      <given-names>
+       Rongfei
+      </given-names>
+     </name>
+     <xref ref-type="aff" rid="Aff5">
+      5
+     </xref>
+    </contrib>
+    <contrib contrib-type="author" id="Au8">
+     <name name-style="western">
+      <surname>
+       Guo
+      </surname>
+      <given-names>
+       Jiabao
+      </given-names>
+     </name>
+     <xref ref-type="aff" rid="Aff5">
+      5
+     </xref>
+     <xref ref-type="aff" rid="Aff6">
+      6
+     </xref>
+    </contrib>
+    <contrib contrib-type="author" id="Au9">
+     <name name-style="western">
+      <surname>
+       Fu
+      </surname>
+      <given-names>
+       Wenfeng
+      </given-names>
+     </name>
+     <xref ref-type="aff" rid="Aff5">
+      5
+     </xref>
+     <xref ref-type="aff" rid="Aff6">
+      6
+     </xref>
+    </contrib>
+    <contrib contrib-type="author" id="Au10">
+     <name name-style="western">
+      <surname>
+       Lu
+      </surname>
+      <given-names>
+       Huaide
+      </given-names>
+     </name>
+     <xref ref-type="aff" rid="Aff5">
+      5
+     </xref>
+     <xref ref-type="aff" rid="Aff6">
+      6
+     </xref>
+    </contrib>
+    <contrib contrib-type="author" id="Au11">
+     <contrib-id contrib-id-type="orcid">
+      http://orcid.org/0000-0001-9331-265X
+     </contrib-id>
+     <name name-style="western">
+      <surname>
+       Li
+      </surname>
+      <given-names>
+       Di
+      </given-names>
+     </name>
+     <xref ref-type="aff" rid="Aff5">
+      5
+     </xref>
+    </contrib>
+    <contrib contrib-type="author" id="Au12">
+     <contrib-id contrib-id-type="orcid">
+      http://orcid.org/0000-0002-6880-959X
+     </contrib-id>
+     <name name-style="western">
+      <surname>
+       Wang
+      </surname>
+      <given-names>
+       Yuwang
+      </given-names>
+     </name>
+     <xref ref-type="aff" rid="Aff8">
+      8
+     </xref>
+    </contrib>
+    <contrib contrib-type="author" id="Au13">
+     <contrib-id contrib-id-type="orcid">
+      http://orcid.org/0000-0002-4896-8657
+     </contrib-id>
+     <name name-style="western">
+      <surname>
+       Qiao
+      </surname>
+      <given-names>
+       Hui
+      </given-names>
+     </name>
+     <xref ref-type="aff" rid="Aff1">
+      1
+     </xref>
+     <xref ref-type="aff" rid="Aff2">
+      2
+     </xref>
+     <xref ref-type="aff" rid="Aff3">
+      3
+     </xref>
+     <xref ref-type="aff" rid="Aff4">
+      4
+     </xref>
+    </contrib>
+    <contrib contrib-type="author" id="Au14">
+     <contrib-id contrib-id-type="orcid">
+      http://orcid.org/0000-0003-3479-1026
+     </contrib-id>
+     <name name-style="western">
+      <surname>
+       Wu
+      </surname>
+      <given-names>
+       Jiamin
+      </given-names>
+     </name>
+     <xref ref-type="aff" rid="Aff1">
+      1
+     </xref>
+     <xref ref-type="aff" rid="Aff2">
+      2
+     </xref>
+     <xref ref-type="aff" rid="Aff3">
+      3
+     </xref>
+     <xref ref-type="aff" rid="Aff4">
+      4
+     </xref>
+    </contrib>
+    <contrib contrib-type="author" corresp="yes" id="Au15">
+     <contrib-id contrib-id-type="orcid">
+      http://orcid.org/0000-0001-6787-5125
+     </contrib-id>
+     <name name-style="western">
+      <surname>
+       Li
+      </surname>
+      <given-names>
+       Dong
+      </given-names>
+     </name>
+     <address>
+      <email>
+       lidong@ibp.ac.cn
+      </email>
+     </address>
+     <xref ref-type="aff" rid="Aff5">
+      5
+     </xref>
+     <xref ref-type="aff" rid="Aff6">
+      6
+     </xref>
+     <xref ref-type="corresp" rid="IDs41467024485759_cor15">
+      r
+     </xref>
+    </contrib>
+    <contrib contrib-type="author" corresp="yes" id="Au16">
+     <contrib-id contrib-id-type="orcid">
+      http://orcid.org/0000-0001-7043-3061
+     </contrib-id>
+     <name name-style="western">
+      <surname>
+       Dai
+      </surname>
+      <given-names>
+       Qionghai
+      </given-names>
+     </name>
+     <address>
+      <email>
+       qhdai@tsinghua.edu.cn
+      </email>
+     </address>
+     <xref ref-type="aff" rid="Aff1">
+      1
+     </xref>
+     <xref ref-type="aff" rid="Aff2">
+      2
+     </xref>
+     <xref ref-type="aff" rid="Aff3">
+      3
+     </xref>
+     <xref ref-type="aff" rid="Aff4">
+      4
+     </xref>
+     <xref ref-type="corresp" rid="IDs41467024485759_cor16">
+      s
+     </xref>
+    </contrib>
+    <aff id="Aff1">
+     <label>
+      1
+     </label>
+     <institution-wrap>
+      <institution-id institution-id-type="ROR">
+       https://ror.org/03cve4549
+      </institution-id>
+      <institution-id institution-id-type="GRID">
+       grid.12527.33
+      </institution-id>
+      <institution-id institution-id-type="ISNI">
+       0000 0001 0662 3178
+      </institution-id>
+      <institution content-type="org-division">
+       Department of Automation
+      </institution>
+      <institution content-type="org-name">
+       Tsinghua University
+      </institution>
+     </institution-wrap>
+     <addr-line content-type="postcode">
+      100084
+     </addr-line>
+     <addr-line content-type="city">
+      Beijing
+     </addr-line>
+     <country country="CN">
+      China
+     </country>
+    </aff>
+    <aff id="Aff2">
+     <label>
+      2
+     </label>
+     <institution-wrap>
+      <institution-id institution-id-type="ROR">
+       https://ror.org/03cve4549
+      </institution-id>
+      <institution-id institution-id-type="GRID">
+       grid.12527.33
+      </institution-id>
+      <institution-id institution-id-type="ISNI">
+       0000 0001 0662 3178
+      </institution-id>
+      <institution content-type="org-division">
+       Institute for Brain and Cognitive Sciences
+      </institution>
+      <institution content-type="org-name">
+       Tsinghua University
+      </institution>
+     </institution-wrap>
+     <addr-line content-type="postcode">
+      100084
+     </addr-line>
+     <addr-line content-type="city">
+      Beijing
+     </addr-line>
+     <country country="CN">
+      China
+     </country>
+    </aff>
+    <aff id="Aff3">
+     <label>
+      3
+     </label>
+     <institution-wrap>
+      <institution-id institution-id-type="ROR">
+       https://ror.org/03cve4549
+      </institution-id>
+      <institution-id institution-id-type="GRID">
+       grid.12527.33
+      </institution-id>
+      <institution-id institution-id-type="ISNI">
+       0000 0001 0662 3178
+      </institution-id>
+      <institution content-type="org-division">
+       Beijing Key Laboratory of Multi-dimension &amp; Multi-scale Computational Photography
+      </institution>
+      <institution content-type="org-name">
+       Tsinghua University
+      </institution>
+     </institution-wrap>
+     <addr-line content-type="postcode">
+      100084
+     </addr-line>
+     <addr-line content-type="city">
+      Beijing
+     </addr-line>
+     <country country="CN">
+      China
+     </country>
+    </aff>
+    <aff id="Aff4">
+     <label>
+      4
+     </label>
+     <institution-wrap>
+      <institution-id institution-id-type="ROR">
+       https://ror.org/04bpn6s66
+      </institution-id>
+      <institution-id institution-id-type="GRID">
+       grid.452952.d
+      </institution-id>
+      <institution-id institution-id-type="ISNI">
+       0000 0004 5901 0211
+      </institution-id>
+      <institution content-type="org-division">
+       Beijing Laboratory of Brain and Cognitive Intelligence
+      </institution>
+      <institution content-type="org-name">
+       Beijing Municipal Education Commission
+      </institution>
+     </institution-wrap>
+     <addr-line content-type="postcode">
+      100010
+     </addr-line>
+     <addr-line content-type="city">
+      Beijing
+     </addr-line>
+     <country country="CN">
+      China
+     </country>
+    </aff>
+    <aff id="Aff5">
+     <label>
+      5
+     </label>
+     <institution-wrap>
+      <institution-id institution-id-type="GRID">
+       grid.9227.e
+      </institution-id>
+      <institution-id institution-id-type="ISNI">
+       0000000119573309
+      </institution-id>
+      <institution content-type="org-division">
+       National Laboratory of Biomacromolecules, New Cornerstone Science Laboratory, CAS Center for Excellence in Biomacromolecules, Institute of Biophysics
+      </institution>
+      <institution content-type="org-name">
+       Chinese Academy of Sciences
+      </institution>
+     </institution-wrap>
+     <addr-line content-type="postcode">
+      100101
+     </addr-line>
+     <addr-line content-type="city">
+      Beijing
+     </addr-line>
+     <country country="CN">
+      China
+     </country>
+    </aff>
+    <aff id="Aff6">
+     <label>
+      6
+     </label>
+     <institution-wrap>
+      <institution-id institution-id-type="ROR">
+       https://ror.org/05qbk4x57
+      </institution-id>
+      <institution-id institution-id-type="GRID">
+       grid.410726.6
+      </institution-id>
+      <institution-id institution-id-type="ISNI">
+       0000 0004 1797 8419
+      </institution-id>
+      <institution content-type="org-division">
+       College of Life Sciences
+      </institution>
+      <institution content-type="org-name">
+       University of Chinese Academy of Sciences
+      </institution>
+     </institution-wrap>
+     <addr-line content-type="postcode">
+      100049
+     </addr-line>
+     <addr-line content-type="city">
+      Beijing
+     </addr-line>
+     <country country="CN">
+      China
+     </country>
+    </aff>
+    <aff id="Aff7">
+     <label>
+      7
+     </label>
+     <institution-wrap>
+      <institution-id institution-id-type="ROR">
+       https://ror.org/00wk2mp56
+      </institution-id>
+      <institution-id institution-id-type="GRID">
+       grid.64939.31
+      </institution-id>
+      <institution-id institution-id-type="ISNI">
+       0000 0000 9999 1211
+      </institution-id>
+      <institution content-type="org-division">
+       Research Institute for Frontier Science
+      </institution>
+      <institution content-type="org-name">
+       Beihang University
+      </institution>
+     </institution-wrap>
+     <addr-line content-type="postcode">
+      100191
+     </addr-line>
+     <addr-line content-type="city">
+      Beijing
+     </addr-line>
+     <country country="CN">
+      China
+     </country>
+    </aff>
+    <aff id="Aff8">
+     <label>
+      8
+     </label>
+     <institution-wrap>
+      <institution-id institution-id-type="ROR">
+       https://ror.org/03cve4549
+      </institution-id>
+      <institution-id institution-id-type="GRID">
+       grid.12527.33
+      </institution-id>
+      <institution-id institution-id-type="ISNI">
+       0000 0001 0662 3178
+      </institution-id>
+      <institution content-type="org-division">
+       Beijing National Research Center for Information Science and Technology
+      </institution>
+      <institution content-type="org-name">
+       Tsinghua University
+      </institution>
+     </institution-wrap>
+     <addr-line content-type="postcode">
+      100084
+     </addr-line>
+     <addr-line content-type="city">
+      Beijing
+     </addr-line>
+     <country country="CN">
+      China
+     </country>
+    </aff>
+   </contrib-group>
+   <author-notes>
+    <fn fn-type="equal" id="fn1">
+     <p>
+      These authors contributed equally: Chang Qiao, Yunmin Zeng, Quan Meng, Xingye Chen.
+     </p>
+    </fn>
+    <corresp id="IDs41467024485759_cor15">
+     <label>
+      r
+     </label>
+     <email>
+      lidong@ibp.ac.cn
+     </email>
+    </corresp>
+    <corresp id="IDs41467024485759_cor16">
+     <label>
+      s
+     </label>
+     <email>
+      qhdai@tsinghua.edu.cn
+     </email>
+    </corresp>
+   </author-notes>
+   <pub-date date-type="pub" publication-format="electronic">
+    <day>
+     16
+    </day>
+    <month>
+     5
+    </month>
+    <year>
+     2024
+    </year>
+   </pub-date>
+   <pub-date date-type="collection" publication-format="electronic">
+    <month>
+     12
+    </month>
+    <year>
+     2024
+    </year>
+   </pub-date>
+   <volume>
+    15
+   </volume>
+   <issue seq="4180">
+    1
+   </issue>
+   <elocation-id>
+    4180
+   </elocation-id>
+   <history>
+    <date date-type="registration">
+     <day>
+      7
+     </day>
+     <month>
+      5
+     </month>
+     <year>
+      2024
+     </year>
+    </date>
+    <date date-type="received">
+     <day>
+      7
+     </day>
+     <month>
+      10
+     </month>
+     <year>
+      2023
+     </year>
+    </date>
+    <date date-type="accepted">
+     <day>
+      7
+     </day>
+     <month>
+      5
+     </month>
+     <year>
+      2024
+     </year>
+    </date>
+    <date date-type="online">
+     <day>
+      16
+     </day>
+     <month>
+      5
+     </month>
+     <year>
+      2024
+     </year>
+    </date>
+   </history>
+   <permissions>
+    <copyright-statement content-type="compact">
+     © The Author(s) 2024
+    </copyright-statement>
+    <copyright-year>
+     2024
+    </copyright-year>
+    <copyright-holder>
+     The Author(s)
+    </copyright-holder>
+    <license license-type="open-access" xlink:href="http://creativecommons.org/licenses/by/4.0/">
+     <license-p>
+      <bold>
+       Open Access
+      </bold>
+      This article is licensed under a Creative Commons Attribution 4.0 International License, which permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if changes were made. The images or other third party material in this article are included in the article’s Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not included in the article’s Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this licence, visit
+      <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/">
+       http://creativecommons.org/licenses/by/4.0/
+      </ext-link>
+      .
+     </license-p>
+    </license>
+   </permissions>
+   <abstract id="Abs1" xml:lang="en">
+    <title>
+     Abstract
+    </title>
+    <p id="Par1">
+     Вычислительные методы супер-разрешения, включая традиционные аналитические алгоритмы и модели глубокого обучения, значительно улучшили оптическую микроскопию. Среди них, надзираемые глубокие нейронные сети показали выдающиеся результаты, однако требуют обширных высококачественных обучающих данных, которые трудно и даже непрактичны для получения из-за высокой динамики живых клеток. В данной работе мы разработали сети нулевого обучения для де convoлюции (ZS-DeconvNet), которые мгновенно повышают разрешение микроскопических изображений более чем в 1,5 раза над дифракционным пределом с 10-кратно меньшим флуоресцентным сигналом по сравнению с обычными условиями супер-разрешения, в ненадзирающем режиме без необходимости использования эталонных изображений или дополнительного сбора данных. Мы демонстрируем универсальную применимость ZS-DeconvNet на различных модальностях изображения, включая микроскопию с полным внутренним отражением, трехмерную широкопольную микроскопию, конфокальную микроскопию, двухфотонную микроскопию, микроскопию с решетчатым световым листом и многомодальную структурированную микроскопию с освещением, что позволяет проводить многоцветное, долгосрочное, супер-разрешенное 2D/3D изображение субклеточных процессов от митотических одиночных клеток до многоклеточных эмбрионов мыши и
+     <italic>
+      C. elegans
+     </italic>
+     .
+    </p>
+   </abstract>
+   <abstract abstract-type="ShortSummary" id="Abs2" xml:lang="en">
+    <p id="Par2">
+     The authors introduce ZS-DeconvNet, an unsupervised computational super-resolution method for multiple types of microscopes, that enhances image resolution by more than 1.5 times over the diffraction limit with 10 times lower fluorescence than regular superresolution imaging conditions.
+    </p>
+   </abstract>
+   <kwd-group kwd-group-type="hierarchical" vocab="FoR" vocab-identifier="ANZSRC 2008">
+    <kwd content-type="term" vocab-term-identifier="08">
+     Information and Computing Sciences
+    </kwd>
+    <nested-kwd>
+     <kwd content-type="term" vocab-term-identifier="0801">
+      Artificial Intelligence and Image Processing
+     </kwd>
+    </nested-kwd>
+    <kwd content-type="term" vocab-term-identifier="02">
+     Physical Sciences
+    </kwd>
+    <nested-kwd>
+     <kwd content-type="term" vocab-term-identifier="0299">
+      Other Physical Sciences
+     </kwd>
+    </nested-kwd>
+   </kwd-group>
+   <funding-group>
+    <award-group>
+     <funding-source>
+      <institution-wrap>
+       <institution>
+        National Natural Science Foundation of China (National Science Foundation of China)
+       </institution>
+       <institution-id institution-id-type="doi" vocab="open-funder-registry">
+        https://doi.org/10.13039/501100001809
+       </institution-id>
+      </institution-wrap>
+     </funding-source>
+     <award-id award-type="FundRef grant">
+      2020AA0105500
+     </award-id>
+     <principal-award-recipient>
+      <name name-style="western">
+       <surname>
+        Dai
+       </surname>
+       <given-names>
+        Qionghai
+       </given-names>
+      </name>
+     </principal-award-recipient>
+    </award-group>
+    <award-group>
+     <funding-source>
+      <institution-wrap>
+       <institution>
+        China Postdoctoral Science Foundation
+       </institution>
+       <institution-id institution-id-type="doi" vocab="open-funder-registry">
+        https://doi.org/10.13039/501100002858
+       </institution-id>
+      </institution-wrap>
+     </funding-source>
+     <award-id award-type="FundRef grant">
+      2022M721842
+     </award-id>
+     <award-id award-type="FundRef grant">
+      2023T160365
+     </award-id>
+     <principal-award-recipient>
+      <name name-style="western">
+       <surname>
+        Qiao
+       </surname>
+       <given-names>
+        Chang
+       </given-names>
+      </name>
+     </principal-award-recipient>
+     <principal-award-recipient>
+      <name name-style="western">
+       <surname>
+        Qiao
+       </surname>
+       <given-names>
+        Chang
+       </given-names>
+      </name>
+     </principal-award-recipient>
+    </award-group>
+    <award-group>
+     <funding-source>
+      <institution-wrap>
+       <institution>
+        the Shuimu Tsinghua Scholar Program (2022SM035)
+       </institution>
+      </institution-wrap>
+     </funding-source>
+    </award-group>
+    <award-group>
+     <funding-source>
+      <institution-wrap>
+       <institution>
+        Ministry of Science and Technology of the People’s Republic of China (Chinese Ministry of Science and Technology)
+       </institution>
+       <institution-id institution-id-type="doi" vocab="open-funder-registry">
+        https://doi.org/10.13039/501100002855
+       </institution-id>
+      </institution-wrap>
+     </funding-source>
+     <award-id award-type="FundRef grant">
+      2021YFA1300303
+     </award-id>
+     <principal-award-recipient>
+      <name name-style="western">
+       <surname>
+        Li
+       </surname>
+       <given-names>
+        Dong
+       </given-names>
+      </name>
+     </principal-award-recipient>
+    </award-group>
+    <award-group>
+     <funding-source>
+      <institution-wrap>
+       <institution>
+        Chinese Academy of Sciences (ZDBS-LY-SM004 and XDA16021401); the New Cornerstone Science Foundation.
+       </institution>
+      </institution-wrap>
+     </funding-source>
+    </award-group>
+   </funding-group>
+   <custom-meta-group>
+    <custom-meta>
+     <meta-name>
+      publisher-imprint-name
+     </meta-name>
+     <meta-value>
+      Nature Portfolio
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      volume-issue-count
+     </meta-name>
+     <meta-value>
+      1
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      issue-article-count
+     </meta-name>
+     <meta-value>
+      4180
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      issue-toc-levels
+     </meta-name>
+     <meta-value>
+      0
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      issue-pricelist-year
+     </meta-name>
+     <meta-value>
+      2024
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      issue-copyright-holder
+     </meta-name>
+     <meta-value>
+      Springer Nature Limited
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      issue-copyright-year
+     </meta-name>
+     <meta-value>
+      2024
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      article-contains-esm
+     </meta-name>
+     <meta-value>
+      Yes
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      article-numbering-style
+     </meta-name>
+     <meta-value>
+      Unnumbered
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      article-registration-date-year
+     </meta-name>
+     <meta-value>
+      2024
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      article-registration-date-month
+     </meta-name>
+     <meta-value>
+      5
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      article-registration-date-day
+     </meta-name>
+     <meta-value>
+      7
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      article-toc-levels
+     </meta-name>
+     <meta-value>
+      0
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      toc-levels
+     </meta-name>
+     <meta-value>
+      0
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      volume-type
+     </meta-name>
+     <meta-value>
+      Regular
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      journal-product
+     </meta-name>
+     <meta-value>
+      NonStandardArchiveJournal
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      numbering-style
+     </meta-name>
+     <meta-value>
+      Unnumbered
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      article-grants-type
+     </meta-name>
+     <meta-value>
+      OpenChoice
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      metadata-grant
+     </meta-name>
+     <meta-value>
+      OpenAccess
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      abstract-grant
+     </meta-name>
+     <meta-value>
+      OpenAccess
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      bodypdf-grant
+     </meta-name>
+     <meta-value>
+      OpenAccess
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      bodyhtml-grant
+     </meta-name>
+     <meta-value>
+      OpenAccess
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      bibliography-grant
+     </meta-name>
+     <meta-value>
+      OpenAccess
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      esm-grant
+     </meta-name>
+     <meta-value>
+      OpenAccess
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      online-first
+     </meta-name>
+     <meta-value>
+      false
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      pdf-file-reference
+     </meta-name>
+     <meta-value>
+      BodyRef/PDF/41467_2024_Article_48575.pdf
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      pdf-type
+     </meta-name>
+     <meta-value>
+      Typeset
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      target-type
+     </meta-name>
+     <meta-value>
+      OnlinePDF
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      issue-type
+     </meta-name>
+     <meta-value>
+      Regular
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      article-type
+     </meta-name>
+     <meta-value>
+      OriginalPaper
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      journal-subject-primary
+     </meta-name>
+     <meta-value>
+      Science, Humanities and Social Sciences, multidisciplinary
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      journal-subject-secondary
+     </meta-name>
+     <meta-value>
+      Science, Humanities and Social Sciences, multidisciplinary
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      journal-subject-secondary
+     </meta-name>
+     <meta-value>
+      Science, multidisciplinary
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      journal-subject-collection
+     </meta-name>
+     <meta-value>
+      Science (multidisciplinary)
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      open-access
+     </meta-name>
+     <meta-value>
+      true
+     </meta-value>
+    </custom-meta>
+   </custom-meta-group>
+  </article-meta>
+ </front>
+ <body>
+  <sec id="Sec1" sec-type="introduction">
+   <title>
+    Введение
+   </title>
+   <p id="Par3">
+    Оптическая флуоресцентная микроскопия является важным инструментом для биологических исследований. Недавние разработки методов суперразрешения (SR) предоставляют беспрецедентную разрешающую способность для визуализации тонких динамических структур различных биопроцессов
+    <sup>
+     <xref ref-type="bibr" rid="CR1">
+      1
+     </xref>
+    </sup>
+    . Однако, повышение пространственного разрешения с помощью любого метода SR сопровождается компромиссами в других параметрах изображения, например, продолжительности или скорости, которые также важны для анализа биопроцессов
+    <sup>
+     <xref ref-type="bibr" rid="CR1">
+      1
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR2">
+      2
+     </xref>
+    </sup>
+    . Недавно, вычислительные методы SR привлекли значительное внимание благодаря своей способности мгновенно повышать разрешение изображений in silico, что позволяет значительно улучшить существующие системы флуоресцентной микроскопии и расширить их область применения
+    <sup>
+     <xref ref-type="bibr" rid="CR3">
+      3
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR4">
+      4
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR5">
+      5
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR6">
+      6
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR7">
+      7
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR8">
+      8
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR9">
+      9
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR10">
+      10
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR11">
+      11
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR12">
+      12
+     </xref>
+    </sup>
+    .
+   </p>
+   <p id="Par4">
+    В общем, существующие вычислительные методы SR можно классифицировать на две категории: аналитические модели, такие как алгоритмы де convoлюции, и методы на основе глубокого обучения, например, SR нейронные сети
+    <sup>
+     <xref ref-type="bibr" rid="CR4">
+      4
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR5">
+      5
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR6">
+      6
+     </xref>
+     <xref ref-type="bibr" rid="CR7">
+      7
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR8">
+      8
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR9">
+      9
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR10">
+      10
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR11">
+      11
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR12">
+      12
+     </xref>
+    </sup>
+    . Первая категория часто использует аналитические модели, предполагающие определенные предположения о образце и свойствах изображения, например, разреженность и локальную симметрию, для улучшения разрешения изображения с помощью множества настраиваемых параметров. Настройка параметров зависит от опыта и требует много времени, а результаты аналитических моделей сильно зависят от набора параметров
+    <sup>
+     <xref ref-type="bibr" rid="CR5">
+      5
+     </xref>
+     <xref ref-type="bibr" rid="CR13">
+      13
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR14">
+      14
+     </xref>
+     <xref ref-type="bibr" rid="CR5">
+      5
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR13">
+      13
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR15">
+      15
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR16">
+      16
+     </xref>
+    </sup>
+    . Кроме того, в практических экспериментах, ручные модели с определенными предположениями не могут учитывать всю статистическую сложность микроскопического изображения, что делает их неустойчивыми и склонными к генерации артефактов, особенно при низком соотношении сигнал/шум (SNR)
+    <sup>
+     <xref ref-type="bibr" rid="CR9">
+      9
+     </xref>
+    </sup>
+    . С другой стороны, методы глубокого обучения для SR (DLSR) достигли впечатляющих успехов в обучении преобразованию изображений от начала до конца на основе большого количества примерных данных без необходимости явной аналитической модели
+    <sup>
+     <xref ref-type="bibr" rid="CR7">
+      7
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR8">
+      8
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR9">
+      9
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR10">
+      10
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR11">
+      11
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR12">
+      12
+     </xref>
+    </sup>
+    . Отметим, что схема обратного преобразования на основе данных через глубокое обучение может приближать не только псевдообратную функцию процесса деградации изображения, но и стохастические характеристики решений SR. Тем не менее, обучение моделей DLSR требует получения большого количества пар низкоразрешенных входных изображений и высококачественных эталонных изображений SR, что является крайне трудоемким и иногда даже непрактичным из-за быстрой динамики или низкого SNR флуоресцентных образцов
+    <sup>
+     <xref ref-type="bibr" rid="CR3">
+      3
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR8">
+      8
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR17">
+      17
+     </xref>
+    </sup>
+    . Кроме того, производительность методов DLSR сильно зависит от качества и количества обучающих данных
+    <sup>
+     <xref ref-type="bibr" rid="CR17">
+      17
+     </xref>
+    </sup>
+    . Эти факторы значительно затрудняют широкое применение методов DLSR в повседневных экспериментах, несмотря на их убедительные результаты SR по сравнению с аналитическими методами
+    <sup>
+     <xref ref-type="bibr" rid="CR3">
+      3
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR17">
+      17
+     </xref>
+    </sup>
+    .
+   </p>
+   <p id="Par5"/>
+  </sec>
+  <sec id="Sec2" sec-type="results">
+   <title>
+    Результаты
+   </title>
+   <sec id="Sec3">
+    <title>
+     Разработка и характеристика ZS-DeconvNet
+    </title>
+    <p id="Par6"/>
+    <p id="Par7">
+     <fig id="Fig1" position="float">
+      <label>
+       Fig. 1
+      </label>
+      <caption xml:lang="en">
+       <title>
+        Zero-shot deconvolution networks.
+       </title>
+       <p>
+        <bold>
+         a
+        </bold>
+        Двухступенчатая архитектура ZS-DeconvNet и схема ее тренировочного этапа.
+        <bold>
+         b
+        </bold>
+        Схема этапа вывода ZS-DeconvNet.
+        <bold>
+         c
+        </bold>
+        Представительные изображения с суперразрешением (SR) лизосом (Lyso) и микротрубочек (MTs), восстановленные с помощью де convoлюции RL (второй столбец), разреженной де convoлюции (третий столбец) и ZS-DeconvNet (четвертый столбец). Четкие изображения WF отображены для сравнения.
+        <bold>
+         d
+        </bold>
+        Статистическое сравнение де convoлюции RL, разреженной де convoлюции и ZS-DeconvNet по PSNR и разрешению (
+        <italic>
+         n
+        </italic>
+        = 100 областей интереса).
+        <bold>
+         e
+        </bold>
+        Сравнение полной ширины на половине максимума (FWHM) четких изображений WF и обработанных изображений с помощью де convoлюции RL, разреженной де convoлюции и ZS-DeconvNet (
+        <italic>
+         n
+        </italic>
+        = 30 микротрубочек). Теоретический дифракционный предел обозначен серой пунктирной линией для сравнения.
+        <bold>
+         f
+        </bold>
+        Сравнение времени тестирования между разреженной де convoлюцией на GPU и ZS-DeconvNet (среднее значение по 25 тестовым изображениям размером 1024 × 1024 пикселей). Центральная линия, медианы; пределы, 75% и 25%; усы, большее значение между наибольшей точкой данных и 75-м процентилем плюс 1.5× межквартильный размах (IQR), и меньшее значение между наименьшей точкой данных и 25-м процентилем минус 1.5× IQR; выбросы, точки данных, превышающие верхний ус или меньшие нижнего уса. Исходные данные предоставлены в файле Source Data. Масштабная линия, 1.5 μm (
+        <bold>
+         a
+        </bold>
+        ), 5 μm (
+        <bold>
+         c
+        </bold>
+        ), 2 μm (области увеличения в (
+        <bold>
+         c
+        </bold>
+        )).
+       </p>
+      </caption>
+      <graphic href="/ProjectMundo/MediaObjects/10X1038_s41467-024-48575-9/41467_2024_48575_Fig1_HTML.png" mime-subtype="PNG" specific-use="web"/>
+     </fig>
+    </p>
+    <p id="Par8">
+     Для характеристики и оценки ZS-DeconvNet, мы сначала смоделировали микроскопические изображения точечных и трубчатых структур, загрязненных гауссово-поссононовским шумом при возрастающих уровнях сигнала от 5 до 25 средних фотонов, что позволило нам систематически тестировать, как настройки гиперпараметров при различных условиях изображения влияют на конечные результаты (Дополнительная заметка
+     <xref ref-type="supplementary-material" rid="MOESM1">
+      2
+     </xref>
+     ). Мы обнаружили, что оптимальные гиперпараметры теоретически независимы от содержания изображений и уровней сигнала (Дополнительные рисунки
+     <xref ref-type="supplementary-material" rid="MOESM1">
+      3
+     </xref>
+     –
+     <xref ref-type="supplementary-material" rid="MOESM1">
+      5
+     </xref>
+     ), что позволяет надежно применять ZS-DeconvNet к различным биологическим образцам и конфигурациям изображения (Дополнительная заметка
+     <xref ref-type="supplementary-material" rid="MOESM1">
+      4
+     </xref>
+     ). Далее, мы сравнили производительность моделей ZS-DeconvNet, обученных с использованием данных, увеличенных за счет повторного загрязнения одного шумного изображения, с аналитическими алгоритмами де convoлюции или моделями, обученными на множестве симулированных или независимо полученных изображений. Для этого мы использовали режим полного внутреннего отражения (TIRF) нашего самодельного многомодового структурированного освещения микроскопии (Multi-SIM) для получения ~20 наборов дифракционно-ограниченных изображений TIRF с низким и высоким SNR для каждой субклеточной структуры лизосом (Lyso) и микротрубочек (MTs), из которых изображения с низким SNR использовались для обучения и тестирования, а их высокосигнальные аналоги служили эталоном (Методы). Мы обнаружили, что пиковый сигнал-шум (PSNR) и разрешение изображений ZS-DeconvNet значительно лучше, чем у изображений, сгенерированных аналитическими алгоритмами, такими как классический Richardson-Lucy (RL) и недавно разработанный разреженный алгоритм де convoлюции (Fig.
+     <xref ref-type="fig" rid="Fig1">
+      1c–e
+     </xref>
+     ), а скорость обработки хорошо обученной ZS-DeconvNet более чем в 100 раз выше, чем у алгоритма разреженной де convoлюции (Fig.
+     <xref ref-type="fig" rid="Fig1">
+      1f
+     </xref>
+     ). В частности, даже если ZS-DeconvNet обучался на данных, увеличенных за счет одного входного изображения, воспринимаемое качество и количественные метрики его выходных изображений были сопоставимы с изображениями, полученными моделью, обученной на большем объеме данных (Дополнительный рисунок
+     <xref ref-type="supplementary-material" rid="MOESM1">
+      6
+     </xref>
+     ). Кроме того, мы проверили улучшение разрешения, количественность и обобщающую способность ZS-DeconvNet (Дополнительные рисунки
+     <xref ref-type="supplementary-material" rid="MOESM1">
+      7
+     </xref>
+     –
+     <xref ref-type="supplementary-material" rid="MOESM1">
+      10
+     </xref>
+     ), и сравнили его с надзорной моделью DFCAN (Дополнительный рисунок
+     <xref ref-type="supplementary-material" rid="MOESM1">
+      11
+     </xref>
+     ) на синтетических и экспериментальных данных. Эти характеристики демонстрируют, что ZS-DeconvNet способен генерировать высококачественные изображения DLSR с улучшением разрешения в 1.5 раза относительно дифракционного предела, при этом используя минимальное количество обучающих данных, что открывает большие перспективы для повышения качества изображений различных микроскопических систем и расширения их применимости к широкому спектру биологических процессов, которые являются сложными для традиционных методов
+     <sup>
+      <xref ref-type="bibr" rid="CR8">
+       8
+      </xref>
+      ,
+      <xref ref-type="bibr" rid="CR30">
+       30
+      </xref>
+      <xref ref-type="bibr" rid="CR5">
+       5
+      </xref>
+      <xref ref-type="bibr" rid="CR8">
+       8
+      </xref>
+     </sup>
+     .
+    </p>
+   </sec>
+   <sec id="Sec4">
+    <title>
+     Долгосрочное наблюдение биопроцессов, чувствительных к фототоксичности
+    </title>
+    <p id="Par9">
+     Адгезия и миграция клеток являются важными в морфогенетических процессах и вносят вклад во многие заболевания
+     <sup>
+      <xref ref-type="bibr" rid="CR31">
+       31
+      </xref>
+     </sup>
+     . Визуализация динамики цитоскелета с высоким разрешением в процессе адгезии/миграции критически важна для выяснения подлежащего механизма. Однако из-за сильной фоточувствительности, весь процесс адгезии и миграции клеток обычно записывается с низкой частотой кадров, то есть несколько секунд на кадр, и при низкой интенсивности света
+     <sup>
+      <xref ref-type="bibr" rid="CR9">
+       9
+      </xref>
+      ,
+      <xref ref-type="bibr" rid="CR32">
+       32
+      </xref>
+     </sup>
+     . При таких условиях изображения либо алгоритм де convoлюции Richardson-Lucy (RL), либо метод самонадзора на основе временной непрерывности (Методы) не могут восстановить и улучшить сложную структуру актина и миозина-II (Fig.
+     <xref ref-type="fig" rid="Fig2">
+      2a
+     </xref>
+     , Дополнительный рисунок
+     <xref ref-type="supplementary-material" rid="MOESM1">
+      12
+     </xref>
+     , и Дополнительное видео
+     <xref ref-type="supplementary-material" rid="MOESM4">
+      1
+     </xref>
+     ). В противоположность этому, модель ZS-DeconvNet эффективно улучшает как отношение сигнал-шум (SNR), так и разрешение двухцветных временных рядов записей клеток
+     <sup>
+      <xref ref-type="bibr" rid="CR33">
+       33
+      </xref>
+     </sup>
+     .
+    </p>
+    <p id="Par10"/>
+   </sec>
+   <sec id="Sec5">
+    <title>
+     Визуализация быстрой динамики эндо-лизосомальной системы
+    </title>
+    <p id="Par11"/>
+    <p id="Par12"/>
+   </sec>
+   <sec id="Sec6">
+    <title>
+     3D ZS-DeconvNet для микроскопии решетчатого светового листа
+    </title>
+    <p id="Par13">
+     Трехмерное живое клеточное изображение передает больше биологической информации, чем двумерные наблюдения; однако оно подвержено гораздо более сильной фототоксичности, фотобеливанию и загрязнению из-за флуоресценции вне фокуса. Чтобы расширить превосходные возможности ZS-DeconvNet для трехмерного суперразрешающего изображения, мы модернизировали основу архитектуры двухступенчатой сети до 3D RCAN, которая, как было показано, подходит для восстановления объемных изображений (Fig.
+     <xref ref-type="fig" rid="Fig3">
+      3a, b
+     </xref>
+     и Дополнительная фиг.
+     <xref ref-type="supplementary-material" rid="MOESM1">
+      2b
+     </xref>
+     ). Затем мы интегрировали предложенный нами ранее метод пространственно чередующегося самонадзора с физически обоснованным решателем самонадзорной обратной задачи для построения 3D ZS-DeconvNet. 3D ZS-DeconvNet с пространственно чередующейся схемой самонадзора следует более простой процедуре аугментации данных (Методы), при этом достигая сопоставимых или даже лучших результатов, чем стратегия на основе повторного зашумления (Дополнительная фиг.
+     <xref ref-type="supplementary-material" rid="MOESM1">
+      14
+     </xref>
+     )
+     <sup>
+      <xref ref-type="bibr" rid="CR9">
+       9
+      </xref>
+      ,
+      <xref ref-type="bibr" rid="CR35">
+       35
+      </xref>
+      <xref ref-type="bibr" rid="CR9">
+       9
+      </xref>
+     </sup>
+     .
+     <fig id="Fig3" position="float">
+      <label>
+       Fig. 3
+      </label>
+      <caption xml:lang="en">
+       <title>
+        Характеристики и демонстрации 3D ZS-DeconvNet.
+       </title>
+       <p>
+        <bold>
+         a
+        </bold>
+        Архитектура сети 3D ZS-DeconvNet и схема ее тренировочного этапа.
+        <bold>
+         b
+        </bold>
+        Схема этапа вывода 3D ZS-DeconvNet.
+        <bold>
+         c
+        </bold>
+        Представительные изображения максимальной интенсивности (MIP) суперразрешения (SR) фибры актина, внешней мембраны митохондрий и эндоплазматической сети, восстановленные с помощью разреженной де convoлюции (второй столбец), 3D ZS-DeconvNet (третий столбец) и LLS-SIM (четвертый столбец). Средние значения счетов sCMOS для 1% самых ярких пикселей исходных изображений перед обработкой указаны в верхнем правом углу.
+        <bold>
+         d
+        </bold>
+        Статистические сравнения RL де convoлюции, разреженной де convoлюции и ZS-DeconvNet по показателям PSNR и разрешения на различных образцах (
+        <italic>
+         n
+        </italic>
+        = 40 областей интереса). Разрешение измерялось с помощью анализа корреляции кольцевого Фурье
+        <sup>
+         <xref ref-type="bibr" rid="CR74">
+          74
+         </xref>
+        </sup>
+        с использованием стеков изображений фибры актина. Центральная линия, медианы; пределы, 75% и 25%; усы, максимальные и минимальные значения. Исходные данные предоставлены в файле Source Data.
+        <bold>
+         e
+        </bold>
+        Временные ряды трехцветных изображений, восстановленных с помощью 3D ZS-DeconvNet, эндоплазматической сети (ER), H2B и митохондрий, показывающие их трансформации в морфологии и распределении, а также динамику взаимодействий во время митоза (Дополнительное видео
+        <xref ref-type="supplementary-material" rid="MOESM8">
+         5
+        </xref>
+        ).
+        <bold>
+         f
+        </bold>
+        Представительные трехцветные изображения, полученные с помощью традиционной LLSM (первый столбец), разреженной де convoлюции (второй столбец), де convoлюции на основе DeepCAD (третий столбец) (Методы) и 3D ZS-DeconvNet (четвертый столбец). Сравнения проводятся на двух типичных временных точках временного ряда, показанного в (
+        <bold>
+         e
+        </bold>
+        ). Масштабная линейка, 5 μm (
+        <bold>
+         c
+        </bold>
+        ,
+        <bold>
+         e
+        </bold>
+        ,
+        <bold>
+         f
+        </bold>
+        ), 1.5 μm (увеличенные области
+        <bold>
+         c
+        </bold>
+        ), 2 μm (увеличенные области
+        <bold>
+         f
+        </bold>
+        ).
+       </p>
+      </caption>
+      <graphic href="/ProjectMundo/MediaObjects/10X1038_s41467-024-48575-9/41467_2024_48575_Fig3_HTML.png" mime-subtype="PNG" specific-use="web"/>
+     </fig>
+    </p>
+    <p id="Par14">
+     Мы систематически оценили модель 3D ZS-DeconvNet на наборах данных трех различных биологических образцов, полученных с помощью нашего самодельного микроскопа с решетчатым световым листом и структурированной иллюминацией (LLS-SIM), в котором данные с дифракционным ограничением, полученные в режиме микроскопии с решетчатым световым листом (LLSM), использовались для обучения, а суперразрешающие данные, полученные в режиме LLS-SIM, служили эталонами (Методы). Мы обнаружили, что 3D ZS-DeconvNet успешно восстановил сложные филаменты F-актина, полую структуру наружной мембраны митохондрий (Mito) и сложные сети эндоплазматической сети (ER) с высокой точностью и разрешением, сопоставимыми с изображениями LLS-SIM, полученными при высоком соотношении сигнал/шум (SNR) (Fig.
+     <xref ref-type="fig" rid="Fig3">
+      3c
+     </xref>
+     ). Квантификация PSNR и разрешения показывает, что модель 3D ZS-DeconvNet значительно превосходит традиционные аналитические методы на основе моделей в различных биологических образцах (Fig.
+     <xref ref-type="fig" rid="Fig3">
+      3d
+     </xref>
+     ). Мы показали, что обучение на самих шумных стеках изображений позволяет двухступенчатой 3D ZS-DeconvNet не только генерировать денойзированные результаты, сопоставимые с передовыми методами самонадзорного денойзинга (Дополнительная фиг.
+     <xref ref-type="supplementary-material" rid="MOESM1">
+      15
+     </xref>
+     ), но и обеспечивать суперразрешающие стеки изображений с значительным улучшением разрешения более чем в 1,5 раза как в поперечном (Дополнительная фиг.
+     <xref ref-type="supplementary-material" rid="MOESM1">
+      16
+     </xref>
+     ), так и в продольном направлениях (Дополнительная фиг.
+     <xref ref-type="supplementary-material" rid="MOESM1">
+      17
+     </xref>
+     ). Более того, последовательное включение методов самонадзорного улучшения продольного разрешения позволяет еще больше улучшить продольное разрешение (Дополнительная фиг.
+     <xref ref-type="supplementary-material" rid="MOESM1">
+      17g–i
+     </xref>
+     )
+     <sup>
+      <xref ref-type="bibr" rid="CR36">
+       36
+      </xref>
+      <xref ref-type="bibr" rid="CR37">
+       37
+      </xref>
+      ,
+      <xref ref-type="bibr" rid="CR38">
+       38
+      </xref>
+      <xref ref-type="bibr" rid="CR39">
+       39
+      </xref>
+      ,
+      <xref ref-type="bibr" rid="CR40">
+       40
+      </xref>
+     </sup>
+     .
+    </p>
+   </sec>
+   <sec id="Sec7">
+    <title>
+     Долгосрочная объемная супер-разрешающая микроскопия, обеспечиваемая 3D ZS-DeconvNet
+    </title>
+    <p id="Par15"/>
+   </sec>
+   <sec id="Sec8">
+    <title>
+     ZS-DeconvNet для конфокальной и широкопольной микроскопии
+    </title>
+    <p id="Par16">
+     <fig id="Fig4" position="float">
+      <label>
+       Fig. 4
+      </label>
+      <caption xml:lang="en">
+       <title>
+        Обобщение ZS-DeconvNet на различные модальности изображений.
+       </title>
+       <p>
+        <bold>
+         a
+        </bold>
+        ,
+        <bold>
+         b
+        </bold>
+        Представительные конфокальные (верхний левый), разреженные де convoлюционные (нижний левый) и усиленные 3D ZS-DeconvNet (правый) изображения ранней мышиной эмбриональной клетки, окрашенной на микротрубочки (синий), хромосомы (оранжевый), актиновые кольца (пурпурный) и апикальную область (зеленый).
+        <bold>
+         c
+        </bold>
+        ,
+        <bold>
+         d
+        </bold>
+        Увеличенные области мостиков микротрубочек (c) и актиновых колец (d), обозначенных пунктирными белыми линиями в (
+        <bold>
+         a
+        </bold>
+        ) и (
+        <bold>
+         b
+        </bold>
+        ), полученные с помощью конфокальной микроскопии, разреженной де convoлюции и 3D ZS-DeconvNet.
+        <bold>
+         e
+        </bold>
+        Представительные WF (центральная область) и усиленные 3D ZS-DeconvNet (окружающая область) изображения эмбриона
+        <italic>
+         C. elegans
+        </italic>
+        с апикальными соединениями, клеточной мембраной (синий) и лизосомами (красный).
+        <bold>
+         f
+        </bold>
+        ,
+        <bold>
+         g
+        </bold>
+        Канал лизосом центральной области в (
+        <bold>
+         e
+        </bold>
+        ), закодированный по расстоянию от субстрата. Оба WF (
+        <bold>
+         f
+        </bold>
+        ) и обработанные 3D ZS-DeconvNet изображения (
+        <bold>
+         g
+        </bold>
+        ) показаны для сравнения.
+        <bold>
+         h
+        </bold>
+        Временные ряды усиленных 3D ZS-DeconvNet изображений, показывающие процесс слияния гиподермальных клеток (красные стрелки) во время развития эмбриона
+        <italic>
+         C. elegans
+        </italic>
+        . Масштабная линейка, 5 μm (
+        <bold>
+         a
+        </bold>
+        ,
+        <bold>
+         b
+        </bold>
+        ,
+        <bold>
+         e
+        </bold>
+        ), 2 μm (
+        <bold>
+         c
+        </bold>
+        ,
+        <bold>
+         d
+        </bold>
+        ), 3 μm (
+        <bold>
+         g
+        </bold>
+        ,
+        <bold>
+         h
+        </bold>
+        ), 1 μm (увеличенная область
+        <bold>
+         g
+        </bold>
+        ). Значение гамма, 0.7 для цитоплазматической мембраны и лизосом в эмбрионе
+        <italic>
+         C. elegans
+        </italic>
+        .
+       </p>
+      </caption>
+      <graphic href="/ProjectMundo/MediaObjects/10X1038_s41467-024-48575-9/41467_2024_48575_Fig4_HTML.png" mime-subtype="PNG" specific-use="web"/>
+     </fig>
+    </p>
+    <p id="Par17"/>
+   </sec>
+   <sec id="Sec9">
+    <title>
+     ZS-денойзинг и повышение разрешения в мультимодальных SIM-изображениях
+    </title>
+    <p id="Par18">
+     Среди различных форм суперразрешающей микроскопии, структурированная интерференционная микроскопия (SIM) часто признается сбалансированным вариантом для суперразрешающей живой клеточной микроскопии, так как она требует менее десяти модулированных изображений для обеспечения двукратного улучшения пространственного разрешения
+     <sup>
+      <xref ref-type="bibr" rid="CR1">
+       1
+      </xref>
+      ,
+      <xref ref-type="bibr" rid="CR2">
+       2
+      </xref>
+     </sup>
+     . Тем не менее, традиционная SIM имеет два критических ограничения: во-первых, дальнейшее улучшение разрешения требует значительно больше исходных данных, то есть для нелинейной SIM необходимо не менее 25 исходных изображений для достижения разрешения менее 80 нм; во-вторых, постобработка изображений SIM обычно требует исходных изображений с высоким SNR для устранения шумовых артефактов, что затрудняет быструю, низкоосвещенную и долгосрочную живую клеточную микроскопию
+     <sup>
+      <xref ref-type="bibr" rid="CR49">
+       49
+      </xref>
+      ,
+      <xref ref-type="bibr" rid="CR50">
+       50
+      </xref>
+      <xref ref-type="bibr" rid="CR51">
+       51
+      </xref>
+     </sup>
+     . Недавние исследования изучали методы обучения с учителем, такие как очистка изображений SIM или восстановление суперразрешающих изображений SIM напрямую из шумных исходных изображений для достижения низкоосвещенной реконструкции SIM; однако эти методы требуют обширных обучающих данных и не обеспечивают дальнейшего улучшения разрешения. В свете превосходных возможностей ZS-DeconvNet по очистке и суперразрешению, мы интегрировали схему обучения без примеров с традиционным алгоритмом реконструкции SIM и теоретически доказали, что ZS-DeconvNet подходит для обработки суперразрешающих изображений SIM (Дополнительная заметка
+     <xref ref-type="supplementary-material" rid="MOESM1">
+      1
+     </xref>
+     ). Мы разработали модель ZS-DeconvNet, усиленную SIM (ZS-DeconvNet-SIM), для одновременной очистки и улучшения суперразрешающих изображений SIM в режиме обучения без примеров (Fig.
+     <xref ref-type="fig" rid="Fig5">
+      5a
+     </xref>
+     , Дополнительная фиг.
+     <xref ref-type="supplementary-material" rid="MOESM1">
+      20a
+     </xref>
+     , и Методы). Благодаря значительному улучшению как SNR, так и разрешения, обеспеченному ZS-DeconvNet-SIM (Дополнительные фиг.
+     <xref ref-type="supplementary-material" rid="MOESM1">
+      21
+     </xref>
+     ,
+     <xref ref-type="supplementary-material" rid="MOESM1">
+      22
+     </xref>
+     ), пустотелая структура кластериновых ям (CCPs) в клетке SUM-159 и плотно переплетенные цитоскелеты в клетке COS-7, которые не различимы в WF и традиционных изображениях SIM, были четко разрешены (Fig.
+     <xref ref-type="fig" rid="Fig5">
+      5b, c
+     </xref>
+     ). Кроме того, мы продемонстрировали, что ZS-DeconvNet-SIM может применяться в модальности 3D-SIM для одновременной очистки и улучшения 3D-изображений SIM в латеральной и осевой плоскостях (Методы, Дополнительная фиг.
+     <xref ref-type="supplementary-material" rid="MOESM1">
+      23
+     </xref>
+     )
+     <sup>
+      <xref ref-type="bibr" rid="CR9">
+       9
+      </xref>
+      ,
+      <xref ref-type="bibr" rid="CR52">
+       52
+      </xref>
+      <xref ref-type="bibr" rid="CR8">
+       8
+      </xref>
+      ,
+      <xref ref-type="bibr" rid="CR22">
+       22
+      </xref>
+     </sup>
+     .
+    </p>
+    <p id="Par19">
+     Кроме того, мы интегрировали 3D ZS-DeconvNet с LLS-SIM для разработки модальности 3D ZS-DeconvNet-SIM (Дополнительная фиг.
+     <xref ref-type="supplementary-material" rid="MOESM1">
+      20b
+     </xref>
+     ). Включив анизотропную ПФО традиционной LLS-SIM в процесс обучения, 3D ZS-DeconvNet LLS-SIM не только значительно улучшил контраст и разрешение в трех измерениях, но и обеспечил приблизительно изотропное латеральное разрешение ~150 нм (Fig.
+     <xref ref-type="fig" rid="Fig5">
+      5d, e
+     </xref>
+     , и Дополнительная фиг.
+     <xref ref-type="supplementary-material" rid="MOESM1">
+      22
+     </xref>
+     ). Эти успешные применения ZS-DeconvNet к многомодальным системам SIM демонстрируют его способность дальнейшего расширения временно-пространственной полосы пропускания существующих суперразрешающих техник
+     <sup>
+      <xref ref-type="bibr" rid="CR36">
+       36
+      </xref>
+     </sup>
+     .
+    </p>
+   </sec>
+  </sec>
+  <sec id="Sec10" sec-type="discussion">
+   <title>
+    Обсуждение
+   </title>
+   <p id="Par20"/>
+   <p id="Par21"/>
+   <p id="Par22"/>
+   <p id="Par23"/>
+  </sec>
+  <sec id="Sec11" sec-type="methods">
+   <title>
+    Методы
+   </title>
+   <sec id="Sec12">
+    <title>
+     Система Multi-SIM
+    </title>
+    <p id="Par24"/>
+   </sec>
+   <sec id="Sec13">
+    <title>
+     Система LLS-SIM
+    </title>
+    <p id="Par25"/>
+   </sec>
+   <sec id="Sec14">
+    <title>
+     Конфокальная система
+    </title>
+    <p id="Par26"/>
+   </sec>
+   <sec id="Sec15">
+    <title>
+     Архитектуры и целевые функции ZS-DeconvNet
+    </title>
+    <p id="Par27"/>
+    <p id="Par28"/>
+    <p id="Par29">
+     Заметим, что поскольку теоретическая основа ZS-DeconvNet агностична к модели, U-Net и RCAN не являются единственными применимыми базовыми моделями, но они широко используются и эффективны. Оснащение ZS-DeconvNet другими передовыми архитектурами сетей, например, DFCAN и RLN, может еще больше улучшить его способности к шумоподавлению и суперразрешению
+     <sup>
+      <xref ref-type="bibr" rid="CR8">
+       8
+      </xref>
+      <xref ref-type="bibr" rid="CR12">
+       12
+      </xref>
+     </sup>
+     .
+    </p>
+   </sec>
+   <sec id="Sec16">
+    <title>
+     Реализация 2D ZS-DeconvNet
+    </title>
+    <p id="Par30"/>
+    <p id="Par31"/>
+   </sec>
+   <sec id="Sec17">
+    <title>
+     Реализация 3D ZS-DeconvNet
+    </title>
+    <p id="Par32"/>
+   </sec>
+   <sec id="Sec18">
+    <title>
+     Реализация 2D/3D ZS-DeconvNet-SIM
+    </title>
+    <p id="Par33"/>
+   </sec>
+   <sec id="Sec19">
+    <title>
+     Использование и генерация PSF
+    </title>
+    <p id="Par34">
+     В процессе обучения ZS-DeconvNet мы использовали экспериментально полученные или симулированные ПСФ (с использованием плагина PSF Generator Fiji, лицензированного EPFL), соответствующие конфигурациям изображения. Независимые модели ZS-DeconvNet были обучены для каждого биологического структура и длины волны излучения для достижения наилучшей производительности.
+    </p>
+   </sec>
+   <sec id="Sec20">
+    <title>
+     Обучение модели и адаптация в процессе тестирования
+    </title>
+    <p id="Par35">
+     В данной работе модели ZS-DeconvNet были обучены на ПК с процессором Intel Core i7-11700 и графической картой RTX 3090 (NVIDIA) в программной среде TensorFlow 2.5.0 и Python 3.9.7. Перед обучением пары входных/эталонных изображений сначала были преобразованы в несколько пар патчей с помощью случайного обрезания, горизонтального/вертикального отражения и поворота для дальнейшего обогащения обучающего набора данных, что в конечном итоге сгенерировало ~20,000 пар 2D патчей (128
+     <inline-formula id="IEq35">
+      <alternatives>
+       <math id="IEq35_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+        <mo>
+         ×
+        </mo>
+       </math>
+       <tex-math id="IEq35_TeX">
+        \documentclass[12pt]{minimal}
+                \usepackage{amsmath}
+                \usepackage{wasysym}
+                \usepackage{amsfonts}
+                \usepackage{amssymb}
+                \usepackage{amsbsy}
+                \usepackage{mathrsfs}
+                \usepackage{upgreek}
+                \setlength{\oddsidemargin}{-69pt}
+                \begin{document}$$\times$$\end{document}
+       </tex-math>
+       <inline-graphic href="41467_2024_48575_Article_IEq35.gif" mime-subtype="GIF" specific-use="web"/>
+      </alternatives>
+     </inline-formula>
+     128 пикселей) или ~10,000 пар 3D патчей (64
+     <inline-formula id="IEq36">
+      <alternatives>
+       <math id="IEq36_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+        <mo>
+         ×
+        </mo>
+       </math>
+       <tex-math id="IEq36_TeX">
+        \documentclass[12pt]{minimal}
+                \usepackage{amsmath}
+                \usepackage{wasysym}
+                \usepackage{amsfonts}
+                \usepackage{amssymb}
+                \usepackage{amsbsy}
+                \usepackage{mathrsfs}
+                \usepackage{upgreek}
+                \setlength{\oddsidemargin}{-69pt}
+                \begin{document}$$\times$$\end{document}
+       </tex-math>
+       <inline-graphic href="41467_2024_48575_Article_IEq36.gif" mime-subtype="GIF" specific-use="web"/>
+      </alternatives>
+     </inline-formula>
+     64
+     <inline-formula id="IEq37">
+      <alternatives>
+       <math id="IEq37_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+        <mo>
+         ×
+        </mo>
+       </math>
+       <tex-math id="IEq37_TeX">
+        \documentclass[12pt]{minimal}
+                \usepackage{amsmath}
+                \usepackage{wasysym}
+                \usepackage{amsfonts}
+                \usepackage{amssymb}
+                \usepackage{amsbsy}
+                \usepackage{mathrsfs}
+                \usepackage{upgreek}
+                \setlength{\oddsidemargin}{-69pt}
+                \begin{document}$$\times$$\end{document}
+       </tex-math>
+       <inline-graphic href="41467_2024_48575_Article_IEq37.gif" mime-subtype="GIF" specific-use="web"/>
+      </alternatives>
+     </inline-formula>
+     13 вокселей). Обучение обычно проводилось с использованием оптимизатора Adam и начальной скорости обучения
+     <inline-formula id="IEq38">
+      <alternatives>
+       <math id="IEq38_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+        <mn>
+         0.5
+        </mn>
+        <mo>
+         ×
+        </mo>
+        <msup>
+         <mrow>
+          <mn>
+           10
+          </mn>
+         </mrow>
+         <mrow>
+          <mo>
+           −
+          </mo>
+          <mn>
+           4
+          </mn>
+         </mrow>
+        </msup>
+       </math>
+       <tex-math id="IEq38_TeX">
+        \documentclass[12pt]{minimal}
+                \usepackage{amsmath}
+                \usepackage{wasysym}
+                \usepackage{amsfonts}
+                \usepackage{amssymb}
+                \usepackage{amsbsy}
+                \usepackage{mathrsfs}
+                \usepackage{upgreek}
+                \setlength{\oddsidemargin}{-69pt}
+                \begin{document}$$0.5\times {10}^{-4}$$\end{document}
+       </tex-math>
+       <inline-graphic href="41467_2024_48575_Article_IEq38.gif" mime-subtype="GIF" specific-use="web"/>
+      </alternatives>
+     </inline-formula>
+     , которая уменьшалась с коэффициентом 0.5 каждые 10,000 итераций. Размер пакета обучения составлял 4 для 2D изображений и 3 для 3D стеков. Весь процесс обучения обычно требовал 50,000 итераций для 2D изображений и 10,000 итераций для 3D стеков. Время, затраченное на обучение 50,000 итераций для 2D моделей и 10,000 итераций для 3D моделей, составляло ~1 ч и ~2 ч, соответственно. Как часто бывает с большинством методов глубокого обучения, обучение ZS-DeconvNet является одноразовой процедурой в большинстве случаев живой клеточной микроскопии, где пользователи обучают модель ZS-DeconvNet на всех кадрах, а затем хорошо обученные модели применимы ко всем данным того же биологического образца с высокой скоростью обработки. Для устранения артефактов на краях, вызванных де convoлюцией, мы обычно добавляли 2 пустых среза сверху и снизу 3D стеков и границу в 8 пикселей для каждого среза xy в процессах обучения и вывода (Дополнительная фиг.
+     <xref ref-type="supplementary-material" rid="MOESM1">
+      30a
+     </xref>
+     ). В частности, при обработке временных рядов данных митоза клеток (Fig.
+     <xref ref-type="fig" rid="Fig3">
+      3e, f
+     </xref>
+     ), необучаемое свойство ZS-DeconvNet позволило использовать стратегию адаптации во время тестирования, при которой мы сначала обучали общую модель для каждой биологической структуры на данных всего процесса, а затем дообучали предварительно обученную модель для каждого временного шага с небольшим количеством тренировочных шагов (обычно 50 итераций, занимающих ~1 мин) для полного использования структурной информации исходных данных и достижения оптимальной производительности SR. Следует отметить, что адаптация во время тестирования не обязательна, но является дополнительной техникой для улучшения производительности ZS-DeconvNet, особенно в случаях, когда на биологических образцах происходят значительные морфологические изменения в течение окна наблюдения, например, хромосомы во время митоза (Дополнительная фиг.
+     <xref ref-type="supplementary-material" rid="MOESM1">
+      31
+     </xref>
+     )
+     <sup>
+      <xref ref-type="bibr" rid="CR43">
+       43
+      </xref>
+     </sup>
+     .
+    </p>
+   </sec>
+   <sec id="Sec21">
+    <title>
+     Постобработка данных и оценка супер-разрешающих изображений
+    </title>
+    <p id="Par36"/>
+    <p id="Par37"/>
+    <p id="Par38"/>
+    <p id="Par39">
+     Линейное преобразование применяется ко всем методам для справедливого сравнения; (3) Расчет PSNR между нормализованным изображением
+     <bold>
+      x
+     </bold>
+     и линейно преобразованным изображением
+     <inline-formula id="IEq39">
+      <alternatives>
+       <math id="IEq39_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+        <msub>
+         <mrow>
+          <mi mathvariant="bold">
+           I
+          </mi>
+         </mrow>
+         <mrow>
+          <mi mathvariant="normal">
+           trans
+          </mi>
+         </mrow>
+        </msub>
+       </math>
+       <tex-math id="IEq39_TeX">
+        \\documentclass[12pt]{minimal}\n\\usepackage{amsmath}\n\\usepackage{wasysym}\n\\usepackage{amsfonts}\n\\usepackage{amssymb}\n\\usepackage{amsbsy}\n\\usepackage{mathrsfs}\n\\usepackage{upgreek}\n\\setlength{\\oddsidemargin}{-69pt}\n\\begin{document}$${{{{{\\bf{I}}}}}}_{{{{{{\\rm{trans}}}}}}}$$\\end{document}
+       </tex-math>
+       <inline-graphic href="41467_2024_48575_Article_IEq39.gif" mime-subtype="GIF" specific-use="web"/>
+      </alternatives>
+     </inline-formula>
+     <sup/>
+     .
+    </p>
+    <p id="Par40">
+     Для оценки PSNR 3D ZS-DeconvNet (Fig.
+     <xref ref-type="fig" rid="Fig3">
+      3d
+     </xref>
+     ), мы напрямую использовали изображения LLS-SIM в качестве эталона, так как как LLS-SIM, так и наш 3D ZS-DeconvNet теоретически обеспечивают улучшение разрешения на ~1.5-крат. Общий процесс расчета схож с 2D случаями, за исключением того, что SR стеки не свертывались, а PSNR рассчитывался только в областях с признаками с порогом 0.02, чтобы избежать получения аномально высокого значения PSNR.
+    </p>
+    <p id="Par41"/>
+   </sec>
+   <sec id="Sec22">
+    <title>
+     Культура клеток, трансфекция и окрашивание
+    </title>
+    <p id="Par42"/>
+    <p id="Par43"/>
+    <p id="Par44">
+     Для упаковки лентивирусов 1 мкг ДНК трансферного вектора лентивируса, вместе с 0.5 мкг ДНК пакетного вектора psPAX2 и 0.5 мкг ДНК оболочечного пластида pMD2.G были котрансфектированы в клетки HEK293T, заполнившие 90% 6-см блюда Петри, с использованием Lipofectamine 3000 в соответствии с протоколом производителя. Через 2 дня супернатант был собран и профильтрован через фильтр 0.22-мкм (Millipore). Для создания стабильных клеток, клетки HeLa и Cos7 были инфицированы лентивирусами, кодирующими маркер эндоплазматической сети Calnexin-mEmerald и маркер актиновых нитей Lifeact-mEmerald
+     <sup>
+      <xref ref-type="bibr" rid="CR66">
+       66
+      </xref>
+     </sup>
+     . Через 48 часов клетки были обогащены с помощью цитометра (FACSAria III, BD Biosciences) и затем высажены по одной клетке на скважину в 96-скважинные пластины. Моноклональные клетки использовались в наших экспериментах. В частности, Lifeact-mEmerald для COS7, использованный в Fig.
+     <xref ref-type="fig" rid="Fig3">
+      3
+     </xref>
+     и
+     <xref ref-type="fig" rid="Fig5">
+      5
+     </xref>
+     ; Calnexin-mEmerald, Mito-dsRed и Halo-H2B для клеток HeLa, использованных в Fig.
+     <xref ref-type="fig" rid="Fig3">
+      3
+     </xref>
+     ; H2B-mCherry для HeLa-mEmerald-SC35, использованный в Дополнительной Fig.
+     <xref ref-type="supplementary-material" rid="MOESM1">
+      18
+     </xref>
+     <sup/>
+     .
+    </p>
+   </sec>
+   <sec id="Sec23">
+    <title>
+     Геномно-редактированные клеточные линии
+    </title>
+    <p id="Par45">
+     Клетки SUM159 были последовательно геномно отредактированы для включения EGFP в N-конец Rab11A, а затем Halo в C-конец Lamp1 с использованием подхода CRISPR/Cas9
+     <sup>
+      <xref ref-type="bibr" rid="CR67">
+       67
+      </xref>
+      ,
+      <xref ref-type="bibr" rid="CR68">
+       68
+      </xref>
+     </sup>
+     . Последовательности sgRNA, направленные на цели, следующие: 5’-TCGCTCCTCGGCCGCGCAAT-3’ для RAB11A и 5’-CTATCTAGCCTGGTGCACGC-3’ для LAMP1. SUM159 были трансфектированы донорским пластида EGFP-Rab11A, пластида, кодирующего spCas9, и свободным продуктом ПЦР, содержащим последовательность sgRNA, с использованием Lipofectamin 3000 (Invitrogen) в соответствии с инструкциями производителя. Клетки, выражающие EGFP, были обогащены с помощью сортировки активированных флуоресценцией клеток (FACS) (FACSAria II, BD Biosciences), и затем подвергнуты сортировке по одной клетке в 96-скважинные пластины. Моноклональные клетки с успешным включением EGFP были идентифицированы с помощью ПЦР-скрининга с использованием GoTaq Polymerase (Promega). Клональные клетки SUM159, выражающие EGFP-Rab11A + /+, были подвергнуты второму раунду геномного редактирования для включения Lamp1-Halo в геном, как описано выше. Трансфектированные клетки были окрашены 10 нМ Janelia Fluor 646 HaloTag Ligands (Promega) в течение 15 минут. Для удаления несвязавшегося красителя образцы промывались свежей средой, а затем обогащались с помощью FACS. Моноклональные клетки SUM159, выражающие как EGFP-Rab11A + /+, так и Lamp1-Halo + /+, были подтверждены с помощью ПЦР и анализа западного блота.
+    </p>
+    <p id="Par46">
+     Клетки SUM159 были геномно отредактированы для включения EGFP в C-конец легкой цепи клаттрина (clathrin-EGFP) с использованием подхода на основе TALEN
+     <sup>
+      <xref ref-type="bibr" rid="CR69">
+       69
+      </xref>
+     </sup>
+     . Клетки, выражающие clathrin-EGFP, были обогащены двумя последовательными массовыми сортировками.
+    </p>
+    <p id="Par47">
+     Линии клеток HeLa были геномно отредактированы для включения mEmerald в C-конец геномного SC35 человека с использованием системы геномного редактирования CRISPR-Cas9. Последовательность sgRNA, направленная на цель, следующая: 5’-CGAGCAGCACTCCTAATGAT-3’, и sgRNA была связана с pX330A-1×2 (Addgene, 58766). Полученный пластида был назван pX330-SC35-gRNA. Для построения донорного вектора p-SC35-doner, mEmerald, окруженный примерно 1800 бп гомологичных рукавов, комплементарных стоп-кодону геномного SC35 человека, был связан с pEASY-blunt (Transgene, CB101). 2 × 10 клеток HeLa, выращенных в 6-см блюде Петри, были трансфектированы 1.2 мкг pX330-SC35-gRNA и 0.4 мкг p-SC35-doner. Через 48 часов после трансфекции клетки, положительно выражающие mEmerald, были отсортированы с помощью FACS (FACSAria III, BD Biosciences). Через неделю лентивирусы H2B-mCherry были инфицированы отсортированными клетками, а затем одиночные клетки были высажены в 96-скважинные пластины. Через две недели геномная ДНК различных клонов одиночных клеток была извлечена и подтверждена с помощью ПЦР и западного блота. Гомозиготные клетки с успешным включением SC35 были выбраны для исследования. Успешное включение SC35 было подтверждено с помощью ПЦР и анализа западного блота
+     <sup/>
+     .
+    </p>
+   </sec>
+   <sec id="Sec24">
+    <title>
+     <italic>
+      C. elegans
+     </italic>
+     подготовка эмбрионов
+    </title>
+    <p id="Par48"/>
+    <p id="Par49">
+     Около 50 трансгенных червей стадии L4 были помещены на пластины NGM с свежим OP50 за 48-60 часов до экспериментов. Трансгенные яйца собирали под диссектинговым флуоресцентным микроскопом (Olympus MVX10) и закрепляли на подушках из 3% агарозы. Эмбрионы стадии от бобового боба до двукратной стадии затем изображались с использованием режима 3D WF нашей системы Multi-SIM.
+    </p>
+   </sec>
+   <sec id="Sec25">
+    <title>
+     Подготовка эмбрионов мышей
+    </title>
+    <p id="Par50">
+     Мышей, использованных в этом исследовании, имели фон C57BL/6 J. Все эксперименты с животными были одобрены Комитетом по уходу за животными и их использованию (IACUC) Института биофизики, Китайской академии наук, Пекин, Китай. Предимплантационные эмбрионы были изолированы от самок в возрасте 5-6 недель, суперовулированных внутривенным введением 5 международных единиц (IU) гонадотропина конской сыворотки (PMSG; LEE BIOSOLUTIONS) и 5 IU хорионического гонадотропина человека (hCG; Millipore) через 48 часов, и спаривались с самцами. Зиготы были получены на стадии E0.5 в среде M2 (Millipore) и культивировались в среде KSOM (Millipore) в инкубаторе CO2 (Thermo Scientific) при 37°C с 5% CO2 до поздней стадии 8-клеточного эмбриона.
+    </p>
+    <p id="Par51">
+     Для иммунофлуоресцентного окрашивания эмбрионы фиксировали в 4% параформальдегиде в PBS при комнатной температуре (RT) в течение 30 минут и трижды промывали PBS. Затем эмбрионы инкубировали в 0.5% TritonX-100 (Sigma) в PBS при RT в течение 20 минут, трижды промывали PBS, блокировали в 1% альбумине коровьей сыворотки в PBS при RT в течение 1 часа и инкубировали с антителами anti-pERM (Abcam, ab76247), anti-alpha-tubulin-FITC (Sigma, F2168-.2 ML) и Phalloidin-Rhodamine (Molecular Probes, R415) в течение ночи при 4°C. Затем эмбрионы трижды промывали PBS, инкубировали со вторичными антителами (Life technologies) при RT в течение 1 часа, окрашивали Hoescht 33342 (Thermo) при RT в течение 15 минут, трижды промывали PBS и изображались с использованием самодельного конфокального микроскопа.
+    </p>
+   </sec>
+   <sec id="Sec26">
+    <title>
+     3D визуализация изображений
+    </title>
+    <p id="Par52">
+     Аксиально закодированные по цвету изображения лизосом, показанные на рис.
+     <xref ref-type="fig" rid="Fig4">
+      4f, g
+     </xref>
+     , были сгенерированы с помощью Fiji. 3D-изображения клетки митоза и эмбрионов мышей, показанные на рис.
+     <xref ref-type="fig" rid="Fig3">
+      3e, f
+     </xref>
+     , были визуализированы и сгенерированы с использованием коммерческого программного обеспечения Amira.
+    </p>
+   </sec>
+   <sec id="Sec27">
+    <title>
+     Статистика и воспроизводимость
+    </title>
+    <p id="Par53">
+     Эксперименты, показанные на рис.
+     <xref ref-type="fig" rid="Fig2">
+      2
+     </xref>
+     a–i,
+     <xref ref-type="fig" rid="Fig3">
+      3
+     </xref>
+     f,
+     <xref ref-type="fig" rid="Fig4">
+      4a–h
+     </xref>
+     , и
+     <xref ref-type="fig" rid="Fig5">
+      5b–e
+     </xref>
+     , были независимо повторены не менее чем на 3 образцах, то есть клетках или эмбрионах, все с одинаковыми результатами.
+    </p>
+   </sec>
+   <sec id="Sec28">
+    <title>
+     Отчет о выполнении
+    </title>
+    <p id="Par54">
+     Дополнительная информация о дизайне исследования доступна в
+     <xref ref-type="supplementary-material" rid="MOESM13">
+      Nature Portfolio Reporting Summary
+     </xref>
+     , связанном с этой статьей.
+    </p>
+   </sec>
+  </sec>
+ </body>
+ <back>
+  <ack>
+   <title>
+    Acknowledgements
+   </title>
+   <p>
+    Авторы благодарят T. Kirchhausen за донорские плазмиды, использованные для геномного редактирования, и помощь в создании геномно-редактированных клеточных линий, а также профессора Xiaochen Wang и доктора Kangmin He за
+    <italic>
+     C. elegans
+    </italic>
+    штаммы и геномно-редактированные клеточные линии SUM159. Эта работа была поддержана грантами от Национального научного фонда Китая (32125024, 32271513, 62071271 и 62088102); Министерства науки и технологий (2021YFA1300303 и 2020AA0105500); Китайской академии наук (ZDBS-LY-SM004 и XDA16021401); Фонда совместных исследований Китайского института мозга, Пекин (2021-NKX-XM-03); Фонда постдокторских научных исследований Китая (2022M721842, 2023T160365); Фонда новых основных научных исследований; Программы Shuimu Tsinghua Scholar (2022SM035); Фонда естественных наук Пекина (JQ21012).
+   </p>
+  </ack>
+  <sec sec-type="author-contribution">
+   <title>
+    Author contributions
+   </title>
+   <p>
+    Q.D. и Dong Li руководили исследованием. Q.D., Dong Li и C.Q. разработали и инициировали этот проект. C.Q. разработал детальные реализации под руководством Q.D. и Dong Li. Y.Z, C.Q. и X.C. разработали код на Python, провели симуляции и обработали соответствующие изображения. H.C., C.Q. и Y.Z. разработали плагин для Fiji. T.J., R.W, C.Q, H.L., W.F., Di Li и J.G. подготовили образцы и провели эксперименты по изображению. C.Q., Y.Z., X.C. и Q.M. проанализировали данные с концептуальными советами от Q.D., Dong Li, J.W, Y.W. и H.Q. C.Q., Y.Z. и Q.M. составили рисунки и видео, создали учебную веб-страницу под руководством Q.D. и Dong Li. Q.D., Dong Li и C.Q. написали рукопись с вкладом всех авторов. Все авторы обсудили результаты и прокомментировали рукопись.
+   </p>
+  </sec>
+  <sec sec-type="peer-review">
+   <title>
+    Пир-ревью
+   </title>
+   <sec id="FPar1">
+    <title>
+     Информация о пир-ревью
+    </title>
+    <p id="Par55">
+     <italic>
+      Nature Communications
+     </italic>
+     thanks Varun Mannam and Lothar Schermelleh for their contribution to the peer review of this work. A peer review file is available.
+    </p>
+   </sec>
+  </sec>
+  <sec sec-type="data-availability">
+   <title>
+    Доступность данных
+   </title>
+   <p>
+    The SIM data of CCPs and MTs used for evaluating ZS-DeconvNet is from the publicly accessible dataset BioSR (
+    <ext-link ext-link-type="doi" xlink:href="10.6084/m9.figshare.13264793">
+     https://doi.org/10.6084/m9.figshare.13264793
+    </ext-link>
+    ). Other data that are generated and presented in Figs.
+    <xref ref-type="fig" rid="Fig1">
+     1
+    </xref>
+    –
+    <xref ref-type="fig" rid="Fig5">
+     5
+    </xref>
+    , Supplementary Figs.
+    <xref ref-type="supplementary-material" rid="MOESM1">
+     1
+    </xref>
+    -
+    <xref ref-type="supplementary-material" rid="MOESM1">
+     34
+    </xref>
+    , and Supplementary Videos 1–9 in this study are available upon requests.
+    <xref ref-type="sec" rid="Sec30">
+     Source data
+    </xref>
+    are provided with this paper.
+   </p>
+  </sec>
+  <sec sec-type="data-availability">
+   <title>
+    Доступность кода
+   </title>
+   <p>
+    The python codes of ZS-DeconvNet, the Fiji plugin, several representative pre-trained models, as well as some example data for training and testing are already publicly accessible on the tutorial homepage (
+    <ext-link ext-link-type="uri" xlink:href="https://tristazeng.github.io/ZS-DeconvNet-page/">
+     https://tristazeng.github.io/ZS-DeconvNet-page/
+    </ext-link>
+    ) of ZS-DeconvNet and Github repository
+    <sup>
+     <xref ref-type="bibr" rid="CR73">
+      73
+     </xref>
+    </sup>
+    (
+    <ext-link ext-link-type="uri" xlink:href="https://github.com/TristaZeng/ZS-DeconvNet">
+     https://github.com/TristaZeng/ZS-DeconvNet
+    </ext-link>
+    ).
+   </p>
+  </sec>
+  <sec sec-type="ethics-statement">
+   <sec id="FPar2" sec-type="COI-statement">
+    <title>
+     Конкурирующие интересы
+    </title>
+    <p id="Par56">
+     Dong Li, C.Q. and Y.Z. filed a patent as inventors through Institute of Biophysics, Chinese Academy of Sciences, to the Chinese Patent Office (Pub. No. CN116721017A &amp; App. No. 202310735660.3), which contains the basic application of the presented ZS-DeconvNet framework. The remaining authors declare no competing interests.
+    </p>
+   </sec>
+  </sec>
+  <ref-list id="Bib1">
+   <title>
+    Ссылки
+   </title>
+   <ref-list>
+    <ref id="CR1">
+     <label>
+      1.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Schermelleh
+        </surname>
+        <given-names>
+         L
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Super-resolution microscopy demystified
+      </article-title>
+      <source>
+       Nat. Cell Biol.
+      </source>
+      <year>
+       2019
+      </year>
+      <volume>
+       21
+      </volume>
+      <fpage>
+       72
+      </fpage>
+      <lpage>
+       84
+      </lpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BC1MXmvVOhsL4%3D
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       30602772
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1038/s41556-018-0251-8
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR2">
+     <label>
+      2.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Wu
+        </surname>
+        <given-names>
+         Y
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Shroff
+        </surname>
+        <given-names>
+         H
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Faster, sharper, and deeper: structured illumination microscopy for biological imaging
+      </article-title>
+      <source>
+       Nat. Methods
+      </source>
+      <year>
+       2018
+      </year>
+      <volume>
+       15
+      </volume>
+      <fpage>
+       1011
+      </fpage>
+      <lpage>
+       1019
+      </lpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BC1cXitlWnurbL
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       30478322
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1038/s41592-018-0211-z
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR3">
+     <label>
+      3.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Belthangady
+        </surname>
+        <given-names>
+         C
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Royer
+        </surname>
+        <given-names>
+         LA
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Applications, promises, and pitfalls of deep learning for fluorescence image reconstruction
+      </article-title>
+      <source>
+       Nat. Methods
+      </source>
+      <year>
+       2019
+      </year>
+      <volume>
+       16
+      </volume>
+      <fpage>
+       1215
+      </fpage>
+      <lpage>
+       1225
+      </lpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BC1MXhtleis7nM
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       31285623
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1038/s41592-019-0458-z
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR4">
+     <label>
+      4.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Sage
+        </surname>
+        <given-names>
+         D
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       DeconvolutionLab2: An open-source software for deconvolution microscopy
+      </article-title>
+      <source>
+       Methods
+      </source>
+      <year>
+       2017
+      </year>
+      <volume>
+       115
+      </volume>
+      <fpage>
+       28
+      </fpage>
+      <lpage>
+       41
+      </lpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BC2sXntlOitw%3D%3D
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       28057586
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1016/j.ymeth.2016.12.015
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR5">
+     <label>
+      5.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Zhao
+        </surname>
+        <given-names>
+         W
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Sparse deconvolution improves the resolution of live-cell super-resolution fluorescence microscopy
+      </article-title>
+      <source>
+       Nat. Biotechnol.
+      </source>
+      <year>
+       2021
+      </year>
+      <volume>
+       40
+      </volume>
+      <fpage>
+       606
+      </fpage>
+      <lpage>
+       617
+      </lpage>
+      <pub-id pub-id-type="pmid">
+       34782739
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1038/s41587-021-01092-2
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR6">
+     <label>
+      6.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Guo
+        </surname>
+        <given-names>
+         M
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Rapid image deconvolution and multiview fusion for optical microscopy
+      </article-title>
+      <source>
+       Nat. Biotechnol.
+      </source>
+      <year>
+       2020
+      </year>
+      <volume>
+       38
+      </volume>
+      <fpage>
+       1337
+      </fpage>
+      <lpage>
+       1346
+      </lpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BB3cXht1yjtbnM
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       32601431
+      </pub-id>
+      <pub-id pub-id-type="pmcid">
+       7642198
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1038/s41587-020-0560-x
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR7">
+     <label>
+      7.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Wang
+        </surname>
+        <given-names>
+         H
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Deep learning enables cross-modality super-resolution in fluorescence microscopy
+      </article-title>
+      <source>
+       Nat. Methods
+      </source>
+      <year>
+       2019
+      </year>
+      <volume>
+       16
+      </volume>
+      <fpage>
+       103
+      </fpage>
+      <lpage>
+       110
+      </lpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BC1cXisFCitLvM
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       30559434
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1038/s41592-018-0239-0
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR8">
+     <label>
+      8.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Qiao
+        </surname>
+        <given-names>
+         C
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Evaluation and development of deep neural networks for image super-resolution in optical microscopy
+      </article-title>
+      <source>
+       Nat. Methods
+      </source>
+      <year>
+       2021
+      </year>
+      <volume>
+       18
+      </volume>
+      <fpage>
+       194
+      </fpage>
+      <lpage>
+       202
+      </lpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BB3MXhvFeitL0%3D
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       33479522
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1038/s41592-020-01048-5
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR9">
+     <label>
+      9.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Qiao
+        </surname>
+        <given-names>
+         C
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Rationalized deep learning super-resolution microscopy for sustained live imaging of rapid subcellular processes
+      </article-title>
+      <source>
+       Nat. Biotechnol.
+      </source>
+      <year>
+       2023
+      </year>
+      <volume>
+       41
+      </volume>
+      <fpage>
+       367
+      </fpage>
+      <lpage>
+       377
+      </lpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BB38XisFynsrjO
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       36203012
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1038/s41587-022-01471-3
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR10">
+     <label>
+      10.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Yanny
+        </surname>
+        <given-names>
+         K
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Monakhova
+        </surname>
+        <given-names>
+         K
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Shuai
+        </surname>
+        <given-names>
+         RW
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Waller
+        </surname>
+        <given-names>
+         L
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Deep learning for fast spatially varying deconvolution
+      </article-title>
+      <source>
+       Optica
+      </source>
+      <year>
+       2022
+      </year>
+      <volume>
+       9
+      </volume>
+      <fpage>
+       96
+      </fpage>
+      <lpage>
+       99
+      </lpage>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2022Optic...9...96Y
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1364/OPTICA.442438
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR11">
+     <label>
+      11.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Zhao
+        </surname>
+        <given-names>
+         Y
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Isotropic super-resolution light-sheet microscopy of dynamic intracellular structures at subsecond timescales
+      </article-title>
+      <source>
+       Nat. Methods
+      </source>
+      <year>
+       2022
+      </year>
+      <volume>
+       19
+      </volume>
+      <fpage>
+       359
+      </fpage>
+      <lpage>
+       369
+      </lpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BB38XntVWltLw%3D
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       35277709
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1038/s41592-022-01395-5
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR12">
+     <label>
+      12.
+     </label>
+     <mixed-citation publication-type="other">
+      Li, Y. et al. Incorporating the image formation process into deep learning improves network performance.
+      <italic>
+       Nat. Methods
+      </italic>
+      <bold>
+       19
+      </bold>
+      , 1427–1437 (2022).
+     </mixed-citation>
+    </ref>
+    <ref id="CR13">
+     <label>
+      13.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Gustafsson
+        </surname>
+        <given-names>
+         N
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Fast live-cell conventional fluorophore nanoscopy with ImageJ through super-resolution radial fluctuations
+      </article-title>
+      <source>
+       Nat. Commun.
+      </source>
+      <year>
+       2016
+      </year>
+      <volume>
+       7
+      </volume>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2016NatCo...712471G
+      </pub-id>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BC28XhtlaksbbM
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       27514992
+      </pub-id>
+      <pub-id pub-id-type="pmcid">
+       4990649
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1038/ncomms12471
+      </pub-id>
+      <elocation-id>
+       12471
+      </elocation-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR14">
+     <label>
+      14.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Laine
+        </surname>
+        <given-names>
+         RF
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       High-fidelity 3D live-cell nanoscopy through data-driven enhanced super-resolution radial fluctuation
+      </article-title>
+      <source>
+       Nat. Methods
+      </source>
+      <year>
+       2023
+      </year>
+      <volume>
+       20
+      </volume>
+      <fpage>
+       1949
+      </fpage>
+      <lpage>
+       1956
+      </lpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BB3sXitlGhurvJ
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       37957430
+      </pub-id>
+      <pub-id pub-id-type="pmcid">
+       10703683
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1038/s41592-023-02057-w
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR15">
+     <label>
+      15.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Richardson
+        </surname>
+        <given-names>
+         WH
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Bayesian-based iterative method of image restoration
+      </article-title>
+      <source>
+       JoSA
+      </source>
+      <year>
+       1972
+      </year>
+      <volume>
+       62
+      </volume>
+      <fpage>
+       55
+      </fpage>
+      <lpage>
+       59
+      </lpage>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       1972JOSA...62...55R
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1364/JOSA.62.000055
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR16">
+     <label>
+      16.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Lucy
+        </surname>
+        <given-names>
+         LB
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       An iterative technique for the rectification of observed distributions
+      </article-title>
+      <source>
+       Astronomical J.
+      </source>
+      <year>
+       1974
+      </year>
+      <volume>
+       79
+      </volume>
+      <fpage>
+       745
+      </fpage>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       1974AJ.....79..745L
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1086/111605
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR17">
+     <label>
+      17.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Laine
+        </surname>
+        <given-names>
+         RF
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Arganda-Carreras
+        </surname>
+        <given-names>
+         I
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Henriques
+        </surname>
+        <given-names>
+         R
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Jacquemet
+        </surname>
+        <given-names>
+         G
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Avoiding a replication crisis in deep-learning-based bioimage analysis
+      </article-title>
+      <source>
+       Nat. Methods
+      </source>
+      <year>
+       2021
+      </year>
+      <volume>
+       18
+      </volume>
+      <fpage>
+       1136
+      </fpage>
+      <lpage>
+       1144
+      </lpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BB3MXitFOltLfF
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       34608322
+      </pub-id>
+      <pub-id pub-id-type="pmcid">
+       7611896
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1038/s41592-021-01284-3
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR18">
+     <label>
+      18.
+     </label>
+     <mixed-citation publication-type="other">
+      Shocher, A., Cohen, N. &amp; Irani, M. in Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition 3118-3126 (2018).
+     </mixed-citation>
+    </ref>
+    <ref id="CR19">
+     <label>
+      19.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Park
+        </surname>
+        <given-names>
+         H
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Deep learning enables reference-free isotropic super-resolution for volumetric fluorescence microscopy
+      </article-title>
+      <source>
+       Nat. Commun.
+      </source>
+      <year>
+       2022
+      </year>
+      <volume>
+       13
+      </volume>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2022NatCo..13.3297P
+      </pub-id>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BB38XhsF2msLjI
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       35676288
+      </pub-id>
+      <pub-id pub-id-type="pmcid">
+       9178036
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1038/s41467-022-30949-6
+      </pub-id>
+      <elocation-id>
+       3297
+      </elocation-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR20">
+     <label>
+      20.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Qiao
+        </surname>
+        <given-names>
+         C
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       3D structured illumination microscopy via channel attention generative adversarial network
+      </article-title>
+      <source>
+       IEEE J. Sel. Top. Quantum Electron.
+      </source>
+      <year>
+       2021
+      </year>
+      <volume>
+       27
+      </volume>
+      <fpage>
+       1
+      </fpage>
+      <lpage>
+       11
+      </lpage>
+      <pub-id pub-id-type="doi">
+       10.1109/JSTQE.2021.3060762
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR21">
+     <label>
+      21.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Fang
+        </surname>
+        <given-names>
+         L
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Deep learning-based point-scanning super-resolution imaging
+      </article-title>
+      <source>
+       Nat. Methods
+      </source>
+      <year>
+       2021
+      </year>
+      <volume>
+       18
+      </volume>
+      <fpage>
+       406
+      </fpage>
+      <lpage>
+       416
+      </lpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BB3MXmtVSrtrg%3D
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       33686300
+      </pub-id>
+      <pub-id pub-id-type="pmcid">
+       8035334
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1038/s41592-021-01080-z
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR22">
+     <label>
+      22.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Jin
+        </surname>
+        <given-names>
+         L
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Deep learning enables structured illumination microscopy with low light levels and enhanced speed
+      </article-title>
+      <source>
+       Nat. Commun.
+      </source>
+      <year>
+       2020
+      </year>
+      <volume>
+       11
+      </volume>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2020NatCo..11.1934J
+      </pub-id>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BB3cXnvVCis7Y%3D
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       32321916
+      </pub-id>
+      <pub-id pub-id-type="pmcid">
+       7176720
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1038/s41467-020-15784-x
+      </pub-id>
+      <elocation-id>
+       1934
+      </elocation-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR23">
+     <label>
+      23.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Ouyang
+        </surname>
+        <given-names>
+         W
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Aristov
+        </surname>
+        <given-names>
+         A
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Lelek
+        </surname>
+        <given-names>
+         M
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Hao
+        </surname>
+        <given-names>
+         X
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Zimmer
+        </surname>
+        <given-names>
+         C
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Deep learning massively accelerates super-resolution localization microscopy
+      </article-title>
+      <source>
+       Nat. Biotechnol.
+      </source>
+      <year>
+       2018
+      </year>
+      <volume>
+       36
+      </volume>
+      <fpage>
+       460
+      </fpage>
+      <lpage>
+       468
+      </lpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BC1cXns1Whs70%3D
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       29658943
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1038/nbt.4106
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR24">
+     <label>
+      24.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Schindelin
+        </surname>
+        <given-names>
+         J
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Fiji: an open-source platform for biological-image analysis
+      </article-title>
+      <source>
+       Nat. Methods
+      </source>
+      <year>
+       2012
+      </year>
+      <volume>
+       9
+      </volume>
+      <fpage>
+       676
+      </fpage>
+      <lpage>
+       682
+      </lpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BC38XhtVKnurbJ
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       22743772
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1038/nmeth.2019
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR25">
+     <label>
+      25.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         He
+        </surname>
+        <given-names>
+         Y
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Self-supervised deep-learning two-photon microscopy
+      </article-title>
+      <source>
+       Photonics Res.
+      </source>
+      <year>
+       2023
+      </year>
+      <volume>
+       11
+      </volume>
+      <fpage>
+       1
+      </fpage>
+      <lpage>
+       11
+      </lpage>
+      <pub-id pub-id-type="doi">
+       10.1364/PRJ.469231
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR26">
+     <label>
+      26.
+     </label>
+     <mixed-citation publication-type="other">
+      Pang, T., Zheng, H., Quan, Y. &amp; Ji, H. in Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition 2043-2052 (2021).
+     </mixed-citation>
+    </ref>
+    <ref id="CR27">
+     <label>
+      27.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Lefkimmiatis
+        </surname>
+        <given-names>
+         S
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Bourquard
+        </surname>
+        <given-names>
+         A
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Unser
+        </surname>
+        <given-names>
+         M
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Hessian-based norm regularization for image restoration with biomedical applications
+      </article-title>
+      <source>
+       IEEE Trans. Image Process.
+      </source>
+      <year>
+       2011
+      </year>
+      <volume>
+       21
+      </volume>
+      <fpage>
+       983
+      </fpage>
+      <lpage>
+       995
+      </lpage>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2012ITIP...21..983L
+      </pub-id>
+      <pub-id assigning-authority="American Mathematical Society" pub-id-type="other">
+       2951273
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       21937351
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1109/TIP.2011.2168232
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR28">
+     <label>
+      28.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Huang
+        </surname>
+        <given-names>
+         X
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Fast, long-term, super-resolution imaging with Hessian structured illumination microscopy
+      </article-title>
+      <source>
+       Nat. Biotechnol.
+      </source>
+      <year>
+       2018
+      </year>
+      <volume>
+       36
+      </volume>
+      <fpage>
+       451
+      </fpage>
+      <lpage>
+       459
+      </lpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BC1cXntlCkurY%3D
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       29644998
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1038/nbt.4115
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR29">
+     <label>
+      29.
+     </label>
+     <mixed-citation publication-type="other">
+      Ronneberger, O., Fischer, P. &amp; Brox, T. in International Conference on Medical image computing and computer-assisted intervention 234-241 (Springer, 2015).
+     </mixed-citation>
+    </ref>
+    <ref id="CR30">
+     <label>
+      30.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Guo
+        </surname>
+        <given-names>
+         Y
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Visualizing intracellular organelle and cytoskeletal interactions at nanoscale resolution on millisecond timescales
+      </article-title>
+      <source>
+       Cell
+      </source>
+      <year>
+       2018
+      </year>
+      <volume>
+       175
+      </volume>
+      <fpage>
+       1430
+      </fpage>
+      <lpage>
+       1442 e1417
+      </lpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BC1cXitVWju7jL
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       30454650
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1016/j.cell.2018.09.057
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR31">
+     <label>
+      31.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Parsons
+        </surname>
+        <given-names>
+         JT
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Horwitz
+        </surname>
+        <given-names>
+         AR
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Schwartz
+        </surname>
+        <given-names>
+         MA
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Cell adhesion: integrating cytoskeletal dynamics and cellular tension
+      </article-title>
+      <source>
+       Nat. Rev. Mol. cell Biol.
+      </source>
+      <year>
+       2010
+      </year>
+      <volume>
+       11
+      </volume>
+      <fpage>
+       633
+      </fpage>
+      <lpage>
+       643
+      </lpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BC3cXhtVGgtLfL
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       20729930
+      </pub-id>
+      <pub-id pub-id-type="pmcid">
+       2992881
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1038/nrm2957
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR32">
+     <label>
+      32.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Burnette
+        </surname>
+        <given-names>
+         DT
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       A role for actin arcs in the leading-edge advance of migrating cells
+      </article-title>
+      <source>
+       Nat. Cell Biol.
+      </source>
+      <year>
+       2011
+      </year>
+      <volume>
+       13
+      </volume>
+      <fpage>
+       371
+      </fpage>
+      <lpage>
+       382
+      </lpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BC3MXktFWjsbY%3D
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       21423177
+      </pub-id>
+      <pub-id pub-id-type="pmcid">
+       3646481
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1038/ncb2205
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR33">
+     <label>
+      33.
+     </label>
+     <mixed-citation publication-type="other">
+      Li, X. et al. Real-time denoising enables high-sensitivity fluorescence time-lapse imaging beyond the shot-noise limit.
+      <italic>
+       Nat. Biotechnol.
+      </italic>
+      <bold>
+       41
+      </bold>
+      , 282–292 (2022).
+     </mixed-citation>
+    </ref>
+    <ref id="CR34">
+     <label>
+      34.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Guo
+        </surname>
+        <given-names>
+         M
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Single-shot super-resolution total internal reflection fluorescence microscopy
+      </article-title>
+      <source>
+       Nat. Methods
+      </source>
+      <year>
+       2018
+      </year>
+      <volume>
+       15
+      </volume>
+      <fpage>
+       425
+      </fpage>
+      <lpage>
+       428
+      </lpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BC1cXhtFOmtLzF
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       29735999
+      </pub-id>
+      <pub-id pub-id-type="pmcid">
+       7470603
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1038/s41592-018-0004-4
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR35">
+     <label>
+      35.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Chen
+        </surname>
+        <given-names>
+         J
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Three-dimensional residual channel attention networks denoise and sharpen fluorescence microscopy image volumes
+      </article-title>
+      <source>
+       Nat. Methods
+      </source>
+      <year>
+       2021
+      </year>
+      <volume>
+       18
+      </volume>
+      <fpage>
+       678
+      </fpage>
+      <lpage>
+       687
+      </lpage>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2021shsl.book.....C
+      </pub-id>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BB3MXht1Sks77O
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       34059829
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1038/s41592-021-01155-x
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR36">
+     <label>
+      36.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Chen
+        </surname>
+        <given-names>
+         BC
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Lattice light-sheet microscopy: imaging molecules to embryos at high spatiotemporal resolution
+      </article-title>
+      <source>
+       Science
+      </source>
+      <year>
+       2014
+      </year>
+      <volume>
+       346
+      </volume>
+      <fpage>
+       1257998
+      </fpage>
+      <pub-id pub-id-type="pmid">
+       25342811
+      </pub-id>
+      <pub-id pub-id-type="pmcid">
+       4336192
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1126/science.1257998
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR37">
+     <label>
+      37.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Li
+        </surname>
+        <given-names>
+         X
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Spatial redundancy transformer for self-supervised fluorescence image denoising
+      </article-title>
+      <source>
+       Nat. Comput. Sci.
+      </source>
+      <year>
+       2023
+      </year>
+      <volume>
+       3
+      </volume>
+      <fpage>
+       1067
+      </fpage>
+      <lpage>
+       1080
+      </lpage>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2023usnb.book.....L
+      </pub-id>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BB3sXis1emu7%2FE
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       38177722
+      </pub-id>
+      <pub-id pub-id-type="pmcid">
+       10766531
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1038/s43588-023-00568-2
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR38">
+     <label>
+      38.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Zhang
+        </surname>
+        <given-names>
+         G
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Bio-friendly long-term subcellular dynamic recording by self-supervised image enhancement microscopy
+      </article-title>
+      <source>
+       Nat. Methods
+      </source>
+      <year>
+       2023
+      </year>
+      <volume>
+       20
+      </volume>
+      <fpage>
+       1957
+      </fpage>
+      <lpage>
+       1970
+      </lpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BB3sXitlGhurvI
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       37957429
+      </pub-id>
+      <pub-id pub-id-type="pmcid">
+       10703694
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1038/s41592-023-02058-9
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR39">
+     <label>
+      39.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Ning
+        </surname>
+        <given-names>
+         K
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Deep self-learning enables fast, high-fidelity isotropic resolution restoration for volumetric fluorescence microscopy
+      </article-title>
+      <source>
+       Light Sci. Appl.
+      </source>
+      <year>
+       2023
+      </year>
+      <volume>
+       12
+      </volume>
+      <fpage>
+       204
+      </fpage>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2023LSA....12..204N
+      </pub-id>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BB3sXhslygsr%2FO
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       37640721
+      </pub-id>
+      <pub-id pub-id-type="pmcid">
+       10462670
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1038/s41377-023-01230-2
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR40">
+     <label>
+      40.
+     </label>
+     <mixed-citation publication-type="other">
+      Li, X. et al. Three-dimensional structured illumination microscopy with enhanced axial resolution.
+      <italic>
+       Nat. Biotechnol.
+      </italic>
+      <bold>
+       41
+      </bold>
+      , 1307–1319 (2023).
+     </mixed-citation>
+    </ref>
+    <ref id="CR41">
+     <label>
+      41.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Carlton
+        </surname>
+        <given-names>
+         JG
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Jones
+        </surname>
+        <given-names>
+         H
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Eggert
+        </surname>
+        <given-names>
+         US
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Membrane and organelle dynamics during cell division
+      </article-title>
+      <source>
+       Nat. Rev. Mol. Cell Biol.
+      </source>
+      <year>
+       2020
+      </year>
+      <volume>
+       21
+      </volume>
+      <fpage>
+       151
+      </fpage>
+      <lpage>
+       166
+      </lpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BB3cXislCntLw%3D
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       32034394
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1038/s41580-019-0208-1
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR42">
+     <label>
+      42.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Moore
+        </surname>
+        <given-names>
+         AS
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Actin cables and comet tails organize mitochondrial networks in mitosis
+      </article-title>
+      <source>
+       Nature
+      </source>
+      <year>
+       2021
+      </year>
+      <volume>
+       591
+      </volume>
+      <fpage>
+       659
+      </fpage>
+      <lpage>
+       664
+      </lpage>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2021Natur.591..659M
+      </pub-id>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BB3MXls1Ojsbc%3D
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       33658713
+      </pub-id>
+      <pub-id pub-id-type="pmcid">
+       7990722
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1038/s41586-021-03309-5
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR43">
+     <label>
+      43.
+     </label>
+     <mixed-citation publication-type="other">
+      Zhang, L. &amp; Gao, X. Transfer adaptation learning: A decade survey.
+      <italic>
+       IEEE Trans. Neural Netw. Learn. Syst.
+      </italic>
+      <bold>
+       35
+      </bold>
+      , 23–44 (2024).
+     </mixed-citation>
+    </ref>
+    <ref id="CR44">
+     <label>
+      44.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Lecoq
+        </surname>
+        <given-names>
+         J
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Removing independent noise in systems neuroscience data using DeepInterpolation
+      </article-title>
+      <source>
+       Nat. Methods
+      </source>
+      <year>
+       2021
+      </year>
+      <volume>
+       18
+      </volume>
+      <fpage>
+       1401
+      </fpage>
+      <lpage>
+       1408
+      </lpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BB3MXit1Gns7%2FN
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       34650233
+      </pub-id>
+      <pub-id pub-id-type="pmcid">
+       8833814
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1038/s41592-021-01285-2
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR45">
+     <label>
+      45.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Zenker
+        </surname>
+        <given-names>
+         J
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       A microtubule-organizing center directing intracellular transport in the early mouse embryo
+      </article-title>
+      <source>
+       Science
+      </source>
+      <year>
+       2017
+      </year>
+      <volume>
+       357
+      </volume>
+      <fpage>
+       925
+      </fpage>
+      <lpage>
+       928
+      </lpage>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2017Sci...357..925Z
+      </pub-id>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BC2sXhtl2kur3F
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       28860385
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1126/science.aam9335
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR46">
+     <label>
+      46.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Zenker
+        </surname>
+        <given-names>
+         J
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Expanding actin rings zipper the mouse embryo for blastocyst formation
+      </article-title>
+      <source>
+       Cell
+      </source>
+      <year>
+       2018
+      </year>
+      <volume>
+       173
+      </volume>
+      <fpage>
+       776
+      </fpage>
+      <lpage>
+       791.e717
+      </lpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BC1cXlvVOhtbs%3D
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       29576449
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1016/j.cell.2018.02.035
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR47">
+     <label>
+      47.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Zhu
+        </surname>
+        <given-names>
+         M
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Developmental clock and mechanism of de novo polarization of the mouse embryo
+      </article-title>
+      <source>
+       Science
+      </source>
+      <year>
+       2020
+      </year>
+      <volume>
+       370
+      </volume>
+      <fpage>
+       eabd2703
+      </fpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BB3cXisFyrtLzM
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       33303584
+      </pub-id>
+      <pub-id pub-id-type="pmcid">
+       8210885
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1126/science.abd2703
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR48">
+     <label>
+      48.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Mohler
+        </surname>
+        <given-names>
+         WA
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Simske
+        </surname>
+        <given-names>
+         JS
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Williams-Masson
+        </surname>
+        <given-names>
+         EM
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Hardin
+        </surname>
+        <given-names>
+         JD
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         White
+        </surname>
+        <given-names>
+         JG
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Dynamics and ultrastructure of developmental cell fusions in the Caenorhabditis elegans hypodermis
+      </article-title>
+      <source>
+       Curr. Biol.
+      </source>
+      <year>
+       1998
+      </year>
+      <volume>
+       8
+      </volume>
+      <fpage>
+       1087
+      </fpage>
+      <lpage>
+       1091
+      </lpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DyaK1cXmsVGktrY%3D
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       9768364
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1016/S0960-9822(98)70447-6
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR49">
+     <label>
+      49.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Gustafsson
+        </surname>
+        <given-names>
+         MG
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Nonlinear structured-illumination microscopy: wide-field fluorescence imaging with theoretically unlimited resolution
+      </article-title>
+      <source>
+       Proc. Natl Acad. Sci.
+      </source>
+      <year>
+       2005
+      </year>
+      <volume>
+       102
+      </volume>
+      <fpage>
+       13081
+      </fpage>
+      <lpage>
+       13086
+      </lpage>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2005PNAS..10213081G
+      </pub-id>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BD2MXhtVaqu7bK
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       16141335
+      </pub-id>
+      <pub-id pub-id-type="pmcid">
+       1201569
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1073/pnas.0406877102
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR50">
+     <label>
+      50.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Li
+        </surname>
+        <given-names>
+         D
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Extended-resolution structured illumination imaging of endocytic and cytoskeletal dynamics
+      </article-title>
+      <source>
+       Science
+      </source>
+      <year>
+       2015
+      </year>
+      <volume>
+       349
+      </volume>
+      <fpage>
+       aab3500
+      </fpage>
+      <pub-id pub-id-type="pmid">
+       26315442
+      </pub-id>
+      <pub-id pub-id-type="pmcid">
+       4659358
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1126/science.aab3500
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR51">
+     <label>
+      51.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Chen
+        </surname>
+        <given-names>
+         X
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Superresolution structured illumination microscopy reconstruction algorithms: a review
+      </article-title>
+      <source>
+       Light Sci. Appl.
+      </source>
+      <year>
+       2023
+      </year>
+      <volume>
+       12
+      </volume>
+      <fpage>
+       172
+      </fpage>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2023LSA....12..172C
+      </pub-id>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BB3sXhsVKjtLrE
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       37433801
+      </pub-id>
+      <pub-id pub-id-type="pmcid">
+       10336069
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1038/s41377-023-01204-4
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR52">
+     <label>
+      52.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Shah
+        </surname>
+        <given-names>
+         ZH
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Deep-learning based denoising and reconstruction of super-resolution structured illumination microscopy images
+      </article-title>
+      <source>
+       Photonics Res.
+      </source>
+      <year>
+       2021
+      </year>
+      <volume>
+       9
+      </volume>
+      <fpage>
+       B168
+      </fpage>
+      <lpage>
+       B181
+      </lpage>
+      <pub-id pub-id-type="doi">
+       10.1364/PRJ.416437
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR53">
+     <label>
+      53.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Weigert
+        </surname>
+        <given-names>
+         M
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Content-aware image restoration: pushing the limits of fluorescence microscopy
+      </article-title>
+      <source>
+       Nat. Methods
+      </source>
+      <year>
+       2018
+      </year>
+      <volume>
+       15
+      </volume>
+      <fpage>
+       1090
+      </fpage>
+      <lpage>
+       1097
+      </lpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BC1cXitlWnurfP
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       30478326
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1038/s41592-018-0216-7
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR54">
+     <label>
+      54.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Culley
+        </surname>
+        <given-names>
+         S
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Quantitative mapping and minimization of super-resolution optical imaging artifacts
+      </article-title>
+      <source>
+       Nat. Methods
+      </source>
+      <year>
+       2018
+      </year>
+      <volume>
+       15
+      </volume>
+      <fpage>
+       263
+      </fpage>
+      <lpage>
+       266
+      </lpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BC1cXjtlyhsbY%3D
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       29457791
+      </pub-id>
+      <pub-id pub-id-type="pmcid">
+       5884429
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1038/nmeth.4605
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR55">
+     <label>
+      55.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Betzig
+        </surname>
+        <given-names>
+         E
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Imaging intracellular fluorescent proteins at nanometer resolution
+      </article-title>
+      <source>
+       Science
+      </source>
+      <year>
+       2006
+      </year>
+      <volume>
+       313
+      </volume>
+      <fpage>
+       1642
+      </fpage>
+      <lpage>
+       1645
+      </lpage>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2006Sci...313.1642B
+      </pub-id>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BD28XpsVOktL0%3D
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       16902090
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1126/science.1127344
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR56">
+     <label>
+      56.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Klar
+        </surname>
+        <given-names>
+         TA
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Jakobs
+        </surname>
+        <given-names>
+         S
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Dyba
+        </surname>
+        <given-names>
+         M
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Egner
+        </surname>
+        <given-names>
+         A
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Hell
+        </surname>
+        <given-names>
+         SW
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Fluorescence microscopy with diffraction resolution barrier broken by stimulated emission
+      </article-title>
+      <source>
+       Proc. Natl. Acad. Sci.
+      </source>
+      <year>
+       2000
+      </year>
+      <volume>
+       97
+      </volume>
+      <fpage>
+       8206
+      </fpage>
+      <lpage>
+       8210
+      </lpage>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2000PNAS...97.8206K
+      </pub-id>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BD3cXlt1Ggtro%3D
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       10899992
+      </pub-id>
+      <pub-id pub-id-type="pmcid">
+       26924
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1073/pnas.97.15.8206
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR57">
+     <label>
+      57.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Muller
+        </surname>
+        <given-names>
+         CB
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Enderlein
+        </surname>
+        <given-names>
+         J
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Image scanning microscopy
+      </article-title>
+      <source>
+       Phys. Rev. Lett.
+      </source>
+      <year>
+       2010
+      </year>
+      <volume>
+       104
+      </volume>
+      <fpage>
+       198101
+      </fpage>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2010PhRvL.104s8101M
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       20867000
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1103/PhysRevLett.104.198101
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR58">
+     <label>
+      58.
+     </label>
+     <mixed-citation publication-type="other">
+      Wang, J. et al. Generalizing to unseen domains: A survey on domain generalization.
+      <italic>
+       IEEE Trans. Knowl. Data Eng.
+      </italic>
+      <bold>
+       35
+      </bold>
+      , 8052–8072 (2023).
+     </mixed-citation>
+    </ref>
+    <ref id="CR59">
+     <label>
+      59.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Wu
+        </surname>
+        <given-names>
+         J
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Iterative tomography with digital adaptive optics permits hour-long intravital observation of 3D subcellular dynamics at millisecond scale
+      </article-title>
+      <source>
+       Cell
+      </source>
+      <year>
+       2021
+      </year>
+      <volume>
+       184
+      </volume>
+      <fpage>
+       3318
+      </fpage>
+      <lpage>
+       3332
+      </lpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BB3MXhtF2ntLfJ
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       34038702
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1016/j.cell.2021.04.029
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR60">
+     <label>
+      60.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Castello
+        </surname>
+        <given-names>
+         M
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       A robust and versatile platform for image scanning microscopy enabling super-resolution FLIM
+      </article-title>
+      <source>
+       Nat. methods
+      </source>
+      <year>
+       2019
+      </year>
+      <volume>
+       16
+      </volume>
+      <fpage>
+       175
+      </fpage>
+      <lpage>
+       178
+      </lpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BC1MXlvFSgu70%3D
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       30643212
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1038/s41592-018-0291-9
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR61">
+     <label>
+      61.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Liu
+        </surname>
+        <given-names>
+         S
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       sCMOS noise-correction algorithm for microscopy images
+      </article-title>
+      <source>
+       Nat. Methods
+      </source>
+      <year>
+       2017
+      </year>
+      <volume>
+       14
+      </volume>
+      <fpage>
+       760
+      </fpage>
+      <lpage>
+       761
+      </lpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BC2sXht1eqtbjO
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       28753600
+      </pub-id>
+      <pub-id pub-id-type="pmcid">
+       6016843
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1038/nmeth.4379
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR62">
+     <label>
+      62.
+     </label>
+     <mixed-citation publication-type="other">
+      Lehtinen, J. et al. in Proceedings of the International Conference on Machine Learning 2965–2974 (2018).
+     </mixed-citation>
+    </ref>
+    <ref id="CR63">
+     <label>
+      63.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Mandracchia
+        </surname>
+        <given-names>
+         B
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Fast and accurate sCMOS noise correction for fluorescence microscopy
+      </article-title>
+      <source>
+       Nat. Commun.
+      </source>
+      <year>
+       2020
+      </year>
+      <volume>
+       11
+      </volume>
+      <fpage>
+       1
+      </fpage>
+      <lpage>
+       12
+      </lpage>
+      <pub-id pub-id-type="doi">
+       10.1038/s41467-019-13841-8
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR64">
+     <label>
+      64.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Diekmann
+        </surname>
+        <given-names>
+         R
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Photon-free (s)CMOS camera characterization for artifact reduction in high- and super-resolution microscopy
+      </article-title>
+      <source>
+       Nat. Commun.
+      </source>
+      <year>
+       2022
+      </year>
+      <volume>
+       13
+      </volume>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2022NatCo..13.3362D
+      </pub-id>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BB38XhsF2msLnL
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       35690614
+      </pub-id>
+      <pub-id pub-id-type="pmcid">
+       9188588
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1038/s41467-022-30907-2
+      </pub-id>
+      <elocation-id>
+       3362
+      </elocation-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR65">
+     <label>
+      65.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Grimm
+        </surname>
+        <given-names>
+         JB
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       A general method to improve fluorophores for live-cell and single-molecule microscopy
+      </article-title>
+      <source>
+       Nat. methods
+      </source>
+      <year>
+       2015
+      </year>
+      <volume>
+       12
+      </volume>
+      <fpage>
+       244
+      </fpage>
+      <lpage>
+       250
+      </lpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BC2MXhtFKjsb8%3D
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       25599551
+      </pub-id>
+      <pub-id pub-id-type="pmcid">
+       4344395
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1038/nmeth.3256
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR66">
+     <label>
+      66.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Riedl
+        </surname>
+        <given-names>
+         J
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Lifeact: a versatile marker to visualize F-actin
+      </article-title>
+      <source>
+       Nat. Methods
+      </source>
+      <year>
+       2008
+      </year>
+      <volume>
+       5
+      </volume>
+      <fpage>
+       605
+      </fpage>
+      <lpage>
+       607
+      </lpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BD1cXnslyqsr0%3D
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       18536722
+      </pub-id>
+      <pub-id pub-id-type="pmcid">
+       2814344
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1038/nmeth.1220
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR67">
+     <label>
+      67.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         He
+        </surname>
+        <given-names>
+         K
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Dynamics of phosphoinositide conversion in clathrin-mediated endocytic traffic
+      </article-title>
+      <source>
+       Nature
+      </source>
+      <year>
+       2017
+      </year>
+      <volume>
+       552
+      </volume>
+      <fpage>
+       410
+      </fpage>
+      <lpage>
+       414
+      </lpage>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2017Natur.552..410H
+      </pub-id>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BC2sXhvFOht7rL
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       29236694
+      </pub-id>
+      <pub-id pub-id-type="pmcid">
+       6263037
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1038/nature25146
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR68">
+     <label>
+      68.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Ran
+        </surname>
+        <given-names>
+         FA
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Genome engineering using the CRISPR-Cas9 system
+      </article-title>
+      <source>
+       Nat. Protoc.
+      </source>
+      <year>
+       2013
+      </year>
+      <volume>
+       8
+      </volume>
+      <fpage>
+       2281
+      </fpage>
+      <lpage>
+       2308
+      </lpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BC2cXjvFajsA%3D%3D
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       24157548
+      </pub-id>
+      <pub-id pub-id-type="pmcid">
+       3969860
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1038/nprot.2013.143
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR69">
+     <label>
+      69.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Sanjana
+        </surname>
+        <given-names>
+         NE
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       A transcription activator-like effector toolbox for genome engineering
+      </article-title>
+      <source>
+       Nat. Protoc.
+      </source>
+      <year>
+       2012
+      </year>
+      <volume>
+       7
+      </volume>
+      <fpage>
+       171
+      </fpage>
+      <lpage>
+       192
+      </lpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BC38Xht1KgtLg%3D
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       22222791
+      </pub-id>
+      <pub-id pub-id-type="pmcid">
+       3684555
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1038/nprot.2011.431
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR70">
+     <label>
+      70.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Brenner
+        </surname>
+        <given-names>
+         S
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       The genetics of Caenorhabditis elegans
+      </article-title>
+      <source>
+       Genetics
+      </source>
+      <year>
+       1974
+      </year>
+      <volume>
+       77
+      </volume>
+      <fpage>
+       71
+      </fpage>
+      <lpage>
+       94
+      </lpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:STN:280:DyaE2c3ntFWlsw%3D%3D
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       4366476
+      </pub-id>
+      <pub-id pub-id-type="pmcid">
+       1213120
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1093/genetics/77.1.71
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR71">
+     <label>
+      71.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Köppen
+        </surname>
+        <given-names>
+         M
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Cooperative regulation of AJM-1 controls junctional integrity in Caenorhabditis elegans epithelia
+      </article-title>
+      <source>
+       Nat. cell Biol.
+      </source>
+      <year>
+       2001
+      </year>
+      <volume>
+       3
+      </volume>
+      <fpage>
+       983
+      </fpage>
+      <lpage>
+       991
+      </lpage>
+      <pub-id pub-id-type="pmid">
+       11715019
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1038/ncb1101-983
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR72">
+     <label>
+      72.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Li
+        </surname>
+        <given-names>
+         Y
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       The lysosomal membrane protein SCAV-3 maintains lysosome integrity and adult longevity
+      </article-title>
+      <source>
+       J. Cell Biol.
+      </source>
+      <year>
+       2016
+      </year>
+      <volume>
+       215
+      </volume>
+      <fpage>
+       167
+      </fpage>
+      <lpage>
+       185
+      </lpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BC28XitFeltLbF
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       27810910
+      </pub-id>
+      <pub-id pub-id-type="pmcid">
+       5084646
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1083/jcb.201602090
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR73">
+     <label>
+      73.
+     </label>
+     <mixed-citation publication-type="other">
+      Qiao, C. et al. Zero-shot learning enables instant denoising and super-resolution in optical fluorescence microscopy. ZS-DeconvNet,
+      <ext-link ext-link-type="doi" xlink:href="10.5281/zenodo.10991031">
+       https://doi.org/10.5281/zenodo.10991031
+      </ext-link>
+      (2024).
+     </mixed-citation>
+    </ref>
+    <ref id="CR74">
+     <label>
+      74.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Nieuwenhuizen
+        </surname>
+        <given-names>
+         RP
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Measuring image resolution in optical nanoscopy
+      </article-title>
+      <source>
+       Nat. Methods
+      </source>
+      <year>
+       2013
+      </year>
+      <volume>
+       10
+      </volume>
+      <fpage>
+       557
+      </fpage>
+      <lpage>
+       562
+      </lpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BC3sXms1Wms7o%3D
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       23624665
+      </pub-id>
+      <pub-id pub-id-type="pmcid">
+       4149789
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1038/nmeth.2448
+      </pub-id>
+     </mixed-citation>
+    </ref>
+   </ref-list>
+  </ref-list>
+  <app-group>
+   <app id="App1" specific-use="web-only">
+    <sec id="Sec29">
+     <title>
+      Дополнительная информация
+     </title>
+     <p id="Par57">
+      <supplementary-material content-type="local-data" id="MOESM1" xlink:title="Supplementary information">
+       <media mime-subtype="pdf" mimetype="application" xlink:href="MediaObjects/41467_2024_48575_MOESM1_ESM.pdf">
+        <caption xml:lang="en">
+         <p>
+          Supplementary Information
+         </p>
+        </caption>
+       </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="MOESM2" xlink:title="Supplementary information">
+       <media mime-subtype="pdf" mimetype="application" xlink:href="MediaObjects/41467_2024_48575_MOESM2_ESM.pdf">
+        <caption xml:lang="en">
+         <p>
+          Peer Review File
+         </p>
+        </caption>
+       </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="MOESM3" xlink:title="Supplementary information">
+       <media mime-subtype="pdf" mimetype="application" xlink:href="MediaObjects/41467_2024_48575_MOESM3_ESM.pdf">
+        <caption xml:lang="en">
+         <p>
+          Description of Additional Supplementary Files
+         </p>
+        </caption>
+       </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="MOESM4" xlink:title="Supplementary information">
+       <media mime-subtype="mp4" mimetype="video" xlink:href="MediaObjects/41467_2024_48575_MOESM4_ESM.mp4">
+        <caption xml:lang="en">
+         <p>
+          Supplementary Movie 1
+         </p>
+        </caption>
+       </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="MOESM5" xlink:title="Supplementary information">
+       <media mime-subtype="mp4" mimetype="video" xlink:href="MediaObjects/41467_2024_48575_MOESM5_ESM.mp4">
+        <caption xml:lang="en">
+         <p>
+          Supplementary Movie 2
+         </p>
+        </caption>
+       </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="MOESM6" xlink:title="Supplementary information">
+       <media mime-subtype="mp4" mimetype="video" xlink:href="MediaObjects/41467_2024_48575_MOESM6_ESM.mp4">
+        <caption xml:lang="en">
+         <p>
+          Supplementary Movie 3
+         </p>
+        </caption>
+       </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="MOESM7" xlink:title="Supplementary information">
+       <media mime-subtype="mp4" mimetype="video" xlink:href="MediaObjects/41467_2024_48575_MOESM7_ESM.mp4">
+        <caption xml:lang="en">
+         <p>
+          Supplementary Movie 4
+         </p>
+        </caption>
+       </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="MOESM8" xlink:title="Supplementary information">
+       <media mime-subtype="mp4" mimetype="video" xlink:href="MediaObjects/41467_2024_48575_MOESM8_ESM.mp4">
+        <caption xml:lang="en">
+         <p>
+          Supplementary Movie 5
+         </p>
+        </caption>
+       </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="MOESM9" xlink:title="Supplementary information">
+       <media mime-subtype="mp4" mimetype="video" xlink:href="MediaObjects/41467_2024_48575_MOESM9_ESM.mp4">
+        <caption xml:lang="en">
+         <p>
+          Supplementary Movie 6
+         </p>
+        </caption>
+       </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="MOESM10" xlink:title="Supplementary information">
+       <media mime-subtype="mp4" mimetype="video" xlink:href="MediaObjects/41467_2024_48575_MOESM10_ESM.mp4">
+        <caption xml:lang="en">
+         <p>
+          Supplementary Movie 7
+         </p>
+        </caption>
+       </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="MOESM11" xlink:title="Supplementary information">
+       <media mime-subtype="mp4" mimetype="video" xlink:href="MediaObjects/41467_2024_48575_MOESM11_ESM.mp4">
+        <caption xml:lang="en">
+         <p>
+          Supplementary Movie 8
+         </p>
+        </caption>
+       </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="MOESM12" xlink:title="Supplementary information">
+       <media mime-subtype="mp4" mimetype="video" xlink:href="MediaObjects/41467_2024_48575_MOESM12_ESM.mp4">
+        <caption xml:lang="en">
+         <p>
+          Supplementary Movie 9
+         </p>
+        </caption>
+       </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="MOESM13" xlink:title="Supplementary information">
+       <media mime-subtype="pdf" mimetype="application" xlink:href="MediaObjects/41467_2024_48575_MOESM13_ESM.pdf">
+        <caption xml:lang="en">
+         <p>
+          Reporting Summary
+         </p>
+        </caption>
+       </media>
+      </supplementary-material>
+     </p>
+    </sec>
+    <sec id="Sec30">
+     <title>
+      Исходные данные
+     </title>
+     <p id="Par58">
+      <supplementary-material content-type="local-data" id="MOESM14" xlink:title="Source data">
+       <media mime-subtype="vnd.ms-excel" mimetype="application" xlink:href="MediaObjects/41467_2024_48575_MOESM14_ESM.xlsx">
+        <caption xml:lang="en">
+         <p>
+          Source Data
+         </p>
+        </caption>
+       </media>
+      </supplementary-material>
+     </p>
+    </sec>
+   </app>
+  </app-group>
+  <notes notes-type="ESMHint">
+   <title>
+    Дополнительная информация
+   </title>
+   <p>
+    The online version contains supplementary material available at
+    <ext-link ext-link-type="doi" xlink:href="10.1038/s41467-024-48575-9">
+     https://doi.org/10.1038/s41467-024-48575-9
+    </ext-link>
+    .
+   </p>
+  </notes>
+  <notes notes-type="Misc">
+   <p>
+    <bold>
+     Publisher’s note
+    </bold>
+    Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.
+   </p>
+  </notes>
+ </back>
+</article>

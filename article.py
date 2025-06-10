@@ -22,7 +22,7 @@ def get_nature_article(doi):
 
     data = BeautifulSoup(r.content, features="xml")
     # Enter correct XSLT style information.
-    data.contents[0].replace_with(BeautifulSoup('<?xml-stylesheet type="text/xsl" href="/style/jats-html.xsl"?>', features="xml"))
+    data.contents[0].replace_with(BeautifulSoup('<?xml-stylesheet type="text/xsl" href="/ProjectMundo/style/jats-html.xsl"?>', features="xml"))
     # Remove the API response portion of the XML.
     data.response.replace_with(data.records.article)
 
@@ -37,7 +37,7 @@ def get_aps_article(doi):
     r = requests.get(url=URL, headers=HEADERS)
 
     data = BeautifulSoup(r.content, features="xml")
-    data.insert(0, BeautifulSoup('<?xml-stylesheet type="text/xsl" href="/style/jats-html.xsl"?>', features='xml'))
+    data.insert(0, BeautifulSoup('<?xml-stylesheet type="text/xsl" href="/ProjectMundo/style/jats-html.xsl"?>', features='xml'))
     return data
 
 def get_copy(xml):
@@ -82,7 +82,10 @@ def save_fulltext(xml, fn):
 
     # ADD BRACKETS TO TABLE/FIG REFERENCES FOR READABILITY
     for ref in [_ for _ in this.body.find_all('xref') if _.has_attr('ref-type') and _['ref-type'] != 'bibr']:
-        ref.string = f" [{ref.string.strip()}] "
+        if ref.string:
+            ref.string = f" [{ref.string.strip()}] "
+        else: # failed ref
+            ref.string = f" [] "
 
     # REMOVE TABLES AND FIGURES BUT SAVE FOR PRINTING AT END
     figs, tabs = [], []
@@ -106,14 +109,23 @@ def save_fulltext(xml, fn):
 
     # ADD TABLES
     for t in tabs:
-        fulltext += stripped(t.find("label").find_all(text=True)) + ": " + stripped(t.find("caption").find_all(text=True)) + "\n"
-        header = [_ for _ in t.find("thead").find_all("th")]
-        if header:
-            fulltext += stripped(["".join(h.find_all(text=True)) + "| " for h in header[:-1]] + header[-1].find_all(text=True)) + "\n"
-        body_rows = [_ for _ in t.find("tbody").find_all("tr")]
-        for r in body_rows:
-            cols = r.find_all("td")
-            fulltext += stripped(["".join(c.find_all(text=True)) + "| " for c in cols[:-1]] + cols[-1].find_all(text=True)) + "\n"
+        if t.find("label") and t.find("caption"): # (if table caption came out alright)
+            fulltext += stripped(t.find("label").find_all(text=True)) + ": " + stripped(t.find("caption").find_all(text=True)) + "\n"
+        else:
+            print("Warning: no table caption.")
+        if t.find("thead"):  # (if table header came out alright)
+            header = [_ for _ in t.find("thead").find_all("th")]
+            if header:
+                fulltext += stripped(["".join(h.find_all(text=True)) + "| " for h in header[:-1]] + header[-1].find_all(text=True)) + "\n"
+        else:
+            print("Warning: no table header.")
+        if t.find("tbody"): # (if table body came out alright)
+            body_rows = [_ for _ in t.find("tbody").find_all("tr")]
+            for r in body_rows:
+                cols = r.find_all("td")
+                fulltext += stripped(["".join(c.find_all(text=True)) + "| " for c in cols[:-1]] + cols[-1].find_all(text=True)) + "\n"
+        else:
+            print("Warning: no table body.")
         if t.find("table-wrap-foot"):
             fulltext += stripped(t.find("table-wrap-foot").find_all(text=True)) + "\n\n"
         else:
@@ -121,18 +133,21 @@ def save_fulltext(xml, fn):
 
     # ADD FIGURES
     for f in figs:
-        fulltext += stripped(f.find("label").find_all(text=True)) + ": "
-        cap = f.find("caption").find("p")
-        if cap:
-            captext = ""
-            for child in cap.children:
-                if child.name == None:
-                    captext += child.string
-                elif child.name == "bold":
-                    captext += child.string.strip() + "  "
-                else:
-                    captext += "".join(child.find_all(text=True)) + " "
-        fulltext += stripped(captext) + "\n\n"
+        if f.find("label") and f.find("caption"): # (if figure came out alright)
+            fulltext += stripped(f.find("label").find_all(text=True)) + ": "
+            cap = f.find("caption").find("p")
+            if cap:
+                captext = ""
+                for child in cap.children:
+                    if child.name == None:
+                        captext += child.string
+                    elif child.name == "bold":
+                        captext += child.string.strip() + "  "
+                    else:
+                        captext += "".join(child.find_all(text=True)) + " "
+                fulltext += stripped(captext) + "\n\n"
+        else:
+            print("Warning: figure is malformed.")
     
     fulltext.replace(" .", ".").replace(" ,", ",")
     # SAVE FULLTEXT
@@ -249,7 +264,10 @@ def append_to_pars(xml, locs, toadd):
         for p, num_toadd in zip(locs.keys(), locs.values()):
             par = xml.find('p', {'id': p})
             for _ in range(num_toadd):
-                par.append(toadd[i])
+                if toadd[i]:
+                    par.append(toadd[i])
+                else:
+                    print("Warning: None element cannot be added.")
                 i += 1
 
 def translate_single(xml, tl, language, inplace=True):
@@ -276,13 +294,27 @@ def translate_list(xml, tl, language, inplace=True):
             ids.append(f"(no id) {x.name}")
     print(ids)
 
-    result = tl.translate_xml(xml, language)
-    new_xml = [BeautifulSoup(res, features="xml") for res in result]
+    try:
+        result = tl.translate_xml(xml, language)
+        new_xml = [BeautifulSoup(res, features="xml") for res in result]
+    except Exception as e: # if the context is too long return empty list
+        print(e)
+        new_xml = []
+
+    if len(new_xml) != len(xml):
+        print(f"Warning: translated list length ({len(new_xml)}) != original list length ({len(xml)})")
+        if len(new_xml) > len(xml):
+            new_xml = new_xml[:len(xml)]
+        else: # new_xml has fewer than xml
+            new_xml = new_xml + xml[len(new_xml):]
     if inplace:
-        for i in range(len(new_xml)):
-            guts = new_xml[i].find(xml[i].name).contents
+        for i in range(len(xml)): # if new_xml is longer for some reason, this won't break (prev. used len(new_xml))
+            element = new_xml[i].find(xml[i].name)
             xml[i].clear()
-            xml[i].extend(guts)
+            if element: # should not put anything if the xml failed
+                xml[i].extend(element.contents)
+            else:
+                print("Warning: XML wasn't valid.")
     else:
         return [new_x.find(old_x.name) for new_x, old_x in zip(new_xml, xml)]
 
@@ -312,7 +344,7 @@ def chunkify(xml):
     back = xml.back
 
     # Restructure the sentences. Save the figures since we take them out here.
-    par_num_lim, fig_num_lim, tab_num_lim, titles_num_lim = 1, 2, 2, 20
+    par_num_lim, fig_num_lim, tab_num_lim, titles_num_lim = 5, 2, 2, 20
 
     figures = [get_copy(fig) for fig in body.find_all('fig')]
     tables = [get_copy(tab) for tab in body.find_all('table-wrap')]
@@ -433,7 +465,7 @@ def filename_from_DOI(xml=None, doi=None, language=None):
     return str_strip(filename)
 
 def change_graphic_dir(xml):
-    dir = f"/w/ProjectMundo-Anon-106A/MediaObjects/{filename_from_DOI(xml=xml)}"
+    dir = f"/ProjectMundo/MediaObjects/{filename_from_DOI(xml=xml)}"
 
     def _change_graphic_dir(linkstr):
         graphics = [graphic for graphic in xml.find_all('graphic') if graphic.has_attr(linkstr) and 'MediaObjects' in graphic[linkstr]]

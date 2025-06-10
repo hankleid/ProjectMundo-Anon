@@ -1,0 +1,552 @@
+{
+  "1": {
+    "question": "Quel est l'avantage principal de ZS-DeconvNet par rapport aux modèles conventionnels d'apprentissage profond supervisé ?",
+    "options": {
+      "A": "Il nécessite des données de vérité terrain de haute qualité.",
+      "B": "Il fonctionne de manière supervisée.",
+      "C": "Il améliore instantanément la résolution d'image en utilisant l'apprentissage non supervisé.",
+      "D": "Il repose sur de grands ensembles de données pour l'entraînement.",
+      "E": "Il utilise des modèles pré-entraînés pour l'inférence.",
+      "F": "Je ne sais pas."
+    }
+  },
+  "2": {
+    "question": "Quelles modalités de microscopie sont compatibles avec ZS-DeconvNet comme démontré dans l'article ?",
+    "options": {
+      "A": "Seulement la microscopie de fluorescence par réflexion totale interne et la microscopie à champ large.",
+      "B": "Seulement la microscopie confocale.",
+      "C": "Seulement la microscopie à deux photons.",
+      "D": "Plusieurs modalités, y compris la microscopie à feuille de lumière en treillis et la microscopie d'illumination structurée multimodale.",
+      "E": "Seulement les modalités basées sur le balayage.",
+      "F": "Je ne sais pas."
+    }
+  },
+  "3": {
+    "question": "Comment ZS-DeconvNet gère-t-il les conditions de faible rapport signal-bruit (SNR) pendant l'entraînement ?",
+    "options": {
+      "A": "Il amplifie le bruit pour améliorer la clarté.",
+      "B": "Il applique un schéma de re-corruption pour générer des signaux de bruit indépendants.",
+      "C": "Il remplace les sections bruyantes par des données préenregistrées.",
+      "D": "Il ne fonctionne pas bien dans des conditions de faible SNR.",
+      "E": "Il ignore complètement le bruit pendant l'entraînement.",
+      "F": "Je ne sais pas."
+    }
+  },
+  "4": {
+    "question": "Quel est l'effet de ZS-DeconvNet sur la limite de diffraction des images de microscope ?",
+    "options": {
+      "A": "Il est incapable de dépasser la limite de diffraction.",
+      "B": "Il détériore la clarté de l'image par rapport à la limite de diffraction.",
+      "C": "Il améliore la résolution de plus de 1,5 fois par rapport à la limite de diffraction.",
+      "D": "Il atteint exactement la limite de diffraction.",
+      "E": "Il améliore seulement marginalement la limite de diffraction de 0,5 fois.",
+      "F": "Je ne sais pas."
+    }
+  },
+  "5": {
+    "question": "Dans l'article, quelle caractéristique clé ZS-DeconvNet offre-t-il pour la microscopie de fluorescence ?",
+    "options": {
+      "A": "Nécessitant un réglage manuel extensif des paramètres.",
+      "B": "Exigeant des niveaux de fluorescence élevés pour l'imagerie.",
+      "C": "Permettant des niveaux de fluorescence plus bas que les méthodes traditionnelles.",
+      "D": "Réduisant la qualité de l'image.",
+      "E": "Rendant le processus exclusivement basé sur l'ordinateur.",
+      "F": "Je ne sais pas."
+    }
+  },
+  "6": {
+    "question": "Quel type d'architecture de modèle ZS-DeconvNet utilise-t-il comme cadre de base ?",
+    "options": {
+      "A": "Perceptron à une seule couche.",
+      "B": "Réseau de couches convolutionnelles.",
+      "C": "Architecture U-Net à deux étapes.",
+      "D": "Réseau de neurones récurrents.",
+      "E": "Aucun des éléments ci-dessus.",
+      "F": "Je ne sais pas."
+    }
+  },
+  "7": {
+    "question": "Lequel des éléments suivants n'est PAS un composant de la fonction de perte de ZS-DeconvNet ?",
+    "options": {
+      "A": "Terme de régularisation de Hessian.",
+      "B": "Régularisation de correction des écarts.",
+      "C": "Classificateur de réseau de neurones convolutionnels.",
+      "D": "Terme de débruitage.",
+      "E": "Terme de déconvolution.",
+      "F": "Je ne sais pas."
+    }
+  },
+  "8": {
+    "question": "Comment ZS-DeconvNet améliore-t-il les données de microscopie confocale selon le texte ?",
+    "options": {
+      "A": "En diminuant le rapport signal-bruit.",
+      "B": "En augmentant les exigences en matière de budget de photons.",
+      "C": "Par des modifications matérielles étendues.",
+      "D": "En améliorant le SNR, le contraste et la résolution.",
+      "E": "En réduisant considérablement la fidélité de l'image.",
+      "F": "Je ne sais pas."
+    }
+  },
+  "9": {
+    "question": "Quel défi dans la recherche biologique ZS-DeconvNet aborde-t-il efficacement ?",
+    "options": {
+      "A": "Difficulté d'accès aux échantillons biologiques.",
+      "B": "Faible résolution temporelle de l'imagerie biologique.",
+      "C": "Exigence élevée d'exposition à la lumière pour l'imagerie.",
+      "D": "L'impraticabilité d'acquérir des données d'entraînement de vérité terrain.",
+      "E": "Le besoin d'intervention manuelle pendant le traitement de l'image.",
+      "F": "Je ne sais pas."
+    }
+  },
+  "10": {
+    "question": "Lors des tests, qu'est-ce que ZS-DeconvNet a surpassé de manière significative selon les données PSNR ?",
+    "options": {
+      "A": "Traitement de données annotées manuellement traditionnel.",
+      "B": "Modèles de bruit de devinette aléatoire.",
+      "C": "Approches conventionnelles basées sur des modèles analytiques.",
+      "D": "Utilisation de filtres de moyennage simples.",
+      "E": "Rien, il n'a surpassé aucune autre méthode.",
+      "F": "Je ne sais pas."
+    }
+  },
+  "11": {
+    "question": "Quel type de système de microscopie a été utilisé pour tester la performance de ZS-DeconvNet 3D ?",
+    "options": {
+      "A": "Système confocal commercial Nikon uniquement.",
+      "B": "Un système de fluorescence fait maison non documenté.",
+      "C": "Microscopie d'illumination structurée à feuille de lumière en treillis construite à domicile (LLS-SIM).",
+      "D": "Microscopie laser à haute intensité.",
+      "E": "Microscopie à contraste de phase simple.",
+      "F": "Je ne sais pas."
+    }
+  },
+  "12": {
+    "question": "Comment ZS-DeconvNet a-t-il contribué à l'étude de l'adhésion et de la migration cellulaires ?",
+    "options": {
+      "A": "En supprimant complètement les signaux de fluorescence.",
+      "B": "En échouant à améliorer la résolution de l'image.",
+      "C": "En améliorant significativement à la fois le SNR et la résolution des enregistrements en time-lapse.",
+      "D": "En augmentant le besoin de transcription manuelle de la dynamique cellulaire.",
+      "E": "En nécessitant l'acquisition de données supplémentaires sous forme d'ensembles de données détaillés.",
+      "F": "Je ne sais pas."
+    }
+  },
+  "13": {
+    "question": "Quelle méthode ZS-DeconvNet utilise-t-il pour relever le défi de l'amplification du bruit photonique dans les images ?",
+    "options": {
+      "A": "Ignorer l'amplification du bruit comme stratégie.",
+      "B": "Utiliser l'imagerie calcique Fura-2 pour la réduction du bruit.",
+      "C": "Adopter une approximation gaussienne et un schéma de re-corruption.",
+      "D": "Utiliser des lasers à haute intensité pour supprimer les signaux de bruit.",
+      "E": "Passer à des caméras à plus haute résolution.",
+      "F": "Je ne sais pas."
+    }
+  },
+  "14": {
+    "question": "Quels phénomènes biologiques ont été détaillés dans les études en time-lapse utilisant ZS-DeconvNet ?",
+    "options": {
+      "A": "Cycles de contraction et de relaxation musculaires.",
+      "B": "Dynamiques d'interaction pendant la mitose et l'adhésion cellulaire.",
+      "C": "Signalisation photonique dans les plantes feuillues.",
+      "D": "Dynamiques électroniques dans la croissance fongique.",
+      "E": "Imagerie par résonance magnétique dans des échantillons de tissus humains.",
+      "F": "Je ne sais pas."
+    }
+  },
+  "15": {
+    "question": "Comment ZS-DeconvNet soutient-il l'imagerie à haut débit selon l'article ?",
+    "options": {
+      "A": "Il prolonge le besoin de traitement de données plus lent et plus détaillé.",
+      "B": "Par une exposition accrue aux photons.",
+      "C": "En inférant des images haute résolution à des échelles de temps de millisecondes.",
+      "D": "En se concentrant principalement sur les améliorations matérielles.",
+      "E": "En élargissant le système pour couvrir physiquement des régions d'imagerie plus larges.",
+      "F": "Je ne sais pas."
+    }
+  },
+  "16": {
+    "question": "Quel défi est abordé par l'architecture à deux étapes de ZS-DeconvNet ?",
+    "options": {
+      "A": "Redondance dans les zones à haute intensité lumineuse.",
+      "B": "Mélange de signaux entre différents canaux de couleur.",
+      "C": "Gérer séquentiellement les tâches de débruitage et de déconvolution.",
+      "D": "Réduire virtuellement les artefacts optiques.",
+      "E": "Augmenter la complexité et la demande en ressources informatiques.",
+      "F": "Je ne sais pas."
+    }
+  },
+  "17": {
+    "question": "Comment ZS-DeconvNet-SIM étend-il la capacité de la microscopie d'illumination structurée (SIM) ?",
+    "options": {
+      "A": "En nécessitant des données brutes supplémentaires pour l'étalonnage.",
+      "B": "En ne fonctionnant que sous des types de microscopie spécifiques.",
+      "C": "En débruitant et en aiguisant simultanément les images SR SIM.",
+      "D": "En réduisant inutilement le contraste de l'imagerie.",
+      "E": "En fournissant des images significativement plus simples.",
+      "F": "Je ne sais pas."
+    }
+  },
+  "18": {
+    "question": "Quelle limitation ZS-DeconvNet rencontre-t-il selon l'article ?",
+    "options": {
+      "A": "Incapacité à gérer des données à haut SNR.",
+      "B": "Restreindre la microscopie à des ajustements manuels.",
+      "C": "Risque de génération d'hallucinations avec des PSF non appariés.",
+      "D": "Faible compatibilité avec les modèles d'apprentissage automatique.",
+      "E": "Nécessité d'une supervision manuelle constante.",
+      "F": "Je ne sais pas."
+    }
+  },
+  "19": {
+    "question": "Quel est le principal inconvénient de la déconvolution RL par rapport à ZS-DeconvNet comme montré dans les figures ?",
+    "options": {
+      "A": "Elle nécessite moins de temps de traitement.",
+      "B": "Elle a moins d'applications connues.",
+      "C": "Elle génère des résultats de résolution inférieure.",
+      "D": "Elle est trop sensible aux légers changements de paramètres.",
+      "E": "Elle génère un SNR plus élevé par rapport à ZS-DeconvNet.",
+      "F": "Je ne sais pas."
+    }
+  },
+  "20": {
+    "question": "Sur quel type d'images ZS-DeconvNet a-t-il surpassé les modèles de déconvolution parcimonieuse ?",
+    "options": {
+      "A": "Images riches en artefacts.",
+      "B": "Images couleur brutes.",
+      "C": "Images claires à champ large.",
+      "D": "Images composites uniquement.",
+      "E": "Images 3D SIM dans des conditions de bruit élevé.",
+      "F": "Je ne sais pas."
+    }
+  },
+  "21": {
+    "question": "Quelle technique d'intégration ZS-DeconvNet adopte-t-il pour améliorer encore la résolution d'image 3D ?",
+    "options": {
+      "A": "Échelonnement automatique de l'intensité.",
+      "B": "Méthodes d'amélioration de la résolution axiale basées sur l'auto-apprentissage.",
+      "C": "Simplification de toutes les fonctions opérateur.",
+      "D": "Passage complet à la capture de signal analogique.",
+      "E": "Réduction du facteur de grossissement des images.",
+      "F": "Je ne sais pas."
+    }
+  },
+  "22": {
+    "question": "Dans le contexte de l'article, quel est un avantage de l'utilisation de ZS-DeconvNet pour l'imagerie des environnements cellulaires vivants ?",
+    "options": {
+      "A": "Augmentation de la nécessité de surveillance manuelle des images.",
+      "B": "Le besoin d'amélioration artificielle du signal.",
+      "C": "Moins d'invasivité avec une imagerie à plus haute résolution.",
+      "D": "Il nécessite l'introduction d'un bruit de fond plus élevé.",
+      "E": "Ne fonctionne que dans des environnements de laboratoire contrôlés.",
+      "F": "Je ne sais pas."
+    }
+  },
+  "23": {
+    "question": "Quelle est une limitation notable de ZS-DeconvNet selon les auteurs ?",
+    "options": {
+      "A": "Il crée des artefacts de résonance lorsqu'il est associé à un PSF non apparié.",
+      "B": "Il a une surcharge computationnelle par rapport à la déconvolution RL.",
+      "C": "Il est inaccessible aux établissements d'enseignement.",
+      "D": "Il nécessite un matériel spécifique pour fonctionner.",
+      "E": "Il consomme des quantités excessives de puissance de calcul.",
+      "F": "Je ne sais pas."
+    }
+  },
+  "24": {
+    "question": "Quel résultat expérimental a illustré la capacité de ZS-DeconvNet à améliorer la fidélité de l'image ?",
+    "options": {
+      "A": "Complexité réduite de l'imagerie mitochondriale.",
+      "B": "Amélioration des images super-résolution des lysosomes.",
+      "C": "Imagerie redondante des puits recouverts de clathrine.",
+      "D": "Isolation du bruit haute fréquence.",
+      "E": "Meilleure imagerie des nuages d'électrons.",
+      "F": "Je ne sais pas."
+    }
+  },
+  "25": {
+    "question": "Quel modèle de réseau a été utilisé comme architecture de base pour ZS-DeconvNet 3D ?",
+    "options": {
+      "A": "Réseau de convolution récurrent.",
+      "B": "Réseau neuronal simple.",
+      "C": "Réseau d'attention de canal résiduel (RCAN).",
+      "D": "Perceptron unidirectionnel.",
+      "E": "Aucun des éléments ci-dessus.",
+      "F": "Je ne sais pas."
+    }
+  },
+  "26": {
+    "question": "Comment l'environnement d'entraînement pour ZS-DeconvNet est-il décrit en termes de puissance de calcul et de temps ?",
+    "options": {
+      "A": "Performance haut de gamme avec des temps de traitement longs.",
+      "B": "Modérément intense avec des structures de calcul d'apprentissage profond typiques.",
+      "C": "Besoins computationnels faibles sur de longues périodes.",
+      "D": "Intensité maximale avec une entrée computationnelle continue.",
+      "E": "Calculs minimaux ponctuels complétés rapidement.",
+      "F": "Je ne sais pas."
+    }
+  },
+  "27": {
+    "question": "Quel type d'observation le modèle 3D de ZS-DeconvNet permet-il qui est crucial pour l'insight biologique ?",
+    "options": {
+      "A": "Récupération de signature de pulsation électrique.",
+      "B": "Détection de phase en couches.",
+      "C": "Observation volumétrique tridimensionnelle.",
+      "D": "Expansions de signal bidirectionnelles.",
+      "E": "Capture de signal micro-abonné.",
+      "F": "Je ne sais pas."
+    }
+  },
+  "28": {
+    "question": "Comment ZS-DeconvNet diffère-t-il des méthodes conventionnelles pour aborder la sensibilité à la lumière dans les spécimens ?",
+    "options": {
+      "A": "En nécessitant plus d'exposition à la lumière pour améliorer la visibilité.",
+      "B": "En utilisant des algorithmes de déconvolution traditionnels.",
+      "C": "En permettant une imagerie à faible luminosité et haute résolution sans dommage.",
+      "D": "En supprimant complètement les décalages de phase de l'imagerie.",
+      "E": "En augmentant l'irrélevance des conditions lumineuses.",
+      "F": "Je ne sais pas."
+    }
+  },
+  "29": {
+    "question": "Quel potentiel ZS-DeconvNet possède-t-il selon le résumé de l'article ?",
+    "options": {
+      "A": "Surmonter les restrictions fondamentales de la physique en optique.",
+      "B": "Améliorer significativement les systèmes de microscope optique existants.",
+      "C": "Réécrire radicalement les algorithmes de données biologiques.",
+      "D": "Transformations purement numériques éloignées de l'imagerie.",
+      "E": "Remplacer brusquement toutes les formes existantes de microscopie.",
+      "F": "Je ne sais pas."
+    }
+  },
+  "30": {
+    "question": "Quel type d'artefacts les modèles traditionnels faits à la main introduisent-ils souvent dans l'imagerie microscopique ?",
+    "options": {
+      "A": "Artefacts de sur-signal.",
+      "B": "Anomalies spatiales 3D.",
+      "C": "Artefacts induits par le bruit.",
+      "D": "Points de croisement invisibles.",
+      "E": "Erreurs de numérisation aléatoires.",
+      "F": "Je ne sais pas."
+    }
+  },
+  "31": {
+    "question": "Quel est l'avantage principal de l'architecture de débruitage et de super-résolution à deux étapes ?",
+    "options": {
+      "A": "Elle simplifie le processus en fusionnant les tâches en une seule étape.",
+      "B": "Elle utilise moins de ressources computationnelles par rapport aux modèles à une seule étape.",
+      "C": "Elle permet une gestion spécialisée des tâches de débruitage et de déconvolution séparément.",
+      "D": "Elle ignore efficacement plusieurs types de bruit.",
+      "E": "Elle augmente le temps de traitement linéairement sans avantage supplémentaire.",
+      "F": "Je ne sais pas."
+    }
+  },
+  "32": {
+    "question": "Quelle caractéristique permet à ZS-DeconvNet 3D d'obtenir simultanément des améliorations de débruitage et de résolution ?",
+    "options": {
+      "A": "Modules de capture de lumière intégrés.",
+      "B": "Utilisation de champs d'énergie distribués spatialement.",
+      "C": "Le schéma d'apprentissage auto-supervisé intercalé spatialement.",
+      "D": "Superposition de plusieurs cadres d'imagerie pour la moyenne.",
+      "E": "Dépendance à des sources externes haute résolution.",
+      "F": "Je ne sais pas."
+    }
+  },
+  "33": {
+    "question": "Quel type d'augmentation d'image la phase d'entraînement de ZS-DeconvNet emploie-t-elle ?",
+    "options": {
+      "A": "Soustraction de bruit ambiant.",
+      "B": "Inversions de décalage de fréquence.",
+      "C": "Rotation, recadrage et retournement aléatoires.",
+      "D": "Remplacement de pixels à haute densité.",
+      "E": "Équilibrage de charge par exposition équilibrée.",
+      "F": "Je ne sais pas."
+    }
+  },
+  "34": {
+    "question": "Quelle découverte sur les REs ZS-DeconvNet a-t-il facilité l'observation ?",
+    "options": {
+      "A": "Augmentation des délais dans les états statiques.",
+      "B": "Mouvement directionnel avec préparation à l'exocytose.",
+      "C": "L'élimination complète des REs des cellules.",
+      "D": "Modèles de diffusion cellulaire aléatoires.",
+      "E": "Méthodologies pour l'imagerie cellulaire automatisée.",
+      "F": "Je ne sais pas."
+    }
+  },
+  "35": {
+    "question": "Selon l'objectif ultime décrit, que vise ZS-DeconvNet à équilibrer dans l'imagerie en direct ?",
+    "options": {
+      "A": "Risque de phototoxicité et niveaux d'interférence électronique.",
+      "B": "La synchronisation du flux de données analogiques et numériques.",
+      "C": "Atteindre une information spatio-temporelle élevée avec un minimum d'invasivité.",
+      "D": "Mécanismes de transport d'une perspective intracellulaire.",
+      "E": "Alignement rigoureux entre les signaux capturés et traités.",
+      "F": "Je ne sais pas."
+    }
+  },
+  "36": {
+    "question": "Comment les méthodes d'apprentissage supervisé conventionnelles ont-elles été comparées à ZS-DeconvNet dans l'article ?",
+    "options": {
+      "A": "Plus efficaces en temps et en ressources.",
+      "B": "Ayant des gammes de spécialité significativement plus larges.",
+      "C": "Comme étant significativement entravées par la demande de collecte de données d'entraînement.",
+      "D": "Comme étant dépassées par leur incapacité à évoluer linéairement.",
+      "E": "Ne fournissant jamais de retour approprié en imagerie.",
+      "F": "Je ne sais pas."
+    }
+  },
+  "37": {
+    "question": "Quel terrain ZS-DeconvNet explore-t-il à travers l'imagerie super-résolution volumétrique 3D ?",
+    "options": {
+      "A": "Imagerie périphérique d'objets statiques.",
+      "B": "Analyse approfondie des membranes neuronales.",
+      "C": "Cartographie des architectures 3D détaillées des structures subcellulaires.",
+      "D": "Suivi des séquences temporelles chronologiques.",
+      "E": "Filtrage des ré-alignements à partir de signaux convolués.",
+      "F": "Je ne sais pas."
+    }
+  },
+  "38": {
+    "question": "Quel processus biologique bénéficie d'une meilleure observation grâce à ZS-DeconvNet, en particulier dans le contexte de la sensibilité à la lumière ?",
+    "options": {
+      "A": "Suivi amélioré de la photosynthèse.",
+      "B": "Analyse améliorée de la désintégration radioactive.",
+      "C": "Examen détaillé de la division cellulaire mitotique.",
+      "D": "Études de réplication virale.",
+      "E": "Photosensibilisation dans l'imagerie rétinienne.",
+      "F": "Je ne sais pas."
+    }
+  },
+  "39": {
+    "question": "Comment ZS-DeconvNet gère-t-il le manque d'ensembles de données d'entraînement étendus ?",
+    "options": {
+      "A": "En utilisant des ensembles de données connus prédéfinis pour la simulation.",
+      "B": "En s'appuyant sur une augmentation de données en laboratoire complète.",
+      "C": "En tirant parti de l'apprentissage sans coup pour s'adapter à partir d'images uniques.",
+      "D": "En se concentrant strictement sur des scénarios d'image statiques et contrôlés.",
+      "E": "En recalibrant les ensembles de données existants pour correspondre à de nouvelles conditions.",
+      "F": "Je ne sais pas."
+    }
+  },
+  "40": {
+    "question": "Quelle caractéristique de performance de ZS-DeconvNet est optimisée selon ses tâches de traitement d'image ?",
+    "options": {
+      "A": "Réduire la taille de l'image sans perte de qualité.",
+      "B": "Traitement rapide avec une conformité élevée aux normes de résolution.",
+      "C": "Augmenter la charge mémoire pour une récupération de détails précise.",
+      "D": "Acquérir des taux de trame plus élevés au détriment du détail.",
+      "E": "Optimisation pour les altérations de décalage de phase dans les couches de détail.",
+      "F": "Je ne sais pas."
+    }
+  },
+  "41": {
+    "question": "De quelle manière ZS-DeconvNet-SIM fournit-il une amélioration double selon l'article ?",
+    "options": {
+      "A": "En remplaçant complètement le SIM.",
+      "B": "En intégrant plusieurs piles d'images en une seule.",
+      "C": "En nécessitant dix images brutes pour l'illumination structurée.",
+      "D": "En doublant les temps d'exposition dans l'équipement SIM.",
+      "E": "En suivant des ensembles de données récurrents arbitraires.",
+      "F": "Je ne sais pas."
+    }
+  },
+  "42": {
+    "question": "Comment les capteurs sCMOS sont-ils pertinents pour les préoccupations abordées par ZS-DeconvNet ?",
+    "options": {
+      "A": "Ils permettent une amélioration en temps réel des points de données.",
+      "B": "Ils sont une cause commune de bruit de motif fixe (FPN).",
+      "C": "Ils ne sont plus utilisés avec les technologies ZS-DeconvNet.",
+      "D": "Ils filment plus rapidement que tout autre type.",
+      "E": "Ils inversent les données de manière non standard.",
+      "F": "Je ne sais pas."
+    }
+  },
+  "43": {
+    "question": "Quel est un objectif déclaré pour l'extension de ZS-DeconvNet dans les améliorations futures ?",
+    "options": {
+      "A": "Éliminer toute implication computationnelle dans les tâches d'imagerie.",
+      "B": "Inclure des techniques de généralisation de domaine pour une application plus large.",
+      "C": "Passer complètement à l'écart de l'imagerie optique.",
+      "D": "Réduire considérablement le nombre de photons requis.",
+      "E": "Se recentrer sur l'appariement des données audio.",
+      "F": "Je ne sais pas."
+    }
+  },
+  "44": {
+    "question": "Selon l'article, qu'est-ce qui définit la portée potentielle d'amélioration de ZS-DeconvNet à travers le spectre optique ?",
+    "options": {
+      "A": "En favorisant certaines longueurs d'onde par rapport à d'autres.",
+      "B": "En sélectionnant des conditions environnementales spécifiques pour exceller.",
+      "C": "Par application générale à toutes les modalités de microscopie.",
+      "D": "En spécifiant des milieux uniques dans lesquels travailler.",
+      "E": "En développant des modèles d'ajustement de réfraction optique.",
+      "F": "Je ne sais pas."
+    }
+  },
+  "45": {
+    "question": "Que reflète l'approche sans paramètre dans ZS-DeconvNet 3D ?",
+    "options": {
+      "A": "Aucune préoccupation avec les augmentations de données fondamentales.",
+      "B": "Indépendant de l'ajustement des paramètres autres que les domaines spatiaux.",
+      "C": "Le besoin d'exceptions de contrôle manuel.",
+      "D": "Rareté structurelle pour les enregistrements.",
+      "E": "Un gel complet des méthodes d'enseignement.",
+      "F": "Je ne sais pas."
+    }
+  },
+  "46": {
+    "question": "Que propose ZS-DeconvNet pour l'analyse des dynamiques des organites spécifiquement mentionnées dans l'article ?",
+    "options": {
+      "A": "Un regard détaillé sur les séquences de dégradation des protéines.",
+      "B": "Suivi des interactions de plusieurs organites lors des événements du cycle cellulaire.",
+      "C": "Une méthode pour recalibrer dynamiquement les ressources optiques.",
+      "D": "Une exploration de la consommation de données par nœud.",
+      "E": "Analyses sommaires à partir d'images statiques.",
+      "F": "Je ne sais pas."
+    }
+  },
+  "47": {
+    "question": "Comment l'inclusion du terme de régularisation de Hessian bénéficie-t-elle à ZS-DeconvNet ?",
+    "options": {
+      "A": "Elle garantit une fidélité plus élevée dans les voies électroniques.",
+      "B": "Elle fournit un mécanisme de stabilité en atténuant les artefacts.",
+      "C": "Elle s'étend naturellement au-delà de son domaine pour plus de liberté.",
+      "D": "Elle remplace les réajustements manuels dans la mise au point de l'image.",
+      "E": "Elle élimine complètement la dépendance à la longueur d'onde d'excitation.",
+      "F": "Je ne sais pas."
+    }
+  },
+  "48": {
+    "question": "Comment les conditions et outils d'entraînement pour ZS-DeconvNet se comparent-ils aux algorithmes SR plus conventionnels ?",
+    "options": {
+      "A": "Ils nécessitent des températures plus élevées et plusieurs phases.",
+      "B": "Ils sont identiques aux autres conditions SR.",
+      "C": "Ils exigent un matériel sur mesure indisponible pour SR.",
+      "D": "Ils utilisent des environnements d'apprentissage profond typiques et des conditions modérées.",
+      "E": "Ils dévient massivement nécessitant une entrée manuelle.",
+      "F": "Je ne sais pas."
+    }
+  },
+  "49": {
+    "question": "Quel type de microscopie ZS-DeconvNet améliore-t-il de manière prévisible au-delà de l'imagerie structurée ?",
+    "options": {
+      "A": "Cristallographie aux rayons X.",
+      "B": "Calcul de structure atomique de base.",
+      "C": "Microscopie de localisation photoactivée.",
+      "D": "Compensation d'aberration chromatique.",
+      "E": "Diffraction d'électrons quantiques.",
+      "F": "Je ne sais pas."
+    }
+  },
+  "50": {
+    "question": "Comment les environnements de recherche pour ZS-DeconvNet se comparent-ils pour les applications d'imagerie ?",
+    "options": {
+      "A": "Ils présentent des contrôles d'oxydation stricts comme nécessaire pour la plupart des configurations d'imagerie.",
+      "B": "Ils nécessitent des améliorations dans la technologie des caméras basées sur le film.",
+      "C": "Ils offrent un déploiement de signal amélioré via la sélection de pont.",
+      "D": "Ils permettent une utilisation dans des conditions appliquées diverses de manière prête.",
+      "E": "Ils reflètent une disparité de capteur à distance au-delà des normes.",
+      "F": "Je ne sais pas."
+    }
+  }
+}

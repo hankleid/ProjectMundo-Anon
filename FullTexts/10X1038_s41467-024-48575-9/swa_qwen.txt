@@ -1,0 +1,112 @@
+Zero-shot learning enables instant denoising and super-resolution in optical fluorescence microscopy
+
+Abstract: Vifaa vya hisabati kwa upana kubwa, kama vile algorithimu za analiti zinazohusiana na vifaa vya kujifunza kwa mwingiliano, yamekuwa na athari kubwa kwa mikrokipya optiki. Kati yao, mitandao ya mifano mafupi yanayohusiana na kujifunza kwa mwingiliano yameonyesha uwezo mkubwa, lakini yanahitaji data ya kujifunza ya kualitini na ya kiasi kikubwa, ambayo ni kazi ya kuvutia na hasa kujitumika kwa uchumi kabla kwa nyama za kizazi. Hapa, tumeundaa mitandao ya deconvolution ya zero-shot (ZS-DeconvNet) yanayohakikisha kuongeza upana wa picha za mikrokipya mara kubwa zaidi ya 1.5 kwa upana wa hadi kusimamia difraksi, na kwa mazoezi ya 10 mara zaidi chache ya fluorescence kuliko masharti ya kujifunza ya upana kubwa, kwa njia ya kujifunza kwa mwingiliano bila haja ya maadili ya kujifunza au data ya kujifunza zaidi. Tumeonyesha uwezo wa kujitambulisha wa ZS-DeconvNet kwenye mikrokipya zaidi ya moja, kama vile mikrokipya ya total internal reflection fluorescence, mikrokipya ya wide-field three-dimensional, mikrokipya ya confocal, mikrokipya ya two-photon, mikrokipya ya lattice light-sheet, na mikrokipya ya structured illumination multimodal, ambayo inaumiza kujifunza wa rangi zaidi ya moja, kwa muda mrefu, na kwa upana kubwa wa 2D/3D kwa bioprocesses za subcellular kutoka kwa nyama moja za mitosis hadi nyama za kizazi za mouse naC. elegans.
+
+Optical fluorescence microscopy ni tool muhimu kwa utafiti wa kibiologikali. Matumizi ya mpya ya tekniki za super-resolution (SR) yanatoa uwekezaji wa kihistoria kwa kuziona mifano ya dinamiki za bioprocesses tofauti. Hata hivyo, fayda ya uwekezaji wa maeneo ya fasi kwa SR yoyote ina changamoto za kutosha katika matumizi mengine, kisa, muda au kasi, ambayo ni muhimu sana kwa kuchunguza bioprocesses,. Hivi karibuni, matumizi ya SR ya kikamailisho yamepata furaha kubwa kwa uwezo wao wa kuzingatia kwa mara moja kuzingatia upana wa picha kwa software, yanayowafadhaa tathmini kubwa ya maeneo ya kibiologikali za kinaa na kuhifadhi viwango vya matumizi yao, , , , , , , , ,.
+
+Kwa umumoni, matumizi ya SR ya kikamailisho yanaweza kuchaguliwa kwa miaka mbili: matumizi ya modeli ya kikamailisho kama vile algorithimu za deconvolution, na matumizi ya kikamailisho ya kikamailisho, kisa, SR neural networks, , , , , , ,. Miaka ya kwanza mara nyingi yanatumia modeli za kikamailisho yanayoweza kuchukua mahakama zinazohusiana na mfano na sifa za picha, kisa, sparsity na symmetry ya mahali, ili kuzuia upana wa picha kwa parameters zinazoweza kuzungumzwa. Kuzungumza parameters ni kina maendeleo na kina muda, na majibu ya modeli za kikamailisho yanapendekeza sana kwa sets za parameters, , , ,. Pia, katika matumizi ya maelezo, modeli za kikamailisho yanayoweza kuchukua mahakama zinazohusiana na kuchukua uwezo wa ustatistiki wa kuzingatia picha, kwa hivyo yanahisi kusimamia na yanaweza kuchambua artifacts, hasa katika masharti ya SNR ya chache. Mara nyingine, matumizi ya kikamailisho ya SR (DLSR) yanapata furaha kubwa kwa kujifunza uhusiano wa transformation wa picha kutoka mwabili hadi mwabili kulingana na data kubwa ya mfano bila haja ya modeli ya kikamailisho ya kinaa, , , , ,. Kwa mahusiano, scheme ya inversion ya data-driven kwa kikamailisho yanaweza kuzingatia si tu function ya pseudoinverse ya process ya image degradation bali pia characteristics ya stochastic za SR solutions. Hata hivyo, matumizi ya DLSR yanahitaji kupata data kubwa ya picha za low-resolution na high-quality ground truth (GT) SR, ambayo ni kazi ya kina muda na hasa mara nyingi si ya kina muda kwa sababu ya dinamiki ya haraka au SNR ya chache ya fluorescence katika specimens ya kibiologikali, ,. Pia, uwezo wa matumizi ya DLSR yanapendekeza sana kwa ubora na viwango vya data ya kufundishwa. Mafaktari haya yanahisi kusimamia matumizi ya kubwa ya DLSR katika matumizi ya kinaa kwa sababu ya SR yao ya kinaa ya kinaa ya kinaa,.
+
+
+
+
+
+
+
+Kuandaa na kuchangia ZS-DeconvNet, tayari tuliandaa picha za mikroskopi ya vifaa na vifungo vilivyotolewa na mawazo ya Gaussian-Poisson kwa mada ya maadili ya signali kutoka 5 hadi 25 photon counts wa wastani, ambayo iliyotumika kujaribu jinsi mazoezi ya hyperparameter za recorruption katika masharti tofauti za picha yanavyohusu matokeo ya mwisho (Supplementary Note [2] ). Tulipata kwamba hyperparameters bora zinazoweza kujulikana ni sifa na maudhui ya picha na maadili ya signali (Supplementary Figs. [3] – [5] ), kwa hiyo yanayoweza kujenga kwa ufanisi kutumika kwenye vifaa vya kivinjari tofauti na mazungumzo ya picha (Supplementary Note [4] ). Kisha, tulikumbukumbu uwezo wa ZS-DeconvNet models iliyotumika kwa data iliyowekwa kwa recorruption kwa picha moja ya kibaya na algorithimu za deconvolution ya kinafsi au models iliyotumika kwa namba nyingi za picha iliyosimuliwa au iliyopatikana kwa kawaida. Kufanya hivyo, tulitumia mode ya total internal reflective fluorescence (TIRF) ya Multi-SIM ya binafsi yetu ya multimodal structured illumination microscopy (Multi-SIM) kuchukua ~20 sets ya picha za TIRF iliyohisiwa kwa diffraction kwa SNR ya chini na ya juu kwa kila structure ya subcellular ya lysosomes (Lyso) na microtubules (MTs), ambazo picha za SNR ya chini ziliotumika kwa ujuzi na uchanganuzi, wakati picha za SNR ya juu ziliotumika kama maelezo (Methods). Tulipata kwamba PSNR na resolution ya picha za ZS-DeconvNet zilikuwa zisizana sana na zile iliyotengenezwa na algorithimu za kinafsi, kama algorithimu ya classic Richardson-Lucy (RL) na algorithimu ya sparse deconvolution iliyotengenezwa hivi karibuni (Fig. [1c–e] ) na rate ya throughput ya ZS-DeconvNet iliyotumika vizuri >100 mara zaidi ya algorithimu ya sparse deconvolution (Fig. [1f] ). Kwa khusus, hata ikiwa ZS-DeconvNet iliyotumika kwa data iliyowekwa kwa picha moja ya input, uwiano wa kubainishwa na metrics iliyotengenezwa na picha zake zilikuwa zisizana na picha zile iliyotumika kwa data nyingi (Supplementary Fig. [6] ). Pia, tulikumbukumbu kuboresha resolution, quantifiability, na uwezo wa generalization wa ZS-DeconvNet (Supplementary Figs. [7] – [10] ), na kumbuka ikiwa na model ya supervised DFCAN (Supplementary Fig. [11] ) kwenye data ya synthetic na ya uchanganuzi. Matokeo haya yanayoweza kujaruhusu kwamba ZS-DeconvNet inaweza kugundua picha za DLSR ya kualitini kubwa na kuboresha resolution mara 1.5 kulingana na hadi ya diffraction wakati inatumika kwa data ya ujuzi kidogo, ambayo ina imara kubwa ya kuboresha uwezo wa picha wa mikroskopi tofauti, na kukuweka kwa kawaida kwenye bioprocesses nyingi ambazo ni changamoto kwa usimamizi wa kinafsi,.
+
+Uhalifu na ukimbia wa nyuzi ni muhimu katika mazingira ya morphogenetic na huimarisha maraduni mengi. Kuchora dinamiki za cytoskeletal kwa upana wa kihisia kwa uhalifu/ukimbia ni muhimu kwa kujulikana kwa sababu ya mchakato. Hata hivyo, kwa sababu ya photosensitivity kibaya, mazingira yote ya uhalifu na ukimbia ya nyuzi hujiandaliwa kwa mada ya frames ya chini, kwa mfano, sekunde kadhaa kwa frame, na intensity ya mwanga ya chini,. Kwenye masharti haya ya picha, kinafsi RL deconvolution au temporal continuity-based self-supervised learning (Methods) hufai kurecover na kusharpen structure ya F-actin na myosin-II (Fig. [2a] , Supplementary Fig. [12] , na Supplementary Video [1] ). Kulingana na hivyo, model ya ZS-DeconvNet inaweza kuboresha SNR na resolution ya recordings ya time-lapse ya nyuzi ya rangi mbili.
+
+
+
+
+
+
+
+Picha za majuziki ya nyama zinaonyesha maelezo zaidi ya kibiologiki kuliko matambulizi ya 2D; hata hivyo, zinafanya kazi kwa uwezekano wa kuharibika kwa mwanga zaidi, kuharibika kwa mwanga na kuharibika kwa mwanga wa kibiorehemu. Kusimamia uwezekano mkubwa wa ZS-DeconvNet kwa picha za SR ya majuziki, tuliweka mchakato wa mifumo ya mifumo miwili wa mitandao ya mitandao kwa 3D RCAN, ambayo imeonyeshwa kuwa inafaa kwa kurejelea picha za majuziki (Fig. [3a, b] na Supplementary Fig. [2b] ). Kisha, tuliamua mfumo ya kujifunza kwa mwenyewe kwenye mazingira zinazohusiana nami na mifumo ya kujifunza kwa mwenyewe ya maswala ya kuharibu kwa kuchangia mifumo ya kibiorehemu ili kujenga 3D ZS-DeconvNet. 3D ZS-DeconvNet yenye mfumo ya kujifunza kwa mwenyewe kwenye mazingira zinazohusiana nami inafuata prosedi ya kuboresha taarifa ya data rahisi zaidi (Methods), hata hivyo inafanya kazi sawa au zaidi bora kuliko mfumo ya kurejelea (Supplementary Fig. [14] ),.
+
+
+
+
+
+
+
+
+
+Kati ya SR ya mikrokipu ya aina mbalimbali, mikrokipu ya maengaji ya usimamizi (SIM) inaonekana mara nyingi kama chaguo la kawaida kwa maonyesho ya SR ya nyama za kikokotoo kwa sababu inahitaji zaidi ya tisa picha za raw ya modulated ili kutoa tofauti ya nyingi mara mbili katika tofauti ya nchi,. Hata hivyo, SIM ya kawaida ina majukumu matatu muhimu: kwanza, tofauti ya zaidi ya usimamizi inahitaji data ya raw zaidi sana, kwa mfano, zaidi ya 25 picha za raw zinahitajiwa kwa SIM ya usimamizi isiyo linear ili kupata usimamizi ya chache ya 80 nm; pili, baada ya maonyesho ya SIM picha zinahitaji zaidi ya mara nyingi SNR ya picha za raw ili kusindika vifaa vilivyovunjika kwa mawazo, hivyo kusababisha maonyesho ya kasi, nyama ya chache, na muda mrefu ya nyama za kikokotoo,. Maadili ya maonyesho ya maudhui ya karibuni yamejaribu chaguo za kujifunza zinazostahili kwa kutoa au kurekonstruka picha za SR ya SIM kwa mara moja kutoka kwa picha za raw za mawazo ili kupata maonyesho ya SIM ya nyama ya chache; hata hivyo, hizi chaguo zinahitaji data ya kujifunza zaidi na hazitoa tofauti ya zaidi ya usimamizi. Kulingana na uwezo wa kutoa mawazo na SR wameshaonekana wa ZS-DeconvNet, tuliweka chaguo ya kujifunza kwa mara moja na algorithimu ya kurekonstruka ya SIM ya kawaida, na tuliweka kwa maana ya maadili ya maonyesho ya SR-SIM (Supplementary Note [1] ). Tulisaidia model ya ZS-DeconvNet ya SIM (ZS-DeconvNet-SIM) ili kutoa na kushinda SR SIM picha kwa njia ya kawaida (Fig. [5a] , Supplementary Fig. [20a] , na Methods). Kulingana na tofauti na SNR yanayohusiana na usimamizi yanayotolewa na ZS-DeconvNet-SIM (Supplementary Figs. [21] , [22] ), usimamizi wa chache ya CCPs ya clathrin katika nyama ya SUM-159 na usimamizi wa kubadilika kwa kasi ya cytoskeleton katika nyama ya COS-7, ambayo hawawezi kutoa kwa WF na SIM ya kawaida, ilivyotolewa kwa kina (Fig. [5b, c] ). Pia, tuliweka kwamba ZS-DeconvNet-SIM inaweza kutumika katika modality ya 3D-SIM ili kutoa na kushinda picha za 3D-SIM kwa mawazo na mawazo ya mstari (Methods, Supplementary Fig. [23] ), ,.
+
+Zaidi ya hayo, tulisaidia 3D ZS-DeconvNet na LLS-SIM ili kutengeneza modality ya 3D ZS-DeconvNet-SIM (Supplementary Fig. [20b] ). Kwa njia ya kujumlisha PSF ya anisotropic ya LLS-SIM ya kawaida katika mada ya kujifunza, 3D ZS-DeconvNet LLS-SIM si tu kushinda tofauti na usimamizi katika mawazo matatu yote bali pia kutoa usimamizi ya lateral ya kina ya ~150 nm (Fig. [5d, e] , na Supplementary Fig. [22] ). Hizi maonyesho ya kina ya ZS-DeconvNet katika maonyesho ya multimodal SIM yanayonyesha uwezo wake wa kuboresha bandi ya spatiotemporal ya usimamizi ya SR ya kina.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Kumbuka kwamba kwa sababu ya usimbaji wa mada wa ZS-DeconvNet ni ya kawaida, U-Net na RCAN hawana tu ni vifaa vya kujifunza vya kawaida lakini ni vya kufaa na vya kazi zaidi. Kujaza ZS-DeconvNet na vifaa vya kujifunza vya kawaida vingine, kama vile DFCAN na RLN, inaweza kuboresha zaidi uwezekano wake wa kurekebisha matokeo na uwezekano wa SR.
+
+
+
+
+
+
+
+
+
+Katika mchakato wa kujifunza wa ZS-DeconvNet, tuliamka au tukasimulia PSFs (kwa kutumia PSF Generator Fiji plugin iliyoratibishwa na EPFL) zinazokidhi na majukumu ya picha. ZS-DeconvNet models zinazofanana zilijaribika kwa kila mifumo wa kibiologiki na mawazo ya upatikanaji kwa ajili ya uwezo bora wa kazi.
+
+
+
+
+
+
+
+
+
+Uhadilishaji wa mstari unafaa kuzingatia kila njia ya usimbaji kwa usawa kwa uwekezaji wa mazungumzo; (3) Kujifunza PSNR kati ya sura ya GT yenye maelezo yenye kasix na sura ya imaji iliyofanyika mabadiliko ya mstariI trans.
+
+Kwa uwekezaji wa PSNR wa 3D ZS-DeconvNet (Fig. [3d] ), tulitumia mara moja tu sana images ya LLS-SIM kama viwango vya kujihusisha kwa sababu sana LLS-SIM na 3D ZS-DeconvNet yetu yanatoa tofauti ya usimamizi kwa ~1.5 mara kulingana na nini. Mchakato wa usimamizi kwa jumla ni sawa na mawasiliano ya 2D, tu kwamba stacks ya SR hayakufanyika convolution na PSNR iliyohesabiwa tu ndani ya viwango vya sifa tu na thresold ya 0.02 ili kusimamia kupata thamani ya PSNR ya kawaida sana.
+
+
+
+
+
+
+
+Kwa kutengeneza virusi ya lentivirus, 1 μg ya DNA ya veketa ya lentivirus, pamoja na 0.5 μg ya psPAX2 ya kusambaza na 0.5 μg ya DNA ya plasmidi ya pMD2.G ya kipimo cha kibao cha kinyume ulizotengenezwa kwa HEK293T za kifupi kwenye sahani ya petri ya 6 cm kwa kutumia Lipofectamine 3000 kufuata maelekezo ya mfanyabiashara. Baada ya siku 2, mafungu yaliyobaki yaliyotengenezwa na kufilta kwa kufuata filta ya 0.22-μm (Millipore). Kwa kutengeneza nyimbo za kifupi, zana za HeLa na Cos7 ziliingizwa na virusi ya lentivirus yanayohakikisha alama ya endoplasmic reticulum Calnexin-mEmerald na alama ya F-actin Lifeact-mEmerald. Baada ya siku 48, zana ziliingizwa kwa flow cytometer (FACSAria III, BD Biosciences) na kisha ziliweka zana moja kwa kibao kwenye sahani za 96-well, zana za kifupi ziliweka kwa majaribio yetu. Kwa uhusiano, Lifeact-mEmerald ya COS7 iliyotumika kwenye Fig. [3] na [5] ; Calnexin-mEmerald, Mito-dsRed na Halo-H2B ya HeLa zana ziliyotumika kwenye Fig. [3] ; H2B-mCherry ya HeLa-mEmerald-SC35 iliyotumika kwenye Supplementary Fig. [18].
+
+Zana za SUM159 zilihakikisha genome kwa kuzingatia EGFP kwenye N-terminus ya Rab11A na kisha Halo kwenye C-terminus ya Lamp1 kwa kutumia uamuzi wa CRISPR/Cas9,. Mfumo wa RNA wa single-guide (sgRNA) wa kuzingatia ni 5’-TCGCTCCTCGGCCGCGCAAT-3’ kwa RAB11A na 5’-CTATCTAGCCTGGTGCACGC-3’ kwa LAMP1. SUM159 ziliingizwa na plasmidi ya EGFP-Rab11A, plasmidi yanayohakikisha spCas9 na mazoezi ya PCR yanayohakikisha mfumo wa sgRNA kwa kutumia Lipofectamin 3000 (Invitrogen) kufuata maelekezo ya mfanyabiashara. Zana zinazohakikisha EGFP ziliingizwa kwa fluorescence-activated cell sorting (FACS) (FACSAria II, BD Biosciences), na kisha ziliingizwa kwa kuzingatia zana moja kwa kibao kwenye sahani za 96-well. Zana za kifupi zinazohakikisha EGFP ziliingizwa kwa PCR screening kwa kutumia GoTaq Polymerase (Promega). Zana za kifupi za SUM159 zinazohakikisha EGFP-Rab11A + /+ ziliingizwa kwa mada ya pili ya kuhakikisha genome kwa kuzingatia Lamp1-Halo kwenye genome kama ilivyotolewa hapa juu. Zana zinazohakikisha ziliingizwa kwa kuzingatia 10 nM Janelia Fluor 646 HaloTag Ligands (Promega) kwa dakika 15. Kwa kuzingatia dye uliyobaki, sampuli ziliingizwa kwa madini mpya, na kisha ziliingizwa kwa FACS. Zana za kifupi za SUM159 zinazohakikisha sasa EGFP-Rab11A + /+ na Lamp1-Halo + /+ ziliingizwa kwa PCR na Western blot analysis.
+
+Zana za SUM159 zilihakikisha genome kwa kuzingatia EGFP kwenye C-terminus ya clathrin light chain A (clathrin-EGFP) kwa kutumia uamuzi wa TALEN. Zana zinazohakikisha clathrin-EGFP ziliingizwa kwa kuzingatia mara mbili ya bulk sorting.
+
+Nyimbo za HeLa zilihakikisha genome kwa kuzingatia mEmerald kwenye C- terminus ya human genomic SC35 kwa kutumia mfumo wa CRISPR-Cas9 ya kuhakikisha genome. Mfumo wa RNA wa single-guide (sgRNA) wa kuzingatia ni 5’-CGAGCAGCACTCCTAATGAT-3’, na sgRNA ilizungumzwa kwenye pX330A-1×2 (Addgene, 58766). Plasmidi iliyotengenezwa ilizungumzwa pX330-SC35-gRNA hapa baadaye. Kwa kutengeneza plasmidi ya donor p-SC35-doner, mEmerald ilizungumzwa kwenye homology arms ya kiraibu ya 1800bp yanayohakikisha stop codon ya human genomic SC35 locus ilizungumzwa kwenye pEASY-blunt (Transgene, CB101). 2 × 10 zana za HeLa zilizotengenezwa kwenye sahani ya petri ya 6 cm ziliingizwa na 1.2 μg ya pX330-SC35-gRNA na 0.4 μg ya p-SC35-doner. Baada ya siku 48 kwa kuzingatia, zana zinazohakikisha mEmerald ziliingizwa kwa FACS (FACSAria III, BD Biosciences). Baada ya wiki moja, virusi ya H2B-mCherry ya lentivirus ziliingizwa zana zinazohakikisha na kisha zana moja ziliweka kwenye sahani za 96-well. Baada ya wiki mbili, DNA ya genome ya zana mbalimbali za kifupi ziliingizwa na kuthibitisha kwa PCR na western blot. Zana za kifupi za SC35 ziliingizwa kwa maelezo ya mchakato. Uhusiano wa SC35 uliyotengenezwa ulithibitishwa kwa PCR na Western blot analysis.
+
+
+
+Kuhusu 50 nyoka zinazohusiana na geni zilizokuwa katika mfumo wa L4 zilizoweka kwenye vitambaa vya NGM na OP50 mpya 48 hadi 60 saa kabla ya utafiti. Mayai yaliyohusiana na geni yalinikolea kwenye mikroskopi ya kushuka wa floresensi (Olympus MVX10), na kubakia kwenye pad za agarose ya 3%. Embio zilizofikiwa kwenye mlo wa Lima bean hadi 2-fold zilizopiga picha kwa kutumia mfumo wa 3D WF wa mfumo wetu wa Multi-SIM.
+
+Paka zilizotumika katika utafiti huu zilikuwa na mtaa wa C57BL/6 J. Masuala yoyote ya matumbo yanayohusiana na nyama yote yalipatikana na Viongozi wa Usimamizi na Kutumia Nyama (IACUC) wa Chuo Kikuu cha Biophysics, Chinese Academy of Sciences, Beijing, China. Embio zilizofikiwa kabla ya kufika kwenye matumbo zilizolewa kutoka kwa femili zilizozingia miaka 5-6, zilizokujitahidi kwa kusafirisha kwenye nyuzi ya 5 vini (IU) ya serum ya mafisi wa mafisi (PMSG; LEE BIOSOLUTIONS) na 5 IU ya gonadotropin ya chorionic ya binadamu (hCG; Millipore) baada ya 48 saa, na kusambaza na paka wa kiume. Zygotes zilizopata tajriba zilizolewa kwenye M2 medium (Millipore) kwa muda wa E0.5 na zilizuchakula kwenye KSOM medium (Millipore) kwenye incubator ya CO2 (Thermo Scientific) kwa joto la 37°C na 5% CO2 hadi muda wa 8-cell stage.
+
+Kwa immunofluorescence, embio zilizofungwa kwa 4% paraformaldehyde kwenye PBS kwa dakika 30 kwa joto la nyumba (RT) na kusafishwa kwa PBS mara tatu. Embio zilizokaribishwa kwa 0.5% TritonX-100 (Sigma) kwenye PBS kwa dakika 20 kwa joto la nyumba, zilizosafishwa kwa PBS mara tatu, zilizofungwa kwa 1% bovine serum albumin kwenye PBS kwa saa 1 kwa joto la nyumba na zilizokubuniwa kwa anti-pERM antibody (Abcam, ab76247), anti-alpha-tubulin-FITC (Sigma, F2168-.2 ML) na Phalloidin-Rhodamine (Molecular Probes, R415) usiku kwa joto la 4°C. Baada ya hivyo, embio zilizosafishwa kwa PBS mara tatu, zilizokubuniwa kwa antibodies ya mara ya pili (Life technologies) kwa saa 1 kwa joto la nyumba, zilizofungwa kwa Hoescht 33342 (Thermo) kwa dakika 15 kwa joto la nyumba, zilizosafishwa kwa PBS mara tatu na zilizopiga picha kwa mikroskopi ya confocal yaliyotengenezwa nyumbani.
+
+Sauti za rangi za mada ya lysosomes zilizonyoroniwa katika Fig. [4f, g] zilizengwa kwa Fiji. Sauti za 3D za nyimbo ya mitosis na embio ya paka zilizonyoroniwa katika Fig. [3e, f] zilizetengenezwa na kuzungumzwa kwa kutumia software ya Amira ya kijiji.
+
+Masuala katika Figs. [2] a–i, [3] f, [4a–h] , na [5b–e] zilizofanyika mara kwa mara kwa kawaida na kwa kutosha 3 nyuzi, i.e., nyimbo au embio, zote zilizofanya matokeo mara kwa mara.
+
+Maelezo zaidi kuhusu mazungumzo ya utafiti yanapatikana kwenye [Nature Portfolio Reporting Summary] uliyolinkwa kwenye makala hii.
+
+Fig. 3: a Urafiki wa utambulisho wa 3D ZS-DeconvNet na schemati ya mada ya mafunzo yake. b Schemati ya mada ya kujumuisha ya 3D ZS-DeconvNet. c Sura za kihutu zinazohusiana na zaidi (MIP) SR za F-actin, mifumo ya nje ya Mito, na ER zinazotolewa na sparse deconvolution (swali ya pili), 3D ZS-DeconvNet (swali ya tatu), na LLS-SIM (swali ya nne). Matumizi ya sCMOS ya pixel zinazohusiana na 1% ya juu zaidi ya sura za raw zilizotolewa kabla ya utengenezaji zinazotolewa kwenye kulia ya kulia ya kulia. d Mfano wa mchakato wa RL deconvolution, sparse deconvolution na ZS-DeconvNet kuhusu PSNR na upimaji kwa specimens tofauti ( n = 40 viwango vya kuhakikisha). Upimaji uliundwa kwa Fourier ring correlation analysis kwa sura za F-actin. Mstari wa kati, madhara; hadi, 75% na 25%; mizizi, kubwa na ndogo. Data ya kuzingatia zinazotolewa kama Source Data file. e Sura za kihutu za muda za rangi tatu zinazotolewa kwa 3D ZS-DeconvNet ya ER, H2B, na Mito, zinazonyesha mabadiliko yao ya utamaduni na utambulishaji kama pia dinamiki ya utawala wao wakati wa mitosis (Supplementary Video[5] ). f Sura za rangi tatu zinazotolewa kwa LLSM ya kawaida (swali ya kwanza), sparse deconvolution (swali ya pili), DeepCAD based deconvolution (swali ya tatu) (Methods), na 3D ZS-DeconvNet (swali ya nne). Mfano wa mchakato huundwa kwa muda mawili ya kihutu za kihutu za muda zinazotolewa kwenye (swali ya e ). Mstari wa kihutu, 5 μm (swali ya c , e , f ), 1.5 μm (viwango vya kihutu vya kihutu vya c ), 2 μm (viwango vya kihutu vya kihutu vya f ).
+
+Fig. 4: a , b Sura za kihutu za confocal (kulia ya kulia), sparse deconvolution (chini ya kulia), na 3D ZS-DeconvNet zinazotolewa (kulia) za embryo ya pumzi ya faru ya mbele ya kufungwa kwa microtubule (nyakua), chromosomes (nyanya), actin rings (mavuta), na apical domain (kijani). c , d Viwango vya kihutu vya kihutu vya microtubule bridges (c) na actin rings (d) zinazotolewa kwa white dashed boxes kwenye (swali ya a ) na (swali ya b ) zinazotolewa kwa confocal microscopy, sparse deconvolution, na 3D ZS-DeconvNet. e Sura za kihutu za WF (viwango vya kihutu vya kihutu) na 3D ZS-DeconvNet zinazotolewa (viwango vya kihutu vya kihutu vya kihutu) za embryo ya C. elegans yenye apical junction, cell membrane (nyakua) na lysosomes (nyekundu) zinazotolewa. f , g Lysosome channel ya viwango vya kihutu vya kihutu vya kihutu vya (swali ya e ) zinazotolewa kwa umbali kutoka kwenye substrate. Sura za WF (swali ya f ) na 3D ZS-DeconvNet zinazotolewa (swali ya g ) zinazotolewa kwa mchakato. h Sura za kihutu za muda zinazotolewa kwa 3D ZS-DeconvNet zinazonyesha mabadiliko ya hypodermal cell fusion (mizizi nyekundu) wakati wa utambulishaji wa embryo ya C. elegans. Mstari wa kihutu, 5 μm (swali ya a , b , e ), 2 μm (swali ya c , d ), 3 μm (swali ya g , h ), 1 μm (viwango vya kihutu vya kihutu vya g ). Gamma value, 0.7 kwa cytomembrane na lysosomes kwenye embryo ya C. elegans.
+

@@ -1,0 +1,5442 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="/style/jats-html.xsl"?>
+<!DOCTYPE response>
+<article article-type="research-article" dtd-version="1.2" xml:lang="en" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <front>
+  <journal-meta>
+   <journal-id journal-id-type="publisher-id">
+    41467
+   </journal-id>
+   <journal-id journal-id-type="doi">
+    10.1038/41467.2041-1723
+   </journal-id>
+   <journal-title-group>
+    <journal-title>
+     Nature Communications
+    </journal-title>
+    <abbrev-journal-title abbrev-type="publisher">
+     Nat Commun
+    </abbrev-journal-title>
+   </journal-title-group>
+   <issn pub-type="epub">
+    2041-1723
+   </issn>
+   <publisher>
+    <publisher-name>
+     Nature Publishing Group UK
+    </publisher-name>
+    <publisher-loc>
+     London
+    </publisher-loc>
+   </publisher>
+  </journal-meta>
+  <article-meta>
+   <article-id pub-id-type="publisher-id">
+    s41467-024-45888-7
+   </article-id>
+   <article-id pub-id-type="manuscript">
+    45888
+   </article-id>
+   <article-id pub-id-type="doi">
+    10.1038/s41467-024-45888-7
+   </article-id>
+   <article-categories>
+    <subj-group subj-group-type="heading">
+     <subject>
+      Article
+     </subject>
+    </subj-group>
+    <subj-group subj-group-type="SubjectPath">
+     <subject>
+      /639/624/1075/1081
+     </subject>
+    </subj-group>
+    <subj-group subj-group-type="SubjectPath">
+     <subject>
+      /639/624/399/1099
+     </subject>
+    </subj-group>
+    <subj-group subj-group-type="TechniquePath">
+     <subject>
+      /119
+     </subject>
+    </subj-group>
+    <subj-group subj-group-type="TechniquePath">
+     <subject>
+      /120
+     </subject>
+    </subj-group>
+    <subj-group subj-group-type="TechniquePath">
+     <subject>
+      /129
+     </subject>
+    </subj-group>
+    <subj-group subj-group-type="TechniquePath">
+     <subject>
+      /132
+     </subject>
+    </subj-group>
+    <subj-group subj-group-type="TechniquePath">
+     <subject>
+      /139
+     </subject>
+    </subj-group>
+    <subj-group subj-group-type="TechniquePath">
+     <subject>
+      /141
+     </subject>
+    </subj-group>
+    <subj-group subj-group-type="NatureArticleTypeID">
+     <subject>
+      article
+     </subject>
+    </subj-group>
+   </article-categories>
+   <title-group>
+    <article-title xml:lang="en">
+     General-purpose programmable photonic processor for advanced radiofrequency applications
+    </article-title>
+   </title-group>
+   <contrib-group>
+    <contrib contrib-type="author" corresp="yes" id="Au1">
+     <contrib-id contrib-id-type="orcid">
+      http://orcid.org/0000-0002-0873-205X
+     </contrib-id>
+     <name name-style="western">
+      <surname>
+       Pérez-López
+      </surname>
+      <given-names>
+       Daniel
+      </given-names>
+     </name>
+     <address>
+      <email>
+       daniel.perez@ipronics.com
+      </email>
+     </address>
+     <xref ref-type="aff" rid="Aff1">
+      1
+     </xref>
+     <xref ref-type="aff" rid="Aff2">
+      2
+     </xref>
+     <xref ref-type="corresp" rid="IDs41467024458887_cor1">
+      a
+     </xref>
+    </contrib>
+    <contrib contrib-type="author" id="Au2">
+     <contrib-id contrib-id-type="orcid">
+      http://orcid.org/0000-0002-9714-6756
+     </contrib-id>
+     <name name-style="western">
+      <surname>
+       Gutierrez
+      </surname>
+      <given-names>
+       Ana
+      </given-names>
+     </name>
+     <xref ref-type="aff" rid="Aff1">
+      1
+     </xref>
+     <xref ref-type="aff" rid="Aff2">
+      2
+     </xref>
+    </contrib>
+    <contrib contrib-type="author" id="Au3">
+     <contrib-id contrib-id-type="orcid">
+      http://orcid.org/0000-0002-7201-7042
+     </contrib-id>
+     <name name-style="western">
+      <surname>
+       Sánchez
+      </surname>
+      <given-names>
+       David
+      </given-names>
+     </name>
+     <xref ref-type="aff" rid="Aff2">
+      2
+     </xref>
+    </contrib>
+    <contrib contrib-type="author" id="Au4">
+     <contrib-id contrib-id-type="orcid">
+      http://orcid.org/0000-0003-3235-4914
+     </contrib-id>
+     <name name-style="western">
+      <surname>
+       López-Hernández
+      </surname>
+      <given-names>
+       Aitor
+      </given-names>
+     </name>
+     <xref ref-type="aff" rid="Aff1">
+      1
+     </xref>
+    </contrib>
+    <contrib contrib-type="author" id="Au5">
+     <name name-style="western">
+      <surname>
+       Gutierrez
+      </surname>
+      <given-names>
+       Mikel
+      </given-names>
+     </name>
+     <xref ref-type="aff" rid="Aff2">
+      2
+     </xref>
+    </contrib>
+    <contrib contrib-type="author" id="Au6">
+     <contrib-id contrib-id-type="orcid">
+      http://orcid.org/0000-0002-3221-9926
+     </contrib-id>
+     <name name-style="western">
+      <surname>
+       Sánchez-Gomáriz
+      </surname>
+      <given-names>
+       Erica
+      </given-names>
+     </name>
+     <xref ref-type="aff" rid="Aff1">
+      1
+     </xref>
+     <xref ref-type="aff" rid="Aff2">
+      2
+     </xref>
+    </contrib>
+    <contrib contrib-type="author" id="Au7">
+     <contrib-id contrib-id-type="orcid">
+      http://orcid.org/0000-0001-9462-7338
+     </contrib-id>
+     <name name-style="western">
+      <surname>
+       Fernández
+      </surname>
+      <given-names>
+       Juan
+      </given-names>
+     </name>
+     <xref ref-type="aff" rid="Aff2">
+      2
+     </xref>
+    </contrib>
+    <contrib contrib-type="author" id="Au8">
+     <contrib-id contrib-id-type="orcid">
+      http://orcid.org/0000-0003-3557-6600
+     </contrib-id>
+     <name name-style="western">
+      <surname>
+       Cruz
+      </surname>
+      <given-names>
+       Alejandro
+      </given-names>
+     </name>
+     <xref ref-type="aff" rid="Aff2">
+      2
+     </xref>
+    </contrib>
+    <contrib contrib-type="author" id="Au9">
+     <name name-style="western">
+      <surname>
+       Quirós
+      </surname>
+      <given-names>
+       Alberto
+      </given-names>
+     </name>
+     <xref ref-type="aff" rid="Aff2">
+      2
+     </xref>
+    </contrib>
+    <contrib contrib-type="author" id="Au10">
+     <contrib-id contrib-id-type="orcid">
+      http://orcid.org/0009-0007-1320-7819
+     </contrib-id>
+     <name name-style="western">
+      <surname>
+       Xie
+      </surname>
+      <given-names>
+       Zhenyun
+      </given-names>
+     </name>
+     <xref ref-type="aff" rid="Aff2">
+      2
+     </xref>
+    </contrib>
+    <contrib contrib-type="author" id="Au11">
+     <contrib-id contrib-id-type="orcid">
+      http://orcid.org/0000-0003-2289-6197
+     </contrib-id>
+     <name name-style="western">
+      <surname>
+       Benitez
+      </surname>
+      <given-names>
+       Jesús
+      </given-names>
+     </name>
+     <xref ref-type="aff" rid="Aff2">
+      2
+     </xref>
+    </contrib>
+    <contrib contrib-type="author" id="Au12">
+     <contrib-id contrib-id-type="orcid">
+      http://orcid.org/0000-0001-7532-9589
+     </contrib-id>
+     <name name-style="western">
+      <surname>
+       Bekesi
+      </surname>
+      <given-names>
+       Nandor
+      </given-names>
+     </name>
+     <xref ref-type="aff" rid="Aff2">
+      2
+     </xref>
+    </contrib>
+    <contrib contrib-type="author" id="Au13">
+     <contrib-id contrib-id-type="orcid">
+      http://orcid.org/0000-0002-2099-7923
+     </contrib-id>
+     <name name-style="western">
+      <surname>
+       Santomé
+      </surname>
+      <given-names>
+       Alejandro
+      </given-names>
+     </name>
+     <xref ref-type="aff" rid="Aff2">
+      2
+     </xref>
+    </contrib>
+    <contrib contrib-type="author" id="Au14">
+     <name name-style="western">
+      <surname>
+       Pérez-Galacho
+      </surname>
+      <given-names>
+       Diego
+      </given-names>
+     </name>
+     <xref ref-type="aff" rid="Aff1">
+      1
+     </xref>
+    </contrib>
+    <contrib contrib-type="author" id="Au15">
+     <name name-style="western">
+      <surname>
+       DasMahapatra
+      </surname>
+      <given-names>
+       Prometheus
+      </given-names>
+     </name>
+     <xref ref-type="aff" rid="Aff1">
+      1
+     </xref>
+    </contrib>
+    <contrib contrib-type="author" id="Au16">
+     <contrib-id contrib-id-type="orcid">
+      http://orcid.org/0000-0003-3783-6680
+     </contrib-id>
+     <name name-style="western">
+      <surname>
+       Macho
+      </surname>
+      <given-names>
+       Andrés
+      </given-names>
+     </name>
+     <xref ref-type="aff" rid="Aff1">
+      1
+     </xref>
+    </contrib>
+    <contrib contrib-type="author" corresp="yes" id="Au17">
+     <contrib-id contrib-id-type="orcid">
+      http://orcid.org/0000-0002-6460-4167
+     </contrib-id>
+     <name name-style="western">
+      <surname>
+       Capmany
+      </surname>
+      <given-names>
+       José
+      </given-names>
+     </name>
+     <address>
+      <email>
+       jcapmany@iteam.upv.es
+      </email>
+     </address>
+     <xref ref-type="aff" rid="Aff1">
+      1
+     </xref>
+     <xref ref-type="aff" rid="Aff2">
+      2
+     </xref>
+     <xref ref-type="corresp" rid="IDs41467024458887_cor17">
+      t
+     </xref>
+    </contrib>
+    <aff id="Aff1">
+     <label>
+      1
+     </label>
+     <institution-wrap>
+      <institution-id institution-id-type="ROR">
+       https://ror.org/01460j859
+      </institution-id>
+      <institution-id institution-id-type="GRID">
+       grid.157927.f
+      </institution-id>
+      <institution-id institution-id-type="ISNI">
+       0000 0004 1770 5832
+      </institution-id>
+      <institution content-type="org-division">
+       Photonics Research Labs, iTEAM Research Institute
+      </institution>
+      <institution content-type="org-name">
+       Universitat Politècnica de València
+      </institution>
+     </institution-wrap>
+     <addr-line content-type="city">
+      Valencia
+     </addr-line>
+     <country country="ES">
+      Spain
+     </country>
+    </aff>
+    <aff id="Aff2">
+     <label>
+      2
+     </label>
+     <institution-wrap>
+      <institution content-type="org-name">
+       iPronics, Programmable Photonics
+      </institution>
+     </institution-wrap>
+     <addr-line content-type="city">
+      Valencia
+     </addr-line>
+     <country country="ES">
+      Spain
+     </country>
+    </aff>
+   </contrib-group>
+   <author-notes>
+    <corresp id="IDs41467024458887_cor1">
+     <label>
+      a
+     </label>
+     <email>
+      daniel.perez@ipronics.com
+     </email>
+    </corresp>
+    <corresp id="IDs41467024458887_cor17">
+     <label>
+      t
+     </label>
+     <email>
+      jcapmany@iteam.upv.es
+     </email>
+    </corresp>
+   </author-notes>
+   <pub-date date-type="pub" publication-format="electronic">
+    <day>
+     20
+    </day>
+    <month>
+     2
+    </month>
+    <year>
+     2024
+    </year>
+   </pub-date>
+   <pub-date date-type="collection" publication-format="electronic">
+    <month>
+     12
+    </month>
+    <year>
+     2024
+    </year>
+   </pub-date>
+   <volume>
+    15
+   </volume>
+   <issue seq="1563">
+    1
+   </issue>
+   <elocation-id>
+    1563
+   </elocation-id>
+   <history>
+    <date date-type="registration">
+     <day>
+      7
+     </day>
+     <month>
+      2
+     </month>
+     <year>
+      2024
+     </year>
+    </date>
+    <date date-type="received">
+     <day>
+      18
+     </day>
+     <month>
+      10
+     </month>
+     <year>
+      2023
+     </year>
+    </date>
+    <date date-type="accepted">
+     <day>
+      6
+     </day>
+     <month>
+      2
+     </month>
+     <year>
+      2024
+     </year>
+    </date>
+    <date date-type="online">
+     <day>
+      20
+     </day>
+     <month>
+      2
+     </month>
+     <year>
+      2024
+     </year>
+    </date>
+   </history>
+   <permissions>
+    <copyright-statement content-type="compact">
+     © The Author(s) 2024
+    </copyright-statement>
+    <copyright-year>
+     2024
+    </copyright-year>
+    <copyright-holder>
+     The Author(s)
+    </copyright-holder>
+    <license license-type="open-access" xlink:href="http://creativecommons.org/licenses/by/4.0/">
+     <license-p>
+      <bold>
+       Open Access
+      </bold>
+      This article is licensed under a Creative Commons Attribution 4.0 International License, which permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if changes were made. The images or other third party material in this article are included in the article’s Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not included in the article’s Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this licence, visit
+      <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/">
+       http://creativecommons.org/licenses/by/4.0/
+      </ext-link>
+      .
+     </license-p>
+    </license>
+   </permissions>
+   <abstract id="Abs1" xml:lang="en">
+    <title>
+     Abstract
+    </title>
+    <p id="Par1">
+     A general-purpose photonic processor can be built integrating a silicon photonic programmable core in a technology stack comprising an electronic monitoring and controlling layer and a software layer for resource control and programming. This processor can leverage the unique properties of photonics in terms of ultra-high bandwidth, high-speed operation, and low power consumption while operating in a complementary and synergistic way with electronic processors. These features are key in applications such as next-generation 5/6 G wireless systems where reconfigurable filtering, frequency conversion, arbitrary waveform generation, and beamforming are currently provided by microwave photonic subsystems that cannot be scaled down. Here we report the first general-purpose programmable processor with the remarkable capability to implement all the required basic functionalities of a microwave photonic system by suitable programming of its resources. The processor is fabricated in silicon photonics and incorporates the full photonic/electronic and software stack.
+    </p>
+   </abstract>
+   <abstract abstract-type="ShortSummary" id="Abs2" xml:lang="en">
+    <p id="Par2">
+     The authors report implementing and demonstrating a first general-purpose integrated photonic programmable processor capable of performing all the functionalities required in RF photonic systems, such as those needed in 5/6 G communications networks.
+    </p>
+   </abstract>
+   <kwd-group kwd-group-type="hierarchical" vocab="FoR" vocab-identifier="ANZSRC 2008">
+    <kwd content-type="term" vocab-term-identifier="10">
+     Technology
+    </kwd>
+    <nested-kwd>
+     <kwd content-type="term" vocab-term-identifier="1005">
+      Communications Technologies
+     </kwd>
+    </nested-kwd>
+    <kwd content-type="term" vocab-term-identifier="09">
+     Engineering
+    </kwd>
+    <nested-kwd>
+     <kwd content-type="term" vocab-term-identifier="0906">
+      Electrical and Electronic Engineering
+     </kwd>
+    </nested-kwd>
+    <kwd content-type="term" vocab-term-identifier="08">
+     Information and Computing Sciences
+    </kwd>
+    <nested-kwd>
+     <kwd content-type="term" vocab-term-identifier="0803">
+      Computer Software
+     </kwd>
+    </nested-kwd>
+   </kwd-group>
+   <custom-meta-group>
+    <custom-meta>
+     <meta-name>
+      publisher-imprint-name
+     </meta-name>
+     <meta-value>
+      Nature Portfolio
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      volume-issue-count
+     </meta-name>
+     <meta-value>
+      1
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      issue-article-count
+     </meta-name>
+     <meta-value>
+      1563
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      issue-toc-levels
+     </meta-name>
+     <meta-value>
+      0
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      issue-pricelist-year
+     </meta-name>
+     <meta-value>
+      2024
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      issue-copyright-holder
+     </meta-name>
+     <meta-value>
+      Springer Nature Limited
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      issue-copyright-year
+     </meta-name>
+     <meta-value>
+      2024
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      article-contains-esm
+     </meta-name>
+     <meta-value>
+      Yes
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      article-numbering-style
+     </meta-name>
+     <meta-value>
+      Unnumbered
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      article-registration-date-year
+     </meta-name>
+     <meta-value>
+      2024
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      article-registration-date-month
+     </meta-name>
+     <meta-value>
+      2
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      article-registration-date-day
+     </meta-name>
+     <meta-value>
+      7
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      article-toc-levels
+     </meta-name>
+     <meta-value>
+      0
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      toc-levels
+     </meta-name>
+     <meta-value>
+      0
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      volume-type
+     </meta-name>
+     <meta-value>
+      Regular
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      journal-product
+     </meta-name>
+     <meta-value>
+      NonStandardArchiveJournal
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      numbering-style
+     </meta-name>
+     <meta-value>
+      Unnumbered
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      article-grants-type
+     </meta-name>
+     <meta-value>
+      OpenChoice
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      metadata-grant
+     </meta-name>
+     <meta-value>
+      OpenAccess
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      abstract-grant
+     </meta-name>
+     <meta-value>
+      OpenAccess
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      bodypdf-grant
+     </meta-name>
+     <meta-value>
+      OpenAccess
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      bodyhtml-grant
+     </meta-name>
+     <meta-value>
+      OpenAccess
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      bibliography-grant
+     </meta-name>
+     <meta-value>
+      OpenAccess
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      esm-grant
+     </meta-name>
+     <meta-value>
+      OpenAccess
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      online-first
+     </meta-name>
+     <meta-value>
+      false
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      pdf-file-reference
+     </meta-name>
+     <meta-value>
+      BodyRef/PDF/41467_2024_Article_45888.pdf
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      pdf-type
+     </meta-name>
+     <meta-value>
+      Typeset
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      target-type
+     </meta-name>
+     <meta-value>
+      OnlinePDF
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      issue-type
+     </meta-name>
+     <meta-value>
+      Regular
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      article-type
+     </meta-name>
+     <meta-value>
+      OriginalPaper
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      journal-subject-primary
+     </meta-name>
+     <meta-value>
+      Science, Humanities and Social Sciences, multidisciplinary
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      journal-subject-secondary
+     </meta-name>
+     <meta-value>
+      Science, Humanities and Social Sciences, multidisciplinary
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      journal-subject-secondary
+     </meta-name>
+     <meta-value>
+      Science, multidisciplinary
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      journal-subject-collection
+     </meta-name>
+     <meta-value>
+      Science (multidisciplinary)
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      open-access
+     </meta-name>
+     <meta-value>
+      true
+     </meta-value>
+    </custom-meta>
+   </custom-meta-group>
+  </article-meta>
+ </front>
+ <body>
+  <sec id="Sec1" sec-type="introduction">
+   <title>
+    Introduction
+   </title>
+   <p id="Par3">
+    Programmable photonic circuits manipulate the flow of light on a chip by electrically controlling a set of tunable analog gates connected by optical waveguides
+    <sup>
+     <xref ref-type="bibr" rid="CR1">
+      1
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR2">
+      2
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR3">
+      3
+     </xref>
+     –
+     <xref ref-type="bibr" rid="CR4">
+      4
+     </xref>
+    </sup>
+    . Light is distributed and spatially rerouted to implement various linear functions by interfering signals along different paths. The proliferation of ultra-high-speed 5/6 G mobile networks
+    <sup>
+     <xref ref-type="bibr" rid="CR5">
+      5
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR6">
+      6
+     </xref>
+    </sup>
+    , satellite communications
+    <sup>
+     <xref ref-type="bibr" rid="CR7">
+      7
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR8">
+      8
+     </xref>
+    </sup>
+    , photonic computing
+    <sup>
+     <xref ref-type="bibr" rid="CR8">
+      8
+     </xref>
+    </sup>
+    , advanced communications
+    <sup>
+     <xref ref-type="bibr" rid="CR9">
+      9
+     </xref>
+    </sup>
+    , lidar
+    <sup>
+     <xref ref-type="bibr" rid="CR10">
+      10
+     </xref>
+    </sup>
+    , microwave spectroscopy
+    <sup>
+     <xref ref-type="bibr" rid="CR11">
+      11
+     </xref>
+    </sup>
+    , edge cloud computing
+    <sup>
+     <xref ref-type="bibr" rid="CR12">
+      12
+     </xref>
+    </sup>
+    <sup>
+     ,
+    </sup>
+    and the internet of things
+    <sup>
+     <xref ref-type="bibr" rid="CR13">
+      13
+     </xref>
+    </sup>
+    is exerting considerable pressure over existing hardware infrastructures connecting the wireless and fiber segments in communication networks. The solution to accommodating the ever-increasing demands
+    <underline>
+     for
+    </underline>
+    bandwidth, providing lower latency and reduced power consumption passes through extending the radiofrequency operation spectrum to the microwave and millimeter-wave regions and developing compact, flexible, and agile solutions capable of interfacing the radiofrequency (RF) and photonic domains. Microwave photonics
+    <sup>
+     <xref ref-type="bibr" rid="CR14">
+      14
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR15">
+      15
+     </xref>
+    </sup>
+    (MWP), which uses optical devices and techniques to generate, manipulate, transport, and measure high-speed radiofrequency signals is one of the few technologies capable of supporting this evolution. Traditional RF systems and devices that process signals directly at frequencies
+    <italic>
+     f
+    </italic>
+    <sub>
+     RF
+    </sub>
+    in the RF spectrum are static, bulky, vulnerable to electromagnetic interference (EMI), and have limited frequency bandwidth (see supplementary note
+    <xref ref-type="supplementary-material" rid="MOESM1">
+     1
+    </xref>
+    ). The translation of RF systems into the optical region of the spectrum using frequency up-conversion to the optical spectrum region
+    <italic>
+     f
+    </italic>
+    <sub>
+     <italic>
+      o
+     </italic>
+    </sub>
+    (see supplementary note
+    <xref ref-type="supplementary-material" rid="MOESM1">
+     1
+    </xref>
+    ) brings the possibility of leveraging the advantages of photonic systems, which include tunability, broadband operation, immunity to EMI, and potential space weight and power (SWAP) gains. Most of these advantages have been proved in prior works where discrete photonic components such as lasers, optical fibers, filters, and detectors have been assembled to implement specific functionalities such as waveform generation
+    <sup>
+     <xref ref-type="bibr" rid="CR16">
+      16
+     </xref>
+    </sup>
+    , beamforming
+    <sup>
+     <xref ref-type="bibr" rid="CR17">
+      17
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR18">
+      18
+     </xref>
+     –
+     <xref ref-type="bibr" rid="CR19">
+      19
+     </xref>
+    </sup>
+    , filtering
+    <sup>
+     <xref ref-type="bibr" rid="CR20">
+      20
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR21">
+      21
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR22">
+      22
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR23">
+      23
+     </xref>
+     –
+     <xref ref-type="bibr" rid="CR24">
+      24
+     </xref>
+    </sup>
+    , channelization
+    <sup>
+     <xref ref-type="bibr" rid="CR25">
+      25
+     </xref>
+    </sup>
+    , and instantaneous frequency measurements
+    <sup>
+     <xref ref-type="bibr" rid="CR26">
+      26
+     </xref>
+    </sup>
+    . Though interesting, these solutions are limited in terms of reliability, and repeatability and are still bulky and complex to engineer and operate. Therefore, their applicability to scenarios with massive takeovers and high volumes is severely hampered.
+   </p>
+   <p id="Par4">
+    Many of the former limitations can be overcome by benefiting from the compact footprint, modularity, and scalable fabrication methods of integrated photonic circuits
+    <sup>
+     <xref ref-type="bibr" rid="CR27">
+      27
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR28">
+      28
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR29">
+      29
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR30">
+      30
+     </xref>
+     –
+     <xref ref-type="bibr" rid="CR31">
+      31
+     </xref>
+    </sup>
+    . The convergence of the two fields, known as integrated MWP
+    <sup>
+     <xref ref-type="bibr" rid="CR5">
+      5
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR32">
+      32
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR33">
+      33
+     </xref>
+    </sup>
+    has allowed a dramatic reduction in the footprint and losses of complex MWP systems allowing a limited degree of reconfigurability. However, most of the integrated photonic microwave subsystems reported to date have been implemented as application-specific photonic integrated circuits (ASPICs), which are designed to perform a particular functionality
+    <sup>
+     <xref ref-type="bibr" rid="CR34">
+      34
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR35">
+      35
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR36">
+      36
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR37">
+      37
+     </xref>
+     –
+     <xref ref-type="bibr" rid="CR38">
+      38
+     </xref>
+    </sup>
+    . These chips usually require several fabrication cycles to achieve optimum performance, and this results in unacceptable long fabrication times and costs
+    <sup>
+     <xref ref-type="bibr" rid="CR4">
+      4
+     </xref>
+    </sup>
+    . Furthermore, they are very sensitive to non-recurring engineering costs (NRE) as any change in systems specifications requires a new chip design. A way out is to leverage the strong push toward programmable photonic circuits that are also being developed for related application areas such as quantum photonics
+    <sup>
+     <xref ref-type="bibr" rid="CR39">
+      39
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR40">
+      40
+     </xref>
+     –
+     <xref ref-type="bibr" rid="CR41">
+      41
+     </xref>
+    </sup>
+    , artificial intelligence
+    <sup>
+     <xref ref-type="bibr" rid="CR42">
+      42
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR43">
+      43
+     </xref>
+    </sup>
+    , neuromorphic computing
+    <sup>
+     <xref ref-type="bibr" rid="CR44">
+      44
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR45">
+      45
+     </xref>
+     –
+     <xref ref-type="bibr" rid="CR46">
+      46
+     </xref>
+    </sup>
+    <sup>
+     ,
+    </sup>
+    and sensing
+    <sup>
+     <xref ref-type="bibr" rid="CR47">
+      47
+     </xref>
+    </sup>
+    . In this context, two particular routes are being explored. In the first, circuits based on traditional interferometric and photonic waveguide structures are designed for flexible programming of its relevant parameters. The key elements are unit cells of Mach–Zehnder interferometers and ring resonators that can be activated individually to implement, reconfigurable delay lines
+    <sup>
+     <xref ref-type="bibr" rid="CR48">
+      48
+     </xref>
+    </sup>
+    , beamformers
+    <sup>
+     <xref ref-type="bibr" rid="CR49">
+      49
+     </xref>
+    </sup>
+    , waveform generators
+    <sup>
+     <xref ref-type="bibr" rid="CR50">
+      50
+     </xref>
+    </sup>
+    , and filters
+    <sup>
+     <xref ref-type="bibr" rid="CR51">
+      51
+     </xref>
+    </sup>
+    . The second is based on the possibility of implementing a generic signal processor or field programmable photonic gate array (FPPGA)
+    <sup>
+     <xref ref-type="bibr" rid="CR2">
+      2
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR3">
+      3
+     </xref>
+    </sup>
+    where a photonic core made from a mesh of uniform tunable building blocks and surrounded by external high-performance blocks can be easily programmed to support multiple functions
+    <sup>
+     <xref ref-type="bibr" rid="CR52">
+      52
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR53">
+      53
+     </xref>
+     –
+     <xref ref-type="bibr" rid="CR54">
+      54
+     </xref>
+    </sup>
+    by software definition. The successful development of this approach requires solving an extremely challenging and complex technology stack problem
+    <sup>
+     <xref ref-type="bibr" rid="CR1">
+      1
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR3">
+      3
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR4">
+      4
+     </xref>
+    </sup>
+    comprising not only the photonic processing layer but also an electronics layer providing driving, monitoring, and control, and a software layer for optimization and programming. While to the best of our knowledge, this has not been demonstrated so far, the gains that could be achieved in the cases where programmable photonic circuits can replace electronic subsystems are huge, especially in terms of ultra-high bandwidth, high-speed operation, and low power consumption. These are complemented by their flexibility and reduced fabrication costs from leveraging economies of scale. All these will be obtained while operating in a complementary and synergistic way with electronic processors. These gains will have a strong impact in meeting and surpassing the stringent requirements of mobile-based applications as they will enable a new generation of compact, broadband, and programmable devices ready to be allocated both in central and base stations.
+   </p>
+   <p id="Par5">
+    Here we report the first general-purpose scalable programmable photonic processor with the remarkable capability to implement all the main functionalities required in a microwave photonic system by suitable programming of its resources. So far, individual microwave photonic applications are mostly carried by ASPICs, but as anticipated
+    <sup>
+     <xref ref-type="bibr" rid="CR1">
+      1
+     </xref>
+    </sup>
+    , all of them can be implemented by the same general-purpose programmable processor if it integrates the required technology stack (photonic, electronic, and software). This evolution beyond the current state of the art and the demonstration of multifunctionality by programming are the fundamental results of the paper. The processor is fabricated in a silicon photonics platform and incorporates for the first time to our knowledge the full photonic/electronic and software stack. We leverage recent advances in advanced waveguide mesh designs and optimization algorithms
+    <sup>
+     <xref ref-type="bibr" rid="CR52">
+      52
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR53">
+      53
+     </xref>
+    </sup>
+    , to enable software-defined functionality programing at reconfiguration speeds of several microseconds. With the proper development of attached modulators and photodetectors, the operation bandwidth of this processor can surpass the millimeter-wave band featuring power consumption values in the order of a few watts. The possibility of implementing all the functionalities with a single chip opens the path to scale down the processor size to dimensions compatible with the requirements of next-generation millimeter-wave base stations and satellites
+    <sup>
+     <xref ref-type="bibr" rid="CR6">
+      6
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR7">
+      7
+     </xref>
+    </sup>
+    . Our findings indicate that this processor can work in frequency ranges of up to 100 GHz featuring power consumption values in the order of a few watts. The possibility of implementing all the functionalities with a single chip opens the path for use in an unconstrained number of custom applications.
+   </p>
+  </sec>
+  <sec id="Sec2" sec-type="results">
+   <title>
+    Results
+   </title>
+   <sec id="Sec3">
+    <title>
+     Overview of RF-photonic functionalities
+    </title>
+    <p id="Par6">
+     RF-photonics can support all the main functionalities needed by current and future application scenarios in communications, computing, and sensing. Figure
+     <xref ref-type="fig" rid="Fig1">
+      1
+     </xref>
+     shows a selection of some of them covering terrestrial, space, and airborne scenarios with very different requirements in terms of operation frequency, power consumption, and footprint. It is precisely the added value of reconfigurability that enables this unique feature of spanning this variety of requirements as well as adaptative-demanding applications. A list of the main 12 functionalities required in these systems with a description and hosting locations is provided in Table
+     <xref ref-type="table" rid="Tab1">
+      1
+     </xref>
+     . The table also provides an indicative limited selection of publications reporting their ASPIC implementation. The interested can find an exhaustive list of references reporting ASPIC implementations of MWP functionalities elsewhere
+     <sup>
+      <xref ref-type="bibr" rid="CR11">
+       11
+      </xref>
+     </sup>
+     .
+     <fig id="Fig1" position="float">
+      <label>
+       Fig. 1
+      </label>
+      <caption xml:lang="en">
+       <title>
+        A selection of RF-photonic functionalities covering terrestrial, space, and airborne scenarios.
+       </title>
+       <p>
+        (BTS base station, CS central station, DC data center, AI artificial intelligence, AWG arbitrary waveform generation, IoT Internet of things, MIMO multiple input multiple outputs).
+       </p>
+      </caption>
+      <graphic mime-subtype="PNG" specific-use="web" xlink:href="MediaObjects/41467_2024_45888_Fig1_HTML.png"/>
+     </fig>
+     <table-wrap id="Tab1">
+      <label>
+       Table 1
+      </label>
+      <caption xml:lang="en">
+       <p>
+        The main functionalities required in RF-photonic systems with a brief description of each one, their main applications, and where the systems implementing them are hosted
+       </p>
+      </caption>
+      <table frame="hsides" rules="groups">
+       <thead>
+        <tr>
+         <th>
+          <p>
+           Functionality and some reported ASPICs
+          </p>
+         </th>
+         <th>
+          <p>
+           Short description
+          </p>
+         </th>
+         <th>
+          <p>
+           Hosting
+          </p>
+         </th>
+         <th>
+          <p>
+           Application
+          </p>
+         </th>
+        </tr>
+       </thead>
+       <tbody>
+        <tr>
+         <td>
+          <p>
+           Tunable RF-filtering
+           <sup>
+            <xref ref-type="bibr" rid="CR5">
+             5
+            </xref>
+           </sup>
+           ,
+           <sup>
+            <xref ref-type="bibr" rid="CR11">
+             11
+            </xref>
+            ,
+            <xref ref-type="bibr" rid="CR33">
+             33
+            </xref>
+            ,
+            <xref ref-type="bibr" rid="CR34">
+             34
+            </xref>
+            –
+            <xref ref-type="bibr" rid="CR35">
+             35
+            </xref>
+            ,
+            <xref ref-type="bibr" rid="CR51">
+             51
+            </xref>
+            ,
+            <xref ref-type="bibr" rid="CR52">
+             52
+            </xref>
+           </sup>
+          </p>
+         </td>
+         <td>
+          <p>
+           Channel selection in the RF domain &amp; Noise reduction
+          </p>
+         </td>
+         <td rowspan="2">
+          <p>
+           Base stations, Central offices, planes, satellites, drones, edge data centers
+          </p>
+         </td>
+         <td rowspan="2">
+          <p>
+           <italic>
+            Mobile &amp; satellite comms, IoT, Sensing, Radar, Imaging
+           </italic>
+          </p>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          <p>
+           Tunable optical filtering
+           <sup>
+            <xref ref-type="bibr" rid="CR4">
+             4
+            </xref>
+           </sup>
+          </p>
+         </td>
+         <td>
+          <p>
+           Superchannel RF selection in the optical domain &amp; Noise reduction
+          </p>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          <p>
+           Tunable RF delay line
+           <sup>
+            <xref ref-type="bibr" rid="CR11">
+             11
+            </xref>
+            ,
+            <xref ref-type="bibr" rid="CR48">
+             48
+            </xref>
+            ,
+            <xref ref-type="bibr" rid="CR49">
+             49
+            </xref>
+           </sup>
+          </p>
+         </td>
+         <td>
+          <p>
+           Selective RF channel delay and time-delayed signal combination
+          </p>
+         </td>
+         <td rowspan="2">
+          <p>
+           Radio over fiber links, beamformers
+          </p>
+         </td>
+         <td rowspan="2">
+          <p>
+           <italic>
+            Phased array antennas, Radar, Sensing, Lidar
+           </italic>
+          </p>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          <p>
+           Tunable RF phase shifter
+           <sup>
+            <xref ref-type="bibr" rid="CR11">
+             11
+            </xref>
+            ,
+            <xref ref-type="bibr" rid="CR48">
+             48
+            </xref>
+           </sup>
+          </p>
+         </td>
+         <td>
+          <p>
+           Selective RF channel dephasing and phase-delayed signal combination
+          </p>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          <p>
+           Frequency measurement
+           <sup>
+            <xref ref-type="bibr" rid="CR21">
+             21
+            </xref>
+           </sup>
+          </p>
+         </td>
+         <td>
+          <p>
+           Identification of the frequency of non-desired interfering signals
+          </p>
+         </td>
+         <td>
+          <p>
+           Radar and antenna infrastructure sensors, satellites, base stations
+          </p>
+         </td>
+         <td>
+          <p>
+           <italic>
+            Radar, navigation systems, self-interference cancellation
+           </italic>
+          </p>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          <p>
+           Optoelectronic oscillators (OEOs)
+           <sup>
+            <xref ref-type="bibr" rid="CR11">
+             11
+            </xref>
+            ,
+            <xref ref-type="bibr" rid="CR36">
+             36
+            </xref>
+            ,
+            <xref ref-type="bibr" rid="CR37">
+             37
+            </xref>
+           </sup>
+          </p>
+         </td>
+         <td>
+          <p>
+           Ultrapure tunable RF tone generation based on combined optical/RF energy storage in a mixed optoelectronic cavity.
+          </p>
+         </td>
+         <td>
+          <p>
+           Clock reference systems, Spectrum analyzers, RF coherent receivers
+          </p>
+         </td>
+         <td>
+          <p>
+           <italic>
+            Avionics and
+           </italic>
+          </p>
+          <p>
+           <italic>
+            Satellite comms, Navigation systems
+           </italic>
+           .
+          </p>
+          <p>
+           <italic>
+            Time and frequency measurement
+           </italic>
+          </p>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          <p>
+           Arbitrary waveform generation (AWG)
+           <sup>
+            <xref ref-type="bibr" rid="CR11">
+             11
+            </xref>
+            ,
+            <xref ref-type="bibr" rid="CR50">
+             50
+            </xref>
+           </sup>
+          </p>
+         </td>
+         <td>
+          <p>
+           Generation of RF wavepackets with arbitrary amplitude shapes and central frequencies of operation.
+          </p>
+         </td>
+         <td>
+          <p>
+           Central stations, Radar, satellites, planes, drones, infrastructures, IoT terminals
+          </p>
+         </td>
+         <td>
+          <p>
+           <italic>
+            Radar, Mobile communications, microwave imaging, instrumentation
+           </italic>
+          </p>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          <p>
+           Optical generation of MM-wave CW signals
+           <sup>
+            <xref ref-type="bibr" rid="CR11">
+             11
+            </xref>
+            ,
+            <xref ref-type="bibr" rid="CR5">
+             5
+            </xref>
+           </sup>
+          </p>
+         </td>
+         <td>
+          <p>
+           Baseband and Intermediate frequency conversion to/from the radio spectrum
+          </p>
+         </td>
+         <td>
+          <p>
+           Central stations, radar antennas, base stations
+          </p>
+         </td>
+         <td>
+          <p>
+           <italic>
+            Mobile, wearable &amp; satellite comms, Radar, Imaging
+           </italic>
+          </p>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          <p>
+           Beamforming
+           <sup>
+            <xref ref-type="bibr" rid="CR5">
+             5
+            </xref>
+            ,
+            <xref ref-type="bibr" rid="CR11">
+             11
+            </xref>
+            ,
+            <xref ref-type="bibr" rid="CR48">
+             48
+            </xref>
+            ,
+            <xref ref-type="bibr" rid="CR49">
+             49
+            </xref>
+           </sup>
+          </p>
+         </td>
+         <td>
+          <p>
+           Broadband angular steering of a radiation pattern from/to an antenna array
+          </p>
+         </td>
+         <td>
+          <p>
+           Base stations, Radar infrastructures
+          </p>
+         </td>
+         <td>
+          <p>
+           <italic>
+            Phased array antennas, 5-6
+           </italic>
+           <italic>
+            G mobile &amp; satellite comms, Sensing, Radar, Imaging
+           </italic>
+          </p>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          <p>
+           Radio over fiber transmission
+           <sup>
+            <xref ref-type="bibr" rid="CR5">
+             5
+            </xref>
+           </sup>
+          </p>
+         </td>
+         <td>
+          <p>
+           Broadband communication transceivers between central stations and base stations
+          </p>
+         </td>
+         <td>
+          <p>
+           Edge Data centers, Base stations, Central stations
+          </p>
+         </td>
+         <td>
+          <p>
+           <italic>
+            Mobile and satellite communications
+           </italic>
+          </p>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          <p>
+           Tunable beam splitting
+           <sup>
+            <xref ref-type="bibr" rid="CR1">
+             1
+            </xref>
+            ,
+            <xref ref-type="bibr" rid="CR2">
+             2
+            </xref>
+           </sup>
+          </p>
+         </td>
+         <td>
+          <p>
+           Signal distribution among different physical outputs
+          </p>
+         </td>
+         <td rowspan="2">
+          <p>
+           Central stations, Edge Data Centers, base stations, satellites, planes
+          </p>
+         </td>
+         <td rowspan="2">
+          <p>
+           <italic>
+            Mobile &amp;satellite communications
+           </italic>
+           ,
+          </p>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          <p>
+           Tunable RF interconnection and switching
+           <sup>
+            <xref ref-type="bibr" rid="CR1">
+             1
+            </xref>
+            ,
+            <xref ref-type="bibr" rid="CR2">
+             2
+            </xref>
+           </sup>
+          </p>
+         </td>
+         <td>
+          <p>
+           RF Channel and superchannel connection between selected input/output ports
+          </p>
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <table-wrap-foot>
+       <p>
+        The left column also includes a brief list of references corresponding to ASPICs reported for each of them.
+       </p>
+      </table-wrap-foot>
+     </table-wrap>
+    </p>
+   </sec>
+   <sec id="Sec4">
+    <title>
+     The general-purpose photonic processor
+    </title>
+    <p id="Par7">
+     The general-purpose photonic processor presented in this work aggregates, for the first time, the complex full-stack necessary to operate a programmable photonic device: the optical layer, the control layer, and the software layer (Fig.
+     <xref ref-type="fig" rid="Fig2">
+      2a
+     </xref>
+     ). The photonic stage is integrated into a silicon-on-insulator chip that includes a reconfigurable core of 72 Programmable Unit Cells (PUC) distributed in a flatted hexagonal mesh topology
+     <sup>
+      <xref ref-type="bibr" rid="CR55">
+       55
+      </xref>
+     </sup>
+     (Fig.
+     <xref ref-type="fig" rid="Fig2">
+      2b
+     </xref>
+     ). In addition, the chip includes an optoelectronic monitoring unit array that provides feedback on the optical power at each port and four high-performance filters. The chip is connected optically through a fiber array with 64 ports (Fig.
+     <xref ref-type="fig" rid="Fig2">
+      2c
+     </xref>
+     ), from where 28 are routed to the mesh core and electronically through a wire bonding interconnection to a Printed Circuit Board (PCB).
+     <fig id="Fig2" position="float">
+      <label>
+       Fig. 2
+      </label>
+      <caption xml:lang="en">
+       <title>
+        The photonic processor elements and layers.
+       </title>
+       <p>
+        <bold>
+         a
+        </bold>
+        Optical layer of the processor with the core, I/Os, and high-performance blocks,
+        <bold>
+         b
+        </bold>
+        schematic of the waveguide mesh core,
+        <bold>
+         c
+        </bold>
+        assembled chip with control unit and access fibers,
+        <bold>
+         d
+        </bold>
+        picture of the chip with the highlighted region of the reconfigurable core,
+        <bold>
+         e
+        </bold>
+        interconnection diagram between optical system, control unit and software layer,
+        <bold>
+         f
+        </bold>
+        Software layer stack employed in this work.
+       </p>
+      </caption>
+      <graphic mime-subtype="PNG" specific-use="web" xlink:href="MediaObjects/41467_2024_45888_Fig2_HTML.png"/>
+     </fig>
+    </p>
+    <p id="Par8">
+     On the optical layer, the chip is optimized for C-band operation. As described in Fig.
+     <xref ref-type="fig" rid="Fig2">
+      2b
+     </xref>
+     and shown in Fig.
+     <xref ref-type="fig" rid="Fig2">
+      2d
+     </xref>
+     , the mesh core has 40 output ports, 12 connected to on-chip high-performance blocks (2 lattice filters of order 4, 1 coupled-ring filter, and 1 Ring-assisted MZI filter of order 4). As described before, each PUC consists of a Mach-Zehnder Interferometer (MZI) with two thermo-optic phase actuators. By tuning one of the arms, the user can modify the coupling factor of the 2 × 2 block. For independent coupling factor and phase response configuration, the user/system can configure both arms
+     <sup>
+      <xref ref-type="bibr" rid="CR56">
+       56
+      </xref>
+     </sup>
+     . The insertion loss and efficiency have been characterized across many chips and two wafers, resulting in 0.48 dB/PUC and 1.3 mW/
+     <italic>
+      π
+     </italic>
+     , respectively. The length and basic delay unit are also characterized as 811 um and 11.25 ps. Propagation losses are measured between 1.5 and 2.5 dB/cm for different waveguide widths and dies. Finally, fiber-chip coupling loss ranges between 1.5 dB to 3 dB, for different coupling techniques. For the scope of this paper, we employed a device with 3 dB loss per facet.
+    </p>
+    <p id="Par9">
+     On the electronic layer, 304 on-chip phase actuators are controlled by a board-integrated programmable current array source connected to the Logic Unit (LU) (Fig.
+     <xref ref-type="fig" rid="Fig2">
+      2
+     </xref>
+     c,
+     <xref ref-type="fig" rid="Fig2">
+      e
+     </xref>
+     ). Similarly, 40 on-chip photodetectors are measured through an on-board readout system connected to the logic unit. Closing the workflow, the software running in the LU actuates over the photonic system and can get instant data of the circuit configuration. The overall operation (set and readout times) is dominated by the driving unit, setting the reconfiguration time of the system to 15–90 ms.
+    </p>
+    <p id="Par10">
+     Finally, the software layer includes the backend functions necessary to maintain the chip temperature stable, drive and read from the photonic electro-optic components, and the application layers that automate the configuration of applications at different abstraction levels. Additional information on the software layer can be obtained in Supplementary Note
+     <xref ref-type="supplementary-material" rid="MOESM1">
+      2
+     </xref>
+     .
+    </p>
+   </sec>
+   <sec id="Sec5">
+    <title>
+     Experiments
+    </title>
+    <p id="Par11">
+     We employed the general-purpose photonic processor to demonstrate all the 12 main MWP functionalities listed in Table
+     <xref ref-type="table" rid="Tab1">
+      1
+     </xref>
+     . Prior to any experimental demonstration we performed a loss and delay characterization of the photonic core (see details in supplementary note
+     <xref ref-type="supplementary-material" rid="MOESM1">
+      3
+     </xref>
+     ), which rendered a loss per PUC (coupling + propagation + bend) of 0.48 dB ± 0.02 dB, a time delay per PUC of 11.2 ps and a chip excess loss (fiber-to-chip + access loss) of 10.5 dB. While here we outline only the salient results the reader can find these, and others described in more detail in the
+     <xref ref-type="supplementary-material" rid="MOESM1">
+      supplementary notes
+     </xref>
+     <xref ref-type="supplementary-material" rid="MOESM1">
+      3
+     </xref>
+     to
+     <xref ref-type="supplementary-material" rid="MOESM1">
+      11
+     </xref>
+     inclusively.
+    </p>
+    <sec id="Sec6">
+     <title>
+      Tunable and reconfigurable photonic filters
+     </title>
+     <p id="Par12">
+      Programmable photonic filters are the key element required for the implementation of most of the functionalities needed in MWP systems (see Supplementary Note
+      <xref ref-type="supplementary-material" rid="MOESM1">
+       0
+      </xref>
+      ). Between the electro-optic and optoelectronic interfaces, the reconfigurable optical core will include one or more optical filters and exploit either their spectral or time-domain responses depending on the application. It is therefore essential to have enough flexibility to implement a wide range of filter families. In our processor we can program and implement both finite (FIR) as well as infinite (IIR) impulse response reconfigurable photonic filters including unbalanced Mach-Zehnder Interferometers (MZIs) or UMZIs, Optical Ring Resonators (ORRs), Ring-assisted Mach-Zehnder Interferometer filters (RAMZIs), UMZI lattice filters, Coupled Resonant Waveguide filters (CROWs), Side Coupled Integrated Spaced Sequence of Optical Resonators (SCISSORS), Single and double loaded RAMZI filters and simultaneous UMZI, RR, and RAMZI filters. Figure
+      <xref ref-type="fig" rid="Fig3">
+       3a
+      </xref>
+      shows the schematic of the waveguide mesh implemented by its photonic core including the I/O port and PUC numbering and programmed to implement a resonant third-order CROW filter featuring three coupled-ring cavities of length 6 Basic Unit Length (BUL) (see attached circuit layout). This filter has two complementary outputs representing the reflection and transmission of a resonant filter. Figure
+      <xref ref-type="fig" rid="Fig3">
+       3b
+      </xref>
+      shows the spectral response for the reflection spectrum. The filter can be optimized by tuning the internal PUC responses and changing the zero and pole positions
+      <sup>
+       <xref ref-type="bibr" rid="CR57">
+        57
+       </xref>
+      </sup>
+      . For the particular case shown in the left part of Fig.
+      <xref ref-type="fig" rid="Fig3">
+       3b
+      </xref>
+      the filter yields a notch-type response with 26 dB suppression and a free spectral range (FSR) of 14.98 GHz. The right part of Fig.
+      <xref ref-type="fig" rid="Fig3">
+       3b
+      </xref>
+      shows the frequency notch tuning along a complete FSR (using an intracavity PUC as a cross-phase (CP) shifter). The transmission spectrum is shown in the left part of Fig.
+      <xref ref-type="fig" rid="Fig3">
+       3c
+      </xref>
+      . As expected, a complementary bandpass characteristic is obtained, now with an extinction ratio of 23 dB. The right part of 3(c) shows the bandpass tuning along a complete FSR (using an intracavity PUC as a cross-phase shifter). Figures
+      <xref ref-type="fig" rid="Fig3">
+       3
+      </xref>
+      d,
+      <xref ref-type="fig" rid="Fig3">
+       e
+      </xref>
+      show the programming and the measurement and tuning results for a non-resonant or IIR filter, in this case, a third-order UMZI lattice filter with 2BUL path imbalance. The filter features a bandpass characteristic with an extinction ratio of 21 dB and an FSR of 44.95 GHz. Again, the bandpass position can be fully tuned along an FSR interval by operating a cross-phase shifter in one of the interferometer arms. In Supplementary Note
+      <xref ref-type="supplementary-material" rid="MOESM1">
+       4
+      </xref>
+      we provide a detailed description of the implementation and measurements of 17 additional types of filter architectures.
+      <fig id="Fig3" position="float">
+       <label>
+        Fig. 3
+       </label>
+       <caption xml:lang="en">
+        <title>
+         Measured results for Photonic and RF-photonic filtering and phase shifting.
+        </title>
+        <p>
+         <bold>
+          a
+         </bold>
+         Schematic of the waveguide mesh implemented by its photonic core including the I/O port and PUC numbering and programmed to implement a resonant (IIR) third-order CROW filter featuring three coupled-ring cavities of length 6BUL (see attached circuit layout). PUC programming color code (CS Cross State switch, BS: Bar State switch, TC: Tunable Coupler, AV: available).
+         <bold>
+          b
+         </bold>
+         Left: Spectral response for the reflection spectrum.
+         <bold>
+          b
+         </bold>
+         Right: frequency notch tuning along a complete FSR (using an intracavity PUC as a cross-phase shifter CP).
+         <bold>
+          c
+         </bold>
+         Left: Transmission spectrum,
+         <bold>
+          c
+         </bold>
+         Right: bandpass tuning along a complete FSR (using an intracavity PUC as a cross-phase shifter CP).
+         <bold>
+          d
+         </bold>
+         Schematic of the waveguide mesh programmed to implement a third-order UMZI photonic lattice filter.
+         <bold>
+          e
+         </bold>
+         Optical transfer function and the tuning of the UMZI lattice filter and
+         <bold>
+          f
+         </bold>
+         RF transfer function and the tuning of the MWP filter based on self-beating of the third-order UMZI photonic lattice filter. PUC programming color code (CS Cross State switch, BS: Bar State switch, TC: Tunable Coupler, AV: available).
+        </p>
+       </caption>
+       <graphic mime-subtype="PNG" specific-use="web" xlink:href="MediaObjects/41467_2024_45888_Fig3_HTML.png"/>
+      </fig>
+     </p>
+    </sec>
+    <sec id="Sec7">
+     <title>
+      Tunable and reconfigurable radiofrequency filters and phase shifters
+     </title>
+     <p id="Par13">
+      Programmable radiofrequency filters can be obtained from direct down-conversion of the spectrum of an optical filter. For this, an input single-sideband RF signal must be employed, the optical carrier must be suppressed and reinjected, and combined with the upconverted RF sideband after the latter is processed by the filter. We assembled a testing and measurement setup as described in Supplementary Note
+      <xref ref-type="supplementary-material" rid="MOESM1">
+       5
+      </xref>
+      to measure the implementation of MWP filters based on different photonic filters. Figure
+      <xref ref-type="fig" rid="Fig3">
+       3e, f
+      </xref>
+      shows as an example, the transfer function and the tuning of an MWP filter based on the third-order UMZI photonic lattice filter described in the prior subsection. Note that the filter displays an RF power extinction ratio of 40 dB and features a radiofrequency FSR of 44 GHz. The interested reader is directed to Supplementary Note
+      <xref ref-type="supplementary-material" rid="MOESM1">
+       5
+      </xref>
+      for the implementation details of this and another MWP filter based on the down-conversion of a resonant RAMZI optical filter.
+     </p>
+    </sec>
+    <sec id="Sec8">
+     <title>
+      Optical generation of millimeter-wave CW signals
+     </title>
+     <p id="Par14">
+      Millimeter-wave signals can be generated by optical means through a variety of techniques. A flexible approach leverages the frequency up-conversion capability of an external modulator when a continuous wave signal provided by a laser is modulated by an RF tone followed by a tunable photonic filter to select the desired high-order harmonic sideband at its output. Up-conversion is produced by the beating of the optical carrier and the selected harmonic sideband at the photodetector. Figure
+      <xref ref-type="fig" rid="Fig4">
+       4a
+      </xref>
+      shows the assembled experimental configuration using the programmable photonics processor (see details in Supplementary Note
+      <xref ref-type="supplementary-material" rid="MOESM1">
+       6
+      </xref>
+      ). The light from a tunable laser is split into two paths through a 1 × 2 optical coupler (OC). On one path, the light is delivered to an intensity modulator (MOD) driven by a signal at the RF input frequency (15 GHz) to be multiplied. A tunable optical filter removes both the optical carrier and the lower sidebands at the modulator output. After an amplification stage, a programmable optical integrated filter is synthesized in the photonic processor, to select a single harmonic tone and ensure the suppression of all the remaining spectral components. Finally, a second optical coupler (OC) recombines the isolated tone with the optical carrier coming from the second output port of the input OC, and the resulting signal is optically amplified and delivered to a high-speed photodiode (PD). At the PD output, an RF carrier wave is generated at the beating frequency given by the detuning between the optical carrier and the selected modulator harmonic. Tuning the synthesized filter in the mesh by sweeping the cross phases of some PUCs in the filter path for selecting different tones allows the synthesizing of RF signals at integer multiples of the original RF frequency (N x 15 GHz). Figure
+      <xref ref-type="fig" rid="Fig4">
+       4b, c
+      </xref>
+      shows the x2 (30 GHz) and x3 (45 GHz) obtained when the third-order UMZI lattice filter shown in Fig.
+      <xref ref-type="fig" rid="Fig3">
+       3d, e
+      </xref>
+      is used as a discriminating filter. Here the resonance tuning capability provided by the cross-phase filters is exploited (see details in Supplementary Note
+      <xref ref-type="supplementary-material" rid="MOESM1">
+       6
+      </xref>
+      ) to select the second and the third-order harmonics, respectively, yielding electrical rejections of 22 dB for
+      <italic>
+       N
+      </italic>
+      = 2 and 19.5 dB for
+      <italic>
+       N
+      </italic>
+      = 3, respectively. Higher rejections can be achieved if needed by cascading a second filter in the programmable processor.
+      <fig id="Fig4" position="float">
+       <label>
+        Fig. 4
+       </label>
+       <caption xml:lang="en">
+        <title>
+         Measured results for optical generation of millimeter-wave CW signals.
+        </title>
+        <p>
+         <bold>
+          a
+         </bold>
+         Assembled experimental configuration using the programmable photonics processor. Light from a tunable laser is split into two paths through a 1×2 optical coupler (OC). On one path, the light is delivered to an intensity modulator (MOD) driven by a signal at the RF input frequency (15 GHz) to be multiplied. A tunable optical filter removes both the optical carrier and the lower sidebands at the modulator output. After an amplification stage, a programmable optical integrated filter is synthesized in the photonic processor, to select a single harmonic tone and ensure the suppression of all the remaining spectral components.
+         <bold>
+          b
+         </bold>
+         x2 frequency multiplication (30 GHz) obtained when the third-order UMZI lattice filter shown in Fig. 4d, e is used as a discriminating filter.
+         <bold>
+          c
+         </bold>
+         Same result for the x3 (45 GHz) case. Measured results for arbitrary waveform generation:
+         <bold>
+          d
+         </bold>
+         Experimental setup employed to carry out the AWG functionality by time-domain RF waveform synthesis. A short (4.4 ps) input seed laser pulse (at 5 GHz repetition rate) is processed by a 4th-order UMZI lattice filter (layout shown in the figure) with an arm imbalance of 2BUL. The waveguide mesh programming in the processor is also shown.
+         <bold>
+          e
+         </bold>
+         The processed signal was recorded for different settings of the filter parameters in order to synthesize different waveforms at 43.4 GHz.
+        </p>
+       </caption>
+       <graphic mime-subtype="PNG" specific-use="web" xlink:href="MediaObjects/41467_2024_45888_Fig4_HTML.png"/>
+      </fig>
+     </p>
+    </sec>
+    <sec id="Sec9">
+     <title>
+      Arbitrary RF waveform generation
+     </title>
+     <p id="Par15">
+      We employed the programable photonic processor to generate arbitrary radiofrequency waveforms by generating delayed and scaled replicas of short input optical pulses in the optical domain followed by recombination and scaling to achieve different RF wavepackets. These are useful in radar and signal distribution from the central office to base stations. The generation and weighting of the pulse replicas can be implemented by means of a photonic transversal filter. In our case, we chose UMZI lattice filters of different orders (see Supplementary Note
+      <xref ref-type="supplementary-material" rid="MOESM1">
+       7
+      </xref>
+      for further details). Figure
+      <xref ref-type="fig" rid="Fig4">
+       4d
+      </xref>
+      depicts the experimental setup employed to carry out the time-domain RF waveform synthesis, where a short (4.4 ps) input seed laser pulse (at 5 GHz repetition rate) is processed by a 4th-order UMZI lattice filter (layout shown in the figure) with arm imbalance of 2 Basic Unit Lengths. The waveguide mesh programming in the processor is also shown in Fig.
+      <xref ref-type="fig" rid="Fig4">
+       4d
+      </xref>
+      . The processed signal was recorded for different settings of the filter parameters in order to synthesize different waveforms. The main results are shown in Fig.
+      <xref ref-type="fig" rid="Fig4">
+       4e
+      </xref>
+      . The number of replicas is given in each case by the filter order +1. Time separation between consecutive pulses is around 23 ps which implies an RF central frequency for the resulting wave packet of 43.5 GHz. In Supplementary note
+      <xref ref-type="supplementary-material" rid="MOESM1">
+       7
+      </xref>
+      we provide more details regarding the possibility of generating RF arbitrary waveforms ranging from the S (3.5 GHz) to the W band (87 GHz).
+     </p>
+    </sec>
+    <sec id="Sec10">
+     <title>
+      Tuneable delay lines and beamforming
+     </title>
+     <p id="Par16">
+      We programmed our processor to enable a four-element beamformer capable of pointing up to 9 angles (4 positive, broadside and 4 negative in a −55° to 55° range where Δ
+      <italic>
+       L
+      </italic>
+      = 1 BUL→θ = 13.7°, Δ
+      <italic>
+       L
+      </italic>
+      = 2 BUL→
+      <italic>
+       θ
+      </italic>
+      = 27.4°, Δ
+      <italic>
+       L
+      </italic>
+      = 3 BUL→
+      <italic>
+       θ
+      </italic>
+      = 41.25°, Δ
+      <italic>
+       L
+      </italic>
+      = 4 BUL→θ = 54,9° and a similar reversed configuration provided the negative pointing angles. Here, our aim has been to demonstrate the proof of concept of implementing a switched delay line beamformer but indeed having the possibility of pointing more angles (say 16 or 32 in an aperture with angular span from −60° to 60°) will require scaling-up the waveguide mesh circuit. This result is not far from the maximum reported in the state of the art
+      <sup>
+       <xref ref-type="bibr" rid="CR49">
+        49
+       </xref>
+      </sup>
+      , which is 16 angles (from 0 to 56°) for an 8-element array (around a 3,6° angular step). Furthermore, a similar configuration to ours in terms of radiating elements
+      <sup>
+       <xref ref-type="bibr" rid="CR58">
+        58
+       </xref>
+      </sup>
+      demonstrates 6 (from −51° to +34° or an angular step of 17°) instead of our 9 pointing angles. The time delay performance and bandwidth of each configuration were measured using a LUNA Optical Vector Analyzer OVA (see details in Supplementary Note
+      <xref ref-type="supplementary-material" rid="MOESM1">
+       8
+      </xref>
+      ). Figure
+      <xref ref-type="fig" rid="Fig5">
+       5a
+      </xref>
+      shows the measured results for the broadside and positive beam pointing angles for a wavelength of 1550 nm. Each case includes an inset displaying the relative bandwidth around this wavelength. Over 200 GHz bandwidth is easily achieved. The figure also displays the normalized beampattern calculated from the delays at a working Rf frequency of
+      <italic>
+       f
+      </italic>
+      = 10 GHz.
+      <fig id="Fig5" position="float">
+       <label>
+        Fig. 5
+       </label>
+       <caption xml:lang="en">
+        <title>
+         Measured results for Tunable delay lines &amp; Beamforming.
+        </title>
+        <p>
+         <bold>
+          a
+         </bold>
+         Measured results for the tunable delay lines implementing the broadside and positive beam pointing angles of a 4-element beamformer for a wavelength of 1550 nm. Insets display the relative bandwidth around this wavelength. The figure also displays the normalized beampattern calculated from the delays at a working RF frequency of
+         <italic>
+          f
+         </italic>
+         = 10 GHz. Measured results for 5 G signal interconnection and power division:
+         <bold>
+          b
+         </bold>
+         Experimental setup, waveguide mesh programming, and constellation results for a 1x4 power divider of a 64-QAM 26 GHz constellation featuring an average EVM of 2.13%, which is substantially lower than the 8% required by the 3GPP TS 38.101-1 standard. Measured results for switching, broadcasting, and multicasting:
+         <bold>
+          c
+         </bold>
+         It shows the results obtained for the switching and broadcasting of broadband signals switching experiment, comprising the selected interconnection pattern (two switching paths between two input and two output paths and two broadcasting connections between one input and two/four output ports), the color diagram for the programmed waveguide mesh and finally the measured results, which were taken with all the connections being simultaneously active and including, for each connection, the effect of undesired crosstalk from the rest.
+        </p>
+       </caption>
+       <graphic mime-subtype="PNG" specific-use="web" xlink:href="MediaObjects/41467_2024_45888_Fig5_HTML.png"/>
+      </fig>
+     </p>
+    </sec>
+    <sec id="Sec11">
+     <title>
+      5 G signal interconnection and power division
+     </title>
+     <p id="Par17">
+      We programmed the processor photonic mesh for the dynamic optical interconnection and power division of 5 G digitally modulated radiofrequency signals. These operations enable more complex tasks like smart signal processing and management in edge data centers or radio-over fiber transmission and 5 G central offices. We first programmed the mesh to perform optical signal interconnection between optical paths with different path lengths and on the other hand, a pair of reconfigurable optical splitters (1×2 and 1x4). Next, we introduced 5 G standard signals (frequency range I 5.9 GHz carrier and Frequency Range II 26 and 37 GHz carriers) to be transmitted through the interconnects and splitters defined in the mesh to evaluate the signal deterioration and demonstrate the flexible splitting capability of the mesh. Results (see full detailed description in supplementary note
+      <xref ref-type="supplementary-material" rid="MOESM1">
+       9
+      </xref>
+      ) illustrate an excellent performance in terms of error vector magnitude (EVM) for 64 and 256-QAM 5 G constellations. As an example, Fig.
+      <xref ref-type="fig" rid="Fig5">
+       5b
+      </xref>
+      shows the details of the experimental setup, waveguide mesh programming, and constellation results for a 1x4 power divider of a 64-QAM 26 GHz constellation featuring an average EVM of 2.13%, which is substantially lower than the 8% required by the 3GPP TS 38.101-1 standard.
+     </p>
+    </sec>
+    <sec id="Sec12">
+     <title>
+      Switching, broadcasting, and multicasting
+     </title>
+     <p id="Par18">
+      We programmed our photonic processor to demonstrate its capabilities to provide switching, broadcasting, and add-drop multiplexing for broadband and channelized signals. Two experiments were carried out addressing the simultaneous implementation of broadband and broadband + narrowband interconnections respectively (see Supplementary Note
+      <xref ref-type="supplementary-material" rid="MOESM1">
+       10
+      </xref>
+      for a more detailed description). Figure
+      <xref ref-type="fig" rid="Fig5">
+       5c
+      </xref>
+      shows the results obtained for the switching and broadcasting of broadband signals experiment, comprising the selected interconnection pattern, which includes two switching (interconnection) paths between two input and two output paths and two broadcasting connections between one input and two/four output ports, the color diagram for the programmed waveguide mesh and finally the measured results, which were taken with all the connections being simultaneously active and including, for each connection, the effect of undesired crosstalk from the rest. An excellent rejection level of over 33 dB is obtained for switched paths, while broadcast signals provide a minimum rejection close to 22 dB. With larger waveguide meshes and further optimization of routing paths, it is expected that these already remarkable results can be further improved
+      <sup>
+       <xref ref-type="bibr" rid="CR59">
+        59
+       </xref>
+      </sup>
+      . Note that a 40 nm operation range is obtained.
+     </p>
+    </sec>
+    <sec id="Sec13">
+     <title>
+      Frequency measurement
+     </title>
+     <p id="Par19">
+      Modern electronic systems use advanced receivers to detect and identify signals. They often start with Instantaneous Frequency Measurement (IFM) receivers, which, while common and high-performing, are typically limited to around 20 GHz due to electronic circuit bandwidth constraints. A photonic-assisted technique consists of using an RF-photonic filter with an optical complementary filter to obtain an Amplitude Comparison Function (ACF) that has a monotonic relationship with the RF frequency within a certain range. We programmed the waveguide mesh in our photonic processor as shown in Fig.
+      <xref ref-type="fig" rid="Fig6">
+       6a
+      </xref>
+      to implement a 1 input 2 complementary UMZI (2 BUL) filter outputs (see Fig.
+      <xref ref-type="fig" rid="Fig6">
+       6b
+      </xref>
+      required for the computation of the ACF of a frequency measurement system. An ACF shown in Fig.
+      <xref ref-type="fig" rid="Fig6">
+       6c
+      </xref>
+      features a maximum 2.77 dB/GHz slope in a spectral range of &gt;15 GHz. Further details are provided in Supplementary Note
+      <xref ref-type="supplementary-material" rid="MOESM1">
+       11
+      </xref>
+      .
+      <fig id="Fig6" position="float">
+       <label>
+        Fig. 6
+       </label>
+       <caption xml:lang="en">
+        <title>
+         Measured results for Frequency measurement and Optoelectronic oscillator.
+        </title>
+        <p>
+         <bold>
+          a
+         </bold>
+         Color diagram for the programmed waveguide mesh used to implement a 1×2 MZI Filter with path imbalance given by 2BUL (Green: Tunable Coupler, Black: Cross State, Ochre: Bar state, Blue: unused).
+         <bold>
+          b
+         </bold>
+         Measured results for the 1 × 2 MZI filter showing Bar (even maxima) and Cross (odd maxima) transfer functions and different values of the MZI coupling constants ranging from 0.5 to 0.58.
+         <bold>
+          c
+         </bold>
+         Measured ACF (f) for the transfer functions displayed in Fig. 6b and zero extra phase shift between the arms.
+         <bold>
+          d
+         </bold>
+         Layout of the experimental configuration assembled to demonstrate a switched OEO configuration by suitable programming of the RF-Photonic processor. The upper part shows the internal programming of the waveguide mesh to implement the short (path 1) and the long (path 2) OEOs.
+         <bold>
+          e
+         </bold>
+         The spectra of both OEOs around 1.5 and 10 GHz.
+        </p>
+       </caption>
+       <graphic mime-subtype="PNG" specific-use="web" xlink:href="MediaObjects/41467_2024_45888_Fig6_HTML.png"/>
+      </fig>
+     </p>
+    </sec>
+    <sec id="Sec14">
+     <title>
+      Optoelectronic oscillation
+     </title>
+     <p id="Par20">
+      Finally, we programmed our photonic processor to demonstrate its capabilities to implement optoelectronic oscillators with reconfigurable capabilities. In the first experiment, we exploited internal cavity switching to change from a short to a long cavity device. Figure
+      <xref ref-type="fig" rid="Fig6">
+       6d
+      </xref>
+      shows the layout for the first experiment, where two cavities (paths 1 and 2) are switched using our programmable processor as shown in the upper part of the Figure. The short cavity OEO (path 1) features an optical path of 53 m and an electronic path of 1.35 m (overall spectral period around 3.1 MHz). The long cavity OEO (path 2) features an optical path of 1.4 Km and an electronic path of 1.35 m (overall spectral period around 1.38 kHz). In each case, we measured the OEO spectrum around 1.5 GHz and 10 GHz by inserting a 50 and a 430 MHZ filter respectively centered at those frequencies. The main results are shown in Fig.
+      <xref ref-type="fig" rid="Fig6">
+       6d
+      </xref>
+      . In a second experiment, detailed in supplementary note
+      <xref ref-type="supplementary-material" rid="MOESM1">
+       12
+      </xref>
+      , we programmed the same processor to implement via a power division operation a dual loop Vernier OEO and increase the overall cavity-free spectral range.
+     </p>
+    </sec>
+   </sec>
+  </sec>
+  <sec id="Sec15" sec-type="discussion">
+   <title>
+    Discussion
+   </title>
+   <p id="Par21">
+    We have described the implementation of a general-purpose photonic processor that relies on a technology stack comprised of a photonic processing hardware layer, an electronic monitoring, driving, and control layer, and a software layer that enables device programming and resource optimization. We have demonstrated that this device can implement all the main functionalities required in Microwave Photonic Systems. Prior demonstrations using application-specific integrated photonic chips have been limited to the implementation of one functionality and with little degree of reconfigurability and flexibility. The proposed device overcomes these limitations by providing full flexibility in terms of functionality selection as well as in terms of parameter reconfiguration for the selected application. Furthermore, we have demonstrated that simultaneous implementation of several functionalities in the photonic core is possible and therefore that parallel processing operations are feasible. Operation frequency ranges in the 15 to 45 GHz band have been demonstrated but even higher frequency ranges can be achieved by reducing the BUL. We estimate that the current value of 811 μm can be lowered to around 200 μm thus reaching beyond 200 GHz operation bandwidth. Additionally, to narrow down the gap between application-specific circuits and programmable devices, better quality filters with increased contrast ratios would demand PUC loss reduction. Our current value of around 0.48 dB/PUC can be lowered to figures around 0.1 dB/PUC and moreover, overall loss compensation may be possible by means of the integration of optical amplification at selected points of the silicon photonics core leveraging micro-transfer printing techniques
+    <sup>
+     <xref ref-type="bibr" rid="CR60">
+      60
+     </xref>
+    </sup>
+    . Recent work
+    <sup>
+     <xref ref-type="bibr" rid="CR61">
+      61
+     </xref>
+    </sup>
+    has outlined the optimum placement of such amplifiers in a programmable photonic mesh core. Both loss and BUL reduction will lower the scalability barriers for integrating more PUCs in the photonic core opening the path to the implementation of more complex architectures. We estimate that the current figure of 1.91 actuators per mm
+    <sup>
+     2
+    </sup>
+    chip can be upgraded to 10 actuators per mm
+    <sup>
+     2
+    </sup>
+    in the near-middle term with state-of-the-art foundry processes and advanced flip-chip packaging. Furthermore, with a power consumption of around 1–2 mW/
+    <italic>
+     π
+    </italic>
+    per phase shifter already achievable, we envisage full cores with over one thousand operating PUCs consuming 1 watts or less. The on-chip incorporation of optimized high-performance blocks such as RF modulators, detectors, amplifiers, and specialty filters will enable the implementation of the functionalities described here with improved figures of merit.
+   </p>
+   <p id="Par22">
+    An interesting point of discussion is related to the comparison between results that can be achieved with FPPGA and ASPIC approaches in terms of performance and for each functionality. This study is still missing in the literature, perhaps due to the early stage of development of both approaches, but a fair comparison would need to consider many aspects such as power consumption, reconfigurability speed, insertion losses, and footprint scalability. Although this analysis is beyond the scope of this paper, we would like to highlight that key parameters will be heavily dependent on the achievable waveguide propagation and scattering losses, the power consumption of phase shifting mechanisms, and their tuning speed. It is to be expected that as it happens in electronics ASPICs will provide a much better solution for very focused applications and high production volumes.
+   </p>
+   <p id="Par23">
+    Our approach leveraging the resource reusability provided by a general-purpose architecture will bring key benefits in terms of lower costs by reducing non-recurrent engineering costs, leveraging economies of scale in fabrication, increased sustainability by the drastic reduction in resources from unsuccessful fabrication runs, and lower power consumption. We have seen these approaches succeeding before in the electronics arena, they are best known as field programmable gate arrays (FPGAs) and microprocessors. In photonics, this disruptive concept is called to play a similar role in future years and extend its application to a broad category of fields such as photonic computing, advanced communications, sensors, lidar, and spectroscopy.
+   </p>
+  </sec>
+  <sec id="Sec16" sec-type="methods">
+   <title>
+    Methods
+   </title>
+   <sec id="Sec17">
+    <title>
+     Device manufacturing and assembly process
+    </title>
+    <p id="Par24">
+     The photonic core was fabricated using 130 nm lithography process in SOI wafers with a 220-nm thick silicon overlayer and a 3-µm thick buried oxide layer. The process allows the doping of waveguides and under-etched waveguides to improve the efficiency of the phase actuators and mitigate thermal crosstalk effects. Germanium on silicon is employed for on-chip photodetection. These dies were then mounted onto a copper chuck employing thermal epoxy. A Printed Circuit Board (PCB) is also attached to the copper structure and a wire bonding process was used to provide electrical connections between the die and the PCB. A fiber array with a pitch distance of 127 µm was fixed to the on-chip edge coupler array of the die by active alignment and epoxy.
+    </p>
+   </sec>
+   <sec id="Sec18">
+    <title>
+     Device testing process
+    </title>
+    <p id="Par25">
+     Manufacturing variations and thermal gradients affect the optical phase of the elements, making it a challenge to guarantee the robustness of the functionalities that the processor provides
+     <sup>
+      <xref ref-type="bibr" rid="CR62">
+       62
+      </xref>
+     </sup>
+     . We performed a static characterization of the passive building blocks employing the test cells to extract information regarding the main optical properties. To get the spectral responses, we have employed a tunable laser (ANDO AQ4321D) featuring a 1 pm wavelength resolution and an optical spectrum analyzer (ANDO AQ6217C). For the electro-optical characterization of the PUCs, we employed external high-precision current sources (Keihtley2401) and a custom-made programmable array described as a driving unit in the main test. The calibration of the mesh was completed through an automated process that relies on graph modeling. This process was carried out for all the thermal tuners present on the circuits and HPBs. The calibration process was run once at 15°, 25°, and 35° to validate the robustness of the result vs temperature variations. See details of the algorithm in Supplementary Note
+     <xref ref-type="supplementary-material" rid="MOESM1">
+      2
+     </xref>
+     .
+    </p>
+    <p id="Par26">
+     Additionally, we tested the robustness of the actuators with more than 10,000 continuous 0–3π cycles showing no component deterioration (change in the resistance).
+    </p>
+    <p id="Par27">
+     For time-domain measurements, which were crucial in characterizing the time delay response of the mesh when programmed to implement true time delay lines, tunable delay lines, and beamforming, we relied on an optical vector analyzer (LUNA).
+    </p>
+    <p id="Par28">
+     Conversely, when it came to characterizing the functionalities related to Microwave Photonics (MWP), we set up various configurations, each requiring distinct equipment (for detailed descriptions, please refer to Supplementary Notes
+     <xref ref-type="supplementary-material" rid="MOESM1">
+      4
+     </xref>
+     to
+     <xref ref-type="supplementary-material" rid="MOESM1">
+      12
+     </xref>
+     ).
+    </p>
+    <p id="Par29">
+     In the initial stage of light generation for all MWP applications, we consistently used a tunable laser source (TUNICS T100R/M YENISTA), except for the generation of arbitrary RF waveforms, where a 10 GHz high-speed fiber laser from Calmar Optcom emitting picosecond short pulses was employed.
+    </p>
+    <p id="Par30">
+     In several MWP functionalities, modulation of the light signal was necessary, such as in the implementation of tunable and reconfigurable RF filters, optical generation of mm-wave CW signals, optoelectronic oscillators, and the demonstration of 5 G signal interconnection and power division. To accomplish this modulation, we employed an electro-optical dual-drive modulator (Sumitomo T.DEH1.5-40-ADC). Additionally, for generating the modulating signals to modulate the optical carrier, we utilized an optical network analyzer (Agilent N4373C) for tunable and reconfigurable RF filter implementation, and a vector signal generator (Rohde and Schwarz SMW200A) for the optical generation of mm-wave CW signals or 5 G signal interconnection and power division applications, to generate the required digital modulated signals. To accomplish detection, we employed a high-speed optical photodetector (Finisar XPDV3120R-VF-VA). In most cases, amplification stages were necessary, for which we utilized erbium-doped fiber amplifiers (Amonics AEDFA-23-B-FA and AEDFA-27-B-FA). Additionally, in specific experiments where signal filtering was required, such as in the characterization of tunable and reconfigurable RF filters or the optical generation of mm-wave CW signals for carrier suppression and single-sideband modulation, we employed a tunable optical filter (Finisar WaveShaper 4000 s).
+    </p>
+    <p id="Par31">
+     Finally, depending on the specific application, various analyzers were used after photodetection. For instance, we employed a vector network analyzer (Agilent N4373C) to obtain electrical responses for tunable and reconfigurable RF filters. For the optical generation of mm-wave CW signals, we used a signal and spectrum analyzer (Rohde and Schwarz FSW43) to visualize the generated mm-wave tones, measure their phase noise, or evaluate the error vector magnitude of received constellations in the 5 G signal interconnection and power division experiment. In the case of arbitrary RF waveform generation, the generated waveform was captured using an optical sampling oscilloscope (TEKTRONIX DSA8200), and oscillations were measured when implementing optoelectronic oscillators using a signal analyzer (Agilent N9020A).
+    </p>
+   </sec>
+  </sec>
+ </body>
+ <back>
+  <ack>
+   <title>
+    Acknowledgements
+   </title>
+   <p>
+    D.P.L. acknowledges funding through the ERC-StG-2022-LS-Photonics-101076175. J.C. acknowledges funding from the ERC Advanced Grant ERC-ADG-2016-741415 UMWP-Chip and ERC-POC-2019-959927, Generalitat Valenciana funding through Future MWP technologies and applications PROMETEO/2017/103, Advanced Instrumentation for World Class Microwave Photonics Research IDIFEDER/2018/031, EUIMWP CA16220, Infraestructura para caracterización de Chips Fotónicos EQC2018-004683-P. All the authors also acknowledge funding from HORIZON-EIC-2021-TRANSITION OPEN-01101057934 INSPIRE.
+   </p>
+  </ack>
+  <sec sec-type="author-contribution">
+   <title>
+    Author contributions
+   </title>
+   <p>
+    D.P.L., P.D., and J.C. conceived the processor’s high-level design. D.S., M.G. A.L.H., J.F., D.P.G., and D.P.L. designed the chip and high-performance blocks. A.G., D.P.L., and J.C. conceived the experiments. A.G. executed the measurements. D.S. M.G. A.L.H A.C, Z.X, E.S.G., and D.P.L. conceived and developed the software layer. N.B., J.B., J.F., and DPL lead the assembly and thermomechanical works. A.G. A.S. assisted with the component-level validations. A.Q., A.C, A.S assisted with the control layer development. J.C., A.G., A.M., and D.P.L. analyzed the data and wrote the paper. D.P.L. and J.C. managed, coordinated, and supervised the project.
+   </p>
+  </sec>
+  <sec sec-type="peer-review">
+   <title>
+    Peer review
+   </title>
+   <sec id="FPar1">
+    <title>
+     Peer review information
+    </title>
+    <p id="Par32">
+     <italic>
+      Nature Communications
+     </italic>
+     thanks Michael Menard, and the other, anonymous, reviewer(s) for their contribution to the peer review of this work. A peer review file is available.
+    </p>
+   </sec>
+  </sec>
+  <sec sec-type="data-availability">
+   <title>
+    Data availability
+   </title>
+   <p>
+    All data are available from the corresponding author upon request.
+   </p>
+  </sec>
+  <sec sec-type="data-availability">
+   <title>
+    Code availability
+   </title>
+   <p>
+    All codes are available from the corresponding author upon request.
+   </p>
+  </sec>
+  <sec sec-type="ethics-statement">
+   <sec id="FPar2" sec-type="COI-statement">
+    <title>
+     Competing interests
+    </title>
+    <p id="Par33">
+     The authors declare no competing interests.
+    </p>
+   </sec>
+  </sec>
+  <ref-list id="Bib1">
+   <title>
+    References
+   </title>
+   <ref-list>
+    <ref id="CR1">
+     <label>
+      1.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Bogaerts
+        </surname>
+        <given-names>
+         W
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Programmable photonic circuits
+      </article-title>
+      <source>
+       Nature
+      </source>
+      <year>
+       2020
+      </year>
+      <volume>
+       586
+      </volume>
+      <fpage>
+       207
+      </fpage>
+      <lpage>
+       216
+      </lpage>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2020Natur.586..207B
+      </pub-id>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BB3cXitVWjs77J
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       33028997
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1038/s41586-020-2764-0
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR2">
+     <label>
+      2.
+     </label>
+     <mixed-citation publication-type="other">
+      Capmany, J. &amp; Perez, D.
+      <italic>
+       Programmable Integrated Photonics
+      </italic>
+      (Oxford Univ. Press, Oxford, 2020).
+     </mixed-citation>
+    </ref>
+    <ref id="CR3">
+     <label>
+      3.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Pérez
+        </surname>
+        <given-names>
+         D
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Gasulla
+        </surname>
+        <given-names>
+         I
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Capmany
+        </surname>
+        <given-names>
+         J
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Field-programmable photonic arrays
+      </article-title>
+      <source>
+       Opt. Express
+      </source>
+      <year>
+       2018
+      </year>
+      <volume>
+       26
+      </volume>
+      <fpage>
+       27265
+      </fpage>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2018OExpr..2627265P
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       30469798
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1364/OE.26.027265
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR4">
+     <label>
+      4.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Bogaerts
+        </surname>
+        <given-names>
+         W
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Rahim
+        </surname>
+        <given-names>
+         A
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Programmable photonics: an opportunity for an accessible large-volume PIC ecosystem
+      </article-title>
+      <source>
+       IEEE J. Sel. Top. Quantum Electron.
+      </source>
+      <year>
+       2020
+      </year>
+      <volume>
+       26
+      </volume>
+      <fpage>
+       1
+      </fpage>
+      <lpage>
+       17
+      </lpage>
+      <pub-id pub-id-type="doi">
+       10.1109/JSTQE.2020.2982980
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR5">
+     <label>
+      5.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Marpaung
+        </surname>
+        <given-names>
+         D
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Yao
+        </surname>
+        <given-names>
+         J
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Capmany
+        </surname>
+        <given-names>
+         J
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Integrated microwave photonics
+      </article-title>
+      <source>
+       Nat. Photon.
+      </source>
+      <year>
+       2019
+      </year>
+      <volume>
+       13
+      </volume>
+      <fpage>
+       80
+      </fpage>
+      <lpage>
+       90
+      </lpage>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2019NaPho..13...80M
+      </pub-id>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BC1MXntVGlurc%3D
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1038/s41566-018-0310-5
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR6">
+     <label>
+      6.
+     </label>
+     <mixed-citation publication-type="other">
+      Tong, W. &amp; Zhu, P.
+      <italic>
+       6G The Next Horizon: from Connected People and Things to Connected Intelligence
+      </italic>
+      (Cambridge Univ. Press, Cambridge, 2021).
+     </mixed-citation>
+    </ref>
+    <ref id="CR7">
+     <label>
+      7.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         McNair
+        </surname>
+        <given-names>
+         J
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       The 6G frequency switch that spares scientific services
+      </article-title>
+      <source>
+       Nature
+      </source>
+      <year>
+       2022
+      </year>
+      <volume>
+       606
+      </volume>
+      <fpage>
+       34
+      </fpage>
+      <lpage>
+       35
+      </lpage>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2022Natur.606...34M
+      </pub-id>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BB38XhsVahsbzK
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       35618802
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1038/d41586-022-01306-w
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR8">
+     <label>
+      8.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Wetzstein
+        </surname>
+        <given-names>
+         G
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Inference in artificial intelligence with deep optics and photonics
+      </article-title>
+      <source>
+       Nature
+      </source>
+      <year>
+       2020
+      </year>
+      <volume>
+       588
+      </volume>
+      <fpage>
+       39
+      </fpage>
+      <lpage>
+       47
+      </lpage>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2020Natur.588...39W
+      </pub-id>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BB3cXisVOks7rI
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       33268862
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1038/s41586-020-2973-6
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR9">
+     <label>
+      9.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Wang
+        </surname>
+        <given-names>
+         Y
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Ultrahigh-speed graphene-based optical coherent receiver
+      </article-title>
+      <source>
+       Nat. Commun.
+      </source>
+      <year>
+       2021
+      </year>
+      <volume>
+       12
+      </volume>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2021NatCo..12.5076W
+      </pub-id>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BB3MXhvVGnsL7N
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       34417461
+      </pub-id>
+      <pub-id pub-id-type="pmcid">
+       8379243
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1038/s41467-021-25374-0
+      </pub-id>
+      <elocation-id>
+       5076
+      </elocation-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR10">
+     <label>
+      10.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Zhang
+        </surname>
+        <given-names>
+         X
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       A large-scale microelectromechanical-systems-based silicon photonics LiDAR
+      </article-title>
+      <source>
+       Nature
+      </source>
+      <year>
+       2022
+      </year>
+      <volume>
+       603
+      </volume>
+      <fpage>
+       253
+      </fpage>
+      <lpage>
+       258
+      </lpage>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2022Natur.603..253Z
+      </pub-id>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BB38XmsF2rur8%3D
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       35264759
+      </pub-id>
+      <pub-id pub-id-type="pmcid">
+       8907073
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1038/s41586-022-04415-8
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR11">
+     <label>
+      11.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Zou
+        </surname>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Photonics for microwave measurements
+      </article-title>
+      <source>
+       Lasers Photon. Rev.
+      </source>
+      <year>
+       2018
+      </year>
+      <volume>
+       10
+      </volume>
+      <fpage>
+       711
+      </fpage>
+      <lpage>
+       734
+      </lpage>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2016LPRv...10..711Z
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1002/lpor.201600019
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR12">
+     <label>
+      12.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Cheng,
+        </surname>
+        <given-names>
+         Q
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Bahadori
+        </surname>
+        <given-names>
+         M
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Glick
+        </surname>
+        <given-names>
+         M
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Rumley
+        </surname>
+        <given-names>
+         S
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Bergman
+        </surname>
+        <given-names>
+         K
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Recent advances in optical technologies for data centers: a review
+      </article-title>
+      <source>
+       Optica
+      </source>
+      <year>
+       2018
+      </year>
+      <volume>
+       5
+      </volume>
+      <fpage>
+       1354
+      </fpage>
+      <lpage>
+       1370
+      </lpage>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2018Optic...5.1354C
+      </pub-id>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BC1MXhtFSjtrrF
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1364/OPTICA.5.001354
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR13">
+     <label>
+      13.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Portilla
+        </surname>
+        <given-names>
+         L
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Wirelessly powered large-area electronics for the Internet of Things
+      </article-title>
+      <source>
+       Nat. Electron
+      </source>
+      <year>
+       2023
+      </year>
+      <volume>
+       6
+      </volume>
+      <fpage>
+       10
+      </fpage>
+      <lpage>
+       17
+      </lpage>
+     </mixed-citation>
+    </ref>
+    <ref id="CR14">
+     <label>
+      14.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Capmany
+        </surname>
+        <given-names>
+         J
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Novak
+        </surname>
+        <given-names>
+         D
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Microwave photonics combines two worlds
+      </article-title>
+      <source>
+       Nat. Photon.
+      </source>
+      <year>
+       2007
+      </year>
+      <volume>
+       1
+      </volume>
+      <fpage>
+       319
+      </fpage>
+      <lpage>
+       330
+      </lpage>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2007NaPho...1..319C
+      </pub-id>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BD2sXmsFKjs7s%3D
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1038/nphoton.2007.89
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR15">
+     <label>
+      15.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Yao
+        </surname>
+        <given-names>
+         J
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Microwave photonics
+      </article-title>
+      <source>
+       J. Light. Technol.
+      </source>
+      <year>
+       2009
+      </year>
+      <volume>
+       27
+      </volume>
+      <fpage>
+       314
+      </fpage>
+      <lpage>
+       335
+      </lpage>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2009JLwT...27..314Y
+      </pub-id>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BC3cXnt1A%3D
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1109/JLT.2008.2009551
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR16">
+     <label>
+      16.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Yao
+        </surname>
+        <given-names>
+         JP
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Zeng
+        </surname>
+        <given-names>
+         F
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Wang
+        </surname>
+        <given-names>
+         Q
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Photonic generation of ultra-wideband signals
+      </article-title>
+      <source>
+       J. Light. Technol.
+      </source>
+      <year>
+       2007
+      </year>
+      <volume>
+       25
+      </volume>
+      <fpage>
+       3219
+      </fpage>
+      <lpage>
+       3235
+      </lpage>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2007JLwT...25.3219Y
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1109/JLT.2007.906820
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR17">
+     <label>
+      17.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Chen
+        </surname>
+        <given-names>
+         MY
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Hybrid photonic true-time delay modules for quasi-continuous steering of phased-array antennas
+      </article-title>
+      <source>
+       J. Light. Technol.
+      </source>
+      <year>
+       2012
+      </year>
+      <volume>
+       31
+      </volume>
+      <fpage>
+       910
+      </fpage>
+      <lpage>
+       917
+      </lpage>
+      <pub-id pub-id-type="doi">
+       10.1109/JLT.2012.2236536
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR18">
+     <label>
+      18.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Zhang
+        </surname>
+        <given-names>
+         J
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Yao
+        </surname>
+        <given-names>
+         J
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Photonic true-time delay beamforming using a switch-controlled wavelength-dependent recirculating loop
+      </article-title>
+      <source>
+       J. Light. Technol.
+      </source>
+      <year>
+       2016
+      </year>
+      <volume>
+       34
+      </volume>
+      <fpage>
+       3923
+      </fpage>
+      <lpage>
+       3929
+      </lpage>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2016JLwT...34.3923Z
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1109/JLT.2016.2583918
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR19">
+     <label>
+      19.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Zmuda
+        </surname>
+        <given-names>
+         Z
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Soref
+        </surname>
+        <given-names>
+         RA
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Payson
+        </surname>
+        <given-names>
+         P
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Johns
+        </surname>
+        <given-names>
+         S
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Toughlian
+        </surname>
+        <given-names>
+         EN
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Photonic beamformer for phased array antennas using a fiber grating prism
+      </article-title>
+      <source>
+       IEEE Photon. Tech. Lett.
+      </source>
+      <year>
+       1997
+      </year>
+      <volume>
+       9
+      </volume>
+      <fpage>
+       241
+      </fpage>
+      <lpage>
+       243
+      </lpage>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       1997IPTL....9..241Z
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1109/68.553105
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR20">
+     <label>
+      20.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Capmany
+        </surname>
+        <given-names>
+         J
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Ortega
+        </surname>
+        <given-names>
+         B
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Pastor
+        </surname>
+        <given-names>
+         D
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       A tutorial on microwave photonic filters
+      </article-title>
+      <source>
+       J. Light. Technol.
+      </source>
+      <year>
+       2006
+      </year>
+      <volume>
+       24
+      </volume>
+      <fpage>
+       201
+      </fpage>
+      <lpage>
+       229
+      </lpage>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2006JLwT...24..201C
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1109/JLT.2005.860478
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR21">
+     <label>
+      21.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Chang
+        </surname>
+        <given-names>
+         MP
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Blow
+        </surname>
+        <given-names>
+         EC
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Lu
+        </surname>
+        <given-names>
+         MZ
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Sun
+        </surname>
+        <given-names>
+         JJ
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Prucnal
+        </surname>
+        <given-names>
+         PR
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Integrated microwave photonic circuit for self-interference cancellation
+      </article-title>
+      <source>
+       IEEE Trans. Microw. Theory Tech.
+      </source>
+      <year>
+       2017
+      </year>
+      <volume>
+       65
+      </volume>
+      <fpage>
+       4493
+      </fpage>
+      <lpage>
+       4501
+      </lpage>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2017ITMTT..65.4493C
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1109/TMTT.2017.2694419
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR22">
+     <label>
+      22.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Choudhary
+        </surname>
+        <given-names>
+         A
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Tailoring of the Brillouin gain for on-chip widely tunable and reconfigurable broadband microwave photonic filters
+      </article-title>
+      <source>
+       Opt. Lett.
+      </source>
+      <year>
+       2016
+      </year>
+      <volume>
+       41
+      </volume>
+      <fpage>
+       436
+      </fpage>
+      <lpage>
+       439
+      </lpage>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2016OptL...41..436C
+      </pub-id>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BC2sXlslKitb4%3D
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       26907391
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1364/OL.41.000436
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR23">
+     <label>
+      23.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Wu
+        </surname>
+        <given-names>
+         J
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       RF photonics: an optical microcosm perspective
+      </article-title>
+      <source>
+       IEEE J. Sel. Top. Quant. Electron.
+      </source>
+      <year>
+       2018
+      </year>
+      <volume>
+       24
+      </volume>
+      <fpage>
+       6101020
+      </fpage>
+      <pub-id pub-id-type="doi">
+       10.1109/JSTQE.2018.2805814
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR24">
+     <label>
+      24.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Aryanfar
+        </surname>
+        <given-names>
+         I
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Signal interference RF photonic bandstop filter
+      </article-title>
+      <source>
+       Opt. Express
+      </source>
+      <year>
+       2016
+      </year>
+      <volume>
+       24
+      </volume>
+      <fpage>
+       14995
+      </fpage>
+      <lpage>
+       15004
+      </lpage>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2016OExpr..2414995A
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       27410650
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1364/OE.24.014995
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR25">
+     <label>
+      25.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Wang
+        </surname>
+        <given-names>
+         W
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Characterization of a coherent optical RF channelizer based on a diffraction grating
+      </article-title>
+      <source>
+       IEEE Trans. Microw. Theory Tech.
+      </source>
+      <year>
+       2001
+      </year>
+      <volume>
+       49
+      </volume>
+      <fpage>
+       1996
+      </fpage>
+      <lpage>
+       2001
+      </lpage>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2001ITMTT..49.1996W
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1109/22.954820
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR26">
+     <label>
+      26.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Li
+        </surname>
+        <given-names>
+         R
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Multiple-frequency measurement based on serial photonic channelization using optical wavelength scanning
+      </article-title>
+      <source>
+       Opt. Lett.
+      </source>
+      <year>
+       2013
+      </year>
+      <volume>
+       38
+      </volume>
+      <fpage>
+       4781
+      </fpage>
+      <lpage>
+       4784
+      </lpage>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2013OptL...38.4781L
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       24322131
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1364/OL.38.004781
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR27">
+     <label>
+      27.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Smit
+        </surname>
+        <given-names>
+         M
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       An introduction to InP-based generic integration technology
+      </article-title>
+      <source>
+       Semicond. Sci. Technol.
+      </source>
+      <year>
+       2014
+      </year>
+      <volume>
+       29
+      </volume>
+      <fpage>
+       083001
+      </fpage>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2014SeScT..29h3001S
+      </pub-id>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BC2cXhvFensbrK
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1088/0268-1242/29/8/083001
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR28">
+     <label>
+      28.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Thomson
+        </surname>
+        <given-names>
+         D
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Roadmap on silicon photonics
+      </article-title>
+      <source>
+       J. Opt.
+      </source>
+      <year>
+       2016
+      </year>
+      <volume>
+       18
+      </volume>
+      <fpage>
+       073003
+      </fpage>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2016JOpt...18g3003T
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1088/2040-8978/18/7/073003
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR29">
+     <label>
+      29.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Heck
+        </surname>
+        <given-names>
+         MJR
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Hybrid silicon photonic integrated circuit technology
+      </article-title>
+      <source>
+       IEEE J. Quant. Electron.
+      </source>
+      <year>
+       2013
+      </year>
+      <volume>
+       19
+      </volume>
+      <fpage>
+       6100117
+      </fpage>
+      <pub-id pub-id-type="doi">
+       10.1109/JSTQE.2012.2235413
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR30">
+     <label>
+      30.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Komljenovic
+        </surname>
+        <given-names>
+         T
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Heterogeneous silicon photonic integrated circuits
+      </article-title>
+      <source>
+       J. Light. Technol.
+      </source>
+      <year>
+       2016
+      </year>
+      <volume>
+       34
+      </volume>
+      <fpage>
+       20
+      </fpage>
+      <lpage>
+       35
+      </lpage>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2016JLwT...34...20K
+      </pub-id>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BC2sXls1egsrc%3D
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1109/JLT.2015.2465382
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR31">
+     <label>
+      31.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Roeloffzen
+        </surname>
+        <given-names>
+         CGH
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Low-loss Si
+       <sub>
+        3
+       </sub>
+       N
+       <sub>
+        4
+       </sub>
+       TriPleX optical waveguides: technology and applications overview
+      </article-title>
+      <source>
+       IEEE J. Sel. Top. Quant. Electron.
+      </source>
+      <year>
+       2018
+      </year>
+      <volume>
+       24
+      </volume>
+      <fpage>
+       4400321
+      </fpage>
+      <pub-id pub-id-type="doi">
+       10.1109/JSTQE.2018.2793945
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR32">
+     <label>
+      32.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Marpaung
+        </surname>
+        <given-names>
+         D
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Integrated microwave photonics
+      </article-title>
+      <source>
+       Laser Photon. Rev.
+      </source>
+      <year>
+       2013
+      </year>
+      <volume>
+       7
+      </volume>
+      <fpage>
+       506
+      </fpage>
+      <lpage>
+       538
+      </lpage>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2013LPRv....7..506M
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1002/lpor.201200032
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR33">
+     <label>
+      33.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Iezekiel
+        </surname>
+        <given-names>
+         S
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Burla
+        </surname>
+        <given-names>
+         M
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Klamkin
+        </surname>
+        <given-names>
+         J
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Marpaung
+        </surname>
+        <given-names>
+         D
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Capmany
+        </surname>
+        <given-names>
+         J
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       RF engineering meets optoelectronics
+      </article-title>
+      <source>
+       IEEE Microw. Mag.
+      </source>
+      <year>
+       2015
+      </year>
+      <volume>
+       16
+      </volume>
+      <fpage>
+       18
+      </fpage>
+      <lpage>
+       45
+      </lpage>
+      <pub-id pub-id-type="doi">
+       10.1109/MMM.2015.2442932
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR34">
+     <label>
+      34.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Fandiño
+        </surname>
+        <given-names>
+         JS
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Muñoz
+        </surname>
+        <given-names>
+         P
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Doménech
+        </surname>
+        <given-names>
+         D
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Capmany
+        </surname>
+        <given-names>
+         J
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       A monolithic integrated photonic microwave filter
+      </article-title>
+      <source>
+       Nat. Photon
+      </source>
+      <year>
+       2016
+      </year>
+      <volume>
+       11
+      </volume>
+      <fpage>
+       124
+      </fpage>
+      <lpage>
+       129
+      </lpage>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2017NaPho..11..124F
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1038/nphoton.2016.233
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR35">
+     <label>
+      35.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Zhang
+        </surname>
+        <given-names>
+         W
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Yao
+        </surname>
+        <given-names>
+         J
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       On-chip silicon photonic integrated frequency-tunable bandpass microwave photonic filter
+      </article-title>
+      <source>
+       Opt. Lett.
+      </source>
+      <year>
+       2018
+      </year>
+      <volume>
+       43
+      </volume>
+      <fpage>
+       3622
+      </fpage>
+      <lpage>
+       3625
+      </lpage>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2018OptL...43.3622Z
+      </pub-id>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BC1cXisVSlu7bM
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       30067639
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1364/OL.43.003622
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR36">
+     <label>
+      36.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Tang
+        </surname>
+        <given-names>
+         J
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Integrated optoelectronic oscillator
+      </article-title>
+      <source>
+       Opt. Express
+      </source>
+      <year>
+       2018
+      </year>
+      <volume>
+       26
+      </volume>
+      <fpage>
+       12257
+      </fpage>
+      <lpage>
+       12265
+      </lpage>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2018OExpr..2612257T
+      </pub-id>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BC1cXitlGlu7bE
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       29716138
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1364/OE.26.012257
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR37">
+     <label>
+      37.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Zhang
+        </surname>
+        <given-names>
+         W
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Yao
+        </surname>
+        <given-names>
+         J
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Silicon photonic integrated optoelectronic oscillator for frequency-tunable microwave generation
+      </article-title>
+      <source>
+       J. Light. Technol.
+      </source>
+      <year>
+       2018
+      </year>
+      <volume>
+       36
+      </volume>
+      <fpage>
+       4655
+      </fpage>
+      <lpage>
+       4663
+      </lpage>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2018JLwT...36.4655Z
+      </pub-id>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BC1cXisVKmt77E
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1109/JLT.2018.2829823
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR38">
+     <label>
+      38.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Marpaung
+        </surname>
+        <given-names>
+         D
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Chevalier
+        </surname>
+        <given-names>
+         L
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Burla
+        </surname>
+        <given-names>
+         M
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Roeloffzen
+        </surname>
+        <given-names>
+         C
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Impulse radio ultrawideband pulse shaper based on a programmable photonic chip frequency discriminator
+      </article-title>
+      <source>
+       Opt. Express
+      </source>
+      <year>
+       2011
+      </year>
+      <volume>
+       19
+      </volume>
+      <fpage>
+       24838
+      </fpage>
+      <lpage>
+       24848
+      </lpage>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2011OExpr..1924838M
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       22273877
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1364/OE.19.024838
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR39">
+     <label>
+      39.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Carolan
+        </surname>
+        <given-names>
+         J
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Universal linear optics
+      </article-title>
+      <source>
+       Science
+      </source>
+      <year>
+       2015
+      </year>
+      <volume>
+       349
+      </volume>
+      <fpage>
+       711
+      </fpage>
+      <lpage>
+       716
+      </lpage>
+      <pub-id assigning-authority="American Mathematical Society" pub-id-type="other">
+       3408100
+      </pub-id>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BC2MXhtlSjtrnO
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       26160375
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1126/science.aab3642
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR40">
+     <label>
+      40.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Harris
+        </surname>
+        <given-names>
+         NC
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Quantum transport simulations in a programmable nanophotonic processor
+      </article-title>
+      <source>
+       Nat. Photon.
+      </source>
+      <year>
+       2017
+      </year>
+      <volume>
+       11
+      </volume>
+      <fpage>
+       447
+      </fpage>
+      <lpage>
+       452
+      </lpage>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2017NaPho..11..447H
+      </pub-id>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BC2sXhtVWmtLnK
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1038/nphoton.2017.95
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR41">
+     <label>
+      41.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Wang
+        </surname>
+        <given-names>
+         J
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Multidimensional quantum entanglement with large-scale integrated optics
+      </article-title>
+      <source>
+       Science
+      </source>
+      <year>
+       2018
+      </year>
+      <volume>
+       360
+      </volume>
+      <fpage>
+       285
+      </fpage>
+      <lpage>
+       291
+      </lpage>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2018Sci...360..285W
+      </pub-id>
+      <pub-id assigning-authority="American Mathematical Society" pub-id-type="other">
+       3791731
+      </pub-id>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BC1cXns12gt78%3D
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       29519918
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1126/science.aar7053
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR42">
+     <label>
+      42.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Shen
+        </surname>
+        <given-names>
+         Y
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Deep learning with coherent nanophotonic circuits
+      </article-title>
+      <source>
+       Nat. Photon.
+      </source>
+      <year>
+       2017
+      </year>
+      <volume>
+       11
+      </volume>
+      <fpage>
+       441
+      </fpage>
+      <lpage>
+       446
+      </lpage>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2017NaPho..11..441S
+      </pub-id>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BC2sXhtVSjt7bJ
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1038/nphoton.2017.93
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR43">
+     <label>
+      43.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Harris
+        </surname>
+        <given-names>
+         NC
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Linear programmable nanophotonic processors
+      </article-title>
+      <source>
+       Optica
+      </source>
+      <year>
+       2018
+      </year>
+      <volume>
+       5
+      </volume>
+      <fpage>
+       1623
+      </fpage>
+      <lpage>
+       1631
+      </lpage>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2018Optic...5.1623H
+      </pub-id>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BC1MXhtV2gsrjN
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1364/OPTICA.5.001623
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR44">
+     <label>
+      44.
+     </label>
+     <mixed-citation publication-type="other">
+      Prucnal, P. R. &amp; Shastri, B. J.
+      <italic>
+       Neuromorphic Photonics
+      </italic>
+      (CRC Press, Boca Raton, 2017).
+     </mixed-citation>
+    </ref>
+    <ref id="CR45">
+     <label>
+      45.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Tait
+        </surname>
+        <given-names>
+         AN
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Nahmias
+        </surname>
+        <given-names>
+         MA
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Shastri
+        </surname>
+        <given-names>
+         BJ
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Prucnal
+        </surname>
+        <given-names>
+         PR
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Broadcast and weight: an integrated network for scalable photonic spike processing
+      </article-title>
+      <source>
+       J. Light. Technol.
+      </source>
+      <year>
+       2014
+      </year>
+      <volume>
+       32
+      </volume>
+      <fpage>
+       4029
+      </fpage>
+      <lpage>
+       4041
+      </lpage>
+      <pub-id pub-id-type="doi">
+       10.1109/JLT.2014.2345652
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR46">
+     <label>
+      46.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Shastri
+        </surname>
+        <given-names>
+         BJ
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Photonics for artificial intelligence and neuromorphic computing
+      </article-title>
+      <source>
+       Nat. Photon.
+      </source>
+      <year>
+       2021
+      </year>
+      <volume>
+       15
+      </volume>
+      <fpage>
+       102
+      </fpage>
+      <lpage>
+       114
+      </lpage>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2021NaPho..15..102S
+      </pub-id>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BB3MXis12htLs%3D
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1038/s41566-020-00754-y
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR47">
+     <label>
+      47.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Subramanian
+        </surname>
+        <given-names>
+         AZ
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Silicon and silicon nitride photonic circuits for spectroscopic sensing on-a-chip
+      </article-title>
+      <source>
+       Photon. Res.
+      </source>
+      <year>
+       2015
+      </year>
+      <volume>
+       3
+      </volume>
+      <fpage>
+       B47
+      </fpage>
+      <lpage>
+       B59
+      </lpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BC2sXkvVaktL4%3D
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1364/PRJ.3.000B47
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR48">
+     <label>
+      48.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Burla
+        </surname>
+        <given-names>
+         M
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       On-chip CMOS compatible reconfigurable optical delay line with separate carrier tuning for microwave photonic signal processing
+      </article-title>
+      <source>
+       Opt. Express
+      </source>
+      <year>
+       2011
+      </year>
+      <volume>
+       19
+      </volume>
+      <fpage>
+       21475
+      </fpage>
+      <lpage>
+       21484
+      </lpage>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2011OExpr..1921475B
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       22108997
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1364/OE.19.021475
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR49">
+     <label>
+      49.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Zhu
+        </surname>
+        <given-names>
+         CC
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Silicon integrated microwave photonic beamformer
+      </article-title>
+      <source>
+       Optica
+      </source>
+      <year>
+       2020
+      </year>
+      <volume>
+       7
+      </volume>
+      <fpage>
+       1162
+      </fpage>
+      <lpage>
+       1170
+      </lpage>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2020Optic...7.1162Z
+      </pub-id>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BB3cXit1GlsLvI
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1364/OPTICA.391521
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR50">
+     <label>
+      50.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Wang
+        </surname>
+        <given-names>
+         J
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Reconfigurable radio-frequency arbitrary waveforms synthesized in a silicon chip
+      </article-title>
+      <source>
+       Nat. Commun.
+      </source>
+      <year>
+       2015
+      </year>
+      <volume>
+       6
+      </volume>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2015NatCo...6.5957W
+      </pub-id>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BC2MXotlGksrw%3D
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       25581847
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1038/ncomms6957
+      </pub-id>
+      <elocation-id>
+       5957
+      </elocation-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR51">
+     <label>
+      51.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Norberg
+        </surname>
+        <given-names>
+         EJ
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Guzzon
+        </surname>
+        <given-names>
+         RS
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Parker
+        </surname>
+        <given-names>
+         JS
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Johansson
+        </surname>
+        <given-names>
+         LA
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Coldren
+        </surname>
+        <given-names>
+         LA
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Programmable photonic microwave filters monolithically integrated in InP/InGaAsP
+      </article-title>
+      <source>
+       J. Light. Technol.
+      </source>
+      <year>
+       2011
+      </year>
+      <volume>
+       29
+      </volume>
+      <fpage>
+       1611
+      </fpage>
+      <lpage>
+       1619
+      </lpage>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2011JLwT...29.1611N
+      </pub-id>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BC3MXptlynurg%3D
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1109/JLT.2011.2134073
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR52">
+     <label>
+      52.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Zhuang
+        </surname>
+        <given-names>
+         L
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Roeloffzen
+        </surname>
+        <given-names>
+         CGH
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Hoekman
+        </surname>
+        <given-names>
+         M
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Boller
+        </surname>
+        <given-names>
+         KJ
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Lowery
+        </surname>
+        <given-names>
+         AJ
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Programmable photonic signal processor chip for radiofrequency applications
+      </article-title>
+      <source>
+       Optica
+      </source>
+      <year>
+       2015
+      </year>
+      <volume>
+       2
+      </volume>
+      <fpage>
+       854
+      </fpage>
+      <lpage>
+       859
+      </lpage>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2015Optic...2..854Z
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1364/OPTICA.2.000854
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR53">
+     <label>
+      53.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Pérez
+        </surname>
+        <given-names>
+         D
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Multipurpose silicon photonics signal processor core
+      </article-title>
+      <source>
+       Nat. Commun.
+      </source>
+      <year>
+       2017
+      </year>
+      <volume>
+       8
+      </volume>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2017NatCo...8..636P
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       28935924
+      </pub-id>
+      <pub-id pub-id-type="pmcid">
+       5608755
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1038/s41467-017-00714-1
+      </pub-id>
+      <elocation-id>
+       636
+      </elocation-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR54">
+     <label>
+      54.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Pérez-López
+        </surname>
+        <given-names>
+         D
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Multipurpose self-configuration of programmable photonic circuits
+      </article-title>
+      <source>
+       Nat. Commun.
+      </source>
+      <year>
+       2020
+      </year>
+      <volume>
+       11
+      </volume>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2020NatCo..11.6359P
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       33311499
+      </pub-id>
+      <pub-id pub-id-type="pmcid">
+       7733469
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1038/s41467-020-19608-w
+      </pub-id>
+      <elocation-id>
+       6359
+      </elocation-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR55">
+     <label>
+      55.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Pérez-López
+        </surname>
+        <given-names>
+         D
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Programmable integrated silicon photonics waveguide meshes: optimized designs and control algorithms
+      </article-title>
+      <source>
+       IEEE J. Sel. Top. Quantum Electron
+      </source>
+      <year>
+       2020
+      </year>
+      <volume>
+       26
+      </volume>
+      <fpage>
+       8301312
+      </fpage>
+     </mixed-citation>
+    </ref>
+    <ref id="CR56">
+     <label>
+      56.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Pérez-López
+        </surname>
+        <given-names>
+         D
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Gutierrez
+        </surname>
+        <given-names>
+         A
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Sánchez
+        </surname>
+        <given-names>
+         E
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         DasMahapatra
+        </surname>
+        <given-names>
+         P
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Capmany
+        </surname>
+        <given-names>
+         J
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Integrated photonic tunable basic units using dual-drive directional couplers
+      </article-title>
+      <source>
+       Opt. Express
+      </source>
+      <year>
+       2019
+      </year>
+      <volume>
+       27
+      </volume>
+      <fpage>
+       38071
+      </fpage>
+      <lpage>
+       38086
+      </lpage>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2019OExpr..2738071P
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       31878579
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1364/OE.27.038071
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR57">
+     <label>
+      57.
+     </label>
+     <mixed-citation publication-type="other">
+      Madsen, C. K. and Zhao, J. H.,
+      <italic>
+       Optical Filter Design and Analysis: A Signal Processing Approach
+      </italic>
+      . (John Wiley, New York, 1999).
+     </mixed-citation>
+    </ref>
+    <ref id="CR58">
+     <label>
+      58.
+     </label>
+     <mixed-citation publication-type="other">
+      Liu, Y. et al. 93-GHz signal beam steering with true time delayed integrated optical beamforming network. In
+      <italic>
+       : Optical Fiber Communication Conference
+      </italic>
+      (OFC) 2019, OSA Technical Digest, Th1C.5 (Optica Publishing Group, 2019).
+     </mixed-citation>
+    </ref>
+    <ref id="CR59">
+     <label>
+      59.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Sánchez
+        </surname>
+        <given-names>
+         E
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         López
+        </surname>
+        <given-names>
+         A
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Pérez-López
+        </surname>
+        <given-names>
+         D
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Simulation of highly coupled programmable photonic
+      </article-title>
+      <source>
+       Circuits, J. Lightwave Technol.
+      </source>
+      <year>
+       2022
+      </year>
+      <volume>
+       40
+      </volume>
+      <fpage>
+       6423
+      </fpage>
+      <lpage>
+       6434
+      </lpage>
+     </mixed-citation>
+    </ref>
+    <ref id="CR60">
+     <label>
+      60.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Roelkens
+        </surname>
+        <given-names>
+         G
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Micro-transfer printing for heterogeneous Si photonic integrated circuits
+      </article-title>
+      <source>
+       IEEE J. Sel. Top. Quant. Electron.
+      </source>
+      <year>
+       2023
+      </year>
+      <volume>
+       29
+      </volume>
+      <fpage>
+       8200414
+      </fpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BB3sXnsVSqu7c%3D
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1109/JSTQE.2022.3222686
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR61">
+     <label>
+      61.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Sánchez
+        </surname>
+        <given-names>
+         E
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Pérez-López
+        </surname>
+        <given-names>
+         DO
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         dasMahapatra
+        </surname>
+        <given-names>
+         P
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Capmany
+        </surname>
+        <given-names>
+         J
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Modeling amplified arbitrary filtered microwave photonic links and systems
+      </article-title>
+      <source>
+       Opt. Express
+      </source>
+      <year>
+       2021
+      </year>
+      <volume>
+       29
+      </volume>
+      <fpage>
+       14757
+      </fpage>
+      <lpage>
+       14772
+      </lpage>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2021OExpr..2914757S
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       33985191
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1364/OE.423613
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR62">
+     <label>
+      62.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Xu
+        </surname>
+        <given-names>
+         X
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Self-calibrating programmable photonic integrated circuits
+      </article-title>
+      <source>
+       Nat. Photon.
+      </source>
+      <year>
+       2022
+      </year>
+      <volume>
+       16
+      </volume>
+      <fpage>
+       595
+      </fpage>
+      <lpage>
+       602
+      </lpage>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2022NaPho..16..595X
+      </pub-id>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BB38XhslCiu7zN
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1038/s41566-022-01020-z
+      </pub-id>
+     </mixed-citation>
+    </ref>
+   </ref-list>
+  </ref-list>
+  <app-group>
+   <app id="App1" specific-use="web-only">
+    <sec id="Sec19">
+     <title>
+      Supplementary information
+     </title>
+     <p id="Par34">
+      <supplementary-material content-type="local-data" id="MOESM1" xlink:title="Supplementary information">
+       <media mime-subtype="pdf" mimetype="application" xlink:href="MediaObjects/41467_2024_45888_MOESM1_ESM.pdf">
+        <caption xml:lang="en">
+         <p>
+          Supplementary Information
+         </p>
+        </caption>
+       </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="MOESM2" xlink:title="Supplementary information">
+       <media mime-subtype="pdf" mimetype="application" xlink:href="MediaObjects/41467_2024_45888_MOESM2_ESM.pdf">
+        <caption xml:lang="en">
+         <p>
+          Peer Review File
+         </p>
+        </caption>
+       </media>
+      </supplementary-material>
+     </p>
+    </sec>
+   </app>
+  </app-group>
+  <notes notes-type="ESMHint">
+   <title>
+    Supplementary information
+   </title>
+   <p>
+    The online version contains supplementary material available at
+    <ext-link ext-link-type="doi" xlink:href="10.1038/s41467-024-45888-7">
+     https://doi.org/10.1038/s41467-024-45888-7
+    </ext-link>
+    .
+   </p>
+  </notes>
+  <notes notes-type="Misc">
+   <p>
+    <bold>
+     Publisher’s note
+    </bold>
+    Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.
+   </p>
+  </notes>
+ </back>
+</article>

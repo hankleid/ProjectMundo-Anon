@@ -1,0 +1,112 @@
+DynamicBind: predicting ligand-specific protein-ligand complex structure with a deep equivariant generative model
+
+
+
+Imeshindwa kwa mafanikio makubwa katika uundaji wa mapambo ya proteini kutoka kwenye data ya tafla. Baadhi ya tekniki za uundaji zinatumia kujifunza kwa kina na dinamiki ya molekuli au Monte Carlo, , ,. Hizi zinatoa jumla ya mapambo. AlphaFold, ambayo ni mkuu katika uundaji wa mapambo yote ya proteini katika proteomi ya binadamu, mara nyingi huundia tu mapambo chache kwa kila tafla ya proteini, hata hivyo proteini ni vya kivuli na mara nyingi huathiriwa na mapambo mengi ili kufanya kazi zao, , , ,. Uwezo wa proteini wa kubadilika kati ya mapambo mengi ni muhimu kwa kazi zao za kibiashara katika maeneo yote ya maisha. Hatua ya dawa huja kwa kusambaza kwa kina na ligando zao tu kwenye baadhi ya mapambo ya proteini zinazotambua na kwa hivyo kubadilisha mapambo mengi za proteini hizi kwa kusambaza kwa kina na kazi zao za kibiashara, , ,. Katika mazingira ya sasa, mapambo ya proteini na ligando zinastudishwa kwa njia ya kujifunza kwa kina. Kujifunza kwa kina ni sehemu muhimu ya ujifunza wa dawa kulingana na mapambo. Hata hivyo, bila kuhakikisha umuhimu wa dinamiki ya proteini, usimamizi wa kujifunza kwa kina mara nyingi huchukua proteini kama vile vya kivuli, au mara nyingi, kama vile vya kivuli kulingana na kujifunza kwa kina, huwezi kujitumia tu changamoto chache za kivuli, ili kudhibiti gharama za kujifunza kwa kina,. Kwa hivyo, mapambo ya proteini yanayouundwa na AlphaFold, wakati zinatumika kama vinyingi vya kujifunza kwa kina, zitatoa mazungumzo ya ligando zinazohusu ligando zinazouundwa na kujifunza kwa kina na holo-structures zinazouundwa na kujifunza kwa kina,. Mapambo ya proteini yanayouundwa na AlphaFold mara nyingi hawatoa mapambo ya kivuli zinazofaa kwa kusambaza kwa kina na ligando, na kwa hivyo kiti cha kusambaza kwa kina kitachokaa kwa sababu proteini ya kivuli huathiriwa na mapambo mengi tofauti kutoka kwenye holo state.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Usimamizi wa mapambo ya proteini mara nyingi huendelea kufanyika kama hatua ya kawaida kutoka usimamizi wa mapambo ya proteini. Ingawa mara nyingi, ligando mbili zinazofanana zinaweza kufika mapambo ya proteini yanayofanana. Kwa mfano, c-Met kinase inaweza kuchukua mapambo matatu, yanayohusu hali za aktif na ya kusimamia, yanayoitwa mara nyingi kama Asp–Phe–Gly (DFG)-in na DFG-out (Fig. [3] b, d). Motif ya DFG inaweza kubadilika, kufanya kasi au kufungua sehemu mbalimbali za proteini. Katika modele za usimamizi za ligando za zamani, proteini inaweza kuchukuliwa kama tayari kwenye mapambo sahihi ili kufanya kazi ya kutambua mapambo sahihi ya ligando. Kwa kulingana, DynamicBind, kutumia mapambo ya proteini yanayohakikishwa na AlphaFold (Fig. [3] a), inaweza kubadilisha mapambo ya proteini kwa njia ya dinamiki ili kupata mapambo bora yanayokubali ligando uliyotambuliwa. Kama mfano wa kesi, kwa PDB 6UBW, RMSD ya ligando uliyohakikishwa ni 0.49 Å, na RMSD ya kitambulisho ni 1.97 Å, wakati RMSD ya kitambulisho ya AlphaFold ni 9.44 Å. Kwa PDB 7V3S, RMSD ya ligando uliyohakikishwa ni 0.51 Å, na RMSD ya kitambulisho ni 1.19 Å, (AlphaFold 6.02 Å). Wala kati ya ligando hizi mbili hazijapewa katika seti ya kujifunza (Fig. [3] c, e). Katika analizi yetu ya kiasi, tu saba proteini kutoka kwenye seti ya kujifunza, yanayotajwa kwa 79 PDB structures, yamechukuliwa kwa mapambo ya DFG-in na DFG-out, kama iliyotajwa na web server ya Kinase–Ligand Interaction Fingerprints and Structures (KLIFS). Fig. [3] f na g inaonyesha jinsi proteini hizi (yanayoitwa kwa ID zao za UniProt), zinachukua mapambo ya kuanza, zinamalizia kwa mapambo ya DFG-in wakati wa kubadilika kwa inhibitor ya aina ya kwanza, na zinamalizia kwa mapambo ya DFG-out wakati wa kubadilika kwa inhibitor ya aina ya pili. Pia, Fig. [3] h inaonyesha kwamba kwa kujumlisha, mapambo ya proteini yanayohakikishwa yanayonyana zaidi na mapambo ya kitambulisho kulingana na mapambo ya AlphaFold. Matokeo haya yanayonyesha kwamba, DynamicBind, inaweza kuchukua mabadiliko ya ligando-specific. Sifa hii ni muhimu kwa kujikataa kusimamia madhara ya "hit" yanayoweza kubadilika vizuri na mapambo yanayofanana na mapambo ya proteini yanayotambuliwa kwanza.
+
+
+
+
+
+
+
+
+
+
+
+Kwa jumla, DynamicBind hutoa njia ya “dynamic docking” ya kujifunza mapambo ya proteini na ligando, yanayohatua kizazi chake kutoka kwa njia za kujifunza mapambo za zamani ambazo huchukua proteini kama vile vya kivuli na simulizi za dinamiki ya molekuli (MD) ambazo ni ya kujitahidi kujisimamia. Uwezo wake wa dinamiki ya proteini kwa mfumo kubwa una maana muhimu sana kwa ujifunza wa molekuli za dawa, hasa hayo yanayohusimami kwa mapambo yanayofanana. Pia, mapambo ya proteini yanayohusimami kwa ligando yanayotolewa na DynamicBind yanaweza kutoa ujuzi mzuri kuhusu athari za ligando kwenye proteini, yanaweza kusaidia kuhakikisha mawasiliano ya mapambo na kazi na kuboresha fahamu yetu ya mawasiliano ya mekaniki.
+
+Mwanga wangu ni E(3)-equivariant, diffusion-based, graph neural network yanayotumia wakati wa kusimamia kwa kina.
+
+Mwanga wa E(3)-equivariant huchukua mfano wa chapa,y , kulingana na mabadiliko ya trans-rotation na parity yanayotolewa kwenye chapax katika nafasi ya 3D. Uchunguzi ulime kutoa kwamba vifaa vya equivariant vinaweza kujifunza kwa data 1000 mara zitikuu wakati wao huachukua matokeo bora kwenye mapambo ya maji kubwa. Ingawa kuna majaribio makubwa katika cryo-electron microscopy na crystallography, database ya mapambo ya proteini na ligando yanayofanana yanaendelea kuwa ya kijana, inayofikia hadi elfu za mara kumi tu kwa ukubwa. Kwa hivyo, hutoa vifaa vya kifaa kinachohitaji kujifunza habari muhimu zaidi na kuhakikisha habari zisizotofaa hazitolewe wakati wa kubadilisha au kurudia uhusiano wote. Njia ya zamani ya kujifunza SO(3) symmetry yanayohitaji kutumia au kuhakikisha habari zinazosimami, kama vile mapambo ya contact. Hata hivyo, mapambo ya contact au distance hawazotambana sana na mawasiliano yanayofaa kwa fizikia. Kwa mfano, mchakato unaweza kuhakikishwa kuwa kina contact na mchakato mawili yanayofarika sana. Pia, mapambo ya contact yanaweza kusimami chirality, ni sehemu muhimu katika ujifunza wa dawa.
+
+
+
+
+
+Mfano wa data unazungumzia ni uuzaji wa saa ya proteini na ligando. Matokeo yanajumuisha mazungumzo yanayohusishwa nak mazungumzo ya kina ya scalar torsion na vekta mbili za translation–rotation kwa kila ligando, pamoja na mazungumzo yanayohusishwa nak i p mazungumzo ya kina ya scalar dihedral ya side-chain na vekta mbili za translation–rotation ya backbone kwa kila residue ya proteini. Maelezo zaidi yanaweza kupatikana kwenye “Transformation of the protein conformation”. Pia, modeli inatoa matokeo mawili ya scalar: moja ya kudhania daraja ya hali ya asili kama iliyotathminiwa na cLDDT (contact-LDDT), na nyingine ya kuhusisha kudhania uhusiano wa binding affinity kati ya proteini na ligando.
+
+Ligando katika modeli yetu ni grafu ya attributedG l =(Vl , El), ambayo kila nodev i l ∈ V l inatafsiriwa kama atomu ya kibigiri na mizizi, mizizi ya mara moja, mara mbili, au mara tatu kama maganda. Sifa za node za grafu ya ligando yanajumuisha namba ya atomu, chirality, degree, na formal charge. Pia, embedding ya urefu wa maganda inatumika kama sifa za scalar ya maganda.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Kuandaa utambulisho wa kujihusisha kati ya proteini na ligando ndani ya mapambo yanayohusishwa, tunakumbuka ukwasi wa utambulisho wa utamaduni wa mawasiliano. Tunatumia ufafanuzi unazofanana na Local Distance Difference Test (LDDT) score, iliyotumika mara kwa mara kwa kujihusisha na kujifunza mapambo ya proteini yanayohusishwa. Contact-LDDT (cLDDT) score inatathmini kwa kujisikia umbali zisizozidi 15 Å kati ya mara zote za ligando na proteini. Umbali wa kubadilika unatathmini kati ya ukwasi wa ukwasi wa ukwasi na mapambo yanayohusishwa, wakati wa kujisikia utambulisho. cLDDT score ya mwisho inatathmini kutoka kwa anwani ya sehemu ya umbali zinazohifadhiwa kwa umbali wa kubadilika: 0.5, 1, 2, na 4 Å.
+
+Kuandaa umbali wa kubadilika kati ya mapambo yanayohusishwa na mapambo ya proteini ya ukwasi wakiwemo kwenye kiti cha kujihusisha, tunatumia pocket Root Mean Square Deviation (pocket RMSD). Hii inafanyika kwa kutumia atomi za proteini zinazokuwa ndani ya 5 Å ya atomi za ligando ya ukwasi. Kwanza, mapambo yanayohusishwa ya proteini yanatambuliwa na mapambo ya proteini ya crystal. Baada ya hivyo, RMSD kati ya atomi za pocket yanayohusishwa na atomi za pocket ya crystal yanatathminiwa.
+
+Kwa kujihusisha na AlphaFill, clash score ni root mean square (RMS) ya van der Waals overlaps kati ya umbali zote kati ya atomi za ligando na atomi za proteini, zinazozidi 4 Å. Inatathminiwa kama ifuatavyo: 16 clash score  =∑  i  =  0  NVdW overlapi  2NambapoN ni namba ya umbali zinazotathminiwa.
+
+
+
+
+
+Katika Autodock Vina, ligando ziliundwa kutoka fomati SDF hadi fomati PDBQT kwa Meeko 2.0.0. Uhandaji wa proteini ulifanyika kwa kutumia amri ya “prepare_receptor” katika ADFR Suite 1.0. Sanda ya ukakusanya iliandikwa kwa kutumia sanda ya kawaida kwenye ligando ya asili na kubuffa kawaida ya 4 Å kwenye matatu mara mara sita. Na senta ya sanda ilikuwa senta ya kisafi ya ligando ya asili. Kwa sababu atamu ya boronu si aina ya AutoDock, ligando zinazohusiana na atamu hana hazitumiki. Kwa hiyo, tu 301 mara za ligando-resepti katika dataset ya PDBbind na 597 mara za ligando-resepti katika dataset ya MDT ziliweka matokeo ya ukakusanya wa VINA rigid docking.
+
+Kuambatana na ukakusanya wa VINA rigid, kuna hatua ya ziada ya uhandaji wa resepti lenye mapambo katika ukakusanya wa VINA flexible. Iliyefanyika kwa kodi ya python iliyoitwa “prepare_flexreceptor.py”, ambayo inapatikana kwenyehttps://github.com/ccsb-scripps/AutoDock-Vina/tree/develop/example/autodock_scripts. Kwa hatua hii, faili ya proteini katika fomati PDBQT iligawanyika kwa viwango vilivyofanana, moja kwa sehemu ya kivuli na moja kwa mapambo ya vinyingi. Kwa mode ya Vina Flex, mapambo ya vinyingi yanaweza kujitambuliwa. Tulitambua zote zinazohusiana na atamu za vinyingi ndani ya 5 Å ya atamu za ligando kama lenye mapambo. Kwenye mode hii, mifupa ya proteini yanabaki kivuli. Uhandaji wa ligando na uwekezaji wa sanda ya grid ulikuwa sawa na ukakusanya wa VINA rigid docking.
+
+Faili za ligando za GNINA ni katika fomati PDBQT, iliyotengenezwa kwa kutumia OpenBabel baada ya kuongeza hydrogens kwa RDKit. Faili za proteini ziliingizwa katika fomati PDB. Uwekezaji wa sanda ya grid ulikuwa sawa na ukakusanya wa VINA rigid docking. Kwa dataset ya PDBbind, zote mara za ligando-resepti ziliweka matokeo ya ukakusanya. Kwa dataset ya MDT, 1 mara ilikuwa bila matokeo kwa sababu ligando katika faili ya PDB ya asili (PDB ID:8HMU ) ilikuwa si imegunduliwa kwa kushughulikana, ilikuwa na atamu zinazofikia.
+
+GLIDE ni moduli ya ukakusanya wa proteini kivuli katika software ya Schrödinger. Ligando zilihandajiwa kwa kutumia moduli ya LigPrep. Uhandaji wa proteini ulifanyika kwa kutumia moduli ya Protein Preparation Wizard. Faili za grid ziliundwa kwa kutumia moduli ya Receptor Grid Generation kwa kutumia sanda ya ndani ya 10 Å na sanda ya nje ya kawaida kwenye ligando na kubuffa kawaida ya 4 Å kwenye matatu mara mara sita senta ya kisafi ya ligando. Baada ya hivyo, ukakusanya wa SP precision ulifanyika. Baadhi ya ligando katika dataset ya PDBbind ni polypeptides, ambazo haziwezi kujitengenezwa na moduli ya LigPrep. Pia, ligando zinazohusiana na mabadiliko makubwa na atamu za kisafi haziweka matokeo wa ukakusanya. Kwa hiyo, 266 mara za ligando-resepti katika dataset ya PDBbind na 472 mara za ligando-resepti katika dataset ya MDT ziliweka matokeo ya ukakusanya wa GLIDE rigid docking.
+
+Moduli ya Induced fit docking (IFD) katika software ya Schrödinger inatoa fanaa ya ukakusanya wa proteini lenye mapambo kwa mtumiaji. Kulingana na VINA na GNINA, si tu mapambo ya vinyingi ambazo yanaweza kubadilika, bali pia mifupa ya zile zinazohusiana na atamu yanaweza kubadilika kidogo. Uhandaji wa ligando na proteini ulikuwa sawa na ukakusanya wa GLIDE rigid docking. Nafasi ya utafutaji iliandikwa kwa maelezo ya kawaida, sanda ya ndani ya 10 Å na sanda ya nje yenye ukubwa wa kawaida (kama ligando) senta ya kisafi ya ligando ya asili. Amino acid residues ndani ya 5 Å ya atamu za ligando ziliitambuliwa kama zinazohusiana na mapambo. Ukakusanya ulifanyika kwa maelezo ya kawaida, ambayo unatoa hadi 20 matokeo. Kwa jumla, 284 mara za ligando-resepti katika dataset ya PDBbind na 580 katika dataset ya MDT ziliweka matokeo kwa kutosha kwa kutumia moduli ya IFD. Ukakusanya wa Induced fit inaweza kutoa matokeo kwa mara zaidi za ligando-resepti katika dataset ya PDBbind kuliko ukakusanya wa GLIDE rigid docking, inayohusu kwamba njia ya ukakusanya hii inaweza kuboresha kisafi kwa kubadilisha atamu za kisafi.
+
+Maelezo zaidi kuhusu maelezo ya utafiti yamepatikana kwenye [Nature Portfolio Reporting Summary] iliyolinkwa kwenye makala hii.
+
+Fig. 1: a Hali ya holo inawakilishwa kwa rangi ya nyasi, hali ya apo ya kuanza na hali ya mapambo yanayohusika na model inawakilishwa kwa rangi ya kijani. Ligando ya asili inawakilishwa kwa rangi ya bluu, na ligando yanayohusika na model inawakilishwa kwa rangi ya chungwa. Model inatafsiri data za protein na ligando kama vinginevyo vya kuanza. Vipimo vya kutoa vinaambatana kwa vipimo vya mapambo yanayohusika: tofauti ya kijumbesho na kivuvi kwa ligando na kila mwanafunzi wa proteini, kivuvi ya mawindo ya ligando na mawindo ya chi kwa mwanafunzi wa proteini, na vinginevyo mbili vya kujifunza (kuvutia, A na anwani ya imani, D). Wakati wa kujifunza, model inatengenezwa ili kujifunza mabadiliko kutoka kwa hali ya apo kwa hali ya holo. Wakati wa kujumuisha, model inaonyesha mabadiliko ya mapambo mara kwa mara mara nyingi mara 20. b Sura ya kujumuisha inaonyesha kuwa model yetu inaweza kuhakikisha mapambo mbili tofauti ya holo wakati protein inakubali ligando mbili tofauti. Model yetu inaweza kuhakikisha hali ya protein yanayokubalika ligando kwa muda wa 20 hatua, wakati simulizi za MD ya molekuli zote yanahitaji milioni za hatua kusoma hali ya protein yanayokubalika ligando.
+
+Fig. 2: a , b DynamicBind inaonyesha kasi zaidi kuliko njia nyingine za kujifunza mapambo ya ligando kwa data ya PDBbind ( a ) na data ya majambo makubwa ya dawa (MDT) ( b ) kwa mizizi tofauti za RMSD. c Rangi za nyekundu na rangi za nyeupe zinaonyesha mazingira za kasi kwa maana ya kasi (ligando RMSD < 2 Å, anwani ya kuchomka  < 0.35) na maana ya rahisi (ligando RMSD < 5 Å, anwani ya kuchomka  <0.5) kwa kila muda. d Mapambo ya proteini yanayohusika na DynamicBind ni zaidi ya kivulisho, kama inavyoonyeshwa na RMSD ya chache kwenye mazingira ya kubalika. e Anwani ya mazingira ya LDDT (cLDDT) yanayohusika na DynamicBind ina uhusiano mzuri na RMSD ya ligando na ni mazungumzo mzuri ya RMSD halisi ya ligando chini ya 2 Å (auROC 0.764). f Kama namba ya sampuli zinazotengenezwa zinaongeza, mazingira ya kasi zinaongeza. c – f zinaonyesha mazingira kwa data za PDBbind na MDT zilizojungwa. Mazingira ya data kwa kila moja, kama vile zilizofilta kwa 30%, 60%, na 90% ya mazingira ya kusimami kwa ligando na mazingira ya kusimami kwa protein, zinazoelezea katika Supplementary Figs.[1] –[4]. Data za kuanza zinazotolewa kama faili ya Source Data.
+
+Fig. 3: Mapambo ya proteini yanayohusiana na AlphaFold yameonyeshwa kwa nyeupe, mapambo ya proteini na ligando yanayohusiana na crystal yameonyeshwa kwa nyekundu na nyakijani, kwa uhusiano wao. Mapambo yanayohusiana na mazungumzo yetu yameonyeshwa kwa nyekundu na nyakijani, kwa uhusiano wao na proteini na ligando. Mapambo ya side chains ya Asp–Phe–Gly (DFG) yameonyeshwa kwa stick. Mipasha nyekundu yanazungumzia mabadiliko muhimu ya mapambo ya crystal kutoka kwa mapambo ya AlphaFold. Mapambo ya input ni ya AlphaFold ya kuhakikisha. a Wakati ligando 84S ( b ) kushikwa na proteini c-Met, proteini huchukua mapambo ya DFG-in. Wakati ligando 5I9 ( d ) kushikwa na proteini hii, proteini huchukua mapambo ya DFG-out. Mazungumzo yetu ya ligando zote ( c , e ) yanafanana vizuri na mapambo ya crystal. Ligand RMSD ni 0.49 Å na 0.51 Å. Mabadiliko ya Pocket RMSD kutoka kwa AlphaFold ya kuhakikisha ni 7.47 Å na 4.83 Å kwa DFG-in na DFG-out, kwa uhusiano wao. Kati ya seti ya majaribio, saba proteini (yanayohusiana na ID zao za UniProt), yanapewa mapambo za crystal yanayohusiana na DFG-in na DFG-out, mapambo ya pocket RMSD ya AlphaFold ya kuhakikisha na ya mazungumzo yanayomeingizwa kwenye ( f , n = 39) na ( g , n = 34) kwa mapambo ya DFG-in na DFG-out kwa uhusiano wao, ambapo mstari wa kati unanunua kama median, magari ya mstari yananunua kama quartiles ya juu na chini, mipasha yanapanda hadi mara 1.5 ya interquartile range, na nukta za kati yanazungumzia nukta za kati. h Histogram ya mabadiliko ya pocket RMSD kutoka kwa AlphaFold kwa sifa zote 79 PDBs. Data za kuzungumza yanapewa kama Source Data file.
+
+Fig. 4: Proteini yanajihusisha na mabadiliko ya mapambo yanayoweza kutokea kwa muda wa kutosha wakati wakishikwa na ligando za molekuli ndogo. Δpocket RMSD hasi ina maana mapambo ya kuhakikisha yana RMSD ya chini na ukweli kulingana na mapambo ya AlphaFold. Δclash hasi ina maana ligando ya kuhakikisha yana clash score ya chini na mapambo ya kuhakikisha kulingana na ligando ya kuhakikisha na mapambo ya AlphaFold. a Mapambo ya side chain ya Arginine yanapindua, kusaidia kudhibiti mipaka na ligando. b Tyrosine ya mapambo ya AlphaFold ambayo ilikuwa kuchukua nafasi ya kushikwa, yanapinda kwenye mapambo ya kuhakikisha. c Sehemu ya loop ya mapambo ya AlphaFold yanakutana na ligando, na yanapinda kwenye mapambo ya kuhakikisha. d Alpha helices karibu na nafasi ya kushikwa yanapinda kwa loops, yanafanana na mapambo ya crystal. e Alpha helix ya Hsp90 yanapinda kwa kutosha. f Sehemu mbili yanapinda kwa kujikunja, kusaidia kufungua nafasi ya kushikwa. Data za kuzungumza yanapewa kama Source Data file.
+
+Fig. 5: a Tu mara tano tu katika seti ya kujifunza yana usimivu wa Smith–Waterman wa proteini zaidi ya 0.4 na proteini SETD2, na zote zimeingizwa pamoja na ligando za SAM, ambazo zinazostahiliwa kwa mstari katika ( b ). Ligando la PDB 7TY2, EZM0414, linazostahiliwa kwa mstari ya nyekundu, na proteini linazostahiliwa kwa rangi ya nyama. c Mapambo ya kusimamia kwa EZM0414 haitapatikana katika mapambo ya AlphaFold, ambayo yameonyeshwa kwa rangi ya nyeupe. d Sehemu hii inaonyesha usimivu wa Tanimoto ya ligando katika seti ya kujifunza mara kwa EZM0414, na ligando tatu zinazostahiliwa zaidi zimeonyeshwa. e Mapambo ya proteini na ligando kama iliyopimwa na DynamicBind, ambayo proteini imeonyeshwa kwa rangi ya kijani na ligando kwa rangi ya chungu. f Uingizaji wa mapambo ya proteini na ligando kama iliyopimwa na DynamicBind na mapambo ya kikristali yanayohusika. Data za kuzingatia zimeonyeshwa kama faili ya Source Data.
+
+Fig. 6: a Uchambuzi wa matokeo ya uchambuzi wa dawa za antibiotics kwa njia mbalimbali, iliyotegemea kwa auROC (area under the ROC curve). Uchambuzi huu unajumuisha n = 12 mfumo tofauti za proteini. Kila grafu ya box inaonyesha anwani (msimbo wa kati), quartiles za juu na chini (msimbo wa magari), mizimu yanayofikia hadi mara 1.5 ya mawasiliano ya quartiles, na nukta za data za kifupi (mipenge). Tumeongeza mara tano tu ya namba za maelezo ya awali kama iliyotegemea katika maelezo ya uchambuzi. b Mapambo ya proteini iliyopimwa na AlphaFold imeonyeshwa kwa rangi ya nyeupe, wakati mapambo ya proteini iliyopimwa na DynamicBind kwa ligando tatu zinazofanya kazi zimeonyeshwa kwa rangi ya kijani. Mipenge ya nyekundu huyanatambua viwango ambavyo proteini vilivyoingiza karibu na ligando, kufungua mazungumzo zaidi. Data za kuzingatia zimeonyeshwa kama faili ya Source Data.
+

@@ -1,0 +1,6281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="/ProjectMundo/style/jats-html.xsl"?>
+<!DOCTYPE response>
+<article article-type="research-article" dtd-version="1.2" xml:lang="en" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <front>
+  <journal-meta>
+   <journal-id journal-id-type="publisher-id">
+    41467
+   </journal-id>
+   <journal-id journal-id-type="doi">
+    10.1038/41467.2041-1723
+   </journal-id>
+   <journal-title-group>
+    <journal-title>
+     Nature Communications
+    </journal-title>
+    <abbrev-journal-title abbrev-type="publisher">
+     Nat Commun
+    </abbrev-journal-title>
+   </journal-title-group>
+   <issn pub-type="epub">
+    2041-1723
+   </issn>
+   <publisher>
+    <publisher-name>
+     Nature Publishing Group UK
+    </publisher-name>
+    <publisher-loc>
+     London
+    </publisher-loc>
+   </publisher>
+  </journal-meta>
+  <article-meta>
+   <article-id pub-id-type="publisher-id">
+    s41467-024-45461-2
+   </article-id>
+   <article-id pub-id-type="manuscript">
+    45461
+   </article-id>
+   <article-id pub-id-type="doi">
+    10.1038/s41467-024-45461-2
+   </article-id>
+   <article-categories>
+    <subj-group subj-group-type="heading">
+     <subject>
+      Article
+     </subject>
+    </subj-group>
+    <subj-group subj-group-type="SubjectPath">
+     <subject>
+      /631/114/2411
+     </subject>
+    </subj-group>
+    <subj-group subj-group-type="SubjectPath">
+     <subject>
+      /631/154/1435
+     </subject>
+    </subj-group>
+    <subj-group subj-group-type="SubjectPath">
+     <subject>
+      /631/114/2248
+     </subject>
+    </subj-group>
+    <subj-group subj-group-type="NatureArticleTypeID">
+     <subject>
+      article
+     </subject>
+    </subj-group>
+   </article-categories>
+   <title-group>
+    <article-title xml:lang="en">
+     DynamicBind: derin eşdeğerli generatif bir model ile ligand-spesifik protein-ligand kompleks yapısını öngörme
+    </article-title>
+   </title-group>
+   <contrib-group>
+    <contrib contrib-type="author" corresp="yes" equal-contrib="yes" id="Au1">
+     <contrib-id contrib-id-type="orcid">
+      http://orcid.org/0000-0002-1572-2909
+     </contrib-id>
+     <name name-style="western">
+      <surname>
+       Lu
+      </surname>
+      <given-names>
+       Wei
+      </given-names>
+     </name>
+     <address>
+      <email>
+       luwei0917@gmail.com
+      </email>
+     </address>
+     <xref ref-type="aff" rid="Aff1">
+      1
+     </xref>
+     <xref ref-type="corresp" rid="IDs41467024454612_cor1">
+      a
+     </xref>
+     <xref ref-type="author-notes" rid="fn1"/>
+    </contrib>
+    <contrib contrib-type="author" corresp="yes" equal-contrib="yes" id="Au2">
+     <name name-style="western">
+      <surname>
+       Zhang
+      </surname>
+      <given-names>
+       Jixian
+      </given-names>
+     </name>
+     <address>
+      <email>
+       jxzly1993@gmail.com
+      </email>
+     </address>
+     <xref ref-type="aff" rid="Aff1">
+      1
+     </xref>
+     <xref ref-type="corresp" rid="IDs41467024454612_cor2">
+      b
+     </xref>
+     <xref ref-type="author-notes" rid="fn1"/>
+    </contrib>
+    <contrib contrib-type="author" id="Au3">
+     <name name-style="western">
+      <surname>
+       Huang
+      </surname>
+      <given-names>
+       Weifeng
+      </given-names>
+     </name>
+     <xref ref-type="aff" rid="Aff2">
+      2
+     </xref>
+    </contrib>
+    <contrib contrib-type="author" id="Au4">
+     <name name-style="western">
+      <surname>
+       Zhang
+      </surname>
+      <given-names>
+       Ziqiao
+      </given-names>
+     </name>
+     <xref ref-type="aff" rid="Aff1">
+      1
+     </xref>
+    </contrib>
+    <contrib contrib-type="author" id="Au5">
+     <name name-style="western">
+      <surname>
+       Jia
+      </surname>
+      <given-names>
+       Xiangyu
+      </given-names>
+     </name>
+     <xref ref-type="aff" rid="Aff1">
+      1
+     </xref>
+    </contrib>
+    <contrib contrib-type="author" id="Au6">
+     <name name-style="western">
+      <surname>
+       Wang
+      </surname>
+      <given-names>
+       Zhenyu
+      </given-names>
+     </name>
+     <xref ref-type="aff" rid="Aff1">
+      1
+     </xref>
+    </contrib>
+    <contrib contrib-type="author" id="Au7">
+     <contrib-id contrib-id-type="orcid">
+      http://orcid.org/0009-0000-7014-3347
+     </contrib-id>
+     <name name-style="western">
+      <surname>
+       Shi
+      </surname>
+      <given-names>
+       Leilei
+      </given-names>
+     </name>
+     <xref ref-type="aff" rid="Aff1">
+      1
+     </xref>
+    </contrib>
+    <contrib contrib-type="author" id="Au8">
+     <name name-style="western">
+      <surname>
+       Li
+      </surname>
+      <given-names>
+       Chengtao
+      </given-names>
+     </name>
+     <xref ref-type="aff" rid="Aff1">
+      1
+     </xref>
+    </contrib>
+    <contrib contrib-type="author" id="Au9">
+     <name name-style="western">
+      <surname>
+       Wolynes
+      </surname>
+      <given-names>
+       Peter G.
+      </given-names>
+     </name>
+     <xref ref-type="aff" rid="Aff3">
+      3
+     </xref>
+    </contrib>
+    <contrib contrib-type="author" corresp="yes" equal-contrib="yes" id="Au10">
+     <contrib-id contrib-id-type="orcid">
+      http://orcid.org/0000-0001-9747-4285
+     </contrib-id>
+     <name name-style="western">
+      <surname>
+       Zheng
+      </surname>
+      <given-names>
+       Shuangjia
+      </given-names>
+     </name>
+     <address>
+      <email>
+       shuangjia.zheng@sjtu.edu.cn
+      </email>
+     </address>
+     <xref ref-type="aff" rid="Aff4">
+      4
+     </xref>
+     <xref ref-type="corresp" rid="IDs41467024454612_cor10">
+      k
+     </xref>
+     <xref ref-type="author-notes" rid="fn1"/>
+    </contrib>
+    <aff id="Aff1">
+     <label>
+      1
+     </label>
+     <institution-wrap>
+      <institution content-type="org-name">
+       Galixir Technologies
+      </institution>
+     </institution-wrap>
+     <addr-line content-type="postcode">
+      200100
+     </addr-line>
+     <addr-line content-type="city">
+      Shanghai
+     </addr-line>
+     <country country="CN">
+      China
+     </country>
+    </aff>
+    <aff id="Aff2">
+     <label>
+      2
+     </label>
+     <institution-wrap>
+      <institution-id institution-id-type="ROR">
+       https://ror.org/0064kty71
+      </institution-id>
+      <institution-id institution-id-type="GRID">
+       grid.12981.33
+      </institution-id>
+      <institution-id institution-id-type="ISNI">
+       0000 0001 2360 039X
+      </institution-id>
+      <institution content-type="org-division">
+       School of Pharmaceutical Science
+      </institution>
+      <institution content-type="org-name">
+       Sun Yat-sen University
+      </institution>
+     </institution-wrap>
+     <addr-line content-type="postcode">
+      510006
+     </addr-line>
+     <addr-line content-type="city">
+      Guangzhou
+     </addr-line>
+     <country country="CN">
+      China
+     </country>
+    </aff>
+    <aff id="Aff3">
+     <label>
+      3
+     </label>
+     <institution-wrap>
+      <institution-id institution-id-type="GRID">
+       grid.21940.3e
+      </institution-id>
+      <institution-id institution-id-type="ISNI">
+       0000 0004 1936 8278
+      </institution-id>
+      <institution content-type="org-division">
+       Center for Theoretical Biological Physics and Department of Chemistry
+      </institution>
+      <institution content-type="org-name">
+       Rice University
+      </institution>
+     </institution-wrap>
+     <addr-line content-type="postcode">
+      77005
+     </addr-line>
+     <addr-line content-type="city">
+      Houston
+     </addr-line>
+     <addr-line content-type="state">
+      TX
+     </addr-line>
+     <country country="US">
+      USA
+     </country>
+    </aff>
+    <aff id="Aff4">
+     <label>
+      4
+     </label>
+     <institution-wrap>
+      <institution-id institution-id-type="ROR">
+       https://ror.org/0220qvk04
+      </institution-id>
+      <institution-id institution-id-type="GRID">
+       grid.16821.3c
+      </institution-id>
+      <institution-id institution-id-type="ISNI">
+       0000 0004 0368 8293
+      </institution-id>
+      <institution content-type="org-division">
+       Global Institute of Future Technology
+      </institution>
+      <institution content-type="org-name">
+       Shanghai Jiao Tong University
+      </institution>
+     </institution-wrap>
+     <addr-line content-type="postcode">
+      200240
+     </addr-line>
+     <addr-line content-type="city">
+      Shanghai
+     </addr-line>
+     <country country="CN">
+      China
+     </country>
+    </aff>
+   </contrib-group>
+   <author-notes>
+    <fn fn-type="equal" id="fn1">
+     <p>
+      These authors contributed equally: Wei Lu, Jixian Zhang, Shuangjia Zheng.
+     </p>
+    </fn>
+    <corresp id="IDs41467024454612_cor1">
+     <label>
+      a
+     </label>
+     <email>
+      luwei0917@gmail.com
+     </email>
+    </corresp>
+    <corresp id="IDs41467024454612_cor2">
+     <label>
+      b
+     </label>
+     <email>
+      jxzly1993@gmail.com
+     </email>
+    </corresp>
+    <corresp id="IDs41467024454612_cor10">
+     <label>
+      k
+     </label>
+     <email>
+      shuangjia.zheng@sjtu.edu.cn
+     </email>
+    </corresp>
+   </author-notes>
+   <pub-date date-type="pub" publication-format="electronic">
+    <day>
+     5
+    </day>
+    <month>
+     2
+    </month>
+    <year>
+     2024
+    </year>
+   </pub-date>
+   <pub-date date-type="collection" publication-format="electronic">
+    <month>
+     12
+    </month>
+    <year>
+     2024
+    </year>
+   </pub-date>
+   <volume>
+    15
+   </volume>
+   <issue seq="1071">
+    1
+   </issue>
+   <elocation-id>
+    1071
+   </elocation-id>
+   <history>
+    <date date-type="registration">
+     <day>
+      25
+     </day>
+     <month>
+      1
+     </month>
+     <year>
+      2024
+     </year>
+    </date>
+    <date date-type="received">
+     <day>
+      24
+     </day>
+     <month>
+      8
+     </month>
+     <year>
+      2023
+     </year>
+    </date>
+    <date date-type="accepted">
+     <day>
+      24
+     </day>
+     <month>
+      1
+     </month>
+     <year>
+      2024
+     </year>
+    </date>
+    <date date-type="online">
+     <day>
+      5
+     </day>
+     <month>
+      2
+     </month>
+     <year>
+      2024
+     </year>
+    </date>
+   </history>
+   <permissions>
+    <copyright-statement content-type="compact">
+     © The Author(s) 2024
+    </copyright-statement>
+    <copyright-year>
+     2024
+    </copyright-year>
+    <copyright-holder>
+     The Author(s)
+    </copyright-holder>
+    <license license-type="open-access" xlink:href="http://creativecommons.org/licenses/by/4.0/">
+     <license-p>
+      <bold>
+       Open Access
+      </bold>
+      This article is licensed under a Creative Commons Attribution 4.0 International License, which permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons license, and indicate if changes were made. The images or other third party material in this article are included in the article’s Creative Commons license, unless indicated otherwise in a credit line to the material. If material is not included in the article’s Creative Commons license and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this license, visit
+      <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/">
+       http://creativecommons.org/licenses/by/4.0/
+      </ext-link>
+      .
+     </license-p>
+    </license>
+   </permissions>
+   <abstract id="Abs1" xml:lang="en">
+    <title>
+     Özet
+    </title>
+    <p id="Par1">
+     Statik protein yapılarını öngörmede önemli ilerlemeler kaydedilmiş olsa da, ligandlar tarafından modüle edilen proteinlerin içkin dinamikleri, protein fonksiyonunu anlamak ve ilaç keşfini kolaylaştırmak için kritik öneme sahiptir. Protein-ligand etkileşimlerini incelemek için sıkça kullanılan geleneksel docking yöntemleri, genellikle proteinleri katı olarak ele alır. Moleküler dinamik simülasyonları, uygun protein konformasyonları önerebilir, ancak biyolojik olarak ilgili denge durumları arasındaki nadir geçişler nedeniyle hesaplama açısından đòiaktır. Bu çalışmada, farklı denge durumları arasında verimli geçişler sağlayan düzgün bir enerji manzarası oluşturmak için eşdeğerli geometrik difüzyon ağlarını kullanan DynamicBind adlı bir derin öğrenme yöntemini sunuyoruz. DynamicBind, holo-yapılar veya kapsamlı örneklemeye gerek kalmadan, bağlanmamış protein yapılarından ligand-spesifik konformasyonları doğru bir şekilde geri kazanır. Şaşırtıcı bir şekilde, docking ve sanal ekranlama benchmark'lerinde devletin en iyi performansını gösterir. Deneylerimiz, DynamicBind'in geniş bir protein konformasyonel değişim aralığını karşılayabildiğini ve görülmeyen protein hedeflerinde kriptik cepleri tanımlayabildiğini ortaya koyuyor. Sonuç olarak, DynamicBind, önceden ilaçsız hedefler için küçük moleküllerin geliştirilmesini hızlandırma ve hesaplamalı ilaç keşfinin sınırlarını genişletme potansiyeline sahiptir.
+    </p>
+   </abstract>
+   <abstract abstract-type="ShortSummary" id="Abs2" xml:lang="en">
+    <p id="Par2">
+     Proteins often function by changing conformations upon ligand binding. Efficient structural modelling of these interactions, crucial for drug discovery, is limited: here the authors address this with DynamicBind, a diffusion-based deep generative model.
+    </p>
+   </abstract>
+   <kwd-group kwd-group-type="hierarchical" vocab="FoR" vocab-identifier="ANZSRC 2008">
+    <kwd content-type="term" vocab-term-identifier="03">
+     Chemical Sciences
+    </kwd>
+    <nested-kwd>
+     <kwd content-type="term" vocab-term-identifier="0307">
+      Theoretical and Computational Chemistry
+     </kwd>
+    </nested-kwd>
+    <kwd content-type="term" vocab-term-identifier="02">
+     Physical Sciences
+    </kwd>
+    <nested-kwd>
+     <kwd content-type="term" vocab-term-identifier="0299">
+      Other Physical Sciences
+     </kwd>
+    </nested-kwd>
+   </kwd-group>
+   <custom-meta-group>
+    <custom-meta>
+     <meta-name>
+      publisher-imprint-name
+     </meta-name>
+     <meta-value>
+      Nature Portfolio
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      volume-issue-count
+     </meta-name>
+     <meta-value>
+      1
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      issue-article-count
+     </meta-name>
+     <meta-value>
+      1071
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      issue-toc-levels
+     </meta-name>
+     <meta-value>
+      0
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      issue-pricelist-year
+     </meta-name>
+     <meta-value>
+      2024
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      issue-copyright-holder
+     </meta-name>
+     <meta-value>
+      Springer Nature Limited
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      issue-copyright-year
+     </meta-name>
+     <meta-value>
+      2024
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      article-contains-esm
+     </meta-name>
+     <meta-value>
+      Yes
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      article-numbering-style
+     </meta-name>
+     <meta-value>
+      Unnumbered
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      article-registration-date-year
+     </meta-name>
+     <meta-value>
+      2024
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      article-registration-date-month
+     </meta-name>
+     <meta-value>
+      1
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      article-registration-date-day
+     </meta-name>
+     <meta-value>
+      25
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      article-toc-levels
+     </meta-name>
+     <meta-value>
+      0
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      toc-levels
+     </meta-name>
+     <meta-value>
+      0
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      volume-type
+     </meta-name>
+     <meta-value>
+      Regular
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      journal-product
+     </meta-name>
+     <meta-value>
+      NonStandardArchiveJournal
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      numbering-style
+     </meta-name>
+     <meta-value>
+      Unnumbered
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      article-grants-type
+     </meta-name>
+     <meta-value>
+      OpenChoice
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      metadata-grant
+     </meta-name>
+     <meta-value>
+      OpenAccess
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      abstract-grant
+     </meta-name>
+     <meta-value>
+      OpenAccess
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      bodypdf-grant
+     </meta-name>
+     <meta-value>
+      OpenAccess
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      bodyhtml-grant
+     </meta-name>
+     <meta-value>
+      OpenAccess
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      bibliography-grant
+     </meta-name>
+     <meta-value>
+      OpenAccess
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      esm-grant
+     </meta-name>
+     <meta-value>
+      OpenAccess
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      online-first
+     </meta-name>
+     <meta-value>
+      false
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      pdf-file-reference
+     </meta-name>
+     <meta-value>
+      BodyRef/PDF/41467_2024_Article_45461.pdf
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      pdf-type
+     </meta-name>
+     <meta-value>
+      Typeset
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      target-type
+     </meta-name>
+     <meta-value>
+      OnlinePDF
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      issue-type
+     </meta-name>
+     <meta-value>
+      Regular
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      article-type
+     </meta-name>
+     <meta-value>
+      OriginalPaper
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      journal-subject-primary
+     </meta-name>
+     <meta-value>
+      Science, Humanities and Social Sciences, multidisciplinary
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      journal-subject-secondary
+     </meta-name>
+     <meta-value>
+      Science, Humanities and Social Sciences, multidisciplinary
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      journal-subject-secondary
+     </meta-name>
+     <meta-value>
+      Science, multidisciplinary
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      journal-subject-collection
+     </meta-name>
+     <meta-value>
+      Science (multidisciplinary)
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      open-access
+     </meta-name>
+     <meta-value>
+      true
+     </meta-value>
+    </custom-meta>
+   </custom-meta-group>
+  </article-meta>
+ </front>
+ <body>
+  <sec id="Sec1" sec-type="introduction">
+   <title>
+    Giriş
+   </title>
+   <p id="Par3">
+    Protein yapısı tahmini alanında dizi veriden önemli ilerlemeler kaydedilmiştir. Bazı tahmin teknikleri, moleküler dinamik veya Monte Carlo ile birlikte makine öğrenimini kullanır
+    <sup>
+     <xref ref-type="bibr" rid="CR1">
+      1
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR2">
+      2
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR3">
+      3
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR4">
+      4
+     </xref>
+    </sup>
+    . Bu, yapıların bir ansamblını üretir. İnsan proteomundaki neredeyse tüm yapıların tahmini alanında lider olan AlphaFold, proteinlerin doğası gereği dinamik olduğu ve genellikle fonksiyonlarını gerçekleştirmek için birden fazla konformasyon aldıkları gerçeğine rağmen, her bir protein dizisi için genellikle sadece birkaç konformasyon üretir
+    <sup>
+     <xref ref-type="bibr" rid="CR5">
+      5
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR6">
+      6
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR7">
+      7
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR8">
+      8
+     </xref>
+     <xref ref-type="bibr" rid="CR9">
+      9
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR10">
+      10
+     </xref>
+    </sup>
+    . Proteinlerin farklı konformasyonlar arasında dönüşebilme yetisi, tüm yaşam alanlarında biyolojik aktivitelerine merkezi bir özelliktir. İlaç moleküllerinin terapötik etkisi, sadece hedef proteinlerin bazı konformasyonlarına özgü bağlanmasıyla ve bu proteinlerin konformasyonel peyzajını değiştirerek temel biyolojik aktiviteleri modüle etmesiyle ortaya çıkar
+    <sup>
+     <xref ref-type="bibr" rid="CR11">
+      11
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR12">
+      12
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR13">
+      13
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR14">
+      14
+     </xref>
+    </sup>
+    . Uygulamada, günümüzde protein-ligand etkileşimleri, hesapsal olarak moleküler docking yöntemleri ile incelenmektedir. Docking, yapı tabanlı ilaç keşfinin önemli bir bileşenidir
+    <sup>
+     <xref ref-type="bibr" rid="CR15">
+      15
+     </xref>
+    </sup>
+    . Bununla birlikte, protein dinamiğinin önemine rağmen, geleneksel docking yöntemleri genellikle proteinleri katı veya kısmen esnek olarak ele alır ve sadece seçilen yan zincirlerin hareket etmesine izin verir, hesaplama maliyetlerini yönetmek için
+    <sup>
+     <xref ref-type="bibr" rid="CR16">
+      16
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR17">
+      17
+     </xref>
+    </sup>
+    . Sonuç olarak, AlphaFold tarafından tahmin edilen apoprotein yapıları, docking için girdi olarak kullanıldığında, ligand-bağlı kristalleştirilmiş holo-yapılarla iyi şekilde hizalanmayan ligand poz tahmini verir
+    <sup>
+     <xref ref-type="bibr" rid="CR18">
+      18
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR19">
+      19
+     </xref>
+    </sup>
+    . AlphaFold tarafından tahmin edilen yapılar, genellikle ligand bağlanması için en uygun yan zincir rotamer konfigürasyonlarını sunmaz ve因此, ilgili bağlanma ceebi, apoproteinin holo durumundan önemli ölçüde farklı bir konformasyon aldığında erişilemez görünür.
+   </p>
+   <p id="Par4">
+    Burada, protein-ligand kompleks yapısını ligand-spesifik bir şekilde tahmin edebilen bir geometrik derin generatif model olan DynamicBind'i sunuyoruz. Geleneksel docking yöntemlerinin aksine, DynamicBind, protein konformasyonunu AlphaFold tahmini ile holo-benzer bir duruma etkili bir şekilde uyarlar. Modelimiz, kinaz proteinlerinde bilinen DFG-in'den DFG-out'a geçiş gibi büyük konformasyonel değişikliklerini tahmin edebilme yeteneğine sahiptir ve bu, moleküler dinamik (MD) simülasyonları gibi diğer yöntemler için zorlu bir görev olmuştur
+    <sup>
+     <xref ref-type="bibr" rid="CR20">
+      20
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR21">
+      21
+     </xref>
+    </sup>
+    . Bu verimliliği, biyolojik olarak ilgili durumlar arasındaki geçişlerin minimal şekilde engellenmesini sağlayan bir enerji peyzajı öğrenerek elde ettik
+    <sup>
+     <xref ref-type="bibr" rid="CR22">
+      22
+     </xref>
+    </sup>
+    . Bu, eğitim sırasında decoy oluşturma için yenilikçi bir şekilde morf benzeri bir dönüşüm kullanılmasıyla mümkün hale geldi (daha fazla bilgi için "DynamicBind Mimarileri" ve "Yöntemler"e bakınız). Mevcut yöntem, doğrudan ve verimli bir şekilde düşük enerji durumlarının öğrenilen modelden örneklenmesine izin verdiği için Boltzmann jeneratörü ile benzerlikler paylaşır. Ancak geleneksel Boltzmann jeneratörlerinin aksine, genellikle sadece eğitildiği sistemlerle sınırlı olan DynamicBind, yeni proteinler ve ligandlarla çalışabilen genel bir modeldir
+    <sup>
+     <xref ref-type="bibr" rid="CR23">
+      23
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR24">
+      24
+     </xref>
+    </sup>
+    .
+   </p>
+   <p id="Par5">
+    Yaklaşan sonuçlar bölümünde, DynamicBind'in ilaç keşfine yardımcı olma potansiyelini gösteren kapsamlı bir değerlendirmeyi sunuyoruz. Sunumumuz altı segmente ayrılmıştır: ilk olarak DynamicBind modelini açıklamak, ardından mevcut docking yöntemleriyle DynamicBind'i karşılaştırmak, ardından yöntemin ligand-spesifik bir şekilde büyük protein konformasyonel değişikliklerini örnekleyebilme yeteneğini vurgulamak, ardından cụ olarak ele alabileceği konformasyonel değişikliklerin kapsamını göstermek, ardından bir vaka çalışması aracılığıyla kriptik cepleri tahmin etme kapasitesini göstermek ve son olarak antibiyotik verisi kullanarak proteom-genel sanal ekranlama görevine uygulamayı göstermek. Bu araştırmalar topluca DynamicBind'in potansiyelini vurgulamaktadır ve protein-ligand etkileşim peyzajının daha fazla anlaşılması ve manipülasyonu için zemin hazırlamaktadır
+    <sup>
+     <xref ref-type="bibr" rid="CR25">
+      25
+     </xref>
+    </sup>
+    .
+   </p>
+  </sec>
+  <sec id="Sec2" sec-type="results">
+   <title>
+    Sonuçlar
+   </title>
+   <sec id="Sec3">
+    <title>
+     DynamicBind Mimarileri
+    </title>
+    <p id="Par6">
+     DynamicBind, protein-ligand kompleks yapısını tahmin ederken önemli protein konformasyonel değişikliklerini gerçekleştiren "dinamik docking" işlemini gerçekleştirir. DynamicBind, PDB formatında apo-benzeri yapıları (bu çalışmada AlphaFold tarafından tahmin edilen konformasyonları) ve çeşitli yaygın olarak kullanılan formatlardaki küçük molekül ligandları kabul eder, Örneğin, Basitleştirilmiş Moleküler Giriş Satır Giriş Sistemi (SMILES) veya yapı-veri dosyası (SDF) formatı. Tahmin sırasında, model ligandı rastgele yerleştirir, ligandın tohum konformasyonu RDKit kullanılarak üretilir ve proteine yerleştirilir. Ardından, 20 iterasyon (daha fazla ayrıntı için "Model Mimarisi"ne bakınız) boyunca,逐渐 olarak ligandın iç torsiyonel açılarını ayarlayarak ligandı çevirir ve döndürür. İlk beş adımda sadece ligand konformasyonu değiştirilir, model daha sonra kalan adımlarda protein kalıntılarını çevirir ve döndürür, ayrıca yan zincir chi açılarını değiştirir
+     <sup>
+      <xref ref-type="bibr" rid="CR26">
+       26
+      </xref>
+      <xref ref-type="bibr" rid="CR27">
+       27
+      </xref>
+     </sup>
+     .
+    </p>
+    <p id="Par7">
+     Fig.
+     <xref ref-type="fig" rid="Fig1">
+      1
+     </xref>
+     a'da gösterildiği gibi, her adımda protein ve ligandın özellikleri ve koordinatları, SE(3)-equivariant etkileşim modülüne fedilir. Ardından, protein ve okuma modülleri, mevcut durum için tahmin edilen çevirme, döndürme ve diyedral güncellemeleri üretir. Model hakkında daha fazla ayrıntı "Protein Konformasyonunun Dönüşümü"nde verilmiştir. Geleneksel protokolün aksine, difüzyon tabanlı model eğitimi, yerel durumun çeşitli büyüklüklerdeki Gauss gürültüsü ile bozulmasıyla decoy üretir, bizim yöntemimiz ise protein decoy üretmek için morf benzeri bir dönüşüm kullanır. Bu işlem sırasında, yerel konformasyon AlphaFold tarafından tahmin edilen konformasyona doğru dần dần geçiş yapar. Proteinlerin yapısı birçok yönden yüksek oranda kısıtlanmıştır, kalıntılar peptit bağları ile bağlanır ve bağ uzunlukları kimyasal ilkeler tarafından yönetilir. Decoy'lar Gauss gürültüsü kullanılarak üretildiğinde, model esas olarak en kimyasal olarak稳 konformasyona geri dönmeyi öğrenir, genellikle gürültü eklendikten önceki konformasyondur. Mevcut görevde, ligand-bağlı holo konformasyonu bilinmez ve en kolay erişilebilen protein yapısı AlphaFold tarafından tahmin edilen yapıdır, ancak bu genellikle holo konformasyonundan önemli ölçüde farklıdır. AlphaFold tarafından tahmin edilen yapı genellikle zaten çoğu kimyasal kısıtlamaya uyduğundan, sadece Gauss gürültüsünden yapılan decoy'lar ile eğitilen modelin biyolojik olarak ilgili uzun zaman ölçekli dönüşümleri nasıl doğru bir şekilde tahmin edebileceği öngörülmesi zordur, bunlar bizim primary endişemizdir. Buna karşılık, bizim morf benzeri dönüşümümüz tarafından üretilen decoy'lar genellikle temel kimyasal kısıtlamaları sağlar, bu da modelimizin biyofiziksel olarak ilgili durum değişme olaylarını öğrenmesine olanak tanır. Biyolojik olarak ilgili durumlar arasındaki geçişler, gerçekçi ancak engebeli enerji peyzajına sahip tüm atom kuvvet alanındaki açık moleküler dinamik simülasyonlarında nadirdir. Ancak bizim yöntemimiz, biyolojik olarak anlamlı durumlar arasındaki serbest enerji bariyerini etkili bir şekilde azaltan daha çok oluklu bir enerji peyzajına sahiptir. Sonuc olarak, diğer Boltzmann jeneratörü yöntemleri gibi, mevcut yaklaşım ligand bağlanması ile ilgili alternatif durumların örneklenmesinde belirgin şekilde artırılmış verimlilik gösterir. Bu farklılıkları açıklamak için bir şematik şekil dahil edilmiştir (Fig.
+     <xref ref-type="fig" rid="Fig1">
+      1
+     </xref>
+     b)
+     <sup>
+      <xref ref-type="bibr" rid="CR23">
+       23
+      </xref>
+      ,
+      <xref ref-type="bibr" rid="CR33">
+       33
+      </xref>
+     </sup>
+     .
+     <fig id="Fig1" position="float">
+      <label>
+       Fig. 1
+      </label>
+      <caption xml:lang="tr">
+       <title>
+        DynamicBind modelinin genel bakış.
+       </title>
+       <p>
+        <bold>
+         a
+        </bold>
+        Holo durum pembe renkte, başlangıç apo ve modelin öngörülen konformasyonu yeşil renkte temsil edilir. Native ligand siyan renkte gösterilir ve öngörülen ligand turuncu renkte gösterilir. Model, hem protein hem de ligandın özelliklerini ve mevcut konformasyonunu girdi olarak kabul eder. Çıktı okumaları, ligand ve her protein kalıntısı için küresel çevirme ve döndürme, ligandlar ve protein kalıntıları için torsiyonel açıların döndürmesi ve iki öngörme modülü (bağlanma afinitesi, A ve güven skoru, D) içerir. Eğitim aşamasında, model apo-benzeri konformasyondan holo konformasyona dönüşümü öğrenmek üzere tasarlanır. Çıktı aşamasında, model başlangıç girdi yapısını yirmi kez yinelemeli olarak günceller.
+        <bold>
+         b
+        </bold>
+        Bir şematik şekil, proteinin iki farklı ligand ile bağlandığında modelin iki farklı holo konformasyonunu öngörebileceğini gösterir. Model, sınırlı adımlar içinde bağlı protein konformasyonunu öngörebilir, oysa tüm atomlu MD simülasyonlarının aynı bağlı durumu bulmak için milyonlarca adım benötir.
+       </p>
+      </caption>
+      <graphic href="/ProjectMundo/MediaObjects/10X1038_s41467-024-45461-2/41467_2024_45461_Fig1_HTML.png" mime-subtype="PNG" specific-use="web"/>
+     </fig>
+    </p>
+   </sec>
+   <sec id="Sec4">
+    <title>
+     DynamicBind, Ligand Pozisyon Tahmininde Daha Yüksek Doğruluk Sağlar ve İlk AlphaFold Tahmin Edilen Protein Konformasyonlarını İyileştirir
+    </title>
+    <p id="Par8">
+     Yöntemimizi değerlendirmek için önce PDBbind veri setini kullandık ve önceki çalışmalarla uyumlu olarak, eğitim, doğrulama ve test kümeleri için kronolojik, zaman temelinde bir bölünme kullanarak modeli eğittik. PDBbind test kümesinin, 2019'dan yaklaşık 300 yapısını içerdiği ve 53 polipeptid (küçük molekül olmayan ligandlar) olduğu için, değerlendirmemizin kapsamını, dört büyük protein ailesinden (kinazlar, GPCRs, nükleer reseptörler ve iyon kanalları) ilaç benzeri ligandlar ve proteinler içeren bir küratörlü Major Drug Target (MDT) test kümesi kullanarak genişlettik (daha fazla ayrıntı için "Veri seti oluşturma"ya bakınız). Bu protein aileleri, yaklaşık %70'lik FDA onaylı küçük molekül ilaçlarının hedefleridir
+     <sup>
+      <xref ref-type="bibr" rid="CR34">
+       34
+      </xref>
+      <xref ref-type="bibr" rid="CR19">
+       19
+      </xref>
+      ,
+      <xref ref-type="bibr" rid="CR35">
+       35
+      </xref>
+      ,
+      <xref ref-type="bibr" rid="CR36">
+       36
+      </xref>
+      <xref ref-type="bibr" rid="CR37">
+       37
+      </xref>
+     </sup>
+     .
+    </p>
+    <p id="Par9">
+     Holo-yapıları girdi olarak kullanmak yerine, test sırasında daha zorlu ve gerçekçi bir senaryoyu benimsedik, burada holo protein konformasyonunun mevcut olmadığını ve yalnızca AlphaFold tarafından öngörülen protein konformasyonlarını girdi olarak kullandık. Holo konformasyonlar, kristalleştirilmiş ligandlarla güçlü şekil ve yük uyumu sergiler, bu da zaten ligand poz tahminini gerçekçi olmayan bir şekilde basitleştirir
+     <sup>
+      <xref ref-type="bibr" rid="CR11">
+       11
+      </xref>
+     </sup>
+     . Karşılaştırıldığında, apo konformasyonlar veya AlphaFold tarafından öngörülenler, kristal yapıların üst üste bindirilmesiyle elde edilen ligandlarla çarpışabilir
+     <sup>
+      <xref ref-type="bibr" rid="CR14">
+       14
+      </xref>
+     </sup>
+     .
+    </p>
+    <p id="Par10">
+     Fig.
+     <xref ref-type="fig" rid="Fig2">
+      2
+     </xref>
+     a ve b'de gösterildiği gibi, DynamicBind diğer réféanslara göre çeşitli eşiklerin altında ligand RMSD ile daha fazla durumu öngörür. Özellikle, PDBbind test kümesi için ligand RMSD'nin %2 Å (5 Å) altında olduğu durumlarda %33 (%65) ve MDT test kümesi için %39 (%68) oranlarına ulaşır.
+     <fig id="Fig2" position="float">
+      <label>
+       Fig. 2
+      </label>
+      <caption xml:lang="tr">
+       <title>
+        Benchmark sonuçlarının genel bakış.
+       </title>
+       <p>
+        <bold>
+         a
+        </bold>
+        ,
+        <bold>
+         b
+        </bold>
+        DynamicBind, PDBbind veri kümesi (
+        <bold>
+         a
+        </bold>
+        ) ve büyük ilaç hedefleri (MDT) veri kümesi (
+        <bold>
+         b
+        </bold>
+        ) için ligand pozlarının öngörülmesinde diğer yöntemleri aşar ve farklı RMSD eşik değerleri boyunca success oranlarını gösterir.
+        <bold>
+         c
+        </bold>
+        Koyu ve açık gölgeler, sıkı (ligand RMSD &lt; 2 Å, clash skoru  &lt; 0.35) ve gevşek (ligand RMSD &lt; 5 Å, clash skoru  &lt;0.5) kriterlere göre success oranlarını temsil eder.
+        <bold>
+         d
+        </bold>
+        DynamicBind tarafından öngörülen protein konformasyonları, bağlanma siteleri etrafındaki daha düşük cept RMSD ile daha native-benzeri olarak kanıtlanır.
+        <bold>
+         e
+        </bold>
+        DynamicBind tarafından öngörülen contact-LDDT (cLDDT) skoru, ligand RMSD ile iyi bir şekilde korelasyon gösterir ve 2 Å'nin altında gerçek ligand RMSD'nin iyi bir öngörücüsüdür (auROC 0.764).
+        <bold>
+         f
+        </bold>
+        Üretilen örneklerin sayısı arttıkça success oranı artar.
+        <bold>
+         c
+        </bold>
+        –
+        <bold>
+         f
+        </bold>
+        PDBbind ve MDT test kümelerinin birleşik sonuçlarını gösterir. Bireysel veri kümeleri ve 30%, 60% ve 90% maksimum ligand ve protein dizisi benzerliği cutoff'larına göre filtrelenen sonuçlar, Ek Şekil
+        <xref ref-type="supplementary-material" rid="MOESM1">
+         1
+        </xref>
+        –
+        <xref ref-type="supplementary-material" rid="MOESM1">
+         4
+        </xref>
+        'de ayrıntılı olarak verilmiştir. Kaynak verileri Kaynak Veri dosyası olarak sağlanır.
+       </p>
+      </caption>
+      <graphic href="/ProjectMundo/MediaObjects/10X1038_s41467-024-45461-2/41467_2024_45461_Fig2_HTML.png" mime-subtype="PNG" specific-use="web"/>
+     </fig>
+    </p>
+    <p id="Par11">
+     Modelleri yalnızca ligand RMSD'ye göre değerlendirmek, DiffDock, TankBind ve DynamicBind gibi derin öğrenme tabanlı modelleri lehine olabilir, çünkü bunlar daha yüksek çarpışma toleransına sahiptir, oysa Van der Waals kuvvetlerini sıkı bir şekilde uygulayan GNINA, GLIDE, VINA gibi kuvvet alanına dayalı yöntemler aleyhine olabilir. Önemli çarpışmalar, yapı tabanlı ilaç tasarımı中的 moleküler etkileşim analiziğini engelleyebilir, kritik moleküler etkileşimleri bulanıklaştırabilir ve molekül geliştirmelerini karmaşıklaştırabilir. Dolayısıyla, hem ligand RMSD hem de Hekkelman et al. tarafından tanımlanan çarpışma puanlarını (clash scores) kullanarak başarı oranlarını değerlendiriyoruz. Fig.
+     <xref ref-type="fig" rid="Fig2">
+      2
+     </xref>
+     c, daha katı bir ölçüt (ligand RMSD
+    </p>
+    <p id="Par12">
+     Modelin yeni proteinlere ve ligandlara genellemesini değerlendirmek için, eğitim kümesine olan maksimum ligand ve protein dizisi benzerliği açısından sıralanmış sonuçları analiz ettik (Ek Şekil
+     <xref ref-type="supplementary-material" rid="MOESM1">
+      3
+     </xref>
+     ve
+     <xref ref-type="supplementary-material" rid="MOESM1">
+      4
+     </xref>
+     ). Bu analiz, DynamicBind'in yeni ligandlarla iyi performans gösterdiğini, ancak yeni proteinlerle daha az etkili olduğunu, bu durumlarda klasik docking yöntemlerinin önceden tanımlanmış gerçek bağlanma cepleriyle daha iyi performans gösterdiğini ortaya koyar. Diğer derin öğrenme yöntemleri de yeni proteinlerle benzer bir düşüş gösterir, bu da daha büyük bir eğitim kümesi ve geliştirilmiş endüktif önyargılara ihtiyaç olduğunu gösterir. Ayrıca, yeni proteinlerde bağlanma sitelerinin belirlenmesinin aktif bir araştırma alanı olduğu düşünüldüğünde, derin öğrenme yöntemlerinin, bizimki de dahil, kör global docking'de karşılaştığı zorlukların farklı yaklaşımlar boyunca paylaşıldığı muhtemeldir. Genel olarak, DynamicBind'in yeni ligandlarla olan yetkinliği, protein konformasyonel değişikliklerinin belirlenmesinde ve etkili, spesifik ilaçlar yaratılmasında önemli bir potansiyele sahiptir.
+    </p>
+   </sec>
+   <sec id="Sec5">
+    <title>
+     DynamicBind, Ligand Spesifik Protein Konformasyon Değişikliklerini Yakalayabilir
+    </title>
+    <p id="Par13">
+     Geleneksel docking protokollerinin genellikle protein konformasyon örneklemesini docking sürecinden ayrı bir adım olarak gerçekleştirdiği bilinmektedir
+     <sup>
+      <xref ref-type="bibr" rid="CR15">
+       15
+      </xref>
+      ,
+      <xref ref-type="bibr" rid="CR38">
+       38
+      </xref>
+     </sup>
+     . Ancak birçok durumda, iki farklı ligand, birbirini dışlayan protein konformasyonlarına uyabilir. Örneğin, c-Met kinaz, aktif ve inaktif durumlar olarak adlandırılan Asp–Phe–Gly (DFG)-in ve DFG-out konformasyonlarını alabilir (Fig.
+     <xref ref-type="fig" rid="Fig3">
+      3
+     </xref>
+     b, d). DFG motifinin dışarıya dönmesi, proteinin farklı bölgelerini bloke edebilir veya açabilir. Önceki docking modellerinde, proteinin doğru konformasyona ayarlanması, ligandın uygun bağlanma pozunu belirlemek için gereklidir
+     <sup>
+      <xref ref-type="bibr" rid="CR20">
+       20
+      </xref>
+     </sup>
+     . Buna karşılık, DynamicBind, AlphaFold tarafından öngörülen protein konformasyonunu kullanarak (Fig.
+     <xref ref-type="fig" rid="Fig3">
+      3
+     </xref>
+     a), protein konformasyonunu dinamik olarak ayarlayabilir ve ligandın ilgi duyduğu optimal konformasyonu bulabilir. Bir örnek olarak, PDB 6UBW için öngörülen ligand RMSD 0,49 Å, ve cepten RMSD 1,97 Å'dir, जबकi AlphaFold yapısı için cepten RMSD 9,44 Å'dir. PDB 7V3S için öngörülen ligand RMSD 0,51 Å, ve cepten RMSD 1,19 Å'dir (AlphaFold 6,02 Å). İki ligand da eğitim setinde görülmemiştir (Fig.
+     <xref ref-type="fig" rid="Fig3">
+      3
+     </xref>
+     c, e). Nicel analizimizde, test setindeki 7 protein, 79 PDB yapısında hem DFG-in hem de DFG-out konformasyonlarını aldıkları tespit edilmiştir, bunlar Kinaz–Ligand Etkileşim Parmak İzleri ve Yapıları (KLIFS) web sunucusu tarafından注释 edilmiştir
+     <sup>
+      <xref ref-type="bibr" rid="CR39">
+       39
+      </xref>
+     </sup>
+     . Fig.
+     <xref ref-type="fig" rid="Fig3">
+      3
+     </xref>
+     f ve g, bu proteinlerin (UniProt ID'leri ile gösterilen), aynı initial yapıdan başlayarak, tip-I inhibitör bağlanması üzerine DFG-in konformasyonuna doğru ilerlediğini ve tip-II inhibitör ile etkileşime girdiğinde DFG-out konformasyonuna doğru eğildiğini göstermektedir. Ayrıca, Fig.
+     <xref ref-type="fig" rid="Fig3">
+      3
+     </xref>
+     h, öngörülen protein yapılarının çoğunun initial AlphaFold yapılarına kıyasla daha düşük cepten RMSD değerlerine sahip olduğunu ortaya koymaktadır. Bu sonuçlar, DynamicBind'in ligand-spesifik konformasyon değişikliklerini yakalayabildiğini göstermektedir. Bu özellik, başlangıçta sağlanan protein yapısından farklı konformasyonlarla iyi bağlanabilecek potansiyel "hit" bileşiklerini göz ardı etmemek için kritik öneme sahiptir.
+     <fig id="Fig3" position="float">
+      <label>
+       Fig. 3
+      </label>
+      <caption xml:lang="tr">
+       <title>
+        DynamicBind, ligand-spesifik protein konformasyon değişikliklerini yakalar.
+       </title>
+       <p>
+        AlphaFold tarafından tahmin edilen yapılar beyaz, kristal yapı ile protein ve ligand pembe ve cyan olarak gösterilir. Modelimizin tahminleri protein ve ligand için sırasıyla yeşil ve turuncu olarak gösterilir. Asp–Phe–Gly (DFG) kalıntılarının yan zincirleri çubuk olarak gösterilir. Kırmızı oklar, kristal yapının AlphaFold yapısından önemli konformasyonel değişikliklerini vurgular. Giriş konformasyonu, AlphaFold tarafından tahmin edilen konformasyondur.
+        <bold>
+         a
+        </bold>
+        Ligand 84S (
+        <bold>
+         b
+        </bold>
+        ) c-Met proteinine bağlandığında, protein DFG-in konformasyonunu benimser. Ligand 5I9 (
+        <bold>
+         d
+        </bold>
+        ) aynı proteine bağlandığında, protein DFG-out konformasyonunu benimser. Her iki ligand için tahminimiz (
+        <bold>
+         c
+        </bold>
+        ,
+        <bold>
+         e
+        </bold>
+        ) kristal yapıyla iyi bir şekilde anlaşır. Ligand RMSD 0,49 Å ve 0,51 Å'dir. İlk AlphaFold'den Pocket RMSD'nin iyileştirilmesi sırasıyla DFG-in ve DFG-out için 7,47 Å ve 4,83 Å'dir. Test kümesinde, yedi protein (UniProt ID'leri ile tanımlanır), hem DFG-in hem de DFG-out kristalleşmiş holo konformasyonlarına sahiptir ve bu konformasyonların hem ilk AlphaFold hem de tahmin edilen yapılarının pocket RMSD'si (
+        <bold>
+         f
+        </bold>
+        ,
+        <italic>
+         n
+        </italic>
+        = 39) ve (
+        <bold>
+         g
+        </bold>
+        ,
+        <italic>
+         n
+        </italic>
+        = 34) için DFG-in holo konformasyonları ve DFG-out holo konformasyonları ayrı ayrı gösterilir, burada orta çizgi medyanı, kutu kenarları üst ve alt çeyrekleri, whiskerler 1,5 kat interquartile aralığına kadar uzanır ve noktalar nokta olarak gösterilir.
+        <bold>
+         h
+        </bold>
+        Tüm 79 PDB için AlphaFold'den pocket RMSD'nin iyileştirilmesinin histogramı. Kaynak verileri Kaynak Veri dosyası olarak sağlanır.
+       </p>
+      </caption>
+      <graphic href="/ProjectMundo/MediaObjects/10X1038_s41467-024-45461-2/41467_2024_45461_Fig3_HTML.png" mime-subtype="PNG" specific-use="web"/>
+     </fig>
+    </p>
+   </sec>
+   <sec id="Sec6">
+    <title>
+     DynamicBind, Çok Ölçekli Protein Konformasyon Değişikliklerini Kapsar
+    </title>
+    <p id="Par14">
+     DFG-in/out konformasyonu广泛 olarak incelenmiştir ve bazı zorluklar, her iki konformasyondaki proteinleri kullanarak docking yapan ensemble docking yöntemi ile kısmen çözülebilir
+     <sup>
+      <xref ref-type="bibr" rid="CR40">
+       40
+      </xref>
+      ,
+      <xref ref-type="bibr" rid="CR41">
+       41
+      </xref>
+     </sup>
+     . Ancak ensemble docking, hesaplama maliyetlerini artırır ve daha az karakterize edilen konformasyonlar için uygun olmayabilir. Bu bölümde, PDBbind test setimizden bir örnek ile gösterilen, pikosaniye düzeyinden milisaniye düzeyine kadar altı farklı konformasyon değişikliği hakkında kapsamlı bir analiz sunuyoruz. Fig.
+     <xref ref-type="fig" rid="Fig4">
+      4
+     </xref>
+     'de, kristal yapı pembe, AlphaFold yapısı beyaz ve bizim öngörümüz yeşildir. Native ligand mavi, öngörülen ligand turuncudur. Δpocket RMSD, öngörülen protein yapısı ve AlphaFold yapısı arasındaki cepten RMSD farkını, kristal yapı ile karşılaştırılarak ölçer. Negatif Δpocket RMSD, öngörülen yapının AlphaFold öngörüsüne kıyasla kristal yapıya daha yakın olduğunu gösterir. Δclash, öngörülen protein–ligand çifti ve AlphaFold yapısı ile transplante edilen ligand arasındaki clash skorları arasındaki farkı ölçer
+     <sup>
+      <xref ref-type="bibr" rid="CR14">
+       14
+      </xref>
+     </sup>
+     . Negatif Δclash, öngörülen kompleksin daha az clash içerdiğini gösterir. Fig.
+     <xref ref-type="fig" rid="Fig4">
+      4
+     </xref>
+     a'da, native ligand, süperpon edilen AlphaFold yapısının bir yan zinciri ile çatışır; bizim öngörümüzde, bu yan zincir native konformasyona doğru kayar, böylece çatışmayı çözer. Fig.
+     <xref ref-type="fig" rid="Fig4">
+      4
+     </xref>
+     b'de, bir tirozin, AlphaFold yapısında cepten bir kısmını bloke eder; hem bizim öngörümüzde hem de native yapıda bu kısım erişilebilir hale gelir. Fig.
+     <xref ref-type="fig" rid="Fig4">
+      4
+     </xref>
+     c'de, esnek bir loop, ligand ile kesişir ve bizim öngörümüzde, native yapı ile tutarlı bir şekilde uzaklaşır. Fig.
+     <xref ref-type="fig" rid="Fig4">
+      4
+     </xref>
+     d'de, ligand bağlanma sitesinde alpha helisler looplara dönüşür. Fig.
+     <xref ref-type="fig" rid="Fig4">
+      4
+     </xref>
+     e'de, Hsp90α ısı şok proteininde önemli bir ikincil yapı hareketi gözlenir, kapalı durumdan açık duruma geçer. Fig.
+     <xref ref-type="fig" rid="Fig4">
+      4
+     </xref>
+     f'de, AKT1 kinazın iki domaini birleşir ve önceden var olmayan bir cepti oluşturur. Tüm bu örnekler birlikte, AlphaFold tarafından öngörülen konformasyonlarda ya yeterli derecede geniş olmayan veya oluşmamış ligand bağlanma cepleri ile ilişkili çeşitli konformasyon değişikliklerini öngörme yeteneğimizi göstermektedir.
+     <fig id="Fig4" position="float">
+      <label>
+       Fig. 4
+      </label>
+      <caption xml:lang="tr">
+       <title>
+        DynamicBind, çeşitli zaman ölçeklerinde protein dinamiğini etkili bir şekilde yakalar.
+       </title>
+       <p>
+        Proteinler, küçük molekül ligandlarla bağlandıklarında, çeşitli zaman ölçeklerinde konformasyonel değişikliklere uğrayabilirler. Negatif Δpocket RMSD, tahmin edilen yapının AlphaFold yapısına göre ground truth ile daha düşük RMSD'ye sahip olduğunu gösterir. Negatif Δclash, tahmin edilen ligandın AlphaFold yapısına transplante edilen liganda göre daha düşük clash skoruna sahip olduğunu ima eder.
+        <bold>
+         a
+        </bold>
+        Arjinin yan zinciri, ligand ile çatışmaları azaltmak için döner.
+        <bold>
+         b
+        </bold>
+        AlphaFold yapısında bağlanma ceplerini engelleyen Tirozin, tahmin edilen yapıda uzaklaşır.
+        <bold>
+         c
+        </bold>
+        AlphaFold yapısının loop bölgesi ligand ile kesişir ve tahmin edilen yapıda yeniden konumlandırılır.
+        <bold>
+         d
+        </bold>
+        Bağlanma sitesinin yakınındaki alfa helisler, kristal yapıyla uyumlu olarak looplara dönüşür.
+        <bold>
+         e
+        </bold>
+        Hsp90'un alfa helisi önemli bir yeniden konumlandırmaya uğrar.
+        <bold>
+         f
+        </bold>
+        İki domain birleşerek, bağlanma ceplerini oluşturur. Kaynak verileri Kaynak Veri dosyası olarak sağlanır.
+       </p>
+      </caption>
+      <graphic href="/ProjectMundo/MediaObjects/10X1038_s41467-024-45461-2/41467_2024_45461_Fig4_HTML.png" mime-subtype="PNG" specific-use="web"/>
+     </fig>
+    </p>
+   </sec>
+   <sec id="Sec7">
+    <title>
+     DynamicBind, İlaç Keşfinde Önemli Olan Gizli Cebi Ortaya Çıkarır
+    </title>
+    <p id="Par15">
+     Proteinlerin dinamik doğası souvent gizli ceplerin ortaya çıkmasına neden olur. Bu gizli cepler, protein dinamikleri sırasında ortaya çıkabilir ve statik yapılarda bulunmayan ilaçlama siteleri açığa çıkarabilir, böylece önceden "ilaçlama yapılamayan" proteinleri potansiyel ilaç hedeflerine dönüştürebilir. DynamicBind'in bu gizli cepleri açığa çıkarma yeteneğini, bir histon metiltransferaz olan SET domain-containing protein 2 (SETD2) kullanarak bir vaka çalışması olarak gösteriyoruz. SETD2, çok seçici bir bileşik olan EZM0414 tarafından hedeflenen bir gizli cepe sahiptir ve bu bileşik şu anda Faz I klinik denemelerinde bulunmaktadır. Fig.
+     <xref ref-type="fig" rid="Fig5">
+      5
+     </xref>
+     a ve b'de gösterildiği gibi, eğitim setindeki tüm SETD2 homologları, protein Smith–Waterman benzerliği 0,4'ün üzerinde olanlar, S-Adenosyl metionin (SAM) veya Sinefungin analogları ile kristalleştirilmiştir. Sinefungin ve analogları, SAM sitesini işgal ederek metiltransferazları geniş çapta inhibe eder, bu da SETD2'nin seçici inhibisyonunu zorlaştırır. 2019'dan önce, SETD2 veya homologlarının EZM0414 tarafından hedeflenen siteye bağlı bir bileşik ile kristalleştirilmiş bir yapısı yoktu. Dolayısıyla, modelimiz bu yeni tanımlanan siteye bağlı bir bileşik ile eğitilmemiştir. Fig.
+     <xref ref-type="fig" rid="Fig5">
+      5
+     </xref>
+     c'de, AlphaFold yapısı ve yüzeyi beyazdır. Gizli site, transplante edilen EZM0414 ile önemli çatışmalar nedeniyle bloke edilmiştir. Fig.
+     <xref ref-type="fig" rid="Fig5">
+      5
+     </xref>
+     d, EZM0414'ün eğitim setindeki ligandlara benzerlik göstermediğini doğrular, eğitim setindeki en benzer Tanimoto ligandları bile önemli ölçüde farklıdır. Fig.
+     <xref ref-type="fig" rid="Fig5">
+      5
+     </xref>
+     e, SETD2'nin AlphaFold tarafından öngörülen yapısı ve EZM0414'ün SMILES temsilinin girdi olarak alındığı protein–ligand kompleks yapısını gösterir. Fig.
+     <xref ref-type="fig" rid="Fig5">
+      5
+     </xref>
+     f, bizim öngörümüzü SETD2-EZM0414 kompleksinin kristal yapısı (PDB 7TY2) ile üst üste bindirir. Sonuçta ligand RMSD 1,4 Å, cepten RMSD 2,16 Å'dir. Ayrıca, eğitim setimize düşük dizilime benzerliği olan beberapa örneği Ek Bilgilerde sunuyoruz
+     <sup>
+      <xref ref-type="bibr" rid="CR42">
+       42
+      </xref>
+      ,
+      <xref ref-type="bibr" rid="CR43">
+       43
+      </xref>
+      <xref ref-type="bibr" rid="CR44">
+       44
+      </xref>
+      <xref ref-type="bibr" rid="CR45">
+       45
+      </xref>
+      <xref ref-type="bibr" rid="CR46">
+       46
+      </xref>
+     </sup>
+     .
+     <fig id="Fig5" position="float">
+      <label>
+       Fig. 5
+      </label>
+      <caption xml:lang="tr">
+       <title>
+        DynamicBind, ligand EZM0414 için kriptik bir cebe sahip.
+       </title>
+       <p>
+        <bold>
+         a
+        </bold>
+        Eğitim setindeki altı PDB, SETD2 proteini ile protein Smith-Waterman benzerliği 0,4'ten büyük olan ve hepsi SAM benzeri ligandlarla kristalleştirilenlerdir, ayrıca (
+        <bold>
+         b
+        </bold>
+        )'de çizgiler olarak gösterilir. PDB 7TY2'deki ligand, EZM0414, siyan çubuklarla gösterilir ve protein pembe olarak gösterilir.
+        <bold>
+         c
+        </bold>
+        EZM0414 için bağlanma cebei, beyaz olarak gösterilen AlphaFold yapısında yoktur.
+        <bold>
+         d
+        </bold>
+        Bu panel, eğitim setindeki ligandların EZM0414 ile karşılaştırıldığında Tanimoto benzerliğini gösterir ve en benzer üç ligand çizilir.
+        <bold>
+         e
+        </bold>
+        DynamicBind tarafından öngörülen protein-ligand kompleks yapısı, protein yeşil ve ligand turuncu olarak temsil edilir.
+        <bold>
+         f
+        </bold>
+        DynamicBind tarafından öngörülen kompleksin ve karşılık gelen kristal yapının üst üste bindirilmesi. Kaynak verileri Kaynak Verileri dosyası olarak sağlanır.
+       </p>
+      </caption>
+      <graphic href="/ProjectMundo/MediaObjects/10X1038_s41467-024-45461-2/41467_2024_45461_Fig5_HTML.png" mime-subtype="PNG" specific-use="web"/>
+     </fig>
+    </p>
+   </sec>
+   <sec id="Sec8">
+    <title>
+     DynamicBind, Antibiyotik Benchmarkında Daha İyi Ekranlama Performansı Sağlar
+    </title>
+    <p id="Par16">
+     Hedef dựaılı ilaç keşfinde, potansiyel ilaç adaylarının ekranlanması ve ters ekranlama, yani belirli bileşiklere protein hedeflerinin belirlenmesi, kritik öneme sahiptir. Bu süreçler, bir protein ve bir bileşik arasındaki etkileşim gücünün, proteom düzeyinde doğru öngörülmesini gerektirir. Bu nedenle, modelimize, PDBbind veri setinden deneysel olarak ölçülen bağlanma afinitesi verilerini kullanarak eğitilmiş bir afinitesi öngörü modülünü ekledik. DynamicBind'i gerçek bir sanal ekranlama senaryosunda değerlendirmek için, yakın zamanda yayınlanan bir antibiyotik deneysel benchmarkını kullandık
+     <sup>
+      <xref ref-type="bibr" rid="CR25">
+       25
+      </xref>
+     </sup>
+     . Bu veri seti, eğitim aşamasında karşılaşılmayan 2616 protein-bileşik çiftini içerir ve 12 protein, Escherichia coli'nin temel proteomundan, 218 aktif antibakteriyel bileşik ile çiftleştirilmiştir. Fig.
+     <xref ref-type="fig" rid="Fig6">
+      6
+     </xref>
+     a, DynamicBind'in VINA ve DOCK6.9 gibi ortak docking yöntemlerini ve en iyi makine öğrenimi tabanlı yeniden puanlama yöntemlerini aşarak, ortalama alan altında alıcı işletim karakteristiği (auROC) eğrisi değerinin 0,68 olduğunu göstermektedir. Başlangıç değerleri doğrudan benchmark makalesinden alınmıştır
+     <sup>
+      <xref ref-type="bibr" rid="CR25">
+       25
+      </xref>
+     </sup>
+     . Bu performans iyileştirmesi, DynamicBind'in dinamik docking yeteneğinden kaynaklanmaktadır, bu da AlphaFold yapısını daha native-like bir duruma doğru iyileştirir ve daha doğru bir bağlanma afinitesi tahmini sağlar. Fig.
+     <xref ref-type="fig" rid="Fig6">
+      6
+     </xref>
+     b'de gösterildiği gibi, protein murD'nin öngörülen yapıları, ligand etrafında daha yakın bir şekilde hizalanır ve initial AlphaFold yapısı ile mümkün olmayan daha fazla etkileşim oluşturur. Bu değerlendirme, PDBbind test setlerimizdeki bağlanma afinitesi öngörülerimiz (Ek Tablo
+     <xref ref-type="supplementary-material" rid="MOESM1">
+      1
+     </xref>
+     ) ile uyumludur, burada DynamicBind geleneksel docking yöntemlerini ve derin öğrenme tabanlı rigid docking yöntemlerini tutarlı bir şekilde aşmaktadır. Bu sonuçlar, DynamicBind'in bağlanma afinitesi öngörü yeteneği ile proteom düzeyinde sanal ekranlama uygulamaları için önemli bir potansiyele sahip olduğunu göstermektedir.
+     <fig id="Fig6" position="float">
+      <label>
+       Fig. 6
+      </label>
+      <caption xml:lang="tr">
+       <title>
+        DynamicBind, antibiyotik benchmarkında daha iyi bir ekranlama performansı elde eder.
+       </title>
+       <p>
+        <bold>
+         a
+        </bold>
+        Farklı yöntemlerin antibiyotik benchmarkındaki sanal ekranlama performanslarının karşılaştırılması, auROC (ROC eğrisi altında alan) terimiyle ölçülür. Benchmark,
+        <italic>
+         n
+        </italic>
+        = 12 ayrı protein sistemi içerir. Her kutu grafiği, ortanca (merkezi çizgi), üst ve alt çeyrekler (kutu kenarları), 1,5 katına kadar uzanan whisker'lar ve bireysel veri noktalarını (nokta) gösterir. Benchmark makalesinde sunulan altı temel sayıları sadakatle dahil ettik
+        <sup>
+         <xref ref-type="bibr" rid="CR25">
+          25
+         </xref>
+        </sup>
+        .
+        <bold>
+         b
+        </bold>
+        AlphaFold tarafından öngörülen protein yapısı beyaz olarak gösterilirken, DynamicBind tarafından üç aktif bileşik için üretilen protein yapıları yeşil olarak gösterilir. Kırmızı oklar, proteinin liganda daha yakın hareket ederek ek etkileşimler oluşturduğu bölgeleri gösterir. Kaynak verileri Kaynak Verileri dosyası olarak sağlanır.
+       </p>
+      </caption>
+      <graphic href="/ProjectMundo/MediaObjects/10X1038_s41467-024-45461-2/41467_2024_45461_Fig6_HTML.png" mime-subtype="PNG" specific-use="web"/>
+     </fig>
+    </p>
+   </sec>
+  </sec>
+  <sec id="Sec9" sec-type="discussion">
+   <title>
+    Tartışma
+   </title>
+   <p id="Par17">
+    DynamicBind, geleneksel olarak ayrılmış iki adımı, protein konformasyon oluşturma ve ligand pozisyonu öngörüsü, tek bir çerçeve içinde birleştirmektedir. Derin öğrenme yöntemi olarak, geleneksel MD simülasyonlarına kıyasla geniş protein konformasyon değişikliklerini örneklemekte çok daha hızlıdır. Geleneksel docking yöntemlerinin aksine, önceden tanımlanmış bağlanma cepleri gerektirmez, DynamicBind global docking yeteneğine sahiptir, bu da bağlanma cepleri henüz tanımlanmamış olduğunda önemli hale gelir. Bu avantajlar, DynamicBind'i gizli ceplere bağlanan bileşiklerin sanal ekranlanmasında güçlü kılar. Bu tür bileşikler, muhtemelen yalnızca hedef proteine bağlanacak ve böylece yan etkileri minimize edecektir. Ayrıca, DynamicBind yeni bir ilaç adayının kasıtsız bir protein hedefine bağlanıp bağlanmayacağını veya aktif bir bileşik fenotip ekranlaması yoluyla keşfedildiğinde bağlanma hedefini belirleyip belirleyemeyeceğini öngörebilir.
+   </p>
+   <p id="Par18">
+    DynamicBind, benchmark'lerimizde state-of-the-art performans göstermesine rağmen, özellikle eğitim setindeki proteinlerle düşük dizilime benzerliği olan proteinlere genellemesini geliştirme konusunda fırsatlar sunmaktadır
+    <sup>
+     <xref ref-type="bibr" rid="CR47">
+      47
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR48">
+      48
+     </xref>
+    </sup>
+    . Veri temelli bir model olarak, Cryo-EM yöntemlerindeki hızlı gelişmelerden önemli ölçüde yararlanmaktadır
+    <sup>
+     <xref ref-type="bibr" rid="CR49">
+      49
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR50">
+      50
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR51">
+      51
+     </xref>
+    </sup>
+    . Bu teknolojik ilerlemeler, eğitim verilerimizin çeşitliliğini ve kapsamlılığını artırarak, protein–ligand komplekslerinin daha çeşitli konformasyonlarını daha hızlı bir şekilde sağlayacaktır. Ayrıca, DynamicBind'i, kristalleştirilmiş yapılar yerine daha yaygın olarak bulunan büyük miktarda yapısal olmayan bağlanma afinitesi verilerini kullanarak geliştirmek mümkündür. AlphaFold'e benzer bir self-distillation yaklaşımını benimseyerek, önceden yalnızca afinitesi bilinen protein–ligand çiftlerinin kompleks yapılarının yüksek güven düzeyindeki öngörülerini eğitim setimize entegre edebiliriz
+    <sup>
+     <xref ref-type="bibr" rid="CR5">
+      5
+     </xref>
+    </sup>
+    .
+   </p>
+   <p id="Par19">
+    Özetle, DynamicBind, protein-ligand etkileşimlerini incelemek için geleneksel docking yöntemlerinden ve moleküler dinamik (MD) simülasyonlarından farklı olarak bir "dinamik docking" yaklaşımı sunar. Büyük ölçekli protein dinamikleri için kapasitesi, özellikle kriptik cepleri hedef alan ilaç moleküllerinin keşfi için özellikle önemli sonuçlar taşır. Ayrıca, DynamicBind tarafından üretilen ligand-spesifik protein konformasyonları, ligandların proteinler üzerindeki etkisine değerli içgörüler sağlayabilir, böylece yapı-işlev ilişkilerini açıklığa kavuşturabilir ve mekanik anlayışımızı artırabilir.
+   </p>
+  </sec>
+  <sec id="Sec10" sec-type="methods">
+   <title>
+    Yöntemler
+   </title>
+   <sec id="Sec11">
+    <title>
+     Genel Bakış
+    </title>
+    <p id="Par20">
+     Modelimiz, bir kaba öğütme temsilini kullanan E(3)-equivariant, difüzyon tabanlı, grafik sinir ağıdır.
+    </p>
+    <p id="Par21">
+     E(3)-equivariant bir model, 3D uzayda girişe
+     <italic>
+      x
+     </italic>
+     uygulanan trans-rotasyon ve parite işlemlerine göre çıktı
+     <italic>
+      y
+     </italic>
+     'i dönüştürür
+     <sup>
+      <xref ref-type="bibr" rid="CR52">
+       52
+      </xref>
+     </sup>
+     . Araştırmalar, equivariant modellerin 1000 kat daha az veri ile eğitilebileceğini ve bulk su yapıları üzerinde üstün sonuçlar verebileceğini göstermiştir
+     <sup>
+      <xref ref-type="bibr" rid="CR53">
+       53
+      </xref>
+     </sup>
+     . Kriyo-elektron mikroskobu ve kristalografideki önemli ilerlemelere rağmen, mevcut protein-ligand kompleksi veritabanı nispeten sınırlıdır ve sadece on binlerce yapıya ulaşır. Dolayısıyla, en alakalı bilgileri ayırt edebilen ve tüm yapıyı yeniden konumlandırırken veya döndürürken doğru olmayan yüzeysel bilgileri tránh eden verimli bir model gereklidir. SO(3) simetrisini karşılamak için geleneksel yaklaşım, yalnızca değişmez nicelikleri kullanmayı veya öngörmeyi içerir, chẳng hạn sebagai temas haritası. Ancak, bir temas veya uzaklık haritası her zaman fiziksel olarak mümkün yapılarla ilgili olmayabilir. Örneğin, bir kalıntı, iki uzak atomla temas halinde öngörülebilir. Ayrıca, bir temas haritası, ilaç keşfinde önemli bir yön olan kiraliteyi göz ardı edebilir
+     <sup>
+      <xref ref-type="bibr" rid="CR54">
+       54
+      </xref>
+     </sup>
+     .
+    </p>
+    <p id="Par22">
+     Difüzyon tabanlı bir model olarak DynamicBind, native konformasyonu çeşitli derecelerde artan bir şekilde bozan bir süreç aracılığıyla eğitilir, böylece modelin doğru konformasyonu geri yüklemeyi öğrenmesini sağlar. Orijinal yapıyı bozmak genellikle atomlara trans-lokasyonel Gaussian gürültüsü eklemeyi içerir. Kimyasal bağlar tarafından uygulanan bağ uzunluğu kısıtlamaları ve Van der Waals kuvvetleri tarafından uygulanan hariç tutma etkileri ile, böyle bozulmaların geri yüklenmesi, bozulma nispeten küçükse basittir. Ancak, yalnızca Gaussian gürültüsü eklemenin, bir biyolojik olarak anlamlı yapıdan diğerine dönüşümü öngören bir modeli eğitmek için yeterli olmadığını gözlemledik. Bunu çözmek için, kristal protein yapısı ve AlphaFold tarafından öngörülen yapı arasında interpolasyon yapan bir morf benzeri dönüşüm tanıttık, böylece meta-stabil yapılar arasındaki geçiş engellerini, chẳng hạn sebagai AlphaFold tarafından öngörülen konformasyon ve ligand-bağlı holo konformasyon arasındaki geçişi azalttık. Diğer generatif modellerin bir puan fonksiyonu eğittiği aksine
+     <inline-formula id="IEq1">
+      <alternatives>
+       <math id="IEq1_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+        <msub>
+         <mrow>
+          <mi mathvariant="bold-italic">
+           s
+          </mi>
+         </mrow>
+         <mrow>
+          <mi>
+           θ
+          </mi>
+         </mrow>
+        </msub>
+        <mfenced close=")" open="(">
+         <mrow>
+          <mi mathvariant="bold">
+           x
+          </mi>
+          <mo>
+           ,
+          </mo>
+          <mi>
+           t
+          </mi>
+         </mrow>
+        </mfenced>
+        <mo>
+         =
+        </mo>
+        <mo>
+         ≈
+        </mo>
+        <mo>
+         ∇
+        </mo>
+        <mi>
+         log
+        </mi>
+        <msub>
+         <mrow>
+          <mi>
+           p
+          </mi>
+         </mrow>
+         <mrow>
+          <mi>
+           t
+          </mi>
+         </mrow>
+        </msub>
+        <mrow>
+         <mo>
+          (
+         </mo>
+         <mrow>
+          <mi mathvariant="bold">
+           x
+          </mi>
+         </mrow>
+         <mo>
+          )
+         </mo>
+        </mrow>
+       </math>
+       <tex-math id="IEq1_TeX">
+        \documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym}
+				\usepackage{amsfonts}
+				\usepackage{amssymb}
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${{{{{{{{\boldsymbol{s}}}}}}}}}_{\theta }({{{{{{{\bf{x}}}}}}}},t) \, \approx \, \nabla \log {p}_{t}({{{{{{{\bf{x}}}}}}}})$$\end{document}
+       </tex-math>
+       <inline-graphic href="41467_2024_45461_Article_IEq1.gif" mime-subtype="GIF" specific-use="web"/>
+      </alternatives>
+     </inline-formula>
+     , difüzyon mimarilerimiz pertürbe edilmiş yapıları doğrudan orijinal konformasyonlara haritalamak amacıyla tasarlanmıştır, benzer şekilde tutarlılık modeli
+     <sup>
+      <xref ref-type="bibr" rid="CR29">
+       29
+      </xref>
+      ,
+      <xref ref-type="bibr" rid="CR55">
+       55
+      </xref>
+     </sup>
+     . Modelin çıktıları
+     <inline-formula id="IEq2">
+      <alternatives>
+       <math id="IEq2_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+        <msub>
+         <mrow>
+          <mi mathvariant="bold-italic">
+           f
+          </mi>
+         </mrow>
+         <mrow>
+          <mi>
+           θ
+          </mi>
+         </mrow>
+        </msub>
+        <mfenced close=")" open="(">
+         <mrow>
+          <msub>
+           <mrow>
+            <mi mathvariant="bold">
+             x
+            </mi>
+           </mrow>
+           <mrow>
+            <mi>
+             t
+            </mi>
+           </mrow>
+          </msub>
+          <mo>
+           ,
+          </mo>
+          <mi>
+           t
+          </mi>
+         </mrow>
+        </mfenced>
+        <mo>
+         =
+        </mo>
+        <mo>
+         −
+        </mo>
+        <mi mathvariant="bold-italic">
+         ϕ
+        </mi>
+        <mfenced close=")" open="(">
+         <mrow>
+          <msub>
+           <mrow>
+            <mi mathvariant="bold">
+             x
+            </mi>
+           </mrow>
+           <mrow>
+            <mi>
+             t
+            </mi>
+           </mrow>
+          </msub>
+          <mo>
+           ,
+          </mo>
+          <mi>
+           t
+          </mi>
+         </mrow>
+        </mfenced>
+       </math>
+       <tex-math id="IEq2_TeX">
+        \documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym}
+				\usepackage{amsfonts}
+				\usepackage{amssymb}
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${{{{{{{{\boldsymbol{f}}}}}}}}}_{\theta }\left({{{{{{{{\bf{x}}}}}}}}}_{t},t\right)=-{{{{{{{\boldsymbol{\phi }}}}}}}}\left({{{{{{{{\bf{x}}}}}}}}}_{t},t\right)$$\end{document}
+       </tex-math>
+       <inline-graphic href="41467_2024_45461_Article_IEq2.gif" mime-subtype="GIF" specific-use="web"/>
+      </alternatives>
+     </inline-formula>
+     olarak gösterilir, burada
+     <inline-formula id="IEq3">
+      <alternatives>
+       <math id="IEq3_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+        <mi mathvariant="bold-italic">
+         ϕ
+        </mi>
+        <mfenced close=")" open="(">
+         <mrow>
+          <msub>
+           <mrow>
+            <mi mathvariant="bold">
+             x
+            </mi>
+           </mrow>
+           <mrow>
+            <mi>
+             t
+            </mi>
+           </mrow>
+          </msub>
+          <mo>
+           ,
+          </mo>
+          <mi>
+           t
+          </mi>
+         </mrow>
+        </mfenced>
+       </math>
+       <tex-math id="IEq3_TeX">
+        \documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym}
+				\usepackage{amsfonts}
+				\usepackage{amssymb}
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${{{{{{{\boldsymbol{\phi }}}}}}}}\left({{{{{{{{\bf{x}}}}}}}}}_{t},t\right)$$\end{document}
+       </tex-math>
+       <inline-graphic href="41467_2024_45461_Article_IEq3.gif" mime-subtype="GIF" specific-use="web"/>
+      </alternatives>
+     </inline-formula>
+     native konformasyona eklenen morf benzeri dönüşümü temsil eder.
+    </p>
+    <p id="Par23">
+     Geleneksel yöntemler, her atomun koordinatlarını açıkça modelleyen tüm atom temsiliğini kullanır. Ancak, atomlar kimyasal bağlar aracılığıyla bağlantıları nedeniyle bağımsız olarak hareket etmez ve yerel geometri yüksek derecede kısıtlanmıştır - Örneğin, bir benzene ringi genellikle düzdür. Bu non-fiziksel yapıların derecesini azaltmak için, protein ve ligand için kaba bir temsil kullanmayı benimsedik. Modelimizde, her protein kalıntısı, koordinatlar ve yönler ve yan zincir dihedral açıları ile iki vektörle temsil edilen bir düğüm tarafından temsil edilir. Daha fazla ayrıntı "Öznitelikleştirme" bölümünde verilmiştir. Ligand için, her ağır atom bir düğüm tarafından temsil edilir ve bu düğümler, torsiyonel açılarındaki değişikliklerin Kartesyen koordinatlarına dönüştürüldüğü dıştan içe doğru bir şekilde dönüşür
+     <sup>
+      <xref ref-type="bibr" rid="CR33">
+       33
+      </xref>
+     </sup>
+     . Ek ayrıntılar "Ligand konformasyonunun dönüşümü" bölümünde bulunabilir. Önemli olarak, kaba bir temsil olmasına rağmen, tüm non-hidrojen atomlarının koordinatları hala birer birer haritalanabilir.
+    </p>
+    <p id="Par24"/>
+   </sec>
+   <sec id="Sec12">
+    <title>
+     Öznitelikleştirme
+    </title>
+    <p id="Par25"/>
+    <p id="Par26"/>
+   </sec>
+   <sec id="Sec13">
+    <title>
+     Model Mimarisi
+    </title>
+    <p id="Par27"/>
+    <p id="Par28"/>
+    <p id="Par29"/>
+    <p id="Par30"/>
+   </sec>
+   <sec id="Sec14">
+    <title>
+     Ligand Konformasyonunun Dönüştürülmesi
+    </title>
+    <p id="Par31"/>
+    <p id="Par32"/>
+   </sec>
+   <sec id="Sec15">
+    <title>
+     Protein Konformasyonunun Dönüştürülmesi
+    </title>
+    <p id="Par33"/>
+   </sec>
+   <sec id="Sec16">
+    <title>
+     Eğitim ve Tahmin
+    </title>
+    <p id="Par34"/>
+    <p id="Par35">
+     Eğitim ve çıkarım arasındaki dağılım kaymasını gidermek için, RDKit tarafından üretilen konformasyonların çıkarım sürecinde başlangıç noktaları olarak kullanılmasından kaynaklanan eğitim hedefini, gerçek holo pozuna karşılık gelen konformasyon
+     <inline-formula id="IEq34">
+      <alternatives>
+       <math id="IEq34_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+        <msubsup>
+         <mrow>
+          <mi mathvariant="bold">
+           x
+          </mi>
+         </mrow>
+         <mrow>
+          <mn>
+           0
+          </mn>
+         </mrow>
+         <mrow>
+          <mi>
+           l
+          </mi>
+         </mrow>
+        </msubsup>
+       </math>
+       <tex-math id="IEq34_TeX">
+        \documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym}
+				\usepackage{amsfonts}
+				\usepackage{amssymb}
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${{{{{{{{\bf{x}}}}}}}}}_{0}^{l}$$\end{document}
+       </tex-math>
+       <inline-graphic href="41467_2024_45461_Article_IEq34.gif" mime-subtype="GIF" specific-use="web"/>
+      </alternatives>
+     </inline-formula>
+     ile değiştiriyoruz. Zamanda
+     <italic>
+      t
+     </italic>
+     , giriş ligand pozisyonu bir rastgele pertürbe konformasyondur:
+     <disp-formula id="Equ14">
+      <label>
+       14
+      </label>
+      <alternatives>
+       <math id="Equ14_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+        <msubsup>
+         <mrow>
+          <mi mathvariant="bold">
+           x
+          </mi>
+         </mrow>
+         <mrow>
+          <mi>
+           t
+          </mi>
+         </mrow>
+         <mrow>
+          <mi>
+           l
+          </mi>
+         </mrow>
+        </msubsup>
+        <mo>
+         =
+        </mo>
+        <mrow>
+         <mo>
+          (
+         </mo>
+         <mrow>
+          <mi mathvariant="normal">
+           Δ
+          </mi>
+          <msubsup>
+           <mrow>
+            <mi>
+             T
+            </mi>
+           </mrow>
+           <mrow>
+            <mn>
+             0
+            </mn>
+           </mrow>
+           <mrow>
+            <mi>
+             l
+            </mi>
+           </mrow>
+          </msubsup>
+          <mo>
+           ∘
+          </mo>
+          <mo>
+           ⋯
+          </mo>
+          <mi mathvariant="normal">
+           Δ
+          </mi>
+          <msubsup>
+           <mrow>
+            <mi>
+             T
+            </mi>
+           </mrow>
+           <mrow>
+            <mi>
+             k
+            </mi>
+           </mrow>
+           <mrow>
+            <mi>
+             l
+            </mi>
+           </mrow>
+          </msubsup>
+         </mrow>
+         <mo>
+          )
+         </mo>
+        </mrow>
+        <mrow>
+         <mo>
+          (
+         </mo>
+         <mrow>
+          <mi mathvariant="normal">
+           Δ
+          </mi>
+          <msup>
+           <mrow>
+            <mi>
+             R
+            </mi>
+           </mrow>
+           <mrow>
+            <mi>
+             l
+            </mi>
+           </mrow>
+          </msup>
+          <mrow>
+           <mo>
+            (
+           </mo>
+           <mrow>
+            <msubsup>
+             <mrow>
+              <mi mathvariant="bold">
+               x
+              </mi>
+             </mrow>
+             <mrow>
+              <mn>
+               0
+              </mn>
+             </mrow>
+             <mrow>
+              <mi>
+               l
+              </mi>
+             </mrow>
+            </msubsup>
+            <mo>
+             −
+            </mo>
+            <msubsup>
+             <mrow>
+              <mover accent="true">
+               <mrow>
+                <mi mathvariant="bold">
+                 x
+                </mi>
+               </mrow>
+               <mo accent="true">
+                ¯
+               </mo>
+              </mover>
+             </mrow>
+             <mrow>
+              <mn>
+               0
+              </mn>
+             </mrow>
+             <mrow>
+              <mi>
+               l
+              </mi>
+             </mrow>
+            </msubsup>
+           </mrow>
+           <mo>
+            )
+           </mo>
+          </mrow>
+          <mo>
+           +
+          </mo>
+          <msubsup>
+           <mrow>
+            <mover accent="true">
+             <mrow>
+              <mi mathvariant="bold">
+               x
+              </mi>
+             </mrow>
+             <mo accent="true">
+              ¯
+             </mo>
+            </mover>
+           </mrow>
+           <mrow>
+            <mn>
+             0
+            </mn>
+           </mrow>
+           <mrow>
+            <mi>
+             l
+            </mi>
+           </mrow>
+          </msubsup>
+          <mo>
+           +
+          </mo>
+          <mi mathvariant="normal">
+           Δ
+          </mi>
+          <msup>
+           <mrow>
+            <mi mathvariant="bold">
+             tr
+            </mi>
+           </mrow>
+           <mrow>
+            <mi>
+             l
+            </mi>
+           </mrow>
+          </msup>
+         </mrow>
+         <mstyle>
+          <mtext>
+           ile
+          </mtext>
+         </mstyle>
+         <mspace width="0.25em"/>
+         <mspace width="1.0em"/>
+         <mi mathvariant="normal">
+          Δ
+         </mi>
+         <msup>
+          <mrow>
+           <mi mathvariant="bold">
+            tr
+           </mi>
+          </mrow>
+          <mrow>
+           <mi>
+            l
+           </mi>
+          </mrow>
+         </msup>
+         <mo>
+          =
+         </mo>
+         <mfenced close=")" open="(">
+          <mrow>
+           <mi class="MJX-tex-caligraphic" mathvariant="script">
+            N
+           </mi>
+           <mfenced close=")" open="(">
+            <mrow>
+             <mn>
+              0
+             </mn>
+             <mo>
+              ,
+             </mo>
+             <msubsup>
+              <mrow>
+               <mi>
+                σ
+               </mi>
+              </mrow>
+              <mrow>
+               <mi>
+                t
+               </mi>
+               <mi>
+                r
+               </mi>
+              </mrow>
+              <mrow>
+               <mi>
+                l
+               </mi>
+              </mrow>
+             </msubsup>
+            </mrow>
+           </mfenced>
+           <mo>
+            ,
+           </mo>
+           <mi class="MJX-tex-caligraphic" mathvariant="script">
+            N
+           </mi>
+           <mfenced close=")" open="(">
+            <mrow>
+             <mn>
+              0
+             </mn>
+             <mo>
+              ,
+             </mo>
+             <msubsup>
+              <mrow>
+               <mi>
+                σ
+               </mi>
+              </mrow>
+              <mrow>
+               <mi>
+                t
+               </mi>
+               <mi>
+                r
+               </mi>
+              </mrow>
+              <mrow>
+               <mi>
+                l
+               </mi>
+              </mrow>
+             </msubsup>
+            </mrow>
+           </mfenced>
+           <mo>
+            ,
+           </mo>
+           <mi class="MJX-tex-caligraphic" mathvariant="script">
+            N
+           </mi>
+           <mfenced close=")" open="(">
+            <mrow>
+             <mn>
+              0
+             </mn>
+             <mo>
+              ,
+             </mo>
+             <msubsup>
+              <mrow>
+               <mi>
+                σ
+               </mi>
+              </mrow>
+              <mrow>
+               <mi>
+                t
+               </mi>
+               <mi>
+                r
+               </mi>
+              </mrow>
+              <mrow>
+               <mi>
+                l
+               </mi>
+              </mrow>
+             </msubsup>
+            </mrow>
+           </mfenced>
+          </mrow>
+         </mfenced>
+         <mi mathvariant="normal">
+          Δ
+         </mi>
+         <msup>
+          <mrow>
+           <mi>
+            R
+           </mi>
+          </mrow>
+          <mrow>
+           <mi>
+            l
+           </mi>
+          </mrow>
+         </msup>
+         <mo>
+          =
+         </mo>
+         <mspace width="0.25em"/>
+         <mstyle>
+          <mtext>
+           Dönüş matrisi
+          </mtext>
+         </mstyle>
+         <mspace width="0.25em"/>
+         <mspace width="0.25em"/>
+         <mi>
+          p
+         </mi>
+         <mrow>
+          <mo>
+           (
+          </mo>
+          <mrow>
+           <mi>
+            ω
+           </mi>
+          </mrow>
+          <mo>
+           )
+          </mo>
+         </mrow>
+         <mover accent="true">
+          <mrow>
+           <mi>
+            ω
+           </mi>
+          </mrow>
+          <mrow>
+           <mo>
+            ̂
+           </mo>
+          </mrow>
+         </mover>
+         <mi mathvariant="normal">
+          Δ
+         </mi>
+         <msubsup>
+          <mrow>
+           <mi>
+            T
+           </mi>
+          </mrow>
+          <mrow>
+           <mi>
+            k
+           </mi>
+          </mrow>
+          <mrow>
+           <mi>
+            l
+           </mi>
+          </mrow>
+         </msubsup>
+         <mo>
+          =
+         </mo>
+         <mi class="MJX-tex-caligraphic" mathvariant="script">
+          N
+         </mi>
+         <mfenced close=")" open="(">
+          <mrow>
+           <mn>
+            0
+           </mn>
+           <mo>
+            ,
+           </mo>
+           <msubsup>
+            <mrow>
+             <mi>
+              σ
+             </mi>
+            </mrow>
+            <mrow>
+             <mi>
+              t
+             </mi>
+             <mi>
+              o
+             </mi>
+             <mi>
+              r
+             </mi>
+            </mrow>
+            <mrow>
+             <mi>
+              l
+             </mi>
+            </mrow>
+           </msubsup>
+          </mrow>
+         </mfenced>
+         <mi>
+          p
+         </mi>
+         <mrow>
+          <mo>
+           (
+          </mo>
+          <mrow>
+           <mi>
+            ω
+           </mi>
+          </mrow>
+          <mo>
+           )
+          </mo>
+         </mrow>
+         <mo>
+          =
+         </mo>
+         <mfrac>
+          <mrow>
+           <mn>
+            1
+           </mn>
+           <mo>
+            −
+           </mo>
+           <mi>
+            c
+           </mi>
+           <mi>
+            o
+           </mi>
+           <mi>
+            s
+           </mi>
+           <mrow>
+            <mo>
+             (
+            </mo>
+            <mrow>
+             <mi>
+              ω
+             </mi>
+            </mrow>
+            <mo>
+             )
+            </mo>
+           </mrow>
+          </mrow>
+          <mrow>
+           <mi>
+            π
+           </mi>
+          </mrow>
+         </mfrac>
+         <munderover accent="false" accentunder="false">
+          <mrow>
+           <mo>
+            ∑
+           </mo>
+          </mrow>
+          <mrow>
+           <mi>
+            l
+           </mi>
+           <mo>
+            =
+           </mo>
+           <mn>
+            0
+           </mn>
+          </mrow>
+          <mrow>
+           <mi>
+            ∞
+           </mi>
+          </mrow>
+         </munderover>
+         <mrow>
+          <mo>
+           (
+          </mo>
+          <mrow>
+           <mn>
+            2
+           </mn>
+           <mi>
+            l
+           </mi>
+           <mo>
+            +
+           </mo>
+           <mn>
+            1
+           </mn>
+          </mrow>
+          <mo>
+           )
+          </mo>
+         </mrow>
+         <mi>
+          exp
+         </mi>
+         <mfenced close=")" open="(">
+          <mrow>
+           <mo>
+            −
+           </mo>
+           <mi>
+            l
+           </mi>
+           <mrow>
+            <mo>
+             (
+            </mo>
+            <mrow>
+             <mi>
+              l
+             </mi>
+             <mo>
+              +
+             </mo>
+             <mn>
+              1
+             </mn>
+            </mrow>
+            <mo>
+             )
+            </mo>
+           </mrow>
+           <msup>
+            <mrow>
+             <mrow>
+              <mo>
+               (
+              </mo>
+              <mrow>
+               <msubsup>
+                <mrow>
+                 <mi>
+                  σ
+                 </mi>
+                </mrow>
+                <mrow>
+                 <mi>
+                  r
+                 </mi>
+                 <mi>
+                  o
+                 </mi>
+                 <mi>
+                  t
+                 </mi>
+                </mrow>
+                <mrow>
+                 <mi>
+                  l
+                 </mi>
+                </mrow>
+               </msubsup>
+              </mrow>
+              <mo>
+               )
+              </mo>
+             </mrow>
+            </mrow>
+            <mrow>
+             <mn>
+              2
+             </mn>
+            </mrow>
+           </msup>
+          </mrow>
+         </mfenced>
+         <mfrac>
+          <mrow>
+           <mi>
+            sin
+           </mi>
+           <mrow>
+            <mo>
+             (
+            </mo>
+            <mrow>
+             <mrow>
+              <mo>
+               (
+              </mo>
+              <mrow>
+               <mi>
+                l
+               </mi>
+               <mo>
+                +
+               </mo>
+               <mn>
+                1
+               </mn>
+               <mo>
+                /
+               </mo>
+               <mn>
+                2
+               </mn>
+              </mrow>
+              <mo>
+               )
+              </mo>
+             </mrow>
+             <mi>
+              ω
+             </mi>
+            </mrow>
+            <mo>
+             )
+            </mo>
+           </mrow>
+          </mrow>
+          <mrow>
+           <mi>
+            sin
+           </mi>
+           <mrow>
+            <mo>
+             (
+            </mo>
+            <mrow>
+             <mi>
+              ω
+             </mi>
+             <mo>
+              /
+             </mo>
+             <mn>
+              2
+             </mn>
+            </mrow>
+            <mo>
+             )
+            </mo>
+           </mrow>
+          </mrow>
+         </mfrac>
+        </mrow>
+        <tex-math id="Equ14_TeX">
+         \documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym}
+				\usepackage{amsfonts}
+				\usepackage{amssymb}
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${{{{{{{{\bf{x}}}}}}}}}_{t}^{l}=	(\Delta {T}_{0}^{l}\circ \cdots \Delta {T}_{k}^{l})(\Delta {R}^{l}({{{{{{{{\bf{x}}}}}}}}}_{0}^{l}-{\overline{{{{{{{{\bf{x}}}}}}}}}}_{0}^{l})+{\overline{{{{{{{{\bf{x}}}}}}}}}}_{0}^{l}+\Delta {{{{{{{{\bf{tr}}}}}}}}}^{l}) \\ 	{{\mbox{ile}}}\,\quad\Delta {{{{{{{{\bf{tr}}}}}}}}}^{l}=\left({{{{{{{\mathcal{N}}}}}}}}\left(0,{\sigma }_{tr}^{l}\right),{{{{{{{\mathcal{N}}}}}}}}\left(0,{\sigma }_{tr}^{l}\right),{{{{{{{\mathcal{N}}}}}}}}\left(0,{\sigma }_{tr}^{l}\right)\right)\\ 	\Delta {R}^{l}=\,{{\mbox{Dönüş matrisi}}}\,\,p(\omega )\hat{\omega }\\ 	\Delta {T}_{k}^{l}={{{{{{{\mathcal{N}}}}}}}}\left(0,{\sigma }_{tor}^{l}\right)\\ 	p(\omega )=\frac{1-cos(\omega )}{\pi }\mathop{\sum }\limits_{l=0}^{\infty }(2l+1)\exp \left(-l(l+1){({\sigma }_{rot}^{l})}^{2}\right)\frac{\sin ((l+1/2)\omega )}{\sin (\omega /2)}$$\end{document}
+        </tex-math>
+        <graphic href="41467_2024_45461_Article_Equ14.gif" mime-subtype="GIF" specific-use="web"/>
+       </math>
+      </alternatives>
+      Burada,
+      <inline-formula id="IEq35">
+       <alternatives>
+        <math id="IEq35_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+         <msubsup>
+          <mrow>
+           <mover accent="true">
+            <mrow>
+             <mi mathvariant="bold">
+              x
+             </mi>
+            </mrow>
+            <mo accent="true">
+             ¯
+            </mo>
+           </mover>
+          </mrow>
+          <mrow>
+           <mn>
+            0
+           </mn>
+          </mrow>
+          <mrow>
+           <mi>
+            l
+           </mi>
+          </mrow>
+         </msubsup>
+        </math>
+        <tex-math id="IEq35_TeX">
+         \documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym}
+				\usepackage{amsfonts}
+				\usepackage{amssymb}
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${\overline{{{{{{{{\bf{x}}}}}}}}}}_{0}^{l}$$\end{document}
+        </tex-math>
+        <inline-graphic href="41467_2024_45461_Article_IEq35.gif" mime-subtype="GIF" specific-use="web"/>
+       </alternatives>
+      </inline-formula>
+      <inline-formula id="IEq36">
+       <alternatives>
+        <math id="IEq36_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+         <msubsup>
+          <mrow>
+           <mi mathvariant="bold">
+            x
+           </mi>
+          </mrow>
+          <mrow>
+           <mn>
+            0
+           </mn>
+          </mrow>
+          <mrow>
+           <mi>
+            l
+           </mi>
+          </mrow>
+         </msubsup>
+         <mo>
+          ,
+         </mo>
+         <mi>
+          p
+         </mi>
+         <mrow>
+          <mo>
+           (
+          </mo>
+          <mrow>
+           <mi>
+            ω
+           </mi>
+          </mrow>
+          <mo>
+           )
+          </mo>
+         </mrow>
+        </math>
+        <tex-math id="IEq36_TeX">
+         \documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym}
+				\usepackage{amsfonts}
+				\usepackage{amssymb}
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${{{{{{{{\bf{x}}}}}}}}}_{0}^{l},p(\omega )$$\end{document}
+        </tex-math>
+        <inline-graphic href="41467_2024_45461_Article_IEq36.gif" mime-subtype="GIF" specific-use="web"/>
+       </alternatives>
+      </inline-formula>
+      SO(3) üzerinde izotropik Gauss dağılımıdır ve
+      <inline-formula id="IEq37">
+       <alternatives>
+        <math id="IEq37_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+         <mover accent="true">
+          <mrow>
+           <mi mathvariant="bold-italic">
+            ω
+           </mi>
+          </mrow>
+          <mrow>
+           <mo>
+            ̂
+           </mo>
+          </mrow>
+         </mover>
+        </math>
+        <tex-math id="IEq37_TeX">
+         \documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym}
+				\usepackage{amsfonts}
+				\usepackage{amssymb}
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${{{\hat{{{{{\boldsymbol{\omega }}}}}}}}}$$\end{document}
+        </tex-math>
+        <inline-graphic href="41467_2024_45461_Article_IEq37.gif" mime-subtype="GIF" specific-use="web"/>
+       </alternatives>
+      </inline-formula>
+      rastgele örneklenen bir birim vektördür.
+     </disp-formula>
+    </p>
+    <p id="Par36">
+     Ağ sekiz kayıp ile eğitilir. Toplam kayıp aşağıdaki gibi tanımlanabilir
+     <disp-formula id="Equ15">
+      <label>
+       15
+      </label>
+      <alternatives>
+       <math id="Equ15_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+        <mtable>
+         <mtr>
+          <mtd columnalign="right">
+           <mi class="MJX-tex-caligraphic" mathvariant="script">
+            L
+           </mi>
+           <mo>
+            =
+           </mo>
+           <mfrac>
+            <mrow>
+             <mn>
+              1
+             </mn>
+            </mrow>
+            <mrow>
+             <mn>
+              3
+             </mn>
+            </mrow>
+           </mfrac>
+           <msubsup>
+            <mrow>
+             <mi class="MJX-tex-caligraphic" mathvariant="script">
+              L
+             </mi>
+            </mrow>
+            <mrow>
+             <mi mathvariant="bold">
+              tr
+             </mi>
+            </mrow>
+            <mrow>
+             <mi>
+              l
+             </mi>
+            </mrow>
+           </msubsup>
+           <mo>
+            +
+           </mo>
+           <mfrac>
+            <mrow>
+             <mn>
+              1
+             </mn>
+            </mrow>
+            <mrow>
+             <mn>
+              3
+             </mn>
+            </mrow>
+           </mfrac>
+           <msubsup>
+            <mrow>
+             <mi class="MJX-tex-caligraphic" mathvariant="script">
+              L
+             </mi>
+            </mrow>
+            <mrow>
+             <mi mathvariant="bold">
+              rot
+             </mi>
+            </mrow>
+            <mrow>
+             <mi>
+              l
+             </mi>
+            </mrow>
+           </msubsup>
+           <mo>
+            +
+           </mo>
+           <mfrac>
+            <mrow>
+             <mn>
+              1
+             </mn>
+            </mrow>
+            <mrow>
+             <mn>
+              3
+             </mn>
+            </mrow>
+           </mfrac>
+           <msubsup>
+            <mrow>
+             <mi class="MJX-tex-caligraphic" mathvariant="script">
+              L
+             </mi>
+            </mrow>
+            <mrow>
+             <mi>
+              T
+             </mi>
+            </mrow>
+            <mrow>
+             <mi>
+              l
+             </mi>
+            </mrow>
+           </msubsup>
+           <mo>
+            +
+           </mo>
+           <mfrac>
+            <mrow>
+             <mn>
+              1
+             </mn>
+            </mrow>
+            <mrow>
+             <mn>
+              3
+             </mn>
+            </mrow>
+           </mfrac>
+           <msubsup>
+            <mrow>
+             <mi class="MJX-tex-caligraphic" mathvariant="script">
+              L
+             </mi>
+            </mrow>
+            <mrow>
+             <mi mathvariant="bold">
+              tr
+             </mi>
+            </mrow>
+            <mrow>
+             <mi>
+              p
+             </mi>
+            </mrow>
+           </msubsup>
+           <mo>
+            +
+           </mo>
+           <mfrac>
+            <mrow>
+             <mn>
+              1
+             </mn>
+            </mrow>
+            <mrow>
+             <mn>
+              3
+             </mn>
+            </mrow>
+           </mfrac>
+           <msubsup>
+            <mrow>
+             <mi class="MJX-tex-caligraphic" mathvariant="script">
+              L
+             </mi>
+            </mrow>
+            <mrow>
+             <mi mathvariant="bold">
+              rot
+             </mi>
+            </mrow>
+            <mrow>
+             <mi>
+              p
+             </mi>
+            </mrow>
+           </msubsup>
+           <mo>
+            +
+           </mo>
+           <mfrac>
+            <mrow>
+             <mn>
+              1
+             </mn>
+            </mrow>
+            <mrow>
+             <mn>
+              3
+             </mn>
+            </mrow>
+           </mfrac>
+           <msubsup>
+            <mrow>
+             <mi class="MJX-tex-caligraphic" mathvariant="script">
+              L
+             </mi>
+            </mrow>
+            <mrow>
+             <mi>
+              T
+             </mi>
+            </mrow>
+            <mrow>
+             <mi>
+              p
+             </mi>
+            </mrow>
+           </msubsup>
+           <mo>
+            +
+           </mo>
+           <mn>
+            0.01
+           </mn>
+           <msub>
+            <mrow>
+             <mi class="MJX-tex-caligraphic" mathvariant="script">
+              L
+             </mi>
+            </mrow>
+            <mrow>
+             <mi>
+              A
+             </mi>
+            </mrow>
+           </msub>
+           <mo>
+            +
+           </mo>
+           <mn>
+            0.99
+           </mn>
+           <msub>
+            <mrow>
+             <mi class="MJX-tex-caligraphic" mathvariant="script">
+              L
+             </mi>
+            </mrow>
+            <mrow>
+             <mi>
+              D
+             </mi>
+            </mrow>
+           </msub>
+          </mtd>
+         </mtr>
+        </mtable>
+       </math>
+       <tex-math id="Equ15_TeX">
+        \documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym}
+				\usepackage{amsfonts}
+				\usepackage{amssymb}
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\begin{array}{r}{{{{{{{\mathcal{L}}}}}}}}=\frac{1}{3}{{{{{{{{\mathcal{L}}}}}}}}}_{{{{{{{{\bf{tr}}}}}}}}}^{l}+\frac{1}{3}{{{{{{{{\mathcal{L}}}}}}}}}_{{{{{{{{\bf{rot}}}}}}}}}^{l}+\frac{1}{3}{{{{{{{{\mathcal{L}}}}}}}}}_{T}^{l}+\frac{1}{3}{{{{{{{{\mathcal{L}}}}}}}}}_{{{{{{{{\bf{tr}}}}}}}}}^{p}+\frac{1}{3}{{{{{{{{\mathcal{L}}}}}}}}}_{{{{{{{{\bf{rot}}}}}}}}}^{p}+\frac{1}{3}{{{{{{{{\mathcal{L}}}}}}}}}_{T}^{p}+0.01{{{{{{{{\mathcal{L}}}}}}}}}_{A}+0.99{{{{{{{{\mathcal{L}}}}}}}}}_{D}\end{array}$$\end{document}
+       </tex-math>
+       <graphic href="41467_2024_45461_Article_Equ15.gif" mime-subtype="GIF" specific-use="web"/>
+      </alternatives>
+     </disp-formula>
+     Burada,
+     <inline-formula id="IEq38">
+      <alternatives>
+       <math id="IEq38_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+        <msubsup>
+         <mrow>
+          <mi class="MJX-tex-caligraphic" mathvariant="script">
+           L
+          </mi>
+         </mrow>
+         <mrow>
+          <mi mathvariant="bold">
+           tr
+          </mi>
+         </mrow>
+         <mrow>
+          <mi>
+           l
+          </mi>
+         </mrow>
+        </msubsup>
+        <mo>
+         ,
+        </mo>
+        <msubsup>
+         <mrow>
+          <mi class="MJX-tex-caligraphic" mathvariant="script">
+           L
+          </mi>
+         </mrow>
+         <mrow>
+          <mi mathvariant="bold">
+           rot
+          </mi>
+         </mrow>
+         <mrow>
+          <mi>
+           l
+          </mi>
+         </mrow>
+        </msubsup>
+        <mo>
+         ,
+        </mo>
+        <msubsup>
+         <mrow>
+          <mi class="MJX-tex-caligraphic" mathvariant="script">
+           L
+          </mi>
+         </mrow>
+         <mrow>
+          <mi>
+           T
+          </mi>
+         </mrow>
+         <mrow>
+          <mi>
+           l
+          </mi>
+         </mrow>
+        </msubsup>
+       </math>
+       <tex-math id="IEq38_TeX">
+        \documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym}
+				\usepackage{amsfonts}
+				\usepackage{amssymb}
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${{{{{{{{\mathcal{L}}}}}}}}}_{{{{{{{{\bf{tr}}}}}}}}}^{l},{{{{{{{{\mathcal{L}}}}}}}}}_{{{{{{{{\bf{rot}}}}}}}}}^{l},{{{{{{{{\mathcal{L}}}}}}}}}_{T}^{l}$$\end{document}
+       </tex-math>
+       <inline-graphic href="41467_2024_45461_Article_IEq38.gif" mime-subtype="GIF" specific-use="web"/>
+      </alternatives>
+     </inline-formula>
+     ligandin çevirme, dönme ve burulma kaybıdır.
+     <inline-formula id="IEq39">
+      <alternatives>
+       <math id="IEq39_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+        <msubsup>
+         <mrow>
+          <mi class="MJX-tex-caligraphic" mathvariant="script">
+           L
+          </mi>
+         </mrow>
+         <mrow>
+          <mi mathvariant="bold">
+           tr
+          </mi>
+         </mrow>
+         <mrow>
+          <mi>
+           p
+          </mi>
+         </mrow>
+        </msubsup>
+        <mo>
+         ,
+        </mo>
+        <msubsup>
+         <mrow>
+          <mi class="MJX-tex-caligraphic" mathvariant="script">
+           L
+          </mi>
+         </mrow>
+         <mrow>
+          <mi mathvariant="bold">
+           rot
+          </mi>
+         </mrow>
+         <mrow>
+          <mi>
+           p
+          </mi>
+         </mrow>
+        </msubsup>
+       </math>
+       <tex-math id="IEq39_TeX">
+        \documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym}
+				\usepackage{amsfonts}
+				\usepackage{amssymb}
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${{{{{{{{\mathcal{L}}}}}}}}}_{{{{{{{{\bf{tr}}}}}}}}}^{p},{{{{{{{{\mathcal{L}}}}}}}}}_{{{{{{{{\bf{rot}}}}}}}}}^{p}$$\end{document}
+       </tex-math>
+       <inline-graphic href="41467_2024_45461_Article_IEq39.gif" mime-subtype="GIF" specific-use="web"/>
+      </alternatives>
+     </inline-formula>
+     ve
+     <inline-formula id="IEq40">
+      <alternatives>
+       <math id="IEq40_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+        <msubsup>
+         <mrow>
+          <mi class="MJX-tex-caligraphic" mathvariant="script">
+           L
+          </mi>
+         </mrow>
+         <mrow>
+          <mi>
+           T
+          </mi>
+         </mrow>
+         <mrow>
+          <mi>
+           p
+          </mi>
+         </mrow>
+        </msubsup>
+       </math>
+       <tex-math id="IEq40_TeX">
+        \documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym}
+				\usepackage{amsfonts}
+				\usepackage{amssymb}
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${{{{{{{{\mathcal{L}}}}}}}}}_{T}^{p}$$\end{document}
+       </tex-math>
+       <inline-graphic href="41467_2024_45461_Article_IEq40.gif" mime-subtype="GIF" specific-use="web"/>
+      </alternatives>
+     </inline-formula>
+     proteinin çevirme, dönme ve burulma kaybıdır.
+     <inline-formula id="IEq41">
+      <alternatives>
+       <math id="IEq41_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+        <msub>
+         <mrow>
+          <mi class="MJX-tex-caligraphic" mathvariant="script">
+           L
+          </mi>
+         </mrow>
+         <mrow>
+          <mi>
+           A
+          </mi>
+         </mrow>
+        </msub>
+       </math>
+       <tex-math id="IEq41_TeX">
+        \documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym}
+				\usepackage{amsfonts}
+				\usepackage{amssymb}
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${{{{{{{{\mathcal{L}}}}}}}}}_{A}$$\end{document}
+       </tex-math>
+       <inline-graphic href="41467_2024_45461_Article_IEq41.gif" mime-subtype="GIF" specific-use="web"/>
+      </alternatives>
+     </inline-formula>
+     bağımlılık affinitesi kaybıdır ve
+     <inline-formula id="IEq42">
+      <alternatives>
+       <math id="IEq42_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+        <msub>
+         <mrow>
+          <mi class="MJX-tex-caligraphic" mathvariant="script">
+           L
+          </mi>
+         </mrow>
+         <mrow>
+          <mi>
+           D
+          </mi>
+         </mrow>
+        </msub>
+       </math>
+       <tex-math id="IEq42_TeX">
+        \documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym}
+				\usepackage{amsfonts}
+				\usepackage{amssymb}
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${{{{{{{{\mathcal{L}}}}}}}}}_{D}$$\end{document}
+       </tex-math>
+       <inline-graphic href="41467_2024_45461_Article_IEq42.gif" mime-subtype="GIF" specific-use="web"/>
+      </alternatives>
+     </inline-formula>
+     temas-LDDT kaybıdır. Gerçek holo pozunun cLDDT'sinin hesaplanması için uzaklık farkı
+     <inline-formula id="IEq43">
+      <alternatives>
+       <math id="IEq43_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+        <mi>
+         d
+        </mi>
+        <mo>
+         =
+        </mo>
+        <mo>
+         ∣
+        </mo>
+        <mi>
+         d
+        </mi>
+        <mrow>
+         <mo>
+          (
+         </mo>
+         <mrow>
+          <msubsup>
+           <mrow>
+            <mi mathvariant="bold">
+             x
+            </mi>
+           </mrow>
+           <mrow>
+            <mn>
+             0
+            </mn>
+           </mrow>
+           <mrow>
+            <mi>
+             l
+            </mi>
+           </mrow>
+          </msubsup>
+          <mo>
+           ,
+          </mo>
+          <msup>
+           <mrow>
+            <mi mathvariant="bold">
+             x
+            </mi>
+           </mrow>
+           <mrow>
+            <mi>
+             h
+            </mi>
+            <mi>
+             o
+            </mi>
+            <mi>
+             l
+            </mi>
+            <mi>
+             o
+            </mi>
+           </mrow>
+          </msup>
+         </mrow>
+         <mo>
+          )
+         </mo>
+        </mrow>
+        <mo>
+         −
+        </mo>
+        <mi>
+         d
+        </mi>
+        <mrow>
+         <mo>
+          (
+         </mo>
+         <mrow>
+          <msubsup>
+           <mrow>
+            <mi mathvariant="bold">
+             x
+            </mi>
+           </mrow>
+           <mrow>
+            <mi>
+             t
+            </mi>
+           </mrow>
+           <mrow>
+            <mi>
+             l
+            </mi>
+           </mrow>
+          </msubsup>
+          <mo>
+           ,
+          </mo>
+          <msubsup>
+           <mrow>
+            <mi mathvariant="bold">
+             x
+            </mi>
+           </mrow>
+           <mrow>
+            <mi>
+             t
+            </mi>
+           </mrow>
+           <mrow>
+            <mi>
+             p
+            </mi>
+           </mrow>
+          </msubsup>
+         </mrow>
+         <mo>
+          )
+         </mo>
+        </mrow>
+        <mo>
+         ∣
+        </mo>
+       </math>
+       <tex-math id="IEq43_TeX">
+        \documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym}
+				\usepackage{amsfonts}
+				\usepackage{amssymb}
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$d=| d({{{{{{{{\bf{x}}}}}}}}}_{0}^{l},{{{{{{{{\bf{x}}}}}}}}}^{holo})-d({{{{{{{{\bf{x}}}}}}}}}_{t}^{l},{{{{{{{{\bf{x}}}}}}}}}_{t}^{p})|$$\end{document}
+       </tex-math>
+       <inline-graphic href="41467_2024_45461_Article_IEq43.gif" mime-subtype="GIF" specific-use="web"/>
+      </alternatives>
+     </inline-formula>
+     (cLDDT puanı hesabının daha fazla detayları “Değerlendirme metricleri” bölümünde bulunabilir).
+    </p>
+    <p id="Par37">
+     Bir dönme vektörü
+     <bold>
+      u
+     </bold>
+     başka bir
+     <bold>
+      v
+     </bold>
+     ile aynı dönmeyi temsil ederse,
+     <bold>
+      u
+     </bold>
+     ve
+     <bold>
+      v
+     </bold>
+     ters yönde ve ∥
+     <bold>
+      u
+     </bold>
+     ∥ + ∥
+     <bold>
+      v
+     </bold>
+     ∥ = 2
+     <italic>
+      π
+     </italic>
+     ise, dönme kaybını hesaparken, ileri ve ters yönde kaybın minimumunu alıyoruz. Burulma açısı kayıpları, predicted değer ile eklenen burulma açısı gürültüsü arasındaki açının kosinüsünü kullanarak hesaplanır. Tam eğitim prosedürleri Ek Algoritma
+     <xref ref-type="supplementary-material" rid="MOESM1">
+      1
+     </xref>
+     bölümünde bulunabilir.
+    </p>
+    <p id="Par38">
+     Çıkarım sürecinde, ligand yapısının RDKit tarafından üretilen konformasyonlarını ve protein yapısının AlphaFold tarafından predicted konformasyonunu kullanarak başlangıç kompleks konformasyonunu oluşturuyoruz. Kompleks yapısı 20 adımda güncellenir. Son konformasyonun yerel minimuma takılmaması için, her adımda, temizlenen ligand pozisine küçük bir rastgele gürültü eklenir. Her bir çift için, 40 örneklem melakukan ve predicted cLDDT'lere göre bağlanma konformasyonlarını sıralıyoruz. Ayrıca, predicted bağımlılık affinitesinin ağırlıklı ortalamasının deneysel olarak measured affiniteye daha doğru bir tahminçi olduğunu fark ettik (Ek Tablo
+     <xref ref-type="supplementary-material" rid="MOESM1">
+      1
+     </xref>
+     ). Predicted cLDDT değerleri ağırlık olarak kullanılır. Tam çıkarım prosedürleri Ek Algoritma
+     <xref ref-type="supplementary-material" rid="MOESM1">
+      2
+     </xref>
+     bölümünde bulunabilir.
+    </p>
+    <p id="Par39">
+     DynamicBind 63.67 milyon parametreye sahiptir ve sekiz Nvidia A100 80GB GPU'da 5 gün boyunca eğitilmiştir.
+    </p>
+   </sec>
+   <sec id="Sec17">
+    <title>
+     Değerlendirme Ölçütleri
+    </title>
+    <p id="Par40">
+     Protein ve ligand arasındaki etkileşimi predicted kompleks yapısı içinde değerlendirmek için, intermoleküler native kontakt oluşumunun kapsamını belirleriz. Daha önce predicted protein yapılarının nativenessini量ifying için kullanılan Local Distance Difference Test (LDDT) score benzer bir tanımı benimseriz
+     <sup>
+      <xref ref-type="bibr" rid="CR58">
+       58
+      </xref>
+     </sup>
+     . Contact-LDDT (cLDDT) score, ligand atomları ve protein atomları arasındaki tüm çiftler için 15 Å'den az mesafeleri dikkate alarak hesaplanır. Mesafe farkı, ground truth ve predicted kompleks yapıları arasında, simetriyi dikkate alarak belirlenir. Son cLDDT score, dört tolerans sınırı boyunca korunmuş mesafelerin ortalama kesri olarak hesaplanır: 0.5, 1, 2 ve 4 Å.
+    </p>
+    <p id="Par41">
+     Predicted protein yapısının, bağlanma cebine çevreleyen native protein yapısından sapmasını değerlendirmek için, pocket Root Mean Square Deviation (pocket RMSD) hesaplarız. Bu, referans ligand atomlarına 5 Å'den az mesafedeki protein atomları kullanılarak gerçekleştirilir. İlk olarak, predicted protein yapısı, kristal protein yapısı ile hizalanır. Sonrasında, predicted cebe atomları ve kristal cebe atomları arasındaki RMSD belirlenir.
+    </p>
+    <p id="Par42">
+     AlphaFill benzeri olarak, clash score, ligand atomları ve protein atomları arasındaki tüm mesafeler için 4 Å'den az van der Waals overlapsın kök mean square (RMS) olarak hesaplanır. Aşağıdaki gibi hesaplanır:
+     <disp-formula id="Equ16">
+      <label>
+       16
+      </label>
+      <alternatives>
+       <math id="Equ16_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+        <mtable>
+         <mtr>
+          <mtd columnalign="right">
+           <mspace width="0.25em"/>
+           <mstyle>
+            <mtext>
+             çarpışma puanı
+            </mtext>
+           </mstyle>
+           <mspace width="0.25em"/>
+           <mo>
+            =
+           </mo>
+           <msqrt>
+            <mrow>
+             <mfrac>
+              <mrow>
+               <munderover accent="false" accentunder="false">
+                <mrow>
+                 <mo>
+                  ∑
+                 </mo>
+                </mrow>
+                <mrow>
+                 <mi>
+                  i
+                 </mi>
+                 <mo>
+                  =
+                 </mo>
+                 <mn>
+                  0
+                 </mn>
+                </mrow>
+                <mrow>
+                 <mi>
+                  N
+                 </mi>
+                </mrow>
+               </munderover>
+               <mspace width="0.25em"/>
+               <msubsup>
+                <mrow>
+                 <mspace width="0.25em"/>
+                 <mstyle>
+                  <mtext>
+                   VdW örtüşmesi
+                  </mtext>
+                 </mstyle>
+                 <mspace width="0.25em"/>
+                </mrow>
+                <mrow>
+                 <mi>
+                  i
+                 </mi>
+                </mrow>
+                <mrow>
+                 <mn>
+                  2
+                 </mn>
+                </mrow>
+               </msubsup>
+              </mrow>
+              <mrow>
+               <mi>
+                N
+               </mi>
+              </mrow>
+             </mfrac>
+            </mrow>
+           </msqrt>
+          </mtd>
+         </mtr>
+        </mtable>
+       </math>
+       <tex-math id="Equ16_TeX">
+        \documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym}
+				\usepackage{amsfonts}
+				\usepackage{amssymb}
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\begin{array}{r}\,{{\mbox{çarpışma puanı}}}\,=\sqrt{\frac{\mathop{\sum }\limits_{i=0}^{N}\,{\,{{\mbox{VdW örtüşmesi}}}\,\,}_{i}^{2}}{N}}\end{array}$$\end{document}
+       </tex-math>
+       <graphic href="41467_2024_45461_Article_Equ16.gif" mime-subtype="GIF" specific-use="web"/>
+      </alternatives>
+     </disp-formula>
+     burada
+     <italic>
+      N
+     </italic>
+     dikkate alınan mesafe sayısıdır
+     <sup>
+      <xref ref-type="bibr" rid="CR14">
+       14
+      </xref>
+      <xref ref-type="bibr" rid="CR59">
+       59
+      </xref>
+     </sup>
+     .
+    </p>
+   </sec>
+   <sec id="Sec18">
+    <title>
+     Veri Seti Oluşturma
+    </title>
+    <p id="Par43">
+     Eğitim ve test veri setimiz, her biri deneysel olarak ölçülen bağlanma afinitesi ile eşleştirilmiş 19.443 protein-ligand kompleksi kristal yapısından oluşan PDBbind2020 veritabanına dayanır. Daha önceki çalışmalar gibi, 2019'dan önce depolanan yapılar için eğitim ve doğrulama, 2019'da depolanan yapılar için test olarak kullanırız. Her protein, aynı protein dizisine karşılık gelen AlphaFold-predicted yapı ile hizalanır. Hizalanmış AlphaFold yapıları ve kristal yapılar, protein kısmının eğitim örneklerini morfolojik benzerlik aracılığıyla üretmek için kullanılır. Major Drug Targets (MDT) test seti aşağıdaki kriterlere göre oluşturulur: 2020 veya sonrasında depolanan PDB'ler; kinazlar, GPCRs, nükleer reseptörler ve iyon kanalları gibi dört büyük ilaç hedefi grubuna ait proteinler; AlphaFold-predicted protein yapılarının kristal yapı ile pocket RMSD 2 Å'dan fazla (veya pocket LDDT 0.8'den az); ligandlar, moleküler ağırlığı 200-650 Dalton arasında değişen ilaç benzeri küçük moleküllerdir; tek bir çalışmadan en fazla 10 PDB içerir. Bu kriterler, test setinin zorlu olmasını, başlangıç proteinin native konformasyondan farklı olmasını ve geniş bir protein hedefi yelpazesini kapsamasını sağlar. Ayrıca, belirli çalışmaların diğerlerinden önemli ölçüde daha fazla PDB depolaması nedeniyle, birkaç proteinin tüm test setini domine etmesini önler
+     <sup>
+      <xref ref-type="bibr" rid="CR34">
+       34
+      </xref>
+      <xref ref-type="bibr" rid="CR19">
+       19
+      </xref>
+      ,
+      <xref ref-type="bibr" rid="CR35">
+       35
+      </xref>
+      ,
+      <xref ref-type="bibr" rid="CR36">
+       36
+      </xref>
+     </sup>
+     .
+    </p>
+   </sec>
+   <sec id="Sec19">
+    <title>
+     Karşılaştırma Yöntemleri
+    </title>
+    <p id="Par44">
+     Hem PDBbind test seti (303 ligand-reseptör çifti) hem de Major ilaç hedefleri (MDT) test seti (599 ligand-reseptör çifti) üzerinde, aşağıdaki listede belirtilen farklı docking yöntemleri kullanarak docking gerçekleştirdik. Docking ligandları, atomik koordinatlarını değiştirmeden kristalize yapılarından çıkarılır ve docking reseptör yapıları AlphaFold tarafından predicted edilir. Tüm RMSD hesaplamaları için spyrmsd paketinden simetriye duyarlı bir yöntem olan symmrmsd fonksiyonunu kullanırız
+     <sup>
+      <xref ref-type="bibr" rid="CR60">
+       60
+      </xref>
+     </sup>
+     .
+    </p>
+   </sec>
+   <sec id="Sec20">
+    <title>
+     Autodock VINA Rigid
+    </title>
+    <p id="Par45">
+     Autodock Vina'da, ligandlar SDF formatından PDBQT formatına Meeko 2.0.0 kullanılarak dönüştürüldü. Protein hazırlığı, ADFR Suite 1.0'daki "prepare_receptor" komutu kullanılarak gerçekleştirildi. Docking kutusu, native ligand etrafındaki otomatik bir kutu kullanılarak tanımlanıp, altı tarafında da 4 Å'lik varsayılan bir tampon ile belirlendi. Kutu merkezi, native ligandın kütle merkeziydi. Boron atomu, geçerli bir AutoDock atom tipi olmadığından, bu atomu içeren ligandlar docking için kullanılamadı. Bu nedenle, PDBbind veri setindeki 301 ligand-reseptör çifti ve MDT veri setindeki 597 ligand-reseptör çifti, VINA rigid docking'de docking çıktısı verdi
+     <sup>
+      <xref ref-type="bibr" rid="CR17">
+       17
+      </xref>
+     </sup>
+     .
+    </p>
+   </sec>
+   <sec id="Sec21">
+    <title>
+     Autodock VINA Esnek
+    </title>
+    <p id="Par46">
+     VINA rigid docking'e kıyasla, VINA esnek docking'de esnek reseptör hazırlama adımının eklenmesi gerekiyor. Bu adım, "prepare_flexreceptor.py" adlı bir Python betiği kullanılarak gerçekleştirildi ve bu betik
+     <ext-link ext-link-type="uri" href="https://github.com/ccsb-scripps/AutoDock-Vina/tree/develop/example/autodock_scripts">
+      https://github.com/ccsb-scripps/AutoDock-Vina/tree/develop/example/autodock_scripts
+     </ext-link>
+     <sup/>
+     adresinde mevcuttur. Bu adım aracılığıyla, protein PDBQT format dosyası, rijit kısımlar ve esnek yan zincirleri için iki ayrı PDBQT format dosyasına bölündü. Vina Esnek modunda, esnek yan zincirlerin önceden belirlenmesi gerekiyor. Ligand atomlarına 5 Å uzaklıktaki tüm yan zincir atomlarını içeren amino asit kalıntılarını esnek olarak belirledik. Bu modda, protein omurgası rijit kaldı. Ligand hazırlama ve ızgara kutusu ayarı, VINA rigid docking ile tutarlıydı.
+    </p>
+   </sec>
+   <sec id="Sec22">
+    <title>
+     GNINA Rigid
+    </title>
+    <p id="Par47">
+     GNINA için ligand girişi dosyaları, RDKit ile hidrojen eklenerek OpenBabel kullanılarak oluşturulan PDBQT formatındaydı. Protein girişi dosyaları, PDB formatındaydı. İlgili ızgara kutusu ayarı, VINA rigid docking ile tutarlıydı. PDBbind veri setindeki tüm ligand-reseptör çiftleri docking çıktısı verdi. MDT veri setindeki 1 çift, çıktı vermedi çünkü orijinal PDB dosyasındaki (PDB ID:
+     <ext-link ext-link-type="uri" href="http://doi.org/10.2210/pdb8HMU/pdb">
+      8HMU
+     </ext-link>
+     ) ligand完全 çözülemedi ve eksik atomlara sahipti
+     <sup>
+      <xref ref-type="bibr" rid="CR61">
+       61
+      </xref>
+     </sup>
+     .
+    </p>
+   </sec>
+   <sec id="Sec23">
+    <title>
+     GLIDE
+    </title>
+    <p id="Par48">
+     GLIDE, Schrödinger yazılımındaki bir rijit protein docking modülüdür. Ligandlar, LigPrep modülü kullanılarak hazırlanıp, protein hazırlama işlemleri Protein Preparation Wizard modülü kullanılarak gerçekleştirildi. İlgili ızgara dosyaları, Receptor Grid Generation modülü kullanılarak oluşturuldu ve 10 Å'lik iç kutu ve ligand etrafındaki otomatik dış kutu ile belirlendi. Varsayılan tampon, altı tarafında da 4 Å olarak belirlendi ve ligandın kütle merkezine göre hesaplandı. Ardından, SP precision docking işlemi gerçekleştirildi. PDBbind veri setindeki bazı ligandlar polipeptidlerden oluştuğu için LigPrep modülü tarafından işlenemedi. Ayrıca, cepli atomlarla şiddetli çarpışmalar yaşayan ligandlar, docking sırasında çıktı pozisyona sahip olamadı. Bu nedenle, PDBbind veri setindeki 266 ligand-reseptör çifti ve MDT veri setindeki 472 ligand-reseptör çifti, GLIDE rigid docking'de docking çıktısı verdi
+     <sup>
+      <xref ref-type="bibr" rid="CR16">
+       16
+      </xref>
+     </sup>
+     .
+    </p>
+   </sec>
+   <sec id="Sec24">
+    <title>
+     Uyarlama Docking
+    </title>
+    <p id="Par49">
+     Induced fit docking (IFD) modülü, Schrödinger yazılımındaki bir protein-esnek docking işlevidir. VINA ve GNINA'dan farklı olarak, yalnızca yan zincirlerin değil, ayrıca omurga kalıntılarının da hafifçe hareket edebilmesi sağlanıyor. Ligand hazırlama ve protein hazırlama işlemleri, GLIDE rigid docking ile aynıydı. Arama alanı, varsayılan parametrelerle belirlendi: 10 Å'lik iç kutu ve ligand boyutuna benzer bir otomatik dış kutu, native ligandın kütle merkezine göre hesaplandı. Ligand atomlarına 5 Å uzaklıktaki amino asit kalıntıları esnek olarak belirlendi. Docking işlemi, standart protokolle gerçekleştirildi ve en fazla 20 poz üretildi. Toplamda, PDBbind veri setindeki 284 ligand-reseptör çifti ve MDT veri setindeki 580 çift, IFD modülü kullanılarak başarıyla docking edildi. İndüksiyonlu docking, GLIDE rigid docking'den daha fazla ligand-reseptör çifti için çıktı pozisyona sahip olabileceğini gösterdi ve bu, cepli kalıntıların hareket ederek cepli alanı genişletmesine olanak tanıdığı anlamına geliyor
+     <sup>
+      <xref ref-type="bibr" rid="CR62">
+       62
+      </xref>
+     </sup>
+     .
+    </p>
+   </sec>
+   <sec id="Sec25">
+    <title>
+     Rapor Özeti
+    </title>
+    <p id="Par50">
+     Araştırma tasarımı hakkında daha fazla bilgi, bu makaleye bağlı
+     <xref ref-type="supplementary-material" rid="MOESM2">
+      Nature Portfolio Reporting Summary
+     </xref>
+     adresinde mevcuttur.
+    </p>
+   </sec>
+  </sec>
+ </body>
+ <back>
+  <ack>
+   <title>
+    Teşekkürler
+   </title>
+   <p>
+    Meihui Song ve Jiahui Tang'a görselleştirme ve ilham için minnettarız. Web sunucusu kurulumu ve BT desteğinde yardımları için Da Wei ve Ziwei Huang'a teşekkür ederiz. Değerli geri bildirimi ve aydınlatıcı tartışmaları için James J. Collins'e teşekkür ederiz. S.Z., Baidu bursundan fon sağlamıştır. P.G.W., NSF grantı PHY-2019745 ve Rice Üniversitesi Grant C-0016 tarafından desteklenen Center for Theoretical Biological Physics tarafından desteklenmektedir.
+   </p>
+  </ack>
+  <sec sec-type="author-contribution">
+   <title>
+    Yazar katkıları
+   </title>
+   <p>
+    S.Z. ve W.L. projeyi tasarladı ve denetledi. W.L. ve J.Z. algoritma uygulamasına katkıda bulundu. J.Z., W.L., S.Z. ve W.H. görselleştirme ve temel uygulama için katkıda bulundu. W.L., S.Z., P.G.W. ve J.Z. makaleyi yazdı. Tüm yazarlar tartışmalara ve düzeltmelere katıldı.
+   </p>
+  </sec>
+  <sec sec-type="peer-review">
+   <title>
+    Hakem İncelemesi
+   </title>
+   <sec id="FPar1">
+    <title>
+     Hakem İncelemesi Bilgileri
+    </title>
+    <p id="Par51">
+     <italic>
+      Nature Communications
+     </italic>
+     thanks the anonymous reviewers for their contribution to the peer review of this work. A peer review file is available.
+    </p>
+   </sec>
+  </sec>
+  <sec sec-type="data-availability">
+   <title>
+    Veri Erişimi
+   </title>
+   <p>
+    Raw data were sourced from the public dataset PDBbind2020, available at
+    <ext-link ext-link-type="uri" xlink:href="http://www.pdbbind.org.cn/index.php">
+     http://www.pdbbind.org.cn/index.php
+    </ext-link>
+    . The data generated in this study and processed training data have been publicly deposited to Zenodo under
+    <ext-link ext-link-type="doi" xlink:href="10.5281/zenodo.10429051">
+     https://doi.org/10.5281/zenodo.10429051
+    </ext-link>
+    .
+    <xref ref-type="sec" rid="Sec27">
+     Source data
+    </xref>
+    are provided with this paper.
+   </p>
+  </sec>
+  <sec sec-type="data-availability">
+   <title>
+    Kod Erişimi
+   </title>
+   <p>
+    Demo, instructions, and codes for DynamicBind are available at
+    <ext-link ext-link-type="uri" xlink:href="https://github.com/luwei0917/DynamicBind">
+     https://github.com/luwei0917/DynamicBind
+    </ext-link>
+    . The version used for this publication is available in ref.
+    <sup>
+     <xref ref-type="bibr" rid="CR63">
+      63
+     </xref>
+    </sup>
+    . In addition, a web server is available at
+    <ext-link ext-link-type="uri" xlink:href="https://m1.galixir.com/#/home/demo/dynamicDocking">
+     https://m1.galixir.com/#/home/demo/dynamicDocking
+    </ext-link>
+    .
+   </p>
+  </sec>
+  <sec sec-type="ethics-statement">
+   <sec id="FPar2" sec-type="COI-statement">
+    <title>
+     Çıkar Çatışmaları
+    </title>
+    <p id="Par52">
+     W.L., J.Z., W.H., Z.Z., X.J., Z.W., L.S., and C.L. work directly or indirectly for Galixir Technologies. S.Z. was a former employee of Galixir Technologies. The remaining authors declare no competing interests.
+    </p>
+   </sec>
+  </sec>
+  <ref-list id="Bib1">
+   <title>
+    Referanslar
+   </title>
+   <ref-list>
+    <ref id="CR1">
+     <label>
+      1.
+     </label>
+     <mixed-citation publication-type="other">
+      Papoian, G. A. &amp; Wolynes, P.G. Awsem-md: from neural networks to protein structure prediction and functional dynamics of complex biomolecular assemblies.
+      <italic>
+       Coarse-Grained Model. Biomol.
+      </italic>
+      121–190 (2017).
+     </mixed-citation>
+    </ref>
+    <ref id="CR2">
+     <label>
+      2.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Jin
+        </surname>
+        <given-names>
+         S
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Protein structure prediction in casp13 using awsem-suite
+      </article-title>
+      <source>
+       J. Chem. Theory Comput.
+      </source>
+      <year>
+       2020
+      </year>
+      <volume>
+       16
+      </volume>
+      <fpage>
+       3977
+      </fpage>
+      <lpage>
+       3988
+      </lpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BB3cXpt1OltL4%3D
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       32396727
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1021/acs.jctc.0c00188
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR3">
+     <label>
+      3.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Leman
+        </surname>
+        <given-names>
+         JK
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Macromolecular modeling and design in rosetta: recent methods and frameworks
+      </article-title>
+      <source>
+       Nat. Methods
+      </source>
+      <year>
+       2020
+      </year>
+      <volume>
+       17
+      </volume>
+      <fpage>
+       665
+      </fpage>
+      <lpage>
+       680
+      </lpage>
+      <pub-id assigning-authority="American Mathematical Society" pub-id-type="other">
+       4159503
+      </pub-id>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BB3cXhtVGmu7vF
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       32483333
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1038/s41592-020-0848-2
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR4">
+     <label>
+      4.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Zhang
+        </surname>
+        <given-names>
+         C
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Mortuza
+        </surname>
+        <given-names>
+         S
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         He
+        </surname>
+        <given-names>
+         B
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Wang
+        </surname>
+        <given-names>
+         Y
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Zhang
+        </surname>
+        <given-names>
+         Y
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Template-based and free modeling of i-tasser and quark pipelines using predicted contact maps in casp12
+      </article-title>
+      <source>
+       Proteins Struct. Funct. Bioinforma.
+      </source>
+      <year>
+       2018
+      </year>
+      <volume>
+       86
+      </volume>
+      <fpage>
+       136
+      </fpage>
+      <lpage>
+       151
+      </lpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BC2sXhvVSit7vN
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1002/prot.25414
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR5">
+     <label>
+      5.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Jumper
+        </surname>
+        <given-names>
+         J
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Highly accurate protein structure prediction with alphafold
+      </article-title>
+      <source>
+       Nature
+      </source>
+      <year>
+       2021
+      </year>
+      <volume>
+       596
+      </volume>
+      <fpage>
+       583
+      </fpage>
+      <lpage>
+       589
+      </lpage>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2021Natur.596..583J
+      </pub-id>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BB3MXhvVaktrrL
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       34265844
+      </pub-id>
+      <pub-id pub-id-type="pmcid">
+       8371605
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1038/s41586-021-03819-2
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR6">
+     <label>
+      6.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Baek
+        </surname>
+        <given-names>
+         M
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Accurate prediction of protein structures and interactions using a three-track neural network
+      </article-title>
+      <source>
+       Science
+      </source>
+      <year>
+       2021
+      </year>
+      <volume>
+       373
+      </volume>
+      <fpage>
+       871
+      </fpage>
+      <lpage>
+       876
+      </lpage>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2021Sci...373..871B
+      </pub-id>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BB3MXhvVCku7zM
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       34282049
+      </pub-id>
+      <pub-id pub-id-type="pmcid">
+       7612213
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1126/science.abj8754
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR7">
+     <label>
+      7.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Lin
+        </surname>
+        <given-names>
+         Z
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Evolutionary-scale prediction of atomic-level protein structure with a language model
+      </article-title>
+      <source>
+       Science
+      </source>
+      <year>
+       2023
+      </year>
+      <volume>
+       379
+      </volume>
+      <fpage>
+       1123
+      </fpage>
+      <lpage>
+       1130
+      </lpage>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2023Sci...379.1123L
+      </pub-id>
+      <pub-id assigning-authority="American Mathematical Society" pub-id-type="other">
+       4567681
+      </pub-id>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BB3sXls1ertrk%3D
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       36927031
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1126/science.ade2574
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR8">
+     <label>
+      8.
+     </label>
+     <mixed-citation publication-type="other">
+      Wu, R. et al. High-resolution de novo structure prediction from primary sequence. Preprint at
+      <ext-link ext-link-type="uri" xlink:href="https://www.biorxiv.org/content/10.1101/2022.07.21.500999v1">
+       https://www.biorxiv.org/content/10.1101/2022.07.21.500999v1
+      </ext-link>
+      (2022).
+     </mixed-citation>
+    </ref>
+    <ref id="CR9">
+     <label>
+      9.
+     </label>
+     <mixed-citation publication-type="other">
+      Lane, T. J. Protein structure prediction has reached the single-structure frontier.
+      <italic>
+       Nat. Methods
+      </italic>
+      <bold>
+       20
+      </bold>
+      , 170–173 (2023).
+     </mixed-citation>
+    </ref>
+    <ref id="CR10">
+     <label>
+      10.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Frauenfelder
+        </surname>
+        <given-names>
+         H
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Sligar
+        </surname>
+        <given-names>
+         SG
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Wolynes
+        </surname>
+        <given-names>
+         PG
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       The energy landscapes and motions of proteins
+      </article-title>
+      <source>
+       Science
+      </source>
+      <year>
+       1991
+      </year>
+      <volume>
+       254
+      </volume>
+      <fpage>
+       1598
+      </fpage>
+      <lpage>
+       1603
+      </lpage>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       1991Sci...254.1598F
+      </pub-id>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DyaK38XhtVWgtro%3D
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       1749933
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1126/science.1749933
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR11">
+     <label>
+      11.
+     </label>
+     <mixed-citation publication-type="other">
+      Nussinov, R., Zhang, M., Liu, Y. &amp; Jang, H. Alphafold, allosteric, and orthosteric drug discovery: ways forward.
+      <italic>
+       Drug Discov. Today
+      </italic>
+      <bold>
+       28
+      </bold>
+      , 103551 (2023).
+     </mixed-citation>
+    </ref>
+    <ref id="CR12">
+     <label>
+      12.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Boehr
+        </surname>
+        <given-names>
+         DD
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Nussinov
+        </surname>
+        <given-names>
+         R
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Wright
+        </surname>
+        <given-names>
+         PE
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       The role of dynamic conformational ensembles in biomolecular recognition
+      </article-title>
+      <source>
+       Nat. Chem. Biol.
+      </source>
+      <year>
+       2009
+      </year>
+      <volume>
+       5
+      </volume>
+      <fpage>
+       789
+      </fpage>
+      <lpage>
+       796
+      </lpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BD1MXht1OnsLrJ
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       19841628
+      </pub-id>
+      <pub-id pub-id-type="pmcid">
+       2916928
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1038/nchembio.232
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR13">
+     <label>
+      13.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Gunasekaran
+        </surname>
+        <given-names>
+         K
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Ma
+        </surname>
+        <given-names>
+         B
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Nussinov
+        </surname>
+        <given-names>
+         R
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Is allostery an intrinsic property of all dynamic proteins?
+      </article-title>
+      <source>
+       Proteins Struct. Funct. Bioinforma.
+      </source>
+      <year>
+       2004
+      </year>
+      <volume>
+       57
+      </volume>
+      <fpage>
+       433
+      </fpage>
+      <lpage>
+       443
+      </lpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BD2cXovVyjs70%3D
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1002/prot.20232
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR14">
+     <label>
+      14.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Hekkelman
+        </surname>
+        <given-names>
+         ML
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         de Vries
+        </surname>
+        <given-names>
+         I
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Joosten
+        </surname>
+        <given-names>
+         RP
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Perrakis
+        </surname>
+        <given-names>
+         A
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Alphafill: enriching alphafold models with ligands and cofactors
+      </article-title>
+      <source>
+       Nat. Methods
+      </source>
+      <year>
+       2023
+      </year>
+      <volume>
+       20
+      </volume>
+      <fpage>
+       205
+      </fpage>
+      <lpage>
+       213
+      </lpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BB38XivFClt7bM
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       36424442
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1038/s41592-022-01685-y
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR15">
+     <label>
+      15.
+     </label>
+     <mixed-citation publication-type="other">
+      Gorgulla, C. Recent developments in structure-based virtual screening approaches. Preprint at
+      <ext-link ext-link-type="uri" xlink:href="https://arxiv.org/abs/2211.03208v1">
+       https://arxiv.org/abs/2211.03208v1
+      </ext-link>
+      (2022).
+     </mixed-citation>
+    </ref>
+    <ref id="CR16">
+     <label>
+      16.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Friesner
+        </surname>
+        <given-names>
+         RA
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Glide: a new approach for rapid, accurate docking and scoring. 1. method and assessment of docking accuracy
+      </article-title>
+      <source>
+       J. Med. Chem.
+      </source>
+      <year>
+       2004
+      </year>
+      <volume>
+       47
+      </volume>
+      <fpage>
+       1739
+      </fpage>
+      <lpage>
+       1749
+      </lpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BD2cXhsFyit74%3D
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       15027865
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1021/jm0306430
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR17">
+     <label>
+      17.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Trott
+        </surname>
+        <given-names>
+         O
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Olson
+        </surname>
+        <given-names>
+         AJ
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Autodock vina: improving the speed and accuracy of docking with a new scoring function, efficient optimization, and multithreading
+      </article-title>
+      <source>
+       J. Comput. Chem.
+      </source>
+      <year>
+       2010
+      </year>
+      <volume>
+       31
+      </volume>
+      <fpage>
+       455
+      </fpage>
+      <lpage>
+       461
+      </lpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BD1MXhsFGnur3O
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       19499576
+      </pub-id>
+      <pub-id pub-id-type="pmcid">
+       3041641
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1002/jcc.21334
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR18">
+     <label>
+      18.
+     </label>
+     <mixed-citation publication-type="other">
+      Scardino, V., Di Filippo, J. I. &amp; Cavasotto, C. N. How good are alphafold models for docking-based virtual screening?
+      <italic>
+       Iscience
+      </italic>
+      <bold>
+       26
+      </bold>
+      , 1 (2023).
+     </mixed-citation>
+    </ref>
+    <ref id="CR19">
+     <label>
+      19.
+     </label>
+     <mixed-citation publication-type="other">
+      Corso, G., Stärk, H., Jing, B., Barzilay, R. &amp; Jaakkola, T. Diffdock: diffusion steps, twists, and turns for molecular docking. In
+      <italic>
+       International Conference on Learning Representations
+      </italic>
+      <italic>
+       (ICLR)
+      </italic>
+      (ICIR, 2023).
+     </mixed-citation>
+    </ref>
+    <ref id="CR20">
+     <label>
+      20.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Miller
+        </surname>
+        <given-names>
+         EB
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Reliable and accurate solution to the induced fit docking problem for protein–ligand binding
+      </article-title>
+      <source>
+       J. Chem. Theory Comput.
+      </source>
+      <year>
+       2021
+      </year>
+      <volume>
+       17
+      </volume>
+      <fpage>
+       2630
+      </fpage>
+      <lpage>
+       2639
+      </lpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BB3MXnt1yntb0%3D
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       33779166
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1021/acs.jctc.1c00136
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR21">
+     <label>
+      21.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Ayaz
+        </surname>
+        <given-names>
+         P
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Structural mechanism of a drug-binding process involving a large conformational change of the protein target
+      </article-title>
+      <source>
+       Nat. Commun.
+      </source>
+      <year>
+       2023
+      </year>
+      <volume>
+       14
+      </volume>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BB3sXnt1Clu7o%3D
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       37019905
+      </pub-id>
+      <pub-id pub-id-type="pmcid">
+       10076256
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1038/s41467-023-36956-5
+      </pub-id>
+      <elocation-id>
+       1885
+      </elocation-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR22">
+     <label>
+      22.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Ferreiro
+        </surname>
+        <given-names>
+         DU
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Hegler
+        </surname>
+        <given-names>
+         JA
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Komives
+        </surname>
+        <given-names>
+         EA
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Wolynes
+        </surname>
+        <given-names>
+         PG
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       On the role of frustration in the energy landscapes of allosteric proteins
+      </article-title>
+      <source>
+       Proc. Natl. Acad. Sci. USA
+      </source>
+      <year>
+       2011
+      </year>
+      <volume>
+       108
+      </volume>
+      <fpage>
+       3499
+      </fpage>
+      <lpage>
+       3503
+      </lpage>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2011PNAS..108.3499F
+      </pub-id>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BC3MXivFGksLw%3D
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       21273505
+      </pub-id>
+      <pub-id pub-id-type="pmcid">
+       3048099
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1073/pnas.1018980108
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR23">
+     <label>
+      23.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Noé
+        </surname>
+        <given-names>
+         F
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Olsson
+        </surname>
+        <given-names>
+         S
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Köhler
+        </surname>
+        <given-names>
+         J
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Wu
+        </surname>
+        <given-names>
+         H
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Boltzmann generators: Sampling equilibrium states of many-body systems with deep learning
+      </article-title>
+      <source>
+       Science
+      </source>
+      <year>
+       2019
+      </year>
+      <volume>
+       365
+      </volume>
+      <fpage>
+       1147
+      </fpage>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2019Sci...365.1147N
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1126/science.aaw1147
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR24">
+     <label>
+      24.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Noé
+        </surname>
+        <given-names>
+         F
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         De Fabritiis
+        </surname>
+        <given-names>
+         G
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Clementi
+        </surname>
+        <given-names>
+         C
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Machine learning for protein folding and dynamics
+      </article-title>
+      <source>
+       Curr. Opin. Struct. Biol.
+      </source>
+      <year>
+       2020
+      </year>
+      <volume>
+       60
+      </volume>
+      <fpage>
+       77
+      </fpage>
+      <lpage>
+       84
+      </lpage>
+      <pub-id pub-id-type="pmid">
+       31881449
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1016/j.sbi.2019.12.005
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR25">
+     <label>
+      25.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Wong
+        </surname>
+        <given-names>
+         F
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Benchmarking alphafold-enabled molecular docking predictions for antibiotic discovery
+      </article-title>
+      <source>
+       Mol. Syst. Biol.
+      </source>
+      <year>
+       2022
+      </year>
+      <volume>
+       18
+      </volume>
+      <fpage>
+       11081
+      </fpage>
+      <pub-id pub-id-type="doi">
+       10.15252/msb.202211081
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR26">
+     <label>
+      26.
+     </label>
+     <mixed-citation publication-type="other">
+      Landrum, G. et al.
+      <italic>
+       RDKit: A Software Suite For Cheminformatics, Computational Chemistry, and Predictive Modeling
+      </italic>
+      (Academic Press Cambridge, 2013).
+     </mixed-citation>
+    </ref>
+    <ref id="CR27">
+     <label>
+      27.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Lin
+        </surname>
+        <given-names>
+         X
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Forging tools for refining predicted protein structures
+      </article-title>
+      <source>
+       Proc. Natl. Acad. Sci. USA
+      </source>
+      <year>
+       2019
+      </year>
+      <volume>
+       116
+      </volume>
+      <fpage>
+       9400
+      </fpage>
+      <lpage>
+       9409
+      </lpage>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2019PNAS..116.9400L
+      </pub-id>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BC1MXovFGltLY%3D
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       31000596
+      </pub-id>
+      <pub-id pub-id-type="pmcid">
+       6511001
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1073/pnas.1900778116
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR28">
+     <label>
+      28.
+     </label>
+     <mixed-citation publication-type="other">
+      Watson, J. L. et al. De novo design of protein structure and function with RFdiffusion.
+      <italic>
+       Nature
+      </italic>
+      <bold>
+       620
+      </bold>
+      , 1089–1100 (2023).
+     </mixed-citation>
+    </ref>
+    <ref id="CR29">
+     <label>
+      29.
+     </label>
+     <mixed-citation publication-type="other">
+      Song, Y. et al. Score-based generative modeling through stochastic differential equations. Preprint at
+      <ext-link ext-link-type="uri" xlink:href="https://arxiv.org/abs/2011.13456">
+       https://arxiv.org/abs/2011.13456
+      </ext-link>
+      (2020).
+     </mixed-citation>
+    </ref>
+    <ref id="CR30">
+     <label>
+      30.
+     </label>
+     <mixed-citation publication-type="other">
+      Qiao, Z., Nie, W., Vahdat, A., Miller III, T. F. &amp; Anandkumar, A. State-specific protein-ligand complex structure prediction with a multi-scale deep generative model. Preprint at
+      <ext-link ext-link-type="uri" xlink:href="https://arxiv.org/pdf/2209.15171.pdf">
+       https://arxiv.org/pdf/2209.15171.pdf
+      </ext-link>
+      (2023).
+     </mixed-citation>
+    </ref>
+    <ref id="CR31">
+     <label>
+      31.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Nakata
+        </surname>
+        <given-names>
+         S
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Mori
+        </surname>
+        <given-names>
+         Y
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Tanaka
+        </surname>
+        <given-names>
+         S
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       End-to-end protein–ligand complex structure generation with diffusion-based generative models
+      </article-title>
+      <source>
+       BMC Bioinforma.
+      </source>
+      <year>
+       2023
+      </year>
+      <volume>
+       24
+      </volume>
+      <fpage>
+       1
+      </fpage>
+      <lpage>
+       18
+      </lpage>
+      <pub-id pub-id-type="doi">
+       10.1186/s12859-023-05354-5
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR32">
+     <label>
+      32.
+     </label>
+     <mixed-citation publication-type="other">
+      Brocidiacono, M., Popov, K. I., Koes, D. R. &amp; Tropsha, A. Plantain: diffusion-inspired pose score minimization for fast and accurate molecular docking. Preprint at
+      <ext-link ext-link-type="uri" xlink:href="https://arxiv.org/abs/2307.12090">
+       https://arxiv.org/abs/2307.12090
+      </ext-link>
+      (2023).
+     </mixed-citation>
+    </ref>
+    <ref id="CR33">
+     <label>
+      33.
+     </label>
+     <mixed-citation publication-type="other">
+      Jing, B., Corso, G., Chang, J., Barzilay, R. &amp; Jaakkola, T. Torsional diffusion for molecular conformer generation.
+      <italic>
+       Adv. Neural Inf. Process. Syst.
+      </italic>
+      <bold>
+       35
+      </bold>
+      , 24240–24253 (2022).
+     </mixed-citation>
+    </ref>
+    <ref id="CR34">
+     <label>
+      34.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Liu
+        </surname>
+        <given-names>
+         Z
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Pdb-wide collection of binding data: current status of the pdbbind database
+      </article-title>
+      <source>
+       Bioinformatics
+      </source>
+      <year>
+       2015
+      </year>
+      <volume>
+       31
+      </volume>
+      <fpage>
+       405
+      </fpage>
+      <lpage>
+       412
+      </lpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BC28Xht1GjsrnI
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       25301850
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1093/bioinformatics/btu626
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR35">
+     <label>
+      35.
+     </label>
+     <mixed-citation publication-type="other">
+      Stärk, H., Ganea, O., Pattanaik, L., Barzilay, R. &amp; Jaakkola, T. Equibind: geometric deep learning for drug binding structure prediction. In
+      <italic>
+       International Conference on Machine Learning
+      </italic>
+      20503–20521 (PMLR, 2022).
+     </mixed-citation>
+    </ref>
+    <ref id="CR36">
+     <label>
+      36.
+     </label>
+     <mixed-citation publication-type="other">
+      Lu, W. et al. Tankbind: trigonometry-aware neural networks for drug-protein binding structure prediction.
+      <italic>
+       Adv. Neural Inf. Process. Syst.
+      </italic>
+      (2022).
+     </mixed-citation>
+    </ref>
+    <ref id="CR37">
+     <label>
+      37.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Santos
+        </surname>
+        <given-names>
+         R
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       A comprehensive map of molecular drug targets
+      </article-title>
+      <source>
+       Nat. Rev. Drug Discov.
+      </source>
+      <year>
+       2017
+      </year>
+      <volume>
+       16
+      </volume>
+      <fpage>
+       19
+      </fpage>
+      <lpage>
+       34
+      </lpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BC28XitVSms7rK
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       27910877
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1038/nrd.2016.230
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR38">
+     <label>
+      38.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Bender
+        </surname>
+        <given-names>
+         BJ
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       A practical guide to large-scale docking
+      </article-title>
+      <source>
+       Nat. Protoc.
+      </source>
+      <year>
+       2021
+      </year>
+      <volume>
+       16
+      </volume>
+      <fpage>
+       4799
+      </fpage>
+      <lpage>
+       4832
+      </lpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BB3MXitFWgsL%2FE
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       34561691
+      </pub-id>
+      <pub-id pub-id-type="pmcid">
+       8522653
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1038/s41596-021-00597-z
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR39">
+     <label>
+      39.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Kanev
+        </surname>
+        <given-names>
+         GK
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         de Graaf
+        </surname>
+        <given-names>
+         C
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Westerman
+        </surname>
+        <given-names>
+         BA
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         de Esch
+        </surname>
+        <given-names>
+         IJ
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Kooistra
+        </surname>
+        <given-names>
+         AJ
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Klifs: an overhaul after the first 5 years of supporting kinase research
+      </article-title>
+      <source>
+       Nucleic Acids Res.
+      </source>
+      <year>
+       2021
+      </year>
+      <volume>
+       49
+      </volume>
+      <fpage>
+       562
+      </fpage>
+      <lpage>
+       569
+      </lpage>
+      <pub-id pub-id-type="doi">
+       10.1093/nar/gkaa895
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR40">
+     <label>
+      40.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Huang
+        </surname>
+        <given-names>
+         S-Y
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Zou
+        </surname>
+        <given-names>
+         X
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Ensemble docking of multiple protein structures: considering protein structural variations in molecular docking
+      </article-title>
+      <source>
+       Proteins Struct. Funct. Bioinforma.
+      </source>
+      <year>
+       2007
+      </year>
+      <volume>
+       66
+      </volume>
+      <fpage>
+       399
+      </fpage>
+      <lpage>
+       421
+      </lpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BD2sXms1SjsQ%3D%3D
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1002/prot.21214
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR41">
+     <label>
+      41.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Amaro
+        </surname>
+        <given-names>
+         RE
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Ensemble docking in drug discovery
+      </article-title>
+      <source>
+       Biophys. J.
+      </source>
+      <year>
+       2018
+      </year>
+      <volume>
+       114
+      </volume>
+      <fpage>
+       2271
+      </fpage>
+      <lpage>
+       2278
+      </lpage>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2018BpJ...114.2271A
+      </pub-id>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BC1cXmt1agtL0%3D
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       29606412
+      </pub-id>
+      <pub-id pub-id-type="pmcid">
+       6129458
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1016/j.bpj.2018.02.038
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR42">
+     <label>
+      42.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Lampe
+        </surname>
+        <given-names>
+         JW
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Discovery of a first-in-class inhibitor of the histone methyltransferase setd2 suitable for preclinical studies
+      </article-title>
+      <source>
+       ACS Med. Chem. Lett.
+      </source>
+      <year>
+       2021
+      </year>
+      <volume>
+       12
+      </volume>
+      <fpage>
+       1539
+      </fpage>
+      <lpage>
+       1545
+      </lpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BB3MXhvVClu7jP
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       34671445
+      </pub-id>
+      <pub-id pub-id-type="pmcid">
+       8521618
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1021/acsmedchemlett.1c00272
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR43">
+     <label>
+      43.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Alford
+        </surname>
+        <given-names>
+         JS
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Conformational-design-driven discovery of ezm0414: a selective, potent setd2 inhibitor for clinical studies
+      </article-title>
+      <source>
+       ACS Med. Chem. Lett.
+      </source>
+      <year>
+       2022
+      </year>
+      <volume>
+       13
+      </volume>
+      <fpage>
+       1137
+      </fpage>
+      <lpage>
+       1143
+      </lpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BB38XhsVCqu7jF
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       35859865
+      </pub-id>
+      <pub-id pub-id-type="pmcid">
+       9290024
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1021/acsmedchemlett.2c00167
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR44">
+     <label>
+      44.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Zhao
+        </surname>
+        <given-names>
+         M
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Lee
+        </surname>
+        <given-names>
+         W-P
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Garrison
+        </surname>
+        <given-names>
+         EP
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Marth
+        </surname>
+        <given-names>
+         GT
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Ssw library: an simd smith-waterman c/c++ library for use in genomic applications
+      </article-title>
+      <source>
+       PLoS ONE
+      </source>
+      <year>
+       2013
+      </year>
+      <volume>
+       8
+      </volume>
+      <fpage>
+       82138
+      </fpage>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2013PLoSO...882138Z
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1371/journal.pone.0082138
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR45">
+     <label>
+      45.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Krafcikova
+        </surname>
+        <given-names>
+         P
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Silhan
+        </surname>
+        <given-names>
+         J
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Nencka
+        </surname>
+        <given-names>
+         R
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Boura
+        </surname>
+        <given-names>
+         E
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Structural analysis of the sars-cov-2 methyltransferase complex involved in RNA cap creation bound to sinefungin
+      </article-title>
+      <source>
+       Nat. Commun.
+      </source>
+      <year>
+       2020
+      </year>
+      <volume>
+       11
+      </volume>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2020NatCo..11.3717K
+      </pub-id>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BB3cXhsVKltLvM
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       32709887
+      </pub-id>
+      <pub-id pub-id-type="pmcid">
+       7381658
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1038/s41467-020-17495-9
+      </pub-id>
+      <elocation-id>
+       3717
+      </elocation-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR46">
+     <label>
+      46.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Cimermancic
+        </surname>
+        <given-names>
+         P
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Cryptosite: expanding the druggable proteome by characterization and prediction of cryptic binding sites
+      </article-title>
+      <source>
+       J. Mol. Biol.
+      </source>
+      <year>
+       2016
+      </year>
+      <volume>
+       428
+      </volume>
+      <fpage>
+       709
+      </fpage>
+      <lpage>
+       719
+      </lpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BC28XitFCqs78%3D
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       26854760
+      </pub-id>
+      <pub-id pub-id-type="pmcid">
+       4794384
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1016/j.jmb.2016.01.029
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR47">
+     <label>
+      47.
+     </label>
+     <mixed-citation publication-type="other">
+      Buttenschoen, M., Morris, G. M. &amp; Deane, C. M. Posebusters: Ai-based docking methods fail to generate physically valid poses or generalise to novel sequences.
+      <italic>
+       Chem. Sci.
+      </italic>
+      (2023).
+     </mixed-citation>
+    </ref>
+    <ref id="CR48">
+     <label>
+      48.
+     </label>
+     <mixed-citation publication-type="other">
+      Bryant, P., Kelkar, A., Guljas, A., Clementi, C. &amp; Noé, F. Structure prediction of protein-ligand complexes from sequence information with Umol. Preprint at
+      <ext-link ext-link-type="uri" xlink:href="https://www.biorxiv.org/content/10.1101/2023.11.03.565471v1">
+       https://www.biorxiv.org/content/10.1101/2023.11.03.565471v1
+      </ext-link>
+      (2023).
+     </mixed-citation>
+    </ref>
+    <ref id="CR49">
+     <label>
+      49.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Zhong
+        </surname>
+        <given-names>
+         ED
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Bepler
+        </surname>
+        <given-names>
+         T
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Berger
+        </surname>
+        <given-names>
+         B
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Davis
+        </surname>
+        <given-names>
+         JH
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Cryodrgn: reconstruction of heterogeneous cryo-em structures using neural networks
+      </article-title>
+      <source>
+       Nat. Methods
+      </source>
+      <year>
+       2021
+      </year>
+      <volume>
+       18
+      </volume>
+      <fpage>
+       176
+      </fpage>
+      <lpage>
+       185
+      </lpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BB3MXjt1SmsLw%3D
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       33542510
+      </pub-id>
+      <pub-id pub-id-type="pmcid">
+       8183613
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1038/s41592-020-01049-4
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR50">
+     <label>
+      50.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Zhang
+        </surname>
+        <given-names>
+         S
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Usp14-regulated allostery of the human proteasome by time-resolved cryo-em
+      </article-title>
+      <source>
+       Nature
+      </source>
+      <year>
+       2022
+      </year>
+      <volume>
+       605
+      </volume>
+      <fpage>
+       567
+      </fpage>
+      <lpage>
+       574
+      </lpage>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2022Natur.605..567Z
+      </pub-id>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BB38XhtFersLjP
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       35477760
+      </pub-id>
+      <pub-id pub-id-type="pmcid">
+       9117149
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1038/s41586-022-04671-8
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR51">
+     <label>
+      51.
+     </label>
+     <mixed-citation publication-type="other">
+      Punjani, A. &amp; Fleet, D. J. 3DFlex: determining structure and motion of flexible proteins from cryo-EM.
+      <italic>
+       Nat. Methods
+      </italic>
+      <bold>
+       20
+      </bold>
+      , 860–870 (2023).
+     </mixed-citation>
+    </ref>
+    <ref id="CR52">
+     <label>
+      52.
+     </label>
+     <mixed-citation publication-type="other">
+      Geiger, M. &amp; Smidt, T. e3nn: euclidean neural networks. Preprint at
+      <ext-link ext-link-type="uri" xlink:href="https://arxiv.org/abs/2207.09453">
+       https://arxiv.org/abs/2207.09453
+      </ext-link>
+      (2022).
+     </mixed-citation>
+    </ref>
+    <ref id="CR53">
+     <label>
+      53.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Batzner
+        </surname>
+        <given-names>
+         S
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       E (3)-equivariant graph neural networks for data-efficient and accurate interatomic potentials
+      </article-title>
+      <source>
+       Nat. Commun.
+      </source>
+      <year>
+       2022
+      </year>
+      <volume>
+       13
+      </volume>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2022NatCo..13.2453B
+      </pub-id>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BB38Xht1ShtLrE
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       35508450
+      </pub-id>
+      <pub-id pub-id-type="pmcid">
+       9068614
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1038/s41467-022-29939-5
+      </pub-id>
+      <elocation-id>
+       2453
+      </elocation-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR54">
+     <label>
+      54.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         McBride
+        </surname>
+        <given-names>
+         WG
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Thalidomide and congenital abnormalities
+      </article-title>
+      <source>
+       Lancet
+      </source>
+      <year>
+       1961
+      </year>
+      <volume>
+       2
+      </volume>
+      <fpage>
+       90927
+      </fpage>
+      <lpage>
+       8
+      </lpage>
+     </mixed-citation>
+    </ref>
+    <ref id="CR55">
+     <label>
+      55.
+     </label>
+     <mixed-citation publication-type="other">
+      Song, Y., Dhariwal, P., Chen, M. &amp; Sutskever, I. Consistency models. Preprint at
+      <ext-link ext-link-type="uri" xlink:href="https://arxiv.org/abs/2303.01469">
+       https://arxiv.org/abs/2303.01469
+      </ext-link>
+      (2023).
+     </mixed-citation>
+    </ref>
+    <ref id="CR56">
+     <label>
+      56.
+     </label>
+     <mixed-citation publication-type="other">
+      Vaswani, A. et al. Attention is all you need.
+      <italic>
+       Adv. Neural Inf. Process. Syst
+      </italic>
+      .
+      <bold>
+       30
+      </bold>
+      , (2017).
+     </mixed-citation>
+    </ref>
+    <ref id="CR57">
+     <label>
+      57.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Kabsch
+        </surname>
+        <given-names>
+         W
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       A solution for the best rotation to relate two sets of vectors
+      </article-title>
+      <source>
+       Acta Crystallogr. Sect. A: Crystal Phys. Diffr. Theor. Gen. Crystallogr.
+      </source>
+      <year>
+       1976
+      </year>
+      <volume>
+       32
+      </volume>
+      <fpage>
+       922
+      </fpage>
+      <lpage>
+       923
+      </lpage>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       1976AcCrA..32..922K
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1107/S0567739476001873
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR58">
+     <label>
+      58.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Mariani
+        </surname>
+        <given-names>
+         V
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Biasini
+        </surname>
+        <given-names>
+         M
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Barbato
+        </surname>
+        <given-names>
+         A
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Schwede
+        </surname>
+        <given-names>
+         T
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       lddt: a local superposition-free score for comparing protein structures and models using distance difference tests
+      </article-title>
+      <source>
+       Bioinformatics
+      </source>
+      <year>
+       2013
+      </year>
+      <volume>
+       29
+      </volume>
+      <fpage>
+       2722
+      </fpage>
+      <lpage>
+       2728
+      </lpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BC3sXhs1CisrfK
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       23986568
+      </pub-id>
+      <pub-id pub-id-type="pmcid">
+       3799472
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1093/bioinformatics/btt473
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR59">
+     <label>
+      59.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Batsanov
+        </surname>
+        <given-names>
+         SS
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Van der waals radii of elements
+      </article-title>
+      <source>
+       Inorganic Mater.
+      </source>
+      <year>
+       2001
+      </year>
+      <volume>
+       37
+      </volume>
+      <fpage>
+       871
+      </fpage>
+      <lpage>
+       885
+      </lpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BD3MXnt1Cgsb4%3D
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1023/A:1011625728803
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR60">
+     <label>
+      60.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Meli
+        </surname>
+        <given-names>
+         R
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Biggin
+        </surname>
+        <given-names>
+         PC
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       spyrmsd: symmetry-corrected RMSD calculations in Python
+      </article-title>
+      <source>
+       J. Cheminforma.
+      </source>
+      <year>
+       2020
+      </year>
+      <volume>
+       12
+      </volume>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BB3cXitlWks7rF
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1186/s13321-020-00455-2
+      </pub-id>
+      <elocation-id>
+       49
+      </elocation-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR61">
+     <label>
+      61.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         McNutt
+        </surname>
+        <given-names>
+         AT
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Gnina 1.0: molecular docking with deep learning
+      </article-title>
+      <source>
+       J. Cheminforma.
+      </source>
+      <year>
+       2021
+      </year>
+      <volume>
+       13
+      </volume>
+      <fpage>
+       1
+      </fpage>
+      <lpage>
+       20
+      </lpage>
+     </mixed-citation>
+    </ref>
+    <ref id="CR62">
+     <label>
+      62.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Sherman
+        </surname>
+        <given-names>
+         W
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Beard
+        </surname>
+        <given-names>
+         HS
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Farid
+        </surname>
+        <given-names>
+         R
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Use of an induced fit receptor structure in virtual screening
+      </article-title>
+      <source>
+       Chem. Biol. Drug Design
+      </source>
+      <year>
+       2006
+      </year>
+      <volume>
+       67
+      </volume>
+      <fpage>
+       83
+      </fpage>
+      <lpage>
+       84
+      </lpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BD28XhsVSjtL0%3D
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1111/j.1747-0285.2005.00327.x
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR63">
+     <label>
+      63.
+     </label>
+     <mixed-citation publication-type="other">
+      Lu, W. luwei0917/DynamicBind: V1.0.
+      <ext-link ext-link-type="doi" xlink:href="10.5281/zenodo.10443816">
+       https://doi.org/10.5281/zenodo.10443816
+      </ext-link>
+      (2023).
+     </mixed-citation>
+    </ref>
+   </ref-list>
+  </ref-list>
+  <app-group>
+   <app id="App1" specific-use="web-only">
+    <sec id="Sec26">
+     <title>
+      Ek Bilgi
+     </title>
+     <p id="Par53">
+      <supplementary-material content-type="local-data" id="MOESM1" xlink:title="Supplementary information">
+       <media mime-subtype="pdf" mimetype="application" xlink:href="MediaObjects/41467_2024_45461_MOESM1_ESM.pdf">
+        <caption xml:lang="en">
+         <p>
+          Supplementary Information
+         </p>
+        </caption>
+       </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="MOESM2" xlink:title="Supplementary information">
+       <media mime-subtype="pdf" mimetype="application" xlink:href="MediaObjects/41467_2024_45461_MOESM2_ESM.pdf">
+        <caption xml:lang="en">
+         <p>
+          Reporting Summary
+         </p>
+        </caption>
+       </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="MOESM3" xlink:title="Supplementary information">
+       <media mime-subtype="pdf" mimetype="application" xlink:href="MediaObjects/41467_2024_45461_MOESM3_ESM.pdf">
+        <caption xml:lang="en">
+         <p>
+          Peer Review File
+         </p>
+        </caption>
+       </media>
+      </supplementary-material>
+     </p>
+    </sec>
+    <sec id="Sec27">
+     <title>
+      Kaynak Verileri
+     </title>
+     <p id="Par54">
+      <supplementary-material content-type="local-data" id="MOESM4" xlink:title="Source data">
+       <media mime-subtype="vnd.ms-excel" mimetype="application" xlink:href="MediaObjects/41467_2024_45461_MOESM4_ESM.xlsx">
+        <caption xml:lang="en">
+         <p>
+          Source Data file
+         </p>
+        </caption>
+       </media>
+      </supplementary-material>
+     </p>
+    </sec>
+   </app>
+  </app-group>
+  <notes notes-type="ESMHint">
+   <title>
+    Ek Bilgi
+   </title>
+   <p>
+    The online version contains supplementary material available at
+    <ext-link ext-link-type="doi" xlink:href="10.1038/s41467-024-45461-2">
+     https://doi.org/10.1038/s41467-024-45461-2
+    </ext-link>
+    .
+   </p>
+  </notes>
+  <notes notes-type="Misc">
+   <p>
+    <bold>
+     Publisher’s note
+    </bold>
+    Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.
+   </p>
+  </notes>
+ </back>
+</article>

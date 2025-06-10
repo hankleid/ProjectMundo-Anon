@@ -1,0 +1,552 @@
+{
+    "1": {
+        "question": "What is the primary goal of the proposed physics-informed neural network (PINN) for lithium-ion batteries?",
+        "options": [
+            "A. To estimate the state-of-health (SOH) of lead-acid batteries.",
+            "B. To model the charge/discharge cycles of supercapacitors.",
+            "C. To achieve accurate and stable estimation of lithium-ion battery SOH.",
+            "D. To increase the maximum charge capacity of batteries.",
+            "E. To reduce the environmental impact of battery disposal.",
+            "F. I don't know."
+        ]
+    },
+    "2": {
+        "question": "What is the mean absolute percentage error (MAPE) achieved by the proposed PINN across the datasets?",
+        "options": [
+            "A. 1.05%",
+            "B. 2.60%",
+            "C. 0.87%",
+            "D. 1.21%",
+            "E. 2.00%",
+            "F. I don't know."
+        ]
+    },
+    "3": {
+        "question": "How many batteries were tested across all datasets in the study?",
+        "options": [
+            "A. 100",
+            "B. 210",
+            "C. 387",
+            "D. 550",
+            "E. 1000",
+            "F. I don't know."
+        ]
+    },
+    "4": {
+        "question": "What type of batteries does the newly generated dataset in the study primarily consist of?",
+        "options": [
+            "A. Lithium-iron-phosphate (LFP) batteries",
+            "B. Lithium-cobalt batteries",
+            "C. Lithium-nickel-cobalt-manganese-oxide (NCM) batteries",
+            "D. Nickel-metal-hydride (NiMH) batteries",
+            "E. Lead-acid batteries",
+            "F. I don't know."
+        ]
+    },
+    "5": {
+        "question": "In the study, how many samples were used for validation from the generated and additional datasets?",
+        "options": [
+            "A. 100,000",
+            "B. 200,000",
+            "C. 310,705",
+            "D. 400,000",
+            "E. 1,000,000",
+            "F. I don't know."
+        ]
+    },
+    "6": {
+        "question": "Which dataset is referred to as the XJTU dataset in the study?",
+        "options": [
+            "A. The dataset from MIT.",
+            "B. The dataset consisting of batteries from LISHEN.",
+            "C. The dataset from A123 Systems.",
+            "D. The dataset from Zhu et al.",
+            "E. The dataset from Severson et al.",
+            "F. I don't know."
+        ]
+    },
+    "7": {
+        "question": "What feature extraction method is introduced in the study to handle different battery types and protocols?",
+        "options": [
+            "A. Extracting features only from discharge curves.",
+            "B. Using deep convolutional neural networks.",
+            "C. Extracting features from a short period before the battery is fully charged.",
+            "D. Extracting features from the entire charging cycle.",
+            "E. Using only voltage data for feature extraction.",
+            "F. I don't know."
+        ]
+    },
+    "8": {
+        "question": "According to the article, what characteristic of the PINN makes it suitable for use with a smaller dataset?",
+        "options": [
+            "A. The ability to process high dimensional data only.",
+            "B. The integration of physical models using empirical degradation equations.",
+            "C. The lack of data precision in the input requirements.",
+            "D. The use of high learning rate parameters.",
+            "E. The exclusion of any machine learning techniques.",
+            "F. I don't know."
+        ]
+    },
+    "9": {
+        "question": "What is the objective function of the proposed PINN designed to minimize during training?",
+        "options": [
+            "A. Loss due to manufacturing defects",
+            "B. The monotonicity of the SOH trajectory",
+            "C. The errors between predicted and true values",
+            "D. Errors from charging time only",
+            "E. The physical size of the battery dataset",
+            "F. I don't know."
+        ]
+    },
+    "10": {
+        "question": "How are the features normalized in the PINN's framework to reduce the impact of magnitude differences?",
+        "options": [
+            "A. By scaling them to a range of [0, 1].",
+            "B. Through a logarithmic transformation.",
+            "C. By scaling them to a range of [-1, 1].",
+            "D. Using a quadratic transformation.",
+            "E. With no normalization applied.",
+            "F. I don't know."
+        ]
+    },
+    "11": {
+        "question": "What general feature correlates with SOH across different datasets according to the study's findings?",
+        "options": [
+            "A. The battery's manufacturing date",
+            "B. The charging current rate",
+            "C. The correlation coefficient between voltage features and SOH",
+            "D. The battery case material",
+            "E. The electrolyte's chemical composition",
+            "F. I don't know."
+        ]
+    },
+    "12": {
+        "question": "What form does the function f(t, x) that models the relationship between features and SOH take in the PINN?",
+        "options": [
+            "A. A polynomial equation",
+            "B. A set of linear regression formulas",
+            "C. A fully connected neural network",
+            "D. A simple integral equation",
+            "E. A convolutional neural network",
+            "F. I don't know."
+        ]
+    },
+    "13": {
+        "question": "What is the role of the neural network G(\u22c5) in the structure of the proposed PINN?",
+        "options": [
+            "A. To predict the charging efficiency of the battery.",
+            "B. To map features directly to the battery temperature.",
+            "C. To model the battery degradation dynamic behaviors.",
+            "D. To optimize the battery manufacturing process.",
+            "E. To reduce the battery's physical size.",
+            "F. I don't know."
+        ]
+    },
+    "14": {
+        "question": "Which dataset's degradation trajectories are shown in Figure 2?",
+        "options": [
+            "A. The MIT dataset",
+            "B. The HUST dataset",
+            "C. The XJTU dataset",
+            "D. The TJU dataset",
+            "E. The LFP dataset",
+            "F. I don't know."
+        ]
+    },
+    "15": {
+        "question": "What method is used to train the proposed PINN on multiple datasets?",
+        "options": [
+            "A. Leave-one-out cross-validation.",
+            "B. End-to-end training without pre-processing.",
+            "C. A pre-training on one dataset followed by fine-tuning on others.",
+            "D. Training with data augmentation techniques only.",
+            "E. A single training session with all datasets combined.",
+            "F. I don't know."
+        ]
+    },
+    "16": {
+        "question": "What is one benefit of the proposed PINN regarding small sample scenarios?",
+        "options": [
+            "A. It performs at par with MLP and CNN with 3-4 batteries.",
+            "B. It only requires one battery data for perfect prediction.",
+            "C. It compensates for any chemical impurities in batteries.",
+            "D. It can eliminate the need for SOH estimation altogether.",
+            "E. It scales non-linearly with the number of features.",
+            "F. I don't know."
+        ]
+    },
+    "17": {
+        "question": "In which scenario did the PINN trained with as little as one battery perform almost as well as the competitors?",
+        "options": [
+            "A. High temperature testing",
+            "B. Small sample scenarios",
+            "C. Manufacturing defect scenarios",
+            "D. Extremely large scale datasets",
+            "E. Testing batteries for recycling purposes",
+            "F. I don't know."
+        ]
+    },
+    "18": {
+        "question": "What architecture category does the proposed PINN fall under according to Aykol et al.?",
+        "options": [
+            "A. A1 type",
+            "B. A2 type",
+            "C. B1 type",
+            "D. B2 type",
+            "E. C1 type",
+            "F. I don't know."
+        ]
+    },
+    "19": {
+        "question": "Which type of neural network architectures is used to implement the solution function and dynamic behavior function in the proposed PINN?",
+        "options": [
+            "A. Recurrent Neural Networks (RNNs)",
+            "B. Fully connected neural networks",
+            "C. Convolutional Neural Networks (CNNs)",
+            "D. Support vector machines",
+            "E. Single-layered Perceptrons",
+            "F. I don't know."
+        ]
+    },
+    "20": {
+        "question": "Which dataset contains data from 77 LFP/graphite cells under different multi-stage discharge protocols?",
+        "options": [
+            "A. HUST dataset",
+            "B. MIT dataset",
+            "C. XJTU dataset",
+            "D. TJU dataset",
+            "E. Zhu et al. dataset",
+            "F. I don't know."
+        ]
+    },
+    "21": {
+        "question": "What figure illustrates the overall structure of the proposed physics-informed neural network as described?",
+        "options": [
+            "A. Figure 1",
+            "B. Figure 2",
+            "C. Figure 3",
+            "D. Figure 4",
+            "E. Figure 5",
+            "F. I don't know."
+        ]
+    },
+    "22": {
+        "question": "What kind of process dynamics does the nonlinear function g(\u22c5) in the PINN model?",
+        "options": [
+            "A. Photovoltaic dynamics",
+            "B. Temperature fluctuation dynamics",
+            "C. Battery degradation dynamics",
+            "D. Hydrodynamic flow",
+            "E. Thermal conduction",
+            "F. I don't know."
+        ]
+    },
+    "23": {
+        "question": "What parameter indicates that the battery has reached its first service life?",
+        "options": [
+            "A. A decrease in the nominal voltage.",
+            "B. An SOH drop to 80%.",
+            "C. A temperature reaching 45\u00b0C.",
+            "D. A SOH increase to 110%.",
+            "E. An increase in charge capacity by 50%.",
+            "F. I don't know."
+        ]
+    },
+    "24": {
+        "question": "Which method integrates physical equations directly into machine learning architectures in the context of the article?",
+        "options": [
+            "A. Hybrid method",
+            "B. Sequential Integration method",
+            "C. Modular Integration method",
+            "D. Isolated Neural Network method",
+            "E. Direct Regression method",
+            "F. I don't know."
+        ]
+    },
+    "25": {
+        "question": "According to Table 2, what is the MAPE value for the proposed PINN in batch 1 of the XJTU dataset?",
+        "options": [
+            "A. 0.0260",
+            "B. 0.0070",
+            "C. 0.0094",
+            "D. 0.0330",
+            "E. 0.0350",
+            "F. I don't know."
+        ]
+    },
+    "26": {
+        "question": "From the study, what effect does the increase in training batteries generally have on the test errors of models?",
+        "options": [
+            "A. It increases the test errors.",
+            "B. It has no effect.",
+            "C. It reduces the test errors.",
+            "D. It only affects specific batches.",
+            "E. It oscillates the test errors.",
+            "F. I don't know."
+        ]
+    },
+    "27": {
+        "question": "Which dataset demonstrated the most stability of the proposed method in training and testing as seen in the experiment results?",
+        "options": [
+            "A. MIT dataset",
+            "B. XJTU dataset",
+            "C. HUST dataset",
+            "D. TJU dataset",
+            "E. Combined dataset",
+            "F. I don't know."
+        ]
+    },
+    "28": {
+        "question": "What is an advantage of physics-informed neural networks highlighted by the study?",
+        "options": [
+            "A. They require no data for training.",
+            "B. They eliminate the need for traditional physical equations.",
+            "C. They combine traditional physics models with neural networks.",
+            "D. They solely use physical equations without neural networks.",
+            "E. They specialize only in data-driven behavior without physics considerations.",
+            "F. I don't know."
+        ]
+    },
+    "29": {
+        "question": "What operational constraint does the empirical PINN aim to satisfy during battery degradation modeling?",
+        "options": [
+            "A. Real-time data constraint",
+            "B. Finite element constraint",
+            "C. Degradation equation specified by partial differential equation",
+            "D. Simplified linear constraint",
+            "E. Strict energy conservation constraint",
+            "F. I don't know."
+        ]
+    },
+    "30": {
+        "question": "In the supplementary materials, which battery batch from the XJTU dataset is used as a representative for fine-tuning in the evaluation study?",
+        "options": [
+            "A. Batch 2",
+            "B. Batch 5",
+            "C. Batch 1",
+            "D. Batch 4",
+            "E. Batch 3",
+            "F. I don't know."
+        ]
+    },
+    "31": {
+        "question": "In the proposed method\u2019s objective function, which two components are essential for minimizing errors?",
+        "options": [
+            "A. Complexity loss, linear loss",
+            "B. PDE loss, monotonicity loss",
+            "C. Entropy loss, stability loss",
+            "D. Voltage loss, current loss",
+            "E. Temperature loss, pressure loss",
+            "F. I don't know."
+        ]
+    },
+    "32": {
+        "question": "In the context of transfer learning in the study, what are the assumptions made about the degradation dynamics G(\u22c5)?",
+        "options": [
+            "A. It only depends on the datasets",
+            "B. It is independent of charge/discharge protocols and datasets",
+            "C. It changes every time with temperature",
+            "D. It depends solely on the battery construction material",
+            "E. It is inconsequential to SOH estimation",
+            "F. I don't know."
+        ]
+    },
+    "33": {
+        "question": "Which feature extraction focuses specifically on the pre-charging CC-CV period?",
+        "options": [
+            "A. Full battery cycle extraction",
+            "B. Pre-discharge extraction",
+            "C. Only constant current extraction",
+            "D. Short period before full charge extraction",
+            "E. Battery manufacturing characteristic extraction",
+            "F. I don't know."
+        ]
+    },
+    "34": {
+        "question": "What type of correlation between features and SOH is suggested by some datasets as meaningful?",
+        "options": [
+            "A. Negative linear correlation",
+            "B. Random correlation",
+            "C. Strong positive or negative correlation depending on battery chemistry",
+            "D. Polynomial correlation",
+            "E. Correlation inversely proportional to charge time",
+            "F. I don't know."
+        ]
+    },
+    "35": {
+        "question": "What is indicated by the variations in the extracted features' correlation with SOH across different datasets?",
+        "options": [
+            "A. Correlation is highly affected by both the charge/discharge protocols and chemical composition.",
+            "B. Correlations are universally constant regardless of conditions.",
+            "C. The chemical composition of a battery influences correlation more than charge/discharge protocols.",
+            "D. Correlation is solely determined by the nominal capacity.",
+            "E. Correlation does not have significant variance across different datasets.",
+            "F. I don't know."
+        ]
+    },
+    "36": {
+        "question": "What training technique does the proposed PINN utilize to address physical modeling complexities?",
+        "options": [
+            "A. Using only empirical models without machine learning",
+            "B. Modeling using empirical degradation and state space equations",
+            "C. Purely data-driven optimization",
+            "D. Ignoring physical laws for flexibility",
+            "E. Isolating voltage data for simulations",
+            "F. I don't know."
+        ]
+    },
+    "37": {
+        "question": "During the transfer experiments, which part of the PINN is fine-tuned while the other is frozen?",
+        "options": [
+            "A. G(\u22c5) is fine-tuned while F(\u22c5) is frozen",
+            "B. None of the parts are fine-tuned",
+            "C. Both F(\u22c5) and G(\u22c5) are fine-tuned",
+            "D. F(\u22c5) is fine-tuned while G(\u22c5) is frozen",
+            "E. Neither part is frozen, both are adjusted freely",
+            "F. I don't know."
+        ]
+    },
+    "38": {
+        "question": "Which condition is NOT strongly correlated with SOH according to the feature extraction in the study?",
+        "options": [
+            "A. Charge time",
+            "B. Internal temperature",
+            "C. Voltage features 11\u201316",
+            "D. Charging current features 9\u201310",
+            "E. External battery material",
+            "F. I don't know."
+        ]
+    },
+    "39": {
+        "question": "What is the primary reason stated for using features from a short period before full charge?",
+        "options": [
+            "A. It speeds up the charging cycle significantly.",
+            "B. It provides more robust and generalizable features.",
+            "C. It's easier for machine learning models to process.",
+            "D. It reduces the voltage magnitude discrepancies.",
+            "E. It saves computational resources.",
+            "F. I don't know."
+        ]
+    },
+    "40": {
+        "question": "According to the study, what is a common feature of the charging process that enables effective feature extraction?",
+        "options": [
+            "A. It's always consistent and occurs in a single step.",
+            "B. It's more fixed and regular compared to the discharging process.",
+            "C. It shows rapid state fluctuations.",
+            "D. It uniquely varies for every battery",
+            "E. It solely depends on external conditions.",
+            "F. I don't know."
+        ]
+    },
+    "41": {
+        "question": "According to the study, how did the proposed method perform in comparison to MLP and CNN when training on small samples?",
+        "options": [
+            "A. The proposed method performed worse in all cases.",
+            "B. The performance was indistinguishable among the methods.",
+            "C. The proposed method generally showed better performance.",
+            "D. CNN outperformed both PINN and MLP under all conditions.",
+            "E. MLP outperformed the proposed method significantly.",
+            "F. I don't know."
+        ]
+    },
+    "42": {
+        "question": "What was the main limitation acknowledged for Hybrid methods in current battery SOH estimation?",
+        "options": [
+            "A. Lack of accessible internal battery parameters",
+            "B. The unavailability of battery cutting-edge technology",
+            "C. The over-simplicity of models fitting all datasets",
+            "D. Discontinued advances in battery chemistry",
+            "E. Interfacing issues with high-performance computing resources",
+            "F. I don't know."
+        ]
+    },
+    "43": {
+        "question": "Which batch size from the datasets was used in small sample experiments to demonstrate sample efficiency?",
+        "options": [
+            "A. 5 batteries",
+            "B. 6 batteries",
+            "C. 1 battery",
+            "D. 3 batteries",
+            "E. 10 batteries",
+            "F. I don't know."
+        ]
+    },
+    "44": {
+        "question": "How does a physics-informed neural network combine traditional and modern modeling approaches?",
+        "options": [
+            "A. It uses data only from outdated experimental methods.",
+            "B. It focuses solely on neural networks without physics constraints.",
+            "C. By amalgamating physics-based models with data-driven machine learning.",
+            "D. By using empirical equations without verifying them with data.",
+            "E. Through excluding data-driven approaches to preserve core physics models.",
+            "F. I don't know."
+        ]
+    },
+    "45": {
+        "question": "What is meant by 'monotonicity loss' as part of the PINN training process?",
+        "options": [
+            "A. Redundancy in feature selection",
+            "B. The prevention of cyclic dependencies in data",
+            "C. Ensuring the degradation trajectory follows a physical property",
+            "D. Reducing complexities in circuit analysis",
+            "E. Enhancing monotonic signals through reinforcement",
+            "F. I don't know."
+        ]
+    },
+    "46": {
+        "question": "In the context of feature extraction, what shows a positive correlation in LiNiCo-x-type batteries?",
+        "options": [
+            "A. Features 1 and 2",
+            "B. Features 9 and 10",
+            "C. Features 3 and 4",
+            "D. Features 15 and 16",
+            "E. Features 5 and 6",
+            "F. I don't know."
+        ]
+    },
+    "47": {
+        "question": "Why does the proposed model focus on the constant voltage (CV) charging mode?",
+        "options": [
+            "A. Because always generates the highest SOH.",
+            "B. Due to its rarity in experimental datasets.",
+            "C. It is more stable and regularly present in datasets.",
+            "D. It consumes less computational power.",
+            "E. To reduce redundant experimental setups.",
+            "F. I don't know."
+        ]
+    },
+    "48": {
+        "question": "What does Figure 3 in the article illustrate?",
+        "options": [
+            "A. A visual representation of the PINN architecture",
+            "B. The degradation trajectories of each battery",
+            "C. The heatmap of correlation between features and SOH",
+            "D. The comprehensive dataset collection process",
+            "E. Implementation of transfer processes",
+            "F. I don't know."
+        ]
+    },
+    "49": {
+        "question": "What training strategy does the proposed method use that allows for fast adaptation to new data?",
+        "options": [
+            "A. Randomized complete block design",
+            "B. Pure exploration in feature space",
+            "C. Fine-tuning through transfer learning",
+            "D. Exception-based learning",
+            "E. Strict adherence to empirical models",
+            "F. I don't know."
+        ]
+    },
+    "50": {
+        "question": "What feature extraction method is noted for its potential to avoid information leakage?",
+        "options": [
+            "A. Full battery discharge examinations",
+            "B. Short-term pre-charging data extraction",
+            "C. Models extrapolating internal high-energy dynamics",
+            "D. Feature selection based on battery usage history",
+            "E. Incremental feature testing methods",
+            "F. I don't know."
+        ]
+    }
+}

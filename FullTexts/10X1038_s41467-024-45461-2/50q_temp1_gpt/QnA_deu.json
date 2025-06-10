@@ -1,0 +1,552 @@
+{
+    "1": {
+        "question": "Was ist die primäre Innovation, die DynamicBind gegenüber traditionellen Docking-Methoden präsentiert?",
+        "options": {
+            "A": "DynamicBind behandelt Proteine als statische Einheiten.",
+            "B": "DynamicBind erlaubt nur starres Docking.",
+            "C": "DynamicBind generiert effizient ligandspezifische Proteinkonformationen.",
+            "D": "DynamicBind erfordert Holo-Strukturen für die Vorhersage der Ligandenbindung.",
+            "E": "DynamicBind verwendet eine Monte-Carlo-Simulation für das Docking.",
+            "F": "Ich weiß es nicht"
+        }
+    },
+    "2": {
+        "question": "Was verwendet das DynamicBind-Modell, um eine glatte Energielandschaft für effiziente Übergänge zu konstruieren?",
+        "options": {
+            "A": "Monte-Carlo-Simulationen",
+            "B": "Äquivariante geometrische Diffusionsnetzwerke",
+            "C": "Körperstarre Transformationen",
+            "D": "Traditionelle All-Atom-Kraftfelder",
+            "E": "Von AlphaFold vorhergesagte Konfigurationen",
+            "F": "Ich weiß es nicht"
+        }
+    },
+    "3": {
+        "question": "In welchem Format akzeptiert DynamicBind kleine Molekül-Liganden während der Inferenz?",
+        "options": {
+            "A": "Simplified Molecular Input Line Entry System (SMILES)",
+            "B": "Protein Data Bank (PDB) Format",
+            "C": "Proteinsequenzformat",
+            "D": "XYZ-Dateiformat",
+            "E": "Kartesische Koordinatendatei",
+            "F": "Ich weiß es nicht"
+        }
+    },
+    "4": {
+        "question": "Welche Rolle spielt die morph-ähnliche Transformation im Training von DynamicBind?",
+        "options": {
+            "A": "Um zufällige Ligandenkonformationen zu erzeugen",
+            "B": "Um Gaußsches Rauschen zu Proteinstrukturen hinzuzufügen",
+            "C": "Um Proteindecoys zu erzeugen, die chemischen Einschränkungen entsprechen",
+            "D": "Um Proteinstrukturen direkt auf kartesische Koordinaten abzubilden",
+            "E": "Um Monte-Carlo-Simulationen durchzuführen",
+            "F": "Ich weiß es nicht"
+        }
+    },
+    "5": {
+        "question": "Wie vergleicht sich DynamicBind mit traditionellen Boltzmann-Generatoren?",
+        "options": {
+            "A": "DynamicBind erfordert weniger Rechenressourcen.",
+            "B": "DynamicBind ist auf trainierte Systeme beschränkt.",
+            "C": "DynamicBind ist auf neue Proteine und Liganden generalisierbar.",
+            "D": "DynamicBind verwendet All-Atom-Simulationen.",
+            "E": "DynamicBind sagt statische Proteinkonformationen voraus.",
+            "F": "Ich weiß es nicht"
+        }
+    },
+    "6": {
+        "question": "Wie hoch ist die Erfolgsrate von DynamicBind unter dem strengen Kriterium von Ligand-RMSD <2 Å und Clash-Score <0,35 im PDBbind-Testset?",
+        "options": {
+            "A": "0,10",
+            "B": "0,15",
+            "C": "0,19",
+            "D": "0,33",
+            "E": "0,40",
+            "F": "Ich weiß es nicht"
+        }
+    },
+    "7": {
+        "question": "Was ist der Vorteil des contact-LDDT (cLDDT) Bewertungsmoduls von DynamicBind?",
+        "options": {
+            "A": "Es sagt nur Ligandenstrukturen voraus.",
+            "B": "Es generiert Proteinstrukturen.",
+            "C": "Es korreliert gut mit dem tatsächlichen Ligand-RMSD.",
+            "D": "Es verwendet Kraftfelder, um die Ligandenbindung vorherzusagen.",
+            "E": "Es berechnet Energielandschaften.",
+            "F": "Ich weiß es nicht"
+        }
+    },
+    "8": {
+        "question": "Welcher Datensatz wurde verwendet, um die Leistung von DynamicBind im Antibiotika-Screening zu testen?",
+        "options": {
+            "A": "PDBbind",
+            "B": "DrugBank",
+            "C": "Ein Antibiotika-Datensatz einschließlich E. coli-Proteinen",
+            "D": "ChEMBL",
+            "E": "PubChem BioAssay",
+            "F": "Ich weiß es nicht"
+        }
+    },
+    "9": {
+        "question": "Welches Kriterium wurde verwendet, um flexible Reste im VINA-Flexiblen Docking zu bestimmen?",
+        "options": {
+            "A": "Reste innerhalb von 3 Å von Ligandenatomen",
+            "B": "Reste, die an das Proteinrückgrat gebunden sind",
+            "C": "Reste mit Seitenkettenatomen innerhalb von 5 Å von Ligandenatomen",
+            "D": "Reste, die durch Gaußsches Rauschen bestimmt werden",
+            "E": "Reste, die an Aminosäuren angrenzen",
+            "F": "Ich weiß es nicht"
+        }
+    },
+    "10": {
+        "question": "Wie führt DynamicBind die Vorhersage von Protein-Ligand-Interaktionen durch?",
+        "options": {
+            "A": "Indem Proteine als starre Strukturen behandelt werden",
+            "B": "Verwendung von Satz-Transformatoren für die Sequenzeinbettung",
+            "C": "Durch Diffusionsmodelle, die auf die ursprüngliche Proteinkonformation zurückführen",
+            "D": "Mit Ensemble-Docking von Ligandenkonformationen",
+            "E": "Mit durch Kryo-EM generierten Strukturen",
+            "F": "Ich weiß es nicht"
+        }
+    },
+    "11": {
+        "question": "Welche Methode wurde im Artikel vorgestellt, um die Verbesserung der Proteinkonformationsvorhersage zu überprüfen?",
+        "options": {
+            "A": "Monte-Carlo-Simulationen",
+            "B": "Root Mean Square Deviation (RMSD)",
+            "C": "Proteinsequenz-Ausrichtung",
+            "D": "Molekulardynamik-Simulationen",
+            "E": "Ligand-Ähnlichkeitsmessung",
+            "F": "Ich weiß es nicht"
+        }
+    },
+    "12": {
+        "question": "Welchen berüchtigten konformationellen Übergang bewältigt DynamicBind effizient in Kinasen?",
+        "options": {
+            "A": "Helix-Coil-Übergang",
+            "B": "DFG-in zu DFG-out Übergang",
+            "C": "Beta-Faltblatt-Bildung",
+            "D": "Disulfidbrückenbildung",
+            "E": "Alpha-Helix-Fusion",
+            "F": "Ich weiß es nicht"
+        }
+    },
+    "13": {
+        "question": "DynamicBind wurde auf Proteinsimilarität getestet, unter Verwendung welcher strukturellen Datenbank?",
+        "options": {
+            "A": "REBASE",
+            "B": "ExPASy",
+            "C": "Kinase–Ligand Interaction Fingerprints and Structures (KLIFS)",
+            "D": "PROSITE",
+            "E": "Gene Ontology",
+            "F": "Ich weiß es nicht"
+        }
+    },
+    "14": {
+        "question": "DynamicBind's Leistung bei der Vorhersage von Bindungen ist besonders niedrig für Proteine mit:",
+        "options": {
+            "A": "Kurzen Aminosäuresequenzen",
+            "B": "Hoher Sequenzähnlichkeit zum Trainingsset",
+            "C": "Niedriger Sequenzähnlichkeit zum Trainingsset",
+            "D": "Starken hydrophoben Interaktionen",
+            "E": "Niedrigen RMSD-Werten",
+            "F": "Ich weiß es nicht"
+        }
+    },
+    "15": {
+        "question": "Wie handhabt das DynamicBind-Modell die Rangfolge von Ligandenposen während der Inferenz?",
+        "options": {
+            "A": "Basierend auf dem Helixgehalt von Proteinen",
+            "B": "Durch mittlere quadratische Abweichung vom Proteinzentrum",
+            "C": "Verwendung vorhergesagter contact-LDDT (cLDDT) Werte",
+            "D": "Durch Monte-Carlo-Akzeptanzscore",
+            "E": "Durch vortrainierte Ligandenstrukturen",
+            "F": "Ich weiß es nicht"
+        }
+    },
+    "16": {
+        "question": "DynamicBind erreicht höhere Erfolgsraten im Docking durch welches Merkmal gegenüber traditionellen Kraftfeldmodellen?",
+        "options": {
+            "A": "Erhöhte Rechenleistung",
+            "B": "Effiziente Ligand-RMSD-Vorhersagen aufgrund höherer Clash-Toleranz",
+            "C": "Reduzierte Abtastungsiterationen",
+            "D": "Bessere Sequenzausrichtung",
+            "E": "Erweiterte Kristallstrukturdatenbanken",
+            "F": "Ich weiß es nicht"
+        }
+    },
+    "17": {
+        "question": "Was zeigt Abb. 2 im Kontext von DynamicBind hauptsächlich?",
+        "options": {
+            "A": "Proteinsynthesewege",
+            "B": "Erfolgsraten und RMSD-Schwellenwerte",
+            "C": "Konformationelle Änderungen in DNA",
+            "D": "Sequenzähnlichkeitsdaten",
+            "E": "Ligandenneigungsscores",
+            "F": "Ich weiß es nicht"
+        }
+    },
+    "18": {
+        "question": "DynamicBind hat Potenzial gezeigt, 'undruggable' Ziele primär anzugehen durch:",
+        "options": {
+            "A": "Verbesserung der Stoffwechselwege",
+            "B": "Identifizierung kryptischer Taschen in Proteinstrukturen",
+            "C": "Einführung marktreifer Medikamente sofort",
+            "D": "Erhöhung der Proteinsteifigkeit",
+            "E": "Modulation chemischer Brennraten",
+            "F": "Ich weiß es nicht"
+        }
+    },
+    "19": {
+        "question": "Abb. 1 im Artikel illustriert die Fähigkeit von DynamicBind, was vorherzusagen?",
+        "options": {
+            "A": "Einzelne statische Strukturen",
+            "B": "Sowohl statische als auch dynamische Konformationen für verschiedene Liganden",
+            "C": "Nur Wasserstoffbrücken-Konformationen",
+            "D": "Nur PDB-Strukturen aus Kristallstrukturen",
+            "E": "Einzelne chemische Bindungsanordnungen",
+            "F": "Ich weiß es nicht"
+        }
+    },
+    "20": {
+        "question": "Welche Datenaufteilungsmethode wurde beim Training des DynamicBind-Modells verwendet?",
+        "options": {
+            "A": "Zufällige Auswahl",
+            "B": "Chronologische, zeitbasierte Aufteilung",
+            "C": "AlphaFold-Sequenzähnlichkeit",
+            "D": "Isoelektrische Punkte von Liganden",
+            "E": "Strikte chemische Bindungsvariation",
+            "F": "Ich weiß es nicht"
+        }
+    },
+    "21": {
+        "question": "DynamicBind's vorhergesagter Ligand-RMSD für PDB 7V3S ist:",
+        "options": {
+            "A": "1,00 Å",
+            "B": "2,50 Å",
+            "C": "0,51 Å",
+            "D": "1,5 Å",
+            "E": "0,75 Å",
+            "F": "Ich weiß es nicht"
+        }
+    },
+    "22": {
+        "question": "Welche Transformation wird von DynamicBind für eine effiziente Strukturvorhersage genutzt?",
+        "options": {
+            "A": "Distanzkarte",
+            "B": "Morph-ähnliche Transformation",
+            "C": "Temperaturvarianzprojektion",
+            "D": "Sequenzmorphing",
+            "E": "Chemoinformatisches Docking",
+            "F": "Ich weiß es nicht"
+        }
+    },
+    "23": {
+        "question": "Wie lange dauert das Training von DynamicBind auf acht Nvidia A100 80GB GPUs?",
+        "options": {
+            "A": "12 Stunden",
+            "B": "3 Tage",
+            "C": "5 Tage",
+            "D": "10 Tage",
+            "E": "1 Woche",
+            "F": "Ich weiß es nicht"
+        }
+    },
+    "24": {
+        "question": "Was stellt die Modellausgabe von DynamicBind für die strukturellen Updates des Liganden dar?",
+        "options": {
+            "A": "AlphaFold-Sequenzmutationen",
+            "B": "Symmetrische Rotationen",
+            "C": "Proteindomänenfusionen",
+            "D": "Torsionswinkel-Updates für drehbare Bindungen",
+            "E": "Vorhersagen starrer Moleküle",
+            "F": "Ich weiß es nicht"
+        }
+    },
+    "25": {
+        "question": "Was bedeutet ein negativer Δpocket RMSD in Abb. 4?",
+        "options": {
+            "A": "Höhere Abweichung vom nativen Zustand",
+            "B": "Vorhergesagte Struktur weicht von der wahren Struktur ab",
+            "C": "Vorhergesagte Struktur ist nahe an der AlphaFold-Struktur",
+            "D": "Vorhergesagte Struktur stimmt enger mit der nativen Struktur überein als die AlphaFold-Vorhersage",
+            "E": "Niedrigere Proteinfaltungseffizienz",
+            "F": "Ich weiß es nicht"
+        }
+    },
+    "26": {
+        "question": "Welchen Algorithmus wendet DynamicBind an, um Holo- und Apo-Proteinstrukturen auszurichten?",
+        "options": {
+            "A": "Needleman-Wunsch",
+            "B": "Kabsch-Algorithmus",
+            "C": "Gauss-Seidel",
+            "D": "Backpropagation",
+            "E": "Boltzmann-Mittelung",
+            "F": "Ich weiß es nicht"
+        }
+    },
+    "27": {
+        "question": "Was bewertet der contact-LDDT-Score in DynamicBind?",
+        "options": {
+            "A": "Chemische Reaktivität des Proteins",
+            "B": "Globale Übersetzungskonflikte",
+            "C": "NATÜRLICHE Ligand-Protein-Kontaktbildung",
+            "D": "Nur RMSD-Abweichungen",
+            "E": "Ligand-geladene Interaktionen",
+            "F": "Ich weiß es nicht"
+        }
+    },
+    "28": {
+        "question": "Welche Methode verwendet DynamicBind, um Freiheitsgrade in nicht-physischen Konfigurationen zu reduzieren?",
+        "options": {
+            "A": "Erweiterte Parallelverarbeitung",
+            "B": "All-Atom-Darstellung",
+            "C": "Grobkörnige Darstellung",
+            "D": "Festkörpertransformationen",
+            "E": "Duale Repräsentationsmodellierung",
+            "F": "Ich weiß es nicht"
+        }
+    },
+    "29": {
+        "question": "Abb. 1 hebt die Fähigkeit von DynamicBind hervor, wie viele Holo-Konformationen vorherzusagen?",
+        "options": {
+            "A": "Eine",
+            "B": "Zwei",
+            "C": "Vier",
+            "D": "Drei",
+            "E": "Fünf",
+            "F": "Ich weiß es nicht"
+        }
+    },
+    "30": {
+        "question": "DynamicBind's einzigartige Stärke, laut Abb. 5, liegt in seiner Fähigkeit zu:",
+        "options": {
+            "A": "Globales Docking durchzuführen",
+            "B": "Alle Arten von Molekülen zu binden",
+            "C": "Elektrostatische Proteinbindung durchzuführen",
+            "D": "Arzneimittelaffinität präzise vorherzusagen",
+            "E": "Dynamische Sequenzfaltung zu durchlaufen",
+            "F": "Ich weiß es nicht"
+        }
+    },
+    "31": {
+        "question": "Welche Rolle fokussiert sich Abb. 6 auf die Bewertung der Fähigkeit von DynamicBind im virtuellen Screening?",
+        "options": {
+            "A": "Gesamte Proteomsequenzierung",
+            "B": "Antibiotika-Benchmark-Leistung",
+            "C": "Demonstration hydrophober Interaktionen",
+            "D": "Schnelle Visualisierungstechniken",
+            "E": "Strukturelle Variationen über Simulationen hinweg",
+            "F": "Ich weiß es nicht"
+        }
+    },
+    "32": {
+        "question": "Was ist der primäre Faktor, der die Fähigkeit von DynamicBind mit Proteinen einschränkt?",
+        "options": {
+            "A": "Vorhersagegeschwindigkeit",
+            "B": "Interaktionsstärke mit Proteinen",
+            "C": "Generalisierung auf Proteine mit niedriger Sequenzähnlichkeit zum Trainingsset",
+            "D": "Hohe latente Variabilität",
+            "E": "Niedrige Abtastkonsistenz",
+            "F": "Ich weiß es nicht"
+        }
+    },
+    "33": {
+        "question": "DynamicBind's Vorhersagemodell umfasst wie viele Parameter?",
+        "options": {
+            "A": "32,44 Millionen",
+            "B": "45,89 Millionen",
+            "C": "63,67 Millionen",
+            "D": "72,50 Millionen",
+            "E": "86,23 Millionen",
+            "F": "Ich weiß es nicht"
+        }
+    },
+    "34": {
+        "question": "Welcher Bewertungsscore innerhalb von DynamicBind misst die Interaktionsstärke in vorhergesagten Protein-Ligand-Komplexen?",
+        "options": {
+            "A": "H-Bindungs-Score",
+            "B": "Bindungsaffinitäts-Score",
+            "C": "Interaktionsgradient",
+            "D": "Induzierte sekundäre Varianz",
+            "E": "Clash-Penetrationsmetrik",
+            "F": "Ich weiß es nicht"
+        }
+    },
+    "35": {
+        "question": "Aus welchem strukturellen Datensatz wurden die Trainingsdaten für DynamicBind bezogen?",
+        "options": {
+            "A": "UniProt",
+            "B": "PDBbind",
+            "C": "SMILES-Datenbank",
+            "D": "BioPDB",
+            "E": "NASP-Datensatz",
+            "F": "Ich weiß es nicht"
+        }
+    },
+    "36": {
+        "question": "DynamicBind's Netzwerkarchitektur verarbeitet Graphen unter Verwendung von:",
+        "options": {
+            "A": "Local Distance Difference Test (LDDT)",
+            "B": "Sphärische Harmonische und Mehrschichtige Perzeptrons (MLPs)",
+            "C": "Polarkoordinatensystem",
+            "D": "Globale Koordinatenübersetzung",
+            "E": "Sequenzhomologie-Indizes",
+            "F": "Ich weiß es nicht"
+        }
+    },
+    "37": {
+        "question": "Abb. 3 zeigt DynamicBind's Fähigkeit, ligandspezifische konformationelle Änderungen zu erfassen, die entscheidend sind für:",
+        "options": {
+            "A": "Vermeidung struktureller Homogenität",
+            "B": "Vermeidung übersehener potenzieller 'Treffer'-Verbindungen",
+            "C": "Ermöglichung der Reduktion thermischer Faltung",
+            "D": "Unterstützung der Lösungsmittel-Interaktionsmodellierung",
+            "E": "Erhöhung der Anforderungen an die Rechenleistung",
+            "F": "Ich weiß es nicht"
+        }
+    },
+    "38": {
+        "question": "Welche Aufgabe demonstriert DynamicBind's Potenzial zur Erweiterung der computergestützten Arzneimittelforschung?",
+        "options": {
+            "A": "Proteinfaltungsanalyse",
+            "B": "Ligandenkonformationsanalyse",
+            "C": "Proteomweites virtuelles Screening",
+            "D": "Sequenzausrichtung über Datenbanken hinweg",
+            "E": "Dynamische thermische Neukalibrierung",
+            "F": "Ich weiß es nicht"
+        }
+    },
+    "39": {
+        "question": "Wie sagt das Netzwerk in DynamicBind Updates für Proteinknoten voraus?",
+        "options": {
+            "A": "Durch Temperaturdifferentiale",
+            "B": "Verwendung von Übersetzungs- und Rotationsvektoren aus endgültigen Interaktionsdarstellungen",
+            "C": "Skalare Ausrichtungsfunktionen",
+            "D": "Molekulares Feldextrapolation",
+            "E": "Hydrophobe Clusterbildung",
+            "F": "Ich weiß es nicht"
+        }
+    },
+    "40": {
+        "question": "Welches der folgenden ist ein primärer Vorteil von DynamicBind's Ansatz?",
+        "options": {
+            "A": "Begrenztes Parametertraining",
+            "B": "Spezifität für wenige Ligandentypen",
+            "C": "Fähigkeit, dynamisches Docking mit großen konformationellen Änderungen durchzuführen",
+            "D": "Statische Modellierung von Proteinstrukturen",
+            "E": "Exklusiver Fokus auf DNA-Interaktionen",
+            "F": "Ich weiß es nicht"
+        }
+    },
+    "41": {
+        "question": "Welches Eingabeformat akzeptiert DynamicBind für Proteinstrukturen?",
+        "options": {
+            "A": "FPKM",
+            "B": "Punkte und Striche",
+            "C": "Protein Data Bank (PDB) Format",
+            "D": "Frequenzdatensatz",
+            "E": "Epigenetische Markersequenzen",
+            "F": "Ich weiß es nicht"
+        }
+    },
+    "42": {
+        "question": "Welches bedeutende Problem zielt DynamicBind darauf ab, in der Arzneimittelforschung zu adressieren?",
+        "options": {
+            "A": "Korrekte sequentielle Ausrichtung von mRNA",
+            "B": "Vorhersage starrer Proteinkonformationen",
+            "C": "Dynamik von Proteinen, um die Bindung kryptischer Taschen zu ermöglichen",
+            "D": "Der ausschließliche Einsatz von maschinellen Lern-Metamodellen",
+            "E": "Statische Visualisierung von Proteinkomplexen",
+            "F": "Ich weiß es nicht"
+        }
+    },
+    "43": {
+        "question": "In Anbetracht seiner Sequenzbeschränkungen zeigt DynamicBind bemerkenswerte Wirksamkeit bei:",
+        "options": {
+            "A": "Nicht-strukturellen Proteinmotiven",
+            "B": "Hochstrukturierten zellulären Konstrukten",
+            "C": "Liganden, die im Training noch nie zuvor aufgetreten sind",
+            "D": "Unveränderlichen Enzymaktivitätssequenzen",
+            "E": "Labor-Drogen-nachahmenden Partikeln",
+            "F": "Ich weiß es nicht"
+        }
+    },
+    "44": {
+        "question": "Die DFG-in/out-Konformationsherausforderung wird typischerweise von DynamicBind bewältigt durch:",
+        "options": {
+            "A": "Erweiterte Sequenzausrichtung",
+            "B": "Vordefinierte Docking-Taschen",
+            "C": "Dynamische Anpassung der vorhergesagten AlphaFold-Struktur",
+            "D": "Analoge Proteinkopiermechanismen",
+            "E": "Statische Proteinmodelle",
+            "F": "Ich weiß es nicht"
+        }
+    },
+    "45": {
+        "question": "Der primäre Fokus von Abb. 5 beinhaltet DynamicBind's Fähigkeit, zu enthüllen:",
+        "options": {
+            "A": "Standardkatalytische Taschen",
+            "B": "Zusätzliche Elektronenwege",
+            "C": "Kryptische Taschen in Proteinen",
+            "D": "Direkte mRNA-Interaktionen",
+            "E": "Lokalisierte Sequenzkonflikte",
+            "F": "Ich weiß es nicht"
+        }
+    },
+    "46": {
+        "question": "In einem virtuellen Screening-Kontext übertrifft DynamicBind andere Methoden primär durch:",
+        "options": {
+            "A": "Entschlüsselung von Sequenzunterschieden",
+            "B": "Reduzierung der Rechengeschwindigkeit",
+            "C": "Verfeinerung der AlphaFold-Struktur zu einem nativeren Zustand",
+            "D": "Fokussierung ausschließlich auf Proteinfaltung",
+            "E": "Integration mehrerer mRNA-Stellen",
+            "F": "Ich weiß es nicht"
+        }
+    },
+    "47": {
+        "question": "Was vereint DynamicBind in einem einzigen Rahmen?",
+        "options": {
+            "A": "Proteinübersetzung und mRNA-Codierung",
+            "B": "Ligandenmolekulargewicht und Ladungsvariabilität",
+            "C": "Proteinkonformationsgenerierung und Ligandenpose-Vorhersage",
+            "D": "Sequenzfaltungsänderungen",
+            "E": "Genomische Ausdrucksvariationen",
+            "F": "Ich weiß es nicht"
+        }
+    },
+    "48": {
+        "question": "Wie adressiert DynamicBind's Trainingsprozess Torsionsrotationen?",
+        "options": {
+            "A": "Durch synthetische Rotationen",
+            "B": "Verwendung vorprogrammierter Torsionsereignisse",
+            "C": "Über Kabsch-Algorithmus",
+            "D": "Durch RMSD-Ausrichtung nach Winkelaktualisierungen",
+            "E": "Durch Festpunktberechnungen",
+            "F": "Ich weiß es nicht"
+        }
+    },
+    "49": {
+        "question": "DynamicBind's Ansatz ist primär darauf ausgelegt, welchen Bereich der Arzneimittelforschung zu beeinflussen?",
+        "options": {
+            "A": "Studien zur Proteintranskriptionsvarianz",
+            "B": "Interstellaren biologischen Elementtransport",
+            "C": "Aufklärung der Struktur-Funktions-Beziehung",
+            "D": "Gravitationsbiochemische Schwankungen",
+            "E": "Genomische Replikationsprozesse",
+            "F": "Ich weiß es nicht"
+        }
+    },
+    "50": {
+        "question": "Bei der Bewertung zeigt DynamicBind überlegene Leistung auf welchem virtuellen Screening-Datensatz?",
+        "options": {
+            "A": "ChEMBL",
+            "B": "PubChem",
+            "C": "Ein Antibiotika-Benchmark-Datensatz",
+            "D": "ZINC-Datenbank",
+            "E": "DrugBank",
+            "F": "Ich weiß es nicht"
+        }
+    }
+}

@@ -1,0 +1,552 @@
+{
+  "1": {
+    "question": "¿Cuál es el objetivo principal de la red neuronal informada por la física (PINN) propuesta para baterías de iones de litio?",
+    "options": [
+      "A. Estimar el estado de salud (SOH) de las baterías de plomo-ácido.",
+      "B. Modelar los ciclos de carga/descarga de supercondensadores.",
+      "C. Lograr una estimación precisa y estable del SOH de las baterías de iones de litio.",
+      "D. Aumentar la capacidad máxima de carga de las baterías.",
+      "E. Reducir el impacto ambiental de la eliminación de baterías.",
+      "F. No lo sé."
+    ]
+  },
+  "2": {
+    "question": "¿Cuál es el error porcentual absoluto medio (MAPE) logrado por la PINN propuesta en los conjuntos de datos?",
+    "options": [
+      "A. 1.05%",
+      "B. 2.60%",
+      "C. 0.87%",
+      "D. 1.21%",
+      "E. 2.00%",
+      "F. No lo sé."
+    ]
+  },
+  "3": {
+    "question": "¿Cuántas baterías se probaron en todos los conjuntos de datos del estudio?",
+    "options": [
+      "A. 100",
+      "B. 210",
+      "C. 387",
+      "D. 550",
+      "E. 1000",
+      "F. No lo sé."
+    ]
+  },
+  "4": {
+    "question": "¿De qué tipo de baterías consiste principalmente el nuevo conjunto de datos generado en el estudio?",
+    "options": [
+      "A. Baterías de fosfato de hierro y litio (LFP)",
+      "B. Baterías de cobalto de litio",
+      "C. Baterías de óxido de níquel-cobalto-manganeso (NCM)",
+      "D. Baterías de hidruro metálico de níquel (NiMH)",
+      "E. Baterías de plomo-ácido",
+      "F. No lo sé."
+    ]
+  },
+  "5": {
+    "question": "En el estudio, ¿cuántas muestras se utilizaron para la validación de los conjuntos de datos generados y adicionales?",
+    "options": [
+      "A. 100,000",
+      "B. 200,000",
+      "C. 310,705",
+      "D. 400,000",
+      "E. 1,000,000",
+      "F. No lo sé."
+    ]
+  },
+  "6": {
+    "question": "¿Qué conjunto de datos se refiere como el conjunto de datos XJTU en el estudio?",
+    "options": [
+      "A. El conjunto de datos del MIT.",
+      "B. El conjunto de datos que consiste en baterías de LISHEN.",
+      "C. El conjunto de datos de A123 Systems.",
+      "D. El conjunto de datos de Zhu et al.",
+      "E. El conjunto de datos de Severson et al.",
+      "F. No lo sé."
+    ]
+  },
+  "7": {
+    "question": "¿Qué método de extracción de características se introduce en el estudio para manejar diferentes tipos de baterías y protocolos?",
+    "options": [
+      "A. Extracción de características solo de las curvas de descarga.",
+      "B. Uso de redes neuronales convolucionales profundas.",
+      "C. Extracción de características de un corto período antes de que la batería esté completamente cargada.",
+      "D. Extracción de características de todo el ciclo de carga.",
+      "E. Uso solo de datos de voltaje para la extracción de características.",
+      "F. No lo sé."
+    ]
+  },
+  "8": {
+    "question": "Según el artículo, ¿qué característica de la PINN la hace adecuada para su uso con un conjunto de datos más pequeño?",
+    "options": [
+      "A. La capacidad de procesar solo datos de alta dimensión.",
+      "B. La integración de modelos físicos utilizando ecuaciones de degradación empíricas.",
+      "C. La falta de precisión de los datos en los requisitos de entrada.",
+      "D. El uso de parámetros de alta tasa de aprendizaje.",
+      "E. La exclusión de cualquier técnica de aprendizaje automático.",
+      "F. No lo sé."
+    ]
+  },
+  "9": {
+    "question": "¿Cuál es la función objetivo de la PINN propuesta diseñada para minimizar durante el entrenamiento?",
+    "options": [
+      "A. Pérdida debida a defectos de fabricación",
+      "B. La monotonía de la trayectoria del SOH",
+      "C. Los errores entre los valores predichos y los verdaderos",
+      "D. Errores solo del tiempo de carga",
+      "E. El tamaño físico del conjunto de datos de la batería",
+      "F. No lo sé."
+    ]
+  },
+  "10": {
+    "question": "¿Cómo se normalizan las características en el marco de la PINN para reducir el impacto de las diferencias de magnitud?",
+    "options": [
+      "A. Escalándolas a un rango de [0, 1].",
+      "B. A través de una transformación logarítmica.",
+      "C. Escalándolas a un rango de [-1, 1].",
+      "D. Usando una transformación cuadrática.",
+      "E. Sin aplicar normalización.",
+      "F. No lo sé."
+    ]
+  },
+  "11": {
+    "question": "¿Qué característica general se correlaciona con el SOH en diferentes conjuntos de datos según los hallazgos del estudio?",
+    "options": [
+      "A. La fecha de fabricación de la batería",
+      "B. La tasa de corriente de carga",
+      "C. El coeficiente de correlación entre las características de voltaje y el SOH",
+      "D. El material de la carcasa de la batería",
+      "E. La composición química del electrolito",
+      "F. No lo sé."
+    ]
+  },
+  "12": {
+    "question": "¿Qué forma toma la función f(t, x) que modela la relación entre características y SOH en la PINN?",
+    "options": [
+      "A. Una ecuación polinómica",
+      "B. Un conjunto de fórmulas de regresión lineal",
+      "C. Una red neuronal completamente conectada",
+      "D. Una ecuación integral simple",
+      "E. Una red neuronal convolucional",
+      "F. No lo sé."
+    ]
+  },
+  "13": {
+    "question": "¿Cuál es el papel de la red neuronal G(⋅) en la estructura de la PINN propuesta?",
+    "options": [
+      "A. Predecir la eficiencia de carga de la batería.",
+      "B. Mapear características directamente a la temperatura de la batería.",
+      "C. Modelar los comportamientos dinámicos de degradación de la batería.",
+      "D. Optimizar el proceso de fabricación de la batería.",
+      "E. Reducir el tamaño físico de la batería.",
+      "F. No lo sé."
+    ]
+  },
+  "14": {
+    "question": "¿Las trayectorias de degradación de qué conjunto de datos se muestran en la Figura 2?",
+    "options": [
+      "A. El conjunto de datos del MIT",
+      "B. El conjunto de datos de HUST",
+      "C. El conjunto de datos de XJTU",
+      "D. El conjunto de datos de TJU",
+      "E. El conjunto de datos de LFP",
+      "F. No lo sé."
+    ]
+  },
+  "15": {
+    "question": "¿Qué método se utiliza para entrenar la PINN propuesta en múltiples conjuntos de datos?",
+    "options": [
+      "A. Validación cruzada de dejar uno fuera.",
+      "B. Entrenamiento de extremo a extremo sin preprocesamiento.",
+      "C. Un pre-entrenamiento en un conjunto de datos seguido de ajuste fino en otros.",
+      "D. Entrenamiento solo con técnicas de aumento de datos.",
+      "E. Una única sesión de entrenamiento con todos los conjuntos de datos combinados.",
+      "F. No lo sé."
+    ]
+  },
+  "16": {
+    "question": "¿Cuál es un beneficio de la PINN propuesta en escenarios de muestras pequeñas?",
+    "options": [
+      "A. Se desempeña a la par con MLP y CNN con 3-4 baterías.",
+      "B. Solo requiere datos de una batería para una predicción perfecta.",
+      "C. Compensa cualquier impureza química en las baterías.",
+      "D. Puede eliminar la necesidad de estimación del SOH por completo.",
+      "E. Escala de manera no lineal con el número de características.",
+      "F. No lo sé."
+    ]
+  },
+  "17": {
+    "question": "¿En qué escenario la PINN entrenada con tan solo una batería se desempeñó casi tan bien como los competidores?",
+    "options": [
+      "A. Pruebas a alta temperatura",
+      "B. Escenarios de muestras pequeñas",
+      "C. Escenarios de defectos de fabricación",
+      "D. Conjuntos de datos de escala extremadamente grande",
+      "E. Pruebas de baterías para propósitos de reciclaje",
+      "F. No lo sé."
+    ]
+  },
+  "18": {
+    "question": "¿En qué categoría de arquitectura se clasifica la PINN propuesta según Aykol et al.?",
+    "options": [
+      "A. Tipo A1",
+      "B. Tipo A2",
+      "C. Tipo B1",
+      "D. Tipo B2",
+      "E. Tipo C1",
+      "F. No lo sé."
+    ]
+  },
+  "19": {
+    "question": "¿Qué tipo de arquitecturas de redes neuronales se utilizan para implementar la función de solución y la función de comportamiento dinámico en la PINN propuesta?",
+    "options": [
+      "A. Redes Neuronales Recurrentes (RNNs)",
+      "B. Redes neuronales completamente conectadas",
+      "C. Redes Neuronales Convolucionales (CNNs)",
+      "D. Máquinas de soporte vectorial",
+      "E. Perceptrones de una sola capa",
+      "F. No lo sé."
+    ]
+  },
+  "20": {
+    "question": "¿Qué conjunto de datos contiene datos de 77 celdas de LFP/grafito bajo diferentes protocolos de descarga en múltiples etapas?",
+    "options": [
+      "A. Conjunto de datos de HUST",
+      "B. Conjunto de datos del MIT",
+      "C. Conjunto de datos de XJTU",
+      "D. Conjunto de datos de TJU",
+      "E. Conjunto de datos de Zhu et al.",
+      "F. No lo sé."
+    ]
+  },
+  "21": {
+    "question": "¿Qué figura ilustra la estructura general de la red neuronal informada por la física propuesta según se describe?",
+    "options": [
+      "A. Figura 1",
+      "B. Figura 2",
+      "C. Figura 3",
+      "D. Figura 4",
+      "E. Figura 5",
+      "F. No lo sé."
+    ]
+  },
+  "22": {
+    "question": "¿Qué tipo de dinámica de procesos modela la función no lineal g(⋅) en la PINN?",
+    "options": [
+      "A. Dinámicas fotovoltaicas",
+      "B. Dinámicas de fluctuación de temperatura",
+      "C. Dinámicas de degradación de la batería",
+      "D. Flujo hidrodinámico",
+      "E. Conducción térmica",
+      "F. No lo sé."
+    ]
+  },
+  "23": {
+    "question": "¿Qué parámetro indica que la batería ha alcanzado su primera vida útil?",
+    "options": [
+      "A. Una disminución en el voltaje nominal.",
+      "B. Una caída del SOH al 80%.",
+      "C. Una temperatura que alcanza los 45°C.",
+      "D. Un aumento del SOH al 110%.",
+      "E. Un aumento en la capacidad de carga del 50%.",
+      "F. No lo sé."
+    ]
+  },
+  "24": {
+    "question": "¿Qué método integra ecuaciones físicas directamente en arquitecturas de aprendizaje automático en el contexto del artículo?",
+    "options": [
+      "A. Método híbrido",
+      "B. Método de integración secuencial",
+      "C. Método de integración modular",
+      "D. Método de red neuronal aislada",
+      "E. Método de regresión directa",
+      "F. No lo sé."
+    ]
+  },
+  "25": {
+    "question": "Según la Tabla 2, ¿cuál es el valor de MAPE para la PINN propuesta en el lote 1 del conjunto de datos XJTU?",
+    "options": [
+      "A. 0.0260",
+      "B. 0.0070",
+      "C. 0.0094",
+      "D. 0.0330",
+      "E. 0.0350",
+      "F. No lo sé."
+    ]
+  },
+  "26": {
+    "question": "Según el estudio, ¿qué efecto tiene generalmente el aumento de baterías de entrenamiento en los errores de prueba de los modelos?",
+    "options": [
+      "A. Aumenta los errores de prueba.",
+      "B. No tiene efecto.",
+      "C. Reduce los errores de prueba.",
+      "D. Solo afecta a lotes específicos.",
+      "E. Oscila los errores de prueba.",
+      "F. No lo sé."
+    ]
+  },
+  "27": {
+    "question": "¿Qué conjunto de datos demostró la mayor estabilidad del método propuesto en el entrenamiento y prueba según los resultados del experimento?",
+    "options": [
+      "A. Conjunto de datos del MIT",
+      "B. Conjunto de datos de XJTU",
+      "C. Conjunto de datos de HUST",
+      "D. Conjunto de datos de TJU",
+      "E. Conjunto de datos combinado",
+      "F. No lo sé."
+    ]
+  },
+  "28": {
+    "question": "¿Cuál es una ventaja de las redes neuronales informadas por la física destacada por el estudio?",
+    "options": [
+      "A. No requieren datos para el entrenamiento.",
+      "B. Eliminan la necesidad de ecuaciones físicas tradicionales.",
+      "C. Combinan modelos físicos tradicionales con redes neuronales.",
+      "D. Usan únicamente ecuaciones físicas sin redes neuronales.",
+      "E. Se especializan solo en comportamiento basado en datos sin consideraciones físicas.",
+      "F. No lo sé."
+    ]
+  },
+  "29": {
+    "question": "¿Qué restricción operativa busca satisfacer la PINN empírica durante el modelado de la degradación de la batería?",
+    "options": [
+      "A. Restricción de datos en tiempo real",
+      "B. Restricción de elementos finitos",
+      "C. Ecuación de degradación especificada por ecuación diferencial parcial",
+      "D. Restricción lineal simplificada",
+      "E. Restricción estricta de conservación de energía",
+      "F. No lo sé."
+    ]
+  },
+  "30": {
+    "question": "En los materiales suplementarios, ¿qué lote de baterías del conjunto de datos XJTU se utiliza como representante para el ajuste fino en el estudio de evaluación?",
+    "options": [
+      "A. Lote 2",
+      "B. Lote 5",
+      "C. Lote 1",
+      "D. Lote 4",
+      "E. Lote 3",
+      "F. No lo sé."
+    ]
+  },
+  "31": {
+    "question": "En la función objetivo del método propuesto, ¿cuáles dos componentes son esenciales para minimizar los errores?",
+    "options": [
+      "A. Pérdida de complejidad, pérdida lineal",
+      "B. Pérdida de PDE, pérdida de monotonía",
+      "C. Pérdida de entropía, pérdida de estabilidad",
+      "D. Pérdida de voltaje, pérdida de corriente",
+      "E. Pérdida de temperatura, pérdida de presión",
+      "F. No lo sé."
+    ]
+  },
+  "32": {
+    "question": "En el contexto del aprendizaje por transferencia en el estudio, ¿cuáles son las suposiciones hechas sobre las dinámicas de degradación G(⋅)?",
+    "options": [
+      "A. Solo depende de los conjuntos de datos",
+      "B. Es independiente de los protocolos de carga/descarga y conjuntos de datos",
+      "C. Cambia cada vez con la temperatura",
+      "D. Depende únicamente del material de construcción de la batería",
+      "E. Es inconsecuente para la estimación del SOH",
+      "F. No lo sé."
+    ]
+  },
+  "33": {
+    "question": "¿Qué extracción de características se centra específicamente en el período de pre-carga CC-CV?",
+    "options": [
+      "A. Extracción de ciclo completo de la batería",
+      "B. Extracción pre-descarga",
+      "C. Solo extracción de corriente constante",
+      "D. Extracción de corto período antes de la carga completa",
+      "E. Extracción de características de fabricación de la batería",
+      "F. No lo sé."
+    ]
+  },
+  "34": {
+    "question": "¿Qué tipo de correlación entre características y SOH se sugiere como significativa por algunos conjuntos de datos?",
+    "options": [
+      "A. Correlación lineal negativa",
+      "B. Correlación aleatoria",
+      "C. Correlación positiva o negativa fuerte dependiendo de la química de la batería",
+      "D. Correlación polinómica",
+      "E. Correlación inversamente proporcional al tiempo de carga",
+      "F. No lo sé."
+    ]
+  },
+  "35": {
+    "question": "¿Qué indican las variaciones en la correlación de las características extraídas con el SOH en diferentes conjuntos de datos?",
+    "options": [
+      "A. La correlación está altamente afectada tanto por los protocolos de carga/descarga como por la composición química.",
+      "B. Las correlaciones son universalmente constantes independientemente de las condiciones.",
+      "C. La composición química de una batería influye más en la correlación que los protocolos de carga/descarga.",
+      "D. La correlación está determinada únicamente por la capacidad nominal.",
+      "E. La correlación no tiene una variación significativa en diferentes conjuntos de datos.",
+      "F. No lo sé."
+    ]
+  },
+  "36": {
+    "question": "¿Qué técnica de entrenamiento utiliza la PINN propuesta para abordar las complejidades del modelado físico?",
+    "options": [
+      "A. Usar solo modelos empíricos sin aprendizaje automático",
+      "B. Modelado usando ecuaciones de degradación empíricas y de espacio de estados",
+      "C. Optimización puramente basada en datos",
+      "D. Ignorar las leyes físicas para mayor flexibilidad",
+      "E. Aislar datos de voltaje para simulaciones",
+      "F. No lo sé."
+    ]
+  },
+  "37": {
+    "question": "Durante los experimentos de transferencia, ¿qué parte de la PINN se ajusta mientras la otra se congela?",
+    "options": [
+      "A. G(⋅) se ajusta mientras F(⋅) se congela",
+      "B. Ninguna de las partes se ajusta",
+      "C. Tanto F(⋅) como G(⋅) se ajustan",
+      "D. F(⋅) se ajusta mientras G(⋅) se congela",
+      "E. Ninguna parte se congela, ambas se ajustan libremente",
+      "F. No lo sé."
+    ]
+  },
+  "38": {
+    "question": "¿Qué condición NO está fuertemente correlacionada con el SOH según la extracción de características en el estudio?",
+    "options": [
+      "A. Tiempo de carga",
+      "B. Temperatura interna",
+      "C. Características de voltaje 11–16",
+      "D. Características de corriente de carga 9–10",
+      "E. Material externo de la batería",
+      "F. No lo sé."
+    ]
+  },
+  "39": {
+    "question": "¿Cuál es la razón principal indicada para usar características de un corto período antes de la carga completa?",
+    "options": [
+      "A. Acelera significativamente el ciclo de carga.",
+      "B. Proporciona características más robustas y generalizables.",
+      "C. Es más fácil de procesar para los modelos de aprendizaje automático.",
+      "D. Reduce las discrepancias de magnitud de voltaje.",
+      "E. Ahorra recursos computacionales.",
+      "F. No lo sé."
+    ]
+  },
+  "40": {
+    "question": "Según el estudio, ¿cuál es una característica común del proceso de carga que permite una extracción de características efectiva?",
+    "options": [
+      "A. Siempre es consistente y ocurre en un solo paso.",
+      "B. Es más fijo y regular en comparación con el proceso de descarga.",
+      "C. Muestra fluctuaciones rápidas de estado.",
+      "D. Varía de manera única para cada batería",
+      "E. Depende únicamente de condiciones externas.",
+      "F. No lo sé."
+    ]
+  },
+  "41": {
+    "question": "Según el estudio, ¿cómo se desempeñó el método propuesto en comparación con MLP y CNN al entrenar en muestras pequeñas?",
+    "options": [
+      "A. El método propuesto se desempeñó peor en todos los casos.",
+      "B. El rendimiento fue indistinguible entre los métodos.",
+      "C. El método propuesto generalmente mostró un mejor rendimiento.",
+      "D. CNN superó tanto a PINN como a MLP en todas las condiciones.",
+      "E. MLP superó significativamente al método propuesto.",
+      "F. No lo sé."
+    ]
+  },
+  "42": {
+    "question": "¿Cuál fue la principal limitación reconocida para los métodos híbridos en la estimación actual del SOH de la batería?",
+    "options": [
+      "A. Falta de parámetros internos accesibles de la batería",
+      "B. La indisponibilidad de tecnología de vanguardia de baterías",
+      "C. La excesiva simplicidad de los modelos que se ajustan a todos los conjuntos de datos",
+      "D. Avances descontinuados en la química de baterías",
+      "E. Problemas de interfaz con recursos de computación de alto rendimiento",
+      "F. No lo sé."
+    ]
+  },
+  "43": {
+    "question": "¿Qué tamaño de lote de los conjuntos de datos se utilizó en experimentos de muestras pequeñas para demostrar la eficiencia de la muestra?",
+    "options": [
+      "A. 5 baterías",
+      "B. 6 baterías",
+      "C. 1 batería",
+      "D. 3 baterías",
+      "E. 10 baterías",
+      "F. No lo sé."
+    ]
+  },
+  "44": {
+    "question": "¿Cómo combina una red neuronal informada por la física enfoques de modelado tradicionales y modernos?",
+    "options": [
+      "A. Utiliza solo datos de métodos experimentales obsoletos.",
+      "B. Se enfoca únicamente en redes neuronales sin restricciones físicas.",
+      "C. Al amalgamar modelos basados en física con aprendizaje automático basado en datos.",
+      "D. Usando ecuaciones empíricas sin verificarlas con datos.",
+      "E. Excluyendo enfoques basados en datos para preservar modelos físicos fundamentales.",
+      "F. No lo sé."
+    ]
+  },
+  "45": {
+    "question": "¿Qué se entiende por 'pérdida de monotonía' como parte del proceso de entrenamiento de la PINN?",
+    "options": [
+      "A. Redundancia en la selección de características",
+      "B. La prevención de dependencias cíclicas en los datos",
+      "C. Asegurar que la trayectoria de degradación siga una propiedad física",
+      "D. Reducir complejidades en el análisis de circuitos",
+      "E. Mejorar señales monótonas a través del refuerzo",
+      "F. No lo sé."
+    ]
+  },
+  "46": {
+    "question": "En el contexto de la extracción de características, ¿qué muestra una correlación positiva en las baterías tipo LiNiCo-x?",
+    "options": [
+      "A. Características 1 y 2",
+      "B. Características 9 y 10",
+      "C. Características 3 y 4",
+      "D. Características 15 y 16",
+      "E. Características 5 y 6",
+      "F. No lo sé."
+    ]
+  },
+  "47": {
+    "question": "¿Por qué el modelo propuesto se enfoca en el modo de carga de voltaje constante (CV)?",
+    "options": [
+      "A. Porque siempre genera el SOH más alto.",
+      "B. Debido a su rareza en los conjuntos de datos experimentales.",
+      "C. Es más estable y regularmente presente en los conjuntos de datos.",
+      "D. Consume menos potencia computacional.",
+      "E. Para reducir configuraciones experimentales redundantes.",
+      "F. No lo sé."
+    ]
+  },
+  "48": {
+    "question": "¿Qué ilustra la Figura 3 en el artículo?",
+    "options": [
+      "A. Una representación visual de la arquitectura de la PINN",
+      "B. Las trayectorias de degradación de cada batería",
+      "C. El mapa de calor de la correlación entre características y SOH",
+      "D. El proceso de recopilación de datos integral",
+      "E. Implementación de procesos de transferencia",
+      "F. No lo sé."
+    ]
+  },
+  "49": {
+    "question": "¿Qué estrategia de entrenamiento utiliza el método propuesto que permite una rápida adaptación a nuevos datos?",
+    "options": [
+      "A. Diseño de bloques completos aleatorizados",
+      "B. Exploración pura en el espacio de características",
+      "C. Ajuste fino a través del aprendizaje por transferencia",
+      "D. Aprendizaje basado en excepciones",
+      "E. Estricta adherencia a modelos empíricos",
+      "F. No lo sé."
+    ]
+  },
+  "50": {
+    "question": "¿Qué método de extracción de características se destaca por su potencial para evitar la fuga de información?",
+    "options": [
+      "A. Exámenes de descarga completa de la batería",
+      "B. Extracción de datos a corto plazo antes de la carga",
+      "C. Modelos que extrapolan dinámicas internas de alta energía",
+      "D. Selección de características basada en el historial de uso de la batería",
+      "E. Métodos de prueba de características incrementales",
+      "F. No lo sé."
+    ]
+  }
+}

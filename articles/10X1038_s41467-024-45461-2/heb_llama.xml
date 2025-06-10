@@ -1,0 +1,6811 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="/ProjectMundo/style/jats-html.xsl"?>
+<!DOCTYPE response>
+<article article-type="research-article" dtd-version="1.2" xml:lang="en" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <front>
+  <journal-meta>
+   <journal-id journal-id-type="publisher-id">
+    41467
+   </journal-id>
+   <journal-id journal-id-type="doi">
+    10.1038/41467.2041-1723
+   </journal-id>
+   <journal-title-group>
+    <journal-title>
+     Nature Communications
+    </journal-title>
+    <abbrev-journal-title abbrev-type="publisher">
+     Nat Commun
+    </abbrev-journal-title>
+   </journal-title-group>
+   <issn pub-type="epub">
+    2041-1723
+   </issn>
+   <publisher>
+    <publisher-name>
+     Nature Publishing Group UK
+    </publisher-name>
+    <publisher-loc>
+     London
+    </publisher-loc>
+   </publisher>
+  </journal-meta>
+  <article-meta>
+   <article-id pub-id-type="publisher-id">
+    s41467-024-45461-2
+   </article-id>
+   <article-id pub-id-type="manuscript">
+    45461
+   </article-id>
+   <article-id pub-id-type="doi">
+    10.1038/s41467-024-45461-2
+   </article-id>
+   <article-categories>
+    <subj-group subj-group-type="heading">
+     <subject>
+      Article
+     </subject>
+    </subj-group>
+    <subj-group subj-group-type="SubjectPath">
+     <subject>
+      /631/114/2411
+     </subject>
+    </subj-group>
+    <subj-group subj-group-type="SubjectPath">
+     <subject>
+      /631/154/1435
+     </subject>
+    </subj-group>
+    <subj-group subj-group-type="SubjectPath">
+     <subject>
+      /631/114/2248
+     </subject>
+    </subj-group>
+    <subj-group subj-group-type="NatureArticleTypeID">
+     <subject>
+      article
+     </subject>
+    </subj-group>
+   </article-categories>
+   <title-group>
+    <article-title xml:lang="en">
+     DynamicBind: חיזוי מבנה קומפלקס חלבון-ליגנד ברמת ליגנד ספציפי עם מודל ינרטיבי עמיד בעומק
+    </article-title>
+   </title-group>
+   <contrib-group>
+    <contrib contrib-type="author" corresp="yes" equal-contrib="yes" id="Au1">
+     <contrib-id contrib-id-type="orcid">
+      http://orcid.org/0000-0002-1572-2909
+     </contrib-id>
+     <name name-style="western">
+      <surname>
+       Lu
+      </surname>
+      <given-names>
+       Wei
+      </given-names>
+     </name>
+     <address>
+      <email>
+       luwei0917@gmail.com
+      </email>
+     </address>
+     <xref ref-type="aff" rid="Aff1">
+      1
+     </xref>
+     <xref ref-type="corresp" rid="IDs41467024454612_cor1">
+      a
+     </xref>
+     <xref ref-type="author-notes" rid="fn1"/>
+    </contrib>
+    <contrib contrib-type="author" corresp="yes" equal-contrib="yes" id="Au2">
+     <name name-style="western">
+      <surname>
+       Zhang
+      </surname>
+      <given-names>
+       Jixian
+      </given-names>
+     </name>
+     <address>
+      <email>
+       jxzly1993@gmail.com
+      </email>
+     </address>
+     <xref ref-type="aff" rid="Aff1">
+      1
+     </xref>
+     <xref ref-type="corresp" rid="IDs41467024454612_cor2">
+      b
+     </xref>
+     <xref ref-type="author-notes" rid="fn1"/>
+    </contrib>
+    <contrib contrib-type="author" id="Au3">
+     <name name-style="western">
+      <surname>
+       Huang
+      </surname>
+      <given-names>
+       Weifeng
+      </given-names>
+     </name>
+     <xref ref-type="aff" rid="Aff2">
+      2
+     </xref>
+    </contrib>
+    <contrib contrib-type="author" id="Au4">
+     <name name-style="western">
+      <surname>
+       Zhang
+      </surname>
+      <given-names>
+       Ziqiao
+      </given-names>
+     </name>
+     <xref ref-type="aff" rid="Aff1">
+      1
+     </xref>
+    </contrib>
+    <contrib contrib-type="author" id="Au5">
+     <name name-style="western">
+      <surname>
+       Jia
+      </surname>
+      <given-names>
+       Xiangyu
+      </given-names>
+     </name>
+     <xref ref-type="aff" rid="Aff1">
+      1
+     </xref>
+    </contrib>
+    <contrib contrib-type="author" id="Au6">
+     <name name-style="western">
+      <surname>
+       Wang
+      </surname>
+      <given-names>
+       Zhenyu
+      </given-names>
+     </name>
+     <xref ref-type="aff" rid="Aff1">
+      1
+     </xref>
+    </contrib>
+    <contrib contrib-type="author" id="Au7">
+     <contrib-id contrib-id-type="orcid">
+      http://orcid.org/0009-0000-7014-3347
+     </contrib-id>
+     <name name-style="western">
+      <surname>
+       Shi
+      </surname>
+      <given-names>
+       Leilei
+      </given-names>
+     </name>
+     <xref ref-type="aff" rid="Aff1">
+      1
+     </xref>
+    </contrib>
+    <contrib contrib-type="author" id="Au8">
+     <name name-style="western">
+      <surname>
+       Li
+      </surname>
+      <given-names>
+       Chengtao
+      </given-names>
+     </name>
+     <xref ref-type="aff" rid="Aff1">
+      1
+     </xref>
+    </contrib>
+    <contrib contrib-type="author" id="Au9">
+     <name name-style="western">
+      <surname>
+       Wolynes
+      </surname>
+      <given-names>
+       Peter G.
+      </given-names>
+     </name>
+     <xref ref-type="aff" rid="Aff3">
+      3
+     </xref>
+    </contrib>
+    <contrib contrib-type="author" corresp="yes" equal-contrib="yes" id="Au10">
+     <contrib-id contrib-id-type="orcid">
+      http://orcid.org/0000-0001-9747-4285
+     </contrib-id>
+     <name name-style="western">
+      <surname>
+       Zheng
+      </surname>
+      <given-names>
+       Shuangjia
+      </given-names>
+     </name>
+     <address>
+      <email>
+       shuangjia.zheng@sjtu.edu.cn
+      </email>
+     </address>
+     <xref ref-type="aff" rid="Aff4">
+      4
+     </xref>
+     <xref ref-type="corresp" rid="IDs41467024454612_cor10">
+      k
+     </xref>
+     <xref ref-type="author-notes" rid="fn1"/>
+    </contrib>
+    <aff id="Aff1">
+     <label>
+      1
+     </label>
+     <institution-wrap>
+      <institution content-type="org-name">
+       Galixir Technologies
+      </institution>
+     </institution-wrap>
+     <addr-line content-type="postcode">
+      200100
+     </addr-line>
+     <addr-line content-type="city">
+      Shanghai
+     </addr-line>
+     <country country="CN">
+      China
+     </country>
+    </aff>
+    <aff id="Aff2">
+     <label>
+      2
+     </label>
+     <institution-wrap>
+      <institution-id institution-id-type="ROR">
+       https://ror.org/0064kty71
+      </institution-id>
+      <institution-id institution-id-type="GRID">
+       grid.12981.33
+      </institution-id>
+      <institution-id institution-id-type="ISNI">
+       0000 0001 2360 039X
+      </institution-id>
+      <institution content-type="org-division">
+       School of Pharmaceutical Science
+      </institution>
+      <institution content-type="org-name">
+       Sun Yat-sen University
+      </institution>
+     </institution-wrap>
+     <addr-line content-type="postcode">
+      510006
+     </addr-line>
+     <addr-line content-type="city">
+      Guangzhou
+     </addr-line>
+     <country country="CN">
+      China
+     </country>
+    </aff>
+    <aff id="Aff3">
+     <label>
+      3
+     </label>
+     <institution-wrap>
+      <institution-id institution-id-type="GRID">
+       grid.21940.3e
+      </institution-id>
+      <institution-id institution-id-type="ISNI">
+       0000 0004 1936 8278
+      </institution-id>
+      <institution content-type="org-division">
+       Center for Theoretical Biological Physics and Department of Chemistry
+      </institution>
+      <institution content-type="org-name">
+       Rice University
+      </institution>
+     </institution-wrap>
+     <addr-line content-type="postcode">
+      77005
+     </addr-line>
+     <addr-line content-type="city">
+      Houston
+     </addr-line>
+     <addr-line content-type="state">
+      TX
+     </addr-line>
+     <country country="US">
+      USA
+     </country>
+    </aff>
+    <aff id="Aff4">
+     <label>
+      4
+     </label>
+     <institution-wrap>
+      <institution-id institution-id-type="ROR">
+       https://ror.org/0220qvk04
+      </institution-id>
+      <institution-id institution-id-type="GRID">
+       grid.16821.3c
+      </institution-id>
+      <institution-id institution-id-type="ISNI">
+       0000 0004 0368 8293
+      </institution-id>
+      <institution content-type="org-division">
+       Global Institute of Future Technology
+      </institution>
+      <institution content-type="org-name">
+       Shanghai Jiao Tong University
+      </institution>
+     </institution-wrap>
+     <addr-line content-type="postcode">
+      200240
+     </addr-line>
+     <addr-line content-type="city">
+      Shanghai
+     </addr-line>
+     <country country="CN">
+      China
+     </country>
+    </aff>
+   </contrib-group>
+   <author-notes>
+    <fn fn-type="equal" id="fn1">
+     <p>
+      These authors contributed equally: Wei Lu, Jixian Zhang, Shuangjia Zheng.
+     </p>
+    </fn>
+    <corresp id="IDs41467024454612_cor1">
+     <label>
+      a
+     </label>
+     <email>
+      luwei0917@gmail.com
+     </email>
+    </corresp>
+    <corresp id="IDs41467024454612_cor2">
+     <label>
+      b
+     </label>
+     <email>
+      jxzly1993@gmail.com
+     </email>
+    </corresp>
+    <corresp id="IDs41467024454612_cor10">
+     <label>
+      k
+     </label>
+     <email>
+      shuangjia.zheng@sjtu.edu.cn
+     </email>
+    </corresp>
+   </author-notes>
+   <pub-date date-type="pub" publication-format="electronic">
+    <day>
+     5
+    </day>
+    <month>
+     2
+    </month>
+    <year>
+     2024
+    </year>
+   </pub-date>
+   <pub-date date-type="collection" publication-format="electronic">
+    <month>
+     12
+    </month>
+    <year>
+     2024
+    </year>
+   </pub-date>
+   <volume>
+    15
+   </volume>
+   <issue seq="1071">
+    1
+   </issue>
+   <elocation-id>
+    1071
+   </elocation-id>
+   <history>
+    <date date-type="registration">
+     <day>
+      25
+     </day>
+     <month>
+      1
+     </month>
+     <year>
+      2024
+     </year>
+    </date>
+    <date date-type="received">
+     <day>
+      24
+     </day>
+     <month>
+      8
+     </month>
+     <year>
+      2023
+     </year>
+    </date>
+    <date date-type="accepted">
+     <day>
+      24
+     </day>
+     <month>
+      1
+     </month>
+     <year>
+      2024
+     </year>
+    </date>
+    <date date-type="online">
+     <day>
+      5
+     </day>
+     <month>
+      2
+     </month>
+     <year>
+      2024
+     </year>
+    </date>
+   </history>
+   <permissions>
+    <copyright-statement content-type="compact">
+     © The Author(s) 2024
+    </copyright-statement>
+    <copyright-year>
+     2024
+    </copyright-year>
+    <copyright-holder>
+     The Author(s)
+    </copyright-holder>
+    <license license-type="open-access" xlink:href="http://creativecommons.org/licenses/by/4.0/">
+     <license-p>
+      <bold>
+       Open Access
+      </bold>
+      This article is licensed under a Creative Commons Attribution 4.0 International License, which permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons license, and indicate if changes were made. The images or other third party material in this article are included in the article’s Creative Commons license, unless indicated otherwise in a credit line to the material. If material is not included in the article’s Creative Commons license and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this license, visit
+      <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/">
+       http://creativecommons.org/licenses/by/4.0/
+      </ext-link>
+      .
+     </license-p>
+    </license>
+   </permissions>
+   <abstract id="Abs1" xml:lang="en">
+    <title>
+     תקציר
+    </title>
+    <p id="Par1">
+     בעוד שהושגו התקדמויות משמעותיות בחיזוי מבנים סטטיים של חלבונים, הדינמיקה הטבעית של חלבונים, המוסדרת על ידי ליגנדים, היא חיונית להבנת תפקוד החלבון ולקידום גילוי תרופות. שיטות דוקינג מסורתיות, המשמשות לעיתים קרובות בחקר אינטראקציות חלבון-ליגנד, מתייחסות בדרך כלל לחלבונים כאל גופים קשיחים. בעוד שסימולציות דינמיקה מולקולרית יכולות להציע קונפורמציות חלבון מתאימות, הן דורשות הרבה זמן חישוב עקב מעברים נדירים בין מצבי שיווי משמעותיים ביולוגית. במחקר זה, אנו מציגים את DynamicBind, שיטת למידת עומק שמנצלת רשתות דיפוזיה גאומטריות עמידות לבניית נוף אנרגיה חלק, המקדם מעברים יעילים בין מצבי שיווי משונים. DynamicBind משחזר במדויק קונפורמציות ספציפיות לליגנד ממבנים חלבון לא קשורים, ללא צורך בהולו-מבנים או דגימה נרחבת. באופן מרשים, היא מדגימה ביצועים ברמת מצב האמנות בבנקאות ובמדדי מסך וירטואלי. ניסויינו מראים כי DynamicBind יכול להכיל מגוון רחב של שינויים קונפורמציוניים גדולים של חלבונים ולזהות כיסים קריפטיים ביעדי חלבון לא נראים. כתוצאה מכך, DynamicBind מראה פוטנציאל בקידום פיתוח מולקולות קטנות ליעדים לא ניתנים לטיפול לפני כן והרחבת גבולות גילוי תרופות קומפוטציונלי.
+    </p>
+   </abstract>
+   <abstract abstract-type="ShortSummary" id="Abs2" xml:lang="en">
+    <p id="Par2">
+     Proteins often function by changing conformations upon ligand binding. Efficient structural modelling of these interactions, crucial for drug discovery, is limited: here the authors address this with DynamicBind, a diffusion-based deep generative model.
+    </p>
+   </abstract>
+   <kwd-group kwd-group-type="hierarchical" vocab="FoR" vocab-identifier="ANZSRC 2008">
+    <kwd content-type="term" vocab-term-identifier="03">
+     Chemical Sciences
+    </kwd>
+    <nested-kwd>
+     <kwd content-type="term" vocab-term-identifier="0307">
+      Theoretical and Computational Chemistry
+     </kwd>
+    </nested-kwd>
+    <kwd content-type="term" vocab-term-identifier="02">
+     Physical Sciences
+    </kwd>
+    <nested-kwd>
+     <kwd content-type="term" vocab-term-identifier="0299">
+      Other Physical Sciences
+     </kwd>
+    </nested-kwd>
+   </kwd-group>
+   <custom-meta-group>
+    <custom-meta>
+     <meta-name>
+      publisher-imprint-name
+     </meta-name>
+     <meta-value>
+      Nature Portfolio
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      volume-issue-count
+     </meta-name>
+     <meta-value>
+      1
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      issue-article-count
+     </meta-name>
+     <meta-value>
+      1071
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      issue-toc-levels
+     </meta-name>
+     <meta-value>
+      0
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      issue-pricelist-year
+     </meta-name>
+     <meta-value>
+      2024
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      issue-copyright-holder
+     </meta-name>
+     <meta-value>
+      Springer Nature Limited
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      issue-copyright-year
+     </meta-name>
+     <meta-value>
+      2024
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      article-contains-esm
+     </meta-name>
+     <meta-value>
+      Yes
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      article-numbering-style
+     </meta-name>
+     <meta-value>
+      Unnumbered
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      article-registration-date-year
+     </meta-name>
+     <meta-value>
+      2024
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      article-registration-date-month
+     </meta-name>
+     <meta-value>
+      1
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      article-registration-date-day
+     </meta-name>
+     <meta-value>
+      25
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      article-toc-levels
+     </meta-name>
+     <meta-value>
+      0
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      toc-levels
+     </meta-name>
+     <meta-value>
+      0
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      volume-type
+     </meta-name>
+     <meta-value>
+      Regular
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      journal-product
+     </meta-name>
+     <meta-value>
+      NonStandardArchiveJournal
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      numbering-style
+     </meta-name>
+     <meta-value>
+      Unnumbered
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      article-grants-type
+     </meta-name>
+     <meta-value>
+      OpenChoice
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      metadata-grant
+     </meta-name>
+     <meta-value>
+      OpenAccess
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      abstract-grant
+     </meta-name>
+     <meta-value>
+      OpenAccess
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      bodypdf-grant
+     </meta-name>
+     <meta-value>
+      OpenAccess
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      bodyhtml-grant
+     </meta-name>
+     <meta-value>
+      OpenAccess
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      bibliography-grant
+     </meta-name>
+     <meta-value>
+      OpenAccess
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      esm-grant
+     </meta-name>
+     <meta-value>
+      OpenAccess
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      online-first
+     </meta-name>
+     <meta-value>
+      false
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      pdf-file-reference
+     </meta-name>
+     <meta-value>
+      BodyRef/PDF/41467_2024_Article_45461.pdf
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      pdf-type
+     </meta-name>
+     <meta-value>
+      Typeset
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      target-type
+     </meta-name>
+     <meta-value>
+      OnlinePDF
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      issue-type
+     </meta-name>
+     <meta-value>
+      Regular
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      article-type
+     </meta-name>
+     <meta-value>
+      OriginalPaper
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      journal-subject-primary
+     </meta-name>
+     <meta-value>
+      Science, Humanities and Social Sciences, multidisciplinary
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      journal-subject-secondary
+     </meta-name>
+     <meta-value>
+      Science, Humanities and Social Sciences, multidisciplinary
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      journal-subject-secondary
+     </meta-name>
+     <meta-value>
+      Science, multidisciplinary
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      journal-subject-collection
+     </meta-name>
+     <meta-value>
+      Science (multidisciplinary)
+     </meta-value>
+    </custom-meta>
+    <custom-meta>
+     <meta-name>
+      open-access
+     </meta-name>
+     <meta-value>
+      true
+     </meta-value>
+    </custom-meta>
+   </custom-meta-group>
+  </article-meta>
+ </front>
+ <body>
+  <sec id="Sec1" sec-type="introduction">
+   <title>
+    מבוא
+   </title>
+   <p id="Par3">
+    התקדמות מרשימה הושגה בתחום החיזוי של מבנה חלבונים מנתוני רצף. כמה טכניקות חיזוי משתמשות בלמידת מכונה בשילוב עם דינמיקה מולקולרית או מונטה קרלו
+    <sup>
+     <xref ref-type="bibr" rid="CR1">
+      1
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR2">
+      2
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR3">
+      3
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR4">
+      4
+     </xref>
+    </sup>
+    . אלו מייצרים אוסף של מבנים. AlphaFold, אשר מובילה את הדרך בחיזוי של כמעט כל המבנים בפרוטאום האנושי, אולם, בדרך כלל מייצרת רק מספר מועט של קונפורמציות לכל רצף חלבוני, על אף העובדה שחלבונים הם דינמיים מבפנים ובדרך כלל מאמצים מספר קונפורמציות שונות כדי לבצע את תפקודיהם
+    <sup>
+     <xref ref-type="bibr" rid="CR5">
+      5
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR6">
+      6
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR7">
+      7
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR8">
+      8
+     </xref>
+     <xref ref-type="bibr" rid="CR9">
+      9
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR10">
+      10
+     </xref>
+    </sup>
+    . היכולת של חלבונים לעבור ב间 קונפורמציות שונות היא מרכזית לפעילות הביולוגית שלהם בכל תחומי החיים. האפקט התרופתי של מולקולות תרופה נובע מהקישור הספציפי שלהן לקונפורמציות מסוימות של חלבוני המטרה ובכך מודולטים פעילויות ביולוגיות חיוניות על ידי שינוי נוף הקונפורמציות של חלבונים אלו
+    <sup>
+     <xref ref-type="bibr" rid="CR11">
+      11
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR12">
+      12
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR13">
+      13
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR14">
+      14
+     </xref>
+    </sup>
+    . בפועל, כיום, האינטראקציות בין חלבונים לליגנדים נחקרות דרך שיטות דוקינג מולקולריות מחשבתיות. דוקינג הוא מרכיב מפתח בגילוי תרופות מבוסס קומפיוטר
+    <sup>
+     <xref ref-type="bibr" rid="CR15">
+      15
+     </xref>
+    </sup>
+    . עם זאת, על אף ההכרה הנרחבת בחשיבות הדינמיקה של חלבונים, שיטות דוקינג מסורתיות רבות מתייחסות לחלבונים כאילו הם קשיחים, או במקרים מסוימים, כאילו הם גמישים חלקית, מאפשרים רק לשרשראות צדדיות נבחרות לנוע, כדי לנהל עלויות חישוב
+    <sup>
+     <xref ref-type="bibr" rid="CR16">
+      16
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR17">
+      17
+     </xref>
+    </sup>
+    . כתוצאה מכך, מבנים של AlphaFold-חלבונים, כאשר משמשים כקלט לדוקינג, ייתנו חיזויים של קישור ליגנד שאינם תואמים היטב את המבנים ההולו-קוקריסטליזציה
+    <sup>
+     <xref ref-type="bibr" rid="CR18">
+      18
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR19">
+      19
+     </xref>
+    </sup>
+    . המבנים המונבאים על ידי AlphaFold לעיתים קרובות אינם מציגים את הקונפיגורציות הרוטומריות הטובות ביותר של שרשראות צד לקישור ליגנד, ובהתאם, הכיס הרלוונטי ייראה בלתי נגיש מכיוון שהאפופרוטאין מאמץ קונפורמציה שונה מהמצב ההולו.
+   </p>
+   <p id="Par4">
+    כאן, אנו מציגים DynamicBind, מודל גנרטיבי גאומטרי עמוק שתוכנן ל"דוקינג דינמי". להבדיל משיטות דוקינג מסורתיות שמתייחסות לחלבונים כישויות קשיחות בעיקר, DynamicBind מתאים באופן יעיל את הקונפורמציה של החלבון מתוך החיזוי ההתחלתי של AlphaFold למצב הולו-דומה. המודל שלנו מסוגל לטפל במגוון רחב של שינויים קונפורמציוניים גדולים במהלך החיזוי, כגון המעבר הידוע DFG-פנימה ל-DFG-החוצה בחלבוני קינאז, אתגר שהיה עמיד בפני שיטות אחרות, כגון סימולציות דינמיקה מולקולרית (MD)
+    <sup>
+     <xref ref-type="bibr" rid="CR20">
+      20
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR21">
+      21
+     </xref>
+    </sup>
+    . השגנו את היעילות הזו בדגימה של שינויים קונפורמציוניים גדולים של חלבונים על ידי למידה של נוף אנרגיה ממוקד, שבו המעברים בין מצבים ביולוגית רלוונטיים הם מינימליים
+    <sup>
+     <xref ref-type="bibr" rid="CR22">
+      22
+     </xref>
+    </sup>
+    . זה מואפשר על ידי העסקה החדשנית של המרה מורפ-דומה ליצירת דקויות במהלך האימון (יותר ב"ארכיטקטורות DynamicBind" ו"שיטות"). השיטה הנוכחית חולקת דמיון עם ה-Boltzmann generator, כפי שהיא מאפשרת דגימה ישירה ויעילה של מצבים בעלי אנרגיה נמוכה מהמודל הנלמד. להבדיל מ-Boltzmann generators מסורתיים, שבדרך כלל מוגבלים למערכות שהם מאומנים עליהן, DynamicBind הוא מודל כללי שיכול לטפל בחלבונים וליגנדים חדשים
+    <sup>
+     <xref ref-type="bibr" rid="CR23">
+      23
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR24">
+      24
+     </xref>
+    </sup>
+    .
+   </p>
+   <p id="Par5">
+    בחלק הבא, אנו מציגים הערכה מקיפה של DynamicBind, מדגימה את הפוטנציאל שלה לסייע בגילוי תרופות. הצגתנו מאורגנת לשישה חלקים: ראשית, הצגת המודל DynamicBind; אז, בדיקת DynamicBind נגד שיטות דוקינג נוכחיות; אז, הדגמת יכולת השיטה לדגום שינויים קונפורמציוניים גדולים של חלבונים באופן ספציפי לליגנד; אז, הדגמה ספציפית של טווח השינויים הקונפורמציוניים שהיא יכולה לטפל; מדגימה את היכולת שלה לחזות כיסים קריפטיים דרך מקרה; ולבסוף, הדגמת יישומה למשימת סקרינג וירטואלי ברמת הפרוטאום השלם, באמצעות מאגר נתונים של אנטיביוטיקה
+    <sup>
+     <xref ref-type="bibr" rid="CR25">
+      25
+     </xref>
+    </sup>
+    . החקירות האלו מדגימות במשותף את הפוטנציאל של DynamicBind, ויוצרות את הבמה להבנה ותמרון נוספים של נוף האינטראקציה בין חלבונים לליגנדים.
+   </p>
+  </sec>
+  <sec id="Sec2" sec-type="results">
+   <title>
+    תוצאות
+   </title>
+   <sec id="Sec3">
+    <title>
+     ארכיטקטורות DynamicBind
+    </title>
+    <p id="Par6">
+     DynamicBind מבצע "דוקינג דינמי", תהליך המבצע חיזוי של מבנה הקומפלקס החלבוני-ליגנדי, תוך כדי התאמה של שינויים קונפורמציוניים משמעותיים של חלבונים. DynamicBind מקבל מבנים אפו-דומים (במחקר הנוכחי, קונפיגורציות מונבאות על ידי AlphaFold) בפורמט PDB וליגנדים של מולקולות קטנות במספר פורמטים נפוצים, כגון Simplified Molecular Input Line Entry System (SMILES) או פורמט קובץ נתונים מבני (SDF). במהלך היציאה, המודל מציב באופן אקראי את הליגנד, שקונפיגורציית הזרע שלו נוצרה באמצעות RDKit, סביב החלבון. אז, לאורך 20 איטרציות (פרטים נוספים ב"ארכיטקטורת המודל"), באמצעות צעדי זמן הולכים וקטנים, המודל מתרגם ומסובב בהדרגה את הליגנד, תוך כדי התאמה של זוויות הטורסיוניות הפנימיות שלו. לאחר חמש הצעדים הראשונים, שבהם משונה רק קונפיגורציית הליגנד, המודל מתרגם ומסובב במקביל את חומר החלבון, תוך כדי שינוי זוויות הצד המשני, בצעדים הנותרים
+     <sup>
+      <xref ref-type="bibr" rid="CR26">
+       26
+      </xref>
+      <xref ref-type="bibr" rid="CR27">
+       27
+      </xref>
+     </sup>
+     .
+    </p>
+    <p id="Par7">
+     כפי שמוצג בFig.
+     <xref ref-type="fig" rid="Fig1">
+      1
+     </xref>
+     a, בכל צעד, המאפיינים והקואורדינטות של החלבון והליגנד מוזנים למודול אינטראקציה SE(3)-אקוויבריאנטי. לאחר מכן, המודולים של החלבון והפלטה מייצרים את העדכונים המונבאים של תרגום, סיבוב ועדכוני דיהדראלי למצב הנוכחי. פרטים נוספים על המודל ניתנים ב"טרנספורמציה של הקונפורמציה החלבונית". להבדיל מהפרוטוקול המסורתי המעורב באימון מודל דיפוזיה, היוצר דקויות על ידי הפרעה למצב הילידי עם רעש גאוסי בעוצמות משתנות, שיטתנו מעסיקה המרה מורפ-דומה ליצירת דקויות חלבוניות. בתהליך זה, הקונפורמציה הילידית מותאמת בהדרגה לקונפורמציה המונבאת על ידי AlphaFold. מבנה החלבונים מוגבל במידה רבה, עם שיירים המחוברים על ידי קשרים פפטידיים, ואורכי הקשרים נשלטים על ידי עקרונות כימיים. כאשר דקויות מיוצרות באמצעות רעש גאוסי, המודל לומד בעיקר רק לחזור לקונפורמציה הכימית היציבה ביותר, לעיתים קרובות הקונפורמציה לפני שהרעש הוסף. במשימה הנוכחית, הקונפורמציה ההולו-קשורה אינה ידועה, והמבנה החלבוני הזמין ביותר הוא זה שמונבא על ידי AlphaFold, שלעיתים קרובות שונה משמעותית מהקונפורמציה ההולו. נתון שהמבנה המונבא על ידי AlphaFold לעיתים קרובות כבר עומד ברוב הקשרים הכימיים, קשה לצפות כיצד המודל המאומן על דקויות שנעשו רק מרעש גאוסי יכול לחזות במדויק שינויים בטווח זמן ארוך, שהם העיקריים שלנו. לעומת זאת, הדקויות המיוצרות על ידי המרה המורפ-דומה שלנו בדרך כלל מקיימות את הקשרים הכימיים הבסיסיים, מאפשרים למודל שלנו להתמקד בלמידה של אירועי מעבר מבניים ביופיזיקליים. בסימולציות דינמיקה מולקולרית לא מוטיה, מעברים בין מצבים מטא-יציבים, כגון מעבר DFG 'פנימה' ו'החוצה', הם נדירים עקב נוף האנרגיה האמיתי אך המחוספס של שדה הכוח האטומי
+     <sup>
+      <xref ref-type="bibr" rid="CR28">
+       28
+      </xref>
+      ,
+      <xref ref-type="bibr" rid="CR29">
+       29
+      </xref>
+      ,
+      <xref ref-type="bibr" rid="CR30">
+       30
+      </xref>
+      ,
+      <xref ref-type="bibr" rid="CR31">
+       31
+      </xref>
+      ,
+      <xref ref-type="bibr" rid="CR32">
+       32
+      </xref>
+      <xref ref-type="bibr" rid="CR21">
+       21
+      </xref>
+     </sup>
+     . שיטתנו, לעומת זאת, מאופיינת בנוף אנרגיה ממוקד באופן משמעותי, מורידה ביעילות את מחסום האנרגיה החופשית בין מצבים ביולוגית משמעותיים. כתוצאה מכך, בדומה לשיטות Boltzmann generator אחרות, הגישה הנוכחית מדגימה יעילות מוגברת במידה ניכרת בדגימה של מצבים חלופיים הרלוונטיים לקישור ליגנד. תרשים סכמטי נכלל כדי להמחיש את ההבדלים האלו (Fig.
+     <xref ref-type="fig" rid="Fig1">
+      1
+     </xref>
+     b)
+     <sup>
+      <xref ref-type="bibr" rid="CR23">
+       23
+      </xref>
+      ,
+      <xref ref-type="bibr" rid="CR33">
+       33
+      </xref>
+     </sup>
+     .
+     <fig id="Fig1" position="float">
+      <label>
+       Fig. 1
+      </label>
+      <caption xml:lang="he">
+       <title>
+        תצוגה כללית של מודל DynamicBind.
+       </title>
+       <p>
+        <bold>
+         א
+        </bold>
+        מצב ההולו מיוצג בוורוד, המצב האפו ההתחלתי והקונפורמציה המוערכת על ידי המודל בירוק. הליגנד הילידי מוצג בציאן, והליגנד המוערך מוצג בכתום. המודל מקבל כקלט את התכונות והקונפורמציה הנוכחית של החלבון והליגנד. פלט המודל כולל את העדכונים המוערכים: תרגום גלובלי ורוטציה עבור הליגנד וכל שאר החומצות האמינו, רוטציה של זוויות טורסיונליות עבור הליגנדים וזוויות כי עבור החומצות האמינו, ושני מודולים לחיזוי (אפיניות קישור, A וציון ביטחון, D). במהלך השלב התלמודי, המודל מעוצב ללמוד את השינוי מהקונפורמציה האפו-לקונפורמציה ההולו. במהלך ההסקה, המודל מעדכן את המבנה ההתחלתי עשרים פעמים.
+        <bold>
+         ב
+        </bold>
+        תרשים סכמטי מראה שמודלנו יכול לחזות שתי קונפורמציות הולו שונות כאשר החלבון נקשר עם שני ליגנדים שונים. מודלנו יכול לחזות את הקונפורמציה החלבונית המחוברת בתוך 20 צעדים, בעוד שמיליוני צעדים של סימולציות MD ברמה האטומית נדרשים כדי למצוא את אותה מצב מחובר.
+       </p>
+      </caption>
+      <graphic href="/ProjectMundo/MediaObjects/10X1038_s41467-024-45461-2/41467_2024_45461_Fig1_HTML.png" mime-subtype="PNG" specific-use="web"/>
+     </fig>
+    </p>
+   </sec>
+   <sec id="Sec4">
+    <title>
+     DynamicBind משיג דיוק גבוה יותר בחיזוי מיקום ליגנד ומשפר את הקונפורמציה הראשונית של החלבון המונבא על ידי AlphaFold
+    </title>
+    <p id="Par8">
+     לשם בחינת השיטה שלנו, השתמשנו תחילה במאגר הנתונים PDBbind ו, בהתאם לעבודות קודמות, אימנו את המודל באמצעות חלוקה כרונולוגית, המבוססת על זמן, של קבוצות האימון, הבדיקה והבחינה. מאחר שקבוצת הבחינה PDBbind, הכוללת כ-300 מבנים מ-2019, כוללת הרבה ליגנדים שאינם מולקולות קטנות (53 מקרים הם פוליפפטידים), הרחיבנו את היקף הערכתנו באמצעות קבוצת בדיקה מורכבת של Major Drug Target (MDT). קבוצת MDT כוללת 599 מבנים שהופקדו ב-2020 או אחריו, עם ליגנדים דומים לתרופות וחלבונים מארבע משפחות חלבונים עיקריות: קינאזות, GPCRs, קולטני גרעין ותעלות יונים (ראו "בניית מאגר נתונים" לפרטים נוספים). משפחות חלבונים אלו מייצגות את היעדים של כ-70% מהתרופות המומלצות על ידי ה-FDA
+     <sup>
+      <xref ref-type="bibr" rid="CR34">
+       34
+      </xref>
+      <xref ref-type="bibr" rid="CR19">
+       19
+      </xref>
+      ,
+      <xref ref-type="bibr" rid="CR35">
+       35
+      </xref>
+      ,
+      <xref ref-type="bibr" rid="CR36">
+       36
+      </xref>
+      <xref ref-type="bibr" rid="CR37">
+       37
+      </xref>
+     </sup>
+     .
+    </p>
+    <p id="Par9">
+     במקום להשתמש במבנים הולו כקלט, אימצנו תרחיש מאתגר וריאליסטי יותר במהלך הבדיקה, שבו הנחנו שהקונפורמציה החלבונית הולו אינה זמינה והשתמשנו רק בקונפורמציות החלבוניות שחוזות על ידי AlphaFold כקלט שלנו. קונפורמציות הולו מציגות תאימות צורה ומטען חזקה לליגנדים המשובטים, שכבר, באופן לא ריאליסטי, מקלות על חיזוי מיקום הליגנד
+     <sup>
+      <xref ref-type="bibr" rid="CR11">
+       11
+      </xref>
+     </sup>
+     . לעומת זאת, הקונפורמציות האפו או אלו שחוזות על ידי AlphaFold עשויות להתנגש עם ליגנדים משובטים שהושגו על ידי השתלת מבנים גבישיים
+     <sup>
+      <xref ref-type="bibr" rid="CR14">
+       14
+      </xref>
+     </sup>
+     .
+    </p>
+    <p id="Par10">
+     כפי שמוצג ב-Fig.
+     <xref ref-type="fig" rid="Fig2">
+      2
+     </xref>
+     a ו-b, DynamicBind מחזית יותר מקרים עם RMSD ליגנד מתחת לרמות שונות מאשר בסיסי ההשוואה אחרים. בפרט, היא מגיעה לשיעור של RMSD ליגנד מתחת ל-2Å (5Å), היות 33% (65%) בקבוצת הבדיקה PDBbind ו-39% (68%) בקבוצת הבדיקה MDT, בהתאמה.
+     <fig id="Fig2" position="float">
+      <label>
+       Fig. 2
+      </label>
+      <caption xml:lang="he">
+       <title>
+        תצוגה כללית של תוצאות הבנכ"ל.
+       </title>
+       <p>
+        <bold>
+         א
+        </bold>
+        ,
+        <bold>
+         ב
+        </bold>
+        DynamicBind מתפקד טוב יותר משיטות אחרות בחיזוי מיקומי ליגנדים עבור מאגרי הנתונים PDBbind (
+        <bold>
+         א
+        </bold>
+        ) ומטרות תרופות עיקריות (MDT) (
+        <bold>
+         ב
+        </bold>
+        ) ברמות RMSD שונות.
+        <bold>
+         ג
+        </bold>
+        גוונים כהים ובהירים מייצגים שיעורי הצלחה תחת קריטריונים מחמירים (RMSD של ליגנד &lt; 2 Å, ציון התנגשות &lt; 0.35) ורגועים (RMSD של ליגנד &lt; 5 Å, ציון התנגשות &lt;0.5), בהתאמה.
+        <bold>
+         ד
+        </bold>
+        הקונפורמציות החלבוניות המוערכות על ידי DynamicBind הן יותר דומות למצב הילידי, כפי שניתן לראות מ-RMSD הנמוך יותר של הכיס החלבוני.
+        <bold>
+         ה
+        </bold>
+        הציון cLDDT (contact-LDDT) המוערך על ידי DynamicBind מתואם היטב עם RMSD של הליגנד והוא מחוזי טוב של RMSD האמיתי של הליגנד מתחת ל-2 Å (auROC 0.764).
+        <bold>
+         ו
+        </bold>
+        ככל שמספר הדוגמאות המוחזרות גדל, שיעור ההצלחה גדל.
+        <bold>
+         ג
+        </bold>
+        –
+        <bold>
+         ו
+        </bold>
+        מציגים תוצאות עבור מאגרי הנתונים PDBbind ו- MDT המשולבים. תוצאות עבור מאגרי נתונים בודדים, כמו גם אלו שסוננו באמצעות חתכי דמיון מקסימליים של 30%, 60% ו-90% לרצף הליגנד והחלבון, מפורטים בתרשימים המשלימים
+        <xref ref-type="supplementary-material" rid="MOESM1">
+         1
+        </xref>
+        –
+        <xref ref-type="supplementary-material" rid="MOESM1">
+         4
+        </xref>
+        . נתוני מקור מסופקים כקובץ נתוני מקור.
+       </p>
+      </caption>
+      <graphic href="/ProjectMundo/MediaObjects/10X1038_s41467-024-45461-2/41467_2024_45461_Fig2_HTML.png" mime-subtype="PNG" specific-use="web"/>
+     </fig>
+    </p>
+    <p id="Par11">
+     בחינת מודלים רק על פי RMSD של ליגנד עשויה להעדיף מודלים המבוססים על למידת מכונה עמוקה (DiffDock, TankBind ו-DynamicBind) בשל סבלנות ההתנגשות הגבוהה יותר שלהם, בעוד שתוכניות מבוססות שדה כוח (GNINA, GLIDE, VINA) שמחמירות את כוחות ואן דר ואלס מועדפות פחות. התנגשויות משמעותיות יכולות למנוע ניתוח אינטראקציה בעיצוב תרופות מבוסס תרומה, ולהסתיר אינטראקציות מולקולריות חיוניות ולסבכת את עיצוב שיפור המולקולה. לפיכך, השתמשנו ב-RMSD של ליגנד ובניקוד התנגשות (כפי שהוגדר על ידי Hekkelman et al.) כדי לבחון אחוזי הצלחה. Fig.
+     <xref ref-type="fig" rid="Fig2">
+      2
+     </xref>
+     c מציג את אחוזי ההצלחה המשומשים בקריטריון מחמיר, RMSD של ליגנד &lt;2Å, ניקוד התנגשות &lt;0.35, וקריטריון מרוכך יותר, RMSD של ליגנד &lt;5Å, ניקוד התנגשות &lt;0.5. אחוז ההצלחה של DynamicBind (0.33) גבוה פי 1.7 מאשר הבסיס הטוב ביותר DiffDock (0.19) תחת התנאי המחמיר יותר. בנוסף, DynamicBind הוכיחה את יכולתה להפחית את RMSD הכיס שביחס למבנה AlphaFold ההתחלתי, אפילו במקרים עם RMSD כיס מקורי גדול (Fig.
+     <xref ref-type="fig" rid="Fig2">
+      2
+     </xref>
+     d). תצפית זו מדגישה שהגישה הנוכחית מסוגלת לנהל שינויים קונפורמטיביים משמעותיים, לשחזר מבנים הולו כאשר שיטות אחרות עשויות להתקשות. נוכח יכולת המודל שלנו ליצור קונפורמציות מגוונות, פיתחנו מודול ניקוד contact-LDDT (cLDDT), רעיון שהושפע מניקוד LDDT של AlphaFold. מטרת המודול היא לבחור את המבנה המורכב המתאים ביותר מבין הפלטים המונבאים. כפי שמוצג ב-Fig.
+     <xref ref-type="fig" rid="Fig2">
+      2
+     </xref>
+     e, cLDDT המונבא שלנו מתואם היטב עם RMSD הליגנד האמיתי, מה שמצביע על יעילותו בבחירת מבנים מורכבים באיכות גבוהה. הניקוד auROC, עם RMSD ליגנד מתחת ל-2Å כחיובי אמיתי, הוא 0.764. בעוד שפונקציית ניקוד cLDDT שלנו היא יעילה, קיים פוטנציאל לשיפור. בחירה מושלמת יכולה לשפר את אחוז ההצלחה שלנו מ-0.33 ל-0.5, כפי שמוצג ב-Fig.
+     <xref ref-type="fig" rid="Fig2">
+      2
+     </xref>
+     f. אפילו בהיעדר מודל בחירה אידיאלי, שיטתנו משפרת באופן משמעותי את DiffDock ואת השיטה הטובה ביותר המבוססת על שדה כוח, GLIDE. בשל משתנות מספר הדגימות שמופקות על ידי Glide, לעיתים קרובות בגלל מנגנון הסינון שלה המחסל קונפורמציות בלתי מציאותיות, הוצגה הביצועים הטובה ביותר של Glide באמצעות קו שטוח. קו זה משקף את אחוז ההצלחה הנקבע על ידי הדגימה היעילה ביותר של Glide. ביצועים יוצאי דופן של DynamicBind נובעים מיכולתה לעבור שינויים קונפורמטיביים משמעותיים של חלבון, מה שמוביל להתאמה טובה יותר בין החלבון לליגנד
+     <sup>
+      <xref ref-type="bibr" rid="CR14">
+       14
+      </xref>
+     </sup>
+     .
+    </p>
+    <p id="Par12">
+     לשם בחינת הכללה של המודל לחלבונים וליגנדים חדשים, ניתחנו תוצאות שסווגו על פי דמיון מקסימלי של רצף ליגנד וחלבון למאגר האימון (תרשימים משלימים
+     <xref ref-type="supplementary-material" rid="MOESM1">
+      3
+     </xref>
+     ו
+     <xref ref-type="supplementary-material" rid="MOESM1">
+      4
+     </xref>
+     ). ניתוח זה מגלה כי DynamicBind מבצע היטב עם ליגנדים חדשים, משפר אחרים, אך פחות יעיל עם חלבונים חדשים, שם היא מנוצחת על ידי שיטות עגינה קלאסיות עם כיסי עגינה מוגדרים מראש. שיטות למידת מכונה עמוקה אחרות גם מציגות ירידות דומות עם חלבונים חדשים, מרמזות על צורך במאגר אימון גדול יותר והטיה מובנית משופרת. בנוסף, לאור זאת שאיתור אתרי עגינה על חלבונים חדשים הוא תחום מחקר פעיל, האתגרים שנתקלים בעגינה גלובלית עיוורת על ידי שיטות למידת מכונה עמוקה, כולל שלנו, כנראה משותפים לגישות שונות. בסך הכל, כישוריה של DynamicBind עם ליגנדים חדשים היא משמעותית בגילוי תרופות, מה что מדגיש את הפוטנציאל שלה באיתור שינויים קונפורמטיביים של חלבון החיוניים ליצירת תרופות יעילות וספציפיות.
+    </p>
+   </sec>
+   <sec id="Sec5">
+    <title>
+     DynamicBind יכול לתפוס שינויים קונפורמציוניים של חלבון ספציפיים לליגנד
+    </title>
+    <p id="Par13">
+     פרוטוקולים מסורתיים של קישור (docking) בדרך כלל מבצעים דגימה של קונפורמציה של חלבונים כשלב נפרד מתהליך הקישור
+     <sup>
+      <xref ref-type="bibr" rid="CR15">
+       15
+      </xref>
+      ,
+      <xref ref-type="bibr" rid="CR38">
+       38
+      </xref>
+     </sup>
+     . במקרים רבים, עם זאת, שני ליגנדים שונים עשויים להתאים לקונפורמציות חלבון מוצאות. לדוגמה, קינאז c-Met יכול להיות בשתי קונפורמציות שונות, המתאימות למצבים פעילים ולא פעילים, המכונות בדרך כלל DFG-פנימה ו-DFG-החוצה (Fig.
+     <xref ref-type="fig" rid="Fig3">
+      3
+     </xref>
+     b, d). המוטיב DFG יכול לקפוץ החוצה, ובכך לחסום או לפתוח אזורים שונים של החלבון. במודלים מסורתיים של קישור, החלבון חייב להיות מוכוון לקונפורמציה הנכונה כדי לזהות את המיקום המתאים של הליגנד
+     <sup>
+      <xref ref-type="bibr" rid="CR20">
+       20
+      </xref>
+     </sup>
+     . לעומת זאת, DynamicBind, המשתמש בקונפורמציה של החלבון המונבאת על ידי AlphaFold (Fig.
+     <xref ref-type="fig" rid="Fig3">
+      3
+     </xref>
+     a), יכול להתאים דינמית את קונפורמציה של החלבון כדי למצוא את הקונפורמציה האופטימלית שמתאימה לליגנד. כדוגמה ניתן לציין את PDB 6UBW, שבו ה-RMSD המונבא של הליגנד הוא 0.49 Å, ו-RMSD של הכיס הוא 1.97 Å, בעוד ש-RMSD של הכיס במבנה AlphaFold הוא 9.44 Å. עבור PDB 7V3S, ה-RMSD המונבא של הליגנד הוא 0.51 Å, ו-RMSD של הכיס הוא 1.19 Å (AlphaFold 6.02 Å). שני הליגנדים לא נראו קודם לכן בקבוצת האימון (Fig.
+     <xref ref-type="fig" rid="Fig3">
+      3
+     </xref>
+     c, e). בניתוח הכמותי, שבעה חלבונים מקבוצת הבדיקה, המיוצגים ב-79 מבני PDB, נמצאו כאלו שמייצגים את שתי הקונפורמציות DFG-פנימה ו-DFG-החוצה, כפי שמצוין בשרת KLIFS
+     <sup>
+      <xref ref-type="bibr" rid="CR39">
+       39
+      </xref>
+     </sup>
+     . Fig.
+     <xref ref-type="fig" rid="Fig3">
+      3
+     </xref>
+     f ו-g מדגימים כיצד חלבונים אלו (המסומנים ב-IDs של UniProt), המתחילים מאותה המבנה ההתחלתי, מתקדמים בהדרגה לקונפורמציה DFG-פנימה עם קישור למעכב מסוג I, ונוטים לקונפורמציה DFG-החוצה עם אינטראקציה עם מעכב מסוג II. כמו כן, Fig.
+     <xref ref-type="fig" rid="Fig3">
+      3
+     </xref>
+     h מראה כי רוב המבנים החלבוניים המונבאים מראים RMSD נמוך יותר של הכיס לעומת המבנים ההתחלתיים של AlphaFold. תוצאות אלו מדגימות כי DynamicBind מסוגל לתפוס שינויים קונפורמציוניים ספציפיים לליגנד. תכונה זו היא בעלת חשיבות קריטית במניעת התעלמות מתרופות פוטנציאליות שעשויות לקשור בקונפורמציות שונות מהמבנה החלבוני המקורי.
+     <fig id="Fig3" position="float">
+      <label>
+       Fig. 3
+      </label>
+      <caption xml:lang="he">
+       <title>
+        DynamicBind תופס שינויים קונפורמטיביים ספציפיים לליגנד בחלבון.
+       </title>
+       <p>
+        מבנים מוערכים על ידי AlphaFold מוצגים בלבן, המבנה הגבישי עם חלבון וליגנד בוורוד וכחול, בהתאמה. תחזיות המודל שלנו מוצגות בירוק וכתום, עבור החלבון והליגנד, בהתאמה. שרשראות הצד של חומצות האמינו Asp–Phe–Gly (DFG) מוצגות בקולמוס. חצים אדומים מדגישים שינויים קונפורמטיביים משמעותיים של המבנה הגבישי מהמבנה המוערך על ידי AlphaFold. הקונפורמציה ההתחלתית היא הקונפורמציה המוערכת על ידי AlphaFold.
+        <bold>
+         א
+        </bold>
+        כאשר הליגנד 84S (
+        <bold>
+         ב
+        </bold>
+        ) נקשר לחלבון c-Met, החלבון מקבל קונפורמציה DFG-פנים. כאשר הליגנד 5I9 (
+        <bold>
+         ד
+        </bold>
+        ) נקשר לאותו חלבון, החלבון מקבל קונפורמציה DFG-חוץ. תחזיתנו עבור שני הליגנדים (
+        <bold>
+         ג
+        </bold>
+        ,
+        <bold>
+         ה
+        </bold>
+        ) תואמת היטב את המבנה הגבישי. RMSD של ליגנד הוא 0.49 Å ו-0.51 Å. שיפור RMSD של כיס החלבון מהמבנה ההתחלתי של AlphaFold הוא 7.47 Å ו-4.83 Å עבור DFG-פנים ו-DFG-חוץ, בהתאמה. בין קבוצת הבדיקה, שבעה חלבונים (מזוהים על ידי מספרי UniProt), מכילים שתי קונפורמציות DFG-פנים ו-DFG-חוץ, ה-RMSD של כיס החלבון של המבנים ההתחלתיים והמוערכים מוצגים ב-(
+        <bold>
+         ו
+        </bold>
+        ,
+        <italic>
+         ן
+        </italic>
+        = 39) ו-(
+        <bold>
+         ז
+        </bold>
+        ,
+        <italic>
+         ן
+        </italic>
+        = 34) עבור קונפורמציות DFG-פנים ו-DFG-חוץ, בהתאמה, שם קו מרכזי המסמן את החציון, שפת הקופסה המצביעה על הרבעונים העליונים והתחתונים, ונקודות בודדות בנקודות.
+        <bold>
+         ח
+        </bold>
+        ההיסטוגרמה של שיפור RMSD של כיס החלבון מ-AlphFold עבור כל 79 PDBs. נתוני מקור מוצעים כקובץ נתוני מקור.
+       </p>
+      </caption>
+      <graphic href="/ProjectMundo/MediaObjects/10X1038_s41467-024-45461-2/41467_2024_45461_Fig3_HTML.png" mime-subtype="PNG" specific-use="web"/>
+     </fig>
+    </p>
+   </sec>
+   <sec id="Sec6">
+    <title>
+     DynamicBind מכסה שינויים קונפורמציוניים רב-סקאליים של חלבון
+    </title>
+    <p id="Par14">
+     הקונפורמציה DFG-פנימה/החוצה נחקרה בהרחבה, וחלק מהאתגרים יכולים להיות מתוקנים חלקית על ידי שימוש ב-ensemble docking, שבו משתמשים בחלבונים בשתי הקונפורמציות לצורך קישור
+     <sup>
+      <xref ref-type="bibr" rid="CR40">
+       40
+      </xref>
+      ,
+      <xref ref-type="bibr" rid="CR41">
+       41
+      </xref>
+     </sup>
+     . docking של אנסמבל, עם זאת, מעלה את העלויות החישוביות ואינו מתאים לקונפורמציות פחות מוכרות. בסעיף זה, אנו מציגים ניתוח מקיף של שישה שינויים קונפורמציוניים שונים, המשתרעים על פני רמות זמן שונות, כל אחד מהם מדגם מקרה מקבוצת הבדיקה PDBbind. ב-Fig.
+     <xref ref-type="fig" rid="Fig4">
+      4
+     </xref>
+     , המבנה הגבישי מוצג בוורוד, המבנה AlphaFold בלבן, והחיזוי שלנו בירוק. הליגנד הילידי מוצג בציאן, והליגנד המונבא שלנו בכתום. Δpocket RMSD מודד את השינוי ב-RMSD של הכיס בין המבנה החלבוני המונבא למבנה AlphaFold, בהשוואה למבנה הגבישי. Δclash מודד את השינוי בציון ההתנגשות בין הזוג החלבוני-ליגנד המונבא למבנה AlphaFold עם הליגנד המושתל
+     <sup>
+      <xref ref-type="bibr" rid="CR14">
+       14
+      </xref>
+     </sup>
+     . ב-Fig.
+     <xref ref-type="fig" rid="Fig4">
+      4
+     </xref>
+     a, הליגנד הילידי מתנגש עם שרשרת צדדית של המבנה AlphaFold; בחיזוי שלנו, שרשרת צדדית זו מסתובבת לקראת הקונפורמציה הילידית, ובכך מוציאה את ההתנגשות. ב-Fig.
+     <xref ref-type="fig" rid="Fig4">
+      4
+     </xref>
+     b, חלק מהכיס חסום על ידי טירוזין במבנה AlphaFold; הוא הופך לנגיש בשני המבנים המונבאים והילידים. ב-Fig.
+     <xref ref-type="fig" rid="Fig4">
+      4
+     </xref>
+     c, לולאה גמישה חוצה את הליגנד, והיא נעה הצידה בחיזוי שלנו, בהתאמה למבנה הילידי. ב-Fig.
+     <xref ref-type="fig" rid="Fig4">
+      4
+     </xref>
+     d, אלפא הליקסים הופכים ללולאות ליד אתר הקישור. ב-Fig.
+     <xref ref-type="fig" rid="Fig4">
+      4
+     </xref>
+     e, תנועה משמעותית של מבנה משני נצפית בחלבון Hsp90
+     <italic>
+      α
+     </italic>
+     , המעבר ממצב סגור למצב פתוח. ב-Fig.
+     <xref ref-type="fig" rid="Fig4">
+      4
+     </xref>
+     f, שני דומיינים של קינאז AKT1 מתלכדים, ויוצרים כיס שלא היה קיים קודם. כל אלו מראים כי המודל הנוכחי יכול לחזות שינויים קונפורמציוניים מגוונים הקשורים לקישור ליגנד, כאשר הכיס לקישור ליגנד אינו מספיק רחב או אינו מורכב במבנים המונבאים של AlphaFold.
+     <fig id="Fig4" position="float">
+      <label>
+       Fig. 4
+      </label>
+      <caption xml:lang="he">
+       <title>
+        DynamicBind תופס ביעילות דינמיקה של חלבונים במגוון זמנים.
+       </title>
+       <p>
+        חלבונים עוברים שינויים קונפורמטיביים שיכולים להתרחש במגוון זמנים עם קישור לליגנדים קטנים. Δpocket RMSD שלילי מצביע על כך שהמבנה המוערך הוא בעל RMSD נמוך יותר עם האמת המוחלטת ביחס למבנה המוערך על ידי AlphaFold. Δclash שלילי מצביע על כך שהליגנד המוערך הוא בעל ציון התנגשות נמוך יותר עם המבנה המוערך בהשוואה לליגנד המושתל עם המבנה המוערך על ידי AlphaFold.
+        <bold>
+         א
+        </bold>
+        שרשרת הצד של ארגינין מסתובבת, מפחיתה התנגשויות עם הליגנד.
+        <bold>
+         ב
+        </bold>
+        הטירוזין במבנה AlphaFold שחסם את כיס הקישור, מוזחה הצידה במבנה המוערך.
+        <bold>
+         ג
+        </bold>
+        אזור הלולאה של מבנה AlphaFold חוצה את הליגנד, והוא ממוקם מחדש במבנה המוערך.
+        <bold>
+         ד
+        </bold>
+        אלפא הליקסים ליד אתר הקישור מתפתלים ללולאות, מסתדרים עם המבנה הגבישי.
+        <bold>
+         ה
+        </bold>
+        האלפא הליקס של Hsp90 עובר מיקום משמעותי.
+        <bold>
+         ו
+        </bold>
+        שני דומיינים מתלכדים, ובכך יוצרים את כיס הקישור. נתוני מקור מוצעים כקובץ נתוני מקור.
+       </p>
+      </caption>
+      <graphic href="/ProjectMundo/MediaObjects/10X1038_s41467-024-45461-2/41467_2024_45461_Fig4_HTML.png" mime-subtype="PNG" specific-use="web"/>
+     </fig>
+    </p>
+   </sec>
+   <sec id="Sec7">
+    <title>
+     DynamicBind חושף כיסים קריפטיים חשובים לגילוי תרופות
+    </title>
+    <p id="Par15">
+     האופי הדינמי של החלבונים גורם לעיתים קרובות ליצירת כיסים מוסתרים. כיסים אלו, הנוצרים במהלך הדינמיקה החלבונית, יכולים לחשוף אתרים פעילים שאינם קיימים במבנים הסטטיים, ובכך להפוך חלבונים שהיו "בלתי ניתנים לטיפול" למטרות פוטנציאליות לתרופות. אנו מדגימים את היכולת של DynamicBind לחשוף כיסים אלו באמצעות חלבון SETD2, היסטון מתילטראנספראז, כמקרה מבחן. SETD2, החיוני לטיפול במיאלומה רב-ערוצית (MM) ולימפומה של תאי B גדולים (DLBCL), הוא בעל כיס מוסתר המכוון על ידי תרכובת בררנית מאוד, EZM0414, הנמצאת כעת בניסויים קליניים של שלב I. כפי שמוצג ב-Fig.
+     <xref ref-type="fig" rid="Fig5">
+      5
+     </xref>
+     a, b, כל הומולוגים של SETD2 בקבוצת האימון, המוגדרים על ידי דמיון של חלבון-Smith–Waterman מעל 0.4, הוא co-גבישי עם S-אדנוזיל מתיונין (SAM) או אנלוגים של Sinefungin, המוצגים בקווים. Sinefungin ואנלוגים שלו מעכבים באופן רחב מתילטראנספראזות על ידי כיבוש אתר SAM, מה שהופך את העיכוב הבררני של SETD2 לאתגר. לפני 2019, לא היה מבנה של SETD2 או הומולוגים שלו שהוגבש עם תרכובת קשורה לאתר המכוון על ידי EZM0414 (המוצג בינות ציאניות). עקבות, המודל שלנו לא היה מאומן על מבנים עם תרכובת קשורה לאתר החדש שהתגלה. ב-Fig.
+     <xref ref-type="fig" rid="Fig5">
+      5
+     </xref>
+     c, המבנה AlphaFold ופני השטח שלו מוצגים בלבן. האתר המוסתר נראה חסום, וגורם להתנגשויות משמעותיות עם EZM0414 המושתל. Fig.
+     <xref ref-type="fig" rid="Fig5">
+      5
+     </xref>
+     d מאשר את EZM0414 כליגנד שלא נראה קודם, עם דמיון Tanimoto הגבוה ביותר לליגנדים בקבוצת האימון. Fig.
+     <xref ref-type="fig" rid="Fig5">
+      5
+     </xref>
+     e מציג את המבנה המונבא של הקומפלקס החלבוני-ליגנד, המקבל את המבנה המונבא של SETD2 ואת הייצוג SMILES של EZM0414 כקלט. Fig.
+     <xref ref-type="fig" rid="Fig5">
+      5
+     </xref>
+     f מציג את המבנה המונבא שלנו, המועלה על המבנה הגבישי של קומפלקס SETD2-EZM0414 (PDB 7TY2). ה-RMSD התוצאתי של הליגנד הוא 1.4 Å, ו-RMSD של הכיס הוא 2.16 Å. כמו כן, כללנו במידע הנלווה מספר מקרים מאוסף Cryptosite, המראים דמיון רצפי נמוך לקבוצת האימון
+     <sup>
+      <xref ref-type="bibr" rid="CR42">
+       42
+      </xref>
+      ,
+      <xref ref-type="bibr" rid="CR43">
+       43
+      </xref>
+      <xref ref-type="bibr" rid="CR44">
+       44
+      </xref>
+      <xref ref-type="bibr" rid="CR45">
+       45
+      </xref>
+      <xref ref-type="bibr" rid="CR46">
+       46
+      </xref>
+     </sup>
+     .
+     <fig id="Fig5" position="float">
+      <label>
+       Fig. 5
+      </label>
+      <caption xml:lang="he">
+       <title>
+        DynamicBind חושף כיס קריפטי עבור הליגנד EZM0414.
+       </title>
+       <p>
+        <bold>
+         א
+        </bold>
+        רק שישה PDBs בקבוצת האימון הם בעלי דמיון חלבוני Smith–Waterman גדול מ-0.4 עם החלבון SETD2, וכולם מוקריסטלים עם ליגנדים דומים ל-SAM, המוצגים גם בקווים ב- (
+        <bold>
+         ב
+        </bold>
+        ). הליגנד של PDB 7TY2, EZM0414, מוצג במקלות ציאן, עם החלבון המוצג בוורוד.
+        <bold>
+         ג
+        </bold>
+        כיס הקישור עבור EZM0414 נעדר במבנה AlphaFold, המוצג בלבן.
+        <bold>
+         ד
+        </bold>
+        לוח זה מציג את דמיון Tanimoto של ליגנדים בקבוצת האימון לעומת EZM0414, ושלושת הליגנדים הדומים ביותר מוצגים.
+        <bold>
+         ה
+        </bold>
+        מבנה הקומפלקס החלבוני-ליגנדי המונבא על ידי DynamicBind, עם החלבון המיוצג בירוק והליגנד בכתום.
+        <bold>
+         ו
+        </bold>
+        העלאה של הקומפלקס המונבא על ידי DynamicBind והמבנה הגבישי המתאים. נתוני מקור מסופקים כקובץ נתוני מקור.
+       </p>
+      </caption>
+      <graphic href="/ProjectMundo/MediaObjects/10X1038_s41467-024-45461-2/41467_2024_45461_Fig5_HTML.png" mime-subtype="PNG" specific-use="web"/>
+     </fig>
+    </p>
+   </sec>
+   <sec id="Sec8">
+    <title>
+     DynamicBind משיג ביצועים טובים יותר בבדיקת אנטיביוטיקה
+    </title>
+    <p id="Par16">
+     בגילוי תרופות מבוסס-יעד, שני התהליכים, בדיקת מועמדים פוטנציאליים לתרופות ובדיקה הפוכה, שבה מזהים מטרות חלבוניות לתרכובות ספציפיות, הם חיוניים. תהליכים אלו דורשים חיזוי מדויק של ערכי קישור, המודדים את עוצמת האינטראקציה בין חלבון לתרכובת, ברמה של פרוטאום. לפיכך, הוספנו מודול חיזוי ערכי קישור למודל שלנו, המאומן על נתונים אמפיריים של ערכי קישור מאוסף PDBbind. כדי לבדוק את DynamicBind בתרחיש בדיקה וירטואלית אמיתי, השתמשנו בניסוי תרופות אנטיביוטיות שפורסם לאחרונה
+     <sup>
+      <xref ref-type="bibr" rid="CR25">
+       25
+      </xref>
+     </sup>
+     . מאגר זה כולל פאנל של 2616 זוגות חלבון-תרכובת, אשר לא נראו במהלך האימון. הוא מציג 12 חלבונים מהפרוטאום החיוני של Escherichia coli, המצמדים ל-218 תרכובות אנטיבקטריות פעילות. Fig.
+     <xref ref-type="fig" rid="Fig6">
+      6
+     </xref>
+     a מראה כי DynamicBind עוקף שיטות קישור נפוצות כמו VINA ו-DOCK6.9, וכן את השיטות הטובות ביותר של למידת מכונה לחיזוי ערכי קישור, ומגיע ל-auROC ממוצע של 0.68. הנתונים הבסיסיים לוקחים מהמאמר המקורי. שיפור הביצועים הזה נובע מיכולת הקישור הדינמית של DynamicBind, המעדכנת את המבנה של AlphaFold למצב יותר טבעי, מה שמוביל לחיזוי ערכי קישור מדויק יותר. כפי שמוצג ב-Fig.
+     <xref ref-type="fig" rid="Fig6">
+      6
+     </xref>
+     b, המבנים החלבוניים המונבאים על ידי DynamicBind לשלוש תרכובות פעילות מתקרבים יותר לליגנד, ויוצרים אינטראקציות נוספות שלא היו אפשריות עם המבנה ההתחלתי של AlphaFold. הערכה זו על מאגר התרופות האנטיביוטיות תואמת את הבדיקות שלנו על קבוצות הבדיקה של PDBbind לחיזוי ערכי קישור (שולחן משלים
+     <xref ref-type="supplementary-material" rid="MOESM1">
+      1
+     </xref>
+     ), שבהן DynamicBind מתעלה באופן עקבי על שיטות קישור מסורתיות ושיטות למידת מכונה לקישור קשיח. תוצאות אלו מראות כי DynamicBind, עם יכולת חיזוי ערכי קישור, מציג פוטנציאל משמעותי ליישומים של בדיקה וירטואלית ברמה של פרוטאום.
+     <fig id="Fig6" position="float">
+      <label>
+       Fig. 6
+      </label>
+      <caption xml:lang="he">
+       <title>
+        DynamicBind מגיע לביצועים טובים יותר בבדיקת מסך בבחינת אנטיביוטיקה.
+       </title>
+       <p>
+        <bold>
+         א
+        </bold>
+        הערכה השוואתית של ביצועי המסך הווירטואלי על בחינת האנטיביוטיקה על ידי שיטות שונות, המודדות במונחים של auROC (שטח תחת עקומת ROC). הבחינה כוללת
+        <italic>
+         n
+        </italic>
+        = 12 מערכות חלבוניות שונות. כל תרשים קופסה מציג את החציון (קו מרכזי), רביעונים עליונים ותחתונים (שפת קופסה), שרווחים המתפשטים עד 1.5 פעמים טווח הרביעונים, ונקודות נתונים בודדות (נקודות). אנו החלנו באופן נאמן את כל ששת הנתונים הבסיסיים כפי שהוצגו במאמר הבחינה
+        <sup>
+         <xref ref-type="bibr" rid="CR25">
+          25
+         </xref>
+        </sup>
+        .
+        <bold>
+         ב
+        </bold>
+        המבנה החלבוני המונבא על ידי AlphaFold מוצג בלבן, בעוד שהמבנים החלבוניים שנוצרו על ידי DynamicBind עבור שלושה תרכובות פעילות מוצגים בירוק. חצים אדומים מצביעים על האזורים בהם החלבון מתקרב לליגנד, תוך יצירת אינטראקציות נוספות. נתוני מקור מסופקים כקובץ נתוני מקור.
+       </p>
+      </caption>
+      <graphic href="/ProjectMundo/MediaObjects/10X1038_s41467-024-45461-2/41467_2024_45461_Fig6_HTML.png" mime-subtype="PNG" specific-use="web"/>
+     </fig>
+    </p>
+   </sec>
+  </sec>
+  <sec id="Sec9" sec-type="discussion">
+   <title>
+    דיון
+   </title>
+   <p id="Par17">
+    DynamicBind מאחד שני שלבים שבדרך כלל מופרדים, יצירת קונפורמציה חלבונית וחיזוי מיקום ליגנד, לתוך מסגרת אחת. כשיטה של למידת מכונה מסוג end-to-end, היא מהירה פי כמה סדרי גודל מאשר סימולציות MD מסורתיות בדגימה של שינויים קונפורמציוניים נרחבים של חלבונים. לעומת שיטות קישור מסורתיות הדורשות כיסים מוגדרים מראש, DynamicBind מסוגל לבצע קישור גלובלי, תכונה הנעשית חיונית כאשר הכיס לקישור טרם הוגדר. יתרונות אלו מאפשרים ל-DynamicBind לבצע בדיקה וירטואלית של תרכובות הקושרות לכיסים מוסתרים. תרכובות כאלו עשויות לקשור באופן בררני לחלבון היעד, ובכך למזער את האפקטים הלוואי. בנוסף, DynamicBind יכול לחזות האם מועמד לתרופה חדש עשוי לקשור לחלבון לא מכוון או לסייע באיתור היעד כאשר תרכובת פעילה מתגלה דרך בדיקת פנוטיפ.
+   </p>
+   <p id="Par18">
+    DynamicBind, בעודו מדגים ביצועים בשיא המדינה בבדיקות שלנו, עדיין מציג הזדמנויות לשיפור, במיוחד בשיפור יכולתו לכלל חלבונים עם הומולוגיה רצפית נמוכה ביחס לאלו בקבוצת האימון
+    <sup>
+     <xref ref-type="bibr" rid="CR47">
+      47
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR48">
+      48
+     </xref>
+    </sup>
+    . כמודל המבוסס על נתונים, הוא מרוויח רבות מהתקדמות מהירה בשיטות Cryo-EM
+    <sup>
+     <xref ref-type="bibr" rid="CR49">
+      49
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR50">
+      50
+     </xref>
+     ,
+     <xref ref-type="bibr" rid="CR51">
+      51
+     </xref>
+    </sup>
+    . התקדמויות טכנולוגיות אלו ירחיבו את המגוון והכלליות של נתוני האימון, ויספקו קונפורמציות משתנות יותר של קומפלקסים חלבוניים-ליגנד בקצב מהיר יותר. קיימת גם אפשרות לשפר DynamicBind על ידי שימוש בכמות גדולה של נתוני קישור לא-מבניים, הנפוצים יותר ממבנים מגבשים. באמצעות שימוש בגישה עצמית-מיזוג, דומה ל-AlphaFold, אנו יכולים להרחיב את קבוצת האימון על ידי שילוב חיזויים ברמת ביטחון גבוהה של מבנים מורכבים של זוגות חלבון-ליגנד, שקודם לכן היה להם רק נתוני קישור
+    <sup>
+     <xref ref-type="bibr" rid="CR5">
+      5
+     </xref>
+    </sup>
+    .
+   </p>
+   <p id="Par19">
+    בסיכום, DynamicBind מציגה גישה של "דוקינג דינמי" לחקר אינטראקציות חלבון-ליגנד, המבדיל אותה משיטות דוקינג מסורתיות שמתייחסות לחלבונים כסטטיים וסימולציות דינמיקה מולקולרית (MD) שהן דורשות חישוב רב. יכולתה לדינמיקה של חלבונים בקנה מידה גדול משמעותית במיוחד לגילוי מולקולות תרופה, במיוחד אלו שמכוונות לכיסים קריפטיים. בנוסף, הקונפורמציות הליגנד-ספציפיות של חלבונים שנוצרות על ידי DynamicBind עשויות לספק תובנות משמעותיות להשפעה של ליגנדים על חלבונים, ובכך לשפר את הבנתנו את היחסים בין מבנה לפונקציה ולהגביר את הבנתנו המכניסטית.
+   </p>
+  </sec>
+  <sec id="Sec10" sec-type="methods">
+   <title>
+    שיטות
+   </title>
+   <sec id="Sec11">
+    <title>
+     מבט כללי
+    </title>
+    <p id="Par20">
+     המודל שלנו הוא רשת נוירונים גרפית E(3)-אקוויריאנטית, המבוססת על דיפוזיה, המשתמשת בייצוג מקורסנת.
+    </p>
+    <p id="Par21">
+     מודל E(3)-אקוויריאנטי מעביר את הפלט,
+     <italic>
+      י
+     </italic>
+     , לפי פעולות הסיבוב והשיקוף שמופעלות על הקלט
+     <italic>
+      אקס
+     </italic>
+     במרחב 3D
+     <sup>
+      <xref ref-type="bibr" rid="CR52">
+       52
+      </xref>
+     </sup>
+     . מחקרים הראו כי מודלים אקוויריאנטיים יכולים להתאמן עם 1000 פחות נתונים ולהפיק תוצאות עדיפות על מבנה מים בulk
+     <sup>
+      <xref ref-type="bibr" rid="CR53">
+       53
+      </xref>
+     </sup>
+     . למרות התקדמות משמעותית במיקרוסקופיה אלקטרונית קריוגנית וקריסטלוגרפיה, בסיס הנתונים הקיים של קומפלקסים של חלבון-ליגנד נותר מוגבל יחסית, ומונה רק עשרות אלפים. על כן, נדרש מודל יעיל, שיכול להבחין ב间 המידע הרלוונטי ביותר ולהימנע ממידע על-פני שאינו נכון כאשר מסובבים או ממקמים מחדש את כל המבנה. הגישה המסורתית לקיום סימטריה SO(3) כוללת שימוש בלעדי בכמויות אינווריאנטיות, כגון מפת קשר. אולם, מפת קשר או מרחק אינה תמיד מתאימה לקונפיגורציות פיזיקליות. לדוגמה, שארית עשויה להיחזה כבעלת קשר עם שני אטומים מרוחקים מאוד. בנוסף, מפת קשר עשויה להתעלם מכיראליות, היבט משמעותי בגילוי תרופות
+     <sup>
+      <xref ref-type="bibr" rid="CR54">
+       54
+      </xref>
+     </sup>
+     .
+    </p>
+    <p id="Par22">
+     כמודל המבוסס על דיפוזיה, DynamicBind מאומנת דרך תהליך שמעוות את הקונפורמציה הילידית בדרגות שונות, מאפשר למודל ללמוד כיצד לשחזר את הקונפורמציה הנכונה. עיוות הקונפיגורציה המקורית כולל בדרך כלל הוספת רעש גאוסי תרגומי לאטומים. עם הגבלות מרחק קשרים המוטלות על ידי קשרים כימיים ואפקטים של כוחות Van der Waals, שיחזור מעיוותים כאלו הוא פשוט כאשר העיוות הוא קטן יחסית. אולם, הבנו כי הוספת רעש גאוסי בלבד אינה מספיקה לאמ� את המודל לחזות את המעבר מקונפיגורציה אחת בעלת משמעות ביולוגית לאחרת. לפיכך, הצגנו טרנספורמציה מורפ-לייק, שמשרטטת ב间 המבנה הגבישי של החלבון והמבנה המונבא על ידי AlphaFold, ובכך מקטינה את מחסומי המעבר בין קונפיגורציות מטא-יציבות, כגון הקונפיגורציה המונבאת על ידי AlphaFold, והקונפיגורציה המחוברת לליגנד. לעומת זאת, ארכיטקטורות דיפוזיה אחרות מאמנות פונקציית סקור,
+     <inline-formula id="IEq1">
+      <alternatives>
+       <math id="IEq1_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+        <msub>
+         <mrow>
+          <mi mathvariant="bold-italic">
+           s
+          </mi>
+         </mrow>
+         <mrow>
+          <mi>
+           θ
+          </mi>
+         </mrow>
+        </msub>
+        <mrow>
+         <mo>
+          (
+         </mo>
+         <mrow>
+          <mi mathvariant="bold">
+           x
+          </mi>
+          <mo>
+           ,
+          </mo>
+          <mi>
+           t
+          </mi>
+         </mrow>
+         <mo>
+          )
+         </mo>
+        </mrow>
+        <mspace width="0.25em"/>
+        <mo>
+         ≈
+        </mo>
+        <mspace width="0.25em"/>
+        <mo>
+         ∇
+        </mo>
+        <mi>
+         log
+        </mi>
+        <msub>
+         <mrow>
+          <mi>
+           p
+          </mi>
+         </mrow>
+         <mrow>
+          <mi>
+           t
+          </mi>
+         </mrow>
+        </msub>
+        <mrow>
+         <mo>
+          (
+         </mo>
+         <mrow>
+          <mi mathvariant="bold">
+           x
+          </mi>
+         </mrow>
+         <mo>
+          )
+         </mo>
+        </mrow>
+       </math>
+       <tex-math id="IEq1_TeX">
+        \documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym}
+				\usepackage{amsfonts}
+				\usepackage{amssymb}
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${{{{{{{{\boldsymbol{s}}}}}}}}}_{\theta }({{{{{{{\bf{x}}}}}}}},t) \, \approx \, \nabla \log {p}_{t}({{{{{{{\bf{x}}}}}}}})$$\end{document}
+       </tex-math>
+       <inline-graphic href="41467_2024_45461_Article_IEq1.gif" mime-subtype="GIF" specific-use="web"/>
+      </alternatives>
+     </inline-formula>
+     , ארכיטקטורות הדיפוזיה שלנו מייעדות למפות מבנים מעוותים ישירות בחזרה לקונפיגורציות המקוריות, בדומה למודל העקביות
+     <sup>
+      <xref ref-type="bibr" rid="CR29">
+       29
+      </xref>
+      ,
+      <xref ref-type="bibr" rid="CR55">
+       55
+      </xref>
+     </sup>
+     . פלטי המודל מסומנים כ
+     <inline-formula id="IEq2">
+      <alternatives>
+       <math id="IEq2_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+        <msub>
+         <mrow>
+          <mi mathvariant="bold-italic">
+           f
+          </mi>
+         </mrow>
+         <mrow>
+          <mi>
+           θ
+          </mi>
+         </mrow>
+        </msub>
+        <mfenced close=")" open="(">
+         <mrow>
+          <msub>
+           <mrow>
+            <mi mathvariant="bold">
+             x
+            </mi>
+           </mrow>
+           <mrow>
+            <mi>
+             t
+            </mi>
+           </mrow>
+          </msub>
+          <mo>
+           ,
+          </mo>
+          <mi>
+           t
+          </mi>
+         </mrow>
+        </mfenced>
+        <mo>
+         =
+        </mo>
+        <mo>
+         −
+        </mo>
+        <mi mathvariant="bold-italic">
+         ϕ
+        </mi>
+        <mfenced close=")" open="(">
+         <mrow>
+          <msub>
+           <mrow>
+            <mi mathvariant="bold">
+             x
+            </mi>
+           </mrow>
+           <mrow>
+            <mi>
+             t
+            </mi>
+           </mrow>
+          </msub>
+          <mo>
+           ,
+          </mo>
+          <mi>
+           t
+          </mi>
+         </mrow>
+        </mfenced>
+       </math>
+       <tex-math id="IEq2_TeX">
+        \documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym}
+				\usepackage{amsfonts}
+				\usepackage{amssymb}
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${{{{{{{{\boldsymbol{f}}}}}}}}}_{\theta }\left({{{{{{{{\bf{x}}}}}}}}}_{t},t\right)=-{{{{{{{\boldsymbol{\phi }}}}}}}}\left({{{{{{{{\bf{x}}}}}}}}}_{t},t\right)$$\end{document}
+       </tex-math>
+       <inline-graphic href="41467_2024_45461_Article_IEq2.gif" mime-subtype="GIF" specific-use="web"/>
+      </alternatives>
+     </inline-formula>
+     , כאשר
+     <inline-formula id="IEq3">
+      <alternatives>
+       <math id="IEq3_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+        <mi mathvariant="bold-italic">
+         ϕ
+        </mi>
+        <mfenced close=")" open="(">
+         <mrow>
+          <msub>
+           <mrow>
+            <mi mathvariant="bold">
+             x
+            </mi>
+           </mrow>
+           <mrow>
+            <mi>
+             t
+            </mi>
+           </mrow>
+          </msub>
+          <mo>
+           ,
+          </mo>
+          <mi>
+           t
+          </mi>
+         </mrow>
+        </mfenced>
+       </math>
+       <tex-math id="IEq3_TeX">
+        \documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym}
+				\usepackage{amsfonts}
+				\usepackage{amssymb}
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$${{{{{{{\boldsymbol{\phi }}}}}}}}\left({{{{{{{{\bf{x}}}}}}}}}_{t},t\right)$$\end{document}
+       </tex-math>
+       <inline-graphic href="41467_2024_45461_Article_IEq3.gif" mime-subtype="GIF" specific-use="web"/>
+      </alternatives>
+     </inline-formula>
+     מייצג את הטרנספורמציה המורפ-לייק שהוספה לקונפיגורציה הילידית.
+    </p>
+    <p id="Par23">
+     שיטות מסורתיות משתמשות בייצוג אטומי, המודל את קואורדינטות כל אטום במפורש. אולם, אטומים אינם זזים באופן עצמאי עקב החיבורים שלהם דרך קשרים כימיים, והגאומטריה המקומית מוגבלת במידה רבה - לדוגמה, טבעת בנזן היא בדרך כלל שטוחה. כדי להפחית את מספר הדרגות החופשיות של קונפיגורציות לא-פיזיקליות אלו, אימצנו ייצוג מקורסנת עבור החלבון והליגנד. במודל שלנו, כל שארית חלבון מיוצגת על ידי צומת עם שני וקטורים - קואורדינטות וכיוונים, וזוויות דיהדרליות של שרשרת הצד. פרטים נוספים מופיעים ב"Featurization". עבור הליגנד, כל אטום כבד מיוצג על ידי צומת, וצמתים אלו משתנים באופן חיצוני-פנימי, כאשר שינויים בזוויות טורסיונליות מומרים לשינויים בקואורדינטות קרטזיות
+     <sup>
+      <xref ref-type="bibr" rid="CR33">
+       33
+      </xref>
+     </sup>
+     . פרטים נוספים ניתן למצוא ב"Transformation of the ligand conformation". במיוחד, על אף שזהו ייצוג מקורסנת, קואורדינטות כל האטומים שאינם מימן עדיין יכולות להיות ממופות באופן חד-חד ערכי.
+    </p>
+    <p id="Par24">
+     הקלט למודל שלנו הוא הקונפורמציה הנוכחית של החלבון והליגנד. הפלטים כוללים את העדכונים המונבאים ל
+     <italic>
+      k
+     </italic>
+     זוויות טורסיוניות סקלריות ושני וקטורים של תרגום-רוטציה עבור כל ליגנד, יחד עם עדכונים ל
+     <inline-formula id="IEq4">
+      <alternatives>
+       <math id="IEq4_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+        <msubsup>
+         <mrow>
+          <mi>
+           k
+          </mi>
+         </mrow>
+         <mrow>
+          <mi>
+           i
+          </mi>
+         </mrow>
+         <mrow>
+          <mi>
+           p
+          </mi>
+         </mrow>
+        </msubsup>
+       </math>
+       <tex-math id="IEq4_TeX">
+        $${k}_{i}^{p}$$
+       </tex-math>
+       <inline-graphic href="41467_2024_45461_Article_IEq4.gif" mime-subtype="GIF" specific-use="web"/>
+      </alternatives>
+     </inline-formula>
+     זוויות דיהדרליות סקלריות של השרשרת הצדדית ושני וקטורים של תרגום-רוטציה של הגב החלבוני עבור כל שארית חלבונית. פרטים נוספים ניתן למצוא ב “Transformation of the protein conformation”. בנוסף, המודל מייצר שני פלטים סקלריים: אחד להערכת מידת הקונפורמציה הילידית כפי שנבדק על ידי cLDDT (contact-LDDT), ואחר לחיזוי האפיניות בין החלבון לליגנד
+     <sup/>
+     .
+    </p>
+   </sec>
+   <sec id="Sec12">
+    <title>
+     סימון
+    </title>
+    <p id="Par25">
+     הליגנד במודל שלנו הוא הגרף המיוחס
+     <inline-formula id="IEq5">
+      <alternatives>
+       <math id="IEq5_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+        <msup>
+         <mrow>
+          <mi class="MJX-tex-caligraphic" mathvariant="script">
+           G
+          </mi>
+         </mrow>
+         <mrow>
+          <mi>
+           l
+          </mi>
+         </mrow>
+        </msup>
+        <mo>
+         =
+        </mo>
+        <mrow>
+         <mo>
+          (
+         </mo>
+         <mrow>
+          <msup>
+           <mrow>
+            <mi class="MJX-tex-caligraphic" mathvariant="script">
+             V
+            </mi>
+           </mrow>
+           <mrow>
+            <mi>
+             l
+            </mi>
+           </mrow>
+          </msup>
+          <mo>
+           ,
+          </mo>
+          <msup>
+           <mrow>
+            <mi class="MJX-tex-caligraphic" mathvariant="script">
+             E
+            </mi>
+           </mrow>
+           <mrow>
+            <mi>
+             l
+            </mi>
+           </mrow>
+          </msup>
+         </mrow>
+         <mo>
+          )
+         </mo>
+        </mrow>
+       </math>
+       <tex-math id="IEq5_TeX">
+        $${{{{{{{{\mathcal{G}}}}}}}}}^{l}=({{{{{{{{\mathcal{V}}}}}}}}}^{l},{{{{{{{{\mathcal{E}}}}}}}}}^{l})$$
+       </tex-math>
+       <inline-graphic href="41467_2024_45461_Article_IEq5.gif" mime-subtype="GIF" specific-use="web"/>
+      </alternatives>
+     </inline-formula>
+     , כאשר כל צומת
+     <inline-formula id="IEq6">
+      <alternatives>
+       <math id="IEq6_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+        <msubsup>
+         <mrow>
+          <mi mathvariant="fraktur">
+           v
+          </mi>
+         </mrow>
+         <mrow>
+          <mi>
+           i
+          </mi>
+         </mrow>
+         <mrow>
+          <mi>
+           l
+          </mi>
+         </mrow>
+        </msubsup>
+        <mo>
+         ∈
+        </mo>
+        <msup>
+         <mrow>
+          <mi class="MJX-tex-caligraphic" mathvariant="script">
+           V
+          </mi>
+         </mrow>
+         <mrow>
+          <mi>
+           l
+          </mi>
+         </mrow>
+        </msup>
+       </math>
+       <tex-math id="IEq6_TeX">
+        $${{\mathfrak{v}}}_{i}^{l}\in {{{{{{{{\mathcal{V}}}}}}}}}^{l}$$
+       </tex-math>
+       <inline-graphic href="41467_2024_45461_Article_IEq6.gif" mime-subtype="GIF" specific-use="web"/>
+      </alternatives>
+     </inline-formula>
+     מייצג אטום כבד והקשרים הארומטיים, יחידים, כפולים או משולשים כקשרים. תכונות הצומת של גרף הליגנד כוללות מספר אטומי, כיראליות, דרגה ומטען פורמלי. בנוסף לסוג הקשר, שילוב אורך קשר משמש כתכונות קשר סקלריות.
+    </p>
+    <p id="Par26">
+     הגרף החלבוני מסומן כ
+     <inline-formula id="IEq7">
+      <alternatives>
+       <math id="IEq7_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+        <msup>
+         <mrow>
+          <mi class="MJX-tex-caligraphic" mathvariant="script">
+           G
+          </mi>
+         </mrow>
+         <mrow>
+          <mi>
+           p
+          </mi>
+         </mrow>
+        </msup>
+        <mo>
+         =
+        </mo>
+        <mrow>
+         <mo>
+          (
+         </mo>
+         <mrow>
+          <msup>
+           <mrow>
+            <mi class="MJX-tex-caligraphic" mathvariant="script">
+             V
+            </mi>
+           </mrow>
+           <mrow>
+            <mi>
+             p
+            </mi>
+           </mrow>
+          </msup>
+          <mo>
+           ,
+          </mo>
+          <mspace width="0.25em"/>
+          <msup>
+           <mrow>
+            <mi class="MJX-tex-caligraphic" mathvariant="script">
+             E
+            </mi>
+           </mrow>
+           <mrow>
+            <mi>
+             p
+            </mi>
+           </mrow>
+          </msup>
+         </mrow>
+         <mo>
+          )
+         </mo>
+        </mrow>
+       </math>
+       <tex-math id="IEq7_TeX">
+        $${{{{{{{{\mathcal{G}}}}}}}}}^{p}=({{{{{{{{\mathcal{V}}}}}}}}}^{p},\, {{{{{{{{\mathcal{E}}}}}}}}}^{p})$$
+       </tex-math>
+       <inline-graphic href="41467_2024_45461_Article_IEq7.gif" mime-subtype="GIF" specific-use="web"/>
+      </alternatives>
+     </inline-formula>
+     , כאשר כל צומת
+     <inline-formula id="IEq8">
+      <alternatives>
+       <math id="IEq8_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+        <mi mathvariant="fraktur">
+         v
+        </mi>
+        <msup>
+         <mrow>
+          <mi>
+           i
+          </mi>
+         </mrow>
+         <mrow>
+          <mi>
+           p
+          </mi>
+         </mrow>
+        </msup>
+        <mo>
+         ∈
+        </mo>
+        <msup>
+         <mrow>
+          <mi class="MJX-tex-caligraphic" mathvariant="script">
+           V
+          </mi>
+         </mrow>
+         <mrow>
+          <mi>
+           p
+          </mi>
+         </mrow>
+        </msup>
+       </math>
+       <tex-math id="IEq8_TeX">
+        $${\mathfrak{v}}{i}^{p}\in {{{{{{{{\mathcal{V}}}}}}}}}^{p}$$
+       </tex-math>
+       <inline-graphic href="41467_2024_45461_Article_IEq8.gif" mime-subtype="GIF" specific-use="web"/>
+      </alternatives>
+     </inline-formula>
+     מתאים לשארית בעמדת
+     <italic>
+      C
+     </italic>
+     <sub>
+      <italic>
+       α
+      </italic>
+     </sub>
+     . תכונות הצומת בגרף החלבוני כוללות סוג חומצה אמינית, שילוב לשוני מ
+     <bold>
+      esm
+     </bold>
+     , וזוויות דיהדרליות של השרשרת הצדדית, שמיוצגות כתכונות סקלריות ממוטות (7 × 2) (חמש זוויות דיהדרליות רוטטות [chi1, chi2, ..., chi5] ושתי זוויות דיהדרליות סימטריות [altchi1, altchi2] עבור כל חומצה אמינית, וזוויות אלו מומרות לערכים סינוס וקוסינוס). כדי לוודא את ייחודיות זוויות השרשרת הצדדית עבור מבנה נתון, אנו מטפלים בו באופן עקבי כ
+     <inline-formula id="IEq9">
+      <alternatives>
+       <math id="IEq9_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+        <mi>
+         max
+        </mi>
+        <mrow>
+         <mo>
+          (
+         </mo>
+         <mrow>
+          <mstyle>
+           <mtext>
+            chi1
+           </mtext>
+          </mstyle>
+          <mo>
+           ,
+          </mo>
+          <mstyle>
+           <mtext>
+            altchi1
+           </mtext>
+          </mstyle>
+         </mrow>
+         <mo>
+          )
+         </mo>
+        </mrow>
+        <mo>
+         ,
+        </mo>
+        <mi>
+         min
+        </mi>
+        <mrow>
+         <mo>
+          (
+         </mo>
+         <mrow>
+          <mstyle>
+           <mtext>
+            chi1
+           </mtext>
+          </mstyle>
+          <mo>
+           ,
+          </mo>
+          <mstyle>
+           <mtext>
+            altchi1
+           </mtext>
+          </mstyle>
+         </mrow>
+         <mo>
+          )
+         </mo>
+        </mrow>
+        <mo>
+         ,
+        </mo>
+        <mi>
+         max
+        </mi>
+        <mrow>
+         <mo>
+          (
+         </mo>
+         <mrow>
+          <mstyle>
+           <mtext>
+            chi2
+           </mtext>
+          </mstyle>
+          <mo>
+           ,
+          </mo>
+          <mstyle>
+           <mtext>
+            altchi2
+           </mtext>
+          </mstyle>
+         </mrow>
+         <mo>
+          )
+         </mo>
+        </mrow>
+        <mo>
+         ,
+        </mo>
+        <mi>
+         min
+        </mi>
+        <mrow>
+         <mo>
+          (
+         </mo>
+         <mrow>
+          <mstyle>
+           <mtext>
+            chi2
+           </mtext>
+          </mstyle>
+          <mo>
+           ,
+          </mo>
+          <mstyle>
+           <mtext>
+            altchi2
+           </mtext>
+          </mstyle>
+         </mrow>
+         <mo>
+          )
+         </mo>
+        </mrow>
+       </math>
+       <tex-math id="IEq9_TeX">
+        $$\max (\,{{\mbox{chi1}}},{{\mbox{altchi1}}}),\min ({{\mbox{chi1}}},{{\mbox{altchi1}}}),\max ({{\mbox{chi2}}},{{\mbox{altchi2}}}),\min ({{\mbox{chi2}}},{{\mbox{altchi2}}}\,)$$
+       </tex-math>
+       <inline-graphic href="41467_2024_45461_Article_IEq9.gif" mime-subtype="GIF" specific-use="web"/>
+      </alternatives>
+     </inline-formula>
+     , chi3, chi4, chi5. בנוסף, הכיוון הגבי מיוצג כשני וקטורים יחידים, הם
+     <inline-formula id="IEq10">
+      <alternatives>
+       <math id="IEq10_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+        <mfrac>
+         <mrow>
+          <msub>
+           <mrow>
+            <mi mathvariant="bold">
+             x
+            </mi>
+           </mrow>
+           <mrow>
+            <mi>
+             N
+            </mi>
+           </mrow>
+          </msub>
+          <mo>
+           −
+          </mo>
+          <msub>
+           <mrow>
+            <mi mathvariant="bold">
+             x
+            </mi>
+           </mrow>
+           <mrow>
+            <msub>
+             <mrow>
+              <mi>
+               C
+              </mi>
+             </mrow>
+             <mrow>
+              <mi>
+               α
+              </mi>
+             </mrow>
+            </msub>
+           </mrow>
+          </msub>
+         </mrow>
+         <mrow>
+          <mfenced close="∥" open="∥">
+           <mrow>
+            <msub>
+             <mrow>
+              <mi mathvariant="bold">
+               x
+              </mi>
+             </mrow>
+             <mrow>
+              <mi>
+               N
+              </mi>
+             </mrow>
+            </msub>
+            <mo>
+             −
+            </mo>
+            <msub>
+             <mrow>
+              <mi mathvariant="bold">
+               x
+              </mi>
+             </mrow>
+             <mrow>
+              <msub>
+               <mrow>
+                <mi>
+                 C
+                </mi>
+               </mrow>
+               <mrow>
+                <mi>
+                 α
+                </mi>
+               </mrow>
+              </msub>
+             </mrow>
+            </msub>
+           </mrow>
+          </mfenced>
+         </mrow>
+        </mfrac>
+       </math>
+       <tex-math id="IEq10_TeX">
+        $$\frac{{{{{{{{{\bf{x}}}}}}}}}_{N}-{{{{{{{{\bf{x}}}}}}}}}_{{C}_{\alpha }}}{\left\Vert {{{{{{{{\bf{x}}}}}}}}}_{N}-{{{{{{{{\bf{x}}}}}}}}}_{{C}_{\alpha }}\right\Vert }$$
+       </tex-math>
+       <inline-graphic href="41467_2024_45461_Article_IEq10.gif" mime-subtype="GIF" specific-use="web"/>
+      </alternatives>
+     </inline-formula>
+     ו
+     <inline-formula id="IEq11">
+      <alternatives>
+       <math id="IEq11_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+        <mfrac>
+         <mrow>
+          <msub>
+           <mrow>
+            <mi mathvariant="bold">
+             x
+            </mi>
+           </mrow>
+           <mrow>
+            <mi>
+             C
+            </mi>
+           </mrow>
+          </msub>
+          <mo>
+           −
+          </mo>
+          <msub>
+           <mrow>
+            <mi mathvariant="bold">
+             x
+            </mi>
+           </mrow>
+           <mrow>
+            <msub>
+             <mrow>
+              <mi>
+               C
+              </mi>
+             </mrow>
+             <mrow>
+              <mi>
+               α
+              </mi>
+             </mrow>
+            </msub>
+           </mrow>
+          </msub>
+         </mrow>
+         <mrow>
+          <mfenced close="∥" open="∥">
+           <mrow>
+            <msub>
+             <mrow>
+              <mi mathvariant="bold">
+               x
+              </mi>
+             </mrow>
+             <mrow>
+              <mi>
+               C
+              </mi>
+             </mrow>
+            </msub>
+            <mo>
+             −
+            </mo>
+            <msub>
+             <mrow>
+              <mi mathvariant="bold">
+               x
+              </mi>
+             </mrow>
+             <mrow>
+              <msub>
+               <mrow>
+                <mi>
+                 C
+                </mi>
+               </mrow>
+               <mrow>
+                <mi>
+                 α
+                </mi>
+               </mrow>
+              </msub>
+             </mrow>
+            </msub>
+           </mrow>
+          </mfenced>
+         </mrow>
+        </mfrac>
+       </math>
+       <tex-math id="IEq11_TeX">
+        $$\frac{{{{{{{{{\bf{x}}}}}}}}}_{C}-{{{{{{{{\bf{x}}}}}}}}}_{{C}_{\alpha }}}{\left\Vert {{{{{{{{\bf{x}}}}}}}}}_{C}-{{{{{{{{\bf{x}}}}}}}}}_{{C}_{\alpha }}\right\Vert }$$
+       </tex-math>
+       <inline-graphic href="41467_2024_45461_Article_IEq11.gif" mime-subtype="GIF" specific-use="web"/>
+      </alternatives>
+     </inline-formula>
+     <sup>
+      <xref ref-type="bibr" rid="CR7">
+       7
+      </xref>
+     </sup>
+     . לקשרים, שילוב אורך משמש כתכונות סקלריות. תכונות החומצה האמינית שלנו מאפשרות למודל להסיק את מיקומם של כל האטומים הכבדים.
+    </p>
+   </sec>
+   <sec id="Sec13">
+    <title>
+     ארכיטקטורת המודל
+    </title>
+    <p id="Par27">
+     DynamicBind הוא רשת נוירונית גרפית המשתמשת בתכונות שוואריונטיות ואינווריאנטיות. הוא מפיץ מידע באמצעות מכפלות טנזור של ייצוגים לא היפוכיים (irreps) כפי שמוגדר בספריית e3nn
+     <sup>
+      <xref ref-type="bibr" rid="CR52">
+       52
+      </xref>
+     </sup>
+     .
+    </p>
+    <p id="Par28"/>
+    <p id="Par29"/>
+    <p id="Par30"/>
+   </sec>
+   <sec id="Sec14">
+    <title>
+     המרה של קונפורמציה של ליגנד
+    </title>
+    <p id="Par31"/>
+    <p id="Par32"/>
+   </sec>
+   <sec id="Sec15">
+    <title>
+     המרה של קונפורמציה של חלבון
+    </title>
+    <p id="Par33"/>
+   </sec>
+   <sec id="Sec16">
+    <title>
+     אימון והסקה
+    </title>
+    <p id="Par34"/>
+    <p id="Par35">
+     להתגבר על הפער בהתפלגות בין האימון להסקה שנובע משימוש בקונפורמציות שנוצרו על ידי RDKit כנקודות התחלה בתהליך ההסקה, אנו מחליפים את המטרה המקורית עם הקונפורמציה
+     <inline-formula id="IEq34">
+      <alternatives>
+       <math id="IEq34_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+        <msubsup>
+         <mrow>
+          <mi mathvariant="bold">
+           x
+          </mi>
+         </mrow>
+         <mrow>
+          <mn>
+           0
+          </mn>
+         </mrow>
+         <mrow>
+          <mi>
+           l
+          </mi>
+         </mrow>
+        </msubsup>
+       </math>
+       <tex-math id="IEq34_TeX">
+        $${{{{{{{{\bf{x}}}}}}}}}_{0}^{l}$$
+       </tex-math>
+       <inline-graphic href="41467_2024_45461_Article_IEq34.gif" mime-subtype="GIF" specific-use="web"/>
+      </alternatives>
+     </inline-formula>
+     שתואמת לקונפורמציה האמיתית
+     <bold>
+      x
+     </bold>
+     <sup>
+      <xref ref-type="bibr" rid="CR19">
+       19
+      </xref>
+      ,
+      <xref ref-type="bibr" rid="CR33">
+       33
+      </xref>
+     </sup>
+     . בזמן
+     <italic>
+      t
+     </italic>
+     , הקונפורמציה המוחזרת היא קונפורמציה מעורבלת באופן אקראי:
+     <disp-formula id="Equ14">
+      <label>
+       14
+      </label>
+      <alternatives>
+       <math id="Equ14_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+        <msubsup>
+         <mrow>
+          <mi mathvariant="bold">
+           x
+          </mi>
+         </mrow>
+         <mrow>
+          <mi>
+           t
+          </mi>
+         </mrow>
+         <mrow>
+          <mi>
+           l
+          </mi>
+         </mrow>
+        </msubsup>
+        <mo>
+         =
+        </mo>
+        <mrow>
+         <mo>
+          (
+         </mo>
+         <mrow>
+          <mi mathvariant="normal">
+           Δ
+          </mi>
+          <msubsup>
+           <mrow>
+            <mi>
+             T
+            </mi>
+           </mrow>
+           <mrow>
+            <mn>
+             0
+            </mn>
+           </mrow>
+           <mrow>
+            <mi>
+             l
+            </mi>
+           </mrow>
+          </msubsup>
+          <mo>
+           ∘
+          </mo>
+          <mo>
+           ⋯
+          </mo>
+          <mi mathvariant="normal">
+           Δ
+          </mi>
+          <msubsup>
+           <mrow>
+            <mi>
+             T
+            </mi>
+           </mrow>
+           <mrow>
+            <mi>
+             k
+            </mi>
+           </mrow>
+           <mrow>
+            <mi>
+             l
+            </mi>
+           </mrow>
+          </msubsup>
+         </mrow>
+         <mo>
+          )
+         </mo>
+        </mrow>
+        <mrow>
+         <mo>
+          (
+         </mo>
+         <mrow>
+          <mi mathvariant="normal">
+           Δ
+          </mi>
+          <msup>
+           <mrow>
+            <mi>
+             R
+            </mi>
+           </mrow>
+           <mrow>
+            <mi>
+             l
+            </mi>
+           </mrow>
+          </msup>
+          <mrow>
+           <mo>
+            (
+           </mo>
+           <mrow>
+            <msubsup>
+             <mrow>
+              <mi mathvariant="bold">
+               x
+              </mi>
+             </mrow>
+             <mrow>
+              <mn>
+               0
+              </mn>
+             </mrow>
+             <mrow>
+              <mi>
+               l
+              </mi>
+             </mrow>
+            </msubsup>
+            <mo>
+             −
+            </mo>
+            <msubsup>
+             <mrow>
+              <mover accent="true">
+               <mrow>
+                <mi mathvariant="bold">
+                 x
+                </mi>
+               </mrow>
+               <mo accent="true">
+                ¯
+               </mo>
+              </mover>
+             </mrow>
+             <mrow>
+              <mn>
+               0
+              </mn>
+             </mrow>
+             <mrow>
+              <mi>
+               l
+              </mi>
+             </mrow>
+            </msubsup>
+           </mrow>
+           <mo>
+            )
+           </mo>
+          </mrow>
+          <mo>
+           +
+          </mo>
+          <msubsup>
+           <mrow>
+            <mover accent="true">
+             <mrow>
+              <mi mathvariant="bold">
+               x
+              </mi>
+             </mrow>
+             <mo accent="true">
+              ¯
+             </mo>
+            </mover>
+           </mrow>
+           <mrow>
+            <mn>
+             0
+            </mn>
+           </mrow>
+           <mrow>
+            <mi>
+             l
+            </mi>
+           </mrow>
+          </msubsup>
+          <mo>
+           +
+          </mo>
+          <mi mathvariant="normal">
+           Δ
+          </mi>
+          <msup>
+           <mrow>
+            <mi mathvariant="bold">
+             tr
+            </mi>
+           </mrow>
+           <mrow>
+            <mi>
+             l
+            </mi>
+           </mrow>
+          </msup>
+         </mrow>
+         <mo>
+          )
+         </mo>
+        </mrow>
+        <mstyle>
+         <mtext>
+          with
+         </mtext>
+        </mstyle>
+        <mspace width="0.25em"/>
+        <mspace width="1.0em"/>
+        <mi mathvariant="normal">
+         Δ
+        </mi>
+        <msup>
+         <mrow>
+          <mi mathvariant="bold">
+           tr
+          </mi>
+         </mrow>
+         <mrow>
+          <mi>
+           l
+          </mi>
+         </mrow>
+        </msup>
+        <mo>
+         =
+        </mo>
+        <mfenced close=")" open="(">
+         <mrow>
+          <mi class="MJX-tex-caligraphic" mathvariant="script">
+           N
+          </mi>
+          <mfenced close=")" open="(">
+           <mrow>
+            <mn>
+             0
+            </mn>
+            <mo>
+             ,
+            </mo>
+            <msubsup>
+             <mrow>
+              <mi>
+               σ
+              </mi>
+             </mrow>
+             <mrow>
+              <mi>
+               t
+              </mi>
+              <mi>
+               r
+              </mi>
+             </mrow>
+             <mrow>
+              <mi>
+               l
+              </mi>
+             </mrow>
+            </msubsup>
+           </mrow>
+          </mfenced>
+          <mo>
+           ,
+          </mo>
+          <mi class="MJX-tex-caligraphic" mathvariant="script">
+           N
+          </mi>
+          <mfenced close=")" open="(">
+           <mrow>
+            <mn>
+             0
+            </mn>
+            <mo>
+             ,
+            </mo>
+            <msubsup>
+             <mrow>
+              <mi>
+               σ
+              </mi>
+             </mrow>
+             <mrow>
+              <mi>
+               t
+              </mi>
+              <mi>
+               r
+              </mi>
+             </mrow>
+             <mrow>
+              <mi>
+               l
+              </mi>
+             </mrow>
+            </msubsup>
+           </mrow>
+          </mfenced>
+          <mo>
+           ,
+          </mo>
+          <mi class="MJX-tex-caligraphic" mathvariant="script">
+           N
+          </mi>
+          <mfenced close=")" open="(">
+           <mrow>
+            <mn>
+             0
+            </mn>
+            <mo>
+             ,
+            </mo>
+            <msubsup>
+             <mrow>
+              <mi>
+               σ
+              </mi>
+             </mrow>
+             <mrow>
+              <mi>
+               t
+              </mi>
+              <mi>
+               r
+              </mi>
+             </mrow>
+             <mrow>
+              <mi>
+               l
+              </mi>
+             </mrow>
+            </msubsup>
+           </mrow>
+          </mfenced>
+         </mrow>
+        </mfenced>
+        <mi mathvariant="normal">
+         Δ
+        </mi>
+        <msup>
+         <mrow>
+          <mi>
+           R
+          </mi>
+         </mrow>
+         <mrow>
+          <mi>
+           l
+          </mi>
+         </mrow>
+        </msup>
+        <mo>
+         =
+        </mo>
+        <mspace width="0.25em"/>
+        <mstyle>
+         <mtext>
+          Rotation matrix of sampling from
+         </mtext>
+        </mstyle>
+        <mspace width="0.25em"/>
+        <mspace width="0.25em"/>
+        <mi>
+         p
+        </mi>
+        <mrow>
+         <mo>
+          (
+         </mo>
+         <mrow>
+          <mi>
+           ω
+          </mi>
+         </mrow>
+         <mo>
+          )
+         </mo>
+        </mrow>
+        <mover accent="true">
+         <mrow>
+          <mi>
+           ω
+          </mi>
+         </mrow>
+         <mrow>
+          <mo>
+           ̂
+          </mo>
+         </mrow>
+        </mover>
+        <mi mathvariant="normal">
+         Δ
+        </mi>
+        <msubsup>
+         <mrow>
+          <mi>
+           T
+          </mi>
+         </mrow>
+         <mrow>
+          <mi>
+           k
+          </mi>
+         </mrow>
+         <mrow>
+          <mi>
+           l
+          </mi>
+         </mrow>
+        </msubsup>
+        <mo>
+         =
+        </mo>
+        <mi class="MJX-tex-caligraphic" mathvariant="script">
+         N
+        </mi>
+        <mfenced close=")" open="(">
+         <mrow>
+          <mn>
+           0
+          </mn>
+          <mo>
+           ,
+          </mo>
+          <msubsup>
+           <mrow>
+            <mi>
+             σ
+            </mi>
+           </mrow>
+           <mrow>
+            <mi>
+             t
+            </mi>
+            <mi>
+             o
+            </mi>
+            <mi>
+             r
+            </mi>
+           </mrow>
+           <mrow>
+            <mi>
+             l
+            </mi>
+           </mrow>
+          </msubsup>
+         </mrow>
+        </mfenced>
+        <mi>
+         p
+        </mi>
+        <mrow>
+         <mo>
+          (
+         </mo>
+         <mrow>
+          <mi>
+           ω
+          </mi>
+         </mrow>
+         <mo>
+          )
+         </mo>
+        </mrow>
+        <mo>
+         =
+        </mo>
+        <mfrac>
+         <mrow>
+          <mn>
+           1
+          </mn>
+          <mo>
+           −
+          </mo>
+          <mi>
+           c
+          </mi>
+          <mi>
+           o
+          </mi>
+          <mi>
+           s
+          </mi>
+          <mrow>
+           <mo>
+            (
+           </mo>
+           <mrow>
+            <mi>
+             ω
+            </mi>
+           </mrow>
+           <mo>
+            )
+           </mo>
+          </mrow>
+         </mrow>
+         <mrow>
+          <mi>
+           π
+          </mi>
+         </mrow>
+        </mfrac>
+        <munderover accent="false" accentunder="false">
+         <mrow>
+          <mo>
+           ∑
+          </mo>
+         </mrow>
+         <mrow>
+          <mi>
+           l
+          </mi>
+          <mo>
+           =
+          </mo>
+          <mn>
+           0
+          </mn>
+         </mrow>
+         <mrow>
+          <mi>
+           ∞
+          </mi>
+         </mrow>
+        </munderover>
+        <mrow>
+         <mo>
+          (
+         </mo>
+         <mrow>
+          <mn>
+           2
+          </mn>
+          <mi>
+           l
+          </mi>
+          <mo>
+           +
+          </mo>
+          <mn>
+           1
+          </mn>
+         </mrow>
+         <mo>
+          )
+         </mo>
+        </mrow>
+        <mi>
+         exp
+        </mi>
+        <mfenced close=")" open="(">
+         <mrow>
+          <mo>
+           −
+          </mo>
+          <mi>
+           l
+          </mi>
+          <mrow>
+           <mo>
+            (
+           </mo>
+           <mrow>
+            <mi>
+             l
+            </mi>
+            <mo>
+             +
+            </mo>
+            <mn>
+             1
+            </mn>
+           </mrow>
+           <mo>
+            )
+           </mo>
+          </mrow>
+          <msup>
+           <mrow>
+            <mrow>
+             <mo>
+              (
+             </mo>
+             <mrow>
+              <msubsup>
+               <mrow>
+                <mi>
+                 σ
+                </mi>
+               </mrow>
+               <mrow>
+                <mi>
+                 r
+                </mi>
+                <mi>
+                 o
+                </mi>
+                <mi>
+                 t
+                </mi>
+               </mrow>
+               <mrow>
+                <mi>
+                 l
+                </mi>
+               </mrow>
+              </msubsup>
+             </mrow>
+             <mo>
+              )
+             </mo>
+            </mrow>
+           </mrow>
+           <mrow>
+            <mn>
+             2
+            </mn>
+           </mrow>
+          </msup>
+         </mrow>
+        </mfenced>
+        <mfrac>
+         <mrow>
+          <mi>
+           sin
+          </mi>
+          <mrow>
+           <mo>
+            (
+           </mo>
+           <mrow>
+            <mrow>
+             <mo>
+              (
+             </mo>
+             <mrow>
+              <mi>
+               l
+              </mi>
+              <mo>
+               +
+              </mo>
+              <mn>
+               1
+              </mn>
+              <mo>
+               /
+              </mo>
+              <mn>
+               2
+              </mn>
+             </mrow>
+             <mo>
+              )
+             </mo>
+            </mrow>
+            <mi>
+             ω
+            </mi>
+           </mrow>
+           <mo>
+            )
+           </mo>
+          </mrow>
+         </mrow>
+         <mrow>
+          <mi>
+           sin
+          </mi>
+          <mrow>
+           <mo>
+            (
+           </mo>
+           <mrow>
+            <mi>
+             ω
+            </mi>
+            <mo>
+             /
+            </mo>
+            <mn>
+             2
+            </mn>
+           </mrow>
+           <mo>
+            )
+           </mo>
+          </mrow>
+         </mrow>
+        </mfrac>
+       </math>
+       <tex-math id="Equ14_TeX">
+        $${{{{{{{{\bf{x}}}}}}}}}_{t}^{l}=	(\Delta {T}_{0}^{l}\circ \cdots \Delta {T}_{k}^{l})(\Delta {R}^{l}({{{{{{{{\bf{x}}}}}}}}}_{0}^{l}-{\overline{{{{{{{{\bf{x}}}}}}}}}}_{0}^{l})+{\overline{{{{{{{{\bf{x}}}}}}}}}}_{0}^{l}+\Delta {{{{{{{{\bf{tr}}}}}}}}}^{l}) \\ 	{{\mbox{with}}}\,\quad\Delta {{{{{{{{\bf{tr}}}}}}}}}^{l}=\left({{{{{{{\mathcal{N}}}}}}}}\left(0,{\sigma }_{tr}^{l}\right),{{{{{{{\mathcal{N}}}}}}}}\left(0,{\sigma }_{tr}^{l}\right),{{{{{{{\mathcal{N}}}}}}}}\left(0,{\sigma }_{tr}^{l}\right)\right)\\ 	\Delta {R}^{l}=\,{{\mbox{Rotation matrix of sampling from}}}\,\,p(\omega )\hat{\omega }\\ 	\Delta {T}_{k}^{l}={{{{{{{\mathcal{N}}}}}}}}\left(0,{\sigma }_{tor}^{l}\right)\\ 	p(\omega )=\frac{1-cos(\omega )}{\pi }\mathop{\sum }\limits_{l=0}^{\infty }(2l+1)\exp \left(-l(l+1){({\sigma }_{rot}^{l})}^{2}\right)\frac{\sin ((l+1/2)\omega )}{\sin (\omega /2)}$$
+       </tex-math>
+       <graphic href="41467_2024_45461_Article_Equ14.gif" mime-subtype="GIF" specific-use="web"/>
+      </alternatives>
+     </disp-formula>
+     כאן,
+     <inline-formula id="IEq35">
+      <alternatives>
+       <math id="IEq35_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+        <msubsup>
+         <mrow>
+          <mover accent="true">
+           <mrow>
+            <mi mathvariant="bold">
+             x
+            </mi>
+           </mrow>
+           <mo accent="true">
+            ¯
+           </mo>
+          </mover>
+         </mrow>
+         <mrow>
+          <mn>
+           0
+          </mn>
+         </mrow>
+         <mrow>
+          <mi>
+           l
+          </mi>
+         </mrow>
+        </msubsup>
+       </math>
+       <tex-math id="IEq35_TeX">
+        ${\overline{{{{{{{{\bf{x}}}}}}}}}}_{0}^{l}$
+       </tex-math>
+       <inline-graphic href="41467_2024_45461_Article_IEq35.gif" mime-subtype="GIF" specific-use="web"/>
+      </alternatives>
+     </inline-formula>
+     היא המרכז הגאומטרי של
+     <inline-formula id="IEq36">
+      <alternatives>
+       <math id="IEq36_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+        <msubsup>
+         <mrow>
+          <mi mathvariant="bold">
+           x
+          </mi>
+         </mrow>
+         <mrow>
+          <mn>
+           0
+          </mn>
+         </mrow>
+         <mrow>
+          <mi>
+           l
+          </mi>
+         </mrow>
+        </msubsup>
+        <mo>
+         ,
+        </mo>
+        <mi>
+         p
+        </mi>
+        <mrow>
+         <mo>
+          (
+         </mo>
+         <mrow>
+          <mi>
+           ω
+          </mi>
+         </mrow>
+         <mo>
+          )
+         </mo>
+        </mrow>
+       </math>
+       <tex-math id="IEq36_TeX">
+        ${{{{{{{{\bf{x}}}}}}}}}_{0}^{l},p(\omega )$
+       </tex-math>
+       <inline-graphic href="41467_2024_45461_Article_IEq36.gif" mime-subtype="GIF" specific-use="web"/>
+      </alternatives>
+     </inline-formula>
+     היא התפלגות גאוסיאנית איזוטרופית ב- SO(3) ו-
+     <inline-formula id="IEq37">
+      <alternatives>
+       <math id="IEq37_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+        <mover accent="true">
+         <mrow>
+          <mi mathvariant="bold-italic">
+           ω
+          </mi>
+         </mrow>
+         <mrow>
+          <mo>
+           ̂
+          </mo>
+         </mrow>
+        </mover>
+       </math>
+       <tex-math id="IEq37_TeX">
+        ${{{\hat{{{{{\boldsymbol{\omega }}}}}}}}}$
+       </tex-math>
+       <inline-graphic href="41467_2024_45461_Article_IEq37.gif" mime-subtype="GIF" specific-use="web"/>
+      </alternatives>
+     </inline-formula>
+     היא וקטור יחידה שנוצרה על ידי דגימה אקראית.
+    </p>
+    <p id="Par36">
+     הרשת מאומנת עם שמונה הפסדים. ההפסד הכולל יכול להיקבע כדלקמן
+     <disp-formula id="Equ15">
+      <label>
+       15
+      </label>
+      <alternatives>
+       <math id="Equ15_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+        <mtable>
+         <mtr>
+          <mtd columnalign="right">
+           <mi class="MJX-tex-caligraphic" mathvariant="script">
+            L
+           </mi>
+           <mo>
+            =
+           </mo>
+           <mfrac>
+            <mrow>
+             <mn>
+              1
+             </mn>
+            </mrow>
+            <mrow>
+             <mn>
+              3
+             </mn>
+            </mrow>
+           </mfrac>
+           <msubsup>
+            <mrow>
+             <mi class="MJX-tex-caligraphic" mathvariant="script">
+              L
+             </mi>
+            </mrow>
+            <mrow>
+             <mi mathvariant="bold">
+              tr
+             </mi>
+            </mrow>
+            <mrow>
+             <mi>
+              l
+             </mi>
+            </mrow>
+           </msubsup>
+           <mo>
+            +
+           </mo>
+           <mfrac>
+            <mrow>
+             <mn>
+              1
+             </mn>
+            </mrow>
+            <mrow>
+             <mn>
+              3
+             </mn>
+            </mrow>
+           </mfrac>
+           <msubsup>
+            <mrow>
+             <mi class="MJX-tex-caligraphic" mathvariant="script">
+              L
+             </mi>
+            </mrow>
+            <mrow>
+             <mi mathvariant="bold">
+              rot
+             </mi>
+            </mrow>
+            <mrow>
+             <mi>
+              l
+             </mi>
+            </mrow>
+           </msubsup>
+           <mo>
+            +
+           </mo>
+           <mfrac>
+            <mrow>
+             <mn>
+              1
+             </mn>
+            </mrow>
+            <mrow>
+             <mn>
+              3
+             </mn>
+            </mrow>
+           </mfrac>
+           <msubsup>
+            <mrow>
+             <mi class="MJX-tex-caligraphic" mathvariant="script">
+              L
+             </mi>
+            </mrow>
+            <mrow>
+             <mi>
+              T
+             </mi>
+            </mrow>
+            <mrow>
+             <mi>
+              l
+             </mi>
+            </mrow>
+           </msubsup>
+           <mo>
+            +
+           </mo>
+           <mfrac>
+            <mrow>
+             <mn>
+              1
+             </mn>
+            </mrow>
+            <mrow>
+             <mn>
+              3
+             </mn>
+            </mrow>
+           </mfrac>
+           <msubsup>
+            <mrow>
+             <mi class="MJX-tex-caligraphic" mathvariant="script">
+              L
+             </mi>
+            </mrow>
+            <mrow>
+             <mi mathvariant="bold">
+              tr
+             </mi>
+            </mrow>
+            <mrow>
+             <mi>
+              p
+             </mi>
+            </mrow>
+           </msubsup>
+           <mo>
+            +
+           </mo>
+           <mfrac>
+            <mrow>
+             <mn>
+              1
+             </mn>
+            </mrow>
+            <mrow>
+             <mn>
+              3
+             </mn>
+            </mrow>
+           </mfrac>
+           <msubsup>
+            <mrow>
+             <mi class="MJX-tex-caligraphic" mathvariant="script">
+              L
+             </mi>
+            </mrow>
+            <mrow>
+             <mi mathvariant="bold">
+              rot
+             </mi>
+            </mrow>
+            <mrow>
+             <mi>
+              p
+             </mi>
+            </mrow>
+           </msubsup>
+           <mo>
+            +
+           </mo>
+           <mfrac>
+            <mrow>
+             <mn>
+              1
+             </mn>
+            </mrow>
+            <mrow>
+             <mn>
+              3
+             </mn>
+            </mrow>
+           </mfrac>
+           <msubsup>
+            <mrow>
+             <mi class="MJX-tex-caligraphic" mathvariant="script">
+              L
+             </mi>
+            </mrow>
+            <mrow>
+             <mi>
+              T
+             </mi>
+            </mrow>
+            <mrow>
+             <mi>
+              p
+             </mi>
+            </mrow>
+           </msubsup>
+           <mo>
+            +
+           </mo>
+           <mn>
+            0.01
+           </mn>
+           <msub>
+            <mrow>
+             <mi class="MJX-tex-caligraphic" mathvariant="script">
+              L
+             </mi>
+            </mrow>
+            <mrow>
+             <mi>
+              A
+             </mi>
+            </mrow>
+           </msub>
+           <mo>
+            +
+           </mo>
+           <mn>
+            0.99
+           </mn>
+           <msub>
+            <mrow>
+             <mi class="MJX-tex-caligraphic" mathvariant="script">
+              L
+             </mi>
+            </mrow>
+            <mrow>
+             <mi>
+              D
+             </mi>
+            </mrow>
+           </msub>
+          </mtd>
+         </mtr>
+        </mtable>
+       </math>
+       <tex-math id="Equ15_TeX">
+        $$\begin{array}{r}{{{{{{{\mathcal{L}}}}}}}}=\frac{1}{3}{{{{{{{{\mathcal{L}}}}}}}}}_{{{{{{{{\bf{tr}}}}}}}}}^{l}+\frac{1}{3}{{{{{{{{\mathcal{L}}}}}}}}}_{{{{{{{{\bf{rot}}}}}}}}}^{l}+\frac{1}{3}{{{{{{{{\mathcal{L}}}}}}}}}_{T}^{l}+\frac{1}{3}{{{{{{{{\mathcal{L}}}}}}}}}_{{{{{{{{\bf{tr}}}}}}}}}^{p}+\frac{1}{3}{{{{{{{{\mathcal{L}}}}}}}}}_{{{{{{{{\bf{rot}}}}}}}}}^{p}+\frac{1}{3}{{{{{{{{\mathcal{L}}}}}}}}}_{T}^{p}+0.01{{{{{{{{\mathcal{L}}}}}}}}}_{A}+0.99{{{{{{{{\mathcal{L}}}}}}}}}_{D}\end{array}$$
+       </tex-math>
+       <graphic href="41467_2024_45461_Article_Equ15.gif" mime-subtype="GIF" specific-use="web"/>
+      </alternatives>
+     </disp-formula>
+     כאן,
+     <inline-formula id="IEq38">
+      <alternatives>
+       <math id="IEq38_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+        <msubsup>
+         <mrow>
+          <mi class="MJX-tex-caligraphic" mathvariant="script">
+           L
+          </mi>
+         </mrow>
+         <mrow>
+          <mi mathvariant="bold">
+           tr
+          </mi>
+         </mrow>
+         <mrow>
+          <mi>
+           l
+          </mi>
+         </mrow>
+        </msubsup>
+        <mo>
+         ,
+        </mo>
+        <msubsup>
+         <mrow>
+          <mi class="MJX-tex-caligraphic" mathvariant="script">
+           L
+          </mi>
+         </mrow>
+         <mrow>
+          <mi mathvariant="bold">
+           rot
+          </mi>
+         </mrow>
+         <mrow>
+          <mi>
+           l
+          </mi>
+         </mrow>
+        </msubsup>
+        <mo>
+         ,
+        </mo>
+        <msubsup>
+         <mrow>
+          <mi class="MJX-tex-caligraphic" mathvariant="script">
+           L
+          </mi>
+         </mrow>
+         <mrow>
+          <mi>
+           T
+          </mi>
+         </mrow>
+         <mrow>
+          <mi>
+           l
+          </mi>
+         </mrow>
+        </msubsup>
+       </math>
+       <tex-math id="IEq38_TeX">
+        ${{{{{{{{\mathcal{L}}}}}}}}}_{{{{{{{{\bf{tr}}}}}}}}}^{l},{{{{{{{{\mathcal{L}}}}}}}}}_{{{{{{{{\bf{rot}}}}}}}}}^{l},{{{{{{{{\mathcal{L}}}}}}}}}_{T}^{l}$
+       </tex-math>
+       <inline-graphic href="41467_2024_45461_Article_IEq38.gif" mime-subtype="GIF" specific-use="web"/>
+      </alternatives>
+     </inline-formula>
+     הם ההפסדים עבור התרגום, הרוטציה והטורסיה של הליגנד, בהתאמה.
+     <inline-formula id="IEq39">
+      <alternatives>
+       <math id="IEq39_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+        <msubsup>
+         <mrow>
+          <mi class="MJX-tex-caligraphic" mathvariant="script">
+           L
+          </mi>
+         </mrow>
+         <mrow>
+          <mi mathvariant="bold">
+           tr
+          </mi>
+         </mrow>
+         <mrow>
+          <mi>
+           p
+          </mi>
+         </mrow>
+        </msubsup>
+        <mo>
+         ,
+        </mo>
+        <msubsup>
+         <mrow>
+          <mi class="MJX-tex-caligraphic" mathvariant="script">
+           L
+          </mi>
+         </mrow>
+         <mrow>
+          <mi mathvariant="bold">
+           rot
+          </mi>
+         </mrow>
+         <mrow>
+          <mi>
+           p
+          </mi>
+         </mrow>
+        </msubsup>
+       </math>
+       <tex-math id="IEq39_TeX">
+        ${{{{{{{{\mathcal{L}}}}}}}}}_{{{{{{{{\bf{tr}}}}}}}}}^{p},{{{{{{{{\mathcal{L}}}}}}}}}_{{{{{{{{\bf{rot}}}}}}}}}^{p}$
+       </tex-math>
+       <inline-graphic href="41467_2024_45461_Article_IEq39.gif" mime-subtype="GIF" specific-use="web"/>
+      </alternatives>
+     </inline-formula>
+     , ו-
+     <inline-formula id="IEq40">
+      <alternatives>
+       <math id="IEq40_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+        <msubsup>
+         <mrow>
+          <mi class="MJX-tex-caligraphic" mathvariant="script">
+           L
+          </mi>
+         </mrow>
+         <mrow>
+          <mi>
+           T
+          </mi>
+         </mrow>
+         <mrow>
+          <mi>
+           p
+          </mi>
+         </mrow>
+        </msubsup>
+       </math>
+       <tex-math id="IEq40_TeX">
+        ${{{{{{{{\mathcal{L}}}}}}}}}_{T}^{p}$
+       </tex-math>
+       <inline-graphic href="41467_2024_45461_Article_IEq40.gif" mime-subtype="GIF" specific-use="web"/>
+      </alternatives>
+     </inline-formula>
+     הם ההפסדים עבור החלקיקים.
+     <inline-formula id="IEq41">
+      <alternatives>
+       <math id="IEq41_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+        <msub>
+         <mrow>
+          <mi class="MJX-tex-caligraphic" mathvariant="script">
+           L
+          </mi>
+         </mrow>
+         <mrow>
+          <mi>
+           A
+          </mi>
+         </mrow>
+        </msub>
+       </math>
+       <tex-math id="IEq41_TeX">
+        ${{{{{{{{\mathcal{L}}}}}}}}}_{A}$
+       </tex-math>
+       <inline-graphic href="41467_2024_45461_Article_IEq41.gif" mime-subtype="GIF" specific-use="web"/>
+      </alternatives>
+     </inline-formula>
+     הוא הפסד האפיניות ו-
+     <inline-formula id="IEq42">
+      <alternatives>
+       <math id="IEq42_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+        <msub>
+         <mrow>
+          <mi class="MJX-tex-caligraphic" mathvariant="script">
+           L
+          </mi>
+         </mrow>
+         <mrow>
+          <mi>
+           D
+          </mi>
+         </mrow>
+        </msub>
+       </math>
+       <tex-math id="IEq42_TeX">
+        ${{{{{{{{\mathcal{L}}}}}}}}}_{D}$
+       </tex-math>
+       <inline-graphic href="41467_2024_45461_Article_IEq42.gif" mime-subtype="GIF" specific-use="web"/>
+      </alternatives>
+     </inline-formula>
+     הוא הפסד ה- cLDDT. הפרש המרחק לחישוב cLDDT הוא
+     <inline-formula id="IEq43">
+      <alternatives>
+       <math id="IEq43_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+        <mi>
+         d
+        </mi>
+        <mo>
+         =
+        </mo>
+        <mo>
+         ∣
+        </mo>
+        <mi>
+         d
+        </mi>
+        <mrow>
+         <mo>
+          (
+         </mo>
+         <mrow>
+          <msubsup>
+           <mrow>
+            <mi mathvariant="bold">
+             x
+            </mi>
+           </mrow>
+           <mrow>
+            <mn>
+             0
+            </mn>
+           </mrow>
+           <mrow>
+            <mi>
+             l
+            </mi>
+           </mrow>
+          </msubsup>
+          <mo>
+           ,
+          </mo>
+          <msup>
+           <mrow>
+            <mi mathvariant="bold">
+             x
+            </mi>
+           </mrow>
+           <mrow>
+            <mi>
+             h
+            </mi>
+            <mi>
+             o
+            </mi>
+            <mi>
+             l
+            </mi>
+            <mi>
+             o
+            </mi>
+           </mrow>
+          </msup>
+         </mrow>
+         <mo>
+          )
+         </mo>
+        </mrow>
+        <mo>
+         −
+        </mo>
+        <mi>
+         d
+        </mi>
+        <mrow>
+         <mo>
+          (
+         </mo>
+         <mrow>
+          <msubsup>
+           <mrow>
+            <mi mathvariant="bold">
+             x
+            </mi>
+           </mrow>
+           <mrow>
+            <mi>
+             t
+            </mi>
+           </mrow>
+           <mrow>
+            <mi>
+             l
+            </mi>
+           </mrow>
+          </msubsup>
+          <mo>
+           ,
+          </mo>
+          <msubsup>
+           <mrow>
+            <mi mathvariant="bold">
+             x
+            </mi>
+           </mrow>
+           <mrow>
+            <mi>
+             t
+            </mi>
+           </mrow>
+           <mrow>
+            <mi>
+             p
+            </mi>
+           </mrow>
+          </msubsup>
+         </mrow>
+         <mo>
+          )
+         </mo>
+        </mrow>
+        <mo>
+         ∣
+        </mo>
+       </math>
+       <tex-math id="IEq43_TeX">
+        $d=| d({{{{{{{{\bf{x}}}}}}}}}_{0}^{l},{{{{{{{{\bf{x}}}}}}}}}^{holo})-d({{{{{{{{\bf{x}}}}}}}}}_{t}^{l},{{{{{{{{\bf{x}}}}}}}}}_{t}^{p})|$
+       </tex-math>
+       <inline-graphic href="41467_2024_45461_Article_IEq43.gif" mime-subtype="GIF" specific-use="web"/>
+      </alternatives>
+     </inline-formula>
+     (פרטים נוספים על חישוב cLDDT ניתן למצוא ב"מדדים להערכה").
+    </p>
+    <p id="Par37">
+     מכיוון שווקטור רוטציה
+     <bold>
+      u
+     </bold>
+     מייצג אותה רוטציה כמו
+     <bold>
+      v
+     </bold>
+     אם
+     <bold>
+      u
+     </bold>
+     ו-
+     <bold>
+      v
+     </bold>
+     הם בכיוון הפוך ו- ∥
+     <bold>
+      u
+     </bold>
+     ∥ + ∥
+     <bold>
+      v
+     </bold>
+     ∥ = 2
+     <italic>
+      π
+     </italic>
+     . כך שאנו לוקחים את המינימום של ההפסדים הקדמיים וההיפוכיים כאשר מחשבים את ההפסד הרוטציוני. הפסדי הזווית הטורסית מחושבים באמצעות הקוסינוס של הפרש הזווית בין הערך המוערך והרעש הטורסיוני המוסף. הליכי האימון המלאים ניתן לראות באלגוריתם המשלים 1.
+    </p>
+    <p id="Par38">
+     במהלך תהליך ההסקה, אנו משתמשים במבנה הליגנד עם קונפורמציות שנוצרו על ידי RDKit ואת המבנה החלבוני המוערך על ידי AlphaFold כקונפורמציה המורכבת הראשונית. המבנה המורכב מעודכן ב-20 שלבים. כדי למנוע מהמבנה הסופי להיתפס במינימום מקומי, בכל שלב, רעש אקראי קטן מוסף למיקום הליגנד המטוהר. עבור כל זוג, אנו מבצעים 40 דגימות ומדרגים את הקונפורמציות המח�בות על פי cLDDT המוערך. כמו כן, הבנו שממוצע משוקלל של האפיניות המוערכת הוא מעריך יותר מדויק של האפיניות ה�יסויית (טבלה משלימה 1). הערכים cLDDT המוערכים משמשים כמשקלות. הליכי ההסקה השלמים ניתן למצוא באלגוריתם המשלים 2.
+    </p>
+    <p id="Par39">
+     DynamicBind הוא בעל 63.67 מיליון פרמטרים והוא אומן במשך 5 ימים על 8 יחידות GPU של Nvidia A100 80GB.
+    </p>
+   </sec>
+   <sec id="Sec17">
+    <title>
+     מדדים להערכה
+    </title>
+    <p id="Par40">
+     לשם בחינת האינטראקציה בין החלבון לליגנד בתוך המבנה המורכב המונבא, אנו קובעים את היקף היצירה של קשרים טבעיים בין הליגנד לחלבון. אנו מאמצים הגדרה דומה לזו של תוצאת ה-Local Distance Difference Test (LDDT), ששימשה בעבר לכמות הנטיות של מבני חלבונים מונבאים
+     <sup>
+      <xref ref-type="bibr" rid="CR58">
+       58
+      </xref>
+     </sup>
+     . תוצאת ה-Contact-LDDT (cLDDT) מחושבת על ידי בחינת המרחקים הקטנים מ-15 Å בין כל זוגות של אטומי ליגנד וחלבון. הדיפרנציאל המרחק מוקבע בין המבנה האמיתי למבנה המונבא, תוך חשיבה על סימטריה. תוצאת cLDDT הסופית מושגת מהממוצע של המרחקים השמורים ברחבי ארבעה סף סבילות: 0.5, 1, 2, ו-4 Å.
+    </p>
+    <p id="Par41">
+     לשם בחינת הסטייה של המבנה החלבוני המונבא מהמבנה החלבוני הטבעי המקיף את כיס הקישור, אנו מחשבים את סטיית הרוט הריבועית (RMSD) של הכיס. זאת מבוצעת על ידי אטומי חלבון הממוקמים בתוך 5 Å מאטומי הליגנד ה�חוסי. תחילה, המבנה החלבוני המונבא מתואם עם המבנה החלבוני הגבישי. לאחר מכן, ה-RMSD בין אטומי הכיס המונבאים לאטומי הכיס הגבישיים נקבע.
+    </p>
+    <p id="Par42">
+     בדומה ל-Alphafill, תוצאת ההתנגשות היא השורש הריבועי (RMS) של החפיפות של ואן דר ואלס ברחבי כל המרחקים בין אטומי הליגנד לאטומי החלבון, הקטנים מ-4 Å. זאת מחושבת כדלקמן:
+     <disp-formula id="Equ16">
+      <label>
+       16
+      </label>
+      <alternatives>
+       <math id="Equ16_Math" xmlns="http://www.w3.org/1998/Math/MathML">
+        <mtable>
+         <mtr>
+          <mtd columnalign="right">
+           <mspace width="0.25em"/>
+           <mstyle>
+            <mtext>
+             clash score
+            </mtext>
+           </mstyle>
+           <mspace width="0.25em"/>
+           <mo>
+            =
+           </mo>
+           <msqrt>
+            <mrow>
+             <mfrac>
+              <mrow>
+               <munderover accent="false" accentunder="false">
+                <mrow>
+                 <mo>
+                  ∑
+                 </mo>
+                </mrow>
+                <mrow>
+                 <mi>
+                  i
+                 </mi>
+                 <mo>
+                  =
+                 </mo>
+                 <mn>
+                  0
+                 </mn>
+                </mrow>
+                <mrow>
+                 <mi>
+                  N
+                 </mi>
+                </mrow>
+               </munderover>
+               <mspace width="0.25em"/>
+               <msubsup>
+                <mrow>
+                 <mspace width="0.25em"/>
+                 <mstyle>
+                  <mtext>
+                   VdW overlap
+                  </mtext>
+                 </mstyle>
+                 <mspace width="0.25em"/>
+                </mrow>
+                <mrow>
+                 <mi>
+                  i
+                 </mi>
+                </mrow>
+                <mrow>
+                 <mn>
+                  2
+                 </mn>
+                </mrow>
+               </msubsup>
+              </mrow>
+              <mrow>
+               <mi>
+                N
+               </mi>
+              </mrow>
+             </mfrac>
+            </mrow>
+           </msqrt>
+          </mtd>
+         </mtr>
+        </mtable>
+       </math>
+       <tex-math id="Equ16_TeX">
+        \documentclass[12pt]{minimal}
+				\usepackage{amsmath}
+				\usepackage{wasysym}
+				\usepackage{amsfonts}
+				\usepackage{amssymb}
+				\usepackage{amsbsy}
+				\usepackage{mathrsfs}
+				\usepackage{upgreek}
+				\setlength{\oddsidemargin}{-69pt}
+				\begin{document}$$\begin{array}{r}\,{{\mbox{clash score}}}\,=\sqrt{\frac{\mathop{\sum }\limits_{i=0}^{N}\,{\,{{\mbox{VdW overlap}}}\,\,}_{i}^{2}}{N}}\end{array}$$\end{document}
+       </tex-math>
+       <graphic href="41467_2024_45461_Article_Equ16.gif" mime-subtype="GIF" specific-use="web"/>
+      </alternatives>
+     </disp-formula>
+     כאשר
+     <italic>
+      N
+     </italic>
+     הוא מספר המרחקים שנבחנו
+     <sup>
+      <xref ref-type="bibr" rid="CR14">
+       14
+      </xref>
+      <xref ref-type="bibr" rid="CR59">
+       59
+      </xref>
+     </sup>
+     .
+    </p>
+   </sec>
+   <sec id="Sec18">
+    <title>
+     בניית מאגר נתונים
+    </title>
+    <p id="Par43">
+     מאגר האימון והבדיקה שלנו התבסס על מאגר PDBbind2020, הכולל אוסף מקיף של 19,443 מבנים גבישיים של חלבונים-ליגנדים, כל אחד מהם מזוהה עם ערך קישוריות ניסויי. אנו השתמשנו באותו חלוקה זמנית כמו עבודות קודמות, תוך שימוש במבנים שהופקדו לפני 2019 לאימון ואימות, בעוד שאלו שהופקדו ב-2019 שומרו לבדיקה. כל חלבון הותאם עם המבנה המונבא על ידי AlphaFold, התואם את אותו רצף חלבוני. המבנים של AlphaFold המתואמים והמבנים הגבישיים משמשים ליצירת דגימות אימון של חלק החלבון דרך אינטרפולציה דומה למורפ. סט הבדיקה של Major Drug Targets (MDT) נבנה באמצעות הקריטריונים הבאים: PDBs שהופקדו ב-2020 או מאוחר יותר; חלבונים השייכים לאחד מארבעת קבוצות המטרות התרופתיות העיקריות - קינאזות, GPCRs, קולטני גרעין ותעלות יונים; המבנים החלבוניים המונבאים על ידי AlphaFold הם בעלי RMSD של כיס מעל 2 Å (או LDDT של כיס מתחת ל-0.8) עם המבנה הגבישי; ליגנדים הם מולקולות קטנות תרופתיות עם משקל מולקולרי בין 200 ל-650 דלטון; לכל היותר 10 PDBs ממחקר אחד כלולים. קריטריונים אלו מבטיחים כי סט הבדיקה מאתגר, עם החלבון ההתחלתי שונה מהקונפורמציה הטבעית, ונציג, מכסה טווח רחב של מטרות חלבוניות. בנוסף, הוא מונע מכמה חלבונים לשלוט בסט הבדיקה כולו, שכן מחקרים מסוימים הפקידו משמעותית יותר PDBs, מבנים של אותו חלבון המקורסלים עם ליגנדים שונים, מאשר אחרים
+     <sup>
+      <xref ref-type="bibr" rid="CR34">
+       34
+      </xref>
+      <xref ref-type="bibr" rid="CR19">
+       19
+      </xref>
+      ,
+      <xref ref-type="bibr" rid="CR35">
+       35
+      </xref>
+      ,
+      <xref ref-type="bibr" rid="CR36">
+       36
+      </xref>
+     </sup>
+     .
+    </p>
+   </sec>
+   <sec id="Sec19">
+    <title>
+     בסיסליינים
+    </title>
+    <p id="Par44">
+     אנו ביצענו קישור על סט הבדיקה PDBbind (303 זוגות ליגנד-קולטן) וסט הבדיקה Major drug targets (MDT) (599 זוגות ליגנד-קולטן) באמצעות שיטות קישור שונות המפורטות להלן. ליגנדים המשמשים לקישור הופקו מהמבנים המקורסלים ללא שינוי בקואורדינטות האטומיות, והמבנים החלבוניים לקישור הונבאו על ידי AlphaFold. אנו משתמשים בשיטה מודעת לסימטריה, במיוחד בפונקציה symmrmsd מחבילת spyrmsd לכל החישובים של RMSD
+     <sup>
+      <xref ref-type="bibr" rid="CR60">
+       60
+      </xref>
+     </sup>
+     .
+    </p>
+   </sec>
+   <sec id="Sec20">
+    <title>
+     Autodock VINA קשיח
+    </title>
+    <p id="Par45">
+     ב- Autodock Vina, הליגנדים הומרו מפורמט SDF לפורמט PDBQT על ידי Meeko 2.0.0. הכנת החלבון בוצעה על ידי שימוש בפקודה "prepare_receptor" ב- ADFR Suite 1.0. תיבת הדוקינג הוגדרה על ידי שימוש בתיבה אוטומטית סביב הליגנד הילידי עם באפר הברירת מחדל של 4 Å על כל שש הצדדים. ומרכז התיבה היה מרכז המסה של הליגנד הילידי. מכיוון שהבורון אטום אינו סוג אטום תקף של AutoDock, ליגנדים עם אטום זה לא יכולים להיות מחוברים. לפיכך, רק 301 זוגות ליגנד-קולטן במאגר הנתונים PDBbind ו-597 זוגות ליגנד-קולטן במאגר הנתונים MDT היו בעלי פלט דוקינג ב- VINA rigid docking
+     <sup>
+      <xref ref-type="bibr" rid="CR17">
+       17
+      </xref>
+     </sup>
+     .
+    </p>
+   </sec>
+   <sec id="Sec21">
+    <title>
+     Autodock VINA גמיש
+    </title>
+    <p id="Par46">
+     בהשוואה ל- VINA rigid docking, ישנו שלב נוסף של הכנת קולטן גמיש ב- VINA flexible docking. שלב זה בוצע על ידי סקריפט פייתון בשם “prepare_flexreceptor.py”, אשר זמין ב-
+     <ext-link ext-link-type="uri" href="https://github.com/ccsb-scripps/AutoDock-Vina/tree/develop/example/autodock_scripts">
+      https://github.com/ccsb-scripps/AutoDock-Vina/tree/develop/example/autodock_scripts
+     </ext-link>
+     <sup/>
+     . דרך שלב זה, קובץ הפורמט PDBQT של החלבון התפצל לשני קבצים בפורמט PDBQT, אחד עבור החלק הקשיח ואחד עבור שרשראות הצד הגמישות. עבור מצב Vina Flex, שרשראות צד גמישות חייבות להיות מוגדרות מראש. התכוננו את כל השאריות עם אטומי שרשרת צד בתוך 5 Å מאטומי הליגנד כגמישות. במצב זה, שלד החלבון נותר קשיח. הכנת הליגנד והגדרת תיבת הרשת היו תואמות את VINA rigid docking.
+    </p>
+   </sec>
+   <sec id="Sec22">
+    <title>
+     GNINA קשיח
+    </title>
+    <p id="Par47">
+     קבצי הקלט של הליגנדים עבור GNINA היו בפורמט PDBQT, שנוצרו על ידי OpenBabel לאחר הוספת אטומי מימן עם RDKit קבצי הקלט של החלבון היו קבצים בפורמט PDB. הגדרת תיבת הרשת הייתה תואמת את VINA rigid docking. עבור מאגר הנתונים PDBbind, כל זוגות הליגנד-קולטן היו בעלי פלט דוקינג. עבור מאגר הנתונים MDT, 1 זוג לא היה בעל פלט כיוון שהליגנד בקובץ PDB המקורי (PDB ID:
+     <ext-link ext-link-type="uri" href="http://doi.org/10.2210/pdb8HMU/pdb">
+      8HMU
+     </ext-link>
+     ) לא היה מוחלט, והיה בעל אטומים חסרים
+     <sup>
+      <xref ref-type="bibr" rid="CR61">
+       61
+      </xref>
+     </sup>
+     .
+    </p>
+   </sec>
+   <sec id="Sec23">
+    <title>
+     GLIDE
+    </title>
+    <p id="Par48">
+     GLIDE הוא מודול דוקינג חלבון קשיח בתוכנת Schrödinger. הליגנדים הוכנו על ידי שימוש במודול LigPrep. הכנת החלבון בוצעה על ידי שימוש במודול Protein Preparation Wizard. קבצי רשת הוגנרו על ידי מודול Receptor Grid Generation עם תיבה פנימית של 10 Å ותיבה חיצונית אוטומטית סביב הליגנד עם באפר ברירת מחדל של 4 Å על כל שש הצדדים, ממורכזים על מרכז המסה של הליגנד. אז, בוצעה דוקינג SP precision. חלק מהליגנדים במאגר הנתונים PDBbind הם פוליפפטידים, אשר אינם יכולים להיות מעובדים על ידי מודול LigPrep. בנוסף, ליגנדים עם התנגשויות חמורות עם אטומי כיס היו בעלי פלט חסר במהלך הדוקינג. לפיכך, 266 זוגות ליגנד-קולטן במאגר הנתונים PDBbind ו-472 זוגות ליגנד-קולטן במאגר הנתונים MDT היו בעלי פלט דוקינג ב- GLIDE rigid docking
+     <sup>
+      <xref ref-type="bibr" rid="CR16">
+       16
+      </xref>
+     </sup>
+     .
+    </p>
+   </sec>
+   <sec id="Sec24">
+    <title>
+     דוקינג מותאם
+    </title>
+    <p id="Par49">
+     מודול הדוקינג Induced fit docking (IFD) בתוכנת Schrödinger מספק פונקציית דוקינג גמישה עבור המשתמש. שונה מ- VINA ו- GNINA, לא רק שרשראות הצד אלא גם שלד החלבון יכולים להזוז מעט. הכנת הליגנד והחלבון היו זהות ל- GLIDE rigid docking. המרחב המחופש הוגדר על ידי פרמטרים ברירת מחדל, תיבה פנימית של 10 Å ותיבה חיצונית עם גודל אוטומטי (דומה בגודל לליגנד) ממורכזים על מרכז המסה של הליגנד הילידי. שאריות חומצות אמינו בתוך 5 Å מאטומי הליגנד הוגדרו כשרשראות צד גמישות. תהליך הדוקינג בוצע תחת פרוטוקול סטנדרטי, אשר מייצר עד 20 פוזים. בסך הכל, 284 זוגות ליגנד-קולטן במאגר הנתונים PDBbind ו-580 במאגר הנתונים MDT הודבקו בהצלחה על ידי שימוש במודול IFD. דוקינג Induced fit docking יכול לספק פוזים בעלי פלט בהצלחה עבור יותר זוגות ליגנד-קולטן במאגר הנתונים PDBbind מאשר GLIDE rigid docking, מה שמראה ששיטת דוקינג זו יכולה להרחיב את הכיס על ידי הזזת שרשראות הצד של הכיס
+     <sup>
+      <xref ref-type="bibr" rid="CR62">
+       62
+      </xref>
+     </sup>
+     .
+    </p>
+   </sec>
+   <sec id="Sec25">
+    <title>
+     סיכום דו"ח
+    </title>
+    <p id="Par50">
+     מידע נוסף על תכנון המחקר זמין ב-
+     <xref ref-type="supplementary-material" rid="MOESM2">
+      Nature Portfolio Reporting Summary
+     </xref>
+     המקושר למאמר זה.
+    </p>
+   </sec>
+  </sec>
+ </body>
+ <back>
+  <ack>
+   <title>
+    הודאות
+   </title>
+   <p>
+    אנו מודים למייהואי שונג וג'יהואי טאנג על עבודת הוויזואליזציה וההשראה שלהם. אנו מודים לדה וויי וזיוויי הואנג על סיועם בהקמת שרת האינטרנט ותמיכת IT. אנו מודים לג'יימס ג'יי קולינס על משובו היקר ודיונים מעמיקים. S.Z. מכיר במימון מלגת Baidu. P.G.W. ממומן על ידי מרכז הפיזיקה הביולוגית התאורטית, בחסות מענק NSF PHY-2019745 וקתדרת D.R. Bullard-Welch באוניברסיטת Rice, מענק C-0016.
+   </p>
+  </ack>
+  <sec sec-type="author-contribution">
+   <title>
+    תרומות המחברים
+   </title>
+   <p>
+    S.Z. ו-W.L. הגו ופיקחו על הפרויקט. W.L. ו-J.Z. תרמו ליישום האלגוריתם. J.Z., W.L., S.Z. ו-W.H. תרמו לוויזואליזציה ויישום הבסיס. W.L., S.Z., P.G.W. ו-J.Z. כתבו את המאמר. כל המחברים היו מעורבים בדיונים ובתיקון ההוכחות.
+   </p>
+  </sec>
+  <sec sec-type="peer-review">
+   <title>
+    ביקורת עמיתים
+   </title>
+   <sec id="FPar1">
+    <title>
+     מידע על ביקורת עמיתים
+    </title>
+    <p id="Par51">
+     <italic>
+      Nature Communications
+     </italic>
+     thanks the anonymous reviewers for their contribution to the peer review of this work. A peer review file is available.
+    </p>
+   </sec>
+  </sec>
+  <sec sec-type="data-availability">
+   <title>
+    זמינות נתונים
+   </title>
+   <p>
+    Raw data were sourced from the public dataset PDBbind2020, available at
+    <ext-link ext-link-type="uri" xlink:href="http://www.pdbbind.org.cn/index.php">
+     http://www.pdbbind.org.cn/index.php
+    </ext-link>
+    . The data generated in this study and processed training data have been publicly deposited to Zenodo under
+    <ext-link ext-link-type="doi" xlink:href="10.5281/zenodo.10429051">
+     https://doi.org/10.5281/zenodo.10429051
+    </ext-link>
+    .
+    <xref ref-type="sec" rid="Sec27">
+     Source data
+    </xref>
+    are provided with this paper.
+   </p>
+  </sec>
+  <sec sec-type="data-availability">
+   <title>
+    זמינות קוד
+   </title>
+   <p>
+    Demo, instructions, and codes for DynamicBind are available at
+    <ext-link ext-link-type="uri" xlink:href="https://github.com/luwei0917/DynamicBind">
+     https://github.com/luwei0917/DynamicBind
+    </ext-link>
+    . The version used for this publication is available in ref.
+    <sup>
+     <xref ref-type="bibr" rid="CR63">
+      63
+     </xref>
+    </sup>
+    . In addition, a web server is available at
+    <ext-link ext-link-type="uri" xlink:href="https://m1.galixir.com/#/home/demo/dynamicDocking">
+     https://m1.galixir.com/#/home/demo/dynamicDocking
+    </ext-link>
+    .
+   </p>
+  </sec>
+  <sec sec-type="ethics-statement">
+   <sec id="FPar2" sec-type="COI-statement">
+    <title>
+     אינטרסים מנוגדים
+    </title>
+    <p id="Par52">
+     W.L., J.Z., W.H., Z.Z., X.J., Z.W., L.S., and C.L. work directly or indirectly for Galixir Technologies. S.Z. was a former employee of Galixir Technologies. The remaining authors declare no competing interests.
+    </p>
+   </sec>
+  </sec>
+  <ref-list id="Bib1">
+   <title>
+    רשימת מקורות
+   </title>
+   <ref-list>
+    <ref id="CR1">
+     <label>
+      1.
+     </label>
+     <mixed-citation publication-type="other">
+      Papoian, G. A. &amp; Wolynes, P.G. Awsem-md: from neural networks to protein structure prediction and functional dynamics of complex biomolecular assemblies.
+      <italic>
+       Coarse-Grained Model. Biomol.
+      </italic>
+      121–190 (2017).
+     </mixed-citation>
+    </ref>
+    <ref id="CR2">
+     <label>
+      2.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Jin
+        </surname>
+        <given-names>
+         S
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Protein structure prediction in casp13 using awsem-suite
+      </article-title>
+      <source>
+       J. Chem. Theory Comput.
+      </source>
+      <year>
+       2020
+      </year>
+      <volume>
+       16
+      </volume>
+      <fpage>
+       3977
+      </fpage>
+      <lpage>
+       3988
+      </lpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BB3cXpt1OltL4%3D
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       32396727
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1021/acs.jctc.0c00188
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR3">
+     <label>
+      3.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Leman
+        </surname>
+        <given-names>
+         JK
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Macromolecular modeling and design in rosetta: recent methods and frameworks
+      </article-title>
+      <source>
+       Nat. Methods
+      </source>
+      <year>
+       2020
+      </year>
+      <volume>
+       17
+      </volume>
+      <fpage>
+       665
+      </fpage>
+      <lpage>
+       680
+      </lpage>
+      <pub-id assigning-authority="American Mathematical Society" pub-id-type="other">
+       4159503
+      </pub-id>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BB3cXhtVGmu7vF
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       32483333
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1038/s41592-020-0848-2
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR4">
+     <label>
+      4.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Zhang
+        </surname>
+        <given-names>
+         C
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Mortuza
+        </surname>
+        <given-names>
+         S
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         He
+        </surname>
+        <given-names>
+         B
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Wang
+        </surname>
+        <given-names>
+         Y
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Zhang
+        </surname>
+        <given-names>
+         Y
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Template-based and free modeling of i-tasser and quark pipelines using predicted contact maps in casp12
+      </article-title>
+      <source>
+       Proteins Struct. Funct. Bioinforma.
+      </source>
+      <year>
+       2018
+      </year>
+      <volume>
+       86
+      </volume>
+      <fpage>
+       136
+      </fpage>
+      <lpage>
+       151
+      </lpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BC2sXhvVSit7vN
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1002/prot.25414
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR5">
+     <label>
+      5.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Jumper
+        </surname>
+        <given-names>
+         J
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Highly accurate protein structure prediction with alphafold
+      </article-title>
+      <source>
+       Nature
+      </source>
+      <year>
+       2021
+      </year>
+      <volume>
+       596
+      </volume>
+      <fpage>
+       583
+      </fpage>
+      <lpage>
+       589
+      </lpage>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2021Natur.596..583J
+      </pub-id>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BB3MXhvVaktrrL
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       34265844
+      </pub-id>
+      <pub-id pub-id-type="pmcid">
+       8371605
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1038/s41586-021-03819-2
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR6">
+     <label>
+      6.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Baek
+        </surname>
+        <given-names>
+         M
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Accurate prediction of protein structures and interactions using a three-track neural network
+      </article-title>
+      <source>
+       Science
+      </source>
+      <year>
+       2021
+      </year>
+      <volume>
+       373
+      </volume>
+      <fpage>
+       871
+      </fpage>
+      <lpage>
+       876
+      </lpage>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2021Sci...373..871B
+      </pub-id>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BB3MXhvVCku7zM
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       34282049
+      </pub-id>
+      <pub-id pub-id-type="pmcid">
+       7612213
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1126/science.abj8754
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR7">
+     <label>
+      7.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Lin
+        </surname>
+        <given-names>
+         Z
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Evolutionary-scale prediction of atomic-level protein structure with a language model
+      </article-title>
+      <source>
+       Science
+      </source>
+      <year>
+       2023
+      </year>
+      <volume>
+       379
+      </volume>
+      <fpage>
+       1123
+      </fpage>
+      <lpage>
+       1130
+      </lpage>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2023Sci...379.1123L
+      </pub-id>
+      <pub-id assigning-authority="American Mathematical Society" pub-id-type="other">
+       4567681
+      </pub-id>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BB3sXls1ertrk%3D
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       36927031
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1126/science.ade2574
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR8">
+     <label>
+      8.
+     </label>
+     <mixed-citation publication-type="other">
+      Wu, R. et al. High-resolution de novo structure prediction from primary sequence. Preprint at
+      <ext-link ext-link-type="uri" xlink:href="https://www.biorxiv.org/content/10.1101/2022.07.21.500999v1">
+       https://www.biorxiv.org/content/10.1101/2022.07.21.500999v1
+      </ext-link>
+      (2022).
+     </mixed-citation>
+    </ref>
+    <ref id="CR9">
+     <label>
+      9.
+     </label>
+     <mixed-citation publication-type="other">
+      Lane, T. J. Protein structure prediction has reached the single-structure frontier.
+      <italic>
+       Nat. Methods
+      </italic>
+      <bold>
+       20
+      </bold>
+      , 170–173 (2023).
+     </mixed-citation>
+    </ref>
+    <ref id="CR10">
+     <label>
+      10.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Frauenfelder
+        </surname>
+        <given-names>
+         H
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Sligar
+        </surname>
+        <given-names>
+         SG
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Wolynes
+        </surname>
+        <given-names>
+         PG
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       The energy landscapes and motions of proteins
+      </article-title>
+      <source>
+       Science
+      </source>
+      <year>
+       1991
+      </year>
+      <volume>
+       254
+      </volume>
+      <fpage>
+       1598
+      </fpage>
+      <lpage>
+       1603
+      </lpage>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       1991Sci...254.1598F
+      </pub-id>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DyaK38XhtVWgtro%3D
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       1749933
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1126/science.1749933
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR11">
+     <label>
+      11.
+     </label>
+     <mixed-citation publication-type="other">
+      Nussinov, R., Zhang, M., Liu, Y. &amp; Jang, H. Alphafold, allosteric, and orthosteric drug discovery: ways forward.
+      <italic>
+       Drug Discov. Today
+      </italic>
+      <bold>
+       28
+      </bold>
+      , 103551 (2023).
+     </mixed-citation>
+    </ref>
+    <ref id="CR12">
+     <label>
+      12.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Boehr
+        </surname>
+        <given-names>
+         DD
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Nussinov
+        </surname>
+        <given-names>
+         R
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Wright
+        </surname>
+        <given-names>
+         PE
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       The role of dynamic conformational ensembles in biomolecular recognition
+      </article-title>
+      <source>
+       Nat. Chem. Biol.
+      </source>
+      <year>
+       2009
+      </year>
+      <volume>
+       5
+      </volume>
+      <fpage>
+       789
+      </fpage>
+      <lpage>
+       796
+      </lpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BD1MXht1OnsLrJ
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       19841628
+      </pub-id>
+      <pub-id pub-id-type="pmcid">
+       2916928
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1038/nchembio.232
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR13">
+     <label>
+      13.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Gunasekaran
+        </surname>
+        <given-names>
+         K
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Ma
+        </surname>
+        <given-names>
+         B
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Nussinov
+        </surname>
+        <given-names>
+         R
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Is allostery an intrinsic property of all dynamic proteins?
+      </article-title>
+      <source>
+       Proteins Struct. Funct. Bioinforma.
+      </source>
+      <year>
+       2004
+      </year>
+      <volume>
+       57
+      </volume>
+      <fpage>
+       433
+      </fpage>
+      <lpage>
+       443
+      </lpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BD2cXovVyjs70%3D
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1002/prot.20232
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR14">
+     <label>
+      14.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Hekkelman
+        </surname>
+        <given-names>
+         ML
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         de Vries
+        </surname>
+        <given-names>
+         I
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Joosten
+        </surname>
+        <given-names>
+         RP
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Perrakis
+        </surname>
+        <given-names>
+         A
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Alphafill: enriching alphafold models with ligands and cofactors
+      </article-title>
+      <source>
+       Nat. Methods
+      </source>
+      <year>
+       2023
+      </year>
+      <volume>
+       20
+      </volume>
+      <fpage>
+       205
+      </fpage>
+      <lpage>
+       213
+      </lpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BB38XivFClt7bM
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       36424442
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1038/s41592-022-01685-y
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR15">
+     <label>
+      15.
+     </label>
+     <mixed-citation publication-type="other">
+      Gorgulla, C. Recent developments in structure-based virtual screening approaches. Preprint at
+      <ext-link ext-link-type="uri" xlink:href="https://arxiv.org/abs/2211.03208v1">
+       https://arxiv.org/abs/2211.03208v1
+      </ext-link>
+      (2022).
+     </mixed-citation>
+    </ref>
+    <ref id="CR16">
+     <label>
+      16.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Friesner
+        </surname>
+        <given-names>
+         RA
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Glide: a new approach for rapid, accurate docking and scoring. 1. method and assessment of docking accuracy
+      </article-title>
+      <source>
+       J. Med. Chem.
+      </source>
+      <year>
+       2004
+      </year>
+      <volume>
+       47
+      </volume>
+      <fpage>
+       1739
+      </fpage>
+      <lpage>
+       1749
+      </lpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BD2cXhsFyit74%3D
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       15027865
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1021/jm0306430
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR17">
+     <label>
+      17.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Trott
+        </surname>
+        <given-names>
+         O
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Olson
+        </surname>
+        <given-names>
+         AJ
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Autodock vina: improving the speed and accuracy of docking with a new scoring function, efficient optimization, and multithreading
+      </article-title>
+      <source>
+       J. Comput. Chem.
+      </source>
+      <year>
+       2010
+      </year>
+      <volume>
+       31
+      </volume>
+      <fpage>
+       455
+      </fpage>
+      <lpage>
+       461
+      </lpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BD1MXhsFGnur3O
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       19499576
+      </pub-id>
+      <pub-id pub-id-type="pmcid">
+       3041641
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1002/jcc.21334
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR18">
+     <label>
+      18.
+     </label>
+     <mixed-citation publication-type="other">
+      Scardino, V., Di Filippo, J. I. &amp; Cavasotto, C. N. How good are alphafold models for docking-based virtual screening?
+      <italic>
+       Iscience
+      </italic>
+      <bold>
+       26
+      </bold>
+      , 1 (2023).
+     </mixed-citation>
+    </ref>
+    <ref id="CR19">
+     <label>
+      19.
+     </label>
+     <mixed-citation publication-type="other">
+      Corso, G., Stärk, H., Jing, B., Barzilay, R. &amp; Jaakkola, T. Diffdock: diffusion steps, twists, and turns for molecular docking. In
+      <italic>
+       International Conference on Learning Representations
+      </italic>
+      <italic>
+       (ICLR)
+      </italic>
+      (ICIR, 2023).
+     </mixed-citation>
+    </ref>
+    <ref id="CR20">
+     <label>
+      20.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Miller
+        </surname>
+        <given-names>
+         EB
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Reliable and accurate solution to the induced fit docking problem for protein–ligand binding
+      </article-title>
+      <source>
+       J. Chem. Theory Comput.
+      </source>
+      <year>
+       2021
+      </year>
+      <volume>
+       17
+      </volume>
+      <fpage>
+       2630
+      </fpage>
+      <lpage>
+       2639
+      </lpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BB3MXnt1yntb0%3D
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       33779166
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1021/acs.jctc.1c00136
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR21">
+     <label>
+      21.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Ayaz
+        </surname>
+        <given-names>
+         P
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Structural mechanism of a drug-binding process involving a large conformational change of the protein target
+      </article-title>
+      <source>
+       Nat. Commun.
+      </source>
+      <year>
+       2023
+      </year>
+      <volume>
+       14
+      </volume>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BB3sXnt1Clu7o%3D
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       37019905
+      </pub-id>
+      <pub-id pub-id-type="pmcid">
+       10076256
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1038/s41467-023-36956-5
+      </pub-id>
+      <elocation-id>
+       1885
+      </elocation-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR22">
+     <label>
+      22.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Ferreiro
+        </surname>
+        <given-names>
+         DU
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Hegler
+        </surname>
+        <given-names>
+         JA
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Komives
+        </surname>
+        <given-names>
+         EA
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Wolynes
+        </surname>
+        <given-names>
+         PG
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       On the role of frustration in the energy landscapes of allosteric proteins
+      </article-title>
+      <source>
+       Proc. Natl. Acad. Sci. USA
+      </source>
+      <year>
+       2011
+      </year>
+      <volume>
+       108
+      </volume>
+      <fpage>
+       3499
+      </fpage>
+      <lpage>
+       3503
+      </lpage>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2011PNAS..108.3499F
+      </pub-id>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BC3MXivFGksLw%3D
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       21273505
+      </pub-id>
+      <pub-id pub-id-type="pmcid">
+       3048099
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1073/pnas.1018980108
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR23">
+     <label>
+      23.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Noé
+        </surname>
+        <given-names>
+         F
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Olsson
+        </surname>
+        <given-names>
+         S
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Köhler
+        </surname>
+        <given-names>
+         J
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Wu
+        </surname>
+        <given-names>
+         H
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Boltzmann generators: Sampling equilibrium states of many-body systems with deep learning
+      </article-title>
+      <source>
+       Science
+      </source>
+      <year>
+       2019
+      </year>
+      <volume>
+       365
+      </volume>
+      <fpage>
+       1147
+      </fpage>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2019Sci...365.1147N
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1126/science.aaw1147
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR24">
+     <label>
+      24.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Noé
+        </surname>
+        <given-names>
+         F
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         De Fabritiis
+        </surname>
+        <given-names>
+         G
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Clementi
+        </surname>
+        <given-names>
+         C
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Machine learning for protein folding and dynamics
+      </article-title>
+      <source>
+       Curr. Opin. Struct. Biol.
+      </source>
+      <year>
+       2020
+      </year>
+      <volume>
+       60
+      </volume>
+      <fpage>
+       77
+      </fpage>
+      <lpage>
+       84
+      </lpage>
+      <pub-id pub-id-type="pmid">
+       31881449
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1016/j.sbi.2019.12.005
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR25">
+     <label>
+      25.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Wong
+        </surname>
+        <given-names>
+         F
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Benchmarking alphafold-enabled molecular docking predictions for antibiotic discovery
+      </article-title>
+      <source>
+       Mol. Syst. Biol.
+      </source>
+      <year>
+       2022
+      </year>
+      <volume>
+       18
+      </volume>
+      <fpage>
+       11081
+      </fpage>
+      <pub-id pub-id-type="doi">
+       10.15252/msb.202211081
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR26">
+     <label>
+      26.
+     </label>
+     <mixed-citation publication-type="other">
+      Landrum, G. et al.
+      <italic>
+       RDKit: A Software Suite For Cheminformatics, Computational Chemistry, and Predictive Modeling
+      </italic>
+      (Academic Press Cambridge, 2013).
+     </mixed-citation>
+    </ref>
+    <ref id="CR27">
+     <label>
+      27.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Lin
+        </surname>
+        <given-names>
+         X
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Forging tools for refining predicted protein structures
+      </article-title>
+      <source>
+       Proc. Natl. Acad. Sci. USA
+      </source>
+      <year>
+       2019
+      </year>
+      <volume>
+       116
+      </volume>
+      <fpage>
+       9400
+      </fpage>
+      <lpage>
+       9409
+      </lpage>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2019PNAS..116.9400L
+      </pub-id>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BC1MXovFGltLY%3D
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       31000596
+      </pub-id>
+      <pub-id pub-id-type="pmcid">
+       6511001
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1073/pnas.1900778116
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR28">
+     <label>
+      28.
+     </label>
+     <mixed-citation publication-type="other">
+      Watson, J. L. et al. De novo design of protein structure and function with RFdiffusion.
+      <italic>
+       Nature
+      </italic>
+      <bold>
+       620
+      </bold>
+      , 1089–1100 (2023).
+     </mixed-citation>
+    </ref>
+    <ref id="CR29">
+     <label>
+      29.
+     </label>
+     <mixed-citation publication-type="other">
+      Song, Y. et al. Score-based generative modeling through stochastic differential equations. Preprint at
+      <ext-link ext-link-type="uri" xlink:href="https://arxiv.org/abs/2011.13456">
+       https://arxiv.org/abs/2011.13456
+      </ext-link>
+      (2020).
+     </mixed-citation>
+    </ref>
+    <ref id="CR30">
+     <label>
+      30.
+     </label>
+     <mixed-citation publication-type="other">
+      Qiao, Z., Nie, W., Vahdat, A., Miller III, T. F. &amp; Anandkumar, A. State-specific protein-ligand complex structure prediction with a multi-scale deep generative model. Preprint at
+      <ext-link ext-link-type="uri" xlink:href="https://arxiv.org/pdf/2209.15171.pdf">
+       https://arxiv.org/pdf/2209.15171.pdf
+      </ext-link>
+      (2023).
+     </mixed-citation>
+    </ref>
+    <ref id="CR31">
+     <label>
+      31.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Nakata
+        </surname>
+        <given-names>
+         S
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Mori
+        </surname>
+        <given-names>
+         Y
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Tanaka
+        </surname>
+        <given-names>
+         S
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       End-to-end protein–ligand complex structure generation with diffusion-based generative models
+      </article-title>
+      <source>
+       BMC Bioinforma.
+      </source>
+      <year>
+       2023
+      </year>
+      <volume>
+       24
+      </volume>
+      <fpage>
+       1
+      </fpage>
+      <lpage>
+       18
+      </lpage>
+      <pub-id pub-id-type="doi">
+       10.1186/s12859-023-05354-5
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR32">
+     <label>
+      32.
+     </label>
+     <mixed-citation publication-type="other">
+      Brocidiacono, M., Popov, K. I., Koes, D. R. &amp; Tropsha, A. Plantain: diffusion-inspired pose score minimization for fast and accurate molecular docking. Preprint at
+      <ext-link ext-link-type="uri" xlink:href="https://arxiv.org/abs/2307.12090">
+       https://arxiv.org/abs/2307.12090
+      </ext-link>
+      (2023).
+     </mixed-citation>
+    </ref>
+    <ref id="CR33">
+     <label>
+      33.
+     </label>
+     <mixed-citation publication-type="other">
+      Jing, B., Corso, G., Chang, J., Barzilay, R. &amp; Jaakkola, T. Torsional diffusion for molecular conformer generation.
+      <italic>
+       Adv. Neural Inf. Process. Syst.
+      </italic>
+      <bold>
+       35
+      </bold>
+      , 24240–24253 (2022).
+     </mixed-citation>
+    </ref>
+    <ref id="CR34">
+     <label>
+      34.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Liu
+        </surname>
+        <given-names>
+         Z
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Pdb-wide collection of binding data: current status of the pdbbind database
+      </article-title>
+      <source>
+       Bioinformatics
+      </source>
+      <year>
+       2015
+      </year>
+      <volume>
+       31
+      </volume>
+      <fpage>
+       405
+      </fpage>
+      <lpage>
+       412
+      </lpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BC28Xht1GjsrnI
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       25301850
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1093/bioinformatics/btu626
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR35">
+     <label>
+      35.
+     </label>
+     <mixed-citation publication-type="other">
+      Stärk, H., Ganea, O., Pattanaik, L., Barzilay, R. &amp; Jaakkola, T. Equibind: geometric deep learning for drug binding structure prediction. In
+      <italic>
+       International Conference on Machine Learning
+      </italic>
+      20503–20521 (PMLR, 2022).
+     </mixed-citation>
+    </ref>
+    <ref id="CR36">
+     <label>
+      36.
+     </label>
+     <mixed-citation publication-type="other">
+      Lu, W. et al. Tankbind: trigonometry-aware neural networks for drug-protein binding structure prediction.
+      <italic>
+       Adv. Neural Inf. Process. Syst.
+      </italic>
+      (2022).
+     </mixed-citation>
+    </ref>
+    <ref id="CR37">
+     <label>
+      37.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Santos
+        </surname>
+        <given-names>
+         R
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       A comprehensive map of molecular drug targets
+      </article-title>
+      <source>
+       Nat. Rev. Drug Discov.
+      </source>
+      <year>
+       2017
+      </year>
+      <volume>
+       16
+      </volume>
+      <fpage>
+       19
+      </fpage>
+      <lpage>
+       34
+      </lpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BC28XitVSms7rK
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       27910877
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1038/nrd.2016.230
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR38">
+     <label>
+      38.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Bender
+        </surname>
+        <given-names>
+         BJ
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       A practical guide to large-scale docking
+      </article-title>
+      <source>
+       Nat. Protoc.
+      </source>
+      <year>
+       2021
+      </year>
+      <volume>
+       16
+      </volume>
+      <fpage>
+       4799
+      </fpage>
+      <lpage>
+       4832
+      </lpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BB3MXitFWgsL%2FE
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       34561691
+      </pub-id>
+      <pub-id pub-id-type="pmcid">
+       8522653
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1038/s41596-021-00597-z
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR39">
+     <label>
+      39.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Kanev
+        </surname>
+        <given-names>
+         GK
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         de Graaf
+        </surname>
+        <given-names>
+         C
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Westerman
+        </surname>
+        <given-names>
+         BA
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         de Esch
+        </surname>
+        <given-names>
+         IJ
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Kooistra
+        </surname>
+        <given-names>
+         AJ
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Klifs: an overhaul after the first 5 years of supporting kinase research
+      </article-title>
+      <source>
+       Nucleic Acids Res.
+      </source>
+      <year>
+       2021
+      </year>
+      <volume>
+       49
+      </volume>
+      <fpage>
+       562
+      </fpage>
+      <lpage>
+       569
+      </lpage>
+      <pub-id pub-id-type="doi">
+       10.1093/nar/gkaa895
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR40">
+     <label>
+      40.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Huang
+        </surname>
+        <given-names>
+         S-Y
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Zou
+        </surname>
+        <given-names>
+         X
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Ensemble docking of multiple protein structures: considering protein structural variations in molecular docking
+      </article-title>
+      <source>
+       Proteins Struct. Funct. Bioinforma.
+      </source>
+      <year>
+       2007
+      </year>
+      <volume>
+       66
+      </volume>
+      <fpage>
+       399
+      </fpage>
+      <lpage>
+       421
+      </lpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BD2sXms1SjsQ%3D%3D
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1002/prot.21214
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR41">
+     <label>
+      41.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Amaro
+        </surname>
+        <given-names>
+         RE
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Ensemble docking in drug discovery
+      </article-title>
+      <source>
+       Biophys. J.
+      </source>
+      <year>
+       2018
+      </year>
+      <volume>
+       114
+      </volume>
+      <fpage>
+       2271
+      </fpage>
+      <lpage>
+       2278
+      </lpage>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2018BpJ...114.2271A
+      </pub-id>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BC1cXmt1agtL0%3D
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       29606412
+      </pub-id>
+      <pub-id pub-id-type="pmcid">
+       6129458
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1016/j.bpj.2018.02.038
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR42">
+     <label>
+      42.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Lampe
+        </surname>
+        <given-names>
+         JW
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Discovery of a first-in-class inhibitor of the histone methyltransferase setd2 suitable for preclinical studies
+      </article-title>
+      <source>
+       ACS Med. Chem. Lett.
+      </source>
+      <year>
+       2021
+      </year>
+      <volume>
+       12
+      </volume>
+      <fpage>
+       1539
+      </fpage>
+      <lpage>
+       1545
+      </lpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BB3MXhvVClu7jP
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       34671445
+      </pub-id>
+      <pub-id pub-id-type="pmcid">
+       8521618
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1021/acsmedchemlett.1c00272
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR43">
+     <label>
+      43.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Alford
+        </surname>
+        <given-names>
+         JS
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Conformational-design-driven discovery of ezm0414: a selective, potent setd2 inhibitor for clinical studies
+      </article-title>
+      <source>
+       ACS Med. Chem. Lett.
+      </source>
+      <year>
+       2022
+      </year>
+      <volume>
+       13
+      </volume>
+      <fpage>
+       1137
+      </fpage>
+      <lpage>
+       1143
+      </lpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BB38XhsVCqu7jF
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       35859865
+      </pub-id>
+      <pub-id pub-id-type="pmcid">
+       9290024
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1021/acsmedchemlett.2c00167
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR44">
+     <label>
+      44.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Zhao
+        </surname>
+        <given-names>
+         M
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Lee
+        </surname>
+        <given-names>
+         W-P
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Garrison
+        </surname>
+        <given-names>
+         EP
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Marth
+        </surname>
+        <given-names>
+         GT
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Ssw library: an simd smith-waterman c/c++ library for use in genomic applications
+      </article-title>
+      <source>
+       PLoS ONE
+      </source>
+      <year>
+       2013
+      </year>
+      <volume>
+       8
+      </volume>
+      <fpage>
+       82138
+      </fpage>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2013PLoSO...882138Z
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1371/journal.pone.0082138
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR45">
+     <label>
+      45.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Krafcikova
+        </surname>
+        <given-names>
+         P
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Silhan
+        </surname>
+        <given-names>
+         J
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Nencka
+        </surname>
+        <given-names>
+         R
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Boura
+        </surname>
+        <given-names>
+         E
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Structural analysis of the sars-cov-2 methyltransferase complex involved in RNA cap creation bound to sinefungin
+      </article-title>
+      <source>
+       Nat. Commun.
+      </source>
+      <year>
+       2020
+      </year>
+      <volume>
+       11
+      </volume>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2020NatCo..11.3717K
+      </pub-id>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BB3cXhsVKltLvM
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       32709887
+      </pub-id>
+      <pub-id pub-id-type="pmcid">
+       7381658
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1038/s41467-020-17495-9
+      </pub-id>
+      <elocation-id>
+       3717
+      </elocation-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR46">
+     <label>
+      46.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Cimermancic
+        </surname>
+        <given-names>
+         P
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Cryptosite: expanding the druggable proteome by characterization and prediction of cryptic binding sites
+      </article-title>
+      <source>
+       J. Mol. Biol.
+      </source>
+      <year>
+       2016
+      </year>
+      <volume>
+       428
+      </volume>
+      <fpage>
+       709
+      </fpage>
+      <lpage>
+       719
+      </lpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BC28XitFCqs78%3D
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       26854760
+      </pub-id>
+      <pub-id pub-id-type="pmcid">
+       4794384
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1016/j.jmb.2016.01.029
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR47">
+     <label>
+      47.
+     </label>
+     <mixed-citation publication-type="other">
+      Buttenschoen, M., Morris, G. M. &amp; Deane, C. M. Posebusters: Ai-based docking methods fail to generate physically valid poses or generalise to novel sequences.
+      <italic>
+       Chem. Sci.
+      </italic>
+      (2023).
+     </mixed-citation>
+    </ref>
+    <ref id="CR48">
+     <label>
+      48.
+     </label>
+     <mixed-citation publication-type="other">
+      Bryant, P., Kelkar, A., Guljas, A., Clementi, C. &amp; Noé, F. Structure prediction of protein-ligand complexes from sequence information with Umol. Preprint at
+      <ext-link ext-link-type="uri" xlink:href="https://www.biorxiv.org/content/10.1101/2023.11.03.565471v1">
+       https://www.biorxiv.org/content/10.1101/2023.11.03.565471v1
+      </ext-link>
+      (2023).
+     </mixed-citation>
+    </ref>
+    <ref id="CR49">
+     <label>
+      49.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Zhong
+        </surname>
+        <given-names>
+         ED
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Bepler
+        </surname>
+        <given-names>
+         T
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Berger
+        </surname>
+        <given-names>
+         B
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Davis
+        </surname>
+        <given-names>
+         JH
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Cryodrgn: reconstruction of heterogeneous cryo-em structures using neural networks
+      </article-title>
+      <source>
+       Nat. Methods
+      </source>
+      <year>
+       2021
+      </year>
+      <volume>
+       18
+      </volume>
+      <fpage>
+       176
+      </fpage>
+      <lpage>
+       185
+      </lpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BB3MXjt1SmsLw%3D
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       33542510
+      </pub-id>
+      <pub-id pub-id-type="pmcid">
+       8183613
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1038/s41592-020-01049-4
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR50">
+     <label>
+      50.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Zhang
+        </surname>
+        <given-names>
+         S
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Usp14-regulated allostery of the human proteasome by time-resolved cryo-em
+      </article-title>
+      <source>
+       Nature
+      </source>
+      <year>
+       2022
+      </year>
+      <volume>
+       605
+      </volume>
+      <fpage>
+       567
+      </fpage>
+      <lpage>
+       574
+      </lpage>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2022Natur.605..567Z
+      </pub-id>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BB38XhtFersLjP
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       35477760
+      </pub-id>
+      <pub-id pub-id-type="pmcid">
+       9117149
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1038/s41586-022-04671-8
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR51">
+     <label>
+      51.
+     </label>
+     <mixed-citation publication-type="other">
+      Punjani, A. &amp; Fleet, D. J. 3DFlex: determining structure and motion of flexible proteins from cryo-EM.
+      <italic>
+       Nat. Methods
+      </italic>
+      <bold>
+       20
+      </bold>
+      , 860–870 (2023).
+     </mixed-citation>
+    </ref>
+    <ref id="CR52">
+     <label>
+      52.
+     </label>
+     <mixed-citation publication-type="other">
+      Geiger, M. &amp; Smidt, T. e3nn: euclidean neural networks. Preprint at
+      <ext-link ext-link-type="uri" xlink:href="https://arxiv.org/abs/2207.09453">
+       https://arxiv.org/abs/2207.09453
+      </ext-link>
+      (2022).
+     </mixed-citation>
+    </ref>
+    <ref id="CR53">
+     <label>
+      53.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Batzner
+        </surname>
+        <given-names>
+         S
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       E (3)-equivariant graph neural networks for data-efficient and accurate interatomic potentials
+      </article-title>
+      <source>
+       Nat. Commun.
+      </source>
+      <year>
+       2022
+      </year>
+      <volume>
+       13
+      </volume>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       2022NatCo..13.2453B
+      </pub-id>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BB38Xht1ShtLrE
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       35508450
+      </pub-id>
+      <pub-id pub-id-type="pmcid">
+       9068614
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1038/s41467-022-29939-5
+      </pub-id>
+      <elocation-id>
+       2453
+      </elocation-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR54">
+     <label>
+      54.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         McBride
+        </surname>
+        <given-names>
+         WG
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Thalidomide and congenital abnormalities
+      </article-title>
+      <source>
+       Lancet
+      </source>
+      <year>
+       1961
+      </year>
+      <volume>
+       2
+      </volume>
+      <fpage>
+       90927
+      </fpage>
+      <lpage>
+       8
+      </lpage>
+     </mixed-citation>
+    </ref>
+    <ref id="CR55">
+     <label>
+      55.
+     </label>
+     <mixed-citation publication-type="other">
+      Song, Y., Dhariwal, P., Chen, M. &amp; Sutskever, I. Consistency models. Preprint at
+      <ext-link ext-link-type="uri" xlink:href="https://arxiv.org/abs/2303.01469">
+       https://arxiv.org/abs/2303.01469
+      </ext-link>
+      (2023).
+     </mixed-citation>
+    </ref>
+    <ref id="CR56">
+     <label>
+      56.
+     </label>
+     <mixed-citation publication-type="other">
+      Vaswani, A. et al. Attention is all you need.
+      <italic>
+       Adv. Neural Inf. Process. Syst
+      </italic>
+      .
+      <bold>
+       30
+      </bold>
+      , (2017).
+     </mixed-citation>
+    </ref>
+    <ref id="CR57">
+     <label>
+      57.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Kabsch
+        </surname>
+        <given-names>
+         W
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       A solution for the best rotation to relate two sets of vectors
+      </article-title>
+      <source>
+       Acta Crystallogr. Sect. A: Crystal Phys. Diffr. Theor. Gen. Crystallogr.
+      </source>
+      <year>
+       1976
+      </year>
+      <volume>
+       32
+      </volume>
+      <fpage>
+       922
+      </fpage>
+      <lpage>
+       923
+      </lpage>
+      <pub-id assigning-authority="NASA Astrophysics Data System" pub-id-type="other">
+       1976AcCrA..32..922K
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1107/S0567739476001873
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR58">
+     <label>
+      58.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Mariani
+        </surname>
+        <given-names>
+         V
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Biasini
+        </surname>
+        <given-names>
+         M
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Barbato
+        </surname>
+        <given-names>
+         A
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Schwede
+        </surname>
+        <given-names>
+         T
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       lddt: a local superposition-free score for comparing protein structures and models using distance difference tests
+      </article-title>
+      <source>
+       Bioinformatics
+      </source>
+      <year>
+       2013
+      </year>
+      <volume>
+       29
+      </volume>
+      <fpage>
+       2722
+      </fpage>
+      <lpage>
+       2728
+      </lpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BC3sXhs1CisrfK
+      </pub-id>
+      <pub-id pub-id-type="pmid">
+       23986568
+      </pub-id>
+      <pub-id pub-id-type="pmcid">
+       3799472
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1093/bioinformatics/btt473
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR59">
+     <label>
+      59.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Batsanov
+        </surname>
+        <given-names>
+         SS
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Van der waals radii of elements
+      </article-title>
+      <source>
+       Inorganic Mater.
+      </source>
+      <year>
+       2001
+      </year>
+      <volume>
+       37
+      </volume>
+      <fpage>
+       871
+      </fpage>
+      <lpage>
+       885
+      </lpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BD3MXnt1Cgsb4%3D
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1023/A:1011625728803
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR60">
+     <label>
+      60.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Meli
+        </surname>
+        <given-names>
+         R
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Biggin
+        </surname>
+        <given-names>
+         PC
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       spyrmsd: symmetry-corrected RMSD calculations in Python
+      </article-title>
+      <source>
+       J. Cheminforma.
+      </source>
+      <year>
+       2020
+      </year>
+      <volume>
+       12
+      </volume>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BB3cXitlWks7rF
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1186/s13321-020-00455-2
+      </pub-id>
+      <elocation-id>
+       49
+      </elocation-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR61">
+     <label>
+      61.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         McNutt
+        </surname>
+        <given-names>
+         AT
+        </given-names>
+       </name>
+       <etal/>
+      </person-group>
+      <article-title xml:lang="en">
+       Gnina 1.0: molecular docking with deep learning
+      </article-title>
+      <source>
+       J. Cheminforma.
+      </source>
+      <year>
+       2021
+      </year>
+      <volume>
+       13
+      </volume>
+      <fpage>
+       1
+      </fpage>
+      <lpage>
+       20
+      </lpage>
+     </mixed-citation>
+    </ref>
+    <ref id="CR62">
+     <label>
+      62.
+     </label>
+     <mixed-citation publication-type="journal">
+      <person-group person-group-type="author">
+       <name>
+        <surname>
+         Sherman
+        </surname>
+        <given-names>
+         W
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Beard
+        </surname>
+        <given-names>
+         HS
+        </given-names>
+       </name>
+       <name>
+        <surname>
+         Farid
+        </surname>
+        <given-names>
+         R
+        </given-names>
+       </name>
+      </person-group>
+      <article-title xml:lang="en">
+       Use of an induced fit receptor structure in virtual screening
+      </article-title>
+      <source>
+       Chem. Biol. Drug Design
+      </source>
+      <year>
+       2006
+      </year>
+      <volume>
+       67
+      </volume>
+      <fpage>
+       83
+      </fpage>
+      <lpage>
+       84
+      </lpage>
+      <pub-id assigning-authority="ChemPort ( Chemical Abstract Service )" pub-id-type="other">
+       1:CAS:528:DC%2BD28XhsVSjtL0%3D
+      </pub-id>
+      <pub-id pub-id-type="doi">
+       10.1111/j.1747-0285.2005.00327.x
+      </pub-id>
+     </mixed-citation>
+    </ref>
+    <ref id="CR63">
+     <label>
+      63.
+     </label>
+     <mixed-citation publication-type="other">
+      Lu, W. luwei0917/DynamicBind: V1.0.
+      <ext-link ext-link-type="doi" xlink:href="10.5281/zenodo.10443816">
+       https://doi.org/10.5281/zenodo.10443816
+      </ext-link>
+      (2023).
+     </mixed-citation>
+    </ref>
+   </ref-list>
+  </ref-list>
+  <app-group>
+   <app id="App1" specific-use="web-only">
+    <sec id="Sec26">
+     <title>
+      מידע נוסף
+     </title>
+     <p id="Par53">
+      <supplementary-material content-type="local-data" id="MOESM1" xlink:title="Supplementary information">
+       <media mime-subtype="pdf" mimetype="application" xlink:href="MediaObjects/41467_2024_45461_MOESM1_ESM.pdf">
+        <caption xml:lang="en">
+         <p>
+          Supplementary Information
+         </p>
+        </caption>
+       </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="MOESM2" xlink:title="Supplementary information">
+       <media mime-subtype="pdf" mimetype="application" xlink:href="MediaObjects/41467_2024_45461_MOESM2_ESM.pdf">
+        <caption xml:lang="en">
+         <p>
+          Reporting Summary
+         </p>
+        </caption>
+       </media>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="MOESM3" xlink:title="Supplementary information">
+       <media mime-subtype="pdf" mimetype="application" xlink:href="MediaObjects/41467_2024_45461_MOESM3_ESM.pdf">
+        <caption xml:lang="en">
+         <p>
+          Peer Review File
+         </p>
+        </caption>
+       </media>
+      </supplementary-material>
+     </p>
+    </sec>
+    <sec id="Sec27">
+     <title>
+      נתונים מקוריים
+     </title>
+     <p id="Par54">
+      <supplementary-material content-type="local-data" id="MOESM4" xlink:title="Source data">
+       <media mime-subtype="vnd.ms-excel" mimetype="application" xlink:href="MediaObjects/41467_2024_45461_MOESM4_ESM.xlsx">
+        <caption xml:lang="en">
+         <p>
+          Source Data file
+         </p>
+        </caption>
+       </media>
+      </supplementary-material>
+     </p>
+    </sec>
+   </app>
+  </app-group>
+  <notes notes-type="ESMHint">
+   <title>
+    מידע נוסף
+   </title>
+   <p>
+    The online version contains supplementary material available at
+    <ext-link ext-link-type="doi" xlink:href="10.1038/s41467-024-45461-2">
+     https://doi.org/10.1038/s41467-024-45461-2
+    </ext-link>
+    .
+   </p>
+  </notes>
+  <notes notes-type="Misc">
+   <p>
+    <bold>
+     Publisher’s note
+    </bold>
+    Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.
+   </p>
+  </notes>
+ </back>
+</article>
